@@ -1,0 +1,30 @@
+@import "~carbon-components/scss/globals/scss/typography";
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+// insert CSS code to innetHtml
+:host ::ng-deep p {
+	font-family: "IBM Plex Sans";
+	color: $text-02;
+	font-size: 14px !important;
+	letter-spacing: 0.16px !important;
+	line-height: 18px !important;
+	margin-top: $spacing-05;
+	margin-bottom: $spacing-05;
+	@include carbon--type-style('body-short-02');
+}
+
+.vsersion {
+	font-family: "IBM Plex Sans";
+	color: $text-02;
+	@include carbon--type-style('body-short-01');
+}
+
+.versionAndInstallCommand {
+	display: flex;
+	align-items: center;
+	margin-bottom: 24px;
+}

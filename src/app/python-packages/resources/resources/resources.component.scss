@@ -1,0 +1,20 @@
+@import "~carbon-components/scss/globals/scss/typography";
+
+.resource-page__banner {
+	padding-top: $spacing-05;
+	padding-bottom: $spacing-06;
+	font-family: "IBM Plex Sans";
+	@include carbon--type-style('productive-heading-03');
+}
+
+.marginTopBottom {
+    margin-top: $spacing-05;
+    margin-bottom: $spacing-08;
+}
+
+.marginTopLeft {
+    margin-top: $spacing-04;
+    margin-left: $spacing-04;
+}
+
+

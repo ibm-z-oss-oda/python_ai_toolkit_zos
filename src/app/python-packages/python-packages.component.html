@@ -1,0 +1,14 @@
+<app-header></app-header>
+<div class="bx--content">
+	 <app-home *ngIf="renderHome()"></app-home>
+     
+     <app-resources *ngIf="renderResources()"></app-resources> 
+        
+     <app-get-started *ngIf="renderGetStarted()"></app-get-started>
+
+     <app-package-info *ngIf="renderPackageInfo()"></app-package-info>
+     
+</div>
+
+<ibm-placeholder></ibm-placeholder> <!-- Used for modal dialog, it's a trick to use the carbon modal dialog -->
+

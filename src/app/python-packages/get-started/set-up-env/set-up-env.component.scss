@@ -1,0 +1,25 @@
+@import "~carbon-components/scss/globals/scss/typography";
+a {
+	text-decoration: none;
+	cursor:pointer;
+}
+
+.bodyLong02 {
+	font-family: "IBM Plex Sans";
+	color: $text-01;
+	font-weight: bold !important;
+	margin-top: $spacing-06;
+	margin-bottom: $spacing-06;
+	@include carbon--type-style('body-long-02');
+}
+
+.steps {
+	font-family: "IBM Plex Sans";
+	color: $text-01;
+	@include carbon--type-style('body-long-02');
+}
+
+.marginTopBottom24 {
+	margin-top: $spacing-06;
+	margin-bottom: $spacing-06;
+}

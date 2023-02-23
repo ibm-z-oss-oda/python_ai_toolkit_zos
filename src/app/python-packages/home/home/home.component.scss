@@ -1,0 +1,35 @@
+@import "~carbon-components/scss/globals/scss/typography";
+
+.landing-page__banner {
+	padding-top: $spacing-05;
+	padding-bottom: $spacing-06;
+	font-family: "IBM Plex Sans";
+	@include carbon--type-style('productive-heading-04');
+}
+
+.bx--btn__icon,
+path:not([data-icon-path]):not([fill=none]) {
+	fill: currentColor;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.desc {
+	font-family: "IBM Plex Sans";
+	@include carbon--type-style('body-long-02');
+}
+
+.contactUs {
+	margin-top: $spacing-10;
+	margin-bottom: $spacing-06;
+}
+
+.reportProblem {
+	font-family: "IBM Plex Sans";
+	margin-bottom: $spacing-04;
+	@include carbon--type-style('body-short-02');
+	
+}

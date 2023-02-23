@@ -1,0 +1,48 @@
+<div>
+    <div class="bodyLong02">{{_messageService.getBundle('OVERVIEW')}}</div>
+    <div class="steps">
+        {{_messageService.getBundle('ACQUIRE_PACKAGES_OVERVIEW1')}} 
+        <a (click)="goToHome()">{{_messageService.getBundle('ACQUIRE_PACKAGES_OVERVIEW2')}}</a>
+        {{_messageService.getBundle('ACQUIRE_PACKAGES_OVERVIEW3')}}
+    </div>
+    <br>
+    <div class="steps">
+        {{_messageService.getBundle('SET_UP_ENV_OVERVIEW')}}
+    </div>
+
+    <div class="bodyLong02">{{_messageService.getBundle('ACQUIRE_ALL_PACKAGES')}}</div>
+    <div class="steps">
+        {{_messageService.getBundle('ACQUIRE_ALL_PACKAGES_STEP_DESC_1')}}
+    </div>
+    <div class="marginTopBottom24">
+        <ibm-code-snippet display="single" >
+            {{installCommand}}
+        </ibm-code-snippet>
+    </div>
+
+    <div class="steps">
+        {{_messageService.getBundle('ACQUIRE_ALL_PACKAGES_STEP_DESC_2')}}
+        <a (click)="launchGithub()">{{_messageService.getBundle('ACQUIRE_ALL_PACKAGES_STEP_DESC_3')}}</a> 
+    </div>
+
+    <div class="bodyLong02">{{_messageService.getBundle('ACQUIRE_INDIV_PACKAGES')}}</div>
+    <div class="steps">
+        {{_messageService.getBundle('ACQUIRE_INDIV_PACKAGES_STEPS1')}}
+    </div>
+    <div class="marginTopBottom24">
+        <ibm-code-snippet display="single" >
+            {{pyyamlCommand}}
+        </ibm-code-snippet>
+    </div>
+    <div class="steps">
+        {{_messageService.getBundle('ACQUIRE_INDIV_PACKAGES_STEPS2')}}
+    </div>
+    <div class="marginTopBottom24">
+        <ibm-code-snippet display="single" >
+            {{pyyamlCommand6}}
+        </ibm-code-snippet>
+    </div>
+    <div class="steps">
+        {{_messageService.getBundle('ACQUIRE_INDIV_PACKAGES_STEPS3')}}
+    </div>
+</div>

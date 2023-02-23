@@ -1,0 +1,33 @@
+<div>
+    <div class="bodyLong02">{{_messageService.getBundle('OVERVIEW')}}</div>
+    <div class="steps">
+        {{_messageService.getBundle('SET_UP_ENV_OVERVIEW')}}
+    </div>
+
+    <div class="bodyLong02">{{_messageService.getBundle('SET_UP_ENV_PRE_REQ')}}</div>
+    <div class="steps">
+        {{_messageService.getBundle('SET_UP_ENV_PRE_REQ_STEPS1')}}
+        <a (click)="launchOpenSDK()">{{_messageService.getBundle('SET_UP_ENV_PRE_REQ_STEPS2')}}</a> 
+    </div>
+
+    <div class="bodyLong02">{{_messageService.getBundle('SET_UP_ENV_ALL_PACKAGES')}}</div>
+    <div class="steps">
+        {{_messageService.getBundle('SET_UP_ENV_ALL_PACKAGES_STEPS')}}
+    </div>
+
+    <div class="bodyLong02">{{_messageService.getBundle('SET_UP_ENV_INDIV_PACKAGES')}}</div>
+    <div class="steps">
+        {{_messageService.getBundle('SET_UP_ENV_INDIV_PACKAGES_STEPS1')}}
+    </div>
+    <div class="marginTopBottom24">
+        <ibm-code-snippet display="multi" >
+            {{command}}
+        </ibm-code-snippet>
+    </div>
+    <div class="steps">
+        {{_messageService.getBundle('SET_UP_ENV_INDIV_PACKAGES_STEPS2')}}
+    </div>
+    <div class="steps marginTopBottom24">
+        {{_messageService.getBundle('SET_UP_ENV_INDIV_PACKAGES_STEPS3')}}
+    </div>
+</div>

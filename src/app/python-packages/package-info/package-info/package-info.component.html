@@ -1,0 +1,82 @@
+
+<div>
+  <div style="margin-bottom: 48px;">
+    <ibm-breadcrumb  [noTrailingSlash]="noTrailingSlash">
+      <ibm-breadcrumb-item>
+       <a (click)="goToHome()"> {{_messageService.getBundle('PACKAGES')}} </a> 
+      </ibm-breadcrumb-item>
+    </ibm-breadcrumb>
+  </div>
+  <div>
+    <div class="imageNameTagLine">
+      <!--package name-->
+      <div class="imageName">{{packageInfoData.name}}</div> 
+      <!--package tags-->
+      <span *ngFor="let tag of packageInfoData.tags">
+        <ibm-tag [type]="checkTagType(tag)">{{tag}}</ibm-tag>
+      </span>
+    </div>
+    <div [innerHtml]="packageInfoData.info.description">
+      <!--package description-->
+    </div>
+    <p>
+      {{_messageService.getBundle('PACKAGES_DESC1')}} <a href="{{packageInfoData.info.linkToSite}}" target="_blank">{{packageInfoData.info.siteName}}</a> {{_messageService.getBundle('PACKAGES_DESC2')}}
+    </p>
+    <p>
+      {{_messageService.getBundle('PACKAGES_DESC3')}}
+    </p>
+  </div>
+  
+  <!--package License-->
+  <div>
+    <div class="heading02">{{_messageService.getBundle('PACKAGES_LICSEN')}}</div>
+    <p>
+      <!--package linkToLicense-->
+      {{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}</a>
+    </p>
+    <div>
+      <!--package License description-->
+      <p>
+        {{_messageService.getBundle('PACKAGES_LICSEN_DESC1')}}
+      </p>
+      <p>
+        {{_messageService.getBundle('PACKAGES_LICSEN_DESC2')}}
+      </p>
+    </div>
+  </div>
+
+  <!--package Versions-->
+  <div>
+    <div class="heading02">{{_messageService.getBundle('PACKAGES_VERSIONS')}}</div>
+    <p>
+      <!--package versions desc-->
+       {{_messageService.getBundle('PACKAGES_VERSIONS_DESC')}}
+    </p>
+    <div>
+      <!--package versons structed list-->
+      <ibm-structured-list [border]="border" [condensed]="condensed" [nowrap]="nowrap">
+				<ibm-list-header>
+					<ibm-list-column nowrap="true">{{_messageService.getBundle('PACKAGES_VERSIONS')}}</ibm-list-column>
+					<ibm-list-column nowrap="true">{{_messageService.getBundle('PACKAGES_PULL_STRING')}}</ibm-list-column>
+				</ibm-list-header>
+
+        <ibm-list-row *ngFor="let pullStrRow of pullStrRowData">
+          <ibm-list-column>{{pullStrRow.version}}</ibm-list-column>
+          <ibm-list-column nowrap="true">
+            <ibm-code-snippet display="single" >
+              {{pullStrRow.pullStr}}
+            </ibm-code-snippet>
+          </ibm-list-column>
+        </ibm-list-row>
+			</ibm-structured-list>
+    </div>
+  </div>
+
+  <!--package usage notes-->
+  <div>
+    <div class="heading02">{{_messageService.getBundle('PACKAGES_USAGE_NOTES')}}</div>
+    <p [innerHtml]="packageInfoData.info.usageNotes">
+      <!--package usage notes-->
+    </p>
+  </div>
+</div>

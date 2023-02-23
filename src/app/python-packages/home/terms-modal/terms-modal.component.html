@@ -1,0 +1,23 @@
+<ibm-modal [open]="open" [hasScrollingContent] = "hasScrollingContent" >
+    <ibm-modal-header [showCloseButton]="showCloseButton" >
+        <p class="bx--modal-header__label bx--type-delta"> {{_messageService.getBundle('TERMS_OF_USE')}}</p>
+        <p class="bx--modal-header__heading bx--type-beta"> {{_messageService.getBundle('AGREE_MODAL_TITLE')}}</p>
+    </ibm-modal-header>
+    <div class="bx--modal-content">
+        <p> {{_messageService.getBundle('AGREE_MODAL_CONTENT1')}}</p>
+        <a (click)="launchLicenseTerms()">{{_messageService.getBundle('AGREE_MODAL_CONTENT2')}}</a>
+        <br><br>
+        <p> {{_messageService.getBundle('AGREE_MODAL_CONTENT3')}}</p>
+        <br>
+    </div>
+    <ibm-modal-footer>
+        <ng-container>
+            <button
+                ibmButton="primary"
+                (click)="agreeClicked()"
+                modal-primary-focus>
+                {{_messageService.getBundle('AGREE')}}
+            </button>
+        </ng-container>
+    </ibm-modal-footer>
+</ibm-modal>

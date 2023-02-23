@@ -1,0 +1,17 @@
+<div>
+    <div>
+        <div class="get-started-page__banner">
+            {{_messageService.getBundle('GET_STARTED')}}
+        </div>
+        <div>
+			<ibm-tabs>
+				<ibm-tab heading="{{_messageService.getBundle('SET_UP_ENV_TAB')}}">
+				    <app-set-up-env></app-set-up-env>
+				</ibm-tab>
+				<ibm-tab heading="{{_messageService.getBundle('ACQUIRE_INDIV_PACKAGES_TAB')}}">
+					<app-acquire-packages></app-acquire-packages>
+				</ibm-tab>
+			</ibm-tabs>
+		</div>
+    </div>
+</div>

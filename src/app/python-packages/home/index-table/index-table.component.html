@@ -1,0 +1,92 @@
+<ibm-table-container>
+    <ibm-table-toolbar [model]="model">
+      <ibm-table-toolbar-content>
+        <ibm-table-toolbar-search [expandable]="true" [toolbar]="toolbar" [theme]="theme" [placeholder]="placeholder"
+          [autocomplete]="autocomplete" [disabled]="disabled" [size]="searchsize" [(value)]="searchDomValue"
+          (valueChange)="searchValueChange($event)" (clear)="clearSearchValue()"></ibm-table-toolbar-search>
+          <!--filter button-->
+          <button [ibmButton]="ghost" class="toolbar-action" placement="bottom"
+          [ibmOverflowMenu]="filterTemplateRef" [flip]="true" [offset]="{ x: 3, y: 48 }">
+              <svg  ibmIconSettingsAdjust size="16"></svg>
+          </button>
+      </ibm-table-toolbar-content>
+    </ibm-table-toolbar> 
+
+    <!--selected filter tags-->
+    <ng-container *ngTemplateOutlet="selectedFilterTagsTemplateRef"></ng-container>
+
+    <!--table-->
+    <ibm-table
+      [model]="model"
+      [size]="size"
+      [showSelectionColumn]="showSelectionColumn"
+      [striped]="striped"
+      [sortable]="sortable"
+      (sort)="customSort($event)"
+      [isDataGrid]="isDataGrid">
+    </ibm-table>
+
+    <ibm-pagination [model]="model" (selectPage)="selectPage($event)"></ibm-pagination>
+</ibm-table-container>
+
+<ng-template #expandedPaneTemplate let-data="data">
+  <div [innerHtml] = subDesc(data.info.description)>
+  </div>
+  <div class="versionAndInstallCommand">
+    <div class="vsersion">
+      {{_messageService.getBundle('VERSION')}} {{data.info.version}}
+    </div>
+    <div style="margin-left: 76px;">
+      <ibm-code-snippet display="single" >
+        {{data.info.installCommand}}
+      </ibm-code-snippet>
+    </div>
+  </div>
+  <div style="margin-bottom: 24px;">
+    <a (click)="goToPackageInfo(data)">{{_messageService.getBundle('HOME_VIEW_PACKAGE_INFO')}}</a>
+  </div>
+</ng-template>
+
+<!--
+      "machine_learning", // 0
+      "programming_tools", // 1
+      "languages", // 2
+      "graphics", // 3
+      "security", // 4
+      "math", // 5
+      "utility", // 6
+      "web", // 7
+      "base" //8
+-->
+<!--tags template-->
+<ng-template #tagsTableItemTemplate let-data="data">
+  <span *ngFor="let tag of data">
+    <ibm-tag [type]="checkTagType(tag)">{{tag}}</ibm-tag>
+  </span>
+</ng-template>
+
+
+<!--filter menu template-->
+<ng-template #filterTemplateRef>
+  <div (click)="overflowOnClick($event)">
+    <!-- <div style="padding-top: 0.5rem; color: grey;">Countries shown</div> -->
+    <ibm-checkbox *ngFor="let gilterTag of filterTags"
+      [checked]="checkedTags.includes(gilterTag)"
+      (checkedChange)="filterPackages(gilterTag, $event)">
+      {{gilterTag}}
+    </ibm-checkbox>
+  </div>
+  <button style="width: 100%;" (click)="resetFilter()" ibmButton="secondary" size="sm">{{_messageService.getBundle('RESET_FILTERS')}}
+    <svg class="bx--btn__icon" ibmIconReset size="16"></svg>
+  </button>
+</ng-template>
+
+<!--selected filter tags template-->
+<ng-template #selectedFilterTagsTemplateRef>
+  <div style="display: flex;align-items: center;background-color: #F4F4F4;">
+    <span *ngFor="let tag of checkedTags">
+      <ibm-tag-filter (close)="filterPackages(tag, false)" closeButtonLabel="Clear Filter" [type]="checkTagType(tag)">{{tag}}</ibm-tag-filter>
+    </span>
+    <a style="margin-left: 10px;" (click)="resetFilter()" *ngIf="checkedTags.length != 0">{{_messageService.getBundle('CLEAR_FILTERS')}}</a>
+  </div>
+</ng-template>

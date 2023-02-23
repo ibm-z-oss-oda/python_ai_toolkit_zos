@@ -1,0 +1,12 @@
+@import "~carbon-components/scss/globals/scss/typography";
+a {
+	text-decoration: none;
+	cursor:pointer;
+}
+
+.get-started-page__banner {
+	padding-top: $spacing-05;
+	padding-bottom: $spacing-06;
+	font-family: "IBM Plex Sans";
+	@include carbon--type-style('productive-heading-03');
+}

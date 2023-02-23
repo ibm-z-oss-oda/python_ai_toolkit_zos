@@ -1,0 +1,33 @@
+<div>
+    <div>
+        <h3 class="landing-page__banner">
+            {{_messageService.getBundle('PROJECT_NAME')}}
+        </h3>
+        <div class="desc">
+            {{_messageService.getBundle('HOME_DESC1')}}
+        </div>
+        <div style="margin-top: 24px;" class="desc">
+            {{_messageService.getBundle('HOME_DESC2')}}  
+            <a (click)="goToGetStarted()">{{_messageService.getBundle('HOME_DESC3')}}</a> 
+            {{_messageService.getBundle('HOME_DESC4')}}
+            <a [href]="shopz" target="_blank">{{_messageService.getBundle('HOME_DESC5')}} <svg class="bx--btn__icon" ibmIconLaunch size="16"></svg> </a>
+            {{_messageService.getBundle('HOME_DESC6')}}
+        </div>
+        <div style="margin-top: 64px;" >
+            <!--index table-->
+            <app-index-table></app-index-table>
+        </div>
+        <div class="contactUs">
+            <h4>{{_messageService.getBundle('HOME_CONTACT_US')}}</h4>
+        </div>
+        <div class="reportProblem">
+            {{_messageService.getBundle('HOME_DESC7')}}
+        </div>
+        <div>
+            <button ibmButton="primary" size="md" (click)="launchShopz()">
+				{{_messageService.getBundle('HOME_LAUNCH_SHOPZ')}}
+                <svg class="bx--btn__icon" ibmIconLaunch size="16"></svg>
+			</button> 
+        </div>
+    </div>
+</div>

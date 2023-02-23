@@ -1,0 +1,77 @@
+@import "~carbon-components/scss/globals/scss/typography";
+
+:host ::ng-deep a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.bx--btn__icon,
+path:not([data-icon-path]):not([fill=none]) {
+	fill: currentColor;
+}
+
+:host ::ng-deep .bx--structured-list {
+	margin-bottom: 2rem;
+}
+
+.imageName {
+	font-family: "IBM Plex Sans";
+	color: $text-01;
+	margin-right: $spacing-05;
+	@include carbon--type-style('productive-heading-04');
+}
+
+.imageNameTagLine {
+	display: flex;
+	align-items: flex-end;
+	margin-bottom: 24px;
+}
+
+// insert CSS code to innetHtml
+:host ::ng-deep p {
+	font-family: "IBM Plex Sans";
+	color: $text-01;
+	margin-top: $spacing-06;
+	margin-bottom: $spacing-06;
+	@include carbon--type-style('body-long-02');
+}
+
+.heading02 {
+	margin-top: $spacing-09;
+	margin-bottom: $spacing-06;
+	@include carbon--type-style('productive-heading-02');
+}
+
+:host ::ng-deep code {
+	color: $text-01;
+	background-color: #F4F4F4;
+	@include carbon--type-style('code-01');
+}
+
+
+element.style {
+    display: block;
+}
+
+:host ::ng-deep pre {
+	font-family: "IBM Plex Mono", "Menlo", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", Courier, monospace;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.34;
+    letter-spacing: 0.32px;
+    position: relative;
+    width: 100%;
+    max-width: 48rem;
+    background-color: #f4f4f4;
+    display: flex;
+    // padding: 1rem;
+}
+
+:host ::ng-deep li {
+	display: list-item;
+	list-style-type: decimal;
+	margin-left: $spacing-05;
+	font-family: "IBM Plex Sans";
+	color: $text-01;
+	@include carbon--type-style('body-long-02');
+}
