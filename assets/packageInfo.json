@@ -1156,7 +1156,7 @@
 "versions": " 24.0.1",
 "info":
 {
-"description": "<p>This package contains Python bindings for <a href='https://zeromq.org/'>ØMQ</a>. ØMQ is a lightweight and fast messaging implementation.</p><p>Current sha265 values:- (cp310) <code>pyzmq==24.0.1 --hash=sha256:6bae864246c61de2490afa75445928bff1098a05b1875303cd24413094c8352c</code>- (cp311) <code>pyzmq==24.0.1 --hash=sha256:96787f42a61916311549aacd47e4bca100092d51ab0f098cbb3f778fcdd241fc</code></code></p>",
+"description": "<p>This package contains Python bindings for <a href='https://zeromq.org/'>ØMQ</a>. ØMQ is a lightweight and fast messaging implementation.</p><p>Current sha265 values:<ul><li>(cp310) <code>pyzmq==24.0.1 --hash=sha256:6bae864246c61de2490afa75445928bff1098a05b1875303cd24413094c8352c</code></li><li>(cp311) <code>pyzmq==24.0.1 --hash=sha256:96787f42a61916311549aacd47e4bca100092d51ab0f098cbb3f778fcdd241fc</code></li></ul></p>",
 "usageNotes": "<p>For usage instructions, please refer to <a href='https://zguide.zeromq.org/'>zguide.zeromq.org</a>, which implements every example in pyzmq.</p>",
 "linkToSite": "https://pyzmq.readthedocs.io/en/latest/",
 "siteName": "readthedocs.io",
