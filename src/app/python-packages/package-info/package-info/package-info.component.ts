@@ -55,7 +55,7 @@ export class PackageInfoComponent implements OnInit {
     if(versions != null && versions != "" && versions != undefined) {
       let VersionsArr: Array<string> = versions.split(",");
       VersionsArr.forEach(version => {
-        let pullStr: string = "pip install " + this.packageInfoData.name + " == " +  version;
+        let pullStr: string = this.packageInfoData.name + "==" +  version + "--hash=sha256:<see-above-for-hash-value>";
         let pullStrbject: PullStrbject  = new PullStrbject(version, pullStr, "https://en.wikipedia.org/wiki/Clown");
         this.pullStrRowData.push(pullStrbject);
       });
