@@ -49,7 +49,7 @@
 {
 "name": "asttokens",
 "tags": [ "utility","programming_tools" ],
-"versions": " 2.2.1",
+"versions": " 2.0.6",
 "info":
 {
 "description": "<p>The <code>asttokens</code> module annotates Python abstract syntax trees (ASTs) with the positions of tokens and text in the source code that generated them.</p><p>It makes it possible for tools that work with logical AST nodes to find the particular text that resulted in those nodes, for example for automated refactoring or highlighting.</p>",
@@ -58,14 +58,14 @@
 "siteName": "github",
 "license": "APACHE2",
 "linkToLicense": "https://github.com/gristlabs/asttokens/blob/master/LICENSE",
-"version": "2.2.1",
-"installCommand": "pip install asttokens==2.2.1"
+"version": "2.0.6",
+"installCommand": "pip install asttokens==2.0.6"
 }
 },
 {
 "name": "attrs",
 "tags": [ "programming_tools" ],
-"versions": " 22.2.0",
+"versions": " 22.1.0",
 "info":
 {
 "description": "<p><tt class='docutils literal'>attrs</tt> is the Python package that will bring back the <strong>joy</strong> of <strong>writing classes</strong> by relieving you from the drudgery of implementing object protocols (aka <a class='reference external' href='https://www.attrs.org/en/latest/glossary.html#term-dunder-methods'>dunder methods</a>).<a class='reference external' href='https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/personalizing-your-profile#list-of-qualifying-repositories-for-mars-2020-helicopter-contributor-badge'>Trusted by NASA</a> for Mars missions since 2020!</p><p>Its main goal is to help you to write <strong>concise</strong> and <strong>correct</strong> software without slowing down your code.</p><!-- teaser-end --><p>For that, it gives you a class decorator and a way to declaratively define the attributes on that class. After <em>declaring</em> your attributes <tt class='docutils literal'>attrs</tt> will also give you:</p><ul class='simple'><li>a concise and explicit overview of the class's attributes,</li><li>a nice human-readable <tt class='docutils literal'>__repr__</tt>,</li><li>equality-checking methods,</li><li>an initializer,</li><li>and much more,</li></ul><p><em>without</em> writing dull boilerplate code again and again and <em>without</em> runtime performance penalties.</p><p><strong>Hate type annotations</strong>!?No problem!Types are entirely <strong>optional</strong> with <tt class='docutils literal'>attrs</tt>.Simply assign <tt class='docutils literal'>attrs.field()</tt> to the attributes instead of annotating them with types.</p>",
@@ -74,8 +74,8 @@
 "siteName": "attrs.org",
 "license": "MIT",
 "linkToLicense": "https://github.com/python-attrs/attrs/blob/main/LICENSE",
-"version": "22.2.0",
-"installCommand": "pip install attrs==22.2.0"
+"version": "22.1.0",
+"installCommand": "pip install attrs==22.1.0"
 }
 },
 {
@@ -127,6 +127,22 @@
 }
 },
 {
+"name": "cairo",
+"tags": [ "utility" ],
+"versions": " 1.16.0",
+"info":
+{
+"description": "<p>The Pycairo bindings are designed to match the cairo C API as closely as possible, and to deviate only in cases which are clearly better implemented in a more ‘Pythonic’ way.</p>",
+"usageNotes": "<p>Further documentation is available on <a href='https://pycairo.readthedocs.io/en/latest/'>readthedocs.io</a></p>",
+"linkToSite": "https://github.com/pygobject/pycairo",
+"siteName": "github",
+"license": "LGPL-2.1",
+"linkToLicense": "https://github.com/pygobject/pycairo/blob/main/COPYING-LGPL-2.1",
+"version": "1.16.0",
+"installCommand": "pip install cairo==1.16.0"
+}
+},
+{
 "name": "cairocffi",
 "tags": [ "graphics" ],
 "versions": " 1.3.0",
@@ -145,7 +161,7 @@
 {
 "name": "certifi",
 "tags": [ "security" ],
-"versions": " 2022.12.7",
+"versions": " 2021.10.8",
 "info":
 {
 "description": "<p>Certifi provides Mozilla’s carefully curated collection of Root Certificates for validating the trustworthiness of SSL certificates while verifying the identity of TLS hosts. It has been extracted from the <a href='https://requests.readthedocs.io/en/master/'>Requests</a> project.</p>",
@@ -154,8 +170,8 @@
 "siteName": "readthedocs.io",
 "license": "MPL",
 "linkToLicense": "https://github.com/certifi/python-certifi/blob/master/LICENSE",
-"version": "2022.12.7",
-"installCommand": "pip install certifi==2022.12.7"
+"version": "2021.10.8",
+"installCommand": "pip install certifi==2021.10.8"
 }
 },
 {
@@ -209,7 +225,7 @@
 {
 "name": "cycler",
 "tags": [ "programming_tools","utility" ],
-"versions": " 0.11.0",
+"versions": " 0.12.0",
 "info":
 {
 "description": "<p>The public API of cycler consists of a class <code>Cycler</code>, a factory function <code>cycler()</code>, and a concatenation function <code>concat()</code>. The factory function provides a simple interface for creating ‘base’ Cycler objects while the class takes care of the composition and iteration logic.</p>",
@@ -218,8 +234,8 @@
 "siteName": "matplotlib.org",
 "license": "BSD3",
 "linkToLicense": "https://github.com/matplotlib/cycler/blob/main/LICENSE",
-"version": "0.11.0",
-"installCommand": "pip install cycler==0.11.0"
+"version": "0.12.0",
+"installCommand": "pip install cycler==0.12.0"
 }
 },
 {
@@ -257,7 +273,7 @@
 {
 "name": "distlib",
 "tags": [ "utility" ],
-"versions": " 0.3.6",
+"versions": " 0.3.5",
 "info":
 {
 "description": "<p>Distlib is a library which implements low-level functions that relate to packaging and distribution of Python software.   </p>",
@@ -266,8 +282,24 @@
 "siteName": "https://github.com/pypa/distlib",
 "license": "Python Software Foundation",
 "linkToLicense": "https://github.com/pypa/distlib/blob/master/LICENSE.txt",
-"version": "0.3.6",
-"installCommand": "pip install distlib==0.3.6"
+"version": "0.3.5",
+"installCommand": "pip install distlib==0.3.5"
+}
+},
+{
+"name": "docutils",
+"tags": [ "utility" ],
+"versions": " 0.19",
+"info":
+{
+"description": "<p>Docutils is a modular system for processing documentation into useful formats, such as HTML, XML, and LaTeX. For input Docutils supports reStructuredText, an easy-to-read, what-you-see-is-what-you-get plaintext markup syntax.</p>",
+"usageNotes": "<p>Usage can be as simple as:</p><pre><code>rst2html.py FAQ.txt FAQ.html <br></code></pre><p>To convert files between formats.</p><p>Refer to the <a href='https://docutils.sourceforge.io/README.html#quick-start&ldquo;quickstart</a> guide to get started.</a>",
+"linkToSite": "https://docutils.sourceforge.io/",
+"siteName": "sourceforge.io",
+"license": "HOW TO LINK SOURCEFORGE?",
+"linkToLicense": "HOW TO LINK SOURCEFORGE?",
+"version": "0.19",
+"installCommand": "pip install docutils==0.19"
 }
 },
 {
@@ -305,7 +337,7 @@
 {
 "name": "executing",
 "tags": [ "utility" ],
-"versions": " 1.2.0",
+"versions": " 0.8.4",
 "info":
 {
 "description": "<p>Get the currently executing AST node of a frame, and other information. This mini-package lets you get information about what a frame is currently doing, particularly the AST node being executed.</p>",
@@ -314,8 +346,8 @@
 "siteName": "github",
 "license": "MIT",
 "linkToLicense": "https://github.com/alexmojaki/executing/blob/master/LICENSE.txt",
-"version": "1.2.0",
-"installCommand": "pip install executing==1.2.0"
+"version": "0.8.4",
+"installCommand": "pip install executing==0.8.4"
 }
 },
 {
@@ -337,7 +369,7 @@
 {
 "name": "filelock",
 "tags": [ "utility" ],
-"versions": " 3.9.0",
+"versions": " 3.7.2",
 "info":
 {
 "description": "<p>This package contains a single module, which implements a platform independent file lock in Python, which provides a simple way of inter-process communication. </p>",
@@ -346,8 +378,8 @@
 "siteName": "https://github.com/tox-dev/py-filelock",
 "license": "Unlicense",
 "linkToLicense": "https://github.com/tox-dev/py-filelock/blob/main/LICENSE",
-"version": "3.9.0",
-"installCommand": "pip install filelock==3.9.0"
+"version": "3.7.2",
+"installCommand": "pip install filelock==3.7.2"
 }
 },
 {
@@ -369,7 +401,7 @@
 {
 "name": "fontconfig",
 "tags": [ "utility" ],
-"versions": " 2.14.1",
+"versions": " 2.13.1",
 "info":
 {
 "description": "<p>Fontconfig is a library for configuring and customizing font access. </p><p>Fontconfig can: </p><ul><li>discover new fonts when installed automatically, removing a common source of configuration problems. </li><li>perform font name substitution, so that appropriate alternative fonts can be selected if fonts are missing. </li><li>identify the set of fonts required to completely cover a set of languages. </li><li>have GUI configuration tools built as it uses an XML-based configuration file (though with autodiscovery, we believe this need is minimized). </li><li>efficiently and quickly find the fonts you need among the set of fonts you have installed, even if you have installed thousands of fonts, while minimzing memory usage. </li><li>be used in concert with the X Render Extension and <a href='https://www.freedesktop.org/wiki/Software/FreeType/'>FreeType</a> to implement high quality, anti-aliased and subpixel rendered text on a display. </li></ul><p>Fontconfig does not: </p><ul><li>render the fonts themselves (this is left to FreeType or other rendering mechanisms) </li><li>depend on the X Window System in any fashion, so that printer only applications do not have such dependencies </li></ul>",
@@ -378,14 +410,14 @@
 "siteName": "freedesktop.org",
 "license": "OTHER",
 "linkToLicense": "https://github.com/freedesktop/fontconfig/blob/master/COPYING",
-"version": "2.14.1",
-"installCommand": "pip install fontconfig==2.14.1"
+"version": "2.13.1",
+"installCommand": "pip install fontconfig==2.13.1"
 }
 },
 {
 "name": "freetype2",
 "tags": [ "graphics" ],
-"versions": " 2.12.2",
+"versions": " 2.12.1",
 "info":
 {
 "description": "<p>FreeType is a software font engine that is designed to be small, efficient, highly customizable, and portable while capable of producing high-quality output (glyph images). It can be used in graphics libraries, display servers, font conversion tools, text image generation tools, and many other products as well.</p><p>Note that FreeType is a font service and doesn't provide APIs to perform higher-level features like text layout or graphics processing (e.g., colored text rendering, ‘hollowing’, etc.). However, it greatly simplifies these tasks by providing a simple, easy to use, and uniform interface to access the content of font files.</p><p>Please note that ‘FreeType’ is also called ‘FreeType 2’, to distinguish it from the old, deprecated ‘FreeType 1’ library, a predecessor no longer maintained and supported.</p>",
@@ -394,14 +426,14 @@
 "siteName": "freetype.org",
 "license": "OTHER",
 "linkToLicense": "https://gitlab.freedesktop.org/freetype/freetype/-/blob/master/LICENSE.TXT",
-"version": "2.12.2",
-"installCommand": "pip install freetype2==2.12.2"
+"version": "2.12.1",
+"installCommand": "pip install freetype2==2.12.1"
 }
 },
 {
 "name": "glib",
 "tags": [ "graphics" ],
-"versions": " 2.56.4",
+"versions": " 2.74",
 "info":
 {
 "description": "<p>This is a python graphics library that piggy-backs off of pyqt5</p><h1>Problem: No link to source repo AT ALL on <a herf='https://pypi.org/project/glib/'>pypi.org</a>. Must fix!</h1>",
@@ -410,14 +442,14 @@
 "siteName": "na",
 "license": "na",
 "linkToLicense": "na",
-"version": "2.56.4",
-"installCommand": "pip install glib==2.56.4"
+"version": "2.74",
+"installCommand": "pip install glib==2.74"
 }
 },
 {
 "name": "harfbuzz",
 "tags": [ "graphics","languages" ],
-"versions": " 6.0.0",
+"versions": " 5.3.0",
 "info":
 {
 "description": "<p> HarfBuzz is a text shaping library. Using the HarfBuzz library allows programs to convert a sequence of Unicode input into properly formatted and positioned glyph output—for any writing system and language. </p>",
@@ -426,8 +458,8 @@
 "siteName": "harfbuzz.github.io",
 "license": "OTHER",
 "linkToLicense": "https://github.com/harfbuzz/harfbuzz/blob/main/COPYING",
-"version": "6.0.0",
-"installCommand": "pip install harfbuzz==6.0.0"
+"version": "5.3.0",
+"installCommand": "pip install harfbuzz==5.3.0"
 }
 },
 {
@@ -481,7 +513,7 @@
 {
 "name": "importlib_resources",
 "tags": [ "programming_tools" ],
-"versions": " 5.8.0",
+"versions": " 5.8.1",
 "info":
 {
 "description": "<p><code>importlib_resources</code> is a backport of Python standard library <a href='https://docs.python.org/3/library/importlib.html#module-importlib.resources'>importlib.resources</a> module for older Pythons.</p><p>The key goal of this module is to replace parts of <a href='https://setuptools.readthedocs.io/en/latest/pkg_resources.html'>pkg_resources</a> with a solution in Python's stdlib that relies on well-defined APIs. This makes reading resources included in packages easier, with more stable and consistent semantics.</p>",
@@ -490,14 +522,14 @@
 "siteName": "github",
 "license": "APACHE2",
 "linkToLicense": "https://github.com/python/importlib_resources/blob/main/LICENSE",
-"version": "5.8.0",
-"installCommand": "pip install importlib_resources==5.8.0"
+"version": "5.8.1",
+"installCommand": "pip install importlib_resources==5.8.1"
 }
 },
 {
 "name": "iniconfig",
 "tags": [ "programming_tools","utility" ],
-"versions": " 2.0.0",
+"versions": " 1.1.2",
 "info":
 {
 "description": "<p>Brain-dead simple parsing of ini files.</p><p>iniconfig is a small and simple INI-file parser module having a unique set of features:</p><ul><li>tested against Python2.4 across to Python3.2, Jython, PyPy</li><li>maintains order of sections and entries</li><li>supports multi-line values with or without line-continuations</li><li>supports “#” comments everywhere</li><li>raises errors with proper line-numbers</li><li>no bells and whistles like automatic substitutions</li><li>iniconfig raises an Error if two sections have the same name.</li></ul>",
@@ -506,8 +538,8 @@
 "siteName": "github",
 "license": "MIT",
 "linkToLicense": "https://github.com/pytest-dev/iniconfig/blob/master/LICENSE",
-"version": "2.0.0",
-"installCommand": "pip install iniconfig==2.0.0"
+"version": "1.1.2",
+"installCommand": "pip install iniconfig==1.1.2"
 }
 },
 {
@@ -561,7 +593,7 @@
 {
 "name": "jupyter",
 "tags": [ "math" ],
-"versions": " 1.1.0",
+"versions": " 11.0",
 "info":
 {
 "description": "<p>Jupyter metapackage. Install all the Jupyter components in one go.</p><p>This will install the Jupyter system, including the notebook, qtconsole, and the IPython kernel.</p>",
@@ -570,14 +602,14 @@
 "siteName": "jupyter.org",
 "license": "BSD3",
 "linkToLicense": "https://opensource.org/licenses/BSD-3-Clause",
-"version": "1.1.0",
-"installCommand": "pip install jupyter==1.1.0"
+"version": "11.0",
+"installCommand": "pip install jupyter==11.0"
 }
 },
 {
 "name": "jupyter-cms",
 "tags": [ "web","graphics","languages" ],
-"versions": " 0.7.0",
+"versions": " 0.8.0",
 "info":
 {
 "description": "<p>Content management extensions for Jupyter / IPython Notebook.</p><p>The content management extensions provide the following:</p><ul><li>Search dialog on dashboard, editor, and notebook screens to search over filenames and <code>.ipynb</code> content in the notebook directory</li><li>IPython kernel extension to make Python notebooks reusable as modules and cookbooks (see the <a href='https://github.com/jupyter-incubator/contentmanagement/blob/master/etc/notebooks/cookbooks_demo/use_cookbooks.ipynb'>cookbooks tutorial</a>)</li><li>Full-page drag-and-drop upload target</li><li>Pop-over table of contents navigation for notebooks</li></ul>",
@@ -586,8 +618,8 @@
 "siteName": "github",
 "license": "BSD3",
 "linkToLicense": "https://github.com/jupyter-incubator/contentmanagement/blob/master/LICENSE.md",
-"version": "0.7.0",
-"installCommand": "pip install jupyter-cms==0.7.0"
+"version": "0.8.0",
+"installCommand": "pip install jupyter-cms==0.8.0"
 }
 },
 {
@@ -623,22 +655,6 @@
 }
 },
 {
-"name": "libcairo",
-"tags": [ "graphics" ],
-"versions": " 1.17.4",
-"info":
-{
-"description": "<p>Cairo (stylized as cairo) is an open-source graphics library that provides a vector graphics-based, device-independent API for software developers. </p>",
-"usageNotes": "<p>The cairo manual is available on <a href='https://www.cairographics.org/documentation/'>cairographics.org</a>.</p>",
-"linkToSite": "https://www.cairographics.org/",
-"siteName": "cairographics.org",
-"license": "LGPL-2.1",
-"linkToLicense": "https://github.com/freedesktop/cairo/blob/master/COPYING-LGPL-2.1",
-"version": "1.17.4",
-"installCommand": "pip install libcairo==1.17.4"
-}
-},
-{
 "name": "libjpeg",
 "tags": [ "graphics" ],
 "versions": " 9e",
@@ -657,7 +673,7 @@
 {
 "name": "libpng",
 "tags": [ "graphics" ],
-"versions": " 1.6.39",
+"versions": " 16",
 "info":
 {
 "description": "<p>libpng is the official PNG reference library. It supports almost all PNG features, is extensible, and has been extensively tested for over 23 years. </p>",
@@ -666,14 +682,14 @@
 "siteName": "libpng.org",
 "license": "OTHER",
 "linkToLicense": "http://www.libpng.org/pub/png/src/libpng-LICENSE.txt",
-"version": "1.6.39",
-"installCommand": "pip install libpng==1.6.39"
+"version": "16",
+"installCommand": "pip install libpng==16"
 }
 },
 {
 "name": "libtiff",
 "tags": [ "graphics","utility" ],
-"versions": " 4.4.0",
+"versions": " 4.3.0",
 "info":
 {
 "description": "<p>PyLibTiff is a package that provides:</p>    <p>1- a wrapper to the <a href='http://www.simplesystems.org/libtiff/'>libtiff</a> library to Python using <a href='http://docs.python.org/library/ctypes.html'>ctypes</a>.</p>    <p>2 - a pure Python module for reading and writing TIFF and LSM files. The images are read as <code>numpy.memmap</code> objects so that it is possible to open images that otherwise would not fit to computers RAM. Both TIFF strips and tiles are supported for low-level data storage.</p><p>There exists many Python packages that support reading and writing TIFF files. The PyLibTiff project was started to have an efficient and direct way to read and write TIFF files using the libtiff library without the need to install any unnecessary packages or libraries. The pure Python module was created for reading 'broken' TIFF files such as LSM files that in some places use different interpretation of TIFF tags than what specified in the TIFF specification document. The libtiff library would just fail reading such files. In addition, the pure Python module is more memory efficient as the arrays are returned as memory maps. Support for compressed files is not implemented yet.</p>",
@@ -682,14 +698,14 @@
 "siteName": "github",
 "license": "BSD3",
 "linkToLicense": "https://github.com/pearu/pylibtiff/blob/master/LICENSE",
-"version": "4.4.0",
-"installCommand": "pip install libtiff==4.4.0"
+"version": "4.3.0",
+"installCommand": "pip install libtiff==4.3.0"
 }
 },
 {
 "name": "libxml2",
 "tags": [ "languages" ],
-"versions": " 2.10.3",
+"versions": " 2.9.12",
 "info":
 {
 "description": "<p>Libxml2 is the XML C parser and toolkit developed for the Gnome project (but usable outside of the Gnome platform), it is free software available under the MIT License. XML itself is a metalanguage to design markup languages, i.e. text language where semantic and structure are added to the content using extra 'markup' information enclosed between angle brackets. HTML is the most well-known markup language. Though the library is written in C a variety of language bindings make it available in other environments.</p>",
@@ -698,14 +714,14 @@
 "siteName": "gitlab.gnome.org/GNOME/libxml2",
 "license": "MIT",
 "linkToLicense": "https://gitlab.gnome.org/GNOME/libxml2/-/blob/master/Copyright",
-"version": "2.10.3",
-"installCommand": "pip install libxml2==2.10.3"
+"version": "2.9.12",
+"installCommand": "pip install libxml2==2.9.12"
 }
 },
 {
 "name": "libxslt",
 "tags": [ "programming_tools","utility" ],
-"versions": " 1.1.37",
+"versions": " 1.1.34",
 "info":
 {
 "description": "<p>libxslt is the <a href='https://www.w3.org/TR/xslt'>XSLT</a> C library developed for the GNOME project. XSLT itself is a an XML language to define transformation for XML. libxslt is based on libxml2, the XML C library developed for the GNOME project. It also implements most of the <a href='http://www.exslt.org/'>EXSLT</a> set of processor-portable extension functions and some of Saxon's evaluate and expressions extensions.</p><p>People can either embed the library in their application or use xsltproc, the command line processing tool. This library is free software and can be reused in commercial applications.</p>",
@@ -714,8 +730,8 @@
 "siteName": "gitlab.gnome.org/GNOME/libxslt/",
 "license": "OTHER",
 "linkToLicense": "https://github.com/GNOME/libxslt/blob/master/Copyright",
-"version": "1.1.37",
-"installCommand": "pip install libxslt==1.1.37"
+"version": "1.1.34",
+"installCommand": "pip install libxslt==1.1.34"
 }
 },
 {
@@ -769,7 +785,7 @@
 {
 "name": "markupsafe",
 "tags": [ "security","utility" ],
-"versions": " 2.1.1",
+"versions": " 2.1.2",
 "info":
 {
 "description": "<p>MarkupSafe implements a text object that escapes characters so it is safe to use in HTML and XML. Characters that have special meanings are replaced so that they display as the actual characters. This mitigates injection attacks, meaning untrusted user input can safely be displayed on a page.</p>",
@@ -778,8 +794,8 @@
 "siteName": "palletsprojects.com/p/markupsafe",
 "license": "BSD3",
 "linkToLicense": "https://github.com/pallets/markupsafe/blob/main/LICENSE.rst",
-"version": "2.1.1",
-"installCommand": "pip install markupsafe==2.1.1"
+"version": "2.1.2",
+"installCommand": "pip install markupsafe==2.1.2"
 }
 },
 {
@@ -849,7 +865,7 @@
 {
 "name": "nest-asyncio",
 "tags": [ "utility" ],
-"versions": " 1.5.5",
+"versions": " 1.5.6",
 "info":
 {
 "description": "<p>By design asyncio <a href='https://bugs.python.org/issue22239'>does not allow</a> its event loop to be nested. This presents a practical problem: When in an environment where the event loop is already running it’s impossible to run tasks and wait for the result. Trying to do so will give the error “<code>RuntimeError: This event loop is already running</code>'.</p><p>The issue pops up in various environments, such as web servers, GUI applications and in Jupyter notebooks.</p><p>This module patches asyncio to allow nested use of <code>asyncio.run</code> and <code>loop.run_until_complete</code>.</p>",
@@ -858,8 +874,8 @@
 "siteName": "github",
 "license": "BSD2",
 "linkToLicense": "https://github.com/erdewit/nest_asyncio/blob/master/LICENSE",
-"version": "1.5.5",
-"installCommand": "pip install nest-asyncio==1.5.5"
+"version": "1.5.6",
+"installCommand": "pip install nest-asyncio==1.5.6"
 }
 },
 {
@@ -929,7 +945,7 @@
 {
 "name": "platformdirs",
 "tags": [ "utility" ],
-"versions": " 2.6.2",
+"versions": " 2.5.3",
 "info":
 {
 "description": "<p>platformdirs will help you choose an appropriate storage location for different datasets/logging/cache etc..</p>",
@@ -938,8 +954,8 @@
 "siteName": "https://github.com/ibm-z-oss-oda/platformdirs",
 "license": "MIT",
 "linkToLicense": "https://github.com/ibm-z-oss-oda/platformdirs/blob/main/LICENSE.txt",
-"version": "2.6.2",
-"installCommand": "pip install platformdirs==2.6.2"
+"version": "2.5.3",
+"installCommand": "pip install platformdirs==2.5.3"
 }
 },
 {
@@ -988,6 +1004,22 @@
 "linkToLicense": "https://github.com/prompt-toolkit/python-prompt-toolkit/blob/master/LICENSE",
 "version": "3.0.30",
 "installCommand": "pip install prompt-toolkit==3.0.30"
+}
+},
+{
+"name": "psutil",
+"tags": [ "programming_tools","utility" ],
+"versions": " 5.9.1",
+"info":
+{
+"description": "<p>psutil (process and system utilities) is a cross-platform library for retrieving information on running processes and system utilization (CPU, memory, disks, network, sensors) in Python. It is useful mainly for system monitoring, profiling and limiting process resources and management of running processes. It implements many functionalities offered by classic UNIX command line tools such as <i>ps, top, iotop, lsof, netstat, ifconfig, free</i> and others.</p>",
+"usageNotes": "<p>Examples on <a href='https://github.com/giampaolo/psutil/blob/master/README.rst'>github</a> cover the entirety of the psutil API.</p>",
+"linkToSite": "https://github.com/giampaolo/psutil",
+"siteName": "github",
+"license": "BSD3",
+"linkToLicense": "https://github.com/giampaolo/psutil/blob/master/LICENSE",
+"version": "5.9.1",
+"installCommand": "pip install psutil==5.9.1"
 }
 },
 {
@@ -1105,7 +1137,7 @@
 {
 "name": "python-dateutil",
 "tags": [ "programming_tools","utility" ],
-"versions": " 2.8.2",
+"versions": " 2.8.3",
 "info":
 {
 "description": "<p>The dateutil module provides powerful extensions to the standard datetime module, available in Python.</p><p>Features include:</p><ul><li>Computing of relative deltas (next month, next year, next Monday, last week of month, etc);</li><li>Computing of relative deltas between two given date and/or datetime objects;</li><li>Computing of dates based on very flexible recurrence rules, using a superset of the iCalendar specification. Parsing of RFC strings is supported as well.</li><li>Generic parsing of dates in almost any string format;</li><li>Timezone (tzinfo) implementations for tzfile(5) format files (/etc/localtime, /usr/share/zoneinfo, etc), TZ environment string (in all known formats), iCalendar format files, given ranges (with help from relative deltas), local machine timezone, fixed offset timezone, UTC timezone, and Windows registry-based time zones.</li><li>Internal up-to-date world timezone information based on Olson's database.</li><li>Computing of Easter Sunday dates for any given year, using Western, Orthodox or Julian algorithms;</li><li>A comprehensive test suite.</li></ul>",
@@ -1114,8 +1146,8 @@
 "siteName": "github",
 "license": "OTHER",
 "linkToLicense": "https://github.com/dateutil/dateutil/blob/master/LICENSE",
-"version": "2.8.2",
-"installCommand": "pip install python-dateutil==2.8.2"
+"version": "2.8.3",
+"installCommand": "pip install python-dateutil==2.8.3"
 }
 },
 {
@@ -1156,7 +1188,7 @@
 "versions": " 24.0.1",
 "info":
 {
-"description": "<p>This package contains Python bindings for <a href='https://zeromq.org/'>ØMQ</a>. ØMQ is a lightweight and fast messaging implementation.</p><div>Current sha265 values:<div>(cp310) <code>pyzmq==24.0.1 --hash=sha256:6bae864246c61de2490afa75445928bff1098a05b1875303cd24413094c8352c</code></div><div>(cp311) <code>pyzmq==24.0.1 --hash=sha256:96787f42a61916311549aacd47e4bca100092d51ab0f098cbb3f778fcdd241fc</code></div></div>",
+"description": "<p>This package contains Python bindings for <a href='https://zeromq.org/'>ØMQ</a>. ØMQ is a lightweight and fast messaging implementation.</p>",
 "usageNotes": "<p>For usage instructions, please refer to <a href='https://zguide.zeromq.org/'>zguide.zeromq.org</a>, which implements every example in pyzmq.</p>",
 "linkToSite": "https://pyzmq.readthedocs.io/en/latest/",
 "siteName": "readthedocs.io",
@@ -1249,7 +1281,7 @@
 {
 "name": "setuptools",
 "tags": [ "utility" ],
-"versions": " 67.1.0",
+"versions": " 58.3.0",
 "info":
 {
 "description": "<p><code>setuptools</code> comprises a useful component for <a href='https://packaging.python.org/en/latest/tutorials/installing-packages/#ensure-pip-setuptools-and-wheel-are-up-to-date'>Python Packaging / Package Management</a> along with <code>pip</code> and <code>wheel</code>.</p><p>Setuptools is a fully-featured, actively-maintained, and stable library designed to facilitate packaging Python projects.</p>",
@@ -1258,8 +1290,8 @@
 "siteName": "github",
 "license": "MIT",
 "linkToLicense": "https://github.com/pypa/setuptools/blob/main/LICENSE",
-"version": "67.1.0",
-"installCommand": "pip install setuptools==67.1.0"
+"version": "58.3.0",
+"installCommand": "pip install setuptools==58.3.0"
 }
 },
 {
@@ -1295,6 +1327,22 @@
 }
 },
 {
+"name": "soupsieve",
+"tags": [ "utility" ],
+"versions": " 2.4",
+"info":
+{
+"description": "<p>Soup Sieve is a CSS selector library designed to be used with Beautiful Soup 4. It aims to provide selecting, matching, and filtering using modern CSS selectors. </p>",
+"usageNotes": "<p>For advanced tool documentation, refer to <a href='https://github.com/facelessuser/soupsieve'>github.com</a>.</p>",
+"linkToSite": "https://github.com/ibm-z-oss-oda/soupsieve",
+"siteName": "https://github.com/ibm-z-oss-oda/soupsieve",
+"license": "MIT",
+"linkToLicense": "https://github.com/ibm-z-oss-oda/soupsieve/blob/main/LICENSE.md",
+"version": "2.4",
+"installCommand": "pip install soupsieve==2.4"
+}
+},
+{
 "name": "sortedcontainers",
 "tags": [ "programming_tools" ],
 "versions": " 2.4.0",
@@ -1311,25 +1359,9 @@
 }
 },
 {
-"name": "soupsieve",
-"tags": [ "utility" ],
-"versions": " 2.4.post1",
-"info":
-{
-"description": "<p>Soup Sieve is a CSS selector library designed to be used with Beautiful Soup 4. It aims to provide selecting, matching, and filtering using modern CSS selectors. </p>",
-"usageNotes": "<p>For advanced tool documentation, refer to <a href='https://github.com/facelessuser/soupsieve'>github.com</a>.</p>",
-"linkToSite": "https://github.com/ibm-z-oss-oda/soupsieve",
-"siteName": "https://github.com/ibm-z-oss-oda/soupsieve",
-"license": "MIT",
-"linkToLicense": "https://github.com/ibm-z-oss-oda/soupsieve/blob/main/LICENSE.md",
-"version": "2.4.post1",
-"installCommand": "pip install soupsieve==2.4.post1"
-}
-},
-{
 "name": "stack-data",
 "tags": [ "utility" ],
-"versions": " 0.6.2",
+"versions": " 0.3.1",
 "info":
 {
 "description": "<p>This is a library that extracts data from stack frames and tracebacks, particularly to display more useful tracebacks than the default.  </p>",
@@ -1338,8 +1370,8 @@
 "siteName": "https://github.com/ibm-z-oss-oda/stack_data",
 "license": "MIT",
 "linkToLicense": "https://github.com/ibm-z-oss-oda/stack_data/blob/master/LICENSE.txt",
-"version": "0.6.2",
-"installCommand": "pip install stack-data==0.6.2"
+"version": "0.3.1",
+"installCommand": "pip install stack-data==0.3.1"
 }
 },
 {
@@ -1359,25 +1391,9 @@
 }
 },
 {
-"name": "tdqm",
-"tags": [ "utility" ],
-"versions": " 0.0.1",
-"info":
-{
-"description": "<p>Alias for typos of <a href='https://github.com/tqdm/tqdm'tqdm</a>.</p>",
-"usageNotes": "<p>This package simply provides an alias for <code>tqdm</code>.</p>",
-"linkToSite": "https://github.com/tqdm/tqdm",
-"siteName": "github",
-"license": "OTHER",
-"linkToLicense": "https://github.com/tqdm/tqdm/blob/master/LICENCE",
-"version": "0.0.1",
-"installCommand": "pip install tdqm==0.0.1"
-}
-},
-{
 "name": "tqdm",
 "tags": [ "graphics" ],
-"versions": " 4.64.1",
+"versions": " 0.0.1 4.64.1",
 "info":
 {
 "description": "<p><code>tqdm</code> means 'progress' in Arabic (taqadum) and is an abbreviation for 'I love you so much' in Spanish (te quiero demasiado).</p><p>Instantly make your loops show a smart progress meter - just wrap any iterable with tqdm(iterable), and you're done!</p>",
