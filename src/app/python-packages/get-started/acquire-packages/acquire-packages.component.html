@@ -7,12 +7,16 @@
     </div>
     <br>
     <div class="steps">
-        {{_messageService.getBundle('SET_UP_ENV_OVERVIEW')}}
+        {{_messageService.getBundle('ACQUIRE_PACKAGES_OVERVIEW4')}} 
     </div>
 
     <div class="bodyLong02">{{_messageService.getBundle('ACQUIRE_ALL_PACKAGES')}}</div>
     <div class="steps">
         {{_messageService.getBundle('ACQUIRE_ALL_PACKAGES_STEP_DESC_1')}}
+    </div>
+    <br>
+    <div class="steps">
+        {{_messageService.getBundle('ACQUIRE_ALL_PACKAGES_STEP_DESC_1_1')}}
     </div>
     <div class="marginTopBottom24">
         <ibm-code-snippet display="single" >
@@ -22,10 +26,6 @@
 
     <div class="steps">
         {{_messageService.getBundle('ACQUIRE_ALL_PACKAGES_STEP_DESC_2')}}
-        <a (click)="launchReq310()">{{_messageService.getBundle('ACQUIRE_ALL_PACKAGES_STEP_DESC_3')}}</a>
-        {{_messageService.getBundle('ACQUIRE_ALL_PACKAGES_STEP_DESC_4')}}
-        <a (click)="launchReq311()">{{_messageService.getBundle('ACQUIRE_ALL_PACKAGES_STEP_DESC_5')}}</a>
-        {{_messageService.getBundle('ACQUIRE_ALL_PACKAGES_STEP_DESC_6')}}
     </div>
 
     <div class="bodyLong02">{{_messageService.getBundle('ACQUIRE_INDIV_PACKAGES')}}</div>
@@ -40,12 +40,22 @@
     <div class="steps">
         {{_messageService.getBundle('ACQUIRE_INDIV_PACKAGES_STEPS2')}}
     </div>
+
+    <div class="marginTopBottom24">
+        <ibm-code-snippet display="multi" >
+            {{command}}
+        </ibm-code-snippet>
+    </div>
+
+    <div class="steps">
+        {{_messageService.getBundle('ACQUIRE_INDIV_PACKAGES_STEPS3')}}
+    </div>
     <div class="marginTopBottom24">
         <ibm-code-snippet display="single" >
-            {{pyyamlCommand6}}
+            {{installCommand2}}
         </ibm-code-snippet>
     </div>
     <div class="steps">
-        {{_messageService.getBundle('ACQUIRE_INDIV_PACKAGES_STEPS3')}}
+        {{_messageService.getBundle('ACQUIRE_INDIV_PACKAGES_STEPS4')}}
     </div>
 </div>

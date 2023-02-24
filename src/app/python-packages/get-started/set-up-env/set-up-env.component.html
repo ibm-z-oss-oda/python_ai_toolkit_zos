@@ -1,18 +1,30 @@
 <div>
     <div class="bodyLong02">{{_messageService.getBundle('OVERVIEW')}}</div>
     <div class="steps">
-        {{_messageService.getBundle('SET_UP_ENV_OVERVIEW')}}
-    </div>
-
-    <div class="bodyLong02">{{_messageService.getBundle('SET_UP_ENV_PRE_REQ')}}</div>
-    <div class="steps">
-        {{_messageService.getBundle('SET_UP_ENV_PRE_REQ_STEPS1')}}
-        <a (click)="launchOpenSDK()">{{_messageService.getBundle('SET_UP_ENV_PRE_REQ_STEPS2')}}</a> 
+        {{_messageService.getBundle('SET_UP_ENV_OVERVIEW1')}}
+        <br><br>
+        {{_messageService.getBundle('SET_UP_ENV_OVERVIEW2')}}
+        <br><br>
+        {{_messageService.getBundle('SET_UP_ENV_OVERVIEW3_1')}}
+        <a (click)="launchPipDocs()">{{_messageService.getBundle('SET_UP_ENV_OVERVIEW3_2')}}</a>
+        {{_messageService.getBundle('SET_UP_ENV_OVERVIEW3_3')}}
+        <br><br>
+        {{_messageService.getBundle('SET_UP_ENV_OVERVIEW4')}}
     </div>
 
     <div class="bodyLong02">{{_messageService.getBundle('SET_UP_ENV_ALL_PACKAGES')}}</div>
     <div class="steps">
-        {{_messageService.getBundle('SET_UP_ENV_ALL_PACKAGES_STEPS')}}
+        {{_messageService.getBundle('SET_UP_ENV_ALL_PACKAGES_STEPS1_1')}}
+        <a (click)="launchReq()">{{_messageService.getBundle('SET_UP_ENV_ALL_PACKAGES_STEPS1_2')}}</a>
+        {{_messageService.getBundle('SET_UP_ENV_ALL_PACKAGES_STEPS1_3')}}
+    </div>
+    <div class="marginTopBottom24">
+        <ibm-code-snippet display="multi" >
+            {{command2}}
+        </ibm-code-snippet>
+    </div>
+    <div class="steps">
+        {{_messageService.getBundle('SET_UP_ENV_ALL_PACKAGES_STEPS2')}}
     </div>
 
     <div class="bodyLong02">{{_messageService.getBundle('SET_UP_ENV_INDIV_PACKAGES')}}</div>
@@ -26,8 +38,5 @@
     </div>
     <div class="steps">
         {{_messageService.getBundle('SET_UP_ENV_INDIV_PACKAGES_STEPS2')}}
-    </div>
-    <div class="steps marginTopBottom24">
-        {{_messageService.getBundle('SET_UP_ENV_INDIV_PACKAGES_STEPS3')}}
     </div>
 </div>
