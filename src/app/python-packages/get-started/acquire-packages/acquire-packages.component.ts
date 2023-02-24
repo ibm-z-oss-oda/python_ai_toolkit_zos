@@ -8,7 +8,7 @@ import { MessageService } from '../../services/message.service';
   styleUrls: ['./acquire-packages.component.scss']
 })
 export class AcquirePackagesComponent implements OnInit {
-  installCommand: string = `pip install -r requirements.txt`;
+  installCommand: string = `pip install --no-deps -r requirements.txt`;
 
   pyyamlCommand: string = `pip install pyyaml`;
 
