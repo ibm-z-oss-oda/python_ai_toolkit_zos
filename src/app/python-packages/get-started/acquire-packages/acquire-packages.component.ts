@@ -14,7 +14,8 @@ export class AcquirePackagesComponent implements OnInit {
 
   pyyamlCommand6: string = `pip install pyyaml==6.0`;
 
-  github: string = "https://github.ibm.com/";
+  py310url: string = "https://ibm.biz/BdPnfF";
+  py311url: string = "https://ibm.biz/BdPnfE";
   
   constructor(public _messageService: MessageService, public headService: HeaderService) { }
 
@@ -29,7 +30,11 @@ export class AcquirePackagesComponent implements OnInit {
     this.headService.packageInfoData = null;
   }
 
-  launchGithub() {
-    window.open(this.github);
+  launchReq310() {
+    window.open(this.py310url);
+  }
+
+  launchReq311() {
+    window.open(this.py311url);
   }
 }
