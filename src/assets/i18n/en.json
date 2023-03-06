@@ -69,6 +69,8 @@
         "PACKAGES_LICSEN": "License",
         "PACKAGES_VIEW_LICSEN": "View license information",
         "PACKAGES_VIEW_LICSEN_HERE": "here",
+        "PACKAGE_NEW_LICSEN_STRING1": "License - International Program License Agreement (IPLA) ",
+        "PACKAGE_NEW_LICSEN_STRING2":"The third party code identified above is subject to the terms and conditions of the IBM license agreement for the Program and not the license terms that may be contained in the Open Source repository link below.",
         "PACKAGES_LICSEN_DESC1": "As with all Python packages, these likely also contain other software which may be under other licenses (such as Bash, etc, along with any direct or indirect dependencies of the primary software being contained).",
         "PACKAGES_LICSEN_DESC2": "As for any pre-built package usage, it is the package user's responsibility to ensure that any use of this package complies with any relevant licenses for all software contained within.",
         "PACKAGES_VERSIONS": "Versions",

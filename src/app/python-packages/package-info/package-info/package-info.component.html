@@ -1,16 +1,15 @@
-
 <div>
   <div style="margin-bottom: 48px;">
     <ibm-breadcrumb  [noTrailingSlash]="noTrailingSlash">
       <ibm-breadcrumb-item>
-       <a (click)="goToHome()"> {{_messageService.getBundle('PACKAGES')}} </a> 
+       <a (click)="goToHome()"> {{_messageService.getBundle('PACKAGES')}} </a>
       </ibm-breadcrumb-item>
     </ibm-breadcrumb>
   </div>
   <div>
     <div class="imageNameTagLine">
       <!--package name-->
-      <div class="imageName">{{packageInfoData.name}}</div> 
+      <div class="imageName">{{packageInfoData.name}}</div>
       <!--package tags-->
       <span *ngFor="let tag of packageInfoData.tags">
         <ibm-tag [type]="checkTagType(tag)">{{tag}}</ibm-tag>
@@ -26,14 +25,16 @@
       {{_messageService.getBundle('PACKAGES_DESC3')}}
     </p>
   </div>
-  
+
   <!--package License-->
   <div>
     <div class="heading02">{{_messageService.getBundle('PACKAGES_LICSEN')}}</div>
-    <p>
       <!--package linkToLicense-->
-      {{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}</a>
-    </p>
+      <p *ngIf="packageInfoData.name == 'chardet'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}</a></p>
+      <p *ngIf="packageInfoData.name == 'glib'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}</a></p>
+      <p *ngIf="packageInfoData.name == 'pyzmq'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}</a></p>
+      <p *ngIf="packageInfoData.name == 'freetype2'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}</a></p>
+      <div *ngIf="packageInfoData.name != 'freetype2' && packageInfoData.name != 'chardet' && packageInfoData.name != 'glib' && packageInfoData.name != 'pyzmq'"><p><i>{{_messageService.getBundle('PACKAGE_NEW_LICSEN_STRING1')}}</i></p><p><i>{{_messageService.getBundle('PACKAGE_NEW_LICSEN_STRING2')}}</i></p></div>
     <div>
       <!--package License description-->
       <p>
