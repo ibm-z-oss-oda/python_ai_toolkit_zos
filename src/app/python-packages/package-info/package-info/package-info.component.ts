@@ -58,7 +58,7 @@ export class PackageInfoComponent implements OnInit {
     console.log(this.shaValues)
     let arr = Array.from(this.shaValues)
     arr.forEach(nm =>{
-      if ((nm[0] as string).split('==')[0] == name) {
+      if ((nm[0] as string).split('==')[0].replace('-','').replace('_','') == name.replace('-','').replace('_','')) {
         let removeFirst = nm.shift()
         let VersionsArr = Array.from(nm)
         if(versions != null && versions != "" && versions != undefined) {
