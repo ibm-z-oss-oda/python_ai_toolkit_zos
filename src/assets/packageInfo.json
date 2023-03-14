@@ -272,16 +272,16 @@
 },
 {
 "name": "ebcdic",
-"tags": [ "na" ],
+"tags": [ "Utility" ],
 "versions": " 1.1.1",
 "info":
 {
-"description": "To be added",
-"usageNotes": "na",
-"linkToSite": "na",
-"siteName": "na",
-"license": "na",
-"linkToLicense": "na",
+"description": "<p>EBCDIC is short for Extended Binary Coded Decimal Interchange Code and is a family of character encodings that is mainly used on mainframe computers. </p>",
+"usageNotes": "<p>For advanced tool documentation, refer to <a href='https://pypi.org/project/ebcdic/'>pypi.org</a>.</p>",
+"linkToSite": "https://pypi.org/project/ebcdic/",
+"siteName": "https://pypi.org/project/ebcdic/",
+"license": "BSD",
+"linkToLicense": "https://pypi.org/project/ebcdic/",
 "version": "1.1.1",
 "installCommand": "ebcdic==1.1.1 --hash=sha256:<hash>"
 }
@@ -404,12 +404,12 @@
 "versions": " 2.56.4",
 "info":
 {
-"description": "<p>This is a python graphics library that piggy-backs off of pyqt5</p><h1>Problem: No link to source repo AT ALL on <a herf='https://pypi.org/project/glib/'>pypi.org</a>. Must fix!</h1>",
-"usageNotes": "na",
-"linkToSite": "na",
-"siteName": "na",
-"license": "na",
-"linkToLicense": "na",
+"description": "<p>GLib is the low-level core library that forms the basis for projects such as GTK and GNOME. It provides data structure handling for C, portability wrappers, and interfaces for such runtime functionality as an event loop, threads, dynamic loading, and an object system.</p>",
+"usageNotes": "<p>Please refer to documentation on <a href='https://docs.gtk.org/glib/'>docs.gtk.org</a>.</p>",
+"linkToSite": "https://www.gtk.org/",
+"siteName": "https://www.gtk.org/",
+"license": "LGPL",
+"linkToLicense": "https://github.ibm.com/ibm-z-oss-oda/glib/blob/main/LICENSES/LGPL-2.1-or-later.txt",
 "version": "2.56.4",
 "installCommand": "glib==2.56.4 --hash=sha256:<hash>"
 }
@@ -511,19 +511,19 @@
 }
 },
 {
-"name": "ipython-gentuils",
-"tags": [ "na" ],
+"name": "ipython-genutils",
+"tags": [ "Utility" ],
 "versions": " 0.3.0",
 "info":
 {
-"description": "<p>Pretend this doesn’t exist. Nobody should use it.</p><h1>Obviously this description raises eyebrows</h1>",
-"usageNotes": "<p>TBA</p>",
+"description": "<p>Vestigial utilities from IPython.</p>",
+"usageNotes": "<p>For advanced tool documentation, refer to <a href='https://ipython.org/ipython-doc/rel-0.10.2/html/api/generated/IPython.genutils.html'>ipython.org</a>.</p>",
 "linkToSite": "http://ipython.org/",
 "siteName": "ipython.org",
 "license": "BSD3",
 "linkToLicense": "https://github.com/ipython/ipython_genutils/blob/master/COPYING.md",
 "version": "0.3.0",
-"installCommand": "ipython-gentuils==0.3.0 --hash=sha256:<hash>"
+"installCommand": "ipython-genutils==0.3.0 --hash=sha256:<hash>"
 }
 },
 {
