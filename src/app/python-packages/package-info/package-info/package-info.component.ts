@@ -29,7 +29,7 @@ export class PackageInfoComponent implements OnInit {
     this.shaValues = data;
     setTimeout(() => {
       this.construcePullStrRowData();
-    }, 0);
+    }, 1);
     // set the scroll bar to top
     window.scrollTo(0, 0);
   }
@@ -55,7 +55,6 @@ export class PackageInfoComponent implements OnInit {
   construcePullStrRowData() {
     let versions: string = this.packageInfoData.versions;
     let name: string = this.packageInfoData.name;
-    console.log(this.shaValues)
     let arr = Array.from(this.shaValues)
     arr.forEach(nm =>{
       if ((nm[0] as string).split('==')[0].replace('-','').replace('_','') == name.replace('-','').replace('_','')) {
@@ -68,6 +67,7 @@ export class PackageInfoComponent implements OnInit {
             let pullStrbject: PullStrbject  = new PullStrbject(version, pullStr, "https://en.wikipedia.org/wiki/Clown");
             this.pullStrRowData.push(pullStrbject);
           });
+        let appendFirst = nm.unshift(removeFirst)
         }
       }
     })
