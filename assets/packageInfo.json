@@ -10,8 +10,8 @@
 "siteName": "bitbucket.org",
 "license": "BSD3",
 "linkToLicense": "https://bitbucket.org/nielsenb/aniso8601/src/master/LICENSE",
-"version": "9.0.1",
-"installCommand": "aniso8601==9.0.1 --hash=sha256:<hash>"
+"version": "(py3) 9.0.1",
+"installCommand": "aniso8601==9.0.1 --hash=sha256:cf9e7fa3cf8f85ed2e99e1aaddff98c27a37c7b3d90c77074aa7415123f66c5a"
 }
 },
 {
@@ -26,8 +26,8 @@
 "siteName": "readthedocs.io",
 "license": "MIT",
 "linkToLicense": "https://github.com/hynek/argon2-cffi/blob/main/LICENSE",
-"version": "21.3.0",
-"installCommand": "argon2-cffi==21.3.0 --hash=sha256:<hash>"
+"version": "(py3) 21.3.0",
+"installCommand": "argon2-cffi==21.3.0 --hash=sha256:cf9e7fa3cf8f85ed2e99e1aaddff98c27a37c7b3d90c77074aa7415123f66c5a"
 }
 },
 {
@@ -42,8 +42,8 @@
 "siteName": "github",
 "license": "MIT",
 "linkToLicense": "https://github.com/hynek/argon2-cffi-bindings/blob/main/LICENSE",
-"version": "21.2.0",
-"installCommand": "argon2-cffi-bindings==21.2.0 --hash=sha256:<hash>"
+"version": "(py3) 21.2.0",
+"installCommand": "argon2-cffi-bindings==21.2.0 --hash=sha256:cf9e7fa3cf8f85ed2e99e1aaddff98c27a37c7b3d90c77074aa7415123f66c5a"
 }
 },
 {
@@ -58,8 +58,8 @@
 "siteName": "github",
 "license": "APACHE2",
 "linkToLicense": "https://github.com/gristlabs/asttokens/blob/master/LICENSE",
-"version": "2.2.1",
-"installCommand": "asttokens==2.2.1 --hash=sha256:<hash>"
+"version": "(py3) 2.2.1",
+"installCommand": "asttokens==2.2.1 --hash=sha256:6b0ac9e93fb0335014d382b8fa9b3afa7df546984258005da0b9e7095b3deb1c"
 }
 },
 {
@@ -74,8 +74,8 @@
 "siteName": "attrs.org",
 "license": "MIT",
 "linkToLicense": "https://github.com/python-attrs/attrs/blob/main/LICENSE",
-"version": "22.2.0",
-"installCommand": "attrs==22.2.0 --hash=sha256:<hash>"
+"version": "(py3) 22.2.0",
+"installCommand": "attrs==22.2.0 --hash=sha256:29e95c7f6778868dbd49170f98f8818f78f3dc5e0e37c0b1f474e3561b240836"
 }
 },
 {
@@ -90,8 +90,8 @@
 "siteName": "github",
 "license": "BSD3",
 "linkToLicense": "https://github.com/takluyver/backcall/blob/master/LICENSE",
-"version": "0.2.0",
-"installCommand": "backcall==0.2.0 --hash=sha256:<hash>"
+"version": "(py3) 0.2.0",
+"installCommand": "backcall==0.2.0 --hash=sha256:e0a55adb4d86fa337ea93cf29c79a27b063945a4f8d5ca16122cd0fa9fbc5222"
 }
 },
 {
@@ -106,8 +106,8 @@
 "siteName": "https://www.crummy.com/software/BeautifulSoup/",
 "license": "MIT License (MIT)",
 "linkToLicense": "https://github.com/wention/BeautifulSoup4/blob/master/COPYING.txt",
-"version": "4.11.1",
-"installCommand": "beautifulsoup4==4.11.1 --hash=sha256:<hash>"
+"version": "(py3) 4.11.1",
+"installCommand": "beautifulsoup4==4.11.1 --hash=sha256:1d24392d77fafbbec078c74ec0cff269424ec8323302970bfe0cf44a24cccf0b"
 }
 },
 {
@@ -122,8 +122,8 @@
 "siteName": "github",
 "license": "github",
 "linkToLicense": "MISSING",
-"version": "0.98",
-"installCommand": "bz2file==0.98 --hash=sha256:<hash>"
+"version": "(py3) 0.98",
+"installCommand": "bz2file==0.98 --hash=sha256:d597ac953f7e0a66604a2d497f6b2091bae1585333830e4d316baeafe61db715"
 }
 },
 {
@@ -138,8 +138,8 @@
 "siteName": "github",
 "license": "BSD3",
 "linkToLicense": "https://github.com/Kozea/cairocffi/blob/master/LICENSE",
-"version": "1.3.0",
-"installCommand": "cairocffi==1.3.0 --hash=sha256:<hash>"
+"version": "(py3) 1.3.0",
+"installCommand": "cairocffi==1.3.0 --hash=sha256:397d362668c25afc748648eed9826f4ec63ee59b6c5d7bd47cc62a92a94c3107"
 }
 },
 {
@@ -154,8 +154,8 @@
 "siteName": "readthedocs.io",
 "license": "MPL",
 "linkToLicense": "https://github.com/certifi/python-certifi/blob/master/LICENSE",
-"version": "2022.12.7",
-"installCommand": "certifi==2022.12.7 --hash=sha256:<hash>"
+"version": "(py3) 2022.12.7",
+"installCommand": "certifi==2022.12.7 --hash=sha256:4ad3232f5e926d6718ec31cfc1fcadfde020920e278684144551c91769c7bc18"
 }
 },
 {
@@ -170,8 +170,8 @@
 "siteName": "readthedocs.io",
 "license": "MIT",
 "linkToLicense": "https://foss.heptapod.net/pypy/cffi/-/blob/branch/default/LICENSE",
-"version": "1.14.6",
-"installCommand": "cffi==1.14.6 --hash=sha256:<hash>"
+"version": "(cp310) 1.14.6",
+"installCommand": "cffi==1.14.6 --hash=sha256:b4a0f3f44181f07e85d5f6720b8fa3347c24cb481d32d34d25185ec2ad27f7e6"
 }
 },
 {
@@ -186,8 +186,8 @@
 "siteName": "github",
 "license": "LGPL",
 "linkToLicense": "https://github.com/chardet/chardet/blob/master/LICENSE",
-"version": "5.0.0",
-"installCommand": "chardet==5.0.0 --hash=sha256:<hash>"
+"version": "(py3) 5.0.0",
+"installCommand": "chardet==5.0.0 --hash=sha256:94d1ca5fdadb2b4ae24a1f83b8dd15cfe7a735620cc86d626dc50dc271476750"
 }
 },
 {
@@ -202,8 +202,8 @@
 "siteName": "github",
 "license": "MIT",
 "linkToLicense": "https://github.com/Ousret/charset_normalizer/blob/master/LICENSE",
-"version": "2.1.0",
-"installCommand": "charset-normalizer==2.1.0 --hash=sha256:<hash>"
+"version": "(py3) 2.1.0",
+"installCommand": "charset-normalizer==2.1.0 --hash=sha256:94d1ca5fdadb2b4ae24a1f83b8dd15cfe7a735620cc86d626dc50dc271476750"
 }
 },
 {
@@ -218,8 +218,8 @@
 "siteName": "matplotlib.org",
 "license": "BSD3",
 "linkToLicense": "https://github.com/matplotlib/cycler/blob/main/LICENSE",
-"version": "0.11.0",
-"installCommand": "cycler==0.11.0 --hash=sha256:<hash>"
+"version": "(py3) 0.11.0",
+"installCommand": "cycler==0.11.0 --hash=sha256:9a5d8a7d291a226322e0ba5ce133e7055ffb89846bfcf194e8f27215bf97f17b"
 }
 },
 {
@@ -234,8 +234,8 @@
 "siteName": "github",
 "license": "BSD2",
 "linkToLicense": "https://github.com/micheles/decorator/blob/master/LICENSE.txt",
-"version": "5.1.1",
-"installCommand": "decorator==5.1.1 --hash=sha256:<hash>"
+"version": "(py3) 5.1.1",
+"installCommand": "decorator==5.1.1 --hash=sha256:b7b96928da4fe199532fc066c932e3854954249ed01d5596025a0740a07ad4e6"
 }
 },
 {
@@ -250,8 +250,8 @@
 "siteName": "github",
 "license": "OTHER",
 "linkToLicense": "https://github.com/tiran/defusedxml/blob/main/LICENSE",
-"version": "0.7.1",
-"installCommand": "defusedxml==0.7.1 --hash=sha256:<hash>"
+"version": "(py3) 0.7.1",
+"installCommand": "defusedxml==0.7.1 --hash=sha256:09078b85bd1e6c8c1185dddf14c6dd65293d89698159ce66ca8bca554a3209c0"
 }
 },
 {
@@ -266,8 +266,8 @@
 "siteName": "https://github.com/pypa/distlib",
 "license": "Python Software Foundation",
 "linkToLicense": "https://github.com/pypa/distlib/blob/master/LICENSE.txt",
-"version": "0.3.6",
-"installCommand": "distlib==0.3.6 --hash=sha256:<hash>"
+"version": "(py3) 0.3.6",
+"installCommand": "distlib==0.3.6 --hash=sha256:f35c4b692542ca110de7ef0bea44d73981caeb34ca0b9b6b2e6d7790dda8f80e"
 }
 },
 {
@@ -282,8 +282,8 @@
 "siteName": "https://pypi.org/project/ebcdic/",
 "license": "BSD",
 "linkToLicense": "https://pypi.org/project/ebcdic/",
-"version": "1.1.1",
-"installCommand": "ebcdic==1.1.1 --hash=sha256:<hash>"
+"version": "(py3) 1.1.1",
+"installCommand": "ebcdic==1.1.1 --hash=sha256:5f7084965467af4931278f1464629f4c273c41a182248cdbe7b3ad0de4158c2e"
 }
 },
 {
@@ -298,8 +298,8 @@
 "siteName": "github",
 "license": "MIT",
 "linkToLicense": "https://github.com/takluyver/entrypoints/blob/master/LICENSE",
-"version": "0.4",
-"installCommand": "entrypoints==0.4 --hash=sha256:<hash>"
+"version": "(py3) 0.4",
+"installCommand": "entrypoints==0.4 --hash=sha256:49c1e85ebfaa0d251db6e2d1f6dba2c69316e88907c71048f1cb4cde33aac320"
 }
 },
 {
@@ -314,8 +314,8 @@
 "siteName": "github",
 "license": "MIT",
 "linkToLicense": "https://github.com/alexmojaki/executing/blob/master/LICENSE.txt",
-"version": "1.2.0",
-"installCommand": "executing==1.2.0 --hash=sha256:<hash>"
+"version": "(py3) 1.2.0",
+"installCommand": "executing==1.2.0 --hash=sha256:0314a69e37426e3608aada02473b4161d4caf5a4b244d1d0c48072b8fee7bacc"
 }
 },
 {
@@ -330,8 +330,8 @@
 "siteName": "github.io",
 "license": "BSD3",
 "linkToLicense": "https://github.com/horejsek/python-fastjsonschema/blob/master/LICENSE",
-"version": "2.15.3",
-"installCommand": "fastjsonschema==2.15.3 --hash=sha256:<hash>"
+"version": "(py3) 2.15.3",
+"installCommand": "fastjsonschema==2.15.3 --hash=sha256:865ce7445a01980c71db1a3c3c7624621dc5cad6ec381a231e9a2c575aeda48c"
 }
 },
 {
@@ -346,8 +346,8 @@
 "siteName": "https://github.com/tox-dev/py-filelock",
 "license": "Unlicense",
 "linkToLicense": "https://github.com/tox-dev/py-filelock/blob/main/LICENSE",
-"version": "3.9.0",
-"installCommand": "filelock==3.9.0 --hash=sha256:<hash>"
+"version": "(py3) 3.9.0",
+"installCommand": "filelock==3.9.0 --hash=sha256:f58d535af89bb9ad5cd4df046f741f8553a418c01a7856bf0d173bbc9f6bd16d"
 }
 },
 {
@@ -362,8 +362,8 @@
 "siteName": "palletsprojects.com/p/flask",
 "license": "BSD3",
 "linkToLicense": "https://github.com/pallets/flask/blob/main/LICENSE.rst",
-"version": "2.0.2",
-"installCommand": "flask==2.0.2 --hash=sha256:<hash>"
+"version": "(py3) 2.0.2",
+"installCommand": "flask==2.0.2 --hash=sha256:9bc3ffe78eab96550031cbb81e2252b614b92973f12b1107ae10e843e7e1985b"
 }
 },
 {
@@ -378,8 +378,8 @@
 "siteName": "freedesktop.org",
 "license": "OTHER",
 "linkToLicense": "https://github.com/freedesktop/fontconfig/blob/master/COPYING",
-"version": "2.14.1",
-"installCommand": "fontconfig==2.14.1 --hash=sha256:<hash>"
+"version": "(py3) 2.14.1",
+"installCommand": "fontconfig==2.14.1 --hash=sha256:f0914abdfd034acf83b39bc1f7513c9a00a84795adaffe2b6c2bfa8ab7c73d92"
 }
 },
 {
@@ -394,8 +394,8 @@
 "siteName": "freetype.org",
 "license": "OTHER",
 "linkToLicense": "https://gitlab.freedesktop.org/freetype/freetype/-/blob/master/LICENSE.TXT",
-"version": "2.12.2",
-"installCommand": "freetype2==2.12.2 --hash=sha256:<hash>"
+"version": "(py3) 2.12.2",
+"installCommand": "freetype2==2.12.2 --hash=sha256:17ab65cda7aa6830db2c3b936236c8081c10dfd4c5a5d76d4c36a07cc45d3499"
 }
 },
 {
@@ -410,8 +410,8 @@
 "siteName": "https://www.gtk.org/",
 "license": "LGPL",
 "linkToLicense": "https://github.ibm.com/ibm-z-oss-oda/glib/blob/main/LICENSES/LGPL-2.1-or-later.txt",
-"version": "2.56.4",
-"installCommand": "glib==2.56.4 --hash=sha256:<hash>"
+"version": "(py3) 2.56.4",
+"installCommand": "glib==2.56.4 --hash=sha256:06150a7e52afe8317d8843e13b55a8f8f6b99af3f35721e9bd3322a12e2c3693"
 }
 },
 {
@@ -426,8 +426,8 @@
 "siteName": "harfbuzz.github.io",
 "license": "OTHER",
 "linkToLicense": "https://github.com/harfbuzz/harfbuzz/blob/main/COPYING",
-"version": "6.0.0",
-"installCommand": "harfbuzz==6.0.0 --hash=sha256:<hash>"
+"version": "(py3) 6.0.0",
+"installCommand": "harfbuzz==6.0.0 --hash=sha256:c0a28dca275ab068c715e0f5d90dcd2549b183590ba7dafc6db5c2d1057e4f2c"
 }
 },
 {
@@ -442,8 +442,8 @@
 "siteName": "na",
 "license": "na",
 "linkToLicense": "na",
-"version": "1.0.1",
-"installCommand": "heapdict==1.0.1 --hash=sha256:<hash>"
+"version": "(py3) 1.0.1",
+"installCommand": "heapdict==1.0.1 --hash=sha256:8faa6f10f7581117cad3195cb00d80792b08f7c534c99b1e294b869b6eb0c94f"
 }
 },
 {
@@ -458,8 +458,8 @@
 "siteName": "github",
 "license": "BSD3",
 "linkToLicense": "https://github.com/kjd/idna/blob/master/LICENSE.md",
-"version": "3.3",
-"installCommand": "idna==3.3 --hash=sha256:<hash>"
+"version": "(py3) 3.3",
+"installCommand": "idna==3.3 --hash=sha256:1ed8c0d7826bbde921eef0023f9253acbec94cb7338ad1973251ce10592d0355"
 }
 },
 {
@@ -474,8 +474,8 @@
 "siteName": "github",
 "license": "APACHE2",
 "linkToLicense": "https://github.com/python/importlib_metadata/blob/main/LICENSE",
-"version": "4.10.0",
-"installCommand": "importlib_metadata==4.10.0 --hash=sha256:<hash>"
+"version": "(py3) 4.10.0",
+"installCommand": "importlib_metadata==4.10.0 --hash=sha256:1ed8c0d7826bbde921eef0023f9253acbec94cb7338ad1973251ce10592d0355"
 }
 },
 {
@@ -490,8 +490,8 @@
 "siteName": "github",
 "license": "APACHE2",
 "linkToLicense": "https://github.com/python/importlib_resources/blob/main/LICENSE",
-"version": "5.8.0",
-"installCommand": "importlib_resources==5.8.0 --hash=sha256:<hash>"
+"version": "(py3) 5.8.0",
+"installCommand": "importlib_resources==5.8.0 --hash=sha256:1ed8c0d7826bbde921eef0023f9253acbec94cb7338ad1973251ce10592d0355"
 }
 },
 {
@@ -506,8 +506,8 @@
 "siteName": "github",
 "license": "MIT",
 "linkToLicense": "https://github.com/pytest-dev/iniconfig/blob/master/LICENSE",
-"version": "2.0.0",
-"installCommand": "iniconfig==2.0.0 --hash=sha256:<hash>"
+"version": "(py3) 2.0.0",
+"installCommand": "iniconfig==2.0.0 --hash=sha256:b6a85871a79d2e3b22d2d1b94ac2824226a63c6b741c88f7ae975f18b6778374"
 }
 },
 {
@@ -522,8 +522,8 @@
 "siteName": "ipython.org",
 "license": "BSD3",
 "linkToLicense": "https://github.com/ipython/ipython_genutils/blob/master/COPYING.md",
-"version": "0.3.0",
-"installCommand": "ipython-genutils==0.3.0 --hash=sha256:<hash>"
+"version": "(py3) 0.3.0",
+"installCommand": "ipython-genutils==0.3.0 --hash=sha256:b6a85871a79d2e3b22d2d1b94ac2824226a63c6b741c88f7ae975f18b6778374"
 }
 },
 {
@@ -538,8 +538,8 @@
 "siteName": "palletsprojects.com/p/itsdangerous",
 "license": "BSD3",
 "linkToLicense": "https://github.com/pallets/itsdangerous/blob/main/LICENSE.rst",
-"version": "2.1.2",
-"installCommand": "itsdangerous==2.1.2 --hash=sha256:<hash>"
+"version": "(py3) 2.1.2",
+"installCommand": "itsdangerous==2.1.2 --hash=sha256:51eb7c970c4feead7f18525f75a1aac91c60decd0c1342f313c8c2d8511a8c51"
 }
 },
 {
@@ -554,8 +554,8 @@
 "siteName": "github",
 "license": "MIT",
 "linkToLicense": "https://github.com/davidhalter/jedi/blob/master/LICENSE.txt",
-"version": "0.18.1",
-"installCommand": "jedi==0.18.1 --hash=sha256:<hash>"
+"version": "(py3) 0.18.1",
+"installCommand": "jedi==0.18.1 --hash=sha256:9933a5afe1a23f9292bb8c60d1bd662ff9e2ed1bfc5659c6db59fb16630ecfe8"
 }
 },
 {
@@ -570,8 +570,8 @@
 "siteName": "jupyter.org",
 "license": "BSD3",
 "linkToLicense": "https://opensource.org/licenses/BSD-3-Clause",
-"version": "1.1.0",
-"installCommand": "jupyter==1.1.0 --hash=sha256:<hash>"
+"version": "(py3) 1.1.0",
+"installCommand": "jupyter==1.1.0 --hash=sha256:118dac7945bad78831cced85ae6e3adfb3dcdbd4a39b14699023a6aa2975b528"
 }
 },
 {
@@ -586,8 +586,8 @@
 "siteName": "github",
 "license": "BSD3",
 "linkToLicense": "https://github.com/jupyter-incubator/contentmanagement/blob/master/LICENSE.md",
-"version": "0.7.0",
-"installCommand": "jupyter-cms==0.7.0 --hash=sha256:<hash>"
+"version": "(py3) 0.7.0",
+"installCommand": "jupyter-cms==0.7.0 --hash=sha256:118dac7945bad78831cced85ae6e3adfb3dcdbd4a39b14699023a6aa2975b528"
 }
 },
 {
@@ -602,8 +602,8 @@
 "siteName": "jupyter.org",
 "license": "BSD3",
 "linkToLicense": "https://github.com/jupyter/jupyter_core/blob/main/COPYING.md",
-"version": "4.10.0",
-"installCommand": "jupyter-core==4.10.0 --hash=sha256:<hash>"
+"version": "(py3) 4.10.0",
+"installCommand": "jupyter-core==4.10.0 --hash=sha256:118dac7945bad78831cced85ae6e3adfb3dcdbd4a39b14699023a6aa2975b528"
 }
 },
 {
@@ -618,8 +618,8 @@
 "siteName": "github",
 "license": "BSD3",
 "linkToLicense": "https://github.com/nucleic/kiwi/blob/main/LICENSE",
-"version": "1.4.4",
-"installCommand": "kiwisolver==1.4.4 --hash=sha256:<hash>"
+"version": "(cp310) 1.4.4",
+"installCommand": "kiwisolver==1.4.4 --hash=sha256:94f45fd0e9164480a72674fc125621d4e5f6f8a2fdc99559160dc8cac6aa73db"
 }
 },
 {
@@ -634,8 +634,8 @@
 "siteName": "cairographics.org",
 "license": "LGPL-2.1",
 "linkToLicense": "https://github.com/freedesktop/cairo/blob/master/COPYING-LGPL-2.1",
-"version": "1.17.4",
-"installCommand": "libcairo==1.17.4 --hash=sha256:<hash>"
+"version": "(py3) 1.17.4",
+"installCommand": "libcairo==1.17.4 --hash=sha256:23db1c913d6720e65f41bff2b538fcafec61ed7af9e69e1ae602f8017275579a"
 }
 },
 {
@@ -650,8 +650,8 @@
 "siteName": "sourceforge.net",
 "license": "OTHER",
 "linkToLicense": "https://jpegclub.org/reference/libjpeg-license/",
-"version": "9e",
-"installCommand": "libjpeg-turbo==9e --hash=sha256:<hash>"
+"version": "(py3) 9e",
+"installCommand": "libjpeg-turbo==9e --hash=sha256:23db1c913d6720e65f41bff2b538fcafec61ed7af9e69e1ae602f8017275579a"
 }
 },
 {
@@ -666,8 +666,8 @@
 "siteName": "libpng.org",
 "license": "OTHER",
 "linkToLicense": "http://www.libpng.org/pub/png/src/libpng-LICENSE.txt",
-"version": "1.6.39",
-"installCommand": "libpng==1.6.39 --hash=sha256:<hash>"
+"version": "(py3) 1.6.39",
+"installCommand": "libpng==1.6.39 --hash=sha256:7339f4365a1e2cac27bb06aad2c5f79f3c643a3ea65efc16cca27b42dbf5f0eb"
 }
 },
 {
@@ -682,8 +682,8 @@
 "siteName": "github",
 "license": "BSD3",
 "linkToLicense": "https://github.com/pearu/pylibtiff/blob/master/LICENSE",
-"version": "4.4.0",
-"installCommand": "libtiff==4.4.0 --hash=sha256:<hash>"
+"version": "(py3) 4.4.0",
+"installCommand": "libtiff==4.4.0 --hash=sha256:dac98a04ff91852f9aab0ead8c927f586cc1b72848357d4e2a71b99c36e8300f"
 }
 },
 {
@@ -698,8 +698,8 @@
 "siteName": "gitlab.gnome.org/GNOME/libxml2",
 "license": "MIT",
 "linkToLicense": "https://gitlab.gnome.org/GNOME/libxml2/-/blob/master/Copyright",
-"version": "2.10.3",
-"installCommand": "libxml2==2.10.3 --hash=sha256:<hash>"
+"version": "(py3) 2.10.3",
+"installCommand": "libxml2==2.10.3 --hash=sha256:b57e1e016ade9d97de137b4fb7bcd925dab1e50f9118e7b665faa6d1fc280756"
 }
 },
 {
@@ -714,8 +714,8 @@
 "siteName": "gitlab.gnome.org/GNOME/libxslt/",
 "license": "OTHER",
 "linkToLicense": "https://github.com/GNOME/libxslt/blob/master/Copyright",
-"version": "1.1.37",
-"installCommand": "libxslt==1.1.37 --hash=sha256:<hash>"
+"version": "(py3) 1.1.37",
+"installCommand": "libxslt==1.1.37 --hash=sha256:c66d4769f69a2dd81a98408f362f14a046e29682d7c6bff358320e97e59e1da9"
 }
 },
 {
@@ -730,8 +730,8 @@
 "siteName": "pyyaml.org",
 "license": "MIT",
 "linkToLicense": "https://github.com/yaml/libyaml/blob/master/License",
-"version": "0.2.5",
-"installCommand": "libyaml==0.2.5 --hash=sha256:<hash>"
+"version": "(py3) 0.2.5",
+"installCommand": "libyaml==0.2.5 --hash=sha256:e2e2f11ba01c127c856cca9f1c3fd9d79ffb9a8e7496cacb08b4cb5456d64ffc"
 }
 },
 {
@@ -746,8 +746,8 @@
 "siteName": "github",
 "license": "BSD2",
 "linkToLicense": "https://github.com/mwilliamson/locket.py/blob/master/LICENSE",
-"version": "1.0.0",
-"installCommand": "locket==1.0.0 --hash=sha256:<hash>"
+"version": "(py3) 1.0.0",
+"installCommand": "locket==1.0.0 --hash=sha256:055b7d11586a89b3dcd4172ce03a6257e057b4a62109966a76f64612d85dc74e"
 }
 },
 {
@@ -762,8 +762,8 @@
 "siteName": "github",
 "license": "MIT",
 "linkToLicense": "https://opensource.org/licenses/MIT",
-"version": "1.0.6",
-"installCommand": "markdown-editor==1.0.6 --hash=sha256:<hash>"
+"version": "(py3) 1.0.6",
+"installCommand": "markdown-editor==1.0.6 --hash=sha256:055b7d11586a89b3dcd4172ce03a6257e057b4a62109966a76f64612d85dc74e"
 }
 },
 {
@@ -778,8 +778,8 @@
 "siteName": "palletsprojects.com/p/markupsafe",
 "license": "BSD3",
 "linkToLicense": "https://github.com/pallets/markupsafe/blob/main/LICENSE.rst",
-"version": "2.1.1",
-"installCommand": "markupsafe==2.1.1 --hash=sha256:<hash>"
+"version": "(py3) 2.1.1",
+"installCommand": "markupsafe==2.1.1 --hash=sha256:055b7d11586a89b3dcd4172ce03a6257e057b4a62109966a76f64612d85dc74e"
 }
 },
 {
@@ -794,8 +794,8 @@
 "siteName": "github",
 "license": "here",
 "linkToLicense": "https://github.com/ipython/matplotlib-inline/blob/master/LICENSE",
-"version": "0.1.3",
-"installCommand": "matplotlib-inline==0.1.3 --hash=sha256:<hash>"
+"version": "(py3) 0.1.3",
+"installCommand": "matplotlib-inline==0.1.3 --hash=sha256:055b7d11586a89b3dcd4172ce03a6257e057b4a62109966a76f64612d85dc74e"
 }
 },
 {
@@ -810,8 +810,8 @@
 "siteName": "github",
 "license": "BSD3",
 "linkToLicense": "https://github.com/lepture/mistune/blob/master/LICENSE",
-"version": "2.0.4",
-"installCommand": "mistune==2.0.4 --hash=sha256:<hash>"
+"version": "(py3) 2.0.4",
+"installCommand": "mistune==2.0.4 --hash=sha256:fb1c77fba8078071b42325a4e1d103d450fdcd93cf8fd4d192ba9a31e7dee928"
 }
 },
 {
@@ -826,8 +826,8 @@
 "siteName": "msgpack.org",
 "license": "APACHE2",
 "linkToLicense": "https://github.com/msgpack/msgpack-python/blob/main/COPYING",
-"version": "1.0.4",
-"installCommand": "msgpack==1.0.4 --hash=sha256:<hash>"
+"version": "(cp310) 1.0.4",
+"installCommand": "msgpack==1.0.4 --hash=sha256:97a5a0d007802a612b6e1e845fdbd9194ed411cab640c30439cd503a298e72f3"
 }
 },
 {
@@ -842,8 +842,8 @@
 "siteName": "jupyter.org",
 "license": "BSD3",
 "linkToLicense": "https://github.com/jupyter/nbformat/blob/main/COPYING.md",
-"version": "5.4.0",
-"installCommand": "nbformat==5.4.0 --hash=sha256:<hash>"
+"version": "(py3) 5.4.0",
+"installCommand": "nbformat==5.4.0 --hash=sha256:14097434590793425c9562fa05749ca85812aace61703cfd1503b3284cd71443"
 }
 },
 {
@@ -858,8 +858,8 @@
 "siteName": "github",
 "license": "BSD2",
 "linkToLicense": "https://github.com/erdewit/nest_asyncio/blob/master/LICENSE",
-"version": "1.5.5",
-"installCommand": "nest-asyncio==1.5.5 --hash=sha256:<hash>"
+"version": "(py3) 1.5.5",
+"installCommand": "nest-asyncio==1.5.5 --hash=sha256:14097434590793425c9562fa05749ca85812aace61703cfd1503b3284cd71443"
 }
 },
 {
@@ -874,8 +874,8 @@
 "siteName": "packaging.pypa.io",
 "license": "OTHER",
 "linkToLicense": "https://github.com/pypa/packaging/blob/main/LICENSE",
-"version": "21.3",
-"installCommand": "packaging==21.3 --hash=sha256:<hash>"
+"version": "(py3) 21.3",
+"installCommand": "packaging==21.3 --hash=sha256:3c34bfff58621b89d36a1069c633bd56669ff6753f62d3a09c5e90f0af8812d5"
 }
 },
 {
@@ -890,8 +890,8 @@
 "siteName": "github",
 "license": "BSD3",
 "linkToLicense": "https://github.com/jgm/pandocfilters/blob/master/LICENSE",
-"version": "1.5.0",
-"installCommand": "pandocfilters==1.5.0 --hash=sha256:<hash>"
+"version": "(py3) 1.5.0",
+"installCommand": "pandocfilters==1.5.0 --hash=sha256:6cda7636904bb2c19ac02b634bcb8521641a641a4731564753a150bb2ebcab65"
 }
 },
 {
@@ -906,8 +906,8 @@
 "siteName": "github",
 "license": "OTHER",
 "linkToLicense": "https://github.com/davidhalter/parso/blob/master/LICENSE.txt",
-"version": "0.8.3",
-"installCommand": "parso==0.8.3 --hash=sha256:<hash>"
+"version": "(py3) 0.8.3",
+"installCommand": "parso==0.8.3 --hash=sha256:08d95674796cc92ce27d43ce8fe938cb9816e7438bff9f10694d42f07d6adfc1"
 }
 },
 {
@@ -922,8 +922,8 @@
 "siteName": "github",
 "license": "MIT",
 "linkToLicense": "https://github.com/pickleshare/pickleshare/blob/master/LICENSE",
-"version": "0.7.5",
-"installCommand": "pickleshare==0.7.5 --hash=sha256:<hash>"
+"version": "(py3) 0.7.5",
+"installCommand": "pickleshare==0.7.5 --hash=sha256:23c3071dd0f39472a7d427b7ea2d9522be49d08053e8746579c095d570a77d08"
 }
 },
 {
@@ -938,8 +938,8 @@
 "siteName": "https://github.com/ibm-z-oss-oda/platformdirs",
 "license": "MIT",
 "linkToLicense": "https://github.com/ibm-z-oss-oda/platformdirs/blob/main/LICENSE.txt",
-"version": "2.6.2",
-"installCommand": "platformdirs==2.6.2 --hash=sha256:<hash>"
+"version": "(py3) 2.6.2",
+"installCommand": "platformdirs==2.6.2 --hash=sha256:83c8f6d04389165de7c9b6f0c682439697887bca0aa2f1c87ef1826be3584490"
 }
 },
 {
@@ -954,8 +954,8 @@
 "siteName": "https://github.com/ibm-z-oss-oda/pretend",
 "license": "BSD 3",
 "linkToLicense": "https://github.com/ibm-z-oss-oda/pretend/blob/master/LICENSE.rst",
-"version": "1.0.9",
-"installCommand": "pretend==1.0.9 --hash=sha256:<hash>"
+"version": "(py3) 1.0.9",
+"installCommand": "pretend==1.0.9 --hash=sha256:0b08dd9b1de7a2fa9c0315f4a1d42b767def127a7f893f9285974a28e1d2219d"
 }
 },
 {
@@ -970,8 +970,8 @@
 "siteName": "github",
 "license": "APACHE2",
 "linkToLicense": "https://github.com/prometheus/client_python/blob/master/LICENSE",
-"version": "0.14.0",
-"installCommand": "prometheus-client==0.14.0 --hash=sha256:<hash>"
+"version": "(py3) 0.14.0",
+"installCommand": "prometheus-client==0.14.0 --hash=sha256:0b08dd9b1de7a2fa9c0315f4a1d42b767def127a7f893f9285974a28e1d2219d"
 }
 },
 {
@@ -986,8 +986,8 @@
 "siteName": "readthedocs.io",
 "license": "BSD3",
 "linkToLicense": "https://github.com/prompt-toolkit/python-prompt-toolkit/blob/master/LICENSE",
-"version": "3.0.30",
-"installCommand": "prompt-toolkit==3.0.30 --hash=sha256:<hash>"
+"version": "(py3) 3.0.30",
+"installCommand": "prompt-toolkit==3.0.30 --hash=sha256:0b08dd9b1de7a2fa9c0315f4a1d42b767def127a7f893f9285974a28e1d2219d"
 }
 },
 {
@@ -1002,8 +1002,8 @@
 "siteName": "github",
 "license": "OTHER",
 "linkToLicense": "https://github.com/pexpect/ptyprocess/blob/master/LICENSE",
-"version": "0.7.0",
-"installCommand": "ptyprocess==0.7.0 --hash=sha256:<hash>"
+"version": "(py3) 0.7.0",
+"installCommand": "ptyprocess==0.7.0 --hash=sha256:4b41f3967fce3af57cc7e94b888626c18bf37a083e3651ca8feeb66d492fef35"
 }
 },
 {
@@ -1018,8 +1018,8 @@
 "siteName": "https://github.com/ibm-z-oss-oda/pure_eval",
 "license": "MIT",
 "linkToLicense": "https://github.com/ibm-z-oss-oda/pure_eval/blob/master/LICENSE.txt",
-"version": "0.2.2",
-"installCommand": "pure-eval==0.2.2 --hash=sha256:<hash>"
+"version": "(py3) 0.2.2",
+"installCommand": "pure-eval==0.2.2 --hash=sha256:4b41f3967fce3af57cc7e94b888626c18bf37a083e3651ca8feeb66d492fef35"
 }
 },
 {
@@ -1034,8 +1034,8 @@
 "siteName": "github",
 "license": "BSD2",
 "linkToLicense": "https://github.com/etingof/pyasn1/blob/master/LICENSE.rst",
-"version": "0.4.8",
-"installCommand": "pyasn1==0.4.8 --hash=sha256:<hash>"
+"version": "(py3) 0.4.8",
+"installCommand": "pyasn1==0.4.8 --hash=sha256:3303b237e4ec1f064f35caed9e4143e12ef1becf73f2a17ded0220f1353108b7"
 }
 },
 {
@@ -1050,8 +1050,8 @@
 "siteName": "github",
 "license": "BSD3",
 "linkToLicense": "https://github.com/eliben/pycparser/blob/master/LICENSE",
-"version": "2.20",
-"installCommand": "pycparser==2.20 --hash=sha256:<hash>"
+"version": "(py3) 2.20",
+"installCommand": "pycparser==2.20 --hash=sha256:065c227e57443b8c3e8445071454286947ac1342e7e80cb37070cde8710398e2"
 }
 },
 {
@@ -1066,8 +1066,8 @@
 "siteName": "pygments.org",
 "license": "BSD2",
 "linkToLicense": "https://github.com/pygments/pygments/blob/master/LICENSE",
-"version": "2.12.0",
-"installCommand": "pygments==2.12.0 --hash=sha256:<hash>"
+"version": "(py3) 2.12.0",
+"installCommand": "pygments==2.12.0 --hash=sha256:c631ba1dbb84c527a8d504f8f4d828bb66e981589b73ef4afe372667cd3d6341"
 }
 },
 {
@@ -1082,8 +1082,8 @@
 "siteName": "github",
 "license": "OTHER",
 "linkToLicense": "https://github.com/facelessuser/pymdown-extensions/blob/main/LICENSE.md",
-"version": "9.5",
-"installCommand": "pymdown-extensions==9.5 --hash=sha256:<hash>"
+"version": "(py3) 9.5",
+"installCommand": "pymdown-extensions==9.5 --hash=sha256:c631ba1dbb84c527a8d504f8f4d828bb66e981589b73ef4afe372667cd3d6341"
 }
 },
 {
@@ -1098,8 +1098,8 @@
 "siteName": "github",
 "license": "MIT",
 "linkToLicense": "https://github.com/tobgu/pyrsistent/blob/master/LICENSE.mit",
-"version": "0.19.0",
-"installCommand": "pyrsistent==0.19.0 --hash=sha256:<hash>"
+"version": "(py3) 0.19.0",
+"installCommand": "pyrsistent==0.19.0 --hash=sha256:7bcef9446e74e5d65dec8e46fab92b9c1ef6d9bd9087a85db4be00ff0d84b6da"
 }
 },
 {
@@ -1114,8 +1114,8 @@
 "siteName": "github",
 "license": "OTHER",
 "linkToLicense": "https://github.com/dateutil/dateutil/blob/master/LICENSE",
-"version": "2.8.2",
-"installCommand": "python-dateutil==2.8.2 --hash=sha256:<hash>"
+"version": "(py3) 2.8.2",
+"installCommand": "python-dateutil==2.8.2 --hash=sha256:7bcef9446e74e5d65dec8e46fab92b9c1ef6d9bd9087a85db4be00ff0d84b6da"
 }
 },
 {
@@ -1130,8 +1130,8 @@
 "siteName": "pythonhosted.org/pytz",
 "license": "MIT",
 "linkToLicense": "https://github.com/stub42/pytz/blob/master/LICENSE.txt",
-"version": "2022.4",
-"installCommand": "pytz==2022.4 --hash=sha256:<hash>"
+"version": "(py3) 2022.4",
+"installCommand": "pytz==2022.4 --hash=sha256:6eb3220e93b321d88847ef5da93ac8036cca1ad821d3dc6e956139acc91c1264"
 }
 },
 {
@@ -1146,8 +1146,8 @@
 "siteName": "pyyaml.org",
 "license": "MIT",
 "linkToLicense": "https://github.com/yaml/pyyaml/blob/master/LICENSE",
-"version": "6.0",
-"installCommand": "pyyaml==6.0 --hash=sha256:<hash>"
+"version": "(cp310) 6.0",
+"installCommand": "pyyaml==6.0 --hash=sha256:661b515bf11e0971a1267a2d0753f340c4113707cc139bbd3034c8295302761a"
 }
 },
 {
@@ -1162,8 +1162,8 @@
 "siteName": "readthedocs.io",
 "license": "here",
 "linkToLicense": "https://github.com/zeromq/pyzmq/blob/main/COPYING.BSD",
-"version": "24.0.1",
-"installCommand": "pyzmq==24.0.1 --hash=sha256:<hash>"
+"version": "(cp310) 24.0.1",
+"installCommand": "pyzmq==24.0.1 --hash=sha256:6bae864246c61de2490afa75445928bff1098a05b1875303cd24413094c8352c"
 }
 },
 {
@@ -1178,8 +1178,8 @@
 "siteName": "github",
 "license": "APACHE2",
 "linkToLicense": "https://github.com/pypa/readme_renderer/blob/main/LICENSE",
-"version": "35.0",
-"installCommand": "readme-renderer==35.0 --hash=sha256:<hash>"
+"version": "(cp310) 35.0",
+"installCommand": "readme-renderer==35.0 --hash=sha256:6bae864246c61de2490afa75445928bff1098a05b1875303cd24413094c8352c"
 }
 },
 {
@@ -1194,8 +1194,8 @@
 "siteName": "github",
 "license": "APACHE2",
 "linkToLicense": "https://github.com/dashea/requests-file/blob/master/LICENSE",
-"version": "1.5.1",
-"installCommand": "requests-file==1.5.1 --hash=sha256:<hash>"
+"version": "(cp310) 1.5.1",
+"installCommand": "requests-file==1.5.1 --hash=sha256:6bae864246c61de2490afa75445928bff1098a05b1875303cd24413094c8352c"
 }
 },
 {
@@ -1210,8 +1210,8 @@
 "siteName": "github",
 "license": "APACHE2",
 "linkToLicense": "https://github.com/Lukasa/requests-ftp/blob/master/LICENSE",
-"version": "0.3.1",
-"installCommand": "requests-ftp==0.3.1 --hash=sha256:<hash>"
+"version": "(cp310) 0.3.1",
+"installCommand": "requests-ftp==0.3.1 --hash=sha256:6bae864246c61de2490afa75445928bff1098a05b1875303cd24413094c8352c"
 }
 },
 {
@@ -1226,8 +1226,8 @@
 "siteName": "readthedocs.io",
 "license": "APACHE2",
 "linkToLicense": "https://github.com/requests/toolbelt/blob/master/LICENSE",
-"version": "0.9.1",
-"installCommand": "requests-toolbelt==0.9.1 --hash=sha256:<hash>"
+"version": "(cp310) 0.9.1",
+"installCommand": "requests-toolbelt==0.9.1 --hash=sha256:6bae864246c61de2490afa75445928bff1098a05b1875303cd24413094c8352c"
 }
 },
 {
@@ -1242,8 +1242,8 @@
 "siteName": "seaborn.pydata.org",
 "license": "BSD3",
 "linkToLicense": "https://github.com/mwaskom/seaborn/blob/master/LICENSE",
-"version": "0.11.0",
-"installCommand": "seaborn==0.11.0 --hash=sha256:<hash>"
+"version": "(py3) 0.11.0",
+"installCommand": "seaborn==0.11.0 --hash=sha256:8c5fcbead711dd0c39f00701b11a0076de2186d6efce34b11418baf77024552a"
 }
 },
 {
@@ -1258,8 +1258,8 @@
 "siteName": "github",
 "license": "MIT",
 "linkToLicense": "https://github.com/pypa/setuptools/blob/main/LICENSE",
-"version": "67.1.0",
-"installCommand": "setuptools==67.1.0 --hash=sha256:<hash>"
+"version": "(py3) 67.1.0",
+"installCommand": "setuptools==67.1.0 --hash=sha256:a7687c12b444eaac951ea87a9627c4f904ac757e7abdc5aac32833234af90378"
 }
 },
 {
@@ -1274,8 +1274,8 @@
 "siteName": "github",
 "license": "MIT",
 "linkToLicense": "https://github.com/benjaminp/six/blob/master/LICENSE",
-"version": "1.16.0",
-"installCommand": "six==1.16.0 --hash=sha256:<hash>"
+"version": "(py3) 1.16.0",
+"installCommand": "six==1.16.0 --hash=sha256:31b9420324b64686ad1e85d1a981456eeca115dc8503e168ecae830f8f83d86e"
 }
 },
 {
@@ -1290,8 +1290,8 @@
 "siteName": "github",
 "license": "OTHER",
 "linkToLicense": "https://github.com/scikit-learn-contrib/sklearn-pandas/blob/master/LICENSE",
-"version": "2.2.0",
-"installCommand": "sklearn-pandas==2.2.0 --hash=sha256:<hash>"
+"version": "(py3) 2.2.0",
+"installCommand": "sklearn-pandas==2.2.0 --hash=sha256:31b9420324b64686ad1e85d1a981456eeca115dc8503e168ecae830f8f83d86e"
 }
 },
 {
@@ -1306,8 +1306,8 @@
 "siteName": "grantjenks.com/docs/sortedcontainers",
 "license": "APACHE2",
 "linkToLicense": "https://github.com/grantjenks/python-sortedcontainers/blob/master/LICENSE",
-"version": "2.4.0",
-"installCommand": "sortedcontainers==2.4.0 --hash=sha256:<hash>"
+"version": "(py3) 2.4.0",
+"installCommand": "sortedcontainers==2.4.0 --hash=sha256:68b7a37f75182b47c1655391a5f047225ec0665aeaf5a6420da5ee03f070ced2"
 }
 },
 {
@@ -1322,8 +1322,8 @@
 "siteName": "https://github.com/ibm-z-oss-oda/soupsieve",
 "license": "MIT",
 "linkToLicense": "https://github.com/ibm-z-oss-oda/soupsieve/blob/main/LICENSE.md",
-"version": "2.4.post1",
-"installCommand": "soupsieve==2.4.post1 --hash=sha256:<hash>"
+"version": "(py3) 2.4.post1",
+"installCommand": "soupsieve==2.4.post1 --hash=sha256:3ac2640b335b0981d6a7fdd11029b009e066cecef343973a1c99c4be1cb846d9"
 }
 },
 {
@@ -1338,8 +1338,8 @@
 "siteName": "https://github.com/ibm-z-oss-oda/stack_data",
 "license": "MIT",
 "linkToLicense": "https://github.com/ibm-z-oss-oda/stack_data/blob/master/LICENSE.txt",
-"version": "0.6.2",
-"installCommand": "stack-data==0.6.2 --hash=sha256:<hash>"
+"version": "(py3) 0.6.2",
+"installCommand": "stack-data==0.6.2 --hash=sha256:3ac2640b335b0981d6a7fdd11029b009e066cecef343973a1c99c4be1cb846d9"
 }
 },
 {
@@ -1354,8 +1354,8 @@
 "siteName": "github",
 "license": "BSD2",
 "linkToLicense": "https://github.com/ionelmc/python-tblib/blob/master/LICENSE",
-"version": "1.7.0",
-"installCommand": "tblib==1.7.0 --hash=sha256:<hash>"
+"version": "(py3) 1.7.0",
+"installCommand": "tblib==1.7.0 --hash=sha256:f3cd22a63042625ea011d5dda3828e561eacfc343e8d84abef50b85f4170a1d9"
 }
 },
 {
@@ -1370,8 +1370,8 @@
 "siteName": "github",
 "license": "OTHER",
 "linkToLicense": "https://github.com/tqdm/tqdm/blob/master/LICENCE",
-"version": "0.0.1",
-"installCommand": "tdqm==0.0.1 --hash=sha256:<hash>"
+"version": "(py3) 0.0.1",
+"installCommand": "tdqm==0.0.1 --hash=sha256:7e65765fa403d7379d87c22cdf5af13ae8f7d7113ece441df44e2004976fdd5b"
 }
 },
 {
@@ -1386,8 +1386,8 @@
 "siteName": "tqdm.github.io",
 "license": "OTHER",
 "linkToLicense": "https://github.com/tqdm/tqdm/blob/master/LICENCE",
-"version": "4.64.1",
-"installCommand": "tqdm==4.64.1 --hash=sha256:<hash>"
+"version": "(py3) 4.64.1",
+"installCommand": "tqdm==4.64.1 --hash=sha256:7e65765fa403d7379d87c22cdf5af13ae8f7d7113ece441df44e2004976fdd5b"
 }
 },
 {
@@ -1402,8 +1402,8 @@
 "siteName": "https://github.com/ibm-z-oss-oda/threadpoolctl",
 "license": "BSD 3",
 "linkToLicense": "https://github.com/ibm-z-oss-oda/threadpoolctl/blob/master/LICENSE",
-"version": "3.1.0",
-"installCommand": "threadpoolctl==3.1.0 --hash=sha256:<hash>"
+"version": "(py3) 3.1.0",
+"installCommand": "threadpoolctl==3.1.0 --hash=sha256:c897f6242e3de5cf660e0e07ef19dec86e05312af31e03153401421893f62e4e"
 }
 },
 {
@@ -1418,8 +1418,8 @@
 "siteName": "github",
 "license": "OTHER",
 "linkToLicense": "https://github.com/python/typing/blob/master/typing_extensions/LICENSE",
-"version": "4.3.0",
-"installCommand": "typing-extensions==4.3.0 --hash=sha256:<hash>"
+"version": "(py3) 4.3.0",
+"installCommand": "typing-extensions==4.3.0 --hash=sha256:c897f6242e3de5cf660e0e07ef19dec86e05312af31e03153401421893f62e4e"
 }
 },
 {
@@ -1434,8 +1434,8 @@
 "siteName": "github",
 "license": "MIT",
 "linkToLicense": "https://github.com/jquast/wcwidth/blob/master/LICENSE",
-"version": "0.2.5",
-"installCommand": "wcwidth==0.2.5 --hash=sha256:<hash>"
+"version": "(py3) 0.2.5",
+"installCommand": "wcwidth==0.2.5 --hash=sha256:beb4802a9cebb9144e99086eff703a642a13d6a0052920003a230f3294bbe784"
 }
 },
 {
@@ -1450,8 +1450,8 @@
 "siteName": "github",
 "license": "??",
 "linkToLicense": "https://github.com/gsnedders/python-webencodings/blob/master/LICENSE",
-"version": "0.5.1",
-"installCommand": "webencodings==0.5.1 --hash=sha256:<hash>"
+"version": "(py3) 0.5.1",
+"installCommand": "webencodings==0.5.1 --hash=sha256:a0af1213f3c2226497a97e2b3aa01a7e4bee4f403f95be16fc9acd2947514a78"
 }
 },
 {
@@ -1466,8 +1466,8 @@
 "siteName": "github",
 "license": "MIT",
 "linkToLicense": "https://github.com/jaraco/zipp/blob/main/LICENSE",
-"version": "3.8.0",
-"installCommand": "zipp==3.8.0 --hash=sha256:<hash>"
+"version": "(py3) 3.8.0",
+"installCommand": "zipp==3.8.0 --hash=sha256:84912290631787bb5ce3b42b3fbff00034968ac61a03751126cccf54e6dca245"
 }
 },
 {
@@ -1482,8 +1482,8 @@
 "siteName": "github",
 "license": "APACHE2",
 "linkToLicense": "https://github.com/IBM/zos-util/blob/main/LICENSE",
-"version": "1.0.1",
-"installCommand": "zos-util==1.0.1 --hash=sha256:<hash>"
+"version": "(py3) 1.0.1",
+"installCommand": "zos-util==1.0.1 --hash=sha256:84912290631787bb5ce3b42b3fbff00034968ac61a03751126cccf54e6dca245"
 }
 }
 ]
