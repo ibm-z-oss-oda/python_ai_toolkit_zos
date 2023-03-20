@@ -26,8 +26,8 @@
 "siteName": "readthedocs.io",
 "license": "MIT",
 "linkToLicense": "https://github.com/hynek/argon2-cffi/blob/main/LICENSE",
-"version": "(py3) 21.3.0",
-"installCommand": "argon2-cffi==21.3.0 --hash=sha256:cf9e7fa3cf8f85ed2e99e1aaddff98c27a37c7b3d90c77074aa7415123f66c5a"
+"version": "(cp310) 21.3.0",
+"installCommand": "argon2-cffi==21.3.0 --hash=sha256:f126bf5a7693fe683605f27403aea204404794fed4c17d6d8ecdab5bb417f1e1"
 }
 },
 {
@@ -42,8 +42,8 @@
 "siteName": "github",
 "license": "MIT",
 "linkToLicense": "https://github.com/hynek/argon2-cffi-bindings/blob/main/LICENSE",
-"version": "(py3) 21.2.0",
-"installCommand": "argon2-cffi-bindings==21.2.0 --hash=sha256:cf9e7fa3cf8f85ed2e99e1aaddff98c27a37c7b3d90c77074aa7415123f66c5a"
+"version": "(cp310) 21.2.0",
+"installCommand": "argon2-cffi-bindings==21.2.0 --hash=sha256:f126bf5a7693fe683605f27403aea204404794fed4c17d6d8ecdab5bb417f1e1"
 }
 },
 {
@@ -193,7 +193,7 @@
 {
 "name": "charset-normalizer",
 "tags": [ "utility" ],
-"versions": " 2.1.0",
+"versions": " 3.0.1",
 "info":
 {
 "description": "<p>A library that helps you read text from an unknown charset encoding.</p><p> Motivated by <code>chardet</code>, this implements various performance improvements in comparison, especially on files about 1MB in size. All IANA character set names for which the Python core library provides codecs are supported.</p>",
@@ -202,8 +202,8 @@
 "siteName": "github",
 "license": "MIT",
 "linkToLicense": "https://github.com/Ousret/charset_normalizer/blob/master/LICENSE",
-"version": "(py3) 2.1.0",
-"installCommand": "charset-normalizer==2.1.0 --hash=sha256:94d1ca5fdadb2b4ae24a1f83b8dd15cfe7a735620cc86d626dc50dc271476750"
+"version": "(py3) 3.0.1",
+"installCommand": "charset-normalizer==3.0.1 --hash=sha256:7e189e2e1d3ed2f4aebabd2d5b0f931e883676e51c7624826e0a4e5fe8a0bf24"
 }
 },
 {
@@ -321,7 +321,7 @@
 {
 "name": "fastjsonschema",
 "tags": [ "languages" ],
-"versions": " 2.15.3",
+"versions": " 2.16.2",
 "info":
 {
 "description": "<p>Fastest Python implementation of JSON schema.</p><p><code>fastjsonschema</code> implements validation of JSON documents by JSON schema. The library implements JSON schema drafts 04, 06 and 07. The main purpose is to have a really fast implementation.</p>",
@@ -330,8 +330,8 @@
 "siteName": "github.io",
 "license": "BSD3",
 "linkToLicense": "https://github.com/horejsek/python-fastjsonschema/blob/master/LICENSE",
-"version": "(py3) 2.15.3",
-"installCommand": "fastjsonschema==2.15.3 --hash=sha256:865ce7445a01980c71db1a3c3c7624621dc5cad6ec381a231e9a2c575aeda48c"
+"version": "(py3) 2.16.2",
+"installCommand": "fastjsonschema==2.16.2 --hash=sha256:21f918e8d9a1a4ba9c22e09574ba72267a6762d47822db9add95f6454e51cc1c"
 }
 },
 {
@@ -363,7 +363,7 @@
 "license": "BSD3",
 "linkToLicense": "https://github.com/pallets/flask/blob/main/LICENSE.rst",
 "version": "(py3) 2.0.2",
-"installCommand": "flask==2.0.2 --hash=sha256:9bc3ffe78eab96550031cbb81e2252b614b92973f12b1107ae10e843e7e1985b"
+"installCommand": "flask==2.0.2 --hash=sha256:f58d535af89bb9ad5cd4df046f741f8553a418c01a7856bf0d173bbc9f6bd16d"
 }
 },
 {
@@ -443,13 +443,13 @@
 "license": "na",
 "linkToLicense": "na",
 "version": "(py3) 1.0.1",
-"installCommand": "heapdict==1.0.1 --hash=sha256:8faa6f10f7581117cad3195cb00d80792b08f7c534c99b1e294b869b6eb0c94f"
+"installCommand": "heapdict==1.0.1 --hash=sha256:c0a28dca275ab068c715e0f5d90dcd2549b183590ba7dafc6db5c2d1057e4f2c"
 }
 },
 {
 "name": "idna",
 "tags": [ "languages","utility" ],
-"versions": " 3.3",
+"versions": " 3.4",
 "info":
 {
 "description": "<p>Support for the Internationalised Domain Names in Applications (IDNA) protocol as specified in <a href='https://tools.ietf.org/html/rfc5891'>RFC 5891</a>. This is the latest version of the protocol and is sometimes referred to as “IDNA 2008”.</p><p>This library also provides support for Unicode Technical Standard 46, <a href='https://unicode.org/reports/tr46/'>Unicode IDNA Compatibility Processing</a>.</p><p>This acts as a suitable replacement for the “encodings.idna” module that comes with the Python standard library, but which only supports the older superseded IDNA specification <a href='https://tools.ietf.org/html/rfc3490'>(RFC 3490)</a>.</p>",
@@ -458,14 +458,14 @@
 "siteName": "github",
 "license": "BSD3",
 "linkToLicense": "https://github.com/kjd/idna/blob/master/LICENSE.md",
-"version": "(py3) 3.3",
-"installCommand": "idna==3.3 --hash=sha256:1ed8c0d7826bbde921eef0023f9253acbec94cb7338ad1973251ce10592d0355"
+"version": "(py3) 3.4",
+"installCommand": "idna==3.4 --hash=sha256:90b77e79eaa3eba6de819a0c442c0b4ceefc341a7a2ab77d7562bf49f425c5c2"
 }
 },
 {
 "name": "importlib_metadata",
 "tags": [ "utility" ],
-"versions": " 4.10.0",
+"versions": " 6.0.0",
 "info":
 {
 "description": "<p>Library to access the metadata for a Python package.</p><p>This package supplies third-party access to the functionality of <a href='https://docs.python.org/3/library/importlib.metadata.html'>importlib.metadata</a> including improvements added to subsequent Python versions.</p>",
@@ -474,8 +474,8 @@
 "siteName": "github",
 "license": "APACHE2",
 "linkToLicense": "https://github.com/python/importlib_metadata/blob/main/LICENSE",
-"version": "(py3) 4.10.0",
-"installCommand": "importlib_metadata==4.10.0 --hash=sha256:1ed8c0d7826bbde921eef0023f9253acbec94cb7338ad1973251ce10592d0355"
+"version": "(py3) 6.0.0",
+"installCommand": "importlib_metadata==6.0.0 --hash=sha256:7efb448ec9a5e313a57655d35aa54cd3e01b7e1fbcf72dce1bf06119420f5bad"
 }
 },
 {
@@ -491,7 +491,7 @@
 "license": "APACHE2",
 "linkToLicense": "https://github.com/python/importlib_resources/blob/main/LICENSE",
 "version": "(py3) 5.8.0",
-"installCommand": "importlib_resources==5.8.0 --hash=sha256:1ed8c0d7826bbde921eef0023f9253acbec94cb7338ad1973251ce10592d0355"
+"installCommand": "importlib_resources==5.8.0 --hash=sha256:0d3cfa39a26f3ea991cbc07a1cf4213606573b8d54e8799e04a33a82d9d1abe4"
 }
 },
 {
@@ -523,7 +523,7 @@
 "license": "BSD3",
 "linkToLicense": "https://github.com/ipython/ipython_genutils/blob/master/COPYING.md",
 "version": "(py3) 0.3.0",
-"installCommand": "ipython-genutils==0.3.0 --hash=sha256:b6a85871a79d2e3b22d2d1b94ac2824226a63c6b741c88f7ae975f18b6778374"
+"installCommand": "ipython-genutils==0.3.0 --hash=sha256:d9411249d0a53101a0482e3a66166b443e68da1b4b1b337aea4acba94a640a74"
 }
 },
 {
@@ -545,7 +545,7 @@
 {
 "name": "jedi",
 "tags": [ "programming_tools","utility" ],
-"versions": " 0.18.1",
+"versions": " 0.18.2",
 "info":
 {
 "description": "<p>Jedi is a static analysis tool for Python that is typically used in IDEs/editors plugins. Jedi has a focus on autocompletion and goto functionality. Other features include refactoring, code search and finding references.</p>",
@@ -554,8 +554,8 @@
 "siteName": "github",
 "license": "MIT",
 "linkToLicense": "https://github.com/davidhalter/jedi/blob/master/LICENSE.txt",
-"version": "(py3) 0.18.1",
-"installCommand": "jedi==0.18.1 --hash=sha256:9933a5afe1a23f9292bb8c60d1bd662ff9e2ed1bfc5659c6db59fb16630ecfe8"
+"version": "(py3) 0.18.2",
+"installCommand": "jedi==0.18.2 --hash=sha256:203c1fd9d969ab8f2119ec0a3342e0b49910045abe6af0a3ae83a5764d54639e"
 }
 },
 {
@@ -571,7 +571,7 @@
 "license": "BSD3",
 "linkToLicense": "https://opensource.org/licenses/BSD-3-Clause",
 "version": "(py3) 1.1.0",
-"installCommand": "jupyter==1.1.0 --hash=sha256:118dac7945bad78831cced85ae6e3adfb3dcdbd4a39b14699023a6aa2975b528"
+"installCommand": "jupyter==1.1.0 --hash=sha256:4bdc2928c37f6917130c667d8b8708f20aee539d8283c6be72aabd2a4b4c83b0"
 }
 },
 {
@@ -587,13 +587,13 @@
 "license": "BSD3",
 "linkToLicense": "https://github.com/jupyter-incubator/contentmanagement/blob/master/LICENSE.md",
 "version": "(py3) 0.7.0",
-"installCommand": "jupyter-cms==0.7.0 --hash=sha256:118dac7945bad78831cced85ae6e3adfb3dcdbd4a39b14699023a6aa2975b528"
+"installCommand": "jupyter-cms==0.7.0 --hash=sha256:ef333f779063a0e147cb08ab0553759e38627d5d8e340371166b8458be690cb9"
 }
 },
 {
 "name": "jupyter-core",
 "tags": [ "base" ],
-"versions": " 4.10.0",
+"versions": " 5.2.0",
 "info":
 {
 "description": "<p>Jupyter core package. A base package on which Jupyter projects rely.</p><p>This package contains base application classes and configuration inherited by other projects. It doesn't do much on its own.</p>",
@@ -602,8 +602,8 @@
 "siteName": "jupyter.org",
 "license": "BSD3",
 "linkToLicense": "https://github.com/jupyter/jupyter_core/blob/main/COPYING.md",
-"version": "(py3) 4.10.0",
-"installCommand": "jupyter-core==4.10.0 --hash=sha256:118dac7945bad78831cced85ae6e3adfb3dcdbd4a39b14699023a6aa2975b528"
+"version": "(py3) 5.2.0",
+"installCommand": "jupyter-core==5.2.0 --hash=sha256:4bdc2928c37f6917130c667d8b8708f20aee539d8283c6be72aabd2a4b4c83b0"
 }
 },
 {
@@ -641,7 +641,7 @@
 {
 "name": "libjpeg-turbo",
 "tags": [ "graphics" ],
-"versions": " 9e",
+"versions": " 2.1.4",
 "info":
 {
 "description": "<p>Libjpeg is a widely used C library for reading and writing JPEG image files. </p>",
@@ -650,8 +650,8 @@
 "siteName": "sourceforge.net",
 "license": "OTHER",
 "linkToLicense": "https://jpegclub.org/reference/libjpeg-license/",
-"version": "(py3) 9e",
-"installCommand": "libjpeg-turbo==9e --hash=sha256:23db1c913d6720e65f41bff2b538fcafec61ed7af9e69e1ae602f8017275579a"
+"version": "(py3) 2.1.4",
+"installCommand": "libjpeg-turbo==2.1.4 --hash=sha256:790ab4b147798c411f6f76ca81ceaaff75f0f6dfcd5833385536b828482c2a1f"
 }
 },
 {
@@ -753,7 +753,7 @@
 {
 "name": "markdown-editor",
 "tags": [ "utility","graphics","web" ],
-"versions": " 1.0.6",
+"versions": " 1.0.7",
 "info":
 {
 "description": "<p>Markdown-editor provides a standalone editor for your local markdown files.</p><p>Features include:</p><ul><li>Side-by-side markdown editor & html preview</li><li>Live, when you type html preview</li><li>Codehilite & markdown extra syntax support by default</li><li>Github syntax support</li><li>Github styles for rendering and codehilite</li><li>Scrollbars sync</li></ul>",
@@ -762,8 +762,8 @@
 "siteName": "github",
 "license": "MIT",
 "linkToLicense": "https://opensource.org/licenses/MIT",
-"version": "(py3) 1.0.6",
-"installCommand": "markdown-editor==1.0.6 --hash=sha256:055b7d11586a89b3dcd4172ce03a6257e057b4a62109966a76f64612d85dc74e"
+"version": "(py3) 1.0.7",
+"installCommand": "markdown-editor==1.0.7 --hash=sha256:f9119711d37263e9f13ac67185b06da97992c6e5a4e6e3c9269976dcdd2a1258"
 }
 },
 {
@@ -779,13 +779,13 @@
 "license": "BSD3",
 "linkToLicense": "https://github.com/pallets/markupsafe/blob/main/LICENSE.rst",
 "version": "(py3) 2.1.1",
-"installCommand": "markupsafe==2.1.1 --hash=sha256:055b7d11586a89b3dcd4172ce03a6257e057b4a62109966a76f64612d85dc74e"
+"installCommand": "markupsafe==2.1.1 --hash=sha256:f9119711d37263e9f13ac67185b06da97992c6e5a4e6e3c9269976dcdd2a1258"
 }
 },
 {
 "name": "matplotlib-inline",
 "tags": [ "math","graphics" ],
-"versions": " 0.1.3",
+"versions": " 0.1.6",
 "info":
 {
 "description": "<p>This package provides a Matplotlib Inline Back-end for IPython and Jupyter.</p>",
@@ -794,8 +794,8 @@
 "siteName": "github",
 "license": "here",
 "linkToLicense": "https://github.com/ipython/matplotlib-inline/blob/master/LICENSE",
-"version": "(py3) 0.1.3",
-"installCommand": "matplotlib-inline==0.1.3 --hash=sha256:055b7d11586a89b3dcd4172ce03a6257e057b4a62109966a76f64612d85dc74e"
+"version": "(py3) 0.1.6",
+"installCommand": "matplotlib-inline==0.1.6 --hash=sha256:f1f41aab5328aa5aaea9b16d083b128102f8712542f819fe7e6a420ff581b311"
 }
 },
 {
@@ -859,13 +859,13 @@
 "license": "BSD2",
 "linkToLicense": "https://github.com/erdewit/nest_asyncio/blob/master/LICENSE",
 "version": "(py3) 1.5.5",
-"installCommand": "nest-asyncio==1.5.5 --hash=sha256:14097434590793425c9562fa05749ca85812aace61703cfd1503b3284cd71443"
+"installCommand": "nest-asyncio==1.5.5 --hash=sha256:96f0a093f3fbbddf5a8ff5d9a0271eef47a43c989fb49103d2ce66f4c69e8e24"
 }
 },
 {
 "name": "packaging",
 "tags": [ "utility" ],
-"versions": " 21.3",
+"versions": " 23.0",
 "info":
 {
 "description": "<p>Reusable core utilities for various Python Packaging <a href='https://packaging.python.org/specifications/'>interoperability specifications</a>.</p><p>This library provides utilities that implement the interoperability specifications which have clearly one correct behaviour (eg: <a href='http://www.python.org/dev/peps/pep-0440'>PEP 440</a>) or benefit greatly from having a single shared implementation (eg: <a href='http://www.python.org/dev/peps/pep-0425'>PEP 425</a>).</p><p>The <code>packaging</code> project includes the following: version handling, specifiers, markers, requirements, tags, utilities.</p>",
@@ -874,8 +874,8 @@
 "siteName": "packaging.pypa.io",
 "license": "OTHER",
 "linkToLicense": "https://github.com/pypa/packaging/blob/main/LICENSE",
-"version": "(py3) 21.3",
-"installCommand": "packaging==21.3 --hash=sha256:3c34bfff58621b89d36a1069c633bd56669ff6753f62d3a09c5e90f0af8812d5"
+"version": "(py3) 23.0",
+"installCommand": "packaging==23.0 --hash=sha256:714ac14496c3e68c99c29b00845f7a2b85f3bb6f1078fd9f72fd20f0570002b2"
 }
 },
 {
@@ -971,13 +971,13 @@
 "license": "APACHE2",
 "linkToLicense": "https://github.com/prometheus/client_python/blob/master/LICENSE",
 "version": "(py3) 0.14.0",
-"installCommand": "prometheus-client==0.14.0 --hash=sha256:0b08dd9b1de7a2fa9c0315f4a1d42b767def127a7f893f9285974a28e1d2219d"
+"installCommand": "prometheus-client==0.14.0 --hash=sha256:b3095f0a1dc45b13bc420b14ecaeaccb6cf37cd4f3d60328d3945cd38437cf49"
 }
 },
 {
 "name": "prompt-toolkit",
 "tags": [ "programming_tools" ],
-"versions": " 3.0.30",
+"versions": " 3.0.36",
 "info":
 {
 "description": "<p><code>prompt-toolkit</code> is a library for building powerful interactive command line applications in Python.</p>",
@@ -986,8 +986,8 @@
 "siteName": "readthedocs.io",
 "license": "BSD3",
 "linkToLicense": "https://github.com/prompt-toolkit/python-prompt-toolkit/blob/master/LICENSE",
-"version": "(py3) 3.0.30",
-"installCommand": "prompt-toolkit==3.0.30 --hash=sha256:0b08dd9b1de7a2fa9c0315f4a1d42b767def127a7f893f9285974a28e1d2219d"
+"version": "(py3) 3.0.36",
+"installCommand": "prompt-toolkit==3.0.36 --hash=sha256:aa64ad242a462c5ff0363a7b9cfe696c20d55d9fc60c11fd8e632d064804d305"
 }
 },
 {
@@ -1019,13 +1019,13 @@
 "license": "MIT",
 "linkToLicense": "https://github.com/ibm-z-oss-oda/pure_eval/blob/master/LICENSE.txt",
 "version": "(py3) 0.2.2",
-"installCommand": "pure-eval==0.2.2 --hash=sha256:4b41f3967fce3af57cc7e94b888626c18bf37a083e3651ca8feeb66d492fef35"
+"installCommand": "pure-eval==0.2.2 --hash=sha256:01eaab343580944bc56080ebe0a674b39ec44a945e6d09ba7db3cb8cec289350"
 }
 },
 {
 "name": "pyasn1",
 "tags": [ "programming_tools" ],
-"versions": " 0.4.8",
+"versions": " 0.4.9",
 "info":
 {
 "description": "<p>This is a free and open source implementation of ASN.1 types and codecs as a Python package. It has been first written to support particular protocol (SNMP) but then generalized to be suitable for a wide range of protocols based on <a href='https://www.itu.int/rec/dologin_pub.asp?lang=e&id=T-REC-X.208-198811-W!!PDF-E&type=items'>ASN.1 specification</a>.</p>",
@@ -1034,8 +1034,8 @@
 "siteName": "github",
 "license": "BSD2",
 "linkToLicense": "https://github.com/etingof/pyasn1/blob/master/LICENSE.rst",
-"version": "(py3) 0.4.8",
-"installCommand": "pyasn1==0.4.8 --hash=sha256:3303b237e4ec1f064f35caed9e4143e12ef1becf73f2a17ded0220f1353108b7"
+"version": "(py3) 0.4.9",
+"installCommand": "pyasn1==0.4.9 --hash=sha256:4a19b29bbe3123a676df77cb0edafea7b8b6631bcf7c6e3121209f77f39688bf"
 }
 },
 {
@@ -1057,7 +1057,7 @@
 {
 "name": "pygments",
 "tags": [ "programming_tools","utility" ],
-"versions": " 2.12.0",
+"versions": " 2.14.0",
 "info":
 {
 "description": "<p>Pygments is a generic syntax highlighter suitable for use in code hosting, forums, wikis or other applications that need to prettify source code. Highlights are:</p><ul><li>a wide range of 530 languages and other text formats is supported</li><li>special attention is paid to details that increase highlighting quality</li><li>support for new languages and formats are added easily; most languages use a simple regex-based lexing mechanism</li><li>a number of output formats is available, among them HTML, RTF, LaTeX and ANSI sequences</li></ul>",
@@ -1066,8 +1066,8 @@
 "siteName": "pygments.org",
 "license": "BSD2",
 "linkToLicense": "https://github.com/pygments/pygments/blob/master/LICENSE",
-"version": "(py3) 2.12.0",
-"installCommand": "pygments==2.12.0 --hash=sha256:c631ba1dbb84c527a8d504f8f4d828bb66e981589b73ef4afe372667cd3d6341"
+"version": "(py3) 2.14.0",
+"installCommand": "pygments==2.14.0 --hash=sha256:fa7bd7bd2771287c0de303af8bfdfc731f51bd2c6a47ab69d117138893b82717"
 }
 },
 {
@@ -1083,13 +1083,13 @@
 "license": "OTHER",
 "linkToLicense": "https://github.com/facelessuser/pymdown-extensions/blob/main/LICENSE.md",
 "version": "(py3) 9.5",
-"installCommand": "pymdown-extensions==9.5 --hash=sha256:c631ba1dbb84c527a8d504f8f4d828bb66e981589b73ef4afe372667cd3d6341"
+"installCommand": "pymdown-extensions==9.5 --hash=sha256:a25ddc704a775fcdc78b49e9068df45c7c591b0720c41b1282d7aaf9e5edf197"
 }
 },
 {
 "name": "pyrsistent",
 "tags": [ "programming_tools" ],
-"versions": " 0.19.0",
+"versions": " 0.19.3",
 "info":
 {
 "description": "<p>Pyrsistent is a number of persistent collections (by some referred to as functional data structures). Persistent in the sense that they are immutable.</p><p>All methods on a data structure that would normally mutate it instead return a new copy of the structure containing the requested updates. The original structure is left untouched.</p><p>This will simplify the reasoning about what a program does since no hidden side effects ever can take place to these data structures. You can rest assured that the object you hold a reference to will remain the same throughout its lifetime and need not worry that somewhere five stack levels below you in the darkest corner of your application someone has decided to remove that element that you expected to be there.</p><p>Pyrsistent is influenced by persistent data structures such as those found in the standard library of Clojure. The data structures are designed to share common elements through path copying. It aims at taking these concepts and make them as pythonic as possible so that they can be easily integrated into any python program without hassle.</p>",
@@ -1098,8 +1098,8 @@
 "siteName": "github",
 "license": "MIT",
 "linkToLicense": "https://github.com/tobgu/pyrsistent/blob/master/LICENSE.mit",
-"version": "(py3) 0.19.0",
-"installCommand": "pyrsistent==0.19.0 --hash=sha256:7bcef9446e74e5d65dec8e46fab92b9c1ef6d9bd9087a85db4be00ff0d84b6da"
+"version": "(py3) 0.19.3",
+"installCommand": "pyrsistent==0.19.3 --hash=sha256:ccf0d6bd208f8111179f0c26fdf84ed7c3891982f2edaeae7422575f47e66b64"
 }
 },
 {
@@ -1115,7 +1115,7 @@
 "license": "OTHER",
 "linkToLicense": "https://github.com/dateutil/dateutil/blob/master/LICENSE",
 "version": "(py3) 2.8.2",
-"installCommand": "python-dateutil==2.8.2 --hash=sha256:7bcef9446e74e5d65dec8e46fab92b9c1ef6d9bd9087a85db4be00ff0d84b6da"
+"installCommand": "python-dateutil==2.8.2 --hash=sha256:961d03dc3453ebbc59dbdea9e4e11c5651520a876d0f4db161e8674aae935da9"
 }
 },
 {
@@ -1169,7 +1169,7 @@
 {
 "name": "readme-renderer",
 "tags": [ "web","utility" ],
-"versions": " 35.0",
+"versions": " 37.3",
 "info":
 {
 "description": "<p>Readme Renderer is a library that will safely render arbitrary <code>README</code> files into HTML. It is designed to be used in <a href='https://github.com/pypa/warehouse'>Warehouse</a> to render the <code>long_description</code> for packages. It can handle Markdown, reStructuredText (<code>.rst</code>), and plain text.</p>",
@@ -1178,8 +1178,8 @@
 "siteName": "github",
 "license": "APACHE2",
 "linkToLicense": "https://github.com/pypa/readme_renderer/blob/main/LICENSE",
-"version": "(cp310) 35.0",
-"installCommand": "readme-renderer==35.0 --hash=sha256:6bae864246c61de2490afa75445928bff1098a05b1875303cd24413094c8352c"
+"version": "(py3) 37.3",
+"installCommand": "readme-renderer==37.3 --hash=sha256:f67a16caedfa71eef48a31b39708637a6f4664c4394801a7b0d6432d13907343"
 }
 },
 {
@@ -1194,8 +1194,8 @@
 "siteName": "github",
 "license": "APACHE2",
 "linkToLicense": "https://github.com/dashea/requests-file/blob/master/LICENSE",
-"version": "(cp310) 1.5.1",
-"installCommand": "requests-file==1.5.1 --hash=sha256:6bae864246c61de2490afa75445928bff1098a05b1875303cd24413094c8352c"
+"version": "(py3) 1.5.1",
+"installCommand": "requests-file==1.5.1 --hash=sha256:fb65796b527fecaa64db5467168beb58ddcd2a69e21b5b83933628510bd527b4"
 }
 },
 {
@@ -1210,14 +1210,14 @@
 "siteName": "github",
 "license": "APACHE2",
 "linkToLicense": "https://github.com/Lukasa/requests-ftp/blob/master/LICENSE",
-"version": "(cp310) 0.3.1",
-"installCommand": "requests-ftp==0.3.1 --hash=sha256:6bae864246c61de2490afa75445928bff1098a05b1875303cd24413094c8352c"
+"version": "(py3) 0.3.1",
+"installCommand": "requests-ftp==0.3.1 --hash=sha256:ddfd6ce563516741ab87b67545f2b0f5acbcf7224391bf605f596395d49429d3"
 }
 },
 {
 "name": "requests-toolbelt",
 "tags": [ "utility" ],
-"versions": " 0.9.1",
+"versions": " 0.10.1",
 "info":
 {
 "description": "<p>This is just a collection of utilities for <a href='https://github.com/kennethreitz/requests'>python-requests</a>, but which don’t really belong in <code>requests</code> proper.</p>",
@@ -1226,8 +1226,8 @@
 "siteName": "readthedocs.io",
 "license": "APACHE2",
 "linkToLicense": "https://github.com/requests/toolbelt/blob/master/LICENSE",
-"version": "(cp310) 0.9.1",
-"installCommand": "requests-toolbelt==0.9.1 --hash=sha256:6bae864246c61de2490afa75445928bff1098a05b1875303cd24413094c8352c"
+"version": "(py3) 0.10.1",
+"installCommand": "requests-toolbelt==0.10.1 --hash=sha256:18565aa58116d9951ac39baa288d3adb5b3ff975c4f25eee78555d89e8f247f7"
 }
 },
 {
@@ -1291,7 +1291,7 @@
 "license": "OTHER",
 "linkToLicense": "https://github.com/scikit-learn-contrib/sklearn-pandas/blob/master/LICENSE",
 "version": "(py3) 2.2.0",
-"installCommand": "sklearn-pandas==2.2.0 --hash=sha256:31b9420324b64686ad1e85d1a981456eeca115dc8503e168ecae830f8f83d86e"
+"installCommand": "sklearn-pandas==2.2.0 --hash=sha256:696cdad0ceb563c20185f409af7bc6f55006801d7e440f10e383fccb59ebcc4f"
 }
 },
 {
@@ -1339,7 +1339,7 @@
 "license": "MIT",
 "linkToLicense": "https://github.com/ibm-z-oss-oda/stack_data/blob/master/LICENSE.txt",
 "version": "(py3) 0.6.2",
-"installCommand": "stack-data==0.6.2 --hash=sha256:3ac2640b335b0981d6a7fdd11029b009e066cecef343973a1c99c4be1cb846d9"
+"installCommand": "stack-data==0.6.2 --hash=sha256:deba2972b7c7e2c1e2134d35c1f6af8f593bdcbc3907ef11a1ed2d9dcb9e2a73"
 }
 },
 {
@@ -1387,7 +1387,7 @@
 "license": "OTHER",
 "linkToLicense": "https://github.com/tqdm/tqdm/blob/master/LICENCE",
 "version": "(py3) 4.64.1",
-"installCommand": "tqdm==4.64.1 --hash=sha256:7e65765fa403d7379d87c22cdf5af13ae8f7d7113ece441df44e2004976fdd5b"
+"installCommand": "tqdm==4.64.1 --hash=sha256:538feb6a0a616ec7e16f23ebe40229fdbb547823696eb4d64a255d04fd6dcd31"
 }
 },
 {
@@ -1409,7 +1409,7 @@
 {
 "name": "typing-extensions",
 "tags": [ "utilty" ],
-"versions": " 4.3.0",
+"versions": " 4.4.0",
 "info":
 {
 "description": "<p>The <code>typing_extensions</code> module serves two related purposes:</p><p>Enable use of new type system features on older Python versions. For example, <code>typing.TypeGuard</code> is new in Python 3.10, but <code>typing_extensions</code> allows users on Python 3.6 through 3.9 to use it too.</p><p>Enable experimentation with new type system PEPs before they are accepted and added to the <code>typing</code> module.</p>",
@@ -1418,14 +1418,14 @@
 "siteName": "github",
 "license": "OTHER",
 "linkToLicense": "https://github.com/python/typing/blob/master/typing_extensions/LICENSE",
-"version": "(py3) 4.3.0",
-"installCommand": "typing-extensions==4.3.0 --hash=sha256:c897f6242e3de5cf660e0e07ef19dec86e05312af31e03153401421893f62e4e"
+"version": "(py3) 4.4.0",
+"installCommand": "typing-extensions==4.4.0 --hash=sha256:16fa4864408f655d35ec496218b85f79b3437c829e93320c7c9215ccfd92489e"
 }
 },
 {
 "name": "wcwidth",
 "tags": [ "utility" ],
-"versions": " 0.2.5",
+"versions": " 0.2.6",
 "info":
 {
 "description": "<p>This library is mainly for CLI programs that carefully produce output for Terminals, or make pretend to be an emulator.</p><p> The printable length of most strings are equal to the number of cells they occupy on the screen <code>1 charater : 1 cell</code>. However, there are categories of characters that occupy 2 cells (full-wide), and others that occupy 0 cells (zero-width).</p><p>POSIX.1-2001 and POSIX.1-2008 conforming systems provide <a href='http://man7.org/linux/man-pages/man3/wcwidth.3.html'>wcwidth(3)</a> and <a href='http://man7.org/linux/man-pages/man3/wcswidth.3.html'>wcswidth(3)</a> C functions of which this python module’s functions precisely copy. These functions return the number of cells a unicode string is expected to occupy.</p>",
@@ -1434,8 +1434,8 @@
 "siteName": "github",
 "license": "MIT",
 "linkToLicense": "https://github.com/jquast/wcwidth/blob/master/LICENSE",
-"version": "(py3) 0.2.5",
-"installCommand": "wcwidth==0.2.5 --hash=sha256:beb4802a9cebb9144e99086eff703a642a13d6a0052920003a230f3294bbe784"
+"version": "(py3) 0.2.6",
+"installCommand": "wcwidth==0.2.6 --hash=sha256:795b138f6875577cd91bba52baf9e445cd5118fd32723b460e30a0af30ea230e"
 }
 },
 {
@@ -1457,7 +1457,7 @@
 {
 "name": "zipp",
 "tags": [ "programming_tools" ],
-"versions": " 3.8.0",
+"versions": " 3.11.0",
 "info":
 {
 "description": "<p>A pathlib-compatible Zipfile object wrapper. Official backport of the standard library <a href='https://docs.python.org/3.8/library/zipfile.html#path-objects'>Path object</a>.</p>",
@@ -1466,8 +1466,8 @@
 "siteName": "github",
 "license": "MIT",
 "linkToLicense": "https://github.com/jaraco/zipp/blob/main/LICENSE",
-"version": "(py3) 3.8.0",
-"installCommand": "zipp==3.8.0 --hash=sha256:84912290631787bb5ce3b42b3fbff00034968ac61a03751126cccf54e6dca245"
+"version": "(py3) 3.11.0",
+"installCommand": "zipp==3.11.0 --hash=sha256:83a28fcb75844b5c0cdaf5aa4003c2d728c77e05f5aeabe8e95e56727005fbaa"
 }
 },
 {
@@ -1482,8 +1482,8 @@
 "siteName": "github",
 "license": "APACHE2",
 "linkToLicense": "https://github.com/IBM/zos-util/blob/main/LICENSE",
-"version": "(py3) 1.0.1",
-"installCommand": "zos-util==1.0.1 --hash=sha256:84912290631787bb5ce3b42b3fbff00034968ac61a03751126cccf54e6dca245"
+"version": "(cp311) 1.0.1",
+"installCommand": "zos-util==1.0.1 --hash=sha256:528ac3f7f12cb3756d08eed9c04ea5873084bdf776c6d09e9ca00c8f61c6f808"
 }
 }
 ]
