@@ -10,7 +10,7 @@ import { MessageService } from '../../services/message.service';
 export class HomeComponent implements OnInit {
 
   // make an inquiry and launch shopz
-  shopz: string = "https://www.ibm.com/client-tools/shopz";
+  shopz: string = "https://ibm.biz/zPAIT_shopz";
 
   constructor(public _messageService: MessageService, public headService: HeaderService) { }
 
