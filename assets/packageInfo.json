@@ -1,4 +1,20 @@
 [{
+"name": "alembic",
+"tags": [ "utility" ],
+"versions": " 1.10.4.dev0",
+"info":
+{
+"description": "<p>Alembic is a database migrations tool written by the author of SQLAlchemy.</p>",
+"usageNotes": "<p>Usage information is available on <a href='https://github.com/sqlalchemy/alembic'>github.com</a>.</p>",
+"linkToSite": "https://github.com/sqlalchemy/alembic",
+"siteName": "github.com",
+"license": "MIT",
+"linkToLicense": "https://github.com/sqlalchemy/alembic/blob/main/LICENSE",
+"version": "(py3) 1.10.4.dev0",
+"installCommand": "alembic==1.10.4.dev0 --hash=sha256:e11eedecca9008d794e9ed7076f65f78da84acee188d158e2dab20a3798c9c52"
+}
+},
+{
 "name": "aniso8601",
 "tags": [ "utility" ],
 "versions": " 9.0.1",
@@ -15,6 +31,22 @@
 }
 },
 {
+"name": "argon2-cffi-bindings",
+"tags": [ "utility" ],
+"versions": " 21.2.0 21.2.0.post0",
+"info":
+{
+"description": "<p>argon2-cffi-bindings provides low-level <a href='https://cffi.readthedocs.io/'>CFFI</a> bindings to the <a href='https://github.com/p-h-c/phc-winner-argon2'>Argon2</a> password hashing algorithm including a vendored version of them.</p><p>If you want to hash passwords in an application, this package is not for you. Have a look at argon2-cffi with its high-level abstractions!</p><p>These bindings have been extracted from <a href='https://argon2-cffi.readthedocs.io/'>argon2-cffi</a> and it remains its main consumer. However, they may be used by other packages that want to use the Argon2 library without dealing with C-related complexities.</p>",
+"usageNotes": "<p>Since this package is intended to be an implementation detail, it uses a private module name to prevent your users from using it by accident.</p><p>Therefore you have to import the symbols from <code>_argon2_cffi_bindings</code>:</p><pre><code>from _argon2_cffi_bindings import ffi, lib<br></code></pre><p>Please refer to <a href='https://cffi.readthedocs.io/en/latest/using.html'>cffi</a> documentation on how to use the <code>ffi</code> and <code>lib</code> objects.</p><p>The list of symbols that are provided can be found in the <a href='https://github.com/hynek/argon2-cffi-bindings/blob/main/src/_argon2_cffi_bindings/_ffi_build.py'>_ffi_build.py</a> file on github.</p>",
+"linkToSite": "https://github.com/hynek/argon2-cffi-bindings",
+"siteName": "github",
+"license": "MIT",
+"linkToLicense": "https://github.com/hynek/argon2-cffi-bindings/blob/main/LICENSE",
+"version": "(cp311) 21.2.0.post0",
+"installCommand": "argon2-cffi-bindings==21.2.0.post0 --hash=sha256:9252cc8af1040a0348a69a7781d6b237496446a5f57c9494b65d2dc74c46f786"
+}
+},
+{
 "name": "argon2-cffi",
 "tags": [ "security" ],
 "versions": " 21.3.0",
@@ -26,24 +58,8 @@
 "siteName": "readthedocs.io",
 "license": "MIT",
 "linkToLicense": "https://github.com/hynek/argon2-cffi/blob/main/LICENSE",
-"version": "(cp310) 21.3.0",
-"installCommand": "argon2-cffi==21.3.0 --hash=sha256:f126bf5a7693fe683605f27403aea204404794fed4c17d6d8ecdab5bb417f1e1"
-}
-},
-{
-"name": "argon2-cffi-bindings",
-"tags": [ "utility" ],
-"versions": " 21.2.0",
-"info":
-{
-"description": "<p>argon2-cffi-bindings provides low-level <a href='https://cffi.readthedocs.io/'>CFFI</a> bindings to the <a href='https://github.com/p-h-c/phc-winner-argon2'>Argon2</a> password hashing algorithm including a vendored version of them.</p><p>If you want to hash passwords in an application, this package is not for you. Have a look at argon2-cffi with its high-level abstractions!</p><p>These bindings have been extracted from <a href='https://argon2-cffi.readthedocs.io/'>argon2-cffi</a> and it remains its main consumer. However, they may be used by other packages that want to use the Argon2 library without dealing with C-related complexities.</p>",
-"usageNotes": "<p>Since this package is intended to be an implementation detail, it uses a private module name to prevent your users from using it by accident.</p><p>Therefore you have to import the symbols from <code>_argon2_cffi_bindings</code>:</p><pre><code>from _argon2_cffi_bindings import ffi, lib<br></code></pre><p>Please refer to <a href='https://cffi.readthedocs.io/en/latest/using.html'>cffi</a> documentation on how to use the <code>ffi</code> and <code>lib</code> objects.</p><p>The list of symbols that are provided can be found in the <a href='https://github.com/hynek/argon2-cffi-bindings/blob/main/src/_argon2_cffi_bindings/_ffi_build.py'>_ffi_build.py</a> file on github.</p>",
-"linkToSite": "https://github.com/hynek/argon2-cffi-bindings",
-"siteName": "github",
-"license": "MIT",
-"linkToLicense": "https://github.com/hynek/argon2-cffi-bindings/blob/main/LICENSE",
-"version": "(cp310) 21.2.0",
-"installCommand": "argon2-cffi-bindings==21.2.0 --hash=sha256:f126bf5a7693fe683605f27403aea204404794fed4c17d6d8ecdab5bb417f1e1"
+"version": "(py3) 21.3.0",
+"installCommand": "argon2-cffi==21.3.0 --hash=sha256:ca8776f6acbb0d565b739f1276dea6b6642c3d82d07d5e3456f3a806795eb3ac"
 }
 },
 {
@@ -60,6 +76,22 @@
 "linkToLicense": "https://github.com/gristlabs/asttokens/blob/master/LICENSE",
 "version": "(py3) 2.2.1",
 "installCommand": "asttokens==2.2.1 --hash=sha256:6b0ac9e93fb0335014d382b8fa9b3afa7df546984258005da0b9e7095b3deb1c"
+}
+},
+{
+"name": "async-generator",
+"tags": [ "utility" ],
+"versions": " 1.10",
+"info":
+{
+"description": "<p>async generators were added in version python3.6 - but this library enables the functionality back to version 3.5.</p>",
+"usageNotes": "<p>Usage information is available on <a href='https://github.com/ibm-z-oss-oda/async_generator'>github.com</a>.</p>",
+"linkToSite": "https://github.com/ibm-z-oss-oda/async_generator",
+"siteName": "github.com",
+"license": "MIT",
+"linkToLicense": "https://github.com/ibm-z-oss-oda/async_generator/blob/master/LICENSE",
+"version": "(py3) 1.10",
+"installCommand": "async-generator==1.10 --hash=sha256:7b9d1f8a8e65f263d3c7ac6857d9052a4f433450682178984afa840a64a552c5"
 }
 },
 {
@@ -111,6 +143,38 @@
 }
 },
 {
+"name": "bleach",
+"tags": [ "security","programming_tools" ],
+"versions": " 6.0.0.post1",
+"info":
+{
+"description": "<p>Bleach is an allowed-list-based HTML sanitizing library that escapes or stripsmarkup and attributes.</p><p>Bleach can also linkify text safely, applying filters that Django's <tt class='docutils literal'>urlize</tt>filter cannot, and optionally setting <tt class='docutils literal'>rel</tt> attributes, even on links alreadyin the text.</p><p>Bleach is intended for sanitizing text from <em>untrusted</em> sources. If you findyourself jumping through hoops to allow your site administrators to do lots ofthings, you're probably outside the use cases. Either trust those users, ordon't.</p><p>Because it relies on <a class='reference external' href='https://github.com/html5lib/html5lib-python'>html5lib</a>, Bleach is as good as modern browsers at dealingwith weird, quirky HTML fragments. And <em>any</em> of Bleach's methods will fixunbalanced or mis-nested tags.</p>",
+"usageNotes": "<p>The simplest way to use Bleach is as such:</p><pre><code>>>> import bleach<br><br>>>> bleach.clean('an &lt;script&gt;evil()&lt;/script&gt; example')<br>u'an &amp;lt;script&amp;gt;evil()&amp;lt;/script&amp;gt; example'<br><br>>>> bleach.linkify('an http://example.com url')<br>u'an &lt;a href=&ldquo;http://example.com&ldquo; rel=&ldquo;nofollow&ldquo;&gt;http://example.com&lt;/a&gt; url'<br></pre></code><p>See <a href='https://bleach.readthedocs.io/en/latest/'>readthedocs.io</a> for me information.</p>",
+"linkToSite": "https://github.com/mozilla/bleach",
+"siteName": "github",
+"license": "APACHE2",
+"linkToLicense": "https://github.com/mozilla/bleach/blob/main/LICENSE",
+"version": "(py3) 6.0.0.post1",
+"installCommand": "bleach==6.0.0.post1 --hash=sha256:bf68a9d86de5c59456db5167d26273f714f235e42e4349e121fb9247e3219268"
+}
+},
+{
+"name": "bottle",
+"tags": [ "web","programming_tools" ],
+"versions": " 0.12.23",
+"info":
+{
+"description": "<p>Bottle is a fast and simple micro-framework for small web applications. It offers request dispatching (Routes) with url parameter support, templates, a built-in HTTP Server and adapters for many third party WSGI/HTTP-server and template engines - all in a single file and with no dependencies other than the Python Standard Library.</p>",
+"usageNotes": "<p>&ldquo;Hello World&ldquo; example in bottle:</p><pre><code>from bottle import route, run, template<br><br>@route('/hello/<name>')<br>def index(name):<br>    return template('%lt;b&gt;Hello {{name}}&lt;/b&gt;!', name=name)<br><br>run(host='localhost', port=8080)<br></code></pre><p>Run this script or paste it into a Python console, then point your browser to <code>http://localhost:8080/hello/world</code> to see it working!</p><p>See <a href='http://bottlepy.org/docs/dev/'>official documentation</a> for further information.</p>",
+"linkToSite": "http://bottlepy.org",
+"siteName": "bottlepy.org",
+"license": "MIT",
+"linkToLicense": "https://github.com/bottlepy/bottle/blob/master/LICENSE",
+"version": "(py3) 0.12.23",
+"installCommand": "bottle==0.12.23 --hash=sha256:fba1a71415c813b3bc676b79d38bcee9cc67db62f6a4532b679044cbfad4e45c"
+}
+},
+{
 "name": "bz2file",
 "tags": [ "utility" ],
 "versions": " 0.98",
@@ -129,7 +193,7 @@
 {
 "name": "cairocffi",
 "tags": [ "graphics" ],
-"versions": " 1.3.0",
+"versions": " 1.3.0.post1",
 "info":
 {
 "description": "<p>cairocffi is a <a href='https://cffi.readthedocs.org/'>CFFI</a>-based drop-in replacement for <a href='https://pycairo.readthedocs.io/'>Pycairo</a>, a set of Python bindings and object-oriented API for <a href='http://cairographics.org/'>cairo</a>. Cairo is a 2D vector graphics library with support for multiple backends including image buffers, PNG, PostScript, PDF, and SVG file output.</p><p>Additionally, the <code>cairocffi.pixbuf</code> module uses <a href='https://gitlab.gnome.org/GNOME/gdk-pixbuf'>GDK-PixBuf</a> to decode various image formats for use in cairo.</p>",
@@ -138,8 +202,8 @@
 "siteName": "github",
 "license": "BSD3",
 "linkToLicense": "https://github.com/Kozea/cairocffi/blob/master/LICENSE",
-"version": "(py3) 1.3.0",
-"installCommand": "cairocffi==1.3.0 --hash=sha256:397d362668c25afc748648eed9826f4ec63ee59b6c5d7bd47cc62a92a94c3107"
+"version": "(py3) 1.3.0.post1",
+"installCommand": "cairocffi==1.3.0.post1 --hash=sha256:9970bd9c1dfa01d092ce90d239c1ebc0ff584ae19554c62860c1267121305254"
 }
 },
 {
@@ -193,7 +257,7 @@
 {
 "name": "charset-normalizer",
 "tags": [ "utility" ],
-"versions": " 3.0.1",
+"versions": " 3.0.1.post0",
 "info":
 {
 "description": "<p>A library that helps you read text from an unknown charset encoding.</p><p> Motivated by <code>chardet</code>, this implements various performance improvements in comparison, especially on files about 1MB in size. All IANA character set names for which the Python core library provides codecs are supported.</p>",
@@ -202,8 +266,40 @@
 "siteName": "github",
 "license": "MIT",
 "linkToLicense": "https://github.com/Ousret/charset_normalizer/blob/master/LICENSE",
-"version": "(py3) 3.0.1",
-"installCommand": "charset-normalizer==3.0.1 --hash=sha256:7e189e2e1d3ed2f4aebabd2d5b0f931e883676e51c7624826e0a4e5fe8a0bf24"
+"version": "(py3) 3.0.1.post0",
+"installCommand": "charset-normalizer==3.0.1.post0 --hash=sha256:a3c7abe1e119baa100ee1d2965760a07108bd046fecc16a8e83fdb0942d680f8"
+}
+},
+{
+"name": "click",
+"tags": [ "utility","programming_tools" ],
+"versions": " 8.1.3.post0",
+"info":
+{
+"description": "<p>Click is a Python package for creating beautiful command line interfaces in a composable way with as little code as necessary. It’s the “Command Line Interface Creation Kit”. It’s highly configurable but comes with sensible defaults out of the box.</p><p>It aims to make the process of writing command line tools quick and fun while also preventing any frustration caused by the inability to implement an intended CLI API.</p>",
+"usageNotes": "<h4>A simple example:</h4><pre><code>import click<br><br>@click.command()<br>@click.option(&ldquo;--count&ldquo;, default=1, help=&ldquo;Number of greetings.&ldquo;)<br>@click.option(&ldquo;--name&ldquo;, prompt=&ldquo;Your name&ldquo;, help=&ldquo;The person to greet.&ldquo;)<br>def hello(count, name):<br>    &ldquo;&ldquo;&ldquo;Simple program that greets NAME for a total of COUNT times.&ldquo;&ldquo;&ldquo;<br>    for _ in range(count):<br>        click.echo(f&ldquo;Hello, {name}!&ldquo;)<br><br>if __name__ == '__main__':<br>    hello()<br></code></pre><br><pre><code>$ python hello.py --count=3<br>Your name: Click<br>Hello, Click!<br>Hello, Click!<br>Hello, Click!<br></code></pre><p>Further documentation can be found on <a href='https://click.palletsprojects.com/en/8.0.x/#documentation'>click.pallasprojects.com</a></p>",
+"linkToSite": "https://palletsprojects.com/p/click/",
+"siteName": "palletsprojects.com/p/click/",
+"license": "here",
+"linkToLicense": "https://github.com/pallets/click/blob/main/LICENSE.rst",
+"version": "(py3) 8.1.3.post0",
+"installCommand": "click==8.1.3.post0 --hash=sha256:4e29cc51008eb42e68234adfb0885594cb661f1281b2cfc9687bdaea6ca7d600"
+}
+},
+{
+"name": "cloudpickle",
+"tags": [ "programming_tools" ],
+"versions": " 2.0.0",
+"info":
+{
+"description": "<p><code>cloudpickle</code> makes it possible to serialize Python constructs not supportedby the default <code>pickle</code> module from the Python standard library.</p><p><code>cloudpickle</code> is especially useful for <strong>cluster computing</strong> where Pythoncode is shipped over the network to execute on remote hosts, possibly closeto the data.</p><p>Among other things, <code>cloudpickle</code> supports pickling for <strong>lambda functions</strong>along with <strong>functions and classes defined interactively</strong> in the<code>__main__</code> module (for instance in a script, a shell or a Jupyter notebook).</p><p>Cloudpickle can only be used to send objects between the <strong>exact same versionof Python</strong>.</p><p>Using <code>cloudpickle</code> for <strong>long-term object storage is not supported andstrongly discouraged.</strong></p>",
+"usageNotes": "<h4>Two Examples:</h4><p>Pickling a lambda expression:</p><pre><code>&gt;import cloudpickle<br>&gt;squared = lambda x: x ** 2<br>&gt;pickled_lambda = cloudpickle.dumps(squared)</p><br><br>&gt;import pickle<br>&gt;new_squared = pickle.loads(pickled_lambda)<br>&gt;new_squared(2)<br>4<br></code></pre><p>Pickling a function interactively defined in a Python shell session(in the <code>__main__</code> module):</p><pre><code>&gt;CONSTANT = 42<br>&gt;my_function(data: int) -&gt; int:<br>...     return data + CONSTANT<br>...<br>&gt;pickled_function = cloudpickle.dumps(my_function)<br>&gt;depickled_function = pickle.loads(pickled_function)<br>&gt;depickled_function<br>&lt;function __main__.my_function(data:int) -&gt; int&gt;<br>&gt;depickled_function(43)<br>85<br></code></pre><p>Note that these examples also make use of the separate library <code>pickle</code> to demonstrate the functionality of this package.</p><p>Further information is available via <a href='https://github.com/cloudpipe/cloudpickle'>github</a>.</p>",
+"linkToSite": "https://github.com/cloudpipe/cloudpickle",
+"siteName": "github",
+"license": "BSD3",
+"linkToLicense": "https://github.com/cloudpipe/cloudpickle/blob/master/LICENSE",
+"version": "(py3) 2.0.0",
+"installCommand": "cloudpickle==2.0.0 --hash=sha256:dd89c6e592f4afea28d6d08941e51d00fc3afc94224587b1472ebb5470dce123"
 }
 },
 {
@@ -220,6 +316,70 @@
 "linkToLicense": "https://github.com/matplotlib/cycler/blob/main/LICENSE",
 "version": "(py3) 0.11.0",
 "installCommand": "cycler==0.11.0 --hash=sha256:9a5d8a7d291a226322e0ba5ce133e7055ffb89846bfcf194e8f27215bf97f17b"
+}
+},
+{
+"name": "cython",
+"tags": [ "languages" ],
+"versions": " 0.29.32",
+"info":
+{
+"description": "<p>The Cython language makes writing C extensions for the Python language as easy as Python itself. Cython is a source code translator based on <a href='http://www.cosc.canterbury.ac.nz/greg.ewing/python/Pyrex/'>Pyrex</a>, but supports more cutting edge functionality and optimizations.</p><p>The Cython language is a superset of the Python language (almost all Python code is also valid Cython code), but Cython additionally supports optional static typing to natively call C functions, operate with C++ classes and declare fast C types on variables and class attributes. This allows the compiler to generate very efficient C code from Cython code.</p><p>This makes Cython the ideal language for writing glue code for external C/C++ libraries, and for fast C modules that speed up the execution of Python code.</p>",
+"usageNotes": "<p>Imagine a simple “hello world” script in a file <code>hello.pyx</code>:</p><pre><code>def say_hello_to(name):<br>    print(&ldquo;Hello %s!&ldquo; % name)<br></code></pre><p>The following could be a corresponding <code>setup.py</code> script:</p><pre><code>from setuptools import setup<br>from Cython.Build import cythonize<br><br>setup(<br>    name='Hello world app',<br>    ext_modules=cythonize(&ldquo;hello.pyx&ldquo;),<br>    zip_safe=False,<br>)<br></code></pre><p>To build, run <code>python setup.py build_ext --inplace</code>. Then simply start a Python session and do <code>from hello import say_hello_to</code> and use the imported function as you see fit.</p><p>Full documentation can be found on <a href='https://cython.readthedocs.io/en/latest/'>readthedocs.io</a>.</p>",
+"linkToSite": "https://cython.org/",
+"siteName": "cython.org",
+"license": "APACHE2",
+"linkToLicense": "https://github.com/cython/cython/blob/master/LICENSE.txt",
+"version": "(cp311) 0.29.32",
+"installCommand": "cython==0.29.32 --hash=sha256:6e747bc6bb238fb732718c9a2ab60cc84285a08f429e2d725ee6712bff632f2f"
+}
+},
+{
+"name": "cytoolz",
+"tags": [ "utility" ],
+"versions": " 0.12.0",
+"info":
+{
+"description": "<p>Cython implementation of the<a class='reference external' href='https://github.com/pytoolz/toolz'><tt class='docutils literal'>toolz</tt></a> <a class='reference external' href='https://pypi.python.org/pypi/toolz/'>package,</a> whichprovides high performance utility functions for iterables, functions,and dictionaries.</p><p><tt class='docutils literal'>toolz</tt> is a pure Python package that borrows heavily from contemporaryfunctional languanges.  It is designed to interoperate seamlessly with otherlibraries including <tt class='docutils literal'>itertools</tt>, <tt class='docutils literal'>functools</tt>, and third party libraries.High performance functional data analysis is possible with builtin typeslike <tt class='docutils literal'>list</tt> and <tt class='docutils literal'>dict</tt>, and user-defined data structures; and low memoryusage is achieved by using the iterator protocol and returning iteratorswhenever possible.</p><p><tt class='docutils literal'>cytoolz</tt> implements the same API as <tt class='docutils literal'>toolz</tt>.  The main differences arethat <tt class='docutils literal'>cytoolz</tt> is faster (typically 2-5x faster with a few spectacularexceptions) and <tt class='docutils literal'>cytoolz</tt> offers a C API that is accessible to otherprojects developed in Cython.  Since <tt class='docutils literal'>toolz</tt> is able to process verylarge (potentially infinite) data sets, the performance increase gained byusing <tt class='docutils literal'>cytoolz</tt> can be significant.</p>",
+"usageNotes": "<p>Complete documentation is available at <a href='https://toolz.readthedocs.io/en/latest/'>github</a> including the <a href='https://toolz.readthedocs.io/en/latest/api.html'>API reference</a>.</p>",
+"linkToSite": "https://github.com/pytoolz/cytoolz",
+"siteName": "github",
+"license": "BSD3",
+"linkToLicense": "https://github.com/pytoolz/cytoolz/blob/master/LICENSE.txt",
+"version": "(cp311) 0.12.0",
+"installCommand": "cytoolz==0.12.0 --hash=sha256:3dbf543303297c5550f8dde3286784061463531d21a5382fd6059bd3ec07f1ec"
+}
+},
+{
+"name": "dask",
+"tags": [ "utility","programming_tools","math","machine_learning" ],
+"versions": " 2021.12.0.post0",
+"info":
+{
+"description": "<p>Dask is a flexible library for parallel computing in Python.</p><p>Dask is composed of two parts:</p><ul><li>Dynamic task scheduling optimized for computation. This is similar to Airflow, Luigi, Celery, or Make, but optimized for interactive computational workloads.</li><li>“Big Data” collections like parallel arrays, dataframes, and lists that extend common interfaces like NumPy, Pandas, or Python iterators to larger-than-memory or distributed environments. These parallel collections run on top of dynamic task schedulers.</li></ul>",
+"usageNotes": "<p>Reference the <a href='https://docs.dask.org/en/stable/10-minutes-to-dask.html'>10 minutes to dask</a> tutorial from <a href='https://dask.org/'>dask.org</a> for a guide to getting started and further documentation.</p>",
+"linkToSite": "https://dask.org/",
+"siteName": "dask.org",
+"license": "BSD3",
+"linkToLicense": "https://github.com/dask/dask/blob/main/LICENSE.txt",
+"version": "(py3) 2021.12.0.post0",
+"installCommand": "dask==2021.12.0.post0 --hash=sha256:3498902083e3e739b9b621741a67c37e0be8a76e573336955b3b71a184013456"
+}
+},
+{
+"name": "debugpy",
+"tags": [ "utility","web","programming_tools" ],
+"versions": " 1.6.3.post1",
+"info":
+{
+"description": "<p>debugpy is an implementation of the Debug Adapter Protocol for Python.</p>",
+"usageNotes": "<p>To run a script file with debugging enabled, but without waiting for the client to attach (i.e. code starts executing immediately):</p><pre><code>-m debugpy --listen localhost:5678 myfile.py<br></code></pre><p>To wait until the client attaches before running your code, use the <code>--wait-for-client</code> switch.</p><pre><code>-m debugpy --listen localhost:5678 --wait-for-client myfile.py<br></code></pre><p>The hostname passed to <code>--listen</code> specifies the interface on which the debug adapter will be listening for connections from DAP clients. It can be omitted, with only the port number specified:</p><pre><code>-m debugpy --listen 5678 ...<br></code></pre><p>in which case the default interface is 127.0.0.1.</p><p>To be able to attach from another machine, make sure that the adapter is listening on a public interface - using <code>0.0.0.0</code> will make it listen on all available interfaces:</p><pre><code>-m debugpy --listen 0.0.0.0:5678 myfile.py<br></code></pre><p>This should only be done on secure networks, since anyone who can connect to the specified port can then execute arbitrary code within the debugged process.</p><p>To pass arguments to the script, just specify them after the filename. This works the same as with Python itself - everything up to the filename is processed by debugpy, but everything after that becomes <code>sys.argv</code> of the running process.</p><p>To run a module, use the -m switch instead of filename:</p><pre><code>-m debugpy --listen localhost:5678 -m mymodule<br></code></pre><p>See more documentation on <a href='https://github.com/microsoft/debugpy/blob/main/README.md'>github</a>.</p>",
+"linkToSite": "https://github.com/microsoft/debugpy/",
+"siteName": "github",
+"license": "MIT",
+"linkToLicense": "https://github.com/microsoft/debugpy/blob/main/LICENSE",
+"version": "(cp311) 1.6.3.post1",
+"installCommand": "debugpy==1.6.3.post1 --hash=sha256:99dfccb8927205d258f0de96bed1d2b97bdc8f43e9516ffaa1b85d924f36b3e6"
 }
 },
 {
@@ -241,7 +401,7 @@
 {
 "name": "defusedxml",
 "tags": [ "security" ],
-"versions": " 0.7.1",
+"versions": " 0.7.1.post0",
 "info":
 {
 "description": "<p>The results of an attack on a vulnerable XML library can be fairly dramatic. With just a few hundred Bytes of XML data an attacker can occupy several Gigabytes of memory within seconds. An attacker can also keep CPUs busy for a long time with a small to medium size request. Under some circumstances it is even possible to access local files on your server, to circumvent a firewall, or to abuse services to rebound attacks to third parties.</p><p>The attacks use and abuse less common features of XML and its parsers. The majority of developers are unacquainted with features such as processing instructions and entity expansions that XML inherited from SGML. At best they know about <code>&lt;!DOCTYPE&gt;</code> from experience with HTML but they are not aware that a document type definition (DTD) can generate an HTTP request or load a file from the file system.</p><p>None of the issues is new. They have been known for a long time. Billion laughs was first reported in 2003. Nevertheless some XML libraries and applications are still vulnerable and even heavy users of XML are surprised by these features. It's hard to say whom to blame for the situation. It's too short sighted to shift all blame on XML parsers and XML libraries for using insecure default settings. After all they properly implement XML specifications. Application developers must not rely that a library is always configured for security and potential harmful data by default.</p><p>The defusedxml package contains several Python-only workarounds and fixes for denial of service and other vulnerabilities in Python's XML libraries.</p>",
@@ -250,8 +410,8 @@
 "siteName": "github",
 "license": "OTHER",
 "linkToLicense": "https://github.com/tiran/defusedxml/blob/main/LICENSE",
-"version": "(py3) 0.7.1",
-"installCommand": "defusedxml==0.7.1 --hash=sha256:09078b85bd1e6c8c1185dddf14c6dd65293d89698159ce66ca8bca554a3209c0"
+"version": "(py3) 0.7.1.post0",
+"installCommand": "defusedxml==0.7.1.post0 --hash=sha256:3e6a967a3774726d3a6db9f26ff065e2c69d388f0e2d567664885af4de64e565"
 }
 },
 {
@@ -268,6 +428,22 @@
 "linkToLicense": "https://github.com/pypa/distlib/blob/master/LICENSE.txt",
 "version": "(py3) 0.3.6",
 "installCommand": "distlib==0.3.6 --hash=sha256:f35c4b692542ca110de7ef0bea44d73981caeb34ca0b9b6b2e6d7790dda8f80e"
+}
+},
+{
+"name": "docutils",
+"tags": [ "utility" ],
+"versions": " 0.19.post0",
+"info":
+{
+"description": "<p>Docutils is a modular system for processing documentation into useful formats, such as HTML, XML, and LaTeX. For input Docutils supports reStructuredText, an easy-to-read, what-you-see-is-what-you-get plaintext markup syntax.</p>",
+"usageNotes": "<p>Usage can be as simple as:</p><pre><code>rst2html.py FAQ.txt FAQ.html <br></code></pre><p>To convert files between formats.</p><p>Refer to the <a href='https://docutils.sourceforge.io/README.html#quick-start&ldquo;quickstart</a> guide to get started.</a>",
+"linkToSite": "https://docutils.sourceforge.io/",
+"siteName": "sourceforge.io",
+"license": "HOW TO LINK SOURCEFORGE?",
+"linkToLicense": "HOW TO LINK SOURCEFORGE?",
+"version": "(py3) 0.19.post0",
+"installCommand": "docutils==0.19.post0 --hash=sha256:07e290de2a1518d1dc9a0c29dfffa13fc7f6e795f04ff66b55ff09dcb843a59f"
 }
 },
 {
@@ -337,7 +513,7 @@
 {
 "name": "filelock",
 "tags": [ "utility" ],
-"versions": " 3.9.0",
+"versions": " 3.12.0",
 "info":
 {
 "description": "<p>This package contains a single module, which implements a platform independent file lock in Python, which provides a simple way of inter-process communication. </p>",
@@ -346,14 +522,30 @@
 "siteName": "https://github.com/tox-dev/py-filelock",
 "license": "Unlicense",
 "linkToLicense": "https://github.com/tox-dev/py-filelock/blob/main/LICENSE",
-"version": "(py3) 3.9.0",
-"installCommand": "filelock==3.9.0 --hash=sha256:f58d535af89bb9ad5cd4df046f741f8553a418c01a7856bf0d173bbc9f6bd16d"
+"version": "(py3) 3.12.0",
+"installCommand": "filelock==3.12.0 --hash=sha256:998eea40018ab75e1d09f28d89d637a948d76ab58f99b24b9d7697181f3c9b83"
+}
+},
+{
+"name": "Flask-RESTful",
+"tags": [ "utility" ],
+"versions": " 0.3.9",
+"info":
+{
+"description": "<p>Flask-RESTful provides the building blocks for creating a great REST API.</p>",
+"usageNotes": "<p>Usage information is available on <a href='http://flask-restful.readthedocs.io/'>readthedocs.io</a>.</p>",
+"linkToSite": "https://github.com/flask-restful/flask-restful",
+"siteName": "github.com",
+"license": "BSD 3",
+"linkToLicense": "https://github.com/flask-restful/flask-restful/blob/master/LICENSE",
+"version": "(py3) 0.3.9",
+"installCommand": "Flask-RESTful==0.3.9 --hash=sha256:d0a42c2a37cc486511f5bc7eaa291aaf0f679ffb0eac7ed0fc096629bb921325"
 }
 },
 {
 "name": "flask",
 "tags": [ "web" ],
-"versions": " 2.0.2",
+"versions": " 2.2.5",
 "info":
 {
 "description": "<p>Flask is a lightweight WSGI web application framework. It is designed to make getting started quick and easy, with the ability to scale up to complex applications. It began as a simple wrapper around Werkzeug and Jinja and has become one of the most popular Python web application frameworks.</p><p>Flask offers suggestions, but doesn’t enforce any dependencies or project layout. It is up to the developer to choose the tools and libraries they want to use. There are many extensions provided by the community that make adding new functionality easy.</p>",
@@ -362,14 +554,14 @@
 "siteName": "palletsprojects.com/p/flask",
 "license": "BSD3",
 "linkToLicense": "https://github.com/pallets/flask/blob/main/LICENSE.rst",
-"version": "(py3) 2.0.2",
-"installCommand": "flask==2.0.2 --hash=sha256:f58d535af89bb9ad5cd4df046f741f8553a418c01a7856bf0d173bbc9f6bd16d"
+"version": "(py3) 2.2.5",
+"installCommand": "flask==2.2.5 --hash=sha256:620f433f84d00ec3b5375357fd7f9f7e7e53087552d5a5618e2acfb89bf3fad4"
 }
 },
 {
 "name": "fontconfig",
 "tags": [ "utility" ],
-"versions": " 2.14.1",
+"versions": " 2.14.1 2.14.1.post0",
 "info":
 {
 "description": "<p>Fontconfig is a library for configuring and customizing font access. </p><p>Fontconfig can: </p><ul><li>discover new fonts when installed automatically, removing a common source of configuration problems. </li><li>perform font name substitution, so that appropriate alternative fonts can be selected if fonts are missing. </li><li>identify the set of fonts required to completely cover a set of languages. </li><li>have GUI configuration tools built as it uses an XML-based configuration file (though with autodiscovery, we believe this need is minimized). </li><li>efficiently and quickly find the fonts you need among the set of fonts you have installed, even if you have installed thousands of fonts, while minimzing memory usage. </li><li>be used in concert with the X Render Extension and <a href='https://www.freedesktop.org/wiki/Software/FreeType/'>FreeType</a> to implement high quality, anti-aliased and subpixel rendered text on a display. </li></ul><p>Fontconfig does not: </p><ul><li>render the fonts themselves (this is left to FreeType or other rendering mechanisms) </li><li>depend on the X Window System in any fashion, so that printer only applications do not have such dependencies </li></ul>",
@@ -378,14 +570,30 @@
 "siteName": "freedesktop.org",
 "license": "OTHER",
 "linkToLicense": "https://github.com/freedesktop/fontconfig/blob/master/COPYING",
-"version": "(py3) 2.14.1",
-"installCommand": "fontconfig==2.14.1 --hash=sha256:f0914abdfd034acf83b39bc1f7513c9a00a84795adaffe2b6c2bfa8ab7c73d92"
+"version": "(py3) 2.14.1.post0",
+"installCommand": "fontconfig==2.14.1.post0 --hash=sha256:4b9c480fc48f9d3c3736e22db6e5e41ee0bf839a3d21528bbfc99ed2c2eca921"
+}
+},
+{
+"name": "fonttools",
+"tags": [ "utility" ],
+"versions": " 4.33.3.post0",
+"info":
+{
+"description": "<p>fontTools is a library for manipulating fonts, written in Python. The project includes the TTX tool, that can convert TrueType and OpenType fonts to and from an XML text format, which is also called TTX. </p>",
+"usageNotes": "<p>For advanced tool documentation, refer to <a href='https://fonttools.readthedocs.io/en/latest/'>readthedocs.io</a>.</p>",
+"linkToSite": "https://github.com/fonttools/fonttools",
+"siteName": "https://github.com/fonttools/fonttools",
+"license": "MIT",
+"linkToLicense": "https://github.com/fonttools/fonttools/blob/main/LICENSE",
+"version": "(py3) 4.33.3.post0",
+"installCommand": "fonttools==4.33.3.post0 --hash=sha256:6fb82fcc6a516545cef659430ff75d0347e86d2ad60d3b0e4c991ce8116d068c"
 }
 },
 {
 "name": "freetype2",
 "tags": [ "graphics" ],
-"versions": " 2.12.2",
+"versions": " 2.12.2 2.12.2.post0",
 "info":
 {
 "description": "<p>FreeType is a software font engine that is designed to be small, efficient, highly customizable, and portable while capable of producing high-quality output (glyph images). It can be used in graphics libraries, display servers, font conversion tools, text image generation tools, and many other products as well.</p><p>Note that FreeType is a font service and doesn't provide APIs to perform higher-level features like text layout or graphics processing (e.g., colored text rendering, ‘hollowing’, etc.). However, it greatly simplifies these tasks by providing a simple, easy to use, and uniform interface to access the content of font files.</p><p>Please note that ‘FreeType’ is also called ‘FreeType 2’, to distinguish it from the old, deprecated ‘FreeType 1’ library, a predecessor no longer maintained and supported.</p>",
@@ -394,14 +602,46 @@
 "siteName": "freetype.org",
 "license": "OTHER",
 "linkToLicense": "https://gitlab.freedesktop.org/freetype/freetype/-/blob/master/LICENSE.TXT",
-"version": "(py3) 2.12.2",
-"installCommand": "freetype2==2.12.2 --hash=sha256:17ab65cda7aa6830db2c3b936236c8081c10dfd4c5a5d76d4c36a07cc45d3499"
+"version": "(py3) 2.12.2.post0",
+"installCommand": "freetype2==2.12.2.post0 --hash=sha256:78fa51399f34866e862e697803fd60cd90cd29e5a33a02b22d1c6cd44ae8e171"
+}
+},
+{
+"name": "fsspec",
+"tags": [ "utility","programming_tools" ],
+"versions": " 2022.7.0",
+"info":
+{
+"description": "<p>A specification for pythonic filesystems.</p><p>Purpose: To produce a template or specification for a file-system interface, that specific implementations should follow, so that applications making use of them can rely on a common behaviour and not have to worry about the specific internal implementation decisions with any given backend. Many such implementations are included in this package.</p><p>In addition, if this is well-designed, then additional functionality, such as a key-value store or FUSE mounting of the file-system implementation may be available for all implementations 'for free'.</p>",
+"usageNotes": "<h4>Instantiating a File System:</h4><p><code>fsspec</code> provides an abstract file-system interface as a base class, to be used by other filesystems. A file-system instance is an object for manipulating files on some remote store, local files, files within some wrapper, or anything else that is capable of producing file-like objects.</p><p>Some concrete implementations are bundled with <code>fsspec</code> and others can be installed separately. They can be instantiated directly, or the <code>registry</code> can be used to find them.</p><p>Direct instantiation:</p><pre><code>from fsspec.implementations.local import LocalFileSystem<br><br>fs = LocalFileSystem()<br></code></pre><p>Look-up via registry:</p><pre><code>import fsspec<br><br>fs = fsspec.filesystem('file')<br></code></pre><h4>Use a file-system:</h4><p>File-system instances offer a large number of methods for getting information about and manipulating files for the given back-end. Although some specific implementations may not offer all features (e.g., <code>http</code> is read-only), generally all normal operations, such as <code>ls</code>, <code>rm</code>, should be expected to work (see the full list: <code>fsspec.spec.AbstractFileSystem</code>). Note that this quick-start will prefer posix-style naming, but many common operations are aliased: <code>cp()</code> and <code>copy()</code> are identical, for instance. Functionality is generally chosen to be as close to the builtin <code>os</code> module’s working for things like <code>glob</code> as possible. The following block of operations should seem very familiar.</p><pre><code>fs.mkdir(&ldquo;/remote/output&ldquo;)<br>fs.touch(&ldquo;/remote/output/success&ldquo;)  # creates empty file<br>assert fs.exists(&ldquo;/remote/output/success&ldquo;)<br>assert fs.isfile(&ldquo;/remote/output/success&ldquo;)<br>assert fs.cat(&ldquo;/remote/output/success&ldquo;) == b&ldquo;&ldquo;  # get content as bytestring<br>fs.copy(&ldquo;/remote/output/success&ldquo;, &ldquo;/remote/output/copy&ldquo;)<br>assert fs.ls(&ldquo;/remote/output&ldquo;, detail=False) == [&ldquo;/remote/output/success&ldquo;, &ldquo;/remote/output/copy&ldquo;)<br>fs.rm(&ldquo;/remote/output&ldquo;, recursive=True)<br></code></pre><p>Further usage notes are available on <a href='https://filesystem-spec.readthedocs.io/en/latest/usage.html'>readthedocs.io</a>.</p>",
+"linkToSite": "https://github.com/fsspec/filesystem_spec",
+"siteName": "github",
+"license": "BSD3",
+"linkToLicense": "https://github.com/fsspec/filesystem_spec/blob/master/LICENSE",
+"version": "(py3) 2022.7.0",
+"installCommand": "fsspec==2022.7.0 --hash=sha256:b536b98933f9df2b88aa05e6d59e9ef93f0d78e6c369d90165d6c187dff021d4"
+}
+},
+{
+"name": "future",
+"tags": [ "programming_tools","utility" ],
+"versions": " 0.18.3.post1",
+"info":
+{
+"description": "<p><code>python-future</code> is the missing compatibility layer between Python 2 and Python 3. It allows you to use a single, clean Python 3.x-compatible codebase to support both Python 2 and Python 3 with minimal overhead.</p>",
+"usageNotes": "<p><code>future</code> is designed to be used as follows:</p><pre><code>from __future__ import (absolute_import, division,<br>                        print_function, unicode_literals)<br>from builtins import (<br>         bytes, dict, int, list, object, range, str,<br>         ascii, chr, hex, input, next, oct, open,<br>         pow, round, super,<br>         filter, map, zip)<br></code></pre><p>followed by predominantly standard, idiomatic Python 3 code that then runs similarly on Python 2.6/2.7 and Python 3.3+.</p><p>The imports have no effect on Python 3. On Python 2, they shadow the corresponding builtins, which normally have different semantics on Python 3 versus 2, to provide their Python 3 semantics.</p><p>Refer to further notes on <a href='https://python-future.org/quickstart.html'>python-future.org</a>.</p>",
+"linkToSite": "https://python-future.org/",
+"siteName": "python-future.org",
+"license": "MIT",
+"linkToLicense": "https://github.com/PythonCharmers/python-future/blob/master/LICENSE.txt",
+"version": "(py3) 0.18.3.post1",
+"installCommand": "future==0.18.3.post1 --hash=sha256:705244476690193555c816ca69154d3d0abec11e473aa071224a6794cb60cc00"
 }
 },
 {
 "name": "glib",
 "tags": [ "graphics" ],
-"versions": " 2.56.4",
+"versions": " 2.56.4.post0",
 "info":
 {
 "description": "<p>GLib is the low-level core library that forms the basis for projects such as GTK and GNOME. It provides data structure handling for C, portability wrappers, and interfaces for such runtime functionality as an event loop, threads, dynamic loading, and an object system.</p>",
@@ -410,14 +650,30 @@
 "siteName": "https://www.gtk.org/",
 "license": "LGPL",
 "linkToLicense": "https://github.ibm.com/ibm-z-oss-oda/glib/blob/main/LICENSES/LGPL-2.1-or-later.txt",
-"version": "(py3) 2.56.4",
-"installCommand": "glib==2.56.4 --hash=sha256:06150a7e52afe8317d8843e13b55a8f8f6b99af3f35721e9bd3322a12e2c3693"
+"version": "(py3) 2.56.4.post0",
+"installCommand": "glib==2.56.4.post0 --hash=sha256:c955507970e1b7540c8b3ecbfb50d95769d553be751ff49f01133e7abbd562dc"
+}
+},
+{
+"name": "graphviz",
+"tags": [ "graphics" ],
+"versions": " 0.20.1",
+"info":
+{
+"description": "<p>This package facilitates the creation and rendering of graph descriptions in the <a href='https://www.graphviz.org/doc/info/lang.html'>DOT</a> language of the <a href='https://www.graphviz.org/>Graphviz</a> graph drawing software from Python.</p><p>Create a graph object, assemble the graph by adding nodes and edges, and retrieve its DOT source code string. Save the source code to a file and render it with the Graphviz installation of your system.</p>",
+"usageNotes": "<p>Create a graph object:</p><pre><code>&gt;&gt;&gt; import graphviz  # doctest: +NO_EXE<br>&gt;&gt;&gt; dot = graphviz.Digraph(comment='The Round Table')<br>&gt;&gt;&gt; dot  #doctest: +ELLIPSIS<br>&lt;graphviz.graphs.Digraph object at 0x...&gt;<br></code></pre><p>Add nodes and edges:</p><pre><code>&gt;&gt;&gt; dot.node('A', 'King Arthur')  # doctest: +NO_EXE<br>&gt;&gt;&gt; dot.node('B', 'Sir Bedevere the Wise')<br>&gt;&gt;&gt; dot.node('L', 'Sir Lancelot the Brave')<br><br>&gt;&gt;&gt; dot.edges(['AB', 'AL'])<br>&gt;&gt;&gt; dot.edge('B', 'L', constraint='false')<br></code></pre><p>Check the generated source code:</p><pre><code>&gt;&gt;&gt; print(dot.source)  # doctest: +NORMALIZE_WHITESPACE +NO_EXE<br>// The Round Table<br>digraph {<br>    A [label=&ldquo;King Arthur&ldquo;]<br>    B [label=&ldquo;Sir Bedevere the Wise&ldquo;]<br>    L [label=&ldquo;Sir Lancelot the Brave&ldquo;]<br>    A -&gt; B<br>    A -&gt; L<br>    B -&gt; L [constraint=false]<br>}<br></code></pre><p>Save and render the source code:</p><pre><code>&gt;&gt;&gt; doctest_mark_exe()<br><br>&gt;&gt;&gt; dot.render('doctest-output/round-table.gv').replace('\\\\', '/')<br>'doctest-output/round-table.gv.pdf'<br></code></pre><p>Save and render and view the result:</p><pre><code>&gt;&gt;&gt; doctest_mark_exe()<br><br>&gt;&gt;&gt; dot.render('doctest-output/round-table.gv', view=True)  # doctest: +SKIP<br>'doctest-output/round-table.gv.pdf'<br></code></pre><p>See <a href='https://graphviz.readthedocs.io/en/stable/'>readthedocs.io</a> for further usage instructions.</p>",
+"linkToSite": "https://github.com/xflr6/graphviz",
+"siteName": "github",
+"license": "MIT",
+"linkToLicense": "https://github.com/xflr6/graphviz/blob/master/LICENSE.txt",
+"version": "(py3) 0.20.1",
+"installCommand": "graphviz==0.20.1 --hash=sha256:2214941367e2a4a69b1555c227134bb9319af5d0c7c2001c258286126ccb67b2"
 }
 },
 {
 "name": "harfbuzz",
 "tags": [ "graphics","languages" ],
-"versions": " 6.0.0",
+"versions": " 7.0.0",
 "info":
 {
 "description": "<p> HarfBuzz is a text shaping library. Using the HarfBuzz library allows programs to convert a sequence of Unicode input into properly formatted and positioned glyph output—for any writing system and language. </p>",
@@ -426,8 +682,8 @@
 "siteName": "harfbuzz.github.io",
 "license": "OTHER",
 "linkToLicense": "https://github.com/harfbuzz/harfbuzz/blob/main/COPYING",
-"version": "(py3) 6.0.0",
-"installCommand": "harfbuzz==6.0.0 --hash=sha256:c0a28dca275ab068c715e0f5d90dcd2549b183590ba7dafc6db5c2d1057e4f2c"
+"version": "(py3) 7.0.0",
+"installCommand": "harfbuzz==7.0.0 --hash=sha256:2399ea1b10311b78894fc954fad0c89da08edd1ef08bae54fe6f8156d5b46182"
 }
 },
 {
@@ -443,7 +699,23 @@
 "license": "na",
 "linkToLicense": "na",
 "version": "(py3) 1.0.1",
-"installCommand": "heapdict==1.0.1 --hash=sha256:c0a28dca275ab068c715e0f5d90dcd2549b183590ba7dafc6db5c2d1057e4f2c"
+"installCommand": "heapdict==1.0.1 --hash=sha256:8faa6f10f7581117cad3195cb00d80792b08f7c534c99b1e294b869b6eb0c94f"
+}
+},
+{
+"name": "html5lib",
+"tags": [ "utility","programming_tools" ],
+"versions": " 1.1.post1",
+"info":
+{
+"description": "<p>html5lib is a pure-python library for parsing HTML. It is designed to conform to the WHATWG HTML specification, as is implemented by all major web browsers.</p>",
+"usageNotes": "<p>Simple usage follows this pattern:</p><pre><code>import html5lib<br>with open(&ldquo;mydocument.html&ldquo;, &ldquo;rb&ldquo;) as f:<br>    document = html5lib.parse(f)<br></code></pre><p>or:</p><pre><code>import html5lib<br>document = html5lib.parse(&ldquo;<p>Hello World!&ldquo;)<br></code></pre><p>By default, the <code>document</code> will be an <code>xml.etree</code> element instance. Whenever possible, html5lib chooses the accelerated <code>ElementTree</code> implementation (i.e. <code>xml.etree.cElementTree</code> on Python 2.x).</p><p>Please see <a href='https://github.com/html5lib/html5lib-python/blob/master/README.rst'>github</a> for further usage details.</p>",
+"linkToSite": "https://github.com/html5lib/html5lib-python",
+"siteName": "github",
+"license": "MIT",
+"linkToLicense": "https://github.com/html5lib/html5lib-python/blob/master/LICENSE",
+"version": "(py3) 1.1.post1",
+"installCommand": "html5lib==1.1.post1 --hash=sha256:3c5d931a1ce4edbc0a2381a728c9efbd4f50c779a484bc7f7fab3122132c2fb8"
 }
 },
 {
@@ -460,6 +732,22 @@
 "linkToLicense": "https://github.com/kjd/idna/blob/master/LICENSE.md",
 "version": "(py3) 3.4",
 "installCommand": "idna==3.4 --hash=sha256:90b77e79eaa3eba6de819a0c442c0b4ceefc341a7a2ab77d7562bf49f425c5c2"
+}
+},
+{
+"name": "imageio",
+"tags": [ "graphics" ],
+"versions": " 2.13.5",
+"info":
+{
+"description": "<p>Imageio is a Python library that provides an easy interface to read and write a wide range of image data, including animated images, volumetric data, and scientific formats. It is cross-platform, runs on Python 3.5+, and is easy to install.<p>",
+"usageNotes": "<p>Example of Usage to Read / Write Images:</p><p><code>>>> import imageio<br>>>> im = imageio.imread('imageio:astronaut.png')<br>>>> im.shape  # im is a numpy array<br>(512, 512, 3)<br>>>> imageio.imwrite('astronaut-gray.jpg', im[:, :, 0])<br></code></p><p>See the <a href='https://imageio.readthedocs.io/en/stable/reference/index.html'>API Reference</a> or <a href='https://imageio.readthedocs.io/en/stable/examples.html'>examples</a> for more information.</p>",
+"linkToSite": "https://imageio.readthedocs.io/",
+"siteName": "imageio.readthedocs.io",
+"license": "BSD2",
+"linkToLicense": "https://github.com/imageio/imageio/blob/master/LICENSE",
+"version": "(py3) 2.13.5",
+"installCommand": "imageio==2.13.5 --hash=sha256:80e6765f33fa31bb0f81e27e23115c13da09404241a62eca29c3965eb82dcef3"
 }
 },
 {
@@ -511,6 +799,22 @@
 }
 },
 {
+"name": "ipykernel",
+"tags": [ "languages" ],
+"versions": " 6.9.1",
+"info":
+{
+"description": "<p>This package provides the IPython kernel for Jupyter.</p><p>IPython is a growing project, with increasingly language-agnostic components. IPython 3.x was the last monolithic release of IPython, containing the notebook server, qtconsole, etc. As of IPython 4.0, the language-agnostic parts of the project: the notebook format, message protocol, qtconsole, notebook web application, etc. have moved to new projects under the name Jupyter. IPython itself is focused on interactive Python, part of which is providing a Python kernel for Jupyter.</p>",
+"usageNotes": "<p>Following installation, all normal <code>ipython</code> commands will use this newly-installed version of the kernel. </p><p>Please refer to <a href='https://ipython.readthedocs.io/en/latest/'>readthedocs.io</a> for further information. Notice that ipykernel itself has minimal documentation, as this documentation largely covers ipython itself, of which the kernel is a component.</p>",
+"linkToSite": "https://ipython.org/",
+"siteName": "ipython.org",
+"license": "BSD3",
+"linkToLicense": "https://github.com/ipython/ipykernel/blob/main/COPYING.md",
+"version": "(py3) 6.9.1",
+"installCommand": "ipykernel==6.9.1 --hash=sha256:0ac19e83f030d323d5aad2c76e47010e0a0dce0f49fafd8d9f8dd3124bb82f0a"
+}
+},
+{
 "name": "ipython-genutils",
 "tags": [ "Utility" ],
 "versions": " 0.3.0",
@@ -524,6 +828,38 @@
 "linkToLicense": "https://github.com/ipython/ipython_genutils/blob/master/COPYING.md",
 "version": "(py3) 0.3.0",
 "installCommand": "ipython-genutils==0.3.0 --hash=sha256:d9411249d0a53101a0482e3a66166b443e68da1b4b1b337aea4acba94a640a74"
+}
+},
+{
+"name": "ipython",
+"tags": [ "languages","web" ],
+"versions": " 8.13.2.post0",
+"info":
+{
+"description": "<p>IPython provides a rich toolkit to help you make the most out of using Python interactively. Its main components are:</p><p> - A powerful interactive Python shell</p><p> - A Jupyter kernel to work with Python code in Jupyter notebooks and other interactive frontends.</p>",
+"usageNotes": "<p>You don’t need to know anything beyond Python to start using IPython – just type commands as you would at the standard Python prompt. But IPython can do much more than the standard prompt.</p><p>Start IPython by issuing the ipython command from your shell, you should be greeted by the following:</p><pre><code>Python 3.6.0<br>Type 'copyright', 'credits' or 'license' for more information<br>IPython 6.0.0.dev -- An enhanced Interactive Python. Type '?' for help.<br><br>In [1]:<br></code></pre><p>Unlike the Python REPL, you will see that the input prompt is <code>In [N]:</code> instead of <code>&gt;&gt;&gt;</code>. The number <code>N</code> in the prompt will be used later in this tutorial but should usually not impact the computation.</p><p>You should be able to type single line expressions and press enter to evaluate them. If an expression is incomplete, IPython will automatically detect this and add a new line when you press Enter instead of executing right away.</p><p>Feel free to explore multi-line text input. Unlike many other REPLs, with IPython you can use the up and down arrow keys when editing multi-line code blocks.</p><p>Here is an example of a longer interaction with the IPython REPL, which we often refer to as an IPython session:</p><pre><code>In [1]: print('Hello IPython')<br>Hello IPython<br><br>In [2]: 21 * 2<br>Out[2]: 42<br><br>In [3]: def say_hello(name):<br>   ...:     print('Hello {name}'.format(name=name))<br>   ...:<br></code></pre><p>Moving forward, refer to the tutorial on <a href='https://ipython.readthedocs.io/en/stable/interactive/tutorial.html'>readthedocs.io</a> for next steps and further details.</p>",
+"linkToSite": "https://ipython.org/",
+"siteName": "ipython.org",
+"license": "BSD3",
+"linkToLicense": "https://github.com/ipython/ipython/blob/master/LICENSE",
+"version": "(py3) 8.13.2.post0",
+"installCommand": "ipython==8.13.2.post0 --hash=sha256:1740e53831df2046deb2e59906b879751fcaf01b707e9d22e27c4ccdcfac0494"
+}
+},
+{
+"name": "ipywidgets",
+"tags": [ "web","graphics" ],
+"versions": " 8.0.6",
+"info":
+{
+"description": "<p>ipywidgets, also known as jupyter-widgets or simply widgets, are interactive HTML widgets for Jupyter notebooks and the IPython kernel.</p><p>Notebooks come alive when interactive widgets are used. Users gain control of their data and can visualize changes in the data.</p><p>Learning becomes an immersive, fun experience. Researchers can easily see how changing inputs to a model impact the results.</p>",
+"usageNotes": "<p>Widgets are eventful python objects that have a representation in the browser, often as a control like a slider, textbox, etc.</p><p>You can use widgets to build interactive GUIs for your notebooks.</p><p>To use the widget framework, you need to import <code>ipywidgets</code>.</p><pre><code>import ipywidgets as widgets <br></code></pre><p>Widgets have their own display <code>repr</code> which allows them to be displayed using IPython’s display framework. Constructing and returning an <code>IntSlider</code> automatically displays the widget. Widgets are displayed inside the output area below the code cell. Clearing cell output will also remove the widget.</p><pre><code>widgets.IntSlider()<br></code></pre><p>You can also explicitly display the widget using <code>display(...)</code>.</p><pre><code>from IPython.display import display<br>w = widgets.IntSlider()<br>display(w)<br></code></pre><p>Moving forward, you should refer to the tutorial on <a href='https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20Basics.html'>readthedocs.io</a> to see these widgets in action, and for further usage instruction.</p>",
+"linkToSite": "http://ipython.org/",
+"siteName": "ipython.org",
+"license": "BSD3",
+"linkToLicense": "https://github.com/jupyter-widgets/ipywidgets/blob/master/LICENSE",
+"version": "(py3) 8.0.6",
+"installCommand": "ipywidgets==8.0.6 --hash=sha256:7029fe0105be937cde310b284d0e8775a6cbc39d5d53e8684c0960ad6fbfc4bb"
 }
 },
 {
@@ -543,6 +879,22 @@
 }
 },
 {
+"name": "jaydebeapi",
+"tags": [ "languages" ],
+"versions": " 1.2.3",
+"info":
+{
+"description": "<p>The JayDeBeApi module allows you to connect from Python code to databases using Java <a href='http://java.sun.com/products/jdbc/overview.html'>JDBC</a>. It provides a Python <a href='http://www.python.org/dev/peps/pep-0249/'>DB-API</a> v2.0 to that database.</p><p>It works on ordinary Python (cPython) using the <a href='https://pypi.python.org/pypi/JPype1/'>JPype</a> Java integration or on <a href='http://www.jython.org/'>Jython</a> to make use of the Java JDBC driver.</p><p>JayDeBeApi’s future goal is to provide a unique and fast interface to different types of JDBC-Drivers through a flexible plug-in mechanism.</p>",
+"usageNotes": "<p>To use this module, simply import it and then execute to <code>connect</code> method. This gives you a <a href='http://www.python.org/dev/peps/pep-0249/'>DB-API</a> connection to the database.</p><p>The first argument to <code>connect</code> is the name of the Java driver class. The second argument is a string with the JDBC connection URL. Third you can optionally supply a sequence consisting of user and password or alternatively a dictionary containing arguments that are internally passed as properties to the Java <code>DriverManager.getConnection</code> method. See the Javadoc of <code>DriverManager</code> class for details.</p><p>The next parameter to <code>connect</code> is optional as well and specifies the jar-Files of the driver if your classpath isn't set up sufficiently yet. The classpath set in <code>CLASSPATH</code> environment variable will be honored. See the documentation of your Java runtime environment.</p><p>Here is an example:</p><pre><code>&gt;&gt;&gt; import jaydebeapi<br>&gt;&gt;&gt; conn = jaydebeapi.connect(&ldquo;org.hsqldb.jdbcDriver&ldquo;,<br>...                           &ldquo;jdbc:hsqldb:mem:.&ldquo;,<br>...                           [&ldquo;SA&ldquo;, &ldquo;&ldquo;],<br>...                           &ldquo;/path/to/hsqldb.jar&ldquo;,)<br>&gt;&gt;&gt; curs = conn.cursor()<br>&gt;&gt;&gt; curs.execute('create table CUSTOMER'<br>...              '(&ldquo;CUST_ID&ldquo; INTEGER not null,'<br>...              ' &ldquo;NAME&ldquo; VARCHAR(50) not null,'<br>...              ' primary key (&ldquo;CUST_ID&ldquo;))'<br>...             )<br>&gt;&gt;&gt; curs.execute(&ldquo;insert into CUSTOMER values (?, ?)&ldquo;, (1, 'John'))<br>&gt;&gt;&gt; curs.execute(&ldquo;select * from CUSTOMER&ldquo;)<br>&gt;&gt;&gt; curs.fetchall()<br>[(1, u'John')]<br>&gt;&gt;&gt; curs.close()<br>&gt;&gt;&gt; conn.close()<br></code></pre><p>For further usage notes, please refer to <a href='https://github.com/baztian/jaydebeapi#id2'>github</a>.</p>",
+"linkToSite": "https://github.com/baztian/jaydebeapi",
+"siteName": "github",
+"license": "GPL",
+"linkToLicense": "https://github.com/baztian/jaydebeapi/blob/master/COPYING",
+"version": "(py3) 1.2.3",
+"installCommand": "jaydebeapi==1.2.3 --hash=sha256:b5e23093ac951361f3c169cc70c1e56ec72c147109bfde5368ceae625c7a648a"
+}
+},
+{
 "name": "jedi",
 "tags": [ "programming_tools","utility" ],
 "versions": " 0.18.2",
@@ -559,19 +911,83 @@
 }
 },
 {
-"name": "jupyter",
-"tags": [ "math" ],
-"versions": " 1.1.0",
+"name": "jinja2",
+"tags": [ "programming_tools","utility" ],
+"versions": " 3.1.2",
 "info":
 {
-"description": "<p>Jupyter metapackage. Install all the Jupyter components in one go.</p><p>This will install the Jupyter system, including the notebook, qtconsole, and the IPython kernel.</p>",
-"usageNotes": "<p>Documentation for each of the included components can be found on <a href='https://docs.jupyter.org/en/latest/'>jupyter.org</a>.</p>",
+"description": "<p>Jinja is a fast, expressive, extensible templating engine. Special placeholders in the template allow writing code similar to Python syntax. Then the template is passed data to render the final document.</p><p>It includes:</p><ul>    <li>Template inheritance and inclusion.</li>    <li>Define and import macros within templates.</li>    <li>HTML templates can use autoescaping to prevent XSS from untrusted user input.</li>    <li>A sandboxed environment can safely render untrusted templates.</li>    <li>AsyncIO support for generating templates and calling async functions.</li>    <li>I18N support with Babel.</li>    <li>Templates are compiled to optimized Python code just-in-time and cached, or can be compiled ahead-of-time.</li>    <li>Exceptions point to the correct line in templates to make debugging easier.</li>    <li>Extensible filters, tests, functions, and even syntax.</li></ul><p>Jinja’s philosophy is that while application logic belongs in Python if possible, it shouldn’t make the template designer’s job difficult by restricting functionality too much.</p>",
+"usageNotes": "<p>Jinja uses a central object called the template Environment. Instances of this class are used to store the configuration and global objects, and are used to load templates from the file system or other locations. Even if you are creating templates from strings by using the constructor of Template class, an environment is created automatically for you, albeit a shared one.</p><p>Most applications will create one Environment object on application initialization and use that to load templates. In some cases however, it’s useful to have multiple environments side by side, if different configurations are in use.</p><p>The simplest way to configure Jinja to load templates for your application is to use PackageLoader.</p><pre><code>from jinja2 import Environment, PackageLoader, select_autoescape<br>env = Environment(<br>    loader=PackageLoader(&ldquo;yourapp&ldquo;),<br>    autoescape=select_autoescape()<br>)<br></code></pre><p>This will create a template environment with a loader that looks up templates in the <code>templates</code> folder inside the <code>yourapp</code> Python package (or next to the <code>yourapp.py</code> Python module). It also enables autoescaping for HTML files. This loader only requires that <code>yourapp</code> is importable, it figures out the absolute path to the folder for you.</p><p>Different loaders are available to load templates in other ways or from other locations. You can also write your own if you want to load templates from a source that’s more specialized to your project.</p><p>To load a template from this environment, call the get_template() method, which returns the loaded Template.</p><pre><code>template = env.get_template(&ldquo;mytemplate.html&ldquo;)<br></code></pre><p>To render it with some variables, call the render() method.</p><pre><code>print(template.render(the=&ldquo;variables&ldquo;, go=&ldquo;here&ldquo;))<br></code></pre><p>Using a template loader rather than passing strings to Template or Environment.from_string() has multiple advantages. Besides being a lot easier to use it also enables template inheritance.</p><p>Moving forward, please refer to <a href='https://jinja.palletsprojects.com/en/3.0.x/api/'>this guide</a> on getting started with jinja2.</p>",
+"linkToSite": "https://palletsprojects.com/p/jinja/",
+"siteName": "palletsprojects.com/p/jinja",
+"license": "BSD3",
+"linkToLicense": "https://github.com/pallets/jinja/blob/main/LICENSE.rst",
+"version": "(py3) 3.1.2",
+"installCommand": "jinja2==3.1.2 --hash=sha256:47e688837c56c5e565d89d7738fe6de71d91d6591e0f5b338e80606ec4c6af9e"
+}
+},
+{
+"name": "joblib",
+"tags": [ "programming_tools" ],
+"versions": " 1.2.0.post0",
+"info":
+{
+"description": "<p>Joblib is a set of tools to provide lightweight pipelining in Python. In particular, it offers:</p>    <p>1 - transparent disk-caching of functions and lazy re-evaluation (memoize pattern)</p>    <p>2 - easy simple parallel computing</p><p>Joblib is optimized to be fast and robust on large data in particular and has specific optimizations for numpy arrays. </p>",
+"usageNotes": "<p>Features of Joblib include:</p><h4>Transparent and fast disk-caching of output value:</h4><p>A memoize or make-like functionality for Python functions that works well for arbitrary Python objects, including very large numpy arrays. Separate persistence and flow-execution logic from domain logic or algorithmic code by writing the operations as a set of steps with well-defined inputs and outputs: Python functions. Joblib can save their computation to disk and rerun it only if necessary:</p><pre><code>&gt;&gt;&gt; from joblib import Memory<br>&gt;&gt;&gt; cachedir = 'your_cache_dir_goes_here'<br>&gt;&gt;&gt; mem = Memory(cachedir)<br>&gt;&gt;&gt; import numpy as np<br>&gt;&gt;&gt; a = np.vander(np.arange(3)).astype(float)<br>&gt;&gt;&gt; square = mem.cache(np.square)<br>&gt;&gt;&gt; b = square(a)                    <br>________________________________________________________________________________<br>[Memory] Calling square...<br>square(array([[0., 0., 1.],<br>       [1., 1., 1.],<br>       [4., 2., 1.]]))<br>___________________________________________________________square - 0...s, 0.0min<br><br>&gt;&gt;&gt; c = square(a)<br>&gt;&gt;&gt; # The above call did not trigger an evaluation<br></code></pre><h4>Embarrassingly parallel helper:</h4><p>To make it easy to write readable parallel code and debug it quickly:</p><pre><code>&gt;&gt;&gt; from joblib import Parallel, delayed<br>&gt;&gt;&gt; from math import sqrt<br>&gt;&gt;&gt; Parallel(n_jobs=1)(delayed(sqrt)(i**2) for i in range(10))<br>[0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0]<br></code></pre><h4>Fast compressed Persistence:</h4><p>A replacement for pickle to work efficiently on Python objects containing large data ( joblib.dump & joblib.load ).</p><p>Please see further documentation on <a href='https://joblib.readthedocs.io/en/latest/index.html'>readthedocs.io</a>.</p>",
+"linkToSite": "https://joblib.readthedocs.io/en/latest/",
+"siteName": "readthedocs.io",
+"license": "BSD3",
+"linkToLicense": "https://github.com/joblib/joblib/blob/master/LICENSE.txt",
+"version": "(py3) 1.2.0.post0",
+"installCommand": "joblib==1.2.0.post0 --hash=sha256:e857ab17b9f4bb8db591cd6c551646af2aa248f791b1109b2b9f23fba872d99a"
+}
+},
+{
+"name": "jpype1",
+"tags": [ "languages" ],
+"versions": " 1.4.1",
+"info":
+{
+"description": "<p>JPype is a Python module to provide full access to Java from within Python. It allows Python to make use of Java only libraries, exploring and visualization of Java structures, development and testing of Java libraries, scientific computing, and much more. By gaining the best of both worlds using Python for rapid prototyping and Java for strong typed production code, JPype provides a powerful environment for engineering and code development.</p><p>This is achieved not through re-implementing Python, as Jython has done, but rather through interfacing at the native level in both virtual machines. This shared memory based approach achieves decent computing performance, while providing the access to the entirety of CPython and Java libraries.</p>",
+"usageNotes": "<h4>Example: Access to a Java library from Python</h4><p>Let's say that you have example piece of Java code interfacting with some Java package, which you intend to port into Python. This assumes that you have your Java environment correctly configured to access the example <code>com.paying.customer</code> package by pointing the Java classpath at the package's jar file.<p><pre><code>package com.paying.customer;<br><br>import com.paying.customer.DataBase<br><br>public class MyExample {<br>   public void main(String[] args) {<br>     Database db = new Database(&ldquo;our_records&ldquo;);<br>     try (DatabaseConnection c = db.connect())<br>     {<br>        c.runQuery();<br>        while (c.hasRecords())<br>        {<br>          Record record = db.nextRecord();<br>          ...<br>        }<br>     }<br>  }<br>}<br></code></pre><p>Translation into Python is performed as such:</p><pre><code># Boiler plate stuff to start the module<br>import jpype<br>import jpype.imports<br>from jpype.types import *<br><br># Launch the JVM<br>jpype.startJVM(classpath=['jars/database.jar'])<br><br># import the Java modules<br>from com.paying.customer import DataBase<br><br># Copy in the patterns from the guide to replace the example code<br>db = Database(&ldquo;our_records&ldquo;)<br>with  db.connect() as DatabaseConnection:<br>   c.runQuery()<br>   while c.hasRecords():<br>       record = db.nextRecord()<br>       ...<br></code></pre><p>See how this allows simple and easy interfacing! Refer to the users' guide on <a href='https://jpype.readthedocs.io/en/latest/userguide.html'>readthedocs.io</a> for further instructions.</p>",
+"linkToSite": "https://github.com/jpype-project/jpype",
+"siteName": "github",
+"license": "APACHE2",
+"linkToLicense": "https://github.com/jpype-project/jpype/blob/master/LICENSE",
+"version": "(cp311) 1.4.1",
+"installCommand": "jpype1==1.4.1 --hash=sha256:2b1c4ea843a9f09e5bd9388694d7f56898bfb9a1e8353dd62f0be767657a35b5"
+}
+},
+{
+"name": "jsonschema",
+"tags": [ "utility" ],
+"versions": " 4.17.3",
+"info":
+{
+"description": "<p>jsonschema is an implementation of the <a href='https://json-schema.org/'>JSON Schema</a> specification for Python.</p><p>JSON Schema is a vocabulary that allows you to annotate and validate JSON documents. It provides several benefits:</p><ul><li>Describes your existing data format(s).</li><li>Provides clear human- and machine- readable documentation.</li><li>Validates data which is useful for:<br>- Automated testing.<br>- Ensuring quality of client submitted data.</li></ul>",
+"usageNotes": "<p>The package can be used like this - here's an example of the <code>validate</code> method.</p><pre><code>from jsonschema import validate<br><br># A sample schema, like what we'd get from json.load()<br><br>schema = {<br><br>    &ldquo;type&ldquo; : &ldquo;object&ldquo;,<br><br>    &ldquo;properties&ldquo; : {<br><br>        &ldquo;price&ldquo; : {&ldquo;type&ldquo; : &ldquo;number&ldquo;},<br><br>        &ldquo;name&ldquo; : {&ldquo;type&ldquo; : &ldquo;string&ldquo;},<br><br>    },<br><br>}<br><br># If no exception is raised by validate(), the instance is valid.<br><br>validate(instance={&ldquo;name&ldquo; : &ldquo;Eggs&ldquo;, &ldquo;price&ldquo; : 34.99}, schema=schema)<br><br>validate(<br><br>    instance={&ldquo;name&ldquo; : &ldquo;Eggs&ldquo;, &ldquo;price&ldquo; : &ldquo;Invalid&ldquo;}, schema=schema,<br><br>)            <br></code></pre><br><pre><code>Traceback (most recent call last):<br>    ...<br>ValidationError: 'Invalid' is not of type 'number'<br></code></pre><p>Please access <a href='https://python-jsonschema.readthedocs.io/en/latest/'>readthedocs.io</a> for further usage instructions.</p>",
+"linkToSite": "https://github.com/python-jsonschema/jsonschema",
+"siteName": "github",
+"license": "MIT",
+"linkToLicense": "https://github.com/python-jsonschema/jsonschema/blob/main/COPYING",
+"version": "(py3) 4.17.3",
+"installCommand": "jsonschema==4.17.3 --hash=sha256:a870ad254da1a8ca84b6a2905cac29d265f805acc57af304784962a2aa6508f6"
+}
+},
+{
+"name": "jupyter-client",
+"tags": [ "languages" ],
+"versions": " 7.3.5.post1",
+"info":
+{
+"description": "<p><code>jupyter_client</code> contains the reference implementation of the <a href='https://jupyter-client.readthedocs.io/en/latest/messaging.html'>Jupyter protocol</a>. It also provides client and kernel management APIs for working with kernels.</p><p>It also provides the <code>jupyter kernelspec</code> entrypoint for installing kernelspecs for use with Jupyter frontends.</p>",
+"usageNotes": "<p>You'll need Python and <code>pip</code> on the search path. Clone the Jupyter Client git repository to your computer, for example in <code>/my/project/jupyter_client</code></p><pre><code>cd /my/projects/<br>git clone git@github.com:jupyter/jupyter_client.git<br></code></pre><p>Now create an <a href='https://pip.pypa.io/en/stable/reference/pip_install/#editable-installs'>editable install</a> and download the dependencies of code and test suite by executing:</p><pre><code>cd /my/projects/jupyter_client/<br>pip install -e &ldquo;.[test]&ldquo;<br>pytest<br></code></pre><p>The last command runs the test suite to verify the setup. During development, you can pass filenames to pytest, and it will execute only those tests.</p><p>See <a href='https://jupyter-client.readthedocs.io/en/stable/'>readthedocs.io</a> for more information.</p>",
 "linkToSite": "https://jupyter.org/",
 "siteName": "jupyter.org",
 "license": "BSD3",
-"linkToLicense": "https://opensource.org/licenses/BSD-3-Clause",
-"version": "(py3) 1.1.0",
-"installCommand": "jupyter==1.1.0 --hash=sha256:4bdc2928c37f6917130c667d8b8708f20aee539d8283c6be72aabd2a4b4c83b0"
+"linkToLicense": "https://github.com/jupyter/jupyter_client/blob/main/COPYING.md",
+"version": "(py3) 7.3.5.post1",
+"installCommand": "jupyter-client==7.3.5.post1 --hash=sha256:548c3bef7e42ff946461e2aabbd73dc42f12cfff80b436f59ff7028eb2a38acf"
 }
 },
 {
@@ -591,6 +1007,54 @@
 }
 },
 {
+"name": "jupyter-console",
+"tags": [ "utility","programming_tools" ],
+"versions": " 6.4.4",
+"info":
+{
+"description": "<p>Jupyter terminal console:An IPython-like terminal frontend for Jupyter kernels in any language.</p></p>",
+"usageNotes": "<p>Start the console with:</p><pre><code>jupyter console<br></code></pre><p>To see configuration options:</p><pre><code>jupyter console -h<br></code></pre><p>To start the console with a particular kernel, ask for it by name:</p><pre><code>jupyter console --kernel=julia-0.4<br></code></pre><p>A list of available kernels can be seen with:</p><pre><code>jupyter kernelspec list<br></code></pre><p>See complete documentation at <a href='https://jupyter-console.readthedocs.io/en/latest/'>jupyter-console.readthedocs.io</a>.</p>",
+"linkToSite": "https://jupyter.org/",
+"siteName": "jupyter.org",
+"license": "BSD3",
+"linkToLicense": "https://github.com/jupyter/jupyter_console/blob/main/LICENSE",
+"version": "(py3) 6.4.4",
+"installCommand": "jupyter-console==6.4.4 --hash=sha256:9fa68c469332464c9c010413ccadd2758924d0cfe691ba21a4ef29b605579788"
+}
+},
+{
+"name": "jupyter-kernel-gateway",
+"tags": [ "utility" ],
+"versions": " 2.5.1",
+"info":
+{
+"description": "<p>Jupyter Kernel Gateway is a web server that supports different mechanisms for spawning and communicating with Jupyter kernels. </p>",
+"usageNotes": "<p>For advanced tool documentation, refer to <a href='https://jupyter-kernel-gateway.readthedocs.io/en/latest/getting-started.html'>readthedocs.io</a>.</p>",
+"linkToSite": "https://github.com/jupyter-server/kernel_gateway",
+"siteName": "https://github.com/jupyter-server/kernel_gateway",
+"license": "BSD 3",
+"linkToLicense": "https://github.com/jupyter-server/kernel_gateway/blob/master/LICENSE.md",
+"version": "(py3) 2.5.1",
+"installCommand": "jupyter-kernel-gateway==2.5.1 --hash=sha256:735e4c5bf9678e4c6ccb2bf34dcca33c1a4f13599f5e2efe6f0cd0854bc8d3f2"
+}
+},
+{
+"name": "jupyter",
+"tags": [ "math" ],
+"versions": " 1.1.0",
+"info":
+{
+"description": "<p>Jupyter metapackage. Install all the Jupyter components in one go.</p><p>This will install the Jupyter system, including the notebook, qtconsole, and the IPython kernel.</p>",
+"usageNotes": "<p>Documentation for each of the included components can be found on <a href='https://docs.jupyter.org/en/latest/'>jupyter.org</a>.</p>",
+"linkToSite": "https://jupyter.org/",
+"siteName": "jupyter.org",
+"license": "BSD3",
+"linkToLicense": "https://opensource.org/licenses/BSD-3-Clause",
+"version": "(py3) 1.1.0",
+"installCommand": "jupyter==1.1.0 --hash=sha256:52dc0a9d37ea49189700cea3722afd89d5d781ace2c2954fae16e733b80c55ca"
+}
+},
+{
 "name": "jupyter-core",
 "tags": [ "base" ],
 "versions": " 5.2.0",
@@ -604,6 +1068,38 @@
 "linkToLicense": "https://github.com/jupyter/jupyter_core/blob/main/COPYING.md",
 "version": "(py3) 5.2.0",
 "installCommand": "jupyter-core==5.2.0 --hash=sha256:4bdc2928c37f6917130c667d8b8708f20aee539d8283c6be72aabd2a4b4c83b0"
+}
+},
+{
+"name": "jupyterlab-pygments",
+"tags": [ "web","graphics" ],
+"versions": " 0.2.2.post0",
+"info":
+{
+"description": "<p>This package contains a syntax coloring theme for <a href='http://pygments.org/'>pygments</a> making use of the JupyterLab CSS variables.</p><p>The goal is to enable the use of JupyterLab's themes with pygments-generated HTML.</p>",
+"usageNotes": "<p><a href='https://github.com/jupyterlab/jupyterlab_pygments/blob/main/README.md'>Github</a> hosts a screencast showing how to make use of this package along with other notes.</p>",
+"linkToSite": "https://github.com/jupyterlab/jupyterlab_pygments",
+"siteName": "github",
+"license": "BSD3",
+"linkToLicense": "https://github.com/jupyterlab/jupyterlab_pygments/blob/main/LICENSE",
+"version": "(py3) 0.2.2.post0",
+"installCommand": "jupyterlab-pygments==0.2.2.post0 --hash=sha256:bbf5258049e1932d5198f93ddbe6afc4e32fce7b74558a57e59137869dc340e7"
+}
+},
+{
+"name": "jupyterlab-widgets",
+"tags": [ "web","graphics" ],
+"versions": " 3.0.0",
+"info":
+{
+"description": "<p>A JupyterLab 3.0 extension for Jupyter/IPython widgets.</p><p>Notebooks come alive when interactive widgets are used. Users gain control of their data and can visualize changes in the data.</p><p>Learning becomes an immersive, fun experience. Researchers can easily see how changing inputs to a model impact the results. We hope you will add ipywidgets to your notebooks, and we're here to help you get started.</p>",
+"usageNotes": "<p>Github hosts a <a href='https://github.com/jupyter-widgets/ipywidgets/blob/master/docs/source/examples/Index.ipynb'> demonstration notebook</a> alongside other documentation for this image.</p>",
+"linkToSite": "https://github.com/jupyter-widgets/ipywidgets",
+"siteName": "github",
+"license": "BSD3",
+"linkToLicense": "https://github.com/jupyter-widgets/ipywidgets/blob/master/LICENSE",
+"version": "(py3) 3.0.0",
+"installCommand": "jupyterlab-widgets==3.0.0 --hash=sha256:9d8abdc33af91a698e97a73d933e962e29c7b34aaf6501678d686c6dccc76671"
 }
 },
 {
@@ -625,7 +1121,7 @@
 {
 "name": "libcairo",
 "tags": [ "graphics" ],
-"versions": " 1.17.4",
+"versions": " 1.17.6",
 "info":
 {
 "description": "<p>Cairo (stylized as cairo) is an open-source graphics library that provides a vector graphics-based, device-independent API for software developers. </p>",
@@ -634,14 +1130,14 @@
 "siteName": "cairographics.org",
 "license": "LGPL-2.1",
 "linkToLicense": "https://github.com/freedesktop/cairo/blob/master/COPYING-LGPL-2.1",
-"version": "(py3) 1.17.4",
-"installCommand": "libcairo==1.17.4 --hash=sha256:23db1c913d6720e65f41bff2b538fcafec61ed7af9e69e1ae602f8017275579a"
+"version": "(py3) 1.17.6",
+"installCommand": "libcairo==1.17.6 --hash=sha256:62ac5c5670d23236a99837be8dd4741f8bdccacc469acd280492b54a811ebb3c"
 }
 },
 {
 "name": "libjpeg-turbo",
 "tags": [ "graphics" ],
-"versions": " 2.1.4",
+"versions": " 2.1.4.post0",
 "info":
 {
 "description": "<p>Libjpeg is a widely used C library for reading and writing JPEG image files. </p>",
@@ -650,14 +1146,14 @@
 "siteName": "sourceforge.net",
 "license": "OTHER",
 "linkToLicense": "https://jpegclub.org/reference/libjpeg-license/",
-"version": "(py3) 2.1.4",
-"installCommand": "libjpeg-turbo==2.1.4 --hash=sha256:790ab4b147798c411f6f76ca81ceaaff75f0f6dfcd5833385536b828482c2a1f"
+"version": "(py3) 2.1.4.post0",
+"installCommand": "libjpeg-turbo==2.1.4.post0 --hash=sha256:7fd15c74e90d9f3d416f7b8e78651dd1db94de66bccab2b96e51548da79abb43"
 }
 },
 {
 "name": "libpng",
 "tags": [ "graphics" ],
-"versions": " 1.6.39",
+"versions": " 1.6.39.post0",
 "info":
 {
 "description": "<p>libpng is the official PNG reference library. It supports almost all PNG features, is extensible, and has been extensively tested for over 23 years. </p>",
@@ -666,14 +1162,14 @@
 "siteName": "libpng.org",
 "license": "OTHER",
 "linkToLicense": "http://www.libpng.org/pub/png/src/libpng-LICENSE.txt",
-"version": "(py3) 1.6.39",
-"installCommand": "libpng==1.6.39 --hash=sha256:7339f4365a1e2cac27bb06aad2c5f79f3c643a3ea65efc16cca27b42dbf5f0eb"
+"version": "(py3) 1.6.39.post0",
+"installCommand": "libpng==1.6.39.post0 --hash=sha256:3d54fa9a37fdf07b3333de3ce54ff78f2fc4acfb992ba78a174d37afbb4a46d5"
 }
 },
 {
 "name": "libtiff",
 "tags": [ "graphics","utility" ],
-"versions": " 4.4.0",
+"versions": " 4.4.0.post0",
 "info":
 {
 "description": "<p>PyLibTiff is a package that provides:</p>    <p>1- a wrapper to the <a href='http://www.simplesystems.org/libtiff/'>libtiff</a> library to Python using <a href='http://docs.python.org/library/ctypes.html'>ctypes</a>.</p>    <p>2 - a pure Python module for reading and writing TIFF and LSM files. The images are read as <code>numpy.memmap</code> objects so that it is possible to open images that otherwise would not fit to computers RAM. Both TIFF strips and tiles are supported for low-level data storage.</p><p>There exists many Python packages that support reading and writing TIFF files. The PyLibTiff project was started to have an efficient and direct way to read and write TIFF files using the libtiff library without the need to install any unnecessary packages or libraries. The pure Python module was created for reading 'broken' TIFF files such as LSM files that in some places use different interpretation of TIFF tags than what specified in the TIFF specification document. The libtiff library would just fail reading such files. In addition, the pure Python module is more memory efficient as the arrays are returned as memory maps. Support for compressed files is not implemented yet.</p>",
@@ -682,14 +1178,14 @@
 "siteName": "github",
 "license": "BSD3",
 "linkToLicense": "https://github.com/pearu/pylibtiff/blob/master/LICENSE",
-"version": "(py3) 4.4.0",
-"installCommand": "libtiff==4.4.0 --hash=sha256:dac98a04ff91852f9aab0ead8c927f586cc1b72848357d4e2a71b99c36e8300f"
+"version": "(py3) 4.4.0.post0",
+"installCommand": "libtiff==4.4.0.post0 --hash=sha256:a05c6ca843c32758547baf11d899b97eb023d5363ec7c48456cae056f2e76043"
 }
 },
 {
 "name": "libxml2",
 "tags": [ "languages" ],
-"versions": " 2.10.3",
+"versions": " 2.10.3 2.10.3.post0",
 "info":
 {
 "description": "<p>Libxml2 is the XML C parser and toolkit developed for the Gnome project (but usable outside of the Gnome platform), it is free software available under the MIT License. XML itself is a metalanguage to design markup languages, i.e. text language where semantic and structure are added to the content using extra 'markup' information enclosed between angle brackets. HTML is the most well-known markup language. Though the library is written in C a variety of language bindings make it available in other environments.</p>",
@@ -698,14 +1194,14 @@
 "siteName": "gitlab.gnome.org/GNOME/libxml2",
 "license": "MIT",
 "linkToLicense": "https://gitlab.gnome.org/GNOME/libxml2/-/blob/master/Copyright",
-"version": "(py3) 2.10.3",
-"installCommand": "libxml2==2.10.3 --hash=sha256:b57e1e016ade9d97de137b4fb7bcd925dab1e50f9118e7b665faa6d1fc280756"
+"version": "(py3) 2.10.3.post0",
+"installCommand": "libxml2==2.10.3.post0 --hash=sha256:f7068c1f97036ced45da9cc45e8ef783703109eac2a80f15234ccf7d186393f6"
 }
 },
 {
 "name": "libxslt",
 "tags": [ "programming_tools","utility" ],
-"versions": " 1.1.37",
+"versions": " 1.1.37 1.1.37.post0",
 "info":
 {
 "description": "<p>libxslt is the <a href='https://www.w3.org/TR/xslt'>XSLT</a> C library developed for the GNOME project. XSLT itself is a an XML language to define transformation for XML. libxslt is based on libxml2, the XML C library developed for the GNOME project. It also implements most of the <a href='http://www.exslt.org/'>EXSLT</a> set of processor-portable extension functions and some of Saxon's evaluate and expressions extensions.</p><p>People can either embed the library in their application or use xsltproc, the command line processing tool. This library is free software and can be reused in commercial applications.</p>",
@@ -714,14 +1210,14 @@
 "siteName": "gitlab.gnome.org/GNOME/libxslt/",
 "license": "OTHER",
 "linkToLicense": "https://github.com/GNOME/libxslt/blob/master/Copyright",
-"version": "(py3) 1.1.37",
-"installCommand": "libxslt==1.1.37 --hash=sha256:c66d4769f69a2dd81a98408f362f14a046e29682d7c6bff358320e97e59e1da9"
+"version": "(py3) 1.1.37.post0",
+"installCommand": "libxslt==1.1.37.post0 --hash=sha256:b60202a9919733a69d51ee176c4ed06dd5d30c0d9213e4351939ded6d2894108"
 }
 },
 {
 "name": "libyaml",
 "tags": [ "languages","programming_tools","utility" ],
-"versions": " 0.2.5",
+"versions": " 0.2.5.post0",
 "info":
 {
 "description": "<p>LibYAML is a YAML parser and emitter library.</p><p>LibYAML covers presenting and parsing processes. Thus LibYAML defines the following two processors:</p><p> - <i>Parser</i>, which takes an input stream of bytes and produces a sequence of parsing events.</p><p> - <i>Emitter</i>, which takes a sequence of events and produces a stream of bytes.</p><p>The processes of parsing and presenting are inverse to each other. Any sequence of events produced by parsing a well-formed YAML document should be acceptable by the Emitter, which should produce an equivalent document. Similarly, any document produced by emitting a sequence of events should be acceptable for the Parser, which should produce an equivalent sequence of events.</p>",
@@ -730,8 +1226,8 @@
 "siteName": "pyyaml.org",
 "license": "MIT",
 "linkToLicense": "https://github.com/yaml/libyaml/blob/master/License",
-"version": "(py3) 0.2.5",
-"installCommand": "libyaml==0.2.5 --hash=sha256:e2e2f11ba01c127c856cca9f1c3fd9d79ffb9a8e7496cacb08b4cb5456d64ffc"
+"version": "(py3) 0.2.5.post0",
+"installCommand": "libyaml==0.2.5.post0 --hash=sha256:8c68e322de2a39786879a1a92742b77c2d6bad8899f25eeda389eb07370e6182"
 }
 },
 {
@@ -751,9 +1247,41 @@
 }
 },
 {
+"name": "lxml",
+"tags": [ "utility" ],
+"versions": " 4.9.1.post0",
+"info":
+{
+"description": "<p>lxml is a Pythonic, mature binding for the libxml2 and libxslt libraries. It provides safe and convenient access to these libraries using the ElementTree API.</p><p>It extends the ElementTree API significantly to offer support for XPath, RelaxNG, XML Schema, XSLT, C14N and much more.</p>",
+"usageNotes": "<p>lxml.etree follows the <a href='http://effbot.org/zone/element-index.htm'>ElementTree</a> API as much as possible, building it on top of the native libxml2 tree. Therefore, it's useful to startby examining <code>lxml.etree</code> first.</p><p>A common way to import lxml.etree is as follows:</p><pre><code>&gt;&gt;&gt; from lxml import etree<br></code></pre><p>If your code only uses the ElementTree API and does not rely on any functionality that is specific to <code>lxml.etree</code>, you can also use (any part of) the following import chain as a fall-back to the original ElementTree:</p><pre><code>try:<br>  from lxml import etree<br>  print(&ldquo;running with lxml.etree&ldquo;)<br>except ImportError:<br>  try:<br>    # Python 2.5<br>    import xml.etree.cElementTree as etree<br>    print(&ldquo;running with cElementTree on Python 2.5+&ldquo;)<br>  except ImportError:<br>    try:<br>      # Python 2.5<br>      import xml.etree.ElementTree as etree<br>      print(&ldquo;running with ElementTree on Python 2.5+&ldquo;)<br>    except ImportError:<br>      try:<br>        # normal cElementTree install<br>        import cElementTree as etree<br>        print(&ldquo;running with cElementTree&ldquo;)<br>      except ImportError:<br>        try:<br>          # normal ElementTree install<br>          import elementtree.ElementTree as etree<br>          print(&ldquo;running with ElementTree&ldquo;)<br>        except ImportError:<br>          print(&ldquo;Failed to import ElementTree from any known place&ldquo;)<br></code></pre><p>Please proceed to the tutorial on <a href='https://lxml.de/tutorial.html'>lxml.de</a> for further tutorials and documentation.</p>",
+"linkToSite": "https://lxml.de/",
+"siteName": "lxml.de",
+"license": "BSD3",
+"linkToLicense": "https://github.com/lxml/lxml/blob/master/LICENSE.txt",
+"version": "(cp311) 4.9.1.post0",
+"installCommand": "lxml==4.9.1.post0 --hash=sha256:00599f99fc2930e500f3efe26ce44c5742fc24522bb3315c00841e9e76c017f1"
+}
+},
+{
+"name": "mako",
+"tags": [ "utility" ],
+"versions": " 1.2.4.dev0",
+"info":
+{
+"description": "<p>Mako is a template library written in Python. It provides a familiar, non-XML syntax which compiles into Python modules for maximum performance. </p>",
+"usageNotes": "<p>Usage information is available on <a href='https://github.com/sqlalchemy/mako'>github.com</a>.</p>",
+"linkToSite": "https://github.com/sqlalchemy/mako",
+"siteName": "github.com",
+"license": "MIT",
+"linkToLicense": "https://github.com/sqlalchemy/mako/blob/main/LICENSE",
+"version": "(py3) 1.2.4.dev0",
+"installCommand": "mako==1.2.4.dev0 --hash=sha256:4ae97163e168626fb352f83b3207b5bf5d45d48aae788db77820bef68c211b7d"
+}
+},
+{
 "name": "markdown-editor",
 "tags": [ "utility","graphics","web" ],
-"versions": " 1.0.7",
+"versions": " 1.0.7.post2",
 "info":
 {
 "description": "<p>Markdown-editor provides a standalone editor for your local markdown files.</p><p>Features include:</p><ul><li>Side-by-side markdown editor & html preview</li><li>Live, when you type html preview</li><li>Codehilite & markdown extra syntax support by default</li><li>Github syntax support</li><li>Github styles for rendering and codehilite</li><li>Scrollbars sync</li></ul>",
@@ -762,8 +1290,24 @@
 "siteName": "github",
 "license": "MIT",
 "linkToLicense": "https://opensource.org/licenses/MIT",
-"version": "(py3) 1.0.7",
-"installCommand": "markdown-editor==1.0.7 --hash=sha256:f9119711d37263e9f13ac67185b06da97992c6e5a4e6e3c9269976dcdd2a1258"
+"version": "(py3) 1.0.7.post2",
+"installCommand": "markdown-editor==1.0.7.post2 --hash=sha256:61ee93b79d86a4bfe08233c1b489c17384985a0dd0ce64758862f73ff6817839"
+}
+},
+{
+"name": "markdown",
+"tags": [ "utility" ],
+"versions": " 3.4.1.post0",
+"info":
+{
+"description": "<p>This is a Python implementation of John Gruber's <a href='https://daringfireball.net/projects/markdown/'>Markdown</a>. It is almost completely compliant with the reference implementation, though there are a few known issues. See <a href='https://python-markdown.github.io/#Features'>Features</a> for information on what exactly is supported and what is not.</p><p>Markdown is a text-to-HTML conversion tool for web writers. Markdown allows you to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid XHTML (or HTML).</p><p>Thus, “Markdown” is two things: (1) a plain text formatting syntax; and (2) a software tool that converts the plain text formatting to HTML.</p>",
+"usageNotes": "<p>First and foremost, Python-Markdown is intended to be a python library module used by various projects to convert Markdown syntax into HTML.</p><p>To use markdown as a module:</p><pre><code>import markdown<br>html = markdown.markdown(your_text_string)<br></code></pre><p>Additional notes can be found on the official <a href='https://python-markdown.github.io/reference/'>reference</a>.</p>",
+"linkToSite": "https://python-markdown.github.io/",
+"siteName": "python-markdown.github.io",
+"license": "BSD3",
+"linkToLicense": "https://github.com/Python-Markdown/markdown/blob/master/LICENSE.md",
+"version": "(py3) 3.4.1.post0",
+"installCommand": "markdown==3.4.1.post0 --hash=sha256:424725a654af2987230eaa4b2ac0763b6ad1ae129f304dcf2eb853dd75dd7cd0"
 }
 },
 {
@@ -779,7 +1323,7 @@
 "license": "BSD3",
 "linkToLicense": "https://github.com/pallets/markupsafe/blob/main/LICENSE.rst",
 "version": "(py3) 2.1.1",
-"installCommand": "markupsafe==2.1.1 --hash=sha256:f9119711d37263e9f13ac67185b06da97992c6e5a4e6e3c9269976dcdd2a1258"
+"installCommand": "markupsafe==2.1.1 --hash=sha256:e3ce34956b3cb61b9ff02216a7f3504447eb1c52e7e24c5053c1f10cb97e31eb"
 }
 },
 {
@@ -799,6 +1343,22 @@
 }
 },
 {
+"name": "matplotlib",
+"tags": [ "graphics" ],
+"versions": " 3.5.0.post1",
+"info":
+{
+"description": "<p>Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python.</p><p>Matplotlib produces publication-quality figures in a variety of hardcopy formats and interactive environments across platforms. Matplotlib can be used in Python scripts, the Python and IPython shell, web application servers, and various graphical user interface toolkits.</p>",
+"usageNotes": "<p>Matplotlib.org provides a number of excellent <a href='https://matplotlib.org/stable/tutorials/index.html'>tutorials</a> and documentation for using this package.</p>",
+"linkToSite": "https://matplotlib.org/",
+"siteName": "matplotlib.org",
+"license": "OTHER",
+"linkToLicense": "https://github.com/matplotlib/matplotlib/blob/main/LICENSE/LICENSE",
+"version": "(cp311) 3.5.0.post1",
+"installCommand": "matplotlib==3.5.0.post1 --hash=sha256:38bb76e51692113d08a837f468aac4ccea23fc7e06cfeed30b03986d357247cf"
+}
+},
+{
 "name": "mistune",
 "tags": [ "utility" ],
 "versions": " 2.0.4",
@@ -815,6 +1375,22 @@
 }
 },
 {
+"name": "mock",
+"tags": [ "test" ],
+"versions": " 5.0.1",
+"info":
+{
+"description": "<p>mock is a library for testing in Python.</p>",
+"usageNotes": "<p>Usage information is available on <a href='https://github.com/testing-cabal/mock'>github.com</a>.</p>",
+"linkToSite": "https://github.com/testing-cabal/mock",
+"siteName": "github.com",
+"license": "MIT",
+"linkToLicense": "https://github.com/minrk/pamela/blob/main/COPYING",
+"version": "(py3) 5.0.1",
+"installCommand": "mock==5.0.1 --hash=sha256:34b7920f846af0fd9d0e5577e4c41e6f9e7aa882606edf4d899360af5590c028"
+}
+},
+{
 "name": "msgpack",
 "tags": [ "languages" ],
 "versions": " 1.0.4",
@@ -828,6 +1404,38 @@
 "linkToLicense": "https://github.com/msgpack/msgpack-python/blob/main/COPYING",
 "version": "(cp310) 1.0.4",
 "installCommand": "msgpack==1.0.4 --hash=sha256:97a5a0d007802a612b6e1e845fdbd9194ed411cab640c30439cd503a298e72f3"
+}
+},
+{
+"name": "nbclient",
+"tags": [ "languages","web","machine_learning" ],
+"versions": " 0.7.0",
+"info":
+{
+"description": "<p>NBClient lets you execute notebooks.</p><p>A client library for programmatic notebook execution, NBClient is a tool for running Jupyter Notebooks in different execution contexts, including the command line.</p>",
+"usageNotes": "<p>Let’s start with a complete quick example, leaving detailed explanations aside for now.</p><p>First we import nbformat and the <code>NotebookClient</code> class:</p><pre><code>import nbformat<br>from nbclient import NotebookClient<br></code></pre><p>Assuming that notebook_filename contains the path to a notebook, we can load it with:</p><pre><code>nb = nbformat.read(notebook_filename, as_version=4)<br></code></pre><p>Next, we configure the notebook execution mode:</p><pre><code>client = NotebookClient(nb, timeout=600, kernel_name='python3', resources={'metadata': {'path': 'notebooks/'}})<br></code></pre><p>We specified two (optional) arguments <code>timeout</code> and <code>kernel_name</code>, which define respectively the cell execution timeout and the execution kernel. Usually you don’t need to set these options, but these and other options are available to control execution context. Note that <code>path</code> specifies in which folder to execute the notebook.</p><p>To actually run the notebook we call the method <code>execute</code>:</p><pre><code>client.execute()<br></code></pre><p>Hopefully, we will not get any errors during the notebook execution. This notebook will now have its cell outputs populated with the result of running each cell.</p><p>Finally, save the resulting notebook with:</p><pre><code>nbformat.write(nb, 'executed_notebook.ipynb')<br></code></pre><p>That’s all. Your executed notebook will be saved in the current folder in the file <code>executed_notebook.ipynb</code>.</p><p>Please refer to <a href='https://nbclient.readthedocs.io/en/latest/client.html'>readthedocs.io</a> for further instructions.</p>",
+"linkToSite": "https://jupyter.org/",
+"siteName": "jupyter.org",
+"license": "BSD3",
+"linkToLicense": "https://github.com/jupyter/nbclient/blob/main/LICENSE",
+"version": "(py3) 0.7.0",
+"installCommand": "nbclient==0.7.0 --hash=sha256:72eec6b43c6264e0b68a7f612adfebf72f072c9bb772c97d1d0be03421628d98"
+}
+},
+{
+"name": "nbconvert",
+"tags": [ "web","machine_learning","utility" ],
+"versions": " 6.5.0.post0",
+"info":
+{
+"description": "<p>The nbconvert tool, <code>jupyter nbconvert</code>, converts notebooks to various other formats via <a href='http://jinja.pocoo.org/'>Jinja</a> templates. The nbconvert tool allows you to convert an <code>.ipynb</code> notebook file into various static formats including:</p><ul>    <li>HTML</li>    <li>LaTeX</li>    <li>PDF</li>    <li>Reveal JS</li>    <li>Markdown (md)</li>    <li>ReStructured Text (rst)</li>    <li>executable script</li></ul>",
+"usageNotes": "<p>Please refer to <a href='https://nbconvert.readthedocs.io/en/latest/nbconvert_library.html'>readthedocs.io</a> for instructions on how to use this image.</p>",
+"linkToSite": "https://jupyter.org/",
+"siteName": "jupyter.org",
+"license": "BSD3",
+"linkToLicense": "https://github.com/jupyter/nbconvert/blob/main/LICENSE",
+"version": "(py3) 6.5.0.post0",
+"installCommand": "nbconvert==6.5.0.post0 --hash=sha256:2acbb614edc5b06282af668ebda93c3ee699115becf262f3348a9a180d014aac"
 }
 },
 {
@@ -863,6 +1471,70 @@
 }
 },
 {
+"name": "networkx",
+"tags": [ "math","machine_learning" ],
+"versions": " 3.0b1.post0",
+"info":
+{
+"description": "<p>NetworkX is a Python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks.</p>",
+"usageNotes": "<p>Simple example to find the shortest path between two nodes in an undirected graph:</p><pre><code>&gt;&gt;&gt; import networkx as nx<br>&gt;&gt;&gt; G = nx.Graph()<br>&gt;&gt;&gt; G.add_edge('A', 'B', weight=4)<br>&gt;&gt;&gt; G.add_edge('B', 'D', weight=2)<br>&gt;&gt;&gt; G.add_edge('A', 'C', weight=3)<br>&gt;&gt;&gt; G.add_edge('C', 'D', weight=4)<br>&gt;&gt;&gt; nx.shortest_path(G, 'A', 'D', weight='weight')<br>['A', 'B', 'D']<br></code></pre><p>See the <a href='https://networkx.org/documentation/latest/tutorial.html'>tutorial</a> for more instructions.</p>",
+"linkToSite": "https://networkx.org/",
+"siteName": "networkx.org",
+"license": "BSD3",
+"linkToLicense": "https://github.com/networkx/networkx/blob/main/LICENSE.txt",
+"version": "(py3) 3.0b1.post0",
+"installCommand": "networkx==3.0b1.post0 --hash=sha256:fc6f6a7d2def3c5ec9b7e9bf324bbbd3a8636a4db9055476744c4b213b0ba5f0"
+}
+},
+{
+"name": "notebook",
+"tags": [ "machine_learning","web","graphics" ],
+"versions": " 6.4.12",
+"info":
+{
+"description": "<p>The Jupyter Notebook is a web application that allows you to create and share documents that contain live code, equations, visualizations, and explanatory text. The Notebook has support for multiple programming languages, sharing, and interactive widgets.</p>",
+"usageNotes": "<p>Refer to <a href='https://jupyter-notebook.readthedocs.io/en/stable/'>readthedocs.io</a> for full documentation on using Jupyter notebooks.</p>",
+"linkToSite": "https://jupyter.org/",
+"siteName": "jupyter.org",
+"license": "BSD3",
+"linkToLicense": "https://github.com/jupyter/notebook/blob/main/LICENSE",
+"version": "(py3) 6.4.12",
+"installCommand": "notebook==6.4.12 --hash=sha256:99c12a0e16cf91ed37613f856f5f3ba63c24218fb6dd82dc317f0bafb17add15"
+}
+},
+{
+"name": "numpy",
+"tags": [ "math" ],
+"versions": " 1.23.4+3.gc311554fd",
+"info":
+{
+"description": "<p>NumPy is the fundamental package for array computing with Python. It provides:</p><ul>    <li>a powerful N-dimensional array object</li>    <li>sophisticated (broadcasting) functions</li>    <li>tools for integrating C/C++ and Fortran code</li>    <li>useful linear algebra, Fourier transform, and random number capabilities</li>    <li>and much more</li></ul>",
+"usageNotes": "<p>NumPy’s main object is the homogeneous multidimensional array. It is a table of elements (usually numbers), all of the same type, indexed by a tuple of non-negative integers. In NumPy dimensions are called axes.</p><p>For example, the array for the coordinates of a point in 3D space, [1, 2, 1], has one axis. That axis has 3 elements in it, so we say it has a length of 3. In the example pictured below, the array has 2 axes. The first axis has a length of 2, the second axis has a length of 3.</p><pre><code>[[1., 0., 0.],<br> [0., 1., 2.]]<br></code></pre><p>NumPy’s array class is called <code>ndarray</code>. It is also known by the alias <code>array</code>. Note that <code>numpy.array</code> is not the same as the Standard Python Library class <code>array.array</code>, which only handles one-dimensional arrays and offers less functionality.</p><p>Please refer to <a href='https://numpy.org/doc/1.22/user/quickstart.html'>numpy.org</a> for a quickstart guide.</p>",
+"linkToSite": "https://numpy.org/",
+"siteName": "numpy.org",
+"license": "BSD3",
+"linkToLicense": "https://github.com/numpy/numpy/blob/main/LICENSE.txt",
+"version": "(cp311) 1.23.4+3.gc311554fd",
+"installCommand": "numpy==1.23.4+3.gc311554fd --hash=sha256:0955e914d519f3b77b9a111a6ba4dfa44c473cd71c956ff47843cd7f486e7437"
+}
+},
+{
+"name": "oauthlib",
+"tags": [ "utility" ],
+"versions": " 3.2.2",
+"info":
+{
+"description": "<p>OAuthLib is a framework which implements the logic of OAuth1 or OAuth2 without assuming a specific HTTP request object or web framework.</p>",
+"usageNotes": "<p>Usage information is available on <a href='https://github.com/oauthlib/oauthlib'>github.com</a>.</p>",
+"linkToSite": "https://github.com/oauthlib/oauthlib",
+"siteName": "github.com",
+"license": "BSD 3",
+"linkToLicense": "https://github.com/oauthlib/oauthlib/blob/master/LICENSE",
+"version": "(py3) 3.2.2",
+"installCommand": "oauthlib==3.2.2 --hash=sha256:766020b238fdbdfab454e04cbe91dc22d913e5f5281e812323f49f4afa10d8fb"
+}
+},
+{
 "name": "packaging",
 "tags": [ "utility" ],
 "versions": " 23.0",
@@ -876,6 +1548,54 @@
 "linkToLicense": "https://github.com/pypa/packaging/blob/main/LICENSE",
 "version": "(py3) 23.0",
 "installCommand": "packaging==23.0 --hash=sha256:714ac14496c3e68c99c29b00845f7a2b85f3bb6f1078fd9f72fd20f0570002b2"
+}
+},
+{
+"name": "pamela",
+"tags": [ "utility" ],
+"versions": " 1.0.0",
+"info":
+{
+"description": "<p>Pamela is a Python wrapper for PAM </p>",
+"usageNotes": "<p>Usage information is available on <a href='https://github.com/minrk/pamela'>github.com</a>.</p>",
+"linkToSite": "https://github.com/minrk/pamela",
+"siteName": "github.com",
+"license": "MIT",
+"linkToLicense": "https://github.com/minrk/pamela/blob/main/COPYING",
+"version": "(py3) 1.0.0",
+"installCommand": "pamela==1.0.0 --hash=sha256:97642dd53d9582831fef44f5d8832e18141d9d4ac10d3d4a7217510f00e3e87c"
+}
+},
+{
+"name": "pandas-datareader",
+"tags": [ "math","utility","machine_learning" ],
+"versions": " 0.10.0",
+"info":
+{
+"description": "<p>This package provides data readers extracted from the pandas codebase.</p><p>Use this package for up-to-date remote data access for pandas, works for multiple versions of pandas.</p>",
+"usageNotes": "<p>Package may be used as such: (This example reads 5-years of 10-year constant maturity yields on U.S. government bonds.)</p><pre><code>import pandas_datareader as pdr<br>pdr.get_data_fred('GS10')<br></code></pre><p>Documentation is available on <a href='https://pydata.github.io/pandas-datareader/'>pydata.github.io/pandas-datareader</a>.</p>",
+"linkToSite": "https://github.com/pydata/pandas-datareader",
+"siteName": "github",
+"license": "BSD3",
+"linkToLicense": "https://github.com/pydata/pandas-datareader/blob/main/LICENSE.md",
+"version": "(py3) 0.10.0",
+"installCommand": "pandas-datareader==0.10.0 --hash=sha256:199000ff3a98924c9366d957bc66d663dc0636bc0277bfa4630214b2a7b9393c"
+}
+},
+{
+"name": "pandas",
+"tags": [ "programming_tools","math","machine_learning" ],
+"versions": " 1.5.1.post0",
+"info":
+{
+"description": "<p>Pandas is a Python package that provides fast, flexible, and expressive data structures designed to make working with 'relational' or 'labeled' data both easy and intuitive. It aims to be the fundamental high-level building block for doing practical, real world data analysis in Python. Additionally, it has the broader goal of becoming the most powerful and flexible open source data analysis / manipulation tool available in any language. It is already well on its way towards this goal.</p>",
+"usageNotes": "<p>Please refer to <a href='https://pandas.pydata.org/pandas-docs/stable/'>pandas.pydata.org</a> for full package documentation.</p>",
+"linkToSite": "https://pandas.pydata.org/",
+"siteName": "pandas.pydata.org",
+"license": "BSD3",
+"linkToLicense": "https://github.com/pandas-dev/pandas/blob/main/LICENSE",
+"version": "(cp311) 1.5.1.post0",
+"installCommand": "pandas==1.5.1.post0 --hash=sha256:324bdcded0eeaee8b498ae3fde44a38d12805a4cd870f5ce5ff54efb04638e19"
 }
 },
 {
@@ -911,6 +1631,54 @@
 }
 },
 {
+"name": "partd",
+"tags": [ "programming_tools" ],
+"versions": " 1.2.0",
+"info":
+{
+"description": "<p>Key-value byte store with appendable values</p><p>Partd stores key-value pairs. Values are raw bytes. We append on old values.</p><p>Partd excels at shuffling operations.</p>",
+"usageNotes": "<p>PartD has two main operations, <code>append</code> and <code>get</code>.</p><p>Create a Partd backed by a directory:</p><pre><code>&gt;&gt;&gt; import partd<br>&gt;&gt;&gt; p = partd.File('/path/to/new/dataset/')<br></code></pre><p>Append key-byte pairs to dataset:</p><pre><code>&gt;&gt;&gt; p.append({'x': b'Hello ', 'y': b'123'})<br>&gt;&gt;&gt; p.append({'x': b'world!', 'y': b'456'})<br></code></pre><p>Get bytes associated to keys:</p><pre><code>&gt;&gt;&gt; p.get('x')         # One key<br>b'Hello world!'<br><br>&gt;&gt;&gt; p.get(['y', 'x'])  # List of keys<br>[b'123456', b'Hello world!']<br></code></pre><p>Destroy partd dataset:</p><pre><code>&gt;&gt;&gt;p.drop()<br></code></pre><p>That’s it!</p>",
+"linkToSite": "https://github.com/dask/partd/",
+"siteName": "partd",
+"license": "BSD3",
+"linkToLicense": "https://github.com/dask/partd/blob/main/LICENSE.txt",
+"version": "(py3) 1.2.0",
+"installCommand": "partd==1.2.0 --hash=sha256:dff21614884b654899b744a16fe57e8e0211588f38809c058e2c3cce28d7735b"
+}
+},
+{
+"name": "patsy",
+"tags": [ "math","languages" ],
+"versions": " 0.5.3",
+"info":
+{
+"description": "<p>Patsy is a Python library for describing statistical models (especially linear models, or models that have a linear component) and building design matrices. Patsy brings the convenience of <a href='http://www.r-project.org/'>R “formulas”</a> to Python.</p>",
+"usageNotes": "<p>Complete documentation is available on <a href='https://patsy.readthedocs.io/en/latest/quickstart.html'>readthedocs.io</a>.</p>",
+"linkToSite": "https://github.com/pydata/patsy",
+"siteName": "github",
+"license": "OTHER",
+"linkToLicense": "https://github.com/pydata/patsy/blob/master/LICENSE.txt",
+"version": "(py3) 0.5.3",
+"installCommand": "patsy==0.5.3 --hash=sha256:875d605e39f936e735c583974063325acd8e0e1ade18e55d80ddb66defe7dc7b"
+}
+},
+{
+"name": "pexpect",
+"tags": [ "programming_tools" ],
+"versions": " 4.8.0",
+"info":
+{
+"description": "<p>Pexpect is a pure Python module for spawning child applications; controlling them; and responding to expected patterns in their output. Pexpect works like Don Libes’ Expect. Pexpect allows your script to spawn a child application and control it as if a human were typing commands.</p><p>Pexpect can be used for automating interactive applications such as ssh, ftp, passwd, telnet, etc. It can be used to a automate setup scripts for duplicating software package installations on different servers. It can be used for automated software testing. Pexpect is in the spirit of Don Libes’ Expect, but Pexpect is pure Python.</p><p>The main features of Pexpect require the pty module in the Python standard library, which is only available on Unix-like systems. Some features—waiting for patterns from file descriptors or subprocesses—are also available on Windows.</p>",
+"usageNotes": "<p>Full documentation should be referenced at <a href='https://pexpect.readthedocs.io/en/stable/index.html'>readthedocs.io</a>.</p>",
+"linkToSite": "https://pexpect.readthedocs.io/en/stable/",
+"siteName": "readthedocs.io",
+"license": "OTHER",
+"linkToLicense": "https://github.com/pexpect/pexpect/blob/master/LICENSE",
+"version": "(py3) 4.8.0",
+"installCommand": "pexpect==4.8.0 --hash=sha256:949992575485df41d6179996a0e2a3caa447d827db936ea97b8ef27a688c3bea"
+}
+},
+{
 "name": "pickleshare",
 "tags": [ "programming_tools" ],
 "versions": " 0.7.5",
@@ -927,9 +1695,25 @@
 }
 },
 {
+"name": "pillow",
+"tags": [ "graphics" ],
+"versions": " 9.3.0",
+"info":
+{
+"description": "<p>The Python Imaging Library adds image processing capabilities to your Python interpreter.</p><p>This library provides extensive file format support, an efficient internal representation, and fairly powerful image processing capabilities.</p><p>The core image library is designed for fast access to data stored in a few basic pixel formats. It should provide a solid foundation for a general image processing tool.</p>",
+"usageNotes": "<p>The most important class in the Python Imaging Library is the <code>Image</code> class, defined in the module with the same name. You can create instances of this class in several ways; either by loading images from files, processing other images, or creating images from scratch.</p><p>To load an image from a file, use the <code>open()</code> function in the <code>Image</code> module:</p><pre><code>from PIL import Image<br>im = Image.open(&ldquo;hopper.ppm&ldquo;)<br></code></pre><p>If successful, this function returns an <code>Image</code> object. You can now use instance attributes to examine the file contents:</p><pre><code>print(im.format, im.size, im.mode)<br>   PPM (512, 512) RGB<br></code></pre><p>The <code>format</code> attribute identifies the source of an image. If the image was not read from a file, it is set to None. The size attribute is a 2-tuple containing width and height (in pixels). The <code>mode</code> attribute defines the number and names of the bands in the image, and also the pixel type and depth. Common modes are “L” (luminance) for greyscale images, “RGB” for true color images, and “CMYK” for pre-press images.</p><p>If the file cannot be opened, an <code>OSError</code> exception is raised.</p><p>Once you have an instance of the Image class, you can use the methods defined by this class to process and manipulate the image. Refer to <a href='https://pillow.readthedocs.io/en/stable/handbook/tutorial.html'>readthedocs.io</a> for more information.</p>",
+"linkToSite": "https://python-pillow.org/",
+"siteName": "python-pillow.org",
+"license": "OTHER",
+"linkToLicense": "https://github.com/python-pillow/Pillow/blob/main/LICENSE",
+"version": "(cp311) 9.3.0",
+"installCommand": "pillow==9.3.0 --hash=sha256:fcfad73258b68ded4ea4ef179f8314ffeb7ae765bd10c1a9a51623b506229bea"
+}
+},
+{
 "name": "platformdirs",
 "tags": [ "utility" ],
-"versions": " 2.6.2",
+"versions": " 3.5.1",
 "info":
 {
 "description": "<p>platformdirs will help you choose an appropriate storage location for different datasets/logging/cache etc..</p>",
@@ -938,8 +1722,8 @@
 "siteName": "https://github.com/ibm-z-oss-oda/platformdirs",
 "license": "MIT",
 "linkToLicense": "https://github.com/ibm-z-oss-oda/platformdirs/blob/main/LICENSE.txt",
-"version": "(py3) 2.6.2",
-"installCommand": "platformdirs==2.6.2 --hash=sha256:83c8f6d04389165de7c9b6f0c682439697887bca0aa2f1c87ef1826be3584490"
+"version": "(py3) 3.5.1",
+"installCommand": "platformdirs==3.5.1 --hash=sha256:119702b2cf904893a9b9f2595125a0182488e69b1cfc1d063598a33180972082"
 }
 },
 {
@@ -977,7 +1761,7 @@
 {
 "name": "prompt-toolkit",
 "tags": [ "programming_tools" ],
-"versions": " 3.0.36",
+"versions": " 3.0.36 3.0.36.post0",
 "info":
 {
 "description": "<p><code>prompt-toolkit</code> is a library for building powerful interactive command line applications in Python.</p>",
@@ -986,8 +1770,8 @@
 "siteName": "readthedocs.io",
 "license": "BSD3",
 "linkToLicense": "https://github.com/prompt-toolkit/python-prompt-toolkit/blob/master/LICENSE",
-"version": "(py3) 3.0.36",
-"installCommand": "prompt-toolkit==3.0.36 --hash=sha256:aa64ad242a462c5ff0363a7b9cfe696c20d55d9fc60c11fd8e632d064804d305"
+"version": "(py3) 3.0.36.post0",
+"installCommand": "prompt-toolkit==3.0.36.post0 --hash=sha256:3853d48d2505a672bc7504d9ce29022b2726005ea410669360c5326d31dfc42d"
 }
 },
 {
@@ -1055,6 +1839,22 @@
 }
 },
 {
+"name": "pyftpdlib",
+"tags": [ "utility" ],
+"versions": " 1.5.7",
+"info":
+{
+"description": "<p>Python FTP server library provides a high-level portable interface to easily write very efficient, scalable and asynchronous FTP servers with Python. </p>",
+"usageNotes": "<p>For advanced tool documentation, refer to <a href='https://github.com/giampaolo/pyftpdlib'>github.com</a>.</p>",
+"linkToSite": "https://github.com/ibm-z-oss-oda/pyftpdlib",
+"siteName": "https://github.com/ibm-z-oss-oda/pyftpdlib",
+"license": "MIT",
+"linkToLicense": "https://github.com/ibm-z-oss-oda/pyftpdlib/blob/master/LICENSE",
+"version": "(py3) 1.5.7",
+"installCommand": "pyftpdlib==1.5.7 --hash=sha256:5488ce3d2c2f465579b4e5b0eef60d4991af1d908309548ba57bb19ffa6c0047"
+}
+},
+{
 "name": "pygments",
 "tags": [ "programming_tools","utility" ],
 "versions": " 2.14.0",
@@ -1073,7 +1873,7 @@
 {
 "name": "pymdown-extensions",
 "tags": [ "programming_tools","utility" ],
-"versions": " 9.5",
+"versions": " 10.0.1.post0",
 "info":
 {
 "description": "<p>PyMdown Extensions is a collection of extensions for Python Markdown. They were originally written to make writing documentation more enjoyable. They cover a wide range of solutions, and while not every extension is needed by all people, there is usually at least one useful extension for everybody.</p>",
@@ -1082,8 +1882,24 @@
 "siteName": "github",
 "license": "OTHER",
 "linkToLicense": "https://github.com/facelessuser/pymdown-extensions/blob/main/LICENSE.md",
-"version": "(py3) 9.5",
-"installCommand": "pymdown-extensions==9.5 --hash=sha256:a25ddc704a775fcdc78b49e9068df45c7c591b0720c41b1282d7aaf9e5edf197"
+"version": "(py3) 10.0.1.post0",
+"installCommand": "pymdown-extensions==10.0.1.post0 --hash=sha256:fe6530f649734b1b00d3b8a35ce51ad4f3a974f795f7c1941e955f90b3cf21be"
+}
+},
+{
+"name": "pyparsing",
+"tags": [ "programming_tools" ],
+"versions": " 3.0.10",
+"info":
+{
+"description": "<p>The pyparsing module is an alternative approach to creating and executing simple grammars, vs. the traditional lex/yacc approach, or the use of regular expressions. The pyparsing module provides a library of classes that client code uses to construct the grammar directly in Python code.</p>",
+"usageNotes": "<p>Here is a program to parse <code>&ldquo;Hello, World!&ldquo;</code>:</p><pre><code>from pyparsing import Word, alphas<br>greet = Word(alphas) + &ldquo;,&ldquo; + Word(alphas) + &ldquo;!&ldquo;<br>hello = &ldquo;Hello, World!&ldquo;<br>print(hello, &ldquo;->&ldquo;, greet.parseString(hello))<br></code></pre><p>The program outputs the following:</p><pre><code>Hello, World! -> ['Hello', ',', 'World', '!']<br></code></pre><p>The Python representation of the grammar is quite readable, owing to the self-explanatory class names, and the use of ‘+’, ‘|’ and ‘^’ operator definitions.</p><p>Documentation can be found at <a href='https://pyparsing-docs.readthedocs.io/en/latest/'>readthedocs.io</a>.</p>",
+"linkToSite": "https://github.com/pyparsing/pyparsing/",
+"siteName": "github",
+"license": "MIT",
+"linkToLicense": "https://github.com/pyparsing/pyparsing/blob/master/LICENSE",
+"version": "(py3) 3.0.10",
+"installCommand": "pyparsing==3.0.10 --hash=sha256:61ce52c4f7808471604fff914cb827e41fd04f2a14623125fcee3892637f295a"
 }
 },
 {
@@ -1119,6 +1935,22 @@
 }
 },
 {
+"name": "python-json-logger",
+"tags": [ "logging" ],
+"versions": " 2.0.7",
+"info":
+{
+"description": "<p>This library is provided to allow standard python logging to output log data as json objects.</p>",
+"usageNotes": "<p>Usage information is available on <a href='https://github.com/madzak/python-json-logger'>github.com</a>.</p>",
+"linkToSite": "https://github.com/madzak/python-json-logger",
+"siteName": "github.com",
+"license": "BSD 2",
+"linkToLicense": "https://github.com/madzak/python-json-logger/blob/master/LICENSE",
+"version": "(py3) 2.0.7",
+"installCommand": "python-json-logger==2.0.7 --hash=sha256:118ec6b790adda019b53af3ee247ff75ff7a340165761c11eb4ccc9c8c49b64b"
+}
+},
+{
 "name": "pytz",
 "tags": [ "utility" ],
 "versions": " 2022.4",
@@ -1135,9 +1967,25 @@
 }
 },
 {
+"name": "pywavelets",
+"tags": [ "math" ],
+"versions": " 1.3.0",
+"info":
+{
+"description": "<p>PyWavelets is a free Open Source library for wavelet transforms in Python. Wavelets are mathematical basis functions that are localized in both time and frequency. Wavelet transforms are time-frequency transforms employing wavelets. They are similar to Fourier transforms, the difference being that Fourier transforms are localized only in frequency instead of in time and frequency.</p>",
+"usageNotes": "<p>PyWavelets is very easy to use and get started with. Just enter the following code to perform an example computation of a wavelet transformation:</p><pre><code>import pywt<br>cA, cD = pywt.dwt([1, 2, 3, 4], 'db1')<br></code></pre><p>Full documentation can be found on <a href='https://pywavelets.readthedocs.io/en/latest/'>readthedocs.io</a>/</p>",
+"linkToSite": "https://github.com/PyWavelets/pywt",
+"siteName": "github",
+"license": "MIT",
+"linkToLicense": "https://github.com/PyWavelets/pywt/blob/master/LICENSE",
+"version": "(cp311) 1.3.0",
+"installCommand": "pywavelets==1.3.0 --hash=sha256:8df39d448585c7c386c696d13f4cf45e51f587bd86ebdff4fe7cf6ecee4caa83"
+}
+},
+{
 "name": "pyyaml",
 "tags": [ "programming_tools","utility" ],
-"versions": " 6.0",
+"versions": " 6.0 6.0.post0",
 "info":
 {
 "description": "<p>YAML is a data serialization format designed for human readability and interaction with scripting languages. PyYAML is a YAML parser and emitter for Python.</p><p>PyYAML features a complete YAML 1.1 parser, Unicode support, pickle support, capable extension API, and sensible error messages. PyYAML supports standard YAML tags and provides Python-specific tags that allow to represent an arbitrary Python object.</p><p>PyYAML is applicable for a broad range of tasks from complex configuration files to object serialization and persistence.</p>",
@@ -1146,14 +1994,14 @@
 "siteName": "pyyaml.org",
 "license": "MIT",
 "linkToLicense": "https://github.com/yaml/pyyaml/blob/master/LICENSE",
-"version": "(cp310) 6.0",
-"installCommand": "pyyaml==6.0 --hash=sha256:661b515bf11e0971a1267a2d0753f340c4113707cc139bbd3034c8295302761a"
+"version": "(cp311) 6.0.post0",
+"installCommand": "pyyaml==6.0.post0 --hash=sha256:d844450566637962bb9fc0dd68c8f580a910405865761f3f6243cc85b46f8a4a"
 }
 },
 {
 "name": "pyzmq",
 "tags": [ "programming_tools","web","languages" ],
-"versions": " 24.0.1",
+"versions": " 24.0.1 24.0.1.post0",
 "info":
 {
 "description": "<p>This package contains Python bindings for <a href='https://zeromq.org/'>ØMQ</a>. ØMQ is a lightweight and fast messaging implementation.</p>",
@@ -1162,8 +2010,40 @@
 "siteName": "readthedocs.io",
 "license": "here",
 "linkToLicense": "https://github.com/zeromq/pyzmq/blob/main/COPYING.BSD",
-"version": "(cp310) 24.0.1",
-"installCommand": "pyzmq==24.0.1 --hash=sha256:6bae864246c61de2490afa75445928bff1098a05b1875303cd24413094c8352c"
+"version": "(cp311) 24.0.1.post0",
+"installCommand": "pyzmq==24.0.1.post0 --hash=sha256:5407d71eba76d73ec95af1359ea9840f659c7d946b4b60cd6437873b58d0f4a7"
+}
+},
+{
+"name": "qtconsole",
+"tags": [ "utility" ],
+"versions": " 5.3.2.post0",
+"info":
+{
+"description": "<p>A rich Qt-based console for working with Jupyter kernels, supporting rich media output, session export, and more.</p><p>The Qtconsole is a very lightweight application that largely feels like a terminal, but provides a number of enhancements only possible in a GUI, such as inline figures, proper multiline editing with syntax highlighting, graphical calltips, and more.</p>",
+"usageNotes": "<p>The console can be run with <code>jupyter qtconsole</code>.</p><p>Please refer to <a href='https://qtconsole.readthedocs.io/en/latest/'>readthedocs.io</a> for usage notes.</p>",
+"linkToSite": "https://jupyter.org/",
+"siteName": "jupyter.org",
+"license": "BSD3",
+"linkToLicense": "https://github.com/jupyter/qtconsole/blob/master/LICENSE",
+"version": "(py3) 5.3.2.post0",
+"installCommand": "qtconsole==5.3.2.post0 --hash=sha256:b1b8b079423ab495aca65f64653be3387fc47333cebef22b064a2d628156a093"
+}
+},
+{
+"name": "qtpy",
+"tags": [ "programming_tools" ],
+"versions": " 2.1.0.post0",
+"info":
+{
+"description": "<p>QtPy is a small abstraction layer that lets you write applications using a single API call to either PyQt or PySide.</p><p>It provides support for <code>PyQt5</code>, <code>PyQt6</code>, <code>PySide6</code>, <code>PySide2</code> using the Qt5 layout (where the QtGui module has been split into QtGui and QtWidgets).</p><p>Basically, you can write your code as if you were using PyQt or PySide directly, but import Qt modules from <code>qtpy</code> instead of <code>PyQt5</code>, <code>PyQt6</code>, <code>PySide2</code>, or <code>PySide6</code>.</p><p>Accordingly, when porting code between different Qt bindings (PyQt vs PySide) or Qt versions (Qt5 vs Qt6), QtPy makes this much more painless, and allows you to easily and incrementally transition between them. QtPy handles incompatibilities and differences between bindings or Qt versions for you while keeping your project running, so you can focus more on your own code and less on keeping track of supporting every Qt version and binding. Furthermore, when you do want to upgrade or support new bindings, it allows you to update your project module by module rather than all at once.</p>",
+"usageNotes": "<p>For examples of usage, refer to projects using QtPy such as <a href='https://github.com/git-cola/git-cola/issues/232'>git-cola</a>.</p>",
+"linkToSite": "https://github.com/spyder-ide/qtpy",
+"siteName": "github",
+"license": "MIT",
+"linkToLicense": "https://github.com/spyder-ide/qtpy/blob/master/LICENSE.txt",
+"version": "(py3) 2.1.0.post0",
+"installCommand": "qtpy==2.1.0.post0 --hash=sha256:eefb309598436231fbd4d94d368260e13ff068808ee19a6c588fa59ca22130e3"
 }
 },
 {
@@ -1231,6 +2111,86 @@
 }
 },
 {
+"name": "requests",
+"tags": [ "web" ],
+"versions": " 2.28.2",
+"info":
+{
+"description": "<p>Requests is a simple, yet elegant, HTTP library.</p><p>Requests allows you to send HTTP/1.1 requests extremely easily. There’s no need to manually add query strings to your URLs, or to form-encode your PUT & POST data — but nowadays, just use the <code>json</code> method!</p>",
+"usageNotes": "<p>Usage example:</p><pre><code>&gt;&gt;&gt; import requests<br>&gt;&gt;&gt; r = requests.get('https://httpbin.org/basic-auth/user/pass', auth=('user', 'pass'))<br>&gt;&gt;&gt; r.status_code<br>200<br>&gt;&gt;&gt; r.headers['content-type']<br>'application/json; charset=utf8'<br>&gt;&gt;&gt; r.encoding<br>'utf-8'<br>&gt;&gt;&gt; r.text<br>'{&ldquo;authenticated&ldquo;: true, ...'<br>&gt;&gt;&gt; r.json()<br>{'authenticated': True, ...}<br></code></pre><p>See usage instructions at <a href='https://docs.python-requests.org/en/latest/'>readthedocs.io</a>.</p>",
+"linkToSite": "https://github.com/psf/requests",
+"siteName": "github",
+"license": "APACHE2",
+"linkToLicense": "https://github.com/psf/requests/blob/main/LICENSE",
+"version": "(py3) 2.28.2",
+"installCommand": "requests==2.28.2 --hash=sha256:64299f4909223da747622c030b781c0d7811e359c37124b4bd368fb8c6518baa"
+}
+},
+{
+"name": "ruamel.yaml.clib",
+"tags": [ "utility" ],
+"versions": " 0.2.7",
+"info":
+{
+"description": "<p>ruamel.yaml.clib is the C based reader/scanner and emitter for ruamel.yaml</p>",
+"usageNotes": "<p>Usage information is available on <a href='https://github.com/ibm-z-oss-oda/ruamel.yaml.clib'>github.com</a>.</p>",
+"linkToSite": "https://github.com/ibm-z-oss-oda/ruamel.yaml.clib",
+"siteName": "github.com",
+"license": "MIT",
+"linkToLicense": "https://github.com/ibm-z-oss-oda/ruamel.yaml.clib/blob/master/LICENSE",
+"version": "(cp311) 0.2.7",
+"installCommand": "ruamel.yaml.clib==0.2.7 --hash=sha256:efdee2784ea7ac600d2c84bbfdf7d48369ddbf7620343a3d991c2a8fa2d94dff"
+}
+},
+{
+"name": "ruamel.yaml",
+"tags": [ "utility" ],
+"versions": " 0.17.24",
+"info":
+{
+"description": "<p>ruamel.yaml is a YAML 1.2 loader/dumper package for Python.</p>",
+"usageNotes": "<p>Usage information is available on <a href='https://github.com/ibm-z-oss-oda/ruamel.yaml'>github.com</a>.</p>",
+"linkToSite": "https://github.com/ibm-z-oss-oda/ruamel.yaml",
+"siteName": "github.com",
+"license": "MIT",
+"linkToLicense": "https://github.com/ibm-z-oss-oda/ruamel.yaml/blob/master/LICENSE",
+"version": "(py3) 0.17.24",
+"installCommand": "ruamel.yaml==0.17.24 --hash=sha256:8af42e5560ffa113db99a27d1036034d0546dc6b3255ea7b1cfb9f9be165c944"
+}
+},
+{
+"name": "scikit-learn",
+"tags": [ "graphics","machine_learning","math" ],
+"versions": " 1.2.1.post1",
+"info":
+{
+"description": "<p>scikit-learn is a Python module for machine learning built on top of SciPy and is distributed under the 3-Clause BSD license.</p><p>The project was started in 2007 by David Cournapeau as a Google Summer of Code project, and since then many volunteers have contributed.</p>",
+"usageNotes": "<p>Extensive documentation is available on <a href='https://scikit-learn.org/stable/index.html'>scikit-learn.org</a>.</p>",
+"linkToSite": "https://scikit-learn.org/stable/",
+"siteName": "scikit-learn.org",
+"license": "BSD3",
+"linkToLicense": "https://github.com/scikit-learn/scikit-learn/blob/main/COPYING",
+"version": "(cp311) 1.2.1.post1",
+"installCommand": "scikit-learn==1.2.1.post1 --hash=sha256:d45e64e51a55bb0171c49688e5fc18d3c324d39d0b60a03afc8b5e13e50ed4b0"
+}
+},
+{
+"name": "scipy",
+"tags": [ "math","machine_learning" ],
+"versions": " 1.3.3",
+"info":
+{
+"description": "<p>SciPy (pronounced “Sigh Pie”) is open-source software for mathematics, science, and engineering. The SciPy library depends on NumPy, which provides convenient and fast N-dimensional array manipulation. The SciPy library is built to work with NumPy arrays, and provides many user-friendly and efficient numerical routines such as routines for numerical integration and optimization. Together, they run on all popular operating systems, are quick to install, and are free of charge. NumPy and SciPy are easy to use, but powerful enough to be depended upon by some of the world’s leading scientists and engineers. If you need to manipulate numbers on a computer and display or publish the results, give SciPy a try!</p>",
+"usageNotes": "<p>Extensive documentation is available at <a href='https://docs.scipy.org/doc/scipy/tutorial/index.html'>docs.scipy.org</a>.</p>",
+"linkToSite": "https://scipy.org/",
+"siteName": "scipy.org",
+"license": "BSD3",
+"linkToLicense": "https://github.com/scipy/scipy/blob/main/LICENSE.txt",
+"version": "(cp311) 1.3.3",
+"installCommand": "scipy==1.3.3 --hash=sha256:c7eeff81c53113bca36d3f275dbce8a5c064fafa9952058b70fdf6dd06e6ff12"
+}
+},
+{
 "name": "seaborn",
 "tags": [ "graphics","math" ],
 "versions": " 0.11.0",
@@ -1244,6 +2204,54 @@
 "linkToLicense": "https://github.com/mwaskom/seaborn/blob/master/LICENSE",
 "version": "(py3) 0.11.0",
 "installCommand": "seaborn==0.11.0 --hash=sha256:8c5fcbead711dd0c39f00701b11a0076de2186d6efce34b11418baf77024552a"
+}
+},
+{
+"name": "semantic-version",
+"tags": [ "utility" ],
+"versions": " 2.10.0",
+"info":
+{
+"description": "<p>This small python library provides a few tools to handle SemVer in Python. It follows strictly the 2.0.0 version of the SemVer scheme.</p>",
+"usageNotes": "<p>Usage information is available on <a href='https://github.com/rbarrois/python-semanticversion'>github.com</a>.</p>",
+"linkToSite": "https://github.com/rbarrois/python-semanticversion",
+"siteName": "github.com",
+"license": "BSD 2",
+"linkToLicense": "https://github.com/rbarrois/python-semanticversion/blob/master/LICENSE",
+"version": "(py3) 2.10.0",
+"installCommand": "semantic-version==2.10.0 --hash=sha256:16f8514f2be59a8e3b3d62b084477b0119c2874955159cd42a46d3e1e2d724eb"
+}
+},
+{
+"name": "send2trash",
+"tags": [ "utility" ],
+"versions": " 1.8.0",
+"info":
+{
+"description": "<p>Send2Trash is a small package that sends files to the Trash (or Recycle Bin) <i>natively</i> and on <i>all platforms</i>. On OS X, it uses native <code>FSMoveObjectToTrashSync</code> Cocoa calls or can use pyobjc with NSFileManager. On Windows, it uses native IFileOperation call if on Vista or newer and pywin32 is installed or falls back to SHFileOperation calls. On other platforms, if PyGObject and GIO are available, it will use this. Otherwise, it will fallback to its own implementation of the <a href='http://freedesktop.org/wiki/Specifications/trash-spec/'>trash specifications</a> from freedesktop.org.</p><p><code>ctypes</code> is used to access native libraries, so no compilation is necessary.</p>",
+"usageNotes": "<pre><code>&gt;&gt;&gt; from send2trash import send2trash<br>&gt;&gt;&gt; send2trash('some_file')<br>&gt;&gt;&gt; send2trash(['some_file1', 'some_file2'])<br></code></pre><p>On Freedesktop platforms (Linux, BSD, etc.), you may not be able to efficiently trash some files. In these cases, an exception <code>send2trash.TrashPermissionError</code> is raised, so that the application can handle this case. This inherits from <code>PermissionError</code> (<code>OSError</code> on Python 2). Specifically, this affects files on a different device to the user’s home directory, where the root of the device does not have a <code>.Trash</code> directory, and we don’t have permission to create a <code>.Trash-$UID</code> directory.</p><p>For any other problem, <code>OSError</code> is raised.</p>",
+"linkToSite": "https://github.com/arsenetar/send2trash",
+"siteName": "github",
+"license": "BSD3",
+"linkToLicense": "https://github.com/arsenetar/send2trash/blob/master/LICENSE",
+"version": "(py3) 1.8.0",
+"installCommand": "send2trash==1.8.0 --hash=sha256:6a84ab3b7a0d2f8f078d3e4b5ac703f97b9d3ea75bbc006bd594f935871b17f1"
+}
+},
+{
+"name": "setuptools-rust",
+"tags": [ "utility" ],
+"versions": " 1.6.0",
+"info":
+{
+"description": "<p>setuptools-rust is a plugin for setuptools to build Rust Python extensions implemented with PyO3 or rust-cpython.</p>",
+"usageNotes": "<p>Usage information is available on <a href='https://github.com/PyO3/setuptools-rust'>github.com</a>.</p>",
+"linkToSite": "https://github.com/PyO3/setuptools-rust",
+"siteName": "github.com",
+"license": "MIT",
+"linkToLicense": "https://github.com/PyO3/setuptools-rust/blob/main/LICENSE",
+"version": "(py3) 1.6.0",
+"installCommand": "setuptools-rust==1.6.0 --hash=sha256:db430acbae1aaa3b4ca30a23546e0a3c84ff84edb5afa7374b97b19ee877179b"
 }
 },
 {
@@ -1327,6 +2335,38 @@
 }
 },
 {
+"name": "sqlalchemy",
+"tags": [ "utility" ],
+"versions": " 2.0.12.dev0",
+"info":
+{
+"description": "<p>SQLAlchemy is the Python SQL toolkit and Object Relational Mapper that gives application developers the full power and flexibility of SQL. SQLAlchemy provides a full suite of well known enterprise-level persistence patterns, designed for efficient and high-performing database access, adapted into a simple and Pythonic domain language.</p>",
+"usageNotes": "<p>Usage information is available on <a href='https://github.com/sqlalchemy/sqlalchemy'>github.com</a>.</p>",
+"linkToSite": "https://github.com/sqlalchemy/sqlalchemy",
+"siteName": "github.com",
+"license": "MIT",
+"linkToLicense": "https://github.com/sqlalchemy/sqlalchemy/blob/main/LICENSE",
+"version": "(py3) 2.0.12.dev0",
+"installCommand": "sqlalchemy==2.0.12.dev0 --hash=sha256:08db90c006db5414f1e1a376f6ab2a215b4063317277436c7be13d2b0adda29d"
+}
+},
+{
+"name": "sqlparse",
+"tags": [ "utility" ],
+"versions": " 0.4.4",
+"info":
+{
+"description": "<p>sqlparse is a non-validating SQL parser for Python. It provides support for parsing, splitting and formatting SQL statements.</p>",
+"usageNotes": "<p>Usage information is available on <a href='https://github.com/andialbrecht/sqlparse'>github.com</a>.</p>",
+"linkToSite": "https://github.com/andialbrecht/sqlparse",
+"siteName": "github.com",
+"license": "BSD 3",
+"linkToLicense": "https://github.com/andialbrecht/sqlparse/blob/master/LICENSE",
+"version": "(py3) 0.4.4",
+"installCommand": "sqlparse==0.4.4 --hash=sha256:3bfb1be6b4f81b08c0ff65f3f81daa5202ec3277e3abfd5dac611584e4ca2af5"
+}
+},
+{
 "name": "stack-data",
 "tags": [ "utility" ],
 "versions": " 0.6.2",
@@ -1340,6 +2380,22 @@
 "linkToLicense": "https://github.com/ibm-z-oss-oda/stack_data/blob/master/LICENSE.txt",
 "version": "(py3) 0.6.2",
 "installCommand": "stack-data==0.6.2 --hash=sha256:deba2972b7c7e2c1e2134d35c1f6af8f593bdcbc3907ef11a1ed2d9dcb9e2a73"
+}
+},
+{
+"name": "statsmodels",
+"tags": [ "math" ],
+"versions": " 0.13.5",
+"info":
+{
+"description": "<p>statsmodels is a Python package that provides a complement to scipy for statistical computations including descriptive statistics and estimation and inference for statistical models. An extensive list of result statistics are available for each estimator.</p>",
+"usageNotes": "<p>Extensive usage documentation is available at <a href='https://www.statsmodels.org/stable/user-guide.html'>statsmodels.org</a>.</p>",
+"linkToSite": "https://www.statsmodels.org/stable/index.html",
+"siteName": "statsmodels.org",
+"license": "BSD3",
+"linkToLicense": "https://github.com/statsmodels/statsmodels/blob/main/LICENSE.txt",
+"version": "(cp311) 0.13.5",
+"installCommand": "statsmodels==0.13.5 --hash=sha256:b7a34782003e383970b3c8eaf3939b3038616023064f01b88ba2054aa489b804"
 }
 },
 {
@@ -1375,19 +2431,19 @@
 }
 },
 {
-"name": "tqdm",
-"tags": [ "graphics" ],
-"versions": " 4.64.1",
+"name": "terminado",
+"tags": [ "web","languages" ],
+"versions": " 0.15.0",
 "info":
 {
-"description": "<p><code>tqdm</code> means 'progress' in Arabic (taqadum) and is an abbreviation for 'I love you so much' in Spanish (te quiero demasiado).</p><p>Instantly make your loops show a smart progress meter - just wrap any iterable with tqdm(iterable), and you're done!</p>",
-"usageNotes": "<pre><code>from tqdm import tqdm<br>for i in tqdm(range(10000)):<br>    ...<br></code></pre><br><pre><code>76%|████████████████████████████         | 7568/10000 [00:33<00:10, 229.00it/s]<br></code></pre><p>See full docs on <a href='https://tqdm.github.io/'>tqdm.github.io</a>.</p>",
-"linkToSite": "https://tqdm.github.io/",
-"siteName": "tqdm.github.io",
-"license": "OTHER",
-"linkToLicense": "https://github.com/tqdm/tqdm/blob/master/LICENCE",
-"version": "(py3) 4.64.1",
-"installCommand": "tqdm==4.64.1 --hash=sha256:538feb6a0a616ec7e16f23ebe40229fdbb547823696eb4d64a255d04fd6dcd31"
+"description": "<p>This is a <a href='http://tornadoweb.org/'>Tornado</a> websocket backend for the <a href='https://xtermjs.org/'>Xterm.js</a> Javascript terminal emulator library.</p><p>It evolved out of <a href='https://github.com/mitotic/pyxterm'>pyxterm</a>, which was part of <a href='https://github.com/mitotic/graphterm'>GraphTerm</a> (as lineterm.py), v0.57.0 (2014-07-18), and ultimately derived from the public-domain <a href='http://antony.lesuisse.org/software/ajaxterm/'>Ajaxterm</a> code, v0.11 (2008-11-13) (also on Github as part of <a href='https://github.com/antonylesuisse/qweb'>QWeb</a>).</p>",
+"usageNotes": "<p>Usage example:</p><pre><code>import os.path<br>import tornado.web<br>import tornado.ioloop<br># This demo requires tornado_xstatic and XStatic-term.js<br>import tornado_xstatic<br><br>import terminado<br>STATIC_DIR = os.path.join(os.path.dirname(terminado.__file__), &ldquo;_static&ldquo;)<br><br>class TerminalPageHandler(tornado.web.RequestHandler):<br>    def get(self):<br>        return self.render(&ldquo;termpage.html&ldquo;, static=self.static_url,<br>                           xstatic=self.application.settings['xstatic_url'],<br>                           ws_url_path=&ldquo;/websocket&ldquo;)<br><br>if __name__ == '__main__':<br>    term_manager = terminado.SingleTermManager(shell_command=['bash'])<br>    handlers = [<br>                (r&ldquo;/websocket&ldquo;, terminado.TermSocket,<br>                     {'term_manager': term_manager}),<br>                (r&ldquo;/&ldquo;, TerminalPageHandler),<br>                (r&ldquo;/xstatic/(.*)&ldquo;, tornado_xstatic.XStaticFileHandler,<br>                     {'allowed_modules': ['termjs']})<br>               ]<br>    app = tornado.web.Application(handlers, static_path=STATIC_DIR,<br>                      xstatic_url = tornado_xstatic.url_maker('/xstatic/'))<br>    # Serve at http://localhost:8765/ N.B. Leaving out 'localhost' here will<br>    # work, but it will listen on the public network interface as well.<br>    # Given what terminado does, that would be rather a security hole.<br>    app.listen(8765, 'localhost')<br>    try:<br>        tornado.ioloop.IOLoop.instance().start()<br>    finally:<br>        term_manager.shutdown()<br></code></pre><p>See additional demos on <a href='https://github.com/jupyter/terminado/tree/main/demos'>github</a>.</p>",
+"linkToSite": "https://github.com/jupyter/terminado",
+"siteName": "github",
+"license": "BSD2",
+"linkToLicense": "https://github.com/jupyter/terminado/blob/main/LICENSE",
+"version": "(py3) 0.15.0",
+"installCommand": "terminado==0.15.0 --hash=sha256:14c716493661684489f1f479fc1aa1f0f45b866c5c5363d0f57aa4a8fe3352f5"
 }
 },
 {
@@ -1407,6 +2463,118 @@
 }
 },
 {
+"name": "tinycss2",
+"tags": [ "utility" ],
+"versions": " 1.1.1",
+"info":
+{
+"description": "<p>tinycss2 is a low-level CSS parser and generator written in Python: it can parse strings, return objects representing tokens and blocks, and generate CSS strings corresponding to these objects.  </p>",
+"usageNotes": "<p>For advanced tool documentation, refer to <a href='https://github.com/Kozea/tinycss2'>github.com</a>.</p>",
+"linkToSite": "https://github.com/ibm-z-oss-oda/tinycss2",
+"siteName": "https://github.com/ibm-z-oss-oda/tinycss2",
+"license": "BSD 3",
+"linkToLicense": "https://github.com/ibm-z-oss-oda/tinycss2/blob/master/LICENSE",
+"version": "(py3) 1.1.1",
+"installCommand": "tinycss2==1.1.1 --hash=sha256:510267ac64def0ab08afa5d603158588f7457ae316170f015d1bcb76b57ee003"
+}
+},
+{
+"name": "toolz",
+"tags": [ "utility" ],
+"versions": " 0.12.0",
+"info":
+{
+"description": "<p>Toolz provides a set of utility functions for iterators, functions, and dictionaries. These functions interoperate well and form the building blocks of common data analytic operations. They extend the standard libraries itertools and functools and borrow heavily from the standard libraries of contemporary functional languages.</p><p>Toolz provides a suite of functions which have the following functional virtues:</p><ul>    <li>Composable: They interoperate due to their use of core data structures.</li>    <li>Pure: They don’t change their inputs or rely on external state.</li>    <li>Lazy: They don’t run until absolutely necessary, allowing them to support large streaming data sets.</li></ul><p>Toolz functions are pragmatic. They understand that most programmers have deadlines.</p><ul>    <li>Low Tech: They’re just functions, no syntax or magic tricks to learn</li>    <li>Tuned: They’re profiled and optimized</li>    <li>Serializable: They support common solutions for parallel computing</li></ul><p>This gives developers the power to write powerful programs to solve complex problems with relatively simple code. This code can be easy to understand without sacrificing performance. Toolz enables this approach, commonly associated with functional programming, within a natural Pythonic style suitable for most developers.</p>",
+"usageNotes": "<p>This example builds a standard wordcount function from pieces within <code>toolz</code>:</p><pre><code>>>> def stem(word):<br>...     &ldquo;&ldquo;&ldquo; Stem word to primitive form &ldquo;&ldquo;&ldquo;<br>...     return word.lower().rstrip(&ldquo;,.!:;'-\\&ldquo;&ldquo;).lstrip(&ldquo;'\\&ldquo;&ldquo;)<br><br>>>> from toolz import compose, frequencies<br>>>> from toolz.curried import map<br>>>> wordcount = compose(frequencies, map(stem), str.split)<br><br>>>> sentence = &ldquo;This cat jumped over this other cat!&ldquo;<br>>>> wordcount(sentence)<br>{'this': 2, 'cat': 2, 'jumped': 1, 'over': 1, 'other': 1}<br></code></pre><p>Full documentation is available on <a href='https://toolz.readthedocs.io/en/latest/'>readthedocs.io</a></p>",
+"linkToSite": "https://toolz.readthedocs.io/en/latest/",
+"siteName": "readthedocs.io",
+"license": "here",
+"linkToLicense": "https://github.com/pytoolz/toolz/blob/master/LICENSE.txt",
+"version": "(py3) 0.12.0",
+"installCommand": "toolz==0.12.0 --hash=sha256:2059bd4148deb1884bb0eb770a3cde70e7f954cfbbdc2285f1f2de01fd21eb6f"
+}
+},
+{
+"name": "toree",
+"tags": [ "programming_tools","languages" ],
+"versions": " 0.5.0.post0",
+"info":
+{
+"description": "<p>Apache Toree is a kernel for the Jupyter Notebook platform providing interactive access to Apache Spark. It has been developed using the IPython messaging protocol and 0MQ, and despite the protocol’s name, Apache Toree currently exposes the Spark programming model in Scala, Python and R languages.</p>",
+"usageNotes": "<p>Documentation should be referenced at <a href='https://toree.apache.org/docs/current/user/quick-start/'>toree.apache.org</a>.</p>",
+"linkToSite": "https://toree.apache.org/",
+"siteName": "toree.apache.org",
+"license": "APACHE2",
+"linkToLicense": "https://github.com/apache/incubator-toree/blob/master/LICENSE",
+"version": "(py3) 0.5.0.post0",
+"installCommand": "toree==0.5.0.post0 --hash=sha256:e2c9306d5904ed8bd81af90d68e6fce2a3f8a14b97a9473883dcc62faf31a918"
+}
+},
+{
+"name": "tornado",
+"tags": [ "web" ],
+"versions": " 6.2",
+"info":
+{
+"description": "<p>Tornado is a Python web framework and asynchronous networking library, originally developed at <a href='https://en.wikipedia.org/wiki/FriendFeed'>FriendFeed</a>. By using non-blocking network I/O, Tornado can scale to tens of thousands of open connections, making it ideal for <a href='https://en.wikipedia.org/wiki/Push_technology#Long_polling'>long polling</a>, <a href='https://en.wikipedia.org/wiki/WebSocket'>WebSockets</a>, and other applications that require a long-lived connection to each user.</p>",
+"usageNotes": "<p>Here is a simple “Hello, world” example web app for Tornado:</p><pre><code>import tornado.ioloop<br>import tornado.web<br><br>class MainHandler(tornado.web.RequestHandler):<br>    def get(self):<br>        self.write(&ldquo;Hello, world&ldquo;)<br><br>def make_app():<br>    return tornado.web.Application([<br>        (r&ldquo;/&ldquo;, MainHandler),<br>    ])<br><br>if __name__ == &ldquo;__main__&ldquo;:<br>    app = make_app()<br>    app.listen(8888)<br>    tornado.ioloop.IOLoop.current().start()<br></code></pre><p>This example does not use any of Tornado’s asynchronous features; for that see this <a href='https://github.com/tornadoweb/tornado/tree/stable/demos/chat'>simple chat room</a> from Github. Documentation and usage notes for this package can be found on the <a href='https://www.tornadoweb.org/en/stable/guide.html'>user's guide</a>.</p>",
+"linkToSite": "https://www.tornadoweb.org/en/stable/",
+"siteName": "tornadoweb.org",
+"license": "APACHE2",
+"linkToLicense": "https://github.com/tornadoweb/tornado/blob/master/LICENSE",
+"version": "(cp311) 6.2",
+"installCommand": "tornado==6.2 --hash=sha256:8e4de53d246e70608dcde41f206d3e1370fdba308964f78f43c5d4210a0ee48c"
+}
+},
+{
+"name": "tqdm",
+"tags": [ "graphics" ],
+"versions": " 4.64.1",
+"info":
+{
+"description": "<p><code>tqdm</code> means 'progress' in Arabic (taqadum) and is an abbreviation for 'I love you so much' in Spanish (te quiero demasiado).</p><p>Instantly make your loops show a smart progress meter - just wrap any iterable with tqdm(iterable), and you're done!</p>",
+"usageNotes": "<pre><code>from tqdm import tqdm<br>for i in tqdm(range(10000)):<br>    ...<br></code></pre><br><pre><code>76%|████████████████████████████         | 7568/10000 [00:33<00:10, 229.00it/s]<br></code></pre><p>See full docs on <a href='https://tqdm.github.io/'>tqdm.github.io</a>.</p>",
+"linkToSite": "https://tqdm.github.io/",
+"siteName": "tqdm.github.io",
+"license": "OTHER",
+"linkToLicense": "https://github.com/tqdm/tqdm/blob/master/LICENCE",
+"version": "(py3) 4.64.1",
+"installCommand": "tqdm==4.64.1 --hash=sha256:538feb6a0a616ec7e16f23ebe40229fdbb547823696eb4d64a255d04fd6dcd31"
+}
+},
+{
+"name": "traitlets",
+"tags": [ "programming_tools" ],
+"versions": " 5.9.0",
+"info":
+{
+"description": "<p>Traitlets is a pure Python library enabling:</p><ul>    <li>the enforcement of strong typing for attributes of Python objects (typed attributes are called 'traits');</li>    <li>dynamically calculated default values;</li>    <li>automatic validation and coercion of trait attributes when attempting a change;</li>    <li>registering for receiving notifications when trait values change;</li>    <li>reading configuring values from files or from command line arguments - a distinct layer on top of traitlets, so you may use traitlets without the configuration machinery.</li></ul><p>Its implementation relies on the <a href='https://docs.python.org/3/howto/descriptor.html'>descriptor</a> pattern, and it is a lightweight pure-python alternative of the <a href='https://docs.enthought.com/traits/'>traits</a> library.</p><p>Traitlets powers the configuration system of IPython and Jupyter and the declarative API of IPython interactive widgets.</p>",
+"usageNotes": "<p>Any class with trait attributes must inherit from <code>HasTraits</code>. For the list of available trait types and their properties, see the <a href='https://traitlets.readthedocs.io/en/latest/trait_types.html'>Trait Types</a> section of the documentation.</p><h4>Dynamic default values</h4><p>To calculate a default value dynamically, decorate a method of your class with <code>@default({traitname})</code>. This method will be called on the instance, and should return the default value. In this example, the <code>_username_default</code> method is decorated with <code>@default('username')</code>:</p><pre><code>import getpass<br>from traitlets import HasTraits, Unicode, default<br><br>class Identity(HasTraits):<br>    username = Unicode()<br><br>    @default('username')<br>    def _username_default(self):<br>        return getpass.getuser()<br></pre></code><h4>Callbacks when a trait attribute changes</h4><p>When a trait changes, an application can follow this trait change with additional actions.</p><p>To do something when a trait attribute is changed, decorate a method with <code>traitlets.observe()</code>. The method will be called with a single argument, a dictionary which contains an owner, new value, old value, name of the changed trait, and the event type.</p><p>In this example, the <code>_num_changed</code> method is decorated with <code>@observe(`num`)</code>:</p><pre><code>from traitlets import HasTraits, Integer, observe<br><br>class TraitletsExample(HasTraits):<br>    num = Integer(5, help=&ldquo;a number&ldquo;).tag(config=True)<br><br>    @observe('num')<br>    def _num_changed(self, change):<br>        print(&ldquo;{name} changed from {old} to {new}&ldquo;.format(**change))<br></code></pre><p>and is passed the following dictionary when called:</p><pre><code>{<br>  'owner': object,  # The HasTraits instance<br>  'new': 6,         # The new value<br>  'old': 5,         # The old value<br>  'name': &ldquo;foo&ldquo;,    # The name of the changed trait<br>  'type': 'change', # The event type of the notification, usually 'change'<br>}<br></code></pre><h4>Validation and coercion</h4><p>Each trait type (<code>Int</code>, <code>Unicode</code>, <code>Dict</code> etc.) may have its own validation or coercion logic. In addition, we can register custom cross-validators that may depend on the state of other attributes. For example:</p><pre><code>from traitlets import HasTraits, TraitError, Int, Bool, validate<br><br>class Parity(HasTraits):<br>    value = Int()<br>    parity = Int()<br><br>    @validate('value')<br>    def _valid_value(self, proposal):<br>        if proposal['value'] % 2 != self.parity:<br>            raise TraitError('value and parity should be consistent')<br>        return proposal['value']<br><br>    @validate('parity')<br>    def _valid_parity(self, proposal):<br>        parity = proposal['value']<br>        if parity not in [0, 1]:<br>            raise TraitError('parity should be 0 or 1')<br>        if self.value % 2 != parity:<br>            raise TraitError('value and parity should be consistent')<br>        return proposal['value']<br><br>parity_check = Parity(value=2)<br><br># Changing required parity and value together while holding cross validation<br>with parity_check.hold_trait_notifications():<br>    parity_check.value = 1<br>    parity_check.parity = 1<br></code></pre><p>However, we <b>recommend</b> that custom cross-validators don't modify the state of the HasTraits instance.</p><p>Further documentation is available on <a href='https://traitlets.readthedocs.io/en/stable/'>readthedocs.io</a></p>",
+"linkToSite": "https://github.com/ipython/traitlets",
+"siteName": "github",
+"license": "BSD3",
+"linkToLicense": "https://github.com/ipython/traitlets/blob/main/COPYING.md",
+"version": "(py3) 5.9.0",
+"installCommand": "traitlets==5.9.0 --hash=sha256:9e6ec080259b9a5940c797d58b613b5e31441c2257b87c2e795c5228ae80d2d8"
+}
+},
+{
+"name": "treelib",
+"tags": [ "programming_tools" ],
+"versions": " 1.6.4",
+"info":
+{
+"description": "<p>The <a href='http://en.wikipedia.org/wiki/Tree_%28data_structure%29'>Tree</a> is an important data structure in computer science. Examples are shown in ML algorithm designs such as random forest tree and software engineering such as file system index. <code>treelib</code> is created to provide an efficient implementation of tree data structure in Python.</p><p>The main features of treelib include:</p><ul><li>Efficient operation of node searching, O(1).</li><li>Support common tree operations like traversing, insertion, deletion, node moving, shallow/deep copying, subtree cutting etc. </li><li>Support user-defined data payload to accelerate your model construction. </li><li>Pretty tree showing and text/json dump for pretty show and offline analysis. </li></ul>",
+"usageNotes": "<p>Basic usage:</p><pre><code>&gt;&gt;&gt; from treelib import Node, Tree<br>&gt;&gt;&gt; tree = Tree()<br>&gt;&gt;&gt; tree.create_node(&ldquo;Harry&ldquo;, &ldquo;harry&ldquo;)  # root node<br>&gt;&gt;&gt; tree.create_node(&ldquo;Jane&ldquo;, &ldquo;jane&ldquo;, parent=&ldquo;harry&ldquo;)<br>&gt;&gt;&gt; tree.create_node(&ldquo;Bill&ldquo;, &ldquo;bill&ldquo;, parent=&ldquo;harry&ldquo;)<br>&gt;&gt;&gt; tree.create_node(&ldquo;Diane&ldquo;, &ldquo;diane&ldquo;, parent=&ldquo;jane&ldquo;)<br>&gt;&gt;&gt; tree.create_node(&ldquo;Mary&ldquo;, &ldquo;mary&ldquo;, parent=&ldquo;diane&ldquo;)<br>&gt;&gt;&gt; tree.create_node(&ldquo;Mark&ldquo;, &ldquo;mark&ldquo;, parent=&ldquo;jane&ldquo;)<br>&gt;&gt;&gt; tree.show()<br>Harry<br>├── Bill<br>└── Jane<br>    ├── Diane<br>    │   └── Mary<br>    └── Mark<br></code></pre><p>Refer to <a href='https://treelib.readthedocs.io/en/latest/'>readthedocs.io</a> for more information.</p>",
+"linkToSite": "https://treelib.readthedocs.io/en/latest/",
+"siteName": "readthedocs.io",
+"license": "APACHE2",
+"linkToLicense": "https://github.com/caesar0301/treelib/blob/master/LICENSE",
+"version": "(py3) 1.6.4",
+"installCommand": "treelib==1.6.4 --hash=sha256:20df4af4a554df9fd891ecefd31508436614942c822c043e3f5dcead07760395"
+}
+},
+{
 "name": "typing-extensions",
 "tags": [ "utilty" ],
 "versions": " 4.4.0",
@@ -1420,6 +2588,54 @@
 "linkToLicense": "https://github.com/python/typing/blob/master/typing_extensions/LICENSE",
 "version": "(py3) 4.4.0",
 "installCommand": "typing-extensions==4.4.0 --hash=sha256:16fa4864408f655d35ec496218b85f79b3437c829e93320c7c9215ccfd92489e"
+}
+},
+{
+"name": "urllib3",
+"tags": [ "web","utility","programming_tools" ],
+"versions": " 1.26.14",
+"info":
+{
+"description": "<p>urllib3 is a powerful, user-friendly HTTP client for Python. Much of the Python ecosystem already uses urllib3 and you should too. urllib3 brings many critical features that are missing from the Python standard libraries:</p><ul><li>Thread safety. </li><li>Connection pooling. </li><li>Client-side SSL/TLS verification. </li><li>File uploads with multipart encoding. </li><li>Helpers for retrying requests and dealing with HTTP redirects. </li><li>Support for gzip, deflate, and brotli encoding. </li><li>Proxy support for HTTP and SOCKS. </li><li>100% test coverage. </li></ul>",
+"usageNotes": "<p>urllib3 is powerful and easy to use:</p><pre><code>&gt;&gt;&gt; import urllib3<br>&gt;&gt;&gt; http = urllib3.PoolManager()<br>&gt;&gt;&gt; r = http.request('GET', 'http://httpbin.org/robots.txt')<br>&gt;&gt;&gt; r.status<br>200<br>&gt;&gt;&gt; r.data<br>'User-agent: *\\nDisallow: /deny\\n'<br></code></pre><p>Full docs are available on <a href='https://urllib3.readthedocs.io/en/stable/'>readthedocs.io</a>.</p>",
+"linkToSite": "https://urllib3.readthedocs.io/en/stable/",
+"siteName": "readthedocs.io",
+"license": "MIT",
+"linkToLicense": "https://github.com/urllib3/urllib3/blob/main/LICENSE.txt",
+"version": "(py3) 1.26.14",
+"installCommand": "urllib3==1.26.14 --hash=sha256:75edcdc2f7d85b137124a6c3c9fc3933cdeaa12ecb9a6a959f22797a0feca7e1"
+}
+},
+{
+"name": "uwsgi",
+"tags": [ "programming_tools","web" ],
+"versions": " 2.0.21",
+"info":
+{
+"description": "<p>The uWSGI project aims at developing a full stack for building hosting services.</p><p>Application servers (for various programming languages and protocols), proxies, process managers and monitors are all implemented using a common api and a common configuration style.</p><p>Thanks to its pluggable architecture it can be extended to support more platforms and languages.</p><p>Currently, you can write plugins in C, C++ and Objective-C.</p><p>The “WSGI” part in the name is a tribute to the namesake Python standard, as it has been the first developed plugin for the project.</p><p>Versatility, performance, low-resource usage and reliability are the strengths of the project (and the only rules followed).</p>",
+"usageNotes": "<p>Please refer to documentation <a href='https://uwsgi-docs.readthedocs.io/en/latest/WSGIquickstart.html'>here</a>.</p>",
+"linkToSite": "https://uwsgi-docs.readthedocs.io/en/latest/",
+"siteName": "readthedocs.io",
+"license": "OTHER",
+"linkToLicense": "https://github.com/unbit/uwsgi/blob/master/LICENSE",
+"version": "(cp311) 2.0.21",
+"installCommand": "uwsgi==2.0.21 --hash=sha256:1dbd106481279f05de7009ac2a58333c526bec5c05dbe2855ec7be3337fceca0"
+}
+},
+{
+"name": "virtualenv",
+"tags": [ "utility" ],
+"versions": " 20.23.0",
+"info":
+{
+"description": "<p>A tool for creating isolated virtual python environments. </p>",
+"usageNotes": "<p>For advanced tool documentation, refer to <a href='https://virtualenv.pypa.io/en/latest/'>pypa.io</a>.</p>",
+"linkToSite": "https://github.com/ibm-z-oss-oda/virtualenv",
+"siteName": "https://github.com/ibm-z-oss-oda/virtualenv",
+"license": "MIT",
+"linkToLicense": "https://github.com/ibm-z-oss-oda/virtualenv/blob/main/LICENSE",
+"version": "(py3) 20.23.0",
+"installCommand": "virtualenv==20.23.0 --hash=sha256:6779d134249bf3584a4947cb5925da663698b98a5b10db799aa359eff8d4c402"
 }
 },
 {
@@ -1452,6 +2668,86 @@
 "linkToLicense": "https://github.com/gsnedders/python-webencodings/blob/master/LICENSE",
 "version": "(py3) 0.5.1",
 "installCommand": "webencodings==0.5.1 --hash=sha256:a0af1213f3c2226497a97e2b3aa01a7e4bee4f403f95be16fc9acd2947514a78"
+}
+},
+{
+"name": "werkzeug",
+"tags": [ "web","utility","programming_tools" ],
+"versions": " 2.3.4",
+"info":
+{
+"description": "<p>werkzeug; German noun: “tool”. Etymology: <i>werk</i> (“work”), <i>zeug</i> (“stuff”)</p><p>Werkzeug is a comprehensive <a href='https://wsgi.readthedocs.io/en/latest/'>WSGI</a> web application library. It began as a simple collection of various utilities for WSGI applications and has become one of the most advanced WSGI utility libraries.</p><p>It includes:</p><ul>    <li>An interactive debugger that allows inspecting stack traces and source code in the browser with an interactive interpreter for any frame in the stack.</li>    <li>A full-featured request object with objects to interact with headers, query args, form data, files, and cookies.</li>    <li>A response object that can wrap other WSGI applications and handle streaming data.</li>    <li>A routing system for matching URLs to endpoints and generating URLs for endpoints, with an extensible system for capturing variables from URLs.</li>    <li>HTTP utilities to handle entity tags, cache control, dates, user agents, cookies, files, and more.</li>    <li>A threaded WSGI server for use while developing applications locally.</li>    <li>A test client for simulating HTTP requests during testing without requiring running a server.</li></ul><p>Werkzeug doesn’t enforce any dependencies. It is up to the developer to choose a template engine, database adapter, and even how to handle requests. It can be used to build all sorts of end user applications such as blogs, wikis, or bulletin boards.</p><p>Flask wraps Werkzeug, using it to handle the details of WSGI while providing more structure and patterns for defining powerful applications.</p>",
+"usageNotes": "<p>A simple example:</p><pre><code>from werkzeug.wrappers import Request, Response<br><br>@Request.application<br>def application(request):<br>    return Response('Hello, World!')<br><br>if __name__ == '__main__':<br>    from werkzeug.serving import run_simple<br>    run_simple('localhost', 4000, application)<br></pre></code><p>See <a href='https://werkzeug.palletsprojects.com/en/2.0.x/tutorial/'>the official tutorial</a> for further usage notes.</p>",
+"linkToSite": "https://palletsprojects.com/p/werkzeug/",
+"siteName": "palletsprojects.com/p/werkzeug",
+"license": "BSD3",
+"linkToLicense": "https://github.com/pallets/werkzeug/blob/main/LICENSE.rst",
+"version": "(py3) 2.3.4",
+"installCommand": "werkzeug==2.3.4 --hash=sha256:95ad797e15ff94d62517ed83eb826b6215c76aa81339289b0e1ce3b93c43c7a9"
+}
+},
+{
+"name": "whoosh",
+"tags": [ "programming_tools" ],
+"versions": " 2.7.4",
+"info":
+{
+"description": "<p>Whoosh is a fast, featureful full-text indexing and searching library implemented in pure Python. Programmers can use it to easily add search functionality to their applications and websites. Every part of how Whoosh works can be extended or replaced to meet your needs exactly.</p><p>Some of Whoosh’s features include:</p><ul><li>Pythonic API.</li><li>Pure-Python. No compilation or binary packages needed, no mysterious crashes.</li><li>Fielded indexing and search.</li><li>Fast indexing and retrieval – faster than any other pure-Python, scoring, full-text search solution I know of.</li><li>Pluggable scoring algorithm (including BM25F), text analysis, storage, posting format, etc.</li><li>Powerful query language.</li><li>Pure Python spell-checker (as far as I know, the only one).</li></ul><h1>PAGE HAS PROBLEMS THAT MUST BE ADDRESSED. SOURCE BITBUCKET REPO 404S!</h1>",
+"usageNotes": "<p>Full documentation is available on <a href='https://whoosh.readthedocs.io/en/latest/'>readthedocs.io</a>.</p>",
+"linkToSite": "https://bitbucket.org/mchaput/whoosh",
+"siteName": "bitbucket.org (DECEASED)",
+"license": "na",
+"linkToLicense": "na",
+"version": "(py3) 2.7.4",
+"installCommand": "whoosh==2.7.4 --hash=sha256:9595f9f8d6bca947d803e5b942e9307f22b556706357225eea08285c38efa419"
+}
+},
+{
+"name": "widgetsnbexntension",
+"tags": [ "Utility" ],
+"versions": " 4.0.7",
+"info":
+{
+"description": "<h1>This package makes Jupyter widgets available in the classic Jupyter Notebook. This package provides the necessary JavaScript controls in the Jupyter Notebook that communicate with the widget objects in the kernel.</h1>",
+"usageNotes": "<a href='https://ipywidgets.readthedocs.io/en/stable/'>Click here for further documentation on this package.</a>",
+"linkToSite": "http://jupyter.org/",
+"siteName": "http://jupyter.org/",
+"license": "BSD License",
+"linkToLicense": "https://github.com/jupyter-widgets/ipywidgets/blob/main/LICENSE",
+"version": "(py3) 4.0.7",
+"installCommand": "widgetsnbexntension==4.0.7 --hash=sha256:9595f9f8d6bca947d803e5b942e9307f22b556706357225eea08285c38efa419"
+}
+},
+{
+"name": "xgboost",
+"tags": [ "machine_learning" ],
+"versions": " 1.6.2",
+"info":
+{
+"description": "<p>XGBoost is an optimized distributed gradient boosting library designed to be highly efficient, flexible and portable. It implements machine learning algorithms under the <a href='https://en.wikipedia.org/wiki/Gradient_boosting'>Gradient Boosting</a> framework. XGBoost provides a parallel tree boosting (also known as GBDT, GBM) that solve many data science problems in a fast and accurate way. The same code runs on major distributed environment (Kubernetes, Hadoop, SGE, MPI, Dask) and can solve problems beyond billions of examples.</p>",
+"usageNotes": "<p>Documentation for this package should be found on <a href='https://xgboost.readthedocs.io/en/stable/python/index.html'>readthedocs.io</a>.</p>",
+"linkToSite": "https://github.com/dmlc/xgboost",
+"siteName": "github",
+"license": "APACHE2",
+"linkToLicense": "https://github.com/dmlc/xgboost/blob/master/LICENSE",
+"version": "(cp311) 1.6.2",
+"installCommand": "xgboost==1.6.2 --hash=sha256:49d07f7ac96d902fe3ccda5968e090140ee6a7ef6593767c776ac198734767e2"
+}
+},
+{
+"name": "zict",
+"tags": [ "programming_tools" ],
+"versions": " 2.2.0",
+"info":
+{
+"description": "<p>Mutable Mapping interfaces. This dictionary / mutable mapping interface is powerful and multi-faceted. </p><ul>    <li>We store data in different locations such as in-memory, on disk, in archive files, etc..</li>    <li>We manage old data with different policies like LRU, random eviction, etc..</li>    <li>We might encode or transform data as it arrives or departs the dictionary through compression, encoding, etc..</li></ul><p>To this end we build abstract <code>MutableMapping</code> classes that consume and build on other <code>MutableMappings</code>. We can compose several of these with each other to form intuitive interfaces over complex storage systems policies.</p>",
+"usageNotes": "<p>Here's an exampe of usage:</p><p>In this example we create an LRU dictionary backed by pickle-encoded, zlib-compressed, directory of files.</p><pre><code>import pickle<br>import zlib<br><br>from zict import File, Func, LRU<br><br>a = File('myfile/', mode='a')<br>b = Func(zlib.compress, zlib.decompress, a)<br>c = Func(pickle.dumps, pickle.loads, b)<br>d = LRU(100, c)<br><br>>>> d['x'] = [1, 2, 3]<br>>>> d['x']<br>[1, 2, 3]<br></code></pre><p>Further examples and all documentation is available on <a href='https://zict.readthedocs.io/en/latest/'>readthedocs.io</a></p>",
+"linkToSite": "https://zict.readthedocs.io/en/latest/",
+"siteName": "project site",
+"license": "clown_test_don't_see_this",
+"linkToLicense": "https://github.com/dask/zict/blob/main/LICENSE.txt",
+"version": "(py3) 2.2.0",
+"installCommand": "zict==2.2.0 --hash=sha256:3f2551d3077804de839d4e131142a56e116c6a1341b0197bbccdd6b0f1c57ecc"
 }
 },
 {
