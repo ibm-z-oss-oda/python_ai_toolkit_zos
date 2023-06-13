@@ -40,6 +40,7 @@ export class IndexTableComponent implements OnInit {
   name: string = "";
   tags: string = "";
   versions: string = "";
+  version: string = '';
   allData: TableItem[][] = []; // all table rows data
   searchMatchedData: TableItem[][] = []; // matched data of search
   filterMatchedData: TableItem[][] = []; // matched data of filter
@@ -62,8 +63,7 @@ export class IndexTableComponent implements OnInit {
     this.translate.get('BUNDLE').subscribe(res => {
       this.name = res.HOME_TABLE_NAME;
       this.tags = res.HOME_TABLE_TAGS;
-      this.versions = res.HOME_TABLE_VERSIONS;
-
+      this.version = res.HOME_TABLE_VERSIONS;
       this.model.header = [
         new TableHeaderItem({
           data: this.name,
@@ -156,7 +156,13 @@ export class IndexTableComponent implements OnInit {
   protected prepareData(data: Array<PackageInfoObject>) {
     // create new data from the service data
     let items: TableItem[][] = [];
+    let version = ''
     data.forEach(dataRow => {
+      if (dataRow.versions.split(' ').length > 2) {
+        version = dataRow.versions.split(' ')[2]
+      } else {
+        version = dataRow.versions.split(' ')[1]
+      }
       items.push([
         new TableItem({
           data: dataRow.name ? dataRow.name : "", key: this.constantService.INDEX_NAME,
@@ -168,7 +174,7 @@ export class IndexTableComponent implements OnInit {
           key: this.constantService.INDEX_TAGS,
           template: this.tagsTableItemTemplate
         }),
-        new TableItem({ data: dataRow.versions ? dataRow.versions : "", key: this.constantService.INDEX_VERSIONS }),
+        new TableItem({ data: version ? version : "", key: this.constantService.INDEX_VERSIONS }),
       ]);
     });
     return items;

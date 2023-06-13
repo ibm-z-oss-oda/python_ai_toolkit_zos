@@ -14,6 +14,7 @@ import * as data from '../../../../assets/i18n/shas.json'
 })
 export class PackageInfoComponent implements OnInit {
   shaValues: any[] = [];
+  version: any = '';
   noTrailingSlash: boolean = false;
   packageInfoData: PackageInfoObject = null;
   pullStrRowData: any[] = [];
@@ -26,7 +27,15 @@ export class PackageInfoComponent implements OnInit {
 
   ngOnInit(): void {
     this.packageInfoData = this.headService.packageInfoData; // get the data from headService
+    if (this.packageInfoData.name == "flask") {
+      this.packageInfoData.name = "Flask"
+    }
     this.shaValues = data;
+    if (this.packageInfoData.versions.split(' ').length > 2){
+      this.version = (this.packageInfoData.versions as string).split(' ')[2]
+    } else {
+        this.version = (this.packageInfoData.versions as string).split(' ')[1]
+    }
     setTimeout(() => {
       this.construcePullStrRowData();
     }, 1);
@@ -53,17 +62,28 @@ export class PackageInfoComponent implements OnInit {
 
   // construct pull string row data
   construcePullStrRowData() {
-    let versions: string = this.packageInfoData.versions;
-    let name: string = this.packageInfoData.name;
+    let versions: string = this.version;
+    let name: string = this.packageInfoData.name.toLowerCase();
     let arr = Array.from(this.shaValues)
+    console.log(versions)
+    if (versions.split(' ').length > 1) {
+      let snd_vers = versions.split(' ')[1]
+      
+      console.log(snd_vers)
+    }
+    console.log(name)
     arr.forEach(nm =>{
+      let count = 0
       if ((nm[0] as string).split('==')[0].replace('-','').replace('_','') == name.replace('-','').replace('_','')) {
         let removeFirst = nm.shift()
         let VersionsArr = Array.from(nm)
+        count = count++
+        console.log('this is versions arr: ' + VersionsArr)
+
         if(versions != null && versions != "" && versions != undefined) {
           VersionsArr.forEach(nmi => {
-            let pullStr: string = this.packageInfoData.name.trim() + "==" +  versions.trim() + " --hash=sha256:" + (nmi as string).split(' ')[1].trim();
-            let version = versions + ' (' + (nmi as string).split(' ')[0] + ')'
+            let pullStr: string = this.packageInfoData.name.trim() + "==" +  (nmi as string).split(' ')[0] + " --hash=sha256:" + (nmi as string).split(' ')[2].trim();
+            let version = (nmi as string).split(' ')[0] + ' (' + (nmi as string).split(' ')[1] + ')'
             let pullStrbject: PullStrbject  = new PullStrbject(version, pullStr, "https://en.wikipedia.org/wiki/Clown");
             this.pullStrRowData.push(pullStrbject);
           });
