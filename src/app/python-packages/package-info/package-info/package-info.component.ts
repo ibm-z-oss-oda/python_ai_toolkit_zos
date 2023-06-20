@@ -65,20 +65,15 @@ export class PackageInfoComponent implements OnInit {
     let versions: string = this.version;
     let name: string = this.packageInfoData.name.toLowerCase();
     let arr = Array.from(this.shaValues)
-    console.log(versions)
     if (versions.split(' ').length > 1) {
       let snd_vers = versions.split(' ')[1]
-      
-      console.log(snd_vers)
     }
-    console.log(name)
     arr.forEach(nm =>{
       let count = 0
       if ((nm[0] as string).split('==')[0].replace('-','').replace('_','') == name.replace('-','').replace('_','')) {
         let removeFirst = nm.shift()
         let VersionsArr = Array.from(nm)
         count = count++
-        console.log('this is versions arr: ' + VersionsArr)
 
         if(versions != null && versions != "" && versions != undefined) {
           VersionsArr.forEach(nmi => {
