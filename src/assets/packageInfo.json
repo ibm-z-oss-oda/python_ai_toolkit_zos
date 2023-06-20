@@ -561,7 +561,7 @@
 {
 "name": "fontconfig",
 "tags": [ "utility" ],
-"versions": " 2.14.1 2.14.1.post0",
+"versions": " 2.14.1.post0",
 "info":
 {
 "description": "<p>Fontconfig is a library for configuring and customizing font access. </p><p>Fontconfig can: </p><ul><li>discover new fonts when installed automatically, removing a common source of configuration problems. </li><li>perform font name substitution, so that appropriate alternative fonts can be selected if fonts are missing. </li><li>identify the set of fonts required to completely cover a set of languages. </li><li>have GUI configuration tools built as it uses an XML-based configuration file (though with autodiscovery, we believe this need is minimized). </li><li>efficiently and quickly find the fonts you need among the set of fonts you have installed, even if you have installed thousands of fonts, while minimzing memory usage. </li><li>be used in concert with the X Render Extension and <a href='https://www.freedesktop.org/wiki/Software/FreeType/'>FreeType</a> to implement high quality, anti-aliased and subpixel rendered text on a display. </li></ul><p>Fontconfig does not: </p><ul><li>render the fonts themselves (this is left to FreeType or other rendering mechanisms) </li><li>depend on the X Window System in any fashion, so that printer only applications do not have such dependencies </li></ul>",
@@ -593,7 +593,7 @@
 {
 "name": "freetype2",
 "tags": [ "graphics" ],
-"versions": " 2.12.2 2.12.2.post0",
+"versions": " 2.12.2.post0",
 "info":
 {
 "description": "<p>FreeType is a software font engine that is designed to be small, efficient, highly customizable, and portable while capable of producing high-quality output (glyph images). It can be used in graphics libraries, display servers, font conversion tools, text image generation tools, and many other products as well.</p><p>Note that FreeType is a font service and doesn't provide APIs to perform higher-level features like text layout or graphics processing (e.g., colored text rendering, ‘hollowing’, etc.). However, it greatly simplifies these tasks by providing a simple, easy to use, and uniform interface to access the content of font files.</p><p>Please note that ‘FreeType’ is also called ‘FreeType 2’, to distinguish it from the old, deprecated ‘FreeType 1’ library, a predecessor no longer maintained and supported.</p>",
@@ -1185,7 +1185,7 @@
 {
 "name": "libxml2",
 "tags": [ "languages" ],
-"versions": " 2.10.3 2.10.3.post0",
+"versions": " 2.10.3.post0",
 "info":
 {
 "description": "<p>Libxml2 is the XML C parser and toolkit developed for the Gnome project (but usable outside of the Gnome platform), it is free software available under the MIT License. XML itself is a metalanguage to design markup languages, i.e. text language where semantic and structure are added to the content using extra 'markup' information enclosed between angle brackets. HTML is the most well-known markup language. Though the library is written in C a variety of language bindings make it available in other environments.</p>",
@@ -1201,7 +1201,7 @@
 {
 "name": "libxslt",
 "tags": [ "programming_tools","utility" ],
-"versions": " 1.1.37 1.1.37.post0",
+"versions": " 1.1.37.post0",
 "info":
 {
 "description": "<p>libxslt is the <a href='https://www.w3.org/TR/xslt'>XSLT</a> C library developed for the GNOME project. XSLT itself is a an XML language to define transformation for XML. libxslt is based on libxml2, the XML C library developed for the GNOME project. It also implements most of the <a href='http://www.exslt.org/'>EXSLT</a> set of processor-portable extension functions and some of Saxon's evaluate and expressions extensions.</p><p>People can either embed the library in their application or use xsltproc, the command line processing tool. This library is free software and can be reused in commercial applications.</p>",
@@ -1761,7 +1761,7 @@
 {
 "name": "prompt-toolkit",
 "tags": [ "programming_tools" ],
-"versions": " 3.0.36 3.0.36.post0",
+"versions": " 3.0.36.post0",
 "info":
 {
 "description": "<p><code>prompt-toolkit</code> is a library for building powerful interactive command line applications in Python.</p>",
