@@ -14,7 +14,7 @@ export class SetUpEnvComponent implements OnInit {
   
   command: string = `
   [global]
-  index = https://downloads.pyaitoolkit.ibm.net:443/repository/python_al_toolkit_zos/
+  index = https://downloads.pyaitoolkit.ibm.net:443/repository/python_ai_toolkit_zos/
   index-url = https://downloads.pyaitoolkit.ibm.net:443/repository/python_ai_toolkit_zos/simple
   trusted-host = downloads.pyaitoolkit.ibm.net`;
 
