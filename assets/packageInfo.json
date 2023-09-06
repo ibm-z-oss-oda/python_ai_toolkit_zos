@@ -1,7 +1,7 @@
 [{
 "name": "alembic",
 "tags": [ "utility" ],
-"versions": " 1.10.4.dev0",
+"versions": " 1.10.4",
 "info":
 {
 "description": "<p>Alembic is a database migrations tool written by the author of SQLAlchemy.</p>",
@@ -10,8 +10,8 @@
 "siteName": "github.com",
 "license": "MIT",
 "linkToLicense": "https://github.com/sqlalchemy/alembic/blob/main/LICENSE",
-"version": "(py3) 1.10.4.dev0",
-"installCommand": "alembic==1.10.4.dev0 --hash=sha256:e11eedecca9008d794e9ed7076f65f78da84acee188d158e2dab20a3798c9c52"
+"version": "(py3) 1.10.4",
+"installCommand": "alembic==1.10.4 --hash=sha256:a9e9324d112fc51ecb3fa13605d70d72147e9e789cd55605562a9c9ff80852ca"
 }
 },
 {
@@ -145,7 +145,7 @@
 {
 "name": "bleach",
 "tags": [ "security","programming_tools" ],
-"versions": " 6.0.0.post1",
+"versions": " 6.0.0.post3",
 "info":
 {
 "description": "<p>Bleach is an allowed-list-based HTML sanitizing library that escapes or stripsmarkup and attributes.</p><p>Bleach can also linkify text safely, applying filters that Django's <tt class='docutils literal'>urlize</tt>filter cannot, and optionally setting <tt class='docutils literal'>rel</tt> attributes, even on links alreadyin the text.</p><p>Bleach is intended for sanitizing text from <em>untrusted</em> sources. If you findyourself jumping through hoops to allow your site administrators to do lots ofthings, you're probably outside the use cases. Either trust those users, ordon't.</p><p>Because it relies on <a class='reference external' href='https://github.com/html5lib/html5lib-python'>html5lib</a>, Bleach is as good as modern browsers at dealingwith weird, quirky HTML fragments. And <em>any</em> of Bleach's methods will fixunbalanced or mis-nested tags.</p>",
@@ -154,8 +154,8 @@
 "siteName": "github",
 "license": "APACHE2",
 "linkToLicense": "https://github.com/mozilla/bleach/blob/main/LICENSE",
-"version": "(py3) 6.0.0.post1",
-"installCommand": "bleach==6.0.0.post1 --hash=sha256:bf68a9d86de5c59456db5167d26273f714f235e42e4349e121fb9247e3219268"
+"version": "(py3) 6.0.0.post3",
+"installCommand": "bleach==6.0.0.post3 --hash=sha256:a6f8611d17d3ca84a2282f984cae5dc06e1d934c0d0df366485993e411910f1a"
 }
 },
 {
@@ -321,7 +321,7 @@
 {
 "name": "cython",
 "tags": [ "languages" ],
-"versions": " 0.29.32",
+"versions": " 0.29.32.post0",
 "info":
 {
 "description": "<p>The Cython language makes writing C extensions for the Python language as easy as Python itself. Cython is a source code translator based on <a href='http://www.cosc.canterbury.ac.nz/greg.ewing/python/Pyrex/'>Pyrex</a>, but supports more cutting edge functionality and optimizations.</p><p>The Cython language is a superset of the Python language (almost all Python code is also valid Cython code), but Cython additionally supports optional static typing to natively call C functions, operate with C++ classes and declare fast C types on variables and class attributes. This allows the compiler to generate very efficient C code from Cython code.</p><p>This makes Cython the ideal language for writing glue code for external C/C++ libraries, and for fast C modules that speed up the execution of Python code.</p>",
@@ -330,8 +330,8 @@
 "siteName": "cython.org",
 "license": "APACHE2",
 "linkToLicense": "https://github.com/cython/cython/blob/master/LICENSE.txt",
-"version": "(cp311) 0.29.32",
-"installCommand": "cython==0.29.32 --hash=sha256:6e747bc6bb238fb732718c9a2ab60cc84285a08f429e2d725ee6712bff632f2f"
+"version": "(cp311) 0.29.32.post0",
+"installCommand": "cython==0.29.32.post0 --hash=sha256:c535e1741d654f45aba3d69460ee830b841b652d951a617b3d3f63eb76dd5556"
 }
 },
 {
@@ -369,7 +369,7 @@
 {
 "name": "debugpy",
 "tags": [ "utility","web","programming_tools" ],
-"versions": " 1.6.3.post1",
+"versions": " 1.6.3.post2",
 "info":
 {
 "description": "<p>debugpy is an implementation of the Debug Adapter Protocol for Python.</p>",
@@ -378,8 +378,8 @@
 "siteName": "github",
 "license": "MIT",
 "linkToLicense": "https://github.com/microsoft/debugpy/blob/main/LICENSE",
-"version": "(cp311) 1.6.3.post1",
-"installCommand": "debugpy==1.6.3.post1 --hash=sha256:99dfccb8927205d258f0de96bed1d2b97bdc8f43e9516ffaa1b85d924f36b3e6"
+"version": "(cp311) 1.6.3.post2",
+"installCommand": "debugpy==1.6.3.post2 --hash=sha256:bfcbd080671c6b23d27a564208122389fe5e34a953e11edb668aae918fd07e81"
 }
 },
 {
@@ -433,7 +433,7 @@
 {
 "name": "docutils",
 "tags": [ "utility" ],
-"versions": " 0.19.post0",
+"versions": " 0.19.post1",
 "info":
 {
 "description": "<p>Docutils is a modular system for processing documentation into useful formats, such as HTML, XML, and LaTeX. For input Docutils supports reStructuredText, an easy-to-read, what-you-see-is-what-you-get plaintext markup syntax.</p>",
@@ -442,8 +442,8 @@
 "siteName": "sourceforge.io",
 "license": "HOW TO LINK SOURCEFORGE?",
 "linkToLicense": "HOW TO LINK SOURCEFORGE?",
-"version": "(py3) 0.19.post0",
-"installCommand": "docutils==0.19.post0 --hash=sha256:07e290de2a1518d1dc9a0c29dfffa13fc7f6e795f04ff66b55ff09dcb843a59f"
+"version": "(py3) 0.19.post1",
+"installCommand": "docutils==0.19.post1 --hash=sha256:efbdd432d14ecdf0028e7cf119ec4cc29eb24a37cd9cd6ec0d917f2e94065e54"
 }
 },
 {
@@ -545,7 +545,7 @@
 {
 "name": "flask",
 "tags": [ "web" ],
-"versions": " 2.2.5",
+"versions": " 2.2.5.post0",
 "info":
 {
 "description": "<p>Flask is a lightweight WSGI web application framework. It is designed to make getting started quick and easy, with the ability to scale up to complex applications. It began as a simple wrapper around Werkzeug and Jinja and has become one of the most popular Python web application frameworks.</p><p>Flask offers suggestions, but doesn’t enforce any dependencies or project layout. It is up to the developer to choose the tools and libraries they want to use. There are many extensions provided by the community that make adding new functionality easy.</p>",
@@ -554,8 +554,8 @@
 "siteName": "palletsprojects.com/p/flask",
 "license": "BSD3",
 "linkToLicense": "https://github.com/pallets/flask/blob/main/LICENSE.rst",
-"version": "(py3) 2.2.5",
-"installCommand": "flask==2.2.5 --hash=sha256:620f433f84d00ec3b5375357fd7f9f7e7e53087552d5a5618e2acfb89bf3fad4"
+"version": "(py3) 2.2.5.post0",
+"installCommand": "flask==2.2.5.post0 --hash=sha256:54cd0c0f462de77257309efd462caa14bff4034b05cfdb4b6aba795b818a3641"
 }
 },
 {
@@ -577,7 +577,7 @@
 {
 "name": "fonttools",
 "tags": [ "utility" ],
-"versions": " 4.33.3.post0",
+"versions": " 4.33.3.post1",
 "info":
 {
 "description": "<p>fontTools is a library for manipulating fonts, written in Python. The project includes the TTX tool, that can convert TrueType and OpenType fonts to and from an XML text format, which is also called TTX. </p>",
@@ -586,8 +586,8 @@
 "siteName": "https://github.com/fonttools/fonttools",
 "license": "MIT",
 "linkToLicense": "https://github.com/fonttools/fonttools/blob/main/LICENSE",
-"version": "(py3) 4.33.3.post0",
-"installCommand": "fonttools==4.33.3.post0 --hash=sha256:6fb82fcc6a516545cef659430ff75d0347e86d2ad60d3b0e4c991ce8116d068c"
+"version": "(py3) 4.33.3.post1",
+"installCommand": "fonttools==4.33.3.post1 --hash=sha256:545d6b2cbdb8a70319c668faa9bb0a270a8fe9b253716ac71232822511b5890b"
 }
 },
 {
@@ -625,7 +625,7 @@
 {
 "name": "future",
 "tags": [ "programming_tools","utility" ],
-"versions": " 0.18.3.post1",
+"versions": " 0.18.3.post2",
 "info":
 {
 "description": "<p><code>python-future</code> is the missing compatibility layer between Python 2 and Python 3. It allows you to use a single, clean Python 3.x-compatible codebase to support both Python 2 and Python 3 with minimal overhead.</p>",
@@ -634,8 +634,8 @@
 "siteName": "python-future.org",
 "license": "MIT",
 "linkToLicense": "https://github.com/PythonCharmers/python-future/blob/master/LICENSE.txt",
-"version": "(py3) 0.18.3.post1",
-"installCommand": "future==0.18.3.post1 --hash=sha256:705244476690193555c816ca69154d3d0abec11e473aa071224a6794cb60cc00"
+"version": "(py3) 0.18.3.post2",
+"installCommand": "future==0.18.3.post2 --hash=sha256:7e5418ecd73f95d791439befa691440e5ca1874b867aa70d0577959afec22eed"
 }
 },
 {
@@ -705,7 +705,7 @@
 {
 "name": "html5lib",
 "tags": [ "utility","programming_tools" ],
-"versions": " 1.1.post1",
+"versions": " 1.1.post3",
 "info":
 {
 "description": "<p>html5lib is a pure-python library for parsing HTML. It is designed to conform to the WHATWG HTML specification, as is implemented by all major web browsers.</p>",
@@ -714,8 +714,8 @@
 "siteName": "github",
 "license": "MIT",
 "linkToLicense": "https://github.com/html5lib/html5lib-python/blob/master/LICENSE",
-"version": "(py3) 1.1.post1",
-"installCommand": "html5lib==1.1.post1 --hash=sha256:3c5d931a1ce4edbc0a2381a728c9efbd4f50c779a484bc7f7fab3122132c2fb8"
+"version": "(py3) 1.1.post3",
+"installCommand": "html5lib==1.1.post3 --hash=sha256:33a09ab07352d598dcb81531e9ba269b1ed6ce985eca79f59cdd2f2a9093f156"
 }
 },
 {
@@ -737,7 +737,7 @@
 {
 "name": "imageio",
 "tags": [ "graphics" ],
-"versions": " 2.13.5",
+"versions": " 2.31.1",
 "info":
 {
 "description": "<p>Imageio is a Python library that provides an easy interface to read and write a wide range of image data, including animated images, volumetric data, and scientific formats. It is cross-platform, runs on Python 3.5+, and is easy to install.<p>",
@@ -746,14 +746,14 @@
 "siteName": "imageio.readthedocs.io",
 "license": "BSD2",
 "linkToLicense": "https://github.com/imageio/imageio/blob/master/LICENSE",
-"version": "(py3) 2.13.5",
-"installCommand": "imageio==2.13.5 --hash=sha256:80e6765f33fa31bb0f81e27e23115c13da09404241a62eca29c3965eb82dcef3"
+"version": "(py3) 2.31.1",
+"installCommand": "imageio==2.31.1 --hash=sha256:7e6b0fa6171699ebd626e9f4221e7e53d3be35a0529a00410e32d385a59b3b21"
 }
 },
 {
 "name": "importlib_metadata",
 "tags": [ "utility" ],
-"versions": " 6.0.0",
+"versions": " 6.8.0",
 "info":
 {
 "description": "<p>Library to access the metadata for a Python package.</p><p>This package supplies third-party access to the functionality of <a href='https://docs.python.org/3/library/importlib.metadata.html'>importlib.metadata</a> including improvements added to subsequent Python versions.</p>",
@@ -762,8 +762,8 @@
 "siteName": "github",
 "license": "APACHE2",
 "linkToLicense": "https://github.com/python/importlib_metadata/blob/main/LICENSE",
-"version": "(py3) 6.0.0",
-"installCommand": "importlib_metadata==6.0.0 --hash=sha256:7efb448ec9a5e313a57655d35aa54cd3e01b7e1fbcf72dce1bf06119420f5bad"
+"version": "(py3) 6.8.0",
+"installCommand": "importlib_metadata==6.8.0 --hash=sha256:1eb5061d8f8cfd8eacec346f9c1435f6731e676c5000fc5dbde012fef65869d2"
 }
 },
 {
@@ -849,7 +849,7 @@
 {
 "name": "ipywidgets",
 "tags": [ "web","graphics" ],
-"versions": " 8.0.6",
+"versions": " 8.0.6.post0",
 "info":
 {
 "description": "<p>ipywidgets, also known as jupyter-widgets or simply widgets, are interactive HTML widgets for Jupyter notebooks and the IPython kernel.</p><p>Notebooks come alive when interactive widgets are used. Users gain control of their data and can visualize changes in the data.</p><p>Learning becomes an immersive, fun experience. Researchers can easily see how changing inputs to a model impact the results.</p>",
@@ -858,8 +858,8 @@
 "siteName": "ipython.org",
 "license": "BSD3",
 "linkToLicense": "https://github.com/jupyter-widgets/ipywidgets/blob/master/LICENSE",
-"version": "(py3) 8.0.6",
-"installCommand": "ipywidgets==8.0.6 --hash=sha256:7029fe0105be937cde310b284d0e8775a6cbc39d5d53e8684c0960ad6fbfc4bb"
+"version": "(py3) 8.0.6.post0",
+"installCommand": "ipywidgets==8.0.6.post0 --hash=sha256:d6c476c91d99fc56dc196bbb464ae60014268250d4bf4142c3d50661b73eba94"
 }
 },
 {
@@ -1105,7 +1105,7 @@
 {
 "name": "kiwisolver",
 "tags": [ "math" ],
-"versions": " 1.4.4",
+"versions": " 1.4.4 1.4.4.post0",
 "info":
 {
 "description": "<p>Kiwi is an efficient C++ implementation of the Cassowary constraint solving algorithm. Kiwi is an implementation of the algorithm based on the <a href='https://constraints.cs.washington.edu/solvers/cassowary-tochi.pdf'>seminal Cassowary paper</a>. It is not a refactoring of the original C++ solver. Kiwi has been designed from the ground up to be lightweight and fast. Kiwi ranges from 10x to 500x faster than the original Cassowary solver with typical usecases gaining a 40x improvement. Memory savings are consistently > 5x.</p><p>In addition to the C++ solver, Kiwi ships with hand-rolled Python bindings for Python 3.7+.</p>",
@@ -1114,8 +1114,8 @@
 "siteName": "github",
 "license": "BSD3",
 "linkToLicense": "https://github.com/nucleic/kiwi/blob/main/LICENSE",
-"version": "(cp310) 1.4.4",
-"installCommand": "kiwisolver==1.4.4 --hash=sha256:94f45fd0e9164480a72674fc125621d4e5f6f8a2fdc99559160dc8cac6aa73db"
+"version": "(cp311) 1.4.4.post0",
+"installCommand": "kiwisolver==1.4.4.post0 --hash=sha256:6af32904f67da6a614d50cedeb75341d2c2e91f51e380f350f3b19cf384c0e7a"
 }
 },
 {
@@ -1169,7 +1169,7 @@
 {
 "name": "libtiff",
 "tags": [ "graphics","utility" ],
-"versions": " 4.4.0.post0",
+"versions": " 4.5.1",
 "info":
 {
 "description": "<p>PyLibTiff is a package that provides:</p>    <p>1- a wrapper to the <a href='http://www.simplesystems.org/libtiff/'>libtiff</a> library to Python using <a href='http://docs.python.org/library/ctypes.html'>ctypes</a>.</p>    <p>2 - a pure Python module for reading and writing TIFF and LSM files. The images are read as <code>numpy.memmap</code> objects so that it is possible to open images that otherwise would not fit to computers RAM. Both TIFF strips and tiles are supported for low-level data storage.</p><p>There exists many Python packages that support reading and writing TIFF files. The PyLibTiff project was started to have an efficient and direct way to read and write TIFF files using the libtiff library without the need to install any unnecessary packages or libraries. The pure Python module was created for reading 'broken' TIFF files such as LSM files that in some places use different interpretation of TIFF tags than what specified in the TIFF specification document. The libtiff library would just fail reading such files. In addition, the pure Python module is more memory efficient as the arrays are returned as memory maps. Support for compressed files is not implemented yet.</p>",
@@ -1178,14 +1178,14 @@
 "siteName": "github",
 "license": "BSD3",
 "linkToLicense": "https://github.com/pearu/pylibtiff/blob/master/LICENSE",
-"version": "(py3) 4.4.0.post0",
-"installCommand": "libtiff==4.4.0.post0 --hash=sha256:a05c6ca843c32758547baf11d899b97eb023d5363ec7c48456cae056f2e76043"
+"version": "(py3) 4.5.1",
+"installCommand": "libtiff==4.5.1 --hash=sha256:82d6e805947ccf636f64346ed0797fa24951389793bd652fbbc1d6873305b520"
 }
 },
 {
 "name": "libxml2",
 "tags": [ "languages" ],
-"versions": " 2.10.3.post0",
+"versions": " 2.11.4",
 "info":
 {
 "description": "<p>Libxml2 is the XML C parser and toolkit developed for the Gnome project (but usable outside of the Gnome platform), it is free software available under the MIT License. XML itself is a metalanguage to design markup languages, i.e. text language where semantic and structure are added to the content using extra 'markup' information enclosed between angle brackets. HTML is the most well-known markup language. Though the library is written in C a variety of language bindings make it available in other environments.</p>",
@@ -1194,8 +1194,8 @@
 "siteName": "gitlab.gnome.org/GNOME/libxml2",
 "license": "MIT",
 "linkToLicense": "https://gitlab.gnome.org/GNOME/libxml2/-/blob/master/Copyright",
-"version": "(py3) 2.10.3.post0",
-"installCommand": "libxml2==2.10.3.post0 --hash=sha256:f7068c1f97036ced45da9cc45e8ef783703109eac2a80f15234ccf7d186393f6"
+"version": "(py3) 2.11.4",
+"installCommand": "libxml2==2.11.4 --hash=sha256:396c1a8f54ab04a563e1f09737d18a98f4991d32a8ecba38f604cc0871cf3821"
 }
 },
 {
@@ -1265,7 +1265,7 @@
 {
 "name": "mako",
 "tags": [ "utility" ],
-"versions": " 1.2.4.dev0",
+"versions": " 1.2.4",
 "info":
 {
 "description": "<p>Mako is a template library written in Python. It provides a familiar, non-XML syntax which compiles into Python modules for maximum performance. </p>",
@@ -1274,14 +1274,14 @@
 "siteName": "github.com",
 "license": "MIT",
 "linkToLicense": "https://github.com/sqlalchemy/mako/blob/main/LICENSE",
-"version": "(py3) 1.2.4.dev0",
-"installCommand": "mako==1.2.4.dev0 --hash=sha256:4ae97163e168626fb352f83b3207b5bf5d45d48aae788db77820bef68c211b7d"
+"version": "(py3) 1.2.4",
+"installCommand": "mako==1.2.4 --hash=sha256:d19aa9d2d020996a393840e1862527f22cd0f718da11a8977811c2eb18a5e12b"
 }
 },
 {
 "name": "markdown-editor",
 "tags": [ "utility","graphics","web" ],
-"versions": " 1.0.7.post2",
+"versions": " 1.0.7.post3",
 "info":
 {
 "description": "<p>Markdown-editor provides a standalone editor for your local markdown files.</p><p>Features include:</p><ul><li>Side-by-side markdown editor & html preview</li><li>Live, when you type html preview</li><li>Codehilite & markdown extra syntax support by default</li><li>Github syntax support</li><li>Github styles for rendering and codehilite</li><li>Scrollbars sync</li></ul>",
@@ -1290,14 +1290,14 @@
 "siteName": "github",
 "license": "MIT",
 "linkToLicense": "https://opensource.org/licenses/MIT",
-"version": "(py3) 1.0.7.post2",
-"installCommand": "markdown-editor==1.0.7.post2 --hash=sha256:61ee93b79d86a4bfe08233c1b489c17384985a0dd0ce64758862f73ff6817839"
+"version": "(py3) 1.0.7.post3",
+"installCommand": "markdown-editor==1.0.7.post3 --hash=sha256:039f0c5320f9283bcb5b36ea38ed02d07b634fc9bee9d51fca155293cb84cd2e"
 }
 },
 {
 "name": "markdown",
 "tags": [ "utility" ],
-"versions": " 3.4.1.post0",
+"versions": " 3.4.1.post1",
 "info":
 {
 "description": "<p>This is a Python implementation of John Gruber's <a href='https://daringfireball.net/projects/markdown/'>Markdown</a>. It is almost completely compliant with the reference implementation, though there are a few known issues. See <a href='https://python-markdown.github.io/#Features'>Features</a> for information on what exactly is supported and what is not.</p><p>Markdown is a text-to-HTML conversion tool for web writers. Markdown allows you to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid XHTML (or HTML).</p><p>Thus, “Markdown” is two things: (1) a plain text formatting syntax; and (2) a software tool that converts the plain text formatting to HTML.</p>",
@@ -1306,8 +1306,8 @@
 "siteName": "python-markdown.github.io",
 "license": "BSD3",
 "linkToLicense": "https://github.com/Python-Markdown/markdown/blob/master/LICENSE.md",
-"version": "(py3) 3.4.1.post0",
-"installCommand": "markdown==3.4.1.post0 --hash=sha256:424725a654af2987230eaa4b2ac0763b6ad1ae129f304dcf2eb853dd75dd7cd0"
+"version": "(py3) 3.4.1.post1",
+"installCommand": "markdown==3.4.1.post1 --hash=sha256:b1faacc92c940b2947d591197b61d664412f9d6c1a71c60a72494ebc02206a17"
 }
 },
 {
@@ -1345,7 +1345,7 @@
 {
 "name": "matplotlib",
 "tags": [ "graphics" ],
-"versions": " 3.5.0.post1",
+"versions": " 3.5.0.post3",
 "info":
 {
 "description": "<p>Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python.</p><p>Matplotlib produces publication-quality figures in a variety of hardcopy formats and interactive environments across platforms. Matplotlib can be used in Python scripts, the Python and IPython shell, web application servers, and various graphical user interface toolkits.</p>",
@@ -1354,14 +1354,14 @@
 "siteName": "matplotlib.org",
 "license": "OTHER",
 "linkToLicense": "https://github.com/matplotlib/matplotlib/blob/main/LICENSE/LICENSE",
-"version": "(cp311) 3.5.0.post1",
-"installCommand": "matplotlib==3.5.0.post1 --hash=sha256:38bb76e51692113d08a837f468aac4ccea23fc7e06cfeed30b03986d357247cf"
+"version": "(cp311) 3.5.0.post3",
+"installCommand": "matplotlib==3.5.0.post3 --hash=sha256:4525389de9b78bc14e5de772bcd551a78d3937f212b985b501966061e6fe799c"
 }
 },
 {
 "name": "mistune",
 "tags": [ "utility" ],
-"versions": " 2.0.4",
+"versions": " 0.8.3",
 "info":
 {
 "description": "<p>A fast yet powerful Python Markdown parser with renderers and plugins, compatible with sane CommonMark rules.</p>",
@@ -1370,8 +1370,8 @@
 "siteName": "github",
 "license": "BSD3",
 "linkToLicense": "https://github.com/lepture/mistune/blob/master/LICENSE",
-"version": "(py3) 2.0.4",
-"installCommand": "mistune==2.0.4 --hash=sha256:fb1c77fba8078071b42325a4e1d103d450fdcd93cf8fd4d192ba9a31e7dee928"
+"version": "(cp311) 0.8.3",
+"installCommand": "mistune==0.8.3 --hash=sha256:f76df107a84e5ccaf89c8b1a8a9ed15379e042e7ed3c046792b877187d9cfee7"
 }
 },
 {
@@ -1393,7 +1393,7 @@
 {
 "name": "msgpack",
 "tags": [ "languages" ],
-"versions": " 1.0.4",
+"versions": " 1.0.4 1.0.4.post0",
 "info":
 {
 "description": "<p>MessagePack is an efficient binary serialization format. It lets you exchange data among multiple languages like JSON. But it's faster and smaller. This package provides CPython bindings for reading and writing MessagePack data.</p>",
@@ -1402,8 +1402,8 @@
 "siteName": "msgpack.org",
 "license": "APACHE2",
 "linkToLicense": "https://github.com/msgpack/msgpack-python/blob/main/COPYING",
-"version": "(cp310) 1.0.4",
-"installCommand": "msgpack==1.0.4 --hash=sha256:97a5a0d007802a612b6e1e845fdbd9194ed411cab640c30439cd503a298e72f3"
+"version": "(cp311) 1.0.4.post0",
+"installCommand": "msgpack==1.0.4.post0 --hash=sha256:dee3254cbf0a411e5abfdfc291046aa865bdf3bd57a0b077e63c2be7d3d1aa30"
 }
 },
 {
@@ -1425,7 +1425,7 @@
 {
 "name": "nbconvert",
 "tags": [ "web","machine_learning","utility" ],
-"versions": " 6.5.0.post0",
+"versions": " 6.5.0.post1",
 "info":
 {
 "description": "<p>The nbconvert tool, <code>jupyter nbconvert</code>, converts notebooks to various other formats via <a href='http://jinja.pocoo.org/'>Jinja</a> templates. The nbconvert tool allows you to convert an <code>.ipynb</code> notebook file into various static formats including:</p><ul>    <li>HTML</li>    <li>LaTeX</li>    <li>PDF</li>    <li>Reveal JS</li>    <li>Markdown (md)</li>    <li>ReStructured Text (rst)</li>    <li>executable script</li></ul>",
@@ -1434,8 +1434,8 @@
 "siteName": "jupyter.org",
 "license": "BSD3",
 "linkToLicense": "https://github.com/jupyter/nbconvert/blob/main/LICENSE",
-"version": "(py3) 6.5.0.post0",
-"installCommand": "nbconvert==6.5.0.post0 --hash=sha256:2acbb614edc5b06282af668ebda93c3ee699115becf262f3348a9a180d014aac"
+"version": "(py3) 6.5.0.post1",
+"installCommand": "nbconvert==6.5.0.post1 --hash=sha256:6bfa0ced0ae8f08dc1cd8beecb5fb3da30c48c02a164630f36595913fde0c60c"
 }
 },
 {
@@ -1505,7 +1505,7 @@
 {
 "name": "numpy",
 "tags": [ "math" ],
-"versions": " 1.23.4+3.gc311554fd",
+"versions": " 1.23.4+3.gc311554fd 1.23.4.post0",
 "info":
 {
 "description": "<p>NumPy is the fundamental package for array computing with Python. It provides:</p><ul>    <li>a powerful N-dimensional array object</li>    <li>sophisticated (broadcasting) functions</li>    <li>tools for integrating C/C++ and Fortran code</li>    <li>useful linear algebra, Fourier transform, and random number capabilities</li>    <li>and much more</li></ul>",
@@ -1514,14 +1514,14 @@
 "siteName": "numpy.org",
 "license": "BSD3",
 "linkToLicense": "https://github.com/numpy/numpy/blob/main/LICENSE.txt",
-"version": "(cp311) 1.23.4+3.gc311554fd",
-"installCommand": "numpy==1.23.4+3.gc311554fd --hash=sha256:0955e914d519f3b77b9a111a6ba4dfa44c473cd71c956ff47843cd7f486e7437"
+"version": "(cp311) 1.23.4.post0",
+"installCommand": "numpy==1.23.4.post0 --hash=sha256:35e36803d44a2b1dad123156e3bd5567953f58cfae4b749972874639251330dc"
 }
 },
 {
 "name": "oauthlib",
 "tags": [ "utility" ],
-"versions": " 3.2.2",
+"versions": " 3.2.2.post0",
 "info":
 {
 "description": "<p>OAuthLib is a framework which implements the logic of OAuth1 or OAuth2 without assuming a specific HTTP request object or web framework.</p>",
@@ -1530,8 +1530,8 @@
 "siteName": "github.com",
 "license": "BSD 3",
 "linkToLicense": "https://github.com/oauthlib/oauthlib/blob/master/LICENSE",
-"version": "(py3) 3.2.2",
-"installCommand": "oauthlib==3.2.2 --hash=sha256:766020b238fdbdfab454e04cbe91dc22d913e5f5281e812323f49f4afa10d8fb"
+"version": "(py3) 3.2.2.post0",
+"installCommand": "oauthlib==3.2.2.post0 --hash=sha256:e3d1cacfef9ef237752a2ffba7aafdaa5194259d1833f0420c7b4d6ec10bf605"
 }
 },
 {
@@ -1585,7 +1585,7 @@
 {
 "name": "pandas",
 "tags": [ "programming_tools","math","machine_learning" ],
-"versions": " 1.5.1.post0",
+"versions": " 1.5.1.post2",
 "info":
 {
 "description": "<p>Pandas is a Python package that provides fast, flexible, and expressive data structures designed to make working with 'relational' or 'labeled' data both easy and intuitive. It aims to be the fundamental high-level building block for doing practical, real world data analysis in Python. Additionally, it has the broader goal of becoming the most powerful and flexible open source data analysis / manipulation tool available in any language. It is already well on its way towards this goal.</p>",
@@ -1594,8 +1594,8 @@
 "siteName": "pandas.pydata.org",
 "license": "BSD3",
 "linkToLicense": "https://github.com/pandas-dev/pandas/blob/main/LICENSE",
-"version": "(cp311) 1.5.1.post0",
-"installCommand": "pandas==1.5.1.post0 --hash=sha256:324bdcded0eeaee8b498ae3fde44a38d12805a4cd870f5ce5ff54efb04638e19"
+"version": "(cp311) 1.5.1.post2",
+"installCommand": "pandas==1.5.1.post2 --hash=sha256:fc6be7f9147fbdf6c7a5707b8f22c8399e89567a4b423177b488635f848da44f"
 }
 },
 {
@@ -1697,7 +1697,7 @@
 {
 "name": "pillow",
 "tags": [ "graphics" ],
-"versions": " 9.3.0",
+"versions": " 9.3.0.post0",
 "info":
 {
 "description": "<p>The Python Imaging Library adds image processing capabilities to your Python interpreter.</p><p>This library provides extensive file format support, an efficient internal representation, and fairly powerful image processing capabilities.</p><p>The core image library is designed for fast access to data stored in a few basic pixel formats. It should provide a solid foundation for a general image processing tool.</p>",
@@ -1706,8 +1706,8 @@
 "siteName": "python-pillow.org",
 "license": "OTHER",
 "linkToLicense": "https://github.com/python-pillow/Pillow/blob/main/LICENSE",
-"version": "(cp311) 9.3.0",
-"installCommand": "pillow==9.3.0 --hash=sha256:fcfad73258b68ded4ea4ef179f8314ffeb7ae765bd10c1a9a51623b506229bea"
+"version": "(cp311) 9.3.0.post0",
+"installCommand": "pillow==9.3.0.post0 --hash=sha256:bec3c25701d284b7b4743a46b4c43b45d36f6cfa98054ffaaca685019200b92f"
 }
 },
 {
@@ -1905,7 +1905,7 @@
 {
 "name": "pyrsistent",
 "tags": [ "programming_tools" ],
-"versions": " 0.19.3",
+"versions": " 0.19.3 0.19.3.post0",
 "info":
 {
 "description": "<p>Pyrsistent is a number of persistent collections (by some referred to as functional data structures). Persistent in the sense that they are immutable.</p><p>All methods on a data structure that would normally mutate it instead return a new copy of the structure containing the requested updates. The original structure is left untouched.</p><p>This will simplify the reasoning about what a program does since no hidden side effects ever can take place to these data structures. You can rest assured that the object you hold a reference to will remain the same throughout its lifetime and need not worry that somewhere five stack levels below you in the darkest corner of your application someone has decided to remove that element that you expected to be there.</p><p>Pyrsistent is influenced by persistent data structures such as those found in the standard library of Clojure. The data structures are designed to share common elements through path copying. It aims at taking these concepts and make them as pythonic as possible so that they can be easily integrated into any python program without hassle.</p>",
@@ -1914,8 +1914,8 @@
 "siteName": "github",
 "license": "MIT",
 "linkToLicense": "https://github.com/tobgu/pyrsistent/blob/master/LICENSE.mit",
-"version": "(py3) 0.19.3",
-"installCommand": "pyrsistent==0.19.3 --hash=sha256:ccf0d6bd208f8111179f0c26fdf84ed7c3891982f2edaeae7422575f47e66b64"
+"version": "(cp311) 0.19.3.post0",
+"installCommand": "pyrsistent==0.19.3.post0 --hash=sha256:ace53573214e6240daad807be3b583cbc97d50d0bf1a53b4afe3b6ddd5b3defb"
 }
 },
 {
@@ -1969,7 +1969,7 @@
 {
 "name": "pywavelets",
 "tags": [ "math" ],
-"versions": " 1.3.0",
+"versions": " 1.3.0.post0",
 "info":
 {
 "description": "<p>PyWavelets is a free Open Source library for wavelet transforms in Python. Wavelets are mathematical basis functions that are localized in both time and frequency. Wavelet transforms are time-frequency transforms employing wavelets. They are similar to Fourier transforms, the difference being that Fourier transforms are localized only in frequency instead of in time and frequency.</p>",
@@ -1978,8 +1978,8 @@
 "siteName": "github",
 "license": "MIT",
 "linkToLicense": "https://github.com/PyWavelets/pywt/blob/master/LICENSE",
-"version": "(cp311) 1.3.0",
-"installCommand": "pywavelets==1.3.0 --hash=sha256:8df39d448585c7c386c696d13f4cf45e51f587bd86ebdff4fe7cf6ecee4caa83"
+"version": "(cp311) 1.3.0.post0",
+"installCommand": "pywavelets==1.3.0.post0 --hash=sha256:1b16c35027bb7a1719f592c59d4bdac085b8e4b28ccbf6eb3b4adb98e23e389b"
 }
 },
 {
@@ -2129,7 +2129,7 @@
 {
 "name": "ruamel.yaml.clib",
 "tags": [ "utility" ],
-"versions": " 0.2.7",
+"versions": " 0.2.7.post0",
 "info":
 {
 "description": "<p>ruamel.yaml.clib is the C based reader/scanner and emitter for ruamel.yaml</p>",
@@ -2138,14 +2138,14 @@
 "siteName": "github.com",
 "license": "MIT",
 "linkToLicense": "https://github.com/ibm-z-oss-oda/ruamel.yaml.clib/blob/master/LICENSE",
-"version": "(cp311) 0.2.7",
-"installCommand": "ruamel.yaml.clib==0.2.7 --hash=sha256:efdee2784ea7ac600d2c84bbfdf7d48369ddbf7620343a3d991c2a8fa2d94dff"
+"version": "(cp311) 0.2.7.post0",
+"installCommand": "ruamel.yaml.clib==0.2.7.post0 --hash=sha256:90ebdab00a945ba89e1a25cc70ec8f4ae0a7e0e51aee49544f5ba9873bc41d8f"
 }
 },
 {
 "name": "ruamel.yaml",
 "tags": [ "utility" ],
-"versions": " 0.17.24",
+"versions": " 0.17.24.post0",
 "info":
 {
 "description": "<p>ruamel.yaml is a YAML 1.2 loader/dumper package for Python.</p>",
@@ -2154,14 +2154,14 @@
 "siteName": "github.com",
 "license": "MIT",
 "linkToLicense": "https://github.com/ibm-z-oss-oda/ruamel.yaml/blob/master/LICENSE",
-"version": "(py3) 0.17.24",
-"installCommand": "ruamel.yaml==0.17.24 --hash=sha256:8af42e5560ffa113db99a27d1036034d0546dc6b3255ea7b1cfb9f9be165c944"
+"version": "(py3) 0.17.24.post0",
+"installCommand": "ruamel.yaml==0.17.24.post0 --hash=sha256:9cf11618c229bcd6b00b6564118fb325793a79c78a2c3cb1a1062d5bdeccb6d8"
 }
 },
 {
 "name": "scikit-learn",
 "tags": [ "graphics","machine_learning","math" ],
-"versions": " 1.2.1.post1",
+"versions": " 1.2.1.post2",
 "info":
 {
 "description": "<p>scikit-learn is a Python module for machine learning built on top of SciPy and is distributed under the 3-Clause BSD license.</p><p>The project was started in 2007 by David Cournapeau as a Google Summer of Code project, and since then many volunteers have contributed.</p>",
@@ -2170,14 +2170,14 @@
 "siteName": "scikit-learn.org",
 "license": "BSD3",
 "linkToLicense": "https://github.com/scikit-learn/scikit-learn/blob/main/COPYING",
-"version": "(cp311) 1.2.1.post1",
-"installCommand": "scikit-learn==1.2.1.post1 --hash=sha256:d45e64e51a55bb0171c49688e5fc18d3c324d39d0b60a03afc8b5e13e50ed4b0"
+"version": "(cp311) 1.2.1.post2",
+"installCommand": "scikit-learn==1.2.1.post2 --hash=sha256:872db2277c9d67aa12574a7e625d399ccde418dadded041cd52996468d7713c9"
 }
 },
 {
 "name": "scipy",
 "tags": [ "math","machine_learning" ],
-"versions": " 1.3.3",
+"versions": " 1.3.3.post0",
 "info":
 {
 "description": "<p>SciPy (pronounced “Sigh Pie”) is open-source software for mathematics, science, and engineering. The SciPy library depends on NumPy, which provides convenient and fast N-dimensional array manipulation. The SciPy library is built to work with NumPy arrays, and provides many user-friendly and efficient numerical routines such as routines for numerical integration and optimization. Together, they run on all popular operating systems, are quick to install, and are free of charge. NumPy and SciPy are easy to use, but powerful enough to be depended upon by some of the world’s leading scientists and engineers. If you need to manipulate numbers on a computer and display or publish the results, give SciPy a try!</p>",
@@ -2186,8 +2186,8 @@
 "siteName": "scipy.org",
 "license": "BSD3",
 "linkToLicense": "https://github.com/scipy/scipy/blob/main/LICENSE.txt",
-"version": "(cp311) 1.3.3",
-"installCommand": "scipy==1.3.3 --hash=sha256:c7eeff81c53113bca36d3f275dbce8a5c064fafa9952058b70fdf6dd06e6ff12"
+"version": "(cp311) 1.3.3.post0",
+"installCommand": "scipy==1.3.3.post0 --hash=sha256:c64db9d8ff86c9dbf1aefc888531da79b43c935c4e687026f66f671392a69e94"
 }
 },
 {
@@ -2337,7 +2337,7 @@
 {
 "name": "sqlalchemy",
 "tags": [ "utility" ],
-"versions": " 2.0.12.dev0",
+"versions": " 2.0.12",
 "info":
 {
 "description": "<p>SQLAlchemy is the Python SQL toolkit and Object Relational Mapper that gives application developers the full power and flexibility of SQL. SQLAlchemy provides a full suite of well known enterprise-level persistence patterns, designed for efficient and high-performing database access, adapted into a simple and Pythonic domain language.</p>",
@@ -2346,8 +2346,8 @@
 "siteName": "github.com",
 "license": "MIT",
 "linkToLicense": "https://github.com/sqlalchemy/sqlalchemy/blob/main/LICENSE",
-"version": "(py3) 2.0.12.dev0",
-"installCommand": "sqlalchemy==2.0.12.dev0 --hash=sha256:08db90c006db5414f1e1a376f6ab2a215b4063317277436c7be13d2b0adda29d"
+"version": "(cp311) 2.0.12",
+"installCommand": "sqlalchemy==2.0.12 --hash=sha256:96f0586b7a8fef641d1e3b0bf3d6f5f52dfc0df6a56eaaf910012d9bf1cb1a3f"
 }
 },
 {
@@ -2385,7 +2385,7 @@
 {
 "name": "statsmodels",
 "tags": [ "math" ],
-"versions": " 0.13.5",
+"versions": " 0.13.5.post0",
 "info":
 {
 "description": "<p>statsmodels is a Python package that provides a complement to scipy for statistical computations including descriptive statistics and estimation and inference for statistical models. An extensive list of result statistics are available for each estimator.</p>",
@@ -2394,8 +2394,8 @@
 "siteName": "statsmodels.org",
 "license": "BSD3",
 "linkToLicense": "https://github.com/statsmodels/statsmodels/blob/main/LICENSE.txt",
-"version": "(cp311) 0.13.5",
-"installCommand": "statsmodels==0.13.5 --hash=sha256:b7a34782003e383970b3c8eaf3939b3038616023064f01b88ba2054aa489b804"
+"version": "(cp311) 0.13.5.post0",
+"installCommand": "statsmodels==0.13.5.post0 --hash=sha256:e1164462fbae42959734942beeb2d69ebc67be5eefdb22dee7dfb3043c1a7bac"
 }
 },
 {
@@ -2513,7 +2513,7 @@
 {
 "name": "tornado",
 "tags": [ "web" ],
-"versions": " 6.2",
+"versions": " 6.3.2.post0",
 "info":
 {
 "description": "<p>Tornado is a Python web framework and asynchronous networking library, originally developed at <a href='https://en.wikipedia.org/wiki/FriendFeed'>FriendFeed</a>. By using non-blocking network I/O, Tornado can scale to tens of thousands of open connections, making it ideal for <a href='https://en.wikipedia.org/wiki/Push_technology#Long_polling'>long polling</a>, <a href='https://en.wikipedia.org/wiki/WebSocket'>WebSockets</a>, and other applications that require a long-lived connection to each user.</p>",
@@ -2522,8 +2522,8 @@
 "siteName": "tornadoweb.org",
 "license": "APACHE2",
 "linkToLicense": "https://github.com/tornadoweb/tornado/blob/master/LICENSE",
-"version": "(cp311) 6.2",
-"installCommand": "tornado==6.2 --hash=sha256:8e4de53d246e70608dcde41f206d3e1370fdba308964f78f43c5d4210a0ee48c"
+"version": "(cp311) 6.3.2.post0",
+"installCommand": "tornado==6.3.2.post0 --hash=sha256:842549411e42b06abf528ca641c5ef3c7f4d97bcf9894dce5e0cf234778c16b1"
 }
 },
 {
