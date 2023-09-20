@@ -1,3 +1,8 @@
+## Development
+
+This repository no longer holds the tools/assets needed to regenerate the web-content. Please ask a team member for their location.
+
+
 # PythonPackagesZos
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.4.
