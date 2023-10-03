@@ -191,6 +191,22 @@
 }
 },
 {
+"name": "cachetools",
+"tags": [ "utility" ],
+"versions": " 4.2.1",
+"info":
+{
+"description": "<p>This module provides various memoizing collections and decorators.</p>",
+"usageNotes": "<p>Usage information is available on <a href='https://cachetools.readthedocs.io/en/latest/'>readthedocs.io</a>.</p>",
+"linkToSite": "https://github.com/tkem/cachetools",
+"siteName": "github.com",
+"license": "MIT",
+"linkToLicense": "https://github.com/tkem/cachetools/blob/master/LICENSE",
+"version": "(py3) 4.2.1",
+"installCommand": "cachetools==4.2.1 --hash=sha256:2c010ef2d9f9ceacb0b87eb3f91de00dc7fda3337df5e2f0eb2f5f87efe2d1bb"
+}
+},
+{
 "name": "cairocffi",
 "tags": [ "graphics" ],
 "versions": " 1.3.0.post1",
@@ -303,6 +319,22 @@
 }
 },
 {
+"name": "contourpy",
+"tags": [ "math" ],
+"versions": " 1.0.7.post0",
+"info":
+{
+"description": "<p>ContourPy is a Python library for calculating contours of 2D quadrilateral grids.</p>",
+"usageNotes": "<p>Usage information is available on <a href='https://contourpy.readthedocs.io/en/v1.1.0/'>readthedocs.io</a>.</p>",
+"linkToSite": "https://github.com/contourpy/contourpy",
+"siteName": "github.com",
+"license": "BSD-3",
+"linkToLicense": "https://github.com/contourpy/contourpy/blob/main/LICENSE",
+"version": "(cp311) 1.0.7.post0",
+"installCommand": "contourpy==1.0.7.post0 --hash=sha256:ccfb4c7205d144f48a95fae5e0483e0abd5fa5bfeff05358d29500726ad3f7d1"
+}
+},
+{
 "name": "cycler",
 "tags": [ "programming_tools","utility" ],
 "versions": " 0.11.0",
@@ -401,7 +433,7 @@
 {
 "name": "defusedxml",
 "tags": [ "security" ],
-"versions": " 0.7.1.post0",
+"versions": " 0.7.1.post1",
 "info":
 {
 "description": "<p>The results of an attack on a vulnerable XML library can be fairly dramatic. With just a few hundred Bytes of XML data an attacker can occupy several Gigabytes of memory within seconds. An attacker can also keep CPUs busy for a long time with a small to medium size request. Under some circumstances it is even possible to access local files on your server, to circumvent a firewall, or to abuse services to rebound attacks to third parties.</p><p>The attacks use and abuse less common features of XML and its parsers. The majority of developers are unacquainted with features such as processing instructions and entity expansions that XML inherited from SGML. At best they know about <code>&lt;!DOCTYPE&gt;</code> from experience with HTML but they are not aware that a document type definition (DTD) can generate an HTTP request or load a file from the file system.</p><p>None of the issues is new. They have been known for a long time. Billion laughs was first reported in 2003. Nevertheless some XML libraries and applications are still vulnerable and even heavy users of XML are surprised by these features. It's hard to say whom to blame for the situation. It's too short sighted to shift all blame on XML parsers and XML libraries for using insecure default settings. After all they properly implement XML specifications. Application developers must not rely that a library is always configured for security and potential harmful data by default.</p><p>The defusedxml package contains several Python-only workarounds and fixes for denial of service and other vulnerabilities in Python's XML libraries.</p>",
@@ -410,8 +442,8 @@
 "siteName": "github",
 "license": "OTHER",
 "linkToLicense": "https://github.com/tiran/defusedxml/blob/main/LICENSE",
-"version": "(py3) 0.7.1.post0",
-"installCommand": "defusedxml==0.7.1.post0 --hash=sha256:3e6a967a3774726d3a6db9f26ff065e2c69d388f0e2d567664885af4de64e565"
+"version": "(py3) 0.7.1.post1",
+"installCommand": "defusedxml==0.7.1.post1 --hash=sha256:ac17a480f7eaa1575a0a59cf147e7c6a090670afe7a1e752977dd88895cb1018"
 }
 },
 {
@@ -444,6 +476,22 @@
 "linkToLicense": "HOW TO LINK SOURCEFORGE?",
 "version": "(py3) 0.19.post1",
 "installCommand": "docutils==0.19.post1 --hash=sha256:efbdd432d14ecdf0028e7cf119ec4cc29eb24a37cd9cd6ec0d917f2e94065e54"
+}
+},
+{
+"name": "drain3",
+"tags": [ "machine-learning" ],
+"versions": " 0.9.11",
+"info":
+{
+"description": "<p>Drain3 is an online log template miner that can extract templates (clusters) from a stream of log messages in a timely manner.</p>",
+"usageNotes": "<p>Usage information is available on <a href='https://github.com/ibm-z-oss-oda/Drain3'>github.com</a>.</p>",
+"linkToSite": "https://github.com/ibm-z-oss-oda/Drain3",
+"siteName": "github.com",
+"license": "MIT",
+"linkToLicense": "https://github.com/ibm-z-oss-oda/Drain3/blob/master/LICENSE.txt",
+"version": "(py3) 0.9.11",
+"installCommand": "drain3==0.9.11 --hash=sha256:eb96470c4a0a4449387f1291ab6f434dacd11164103cfc941c4e1c9409cd52c9"
 }
 },
 {
@@ -668,6 +716,22 @@
 "linkToLicense": "https://github.com/xflr6/graphviz/blob/master/LICENSE.txt",
 "version": "(py3) 0.20.1",
 "installCommand": "graphviz==0.20.1 --hash=sha256:2214941367e2a4a69b1555c227134bb9319af5d0c7c2001c258286126ccb67b2"
+}
+},
+{
+"name": "gunicorn",
+"tags": [ "web" ],
+"versions": " 21.2.0.post2",
+"info":
+{
+"description": "<p>Gunicorn ‘Green Unicorn’ is a Python WSGI HTTP Server for UNIX. </p>",
+"usageNotes": "<p>Usage information is available on <a href='https://docs.gunicorn.org/en/stable/'>gunicorn.org</a>.</p>",
+"linkToSite": "https://github.com/ibm-z-oss-oda/gunicorn",
+"siteName": "github.com",
+"license": "MIT",
+"linkToLicense": "https://github.com/ibm-z-oss-oda/gunicorn/blob/master/LICENSE",
+"version": "(py3) 21.2.0.post2",
+"installCommand": "gunicorn==21.2.0.post2 --hash=sha256:aac2abd5caf6b7c59c2629e8ed76652f30956f9a7dbccabc03839796029a7fa6"
 }
 },
 {
@@ -959,6 +1023,22 @@
 }
 },
 {
+"name": "jsonpickle",
+"tags": [ "utility" ],
+"versions": " 1.5.1",
+"info":
+{
+"description": "<p>Python library for serializing any arbitrary object graph into JSON. It can take almost any Python object and turn the object into JSON. Additionally, it can reconstitute the object back into Python. </p>",
+"usageNotes": "<p>The jsonpickle manual is available on <a href='https://jsonpickle.github.io/'>github.io</a>.</p>",
+"linkToSite": "https://github.com/ibm-z-oss-oda/jsonpickle",
+"siteName": "github.com",
+"license": "BSD-3",
+"linkToLicense": "https://github.com/ibm-z-oss-oda/jsonpickle/blob/main/LICENSE",
+"version": "(py3) 1.5.1",
+"installCommand": "jsonpickle==1.5.1 --hash=sha256:6eebc763ab29d2f5f3a47cff1b039d3a9554366b1a2a49a8df093756a3cf102d"
+}
+},
+{
 "name": "jsonschema",
 "tags": [ "utility" ],
 "versions": " 4.17.3",
@@ -1036,6 +1116,22 @@
 "linkToLicense": "https://github.com/jupyter-server/kernel_gateway/blob/master/LICENSE.md",
 "version": "(py3) 2.5.1",
 "installCommand": "jupyter-kernel-gateway==2.5.1 --hash=sha256:735e4c5bf9678e4c6ccb2bf34dcca33c1a4f13599f5e2efe6f0cd0854bc8d3f2"
+}
+},
+{
+"name": "jupyter-telemetry",
+"tags": [ "logging" ],
+"versions": " 0.1.0",
+"info":
+{
+"description": "<p>Jupyter Telemetry enables Jupyter Applications (e.g. Jupyter Server, Jupyter Notebook, JupyterLab, JupyterHub, etc.) to record events—i.e. actions by application users—and transmit them to remote (or local) destinations as structured data.</p>",
+"usageNotes": "<p>Usage information is available on <a href='https://github.com/jupyter/telemetry'>github.com</a>.</p>",
+"linkToSite": "https://github.com/jupyter/telemetry",
+"siteName": "github.com",
+"license": "BSD 3",
+"linkToLicense": "https://github.com/ibm-z-oss-oda/telemetry/blob/master/LICENSE",
+"version": "(py3) 0.1.0",
+"installCommand": "jupyter-telemetry==0.1.0 --hash=sha256:21bd4563f9a1f20302dbcad07bfdf36d9de67f9d2cb121dfcc7f9e9426645a90"
 }
 },
 {
@@ -1345,7 +1441,7 @@
 {
 "name": "matplotlib",
 "tags": [ "graphics" ],
-"versions": " 3.5.0.post3",
+"versions": " 3.5.0.post4",
 "info":
 {
 "description": "<p>Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python.</p><p>Matplotlib produces publication-quality figures in a variety of hardcopy formats and interactive environments across platforms. Matplotlib can be used in Python scripts, the Python and IPython shell, web application servers, and various graphical user interface toolkits.</p>",
@@ -1354,14 +1450,14 @@
 "siteName": "matplotlib.org",
 "license": "OTHER",
 "linkToLicense": "https://github.com/matplotlib/matplotlib/blob/main/LICENSE/LICENSE",
-"version": "(cp311) 3.5.0.post3",
-"installCommand": "matplotlib==3.5.0.post3 --hash=sha256:4525389de9b78bc14e5de772bcd551a78d3937f212b985b501966061e6fe799c"
+"version": "(cp311) 3.5.0.post4",
+"installCommand": "matplotlib==3.5.0.post4 --hash=sha256:9237732ef9459d38d7a0511a36b8fa1587a10802237972bfbe4a728dbb22c3a2"
 }
 },
 {
 "name": "mistune",
 "tags": [ "utility" ],
-"versions": " 0.8.3",
+"versions": " 2.0.4",
 "info":
 {
 "description": "<p>A fast yet powerful Python Markdown parser with renderers and plugins, compatible with sane CommonMark rules.</p>",
@@ -1370,8 +1466,8 @@
 "siteName": "github",
 "license": "BSD3",
 "linkToLicense": "https://github.com/lepture/mistune/blob/master/LICENSE",
-"version": "(cp311) 0.8.3",
-"installCommand": "mistune==0.8.3 --hash=sha256:f76df107a84e5ccaf89c8b1a8a9ed15379e042e7ed3c046792b877187d9cfee7"
+"version": "(py3) 2.0.4",
+"installCommand": "mistune==2.0.4 --hash=sha256:fb1c77fba8078071b42325a4e1d103d450fdcd93cf8fd4d192ba9a31e7dee928"
 }
 },
 {
@@ -1425,7 +1521,7 @@
 {
 "name": "nbconvert",
 "tags": [ "web","machine_learning","utility" ],
-"versions": " 6.5.0.post1",
+"versions": " 7.8.0",
 "info":
 {
 "description": "<p>The nbconvert tool, <code>jupyter nbconvert</code>, converts notebooks to various other formats via <a href='http://jinja.pocoo.org/'>Jinja</a> templates. The nbconvert tool allows you to convert an <code>.ipynb</code> notebook file into various static formats including:</p><ul>    <li>HTML</li>    <li>LaTeX</li>    <li>PDF</li>    <li>Reveal JS</li>    <li>Markdown (md)</li>    <li>ReStructured Text (rst)</li>    <li>executable script</li></ul>",
@@ -1434,14 +1530,14 @@
 "siteName": "jupyter.org",
 "license": "BSD3",
 "linkToLicense": "https://github.com/jupyter/nbconvert/blob/main/LICENSE",
-"version": "(py3) 6.5.0.post1",
-"installCommand": "nbconvert==6.5.0.post1 --hash=sha256:6bfa0ced0ae8f08dc1cd8beecb5fb3da30c48c02a164630f36595913fde0c60c"
+"version": "(py3) 7.8.0",
+"installCommand": "nbconvert==7.8.0 --hash=sha256:6ea90f6064d7be1ac50abb2480b8ff16d1044a9d4774b983106da822d6dae143"
 }
 },
 {
 "name": "nbformat",
 "tags": [ "base" ],
-"versions": " 5.4.0",
+"versions": " 5.9.2",
 "info":
 {
 "description": "<p>The Jupyter Notebook format:</p><p>This package contains the base implementation of the <a href='https://nbformat.readthedocs.org/en/latest/format_description.html'>Jupyter Notebook format</a>, and Python APIs for working with notebooks.</p><p>There is also a JSON schema for notebook format versions >= 3.</p>",
@@ -1450,8 +1546,8 @@
 "siteName": "jupyter.org",
 "license": "BSD3",
 "linkToLicense": "https://github.com/jupyter/nbformat/blob/main/COPYING.md",
-"version": "(py3) 5.4.0",
-"installCommand": "nbformat==5.4.0 --hash=sha256:14097434590793425c9562fa05749ca85812aace61703cfd1503b3284cd71443"
+"version": "(py3) 5.9.2",
+"installCommand": "nbformat==5.9.2 --hash=sha256:5565ff2d71481bd20e2e5dbc46d9d46d8a62692e87beb5ee8e49a6e3be2e2a46"
 }
 },
 {
@@ -1585,7 +1681,7 @@
 {
 "name": "pandas",
 "tags": [ "programming_tools","math","machine_learning" ],
-"versions": " 1.5.1.post2",
+"versions": " 1.5.1.post3",
 "info":
 {
 "description": "<p>Pandas is a Python package that provides fast, flexible, and expressive data structures designed to make working with 'relational' or 'labeled' data both easy and intuitive. It aims to be the fundamental high-level building block for doing practical, real world data analysis in Python. Additionally, it has the broader goal of becoming the most powerful and flexible open source data analysis / manipulation tool available in any language. It is already well on its way towards this goal.</p>",
@@ -1594,8 +1690,8 @@
 "siteName": "pandas.pydata.org",
 "license": "BSD3",
 "linkToLicense": "https://github.com/pandas-dev/pandas/blob/main/LICENSE",
-"version": "(cp311) 1.5.1.post2",
-"installCommand": "pandas==1.5.1.post2 --hash=sha256:fc6be7f9147fbdf6c7a5707b8f22c8399e89567a4b423177b488635f848da44f"
+"version": "(cp311) 1.5.1.post3",
+"installCommand": "pandas==1.5.1.post3 --hash=sha256:4eff346445d975fb3a434eb82f5b9de8e03218588b444a27656db964c648e6f7"
 }
 },
 {
@@ -2063,6 +2159,22 @@
 }
 },
 {
+"name": "regex",
+"tags": [ "programming_tools" ],
+"versions": " 2023.6.3",
+"info":
+{
+"description": "<p>This regex implementation is backwards-compatible with the standard 're' module, but offers additional functionality. </p>",
+"usageNotes": "<p>Documentation can be found on <a href='https://github.com/ibm-z-oss-oda/mrab-regex'>github.com</a>.</p>",
+"linkToSite": "https://github.com/ibm-z-oss-oda/mrab-regex",
+"siteName": "github",
+"license": "Apache 2.0",
+"linkToLicense": "https://github.com/ibm-z-oss-oda/mrab-regex/blob/hg/LICENSE.txt",
+"version": "(cp311) 2023.6.3",
+"installCommand": "regex==2023.6.3 --hash=sha256:6f00b53f5c11887199b6c5cc139246447688e3ff06add998157699b1ee5d862c"
+}
+},
+{
 "name": "requests-file",
 "tags": [ "programming_tools","web" ],
 "versions": " 1.5.1",
@@ -2127,6 +2239,22 @@
 }
 },
 {
+"name": "retrying",
+"tags": [ "programming_tools" ],
+"versions": " 1.3.4",
+"info":
+{
+"description": "<p>Retrying is an Apache 2.0 licensed general-purpose retrying library, written in Python, to simplify the task of adding retry behavior to just about anything.</p>",
+"usageNotes": "<p>Documentation can be found on <a href='https://github.com/ibm-z-oss-oda/retrying'>github.com</a>.</p>",
+"linkToSite": "https://github.com/ibm-z-oss-oda/retrying",
+"siteName": "github",
+"license": "Apache 2.0",
+"linkToLicense": "https://github.com/ibm-z-oss-oda/retrying/blob/main/LICENSE",
+"version": "(py3) 1.3.4",
+"installCommand": "retrying==1.3.4 --hash=sha256:96879a7347d110adb532ffbf5d29630a5cf3cb6e47e3310c19f3037ee26b5735"
+}
+},
+{
 "name": "ruamel.yaml.clib",
 "tags": [ "utility" ],
 "versions": " 0.2.7.post0",
@@ -2156,6 +2284,22 @@
 "linkToLicense": "https://github.com/ibm-z-oss-oda/ruamel.yaml/blob/master/LICENSE",
 "version": "(py3) 0.17.24.post0",
 "installCommand": "ruamel.yaml==0.17.24.post0 --hash=sha256:9cf11618c229bcd6b00b6564118fb325793a79c78a2c3cb1a1062d5bdeccb6d8"
+}
+},
+{
+"name": "scikit-image",
+"tags": [ "graphics" ],
+"versions": " 0.18.3",
+"info":
+{
+"description": "<p>scikit-image is a collection of algorithms for image processing.</p>",
+"usageNotes": "<p>Example of use:</p><pre><code>from skimage import data, io, filters<br><br>image = data.coins()<br># ... or any other NumPy array!<br>edges = filters.sobel(image)<br>io.imshow(edges)<br>io.show()<br></code></pre><p>Please refer to <a href='https://scikit-image.org/docs/dev/auto_examples/'>scikit-image.org</a> for more examples.</p>",
+"linkToSite": "https://scikit-image.org/",
+"siteName": "scikit-image.org",
+"license": "OTHER",
+"linkToLicense": "https://github.com/scikit-image/scikit-image/blob/main/LICENSE.txt",
+"version": "(cp311) 0.18.3",
+"installCommand": "scikit-image==0.18.3 --hash=sha256:7379ced75716a3e803c2e5154bc5e21b630acbac353bbd4f3f4429a365c78271"
 }
 },
 {
@@ -2463,6 +2607,22 @@
 }
 },
 {
+"name": "tifffile",
+"tags": [ "programming_tools" ],
+"versions": " 2023.4.12",
+"info":
+{
+"description": "<p>Tifffile is a Python library to store NumPy arrays in TIFF (Tagged Image File Format) files, and read image and metadata from TIFF-like files used in bioimaging. </p>",
+"usageNotes": "<p>Documentation can be found on <a href='https://github.com/ibm-z-oss-oda/tifffile'>github.com</a>.</p>",
+"linkToSite": "https://github.com/ibm-z-oss-oda/tifffile",
+"siteName": "github",
+"license": "BSD 3",
+"linkToLicense": "https://github.com/ibm-z-oss-oda/tifffile/blob/master/LICENSE",
+"version": "(py3) 2023.4.12",
+"installCommand": "tifffile==2023.4.12 --hash=sha256:d1f3c18e3a7398f14010778903036b29594dca0fbea1108c7922c09631f09be8"
+}
+},
+{
 "name": "tinycss2",
 "tags": [ "utility" ],
 "versions": " 1.1.1",
@@ -2513,7 +2673,7 @@
 {
 "name": "tornado",
 "tags": [ "web" ],
-"versions": " 6.3.2.post0",
+"versions": " 6.3.3",
 "info":
 {
 "description": "<p>Tornado is a Python web framework and asynchronous networking library, originally developed at <a href='https://en.wikipedia.org/wiki/FriendFeed'>FriendFeed</a>. By using non-blocking network I/O, Tornado can scale to tens of thousands of open connections, making it ideal for <a href='https://en.wikipedia.org/wiki/Push_technology#Long_polling'>long polling</a>, <a href='https://en.wikipedia.org/wiki/WebSocket'>WebSockets</a>, and other applications that require a long-lived connection to each user.</p>",
@@ -2522,8 +2682,8 @@
 "siteName": "tornadoweb.org",
 "license": "APACHE2",
 "linkToLicense": "https://github.com/tornadoweb/tornado/blob/master/LICENSE",
-"version": "(cp311) 6.3.2.post0",
-"installCommand": "tornado==6.3.2.post0 --hash=sha256:842549411e42b06abf528ca641c5ef3c7f4d97bcf9894dce5e0cf234778c16b1"
+"version": "(cp311) 6.3.3",
+"installCommand": "tornado==6.3.3 --hash=sha256:a6a2404d4c761a4873e47db880c375ef50c7844e072b9547f8da710ca90c4863"
 }
 },
 {
