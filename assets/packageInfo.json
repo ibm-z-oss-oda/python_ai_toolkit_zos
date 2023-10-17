@@ -1647,22 +1647,6 @@
 }
 },
 {
-"name": "pamela",
-"tags": [ "utility" ],
-"versions": " 1.0.0",
-"info":
-{
-"description": "<p>Pamela is a Python wrapper for PAM </p>",
-"usageNotes": "<p>Usage information is available on <a href='https://github.com/minrk/pamela'>github.com</a>.</p>",
-"linkToSite": "https://github.com/minrk/pamela",
-"siteName": "github.com",
-"license": "MIT",
-"linkToLicense": "https://github.com/minrk/pamela/blob/main/COPYING",
-"version": "(py3) 1.0.0",
-"installCommand": "pamela==1.0.0 --hash=sha256:97642dd53d9582831fef44f5d8832e18141d9d4ac10d3d4a7217510f00e3e87c"
-}
-},
-{
 "name": "pandas-datareader",
 "tags": [ "math","utility","machine_learning" ],
 "versions": " 0.10.0",
