@@ -1937,7 +1937,7 @@
 {
 "name": "pygments",
 "tags": [ "programming_tools","utility" ],
-"versions": " 2.14.0",
+"versions": " 2.16.1",
 "info":
 {
 "description": "<p>Pygments is a generic syntax highlighter suitable for use in code hosting, forums, wikis or other applications that need to prettify source code. Highlights are:</p><ul><li>a wide range of 530 languages and other text formats is supported</li><li>special attention is paid to details that increase highlighting quality</li><li>support for new languages and formats are added easily; most languages use a simple regex-based lexing mechanism</li><li>a number of output formats is available, among them HTML, RTF, LaTeX and ANSI sequences</li></ul>",
@@ -1946,8 +1946,8 @@
 "siteName": "pygments.org",
 "license": "BSD2",
 "linkToLicense": "https://github.com/pygments/pygments/blob/master/LICENSE",
-"version": "(py3) 2.14.0",
-"installCommand": "pygments==2.14.0 --hash=sha256:fa7bd7bd2771287c0de303af8bfdfc731f51bd2c6a47ab69d117138893b82717"
+"version": "(py3) 2.16.1",
+"installCommand": "pygments==2.16.1 --hash=sha256:1e6fdcb477daec1e6f52eaef3181369dfde6cdc4939087cfcf5cb003e4dc3baa"
 }
 },
 {
