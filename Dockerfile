@@ -24,6 +24,6 @@ COPY tsconfig.spec.json .
 COPY webassets/packageInfo.json src/assets/packageInfo.json
 COPY webassets/shas.json  src/assets/i18n/shas.json
 
-EXPOSE 4000
+EXPOSE 4200
 
 RUN npm i -g @angular/cli && npm install
