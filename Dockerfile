@@ -8,7 +8,6 @@ RUN apt-get update -y \
 COPY angular.json .
 COPY dist .
 COPY karma.conf.js .
-COPY node_modules .
 COPY package-lock.json .
 COPY package.json .
 COPY src .
