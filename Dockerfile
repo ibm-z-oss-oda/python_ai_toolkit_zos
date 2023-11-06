@@ -17,15 +17,12 @@ COPY .nvmrc .
 COPY karma.conf.js .
 COPY package-lock.json .
 COPY package.json .
-COPY src .
+COPY src src
 COPY tsconfig.app.json .
 COPY tsconfig.json .
 COPY tsconfig.spec.json .
-COPY webassets/packageInfo.json . 
-COPY webassets/shas.json  . 
-
-RUN cp -r packageInfo.json src/assets/packageInfo.json
-RUN cp -r shas.json src/assets/i18n/shas.json
+COPY webassets/packageInfo.json src/assets/packageInfo.json
+COPY webassets/shas.json  src/assets/i18n/shas.json
 
 EXPOSE 4000
 
