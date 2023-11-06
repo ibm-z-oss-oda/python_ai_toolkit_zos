@@ -3,7 +3,7 @@ FROM ubuntu:22.04
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 
 RUN apt-get update -y \
-    && DEBIAN_FRONTEND=noninteractive apt-get install build-essential curl git wget -y \
+    && DEBIAN_FRONTEND=noninteractive apt-get install build-essential curl git wget zip unzip -y \
     && mkdir pyai
 
 WORKDIR pyai
