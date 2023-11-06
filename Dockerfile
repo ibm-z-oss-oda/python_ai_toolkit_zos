@@ -3,10 +3,13 @@ FROM ubuntu:22.04
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 
 RUN apt-get update -y \
-    && DEBIAN_FRONTEND=noninteractive apt-get install build-essential curl git wget -y
+    && DEBIAN_FRONTEND=noninteractive apt-get install build-essential curl git wget -y \
+    && mkdir pyai
+
+WORKDIR pyai
 
 COPY angular.json .
-COPY dist .
+COPY .nvmrc .
 COPY karma.conf.js .
 COPY package-lock.json .
 COPY package.json .
@@ -22,7 +25,7 @@ EXPOSE 4000
 RUN wget https://chromedriver.storage.googleapis.com/99.0.4844.17/chromedriver_linux64.zip \
     && unzip -d /tmp/ chromedriver_linux64.zip
 
-RUN cd pyai && curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash \
+RUN curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash \
     && export NVM_DIR="$HOME/.nvm" && \
     source $NVM_DIR/nvm.sh \
     && nvm install && nvm use && npm install && ng add angular-cli-ghpages
