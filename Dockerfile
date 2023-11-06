@@ -12,7 +12,7 @@ COPY node_modules .
 COPY package-lock.json .
 COPY package.json .
 COPY src .
-COPY tsconfig.app.json
+COPY tsconfig.app.json .
 COPY tsconfig.json .
 COPY tsconfig.spec.json .
 COPY webassets/packageInfo.json src/assets/packageInfo.json
