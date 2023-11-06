@@ -6,6 +6,10 @@ RUN apt-get update -y \
     && DEBIAN_FRONTEND=noninteractive apt-get install build-essential curl git wget zip unzip -y \
     && mkdir pyai
 
+RUN curl -sL https://deb.nodesource.com/setup_14.x -o setup_14.sh \
+    && chmod +x setup_14.sh && ./setup_14.sh  && \
+    apt update -y && apt install nodejs -y
+
 WORKDIR pyai
 
 COPY angular.json .
@@ -22,10 +26,4 @@ COPY webassets/shas.json src/assets/i18n/shas.json
 
 EXPOSE 4000
 
-RUN wget https://chromedriver.storage.googleapis.com/99.0.4844.17/chromedriver_linux64.zip \
-    && unzip -d /tmp/ chromedriver_linux64.zip
-
-RUN curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash \
-    && export NVM_DIR="$HOME/.nvm" && \
-    source $NVM_DIR/nvm.sh \
-    && nvm install && nvm use && npm install && ng add angular-cli-ghpages
+RUN npm i -g @angular/cli && npm install
