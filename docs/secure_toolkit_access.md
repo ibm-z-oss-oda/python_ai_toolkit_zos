@@ -26,10 +26,3 @@ deployment decision making necessary to remain secure.  It's the goal of this pr
 code that has been vetted for known problems, scanned for potential weaknesses, and delivered through a 
 controlled deployment channel.  We also outline some best practices that describe how best to leverage 
 the open source in a way that makes sense in a z/OS environment.
-
-Here are the topics that are key to understanding the security of the Python AI Toolkit for IBM z/OS:
-- [A History of Python Package Management on z/OS](https://github.com/ibm-z-oss-oda/python_ai_toolkit_zos/wiki/A-History-of-Python-Package-Management-on-z-OS)
-- The IBM SPbD Process
-- How the Toolkit is vetted
-- Acquiring the Toolkit
-- Best practices for Toolkit Deployment
