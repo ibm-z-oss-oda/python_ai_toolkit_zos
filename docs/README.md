@@ -7,13 +7,19 @@ the Python interpreter and pip package manager, which are primary interfaces for
 packages of the Toolkit.  Through these interfaces, the Toolkit provides the common Python experience 
 that users from other platforms will recognize.
 
-This documentation describes key parts of the Python environment on z/OS that include insights about 
-how Python is structured, how it is managed, and how to get the most out of z/OS through Python 
-interfaces.  Relevant topics include:
+## Function and Operation
+The primary differences between running Python on z/OS verses other platforms are operational rather 
+than functional.  That is, a great deal of effort has been made to make the Python runtime experience 
+for end users common, while the process for deployment and management of the Toolkit aligns with z/OS 
+best practices. 
 
+This documentation includes insights about how Python is structured, how it is managed, and how best 
+to interface with z/OS through Python interfaces.  Relevant topics include:
+
+- [Open Source Security from the Top](./security_from_the_top.md)
 - [A History of Python Package Management on z/OS](./package_mgmt_history.md)
-- Python and supply chain security
-- Secure access to the Toolkit
+- [Python and supply chain security](./python_supply_security.md)
+- [Secure access to the Toolkit](./secure_toolkit_access.md)
 - Best practices for Toolkit Deployment
-- Links to Reference material
-- Acronyms
+- Why virtual environments are important
+- Terminology and Reference Links
