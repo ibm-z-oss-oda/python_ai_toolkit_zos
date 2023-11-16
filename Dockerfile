@@ -6,8 +6,8 @@ RUN apt-get update -y \
     && DEBIAN_FRONTEND=noninteractive apt-get install build-essential curl git wget zip unzip -y \
     && mkdir pyai
 
-RUN curl -sL https://deb.nodesource.com/setup_14.x -o setup_14.sh \
-    && chmod +x setup_14.sh && ./setup_14.sh  && \
+RUN curl -sL https://deb.nodesource.com/setup_18.x -o setup_18.sh \
+    && chmod +x setup_14.sh && ./setup_18.sh  && \
     apt update -y && apt install nodejs -y
 
 WORKDIR pyai
