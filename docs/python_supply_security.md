@@ -14,8 +14,8 @@ platforms.  However, by screening out security issues, the Toolkit will generall
 contain the best versions of a given package, leaving out those versions with significant problems.
 
 Key steps to the vetting process include:
-- A threat model.  Before any release of the Toolkit is made available, it is assessed to understand
-all of the attack surfaces that can be exploited.  From this model the team enumerates all of the 
+- A threat model.  Before any release of the Toolkit is made available, it's assessed to understand
+all the attack surfaces that can be exploited.  From this model the team enumerates all of the 
 necessary steps in the vetting process.  As new packages are added to the Toolkit over time, this 
 threat model is reviewed to see if additional measures are required. 
 - Static code analysis - scanning the source code for known problems 
@@ -36,11 +36,23 @@ dependency on another package.  This provides some protection against inadverten
 infringement.
 
 Additional security measures taken when creating the Toolkit include:
-- Eliminating test code - many open source packages include integrated tests for error paths and 
-edge cases.  Open source communities are known to be slow, or unwilling to remediate CVEs in 
+- _**Provide only binary packages (wheels)**_.  Python supports the idea of a source distribution, 
+which is useful for packages that contain platform-specific artifacts like compiled code.  This 
+allows the upstream project to generate a package that builds itself during the install process 
+on the target system.  This is more convenient for the upstream community, because they don't 
+have to provide built packages for all potential platforms, but it's more work at install time 
+because the target system has to have the same toolchains installed as the package providers.   
+  
+    This also opens up an attack surface because a threat actor now can target source files on 
+the target system (e.g. header or include files), build a payload during package install, and 
+potentially evade static code analysis.  The Toolkit provides only built wheels to enhance 
+security, reduce install time, and eliminate the requirement for development and test toolchains 
+on target install systems.
+- _**Eliminate test code**_ - many open source packages include integrated tests for error paths 
+and  edge cases.  Open source communities are known to be slow, or unwilling to remediate CVEs in 
 these code paths because they aren't core to the function of the package.  The toolkit builds
-most packages without test code if it's determined that it include a weakness or outright 
-vulnerability, regardless of whether it's a regular functional path or not.
-- Continuous scanning - static code analysis is repeated for every commit made to a package's 
-source library.  There is no real chance to a vulnerability to slip into the code base between 
-scans.
+most packages without test code if it's determined that the tests include a weakness or 
+outright vulnerability.
+- _**Scan continuuously**_ - static code analysis is repeated for every commit made to a 
+package's source library.  There is no real chance for a vulnerability to slip into the code 
+base between scans.

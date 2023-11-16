@@ -29,3 +29,8 @@ on issues of security
     [https://www.cisa.gov/](https://www.cisa.gov/)
 - _**OSSF (Open Source Security Foundation)**_ - common best security practices across OSS communities
     [https://openssf.org/](https://openssf.org/)
+- _**upstream**_ - the relative position of one project to another.  Usually refers to an original 
+    open source project from which others are derived.
+- _**downstream**_ - the compliment of upstream.  Usually refers to a project that that is derived
+    from another (upstream) project.  The packages of the Toolkit are all downstream from their 
+    original open source versions.

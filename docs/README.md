@@ -1,6 +1,5 @@
 # Reference Documentation for the Python AI Toolkit for IBM z/OS
-The Python AI Toolkit for IBM z/OS (a.k.a "the Toolkit") is a library of packages that are used 
-together with the 
+The Python AI Toolkit for IBM z/OS (a.k.a "the Toolkit") is a library of packages used together with the 
 [IBM Open Enterprise SDK for Python](https://www.ibm.com/products/open-enterprise-python-zos) to 
 provide a runtime environment supporting AI and machine learning workloads on z/OS.  The SDK includes 
 the Python interpreter and pip package manager, which are primary interfaces for interacting with the 
