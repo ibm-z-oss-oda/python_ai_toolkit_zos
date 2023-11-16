@@ -7,7 +7,7 @@ RUN apt-get update -y \
     && mkdir pyai
 
 RUN curl -sL https://deb.nodesource.com/setup_18.x -o setup_18.sh \
-    && chmod +x setup_14.sh && ./setup_18.sh  && \
+    && chmod +x setup_18.sh && ./setup_18.sh  && \
     apt update -y && apt install nodejs -y
 
 WORKDIR pyai
