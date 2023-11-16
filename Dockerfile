@@ -26,4 +26,4 @@ COPY webassets/shas.json  src/assets/i18n/shas.json
 
 EXPOSE 4200
 
-RUN npm i -g @angular/cli && npm install
+RUN npm install && npm i -g @angular/cli
