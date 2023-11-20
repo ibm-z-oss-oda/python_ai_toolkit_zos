@@ -6,7 +6,8 @@ The security of an open source deployment depends on multiple components:
 - Management of the deployment in the production environment
 ----
 
-![security_components](./images/security_components.png)
+![security_components](./images/security_components.png)  
+_**figure 1.  The secure center**_
 
 ----
 A threat actor may compromise any of the components of the secure environment to generate an attack. 

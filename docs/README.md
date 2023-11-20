@@ -8,9 +8,11 @@ that users from other platforms will recognize.
 
 ## Function and Operation
 The primary differences between running Python on z/OS verses other platforms are operational rather 
-than functional.  That is, a great deal of effort has been made to make the Python runtime experience 
-for end users common, while the process for deployment and management of the Toolkit aligns with z/OS 
-best practices. 
+than functional.  Python has the means to create secure environments, but there are a set of best 
+practices to follow that most effectively leverage these capabilities.  z/OS is a carefully controlled 
+and managed production environment where these best practices can be employed to demonstrate Python 
+workloads as an essential and secure part of the enterprise.  Both open source and dedicated z/OS 
+users should recognize the Python environment on this platform.
 
 This documentation includes insights about how Python is structured, how it is managed, and how best 
 to interface with z/OS through Python interfaces.  Relevant topics include:
@@ -19,6 +21,6 @@ to interface with z/OS through Python interfaces.  Relevant topics include:
 - [A History of Python Package Management on z/OS](./package_mgmt_history.md)
 - [Python and supply chain security](./python_supply_security.md)
 - [Secure access to the Toolkit](./secure_toolkit_access.md)
-- Best practices for Toolkit Deployment
+- [Best practices for Toolkit Deployment](./deployment_best_practices.md)
 - Why virtual environments are important
-- Terminology and Reference Links
+- [Terminology and Reference Links](./terms_reference_links.md)

@@ -7,7 +7,7 @@ Python as a language.  It has served as a model for other open languages and pac
 that have followed. 
 
 ![secure chanel configuration](./images/secure_channel_config.png)
-_fig. 1 Python package servers_
+_**figure 1.  Python package servers**_
 
 ## The Pypi Community Server
 A community server allows users to register, free of charge, and to list details of their project 

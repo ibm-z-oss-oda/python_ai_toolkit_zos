@@ -14,6 +14,10 @@
     [https://pep8.org/](https://pep8.org/)
 - _**SMP/E**_ -  (System Modification Program/Extended)  
     [https://www.ibm.com/docs/en/zos/3.1.0?topic=zos-smpe](https://www.ibm.com/docs/en/zos/3.1.0?topic=zos-smpe)
+- _**Python Packaging User Guide**_ - Provides lots of information about how packages are managed.
+    [https://packaging.python.org/en/latest/](https://packaging.python.org/en/latest/)
+- _**Python File name Format**_  
+    [https://packaging.python.org/en/latest/specifications/binary-distribution-format/#file-format](https://packaging.python.org/en/latest/specifications/binary-distribution-format/#file-format)
 - _**virtual environments**_ - Python packages and environment variable settings for user isolation  
     [https://docs.python.org/3/library/venv.html](https://docs.python.org/3/library/venv.html)
 - _**CVE (Common Vulnerabilities and Exposures)**_ - Known problem reports  
