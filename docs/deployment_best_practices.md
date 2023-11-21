@@ -10,7 +10,7 @@ goal is to leverage the capabilities of the Python ecosystem from the familiar b
 practices that have emerged on the z/OS platform over decades of practice.
 
 ## A Word About Air-gapped Systems
-Isolation from the outside world is common practice and an essential security measure for 
+Isolation from the outside world is a common practice and essential security measure for 
 z/OS production environments.  Although the pip package manager has not been used to deploy 
 Python products on z/OS before, it has been central to the Python Ecosystem for over 20
 years, and it accommodates air-gapped deployments.
@@ -84,7 +84,7 @@ _**figure2. The Toolkit requirements file**_
 
 There are 2 sections:
 - The pip command line options.  This contains several key arguments so that you don't have to 
-include them when running the pip command.  These options tell pip to use the IBM package server, 
+specify them when running the pip command.  These options tell pip to use the IBM package server, 
 and download only those packages with 
 hashes in the package list below.  These are key security measures.
 - The list of packages to download or install, along with their version numbers, and 
@@ -93,9 +93,9 @@ hashes.
 Installation of the Toolkit using this requirements file is as simple as running the pip command.
 
 ### The IBM Package Server
-Note that the IBM package server is located at ```downloads.pyaitoolkit.ibm.net```.  This 
-destination has to be available through the firewall.  Note that this doesn't have to be exposed to 
-your production machine, but rather to any machine inside your corporate firewall.
+The IBM package server is located at ```downloads.pyaitoolkit.ibm.net```.  This destination has to 
+be available through the firewall.  Note that this doesn't have to be exposed to your production 
+machine, but rather to any machine inside your corporate firewall.
 
 Python packages have a very structured naming format that is used by pip to determine which instance
 of a package to return for a download or install request.  This is outlined in the 

@@ -14,7 +14,7 @@
     [https://pep8.org/](https://pep8.org/)
 - _**SMP/E**_ -  (System Modification Program/Extended)  
     [https://www.ibm.com/docs/en/zos/3.1.0?topic=zos-smpe](https://www.ibm.com/docs/en/zos/3.1.0?topic=zos-smpe)
-- _**Python Packaging User Guide**_ - Provides lots of information about how packages are managed.
+- _**Python Packaging User Guide**_ - Provides lots of information about how packages are managed.  
     [https://packaging.python.org/en/latest/](https://packaging.python.org/en/latest/)
 - _**Python File name Format**_  
     [https://packaging.python.org/en/latest/specifications/binary-distribution-format/#file-format](https://packaging.python.org/en/latest/specifications/binary-distribution-format/#file-format)
@@ -24,14 +24,14 @@
     [https://nvd.nist.gov/](https://nvd.nist.gov/)
 - _**CWE (Common Weakness Enumeration)**_ - Known software weaknesses can can be exploited  
     [https://cwe.mitre.org/](https://cwe.mitre.org/)
-- _**SPbD (Security and Privacy by Design)**_ - IBM's security and design architecture
+- _**SPbD (Security and Privacy by Design)**_ - IBM's security and design architecture  
     [https://www.ibm.com/support/pages/ibm-security-and-privacy-design](https://www.ibm.com/support/pages/ibm-security-and-privacy-design)
 - _**X-Force Exchange**_ - IBM's security portal  
     [https://exchange.xforce.ibmcloud.com/](https://exchange.xforce.ibmcloud.com/)
 - _**CISA (Cybersecurity and Infrastructure Security Agency)**_ - A US Government agency that focuses 
-on issues of security
+on issues of security  
     [https://www.cisa.gov/](https://www.cisa.gov/)
-- _**OSSF (Open Source Security Foundation)**_ - common best security practices across OSS communities
+- _**OSSF (Open Source Security Foundation)**_ - common best security practices across OSS communities  
     [https://openssf.org/](https://openssf.org/)
 - _**upstream**_ - the relative position of one project to another.  Usually refers to an original 
     open source project from which others are derived.
