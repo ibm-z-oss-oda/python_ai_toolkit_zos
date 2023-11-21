@@ -7,7 +7,7 @@ Python as a language.  It has served as a model for other open languages and pac
 that have followed. 
 
 ![secure chanel configuration](./images/secure_channel_config.png)
-_**figure 1.  Python package servers**_
+_**figure 1.  Python package servers**_.
 
 ## The Pypi Community Server
 A community server allows users to register, free of charge, and to list details of their project 
@@ -34,7 +34,7 @@ is a useful tool for distributing malware to a broad audience, and there are man
 properly functioning servers being leveraged in an attack.  Fortunately, there are ways to 
 protect against this.
 
-The weakness of this model is that anyone can contribute artifacts to the community server.  
+The weakness of this model is that anyone can contribute artifacts to the community server. 
 Threat actors can place a malware payload on the server, give it a name that is similar to 
 another key package, bump the version number, and wait for end users with lax security policies 
 to download it.  This is more of a security challenge than it first seems.  Automated workflows 
@@ -43,9 +43,10 @@ fooled if they don't use all available security measures.  Verifying the securit
 workflows in an enterprise can be a big job.
 
 ### Be Specific When Acquiring Code
-Pip has a highly flexible and well structured configuration mechanism that enables multiple 
-levels of control over where open source packages can come from, and how they they can be
-downloaded.  This flexibility can also enables users to be quick-and-dirty with their install 
+Pip has a highly flexible and well structured 
+[configuration mechanism](https://pip.pypa.io/en/stable/topics/configuration/) that enables 
+multiple levels of control over where open source packages can come from, and how they they 
+can be downloaded.  This flexibility also enables users to be quick-and-dirty with their install 
 process, and open the enterprise to attack.
 
 For example, the following install request for the popular ```numpy``` package is simple, using
@@ -97,6 +98,7 @@ Collecting numpy==1.23.4.post0 (from -r requirements.txt (line 6))
 Installing collected packages: numpy
 Successfully installed numpy-1.23.4.post0
 ```
+_**example 1.  A requirements file, and its installation.**_.
 
 In this example, the requirements file includes a number of install options in addition to the 
 the name of the numpy package, its version, and hash.  We focus on the meaning of the install 
@@ -106,11 +108,11 @@ item is this line:
 ```
 numpy==1.23.4.post0 --hash=sha256:35e36803d44a2b1dad123156e3bd5567953f58cfae4b749972874639251330dc
 ```
-_**example 1.  Installing numpy from the Toolkit**_
+_**example 2.  Secure install of numpy using its hash**_.
 
 This line tells the pip install to pull the numpy wheel from the repository with the hash specified. 
 Any other package instance, even if the name and version match will fail.  This is the most specific 
-way to specify the exact package wheel that you intend to install, and it is an effective measure to 
+way to request the exact package wheel that you intend to install, and it is an effective measure to 
 prevent threat actors from spoofing your install request.
 
 ### Know Your Content Provider
@@ -122,8 +124,8 @@ pip and pypi.
 An additional layer of security can be achieved by using IBM as a 3rd party provider for the packages 
 that make up the Toolkit.  The Python community had the foresight to separate the protocol for 
 pip/pypi communication from the actual server that stores and delivers the packages.  This allowed the 
-Toolkit development team to create a pypi server with the Toolkit content.  You can see in example 1 
-above that the numpy package was downloaded from 
+Toolkit development team to create a secure pypi server with the Toolkit content.  You can see in 
+example 1 above that the numpy package was downloaded from 
 ```downloads.pyaitoolkit.ibm.net```, which is hosted in the IBM Cloud.
 
 In addition to knowing that the Toolkit development team follows all of the steps outlined in the 

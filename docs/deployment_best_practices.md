@@ -1,7 +1,7 @@
 # Best Practices for Toolkit Deployment
 Other sections of this document describe the mechanisms of the Python ecosystem, and the 
 steps taken by the Toolkit development team to enable secure Python workload deployments. 
-This section describes the active steps that administrators and users need to make their 
+This section describes the active steps that administrators and users need to take their 
 environments fully secure.
 
 Many parts of these best practices are likely already part of your production environment 
@@ -12,16 +12,16 @@ practices that have emerged on the z/OS platform over decades of practice.
 ## A Word About Air-gapped Systems
 Isolation from the outside world is a common practice and essential security measure for 
 z/OS production environments.  Although the pip package manager has not been used to deploy 
-Python products on z/OS before, it has been central to the Python Ecosystem for over 20
+Python products on z/OS before, it has been central to the Python ecosystem for over 20
 years, and it accommodates air-gapped deployments.
 
 A key piece of the isolation architecture is to assemble products into an internal staging 
 area for review before use in a production environment.  The steps outlined below show how 
 to assemble Python packages through pip into a staging area.  From there, most of the 
-common isolation practices apply as for other products.
+common isolation practices familiar to z/OS administrators apply.
 
 ![isolation architecture](./images/isolation_architecture.png)  
-_**figure 1.  Isolation architecture**_
+_**figure 1.  Isolation architecture**_.
 
 ## The Package Channel
 In addition to the vetting measures described in the 
@@ -80,15 +80,14 @@ aniso8601==9.0.1 --hash=sha256:cf9e7fa3cf8f85ed2e99e1aaddff98c27a37c7b3d90c77074
 argon2-cffi-bindings==21.2.0.post0 --hash=sha256:9252cc8af1040a0348a69a7781d6b237496446a5f57c9494b65d2dc74c46f786
 . . .
 ```  
-_**figure2. The Toolkit requirements file**_
+_**example 1. The Toolkit requirements file**_.
 
 There are 2 sections:
 - The pip command line options.  This contains several key arguments so that you don't have to 
 specify them when running the pip command.  These options tell pip to use the IBM package server, 
 and download only those packages with 
 hashes in the package list below.  These are key security measures.
-- The list of packages to download or install, along with their version numbers, and 
-hashes.
+- The list of packages to download or install along with their version numbers, and hashes.
 
 Installation of the Toolkit using this requirements file is as simple as running the pip command.
 
@@ -119,9 +118,10 @@ Collecting aniso8601==9.0.1 (from -r requirements.txt (line 21))
      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 52.8/52.8 kB 701.6 kB/s eta 0:00:00
 . . .
 ```
-_**figure 3.  Downloading the Toolkit from the IBM pypi server.**_
+_**example 2.  Downloading the Toolkit from the IBM pypi server.**_.
 
-This example was run from a laptop, and resulted in a wheel file being pulled from the server
+This example was run from a laptop, although it would have worked just as well to run the pip 
+command from a z/OS machine.  It resulted in a wheel file being pulled from the server
 for every package in the Toolkit.  It demonstrates that since all of the packages from the 
 Toolkit have been fully built as wheels (rather than source distributions), it's much simpler to
 download them as atomic artifacts that can be deployed and managed from any platform.  The only
@@ -133,17 +133,17 @@ A common best practice employed by many/most enterprises is to assemble workload
 area.  This allows for integration testing and final verification before deployment to a production 
 environment.
 
-Although the development and test team at IBM employs several steps to scan and validate the 
-set of packages of the Toolkit before releasing to the package repository for download, it's 
-strongly suggested that individual enterprises apply their own review process to vet the code
-assembled in the staging repository.
+Although the development and test team at IBM employs several steps to 
+[scan and validate](./python_supply_security.md) the set of packages of the Toolkit before 
+releasing to the package repository for download, it's strongly suggested that individual 
+enterprises apply their own review process to vet the code assembled in the staging repository.
 
 ![The staging pipeline](./images/staging_pipeline.png)
-_**figure 4.  The staging pipeline.**_
+_**figure 2.  The staging pipeline.**_.
 
 Every organization will have their own standard for security vetting, and different scanning
 toolchains will often give somewhat different results.  The review process indicated in the 
-staging area of figure 4 above should include your organization's security assessment workflow.
+staging area of figure 2 above should include your organization's security assessment workflow.
 
 System administrators play a key role in the staging pipeline.  They populate the staging 
 repository with candidate packages from the IBM package repository, and assemble reviewed

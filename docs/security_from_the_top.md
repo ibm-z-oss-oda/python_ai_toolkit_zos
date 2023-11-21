@@ -10,12 +10,14 @@ The security of an open source deployment depends on multiple components:
 _**figure 1.  The secure center**_
 
 ----
-A threat actor may compromise any of the components of the secure environment to generate an attack. 
-A lot of focus has been put on the security of the supply chain, but the scope of the supply chain 
-domain is often not broad enough to create the secure center that is truly safe from attack. 
+A threat actor may compromise any component of the secure environment to generate an attack.  By
+securing all components of the ecosystem from upstream developer to production, we create the 
+secure center that is much more resistant to attack.
+
 Enterprise system planners and administrators only have control of this environment to the extent that 
-they allow or prevent certain software packages at certain versions to deploy in their production 
-environments.
+they allow or prevent certain software packages at certain versions into their production 
+environments.  However, by partnering with open source and commercial partners, enterprises can 
+create a secure runtime for their production workloads.
 
 The open source community is working with government agencies like [CISA](https://www.cisa.gov/) and
 standards bodies like the Linux Foundations' [Open Source Security Foundation](https://openssf.org/) 

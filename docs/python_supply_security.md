@@ -47,8 +47,8 @@ because the target system has to have the same toolchains installed as the packa
 the target system (e.g. header or include files), build a payload during package install, and 
 potentially evade static code analysis.  The Toolkit provides only built wheels to enhance 
 security, reduce install time, and eliminate the requirement for development and test toolchains 
-on target install systems.
-- _**A closed package set**_ - the package dependency tree is fully contained within the Toolit. 
+on target production systems.
+- _**A closed package set**_ - the Toolkit full contains it's own package dependency tree.  
 That is, no package installation from the Toolkit will result in pip requesting a dependency
 from outside the Toolkit.  This prevents accidental requests from pip to ```pypi.org``` during 
 installation.

@@ -6,6 +6,8 @@
 - _**OSS**_ - Open Source Software
 - _**pip**_ The pip package manager  
     [https://pip.pypa.io/en/stable/](https://pip.pypa.io/en/stable/)
+- _**pip configuration**_ Global, user, and site configuration  
+    [https://pip.pypa.io/en/stable/topics/configuration/](https://pip.pypa.io/en/stable/topics/configuration/)
 - _**pypi**_ - The Python Package Index  
     [https://pypi.org/](https://pypi.org/)
 - _**peps**_ - Python Enhancement Proposals (peps)  
