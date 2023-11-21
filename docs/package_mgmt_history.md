@@ -1,7 +1,7 @@
 # A History of Python Package Management on z/OS
-Software management has been considered an extended function of the operating system, handled by 
-system administrators on z/OS.  This contrasts with the open language view, where software is 
-assembled by developers and testers into executable environments, tailored to specific applications.
+Software management on z/OS has been considered an extended function of the operating system, handled by 
+system administrators.  This contrasts with the open language view, where software is 
+assembled by developers and testers into executable environments, and tailored to specific applications.
 As a result, open languages like Python usually include a package manager, and associated backend
 repositories of built software to serve the package manager.  Python's integrated package manager
 is called [pip](https://pip.pypa.io/en/stable/).
@@ -12,11 +12,12 @@ interpreter and pip.  The Python SDK is delivered as a no-cost z/OS feature.
 
 z/OS system administrators manage software using 
 [SMP/E (System Modification Program/Extended)](https://www.ibm.com/docs/en/zos/3.1.0?topic=zos-smpe), 
-an essential tool that serves the same purpose as pip, but in a very different way.  Python is 
-installed and managed using SMP/E, like the other software languages available on the platform.
+an essential tool that serves a similar purpose to pip, but in a very different way.  The Python 
+SDK is installed and managed using SMP/E, like the other software languages available on the platform.
 
 The Toolkit is a separate offering that logically resides at the application layer of the software 
-stack, above the operating system, and needs to be used and managed in a fundamentally different way.  Pip is a better choice for managing Python packages than SMP/E for these reasons:
+stack, above the operating system, and it needs to be used and managed in a fundamentally different 
+way.  Pip is a better choice for managing Python packages than SMP/E for these reasons:
 - Users often assemble Python packages into their own runtime environments called 
 [virtual environments](https://docs.python.org/3/library/venv.html).  This requires them to gather 
 packages at specific versions into local groupings that they can use to develop their applications, 
