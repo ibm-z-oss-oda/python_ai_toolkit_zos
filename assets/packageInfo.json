@@ -241,7 +241,7 @@
 {
 "name": "cffi",
 "tags": [ "languages" ],
-"versions": " 1.14.6",
+"versions": " 1.14.6 1.14.6",
 "info":
 {
 "description": "<p>C Foreign Function Interface for Python. Interact with almost any C code from Python, based on C-like declarations that you can often copy-paste from header files or documentation.</p>",
@@ -250,8 +250,8 @@
 "siteName": "readthedocs.io",
 "license": "MIT",
 "linkToLicense": "https://foss.heptapod.net/pypy/cffi/-/blob/branch/default/LICENSE",
-"version": "(cp310) 1.14.6",
-"installCommand": "cffi==1.14.6 --hash=sha256:b4a0f3f44181f07e85d5f6720b8fa3347c24cb481d32d34d25185ec2ad27f7e6"
+"version": "(cp311) 1.14.6",
+"installCommand": "cffi==1.14.6 --hash=sha256:667bffd6ab6ef45bf67d8a05ed5d03300ca0e241eb2b4005661e99fb45f2fc8b"
 }
 },
 {
@@ -401,7 +401,7 @@
 {
 "name": "debugpy",
 "tags": [ "utility","web","programming_tools" ],
-"versions": " 1.6.3.post2",
+"versions": " 1.6.3.post3",
 "info":
 {
 "description": "<p>debugpy is an implementation of the Debug Adapter Protocol for Python.</p>",
@@ -410,8 +410,8 @@
 "siteName": "github",
 "license": "MIT",
 "linkToLicense": "https://github.com/microsoft/debugpy/blob/main/LICENSE",
-"version": "(cp311) 1.6.3.post2",
-"installCommand": "debugpy==1.6.3.post2 --hash=sha256:bfcbd080671c6b23d27a564208122389fe5e34a953e11edb668aae918fd07e81"
+"version": "(cp311) 1.6.3.post3",
+"installCommand": "debugpy==1.6.3.post3 --hash=sha256:0a71da404a507dcc12535e44796fcec7bb17ba301e2ac822b8129f49f1de2a9d"
 }
 },
 {
@@ -465,7 +465,7 @@
 {
 "name": "docutils",
 "tags": [ "utility" ],
-"versions": " 0.19.post1",
+"versions": " 0.19.post2",
 "info":
 {
 "description": "<p>Docutils is a modular system for processing documentation into useful formats, such as HTML, XML, and LaTeX. For input Docutils supports reStructuredText, an easy-to-read, what-you-see-is-what-you-get plaintext markup syntax.</p>",
@@ -474,8 +474,8 @@
 "siteName": "sourceforge.io",
 "license": "HOW TO LINK SOURCEFORGE?",
 "linkToLicense": "HOW TO LINK SOURCEFORGE?",
-"version": "(py3) 0.19.post1",
-"installCommand": "docutils==0.19.post1 --hash=sha256:efbdd432d14ecdf0028e7cf119ec4cc29eb24a37cd9cd6ec0d917f2e94065e54"
+"version": "(py3) 0.19.post2",
+"installCommand": "docutils==0.19.post2 --hash=sha256:38d1401f4ce325646b6da9dfb64d98d1ddf4156ea5e002b02a05a2339f8beb4a"
 }
 },
 {
@@ -1457,7 +1457,7 @@
 {
 "name": "mistune",
 "tags": [ "utility" ],
-"versions": " 2.0.4",
+"versions": " 0.8.3 2.0.4",
 "info":
 {
 "description": "<p>A fast yet powerful Python Markdown parser with renderers and plugins, compatible with sane CommonMark rules.</p>",
@@ -1601,7 +1601,7 @@
 {
 "name": "numpy",
 "tags": [ "math" ],
-"versions": " 1.23.4+3.gc311554fd 1.23.4.post0",
+"versions": " 1.23.4.post0",
 "info":
 {
 "description": "<p>NumPy is the fundamental package for array computing with Python. It provides:</p><ul>    <li>a powerful N-dimensional array object</li>    <li>sophisticated (broadcasting) functions</li>    <li>tools for integrating C/C++ and Fortran code</li>    <li>useful linear algebra, Fourier transform, and random number capabilities</li>    <li>and much more</li></ul>",
@@ -2097,7 +2097,7 @@
 {
 "name": "qtconsole",
 "tags": [ "utility" ],
-"versions": " 5.3.2.post0",
+"versions": " 5.3.2.post1",
 "info":
 {
 "description": "<p>A rich Qt-based console for working with Jupyter kernels, supporting rich media output, session export, and more.</p><p>The Qtconsole is a very lightweight application that largely feels like a terminal, but provides a number of enhancements only possible in a GUI, such as inline figures, proper multiline editing with syntax highlighting, graphical calltips, and more.</p>",
@@ -2106,8 +2106,8 @@
 "siteName": "jupyter.org",
 "license": "BSD3",
 "linkToLicense": "https://github.com/jupyter/qtconsole/blob/master/LICENSE",
-"version": "(py3) 5.3.2.post0",
-"installCommand": "qtconsole==5.3.2.post0 --hash=sha256:b1b8b079423ab495aca65f64653be3387fc47333cebef22b064a2d628156a093"
+"version": "(py3) 5.3.2.post1",
+"installCommand": "qtconsole==5.3.2.post1 --hash=sha256:6df75786135d3cc1a37dc744d392739f64f526b876637933739f7d2a2a7ff47c"
 }
 },
 {
@@ -2257,7 +2257,7 @@
 {
 "name": "ruamel.yaml",
 "tags": [ "utility" ],
-"versions": " 0.17.24.post0",
+"versions": " 0.17.24.post1",
 "info":
 {
 "description": "<p>ruamel.yaml is a YAML 1.2 loader/dumper package for Python.</p>",
@@ -2266,8 +2266,8 @@
 "siteName": "github.com",
 "license": "MIT",
 "linkToLicense": "https://github.com/ibm-z-oss-oda/ruamel.yaml/blob/master/LICENSE",
-"version": "(py3) 0.17.24.post0",
-"installCommand": "ruamel.yaml==0.17.24.post0 --hash=sha256:9cf11618c229bcd6b00b6564118fb325793a79c78a2c3cb1a1062d5bdeccb6d8"
+"version": "(py3) 0.17.24.post1",
+"installCommand": "ruamel.yaml==0.17.24.post1 --hash=sha256:c8e6d2e8c83640ea9b04bdaf05c13f67b119dfdf919f342e1a43ec2fba5ce347"
 }
 },
 {
@@ -2465,7 +2465,7 @@
 {
 "name": "sqlalchemy",
 "tags": [ "utility" ],
-"versions": " 2.0.12",
+"versions": " 2.0.12 2.0.12.dev0",
 "info":
 {
 "description": "<p>SQLAlchemy is the Python SQL toolkit and Object Relational Mapper that gives application developers the full power and flexibility of SQL. SQLAlchemy provides a full suite of well known enterprise-level persistence patterns, designed for efficient and high-performing database access, adapted into a simple and Pythonic domain language.</p>",
@@ -2474,8 +2474,8 @@
 "siteName": "github.com",
 "license": "MIT",
 "linkToLicense": "https://github.com/sqlalchemy/sqlalchemy/blob/main/LICENSE",
-"version": "(cp311) 2.0.12",
-"installCommand": "sqlalchemy==2.0.12 --hash=sha256:96f0586b7a8fef641d1e3b0bf3d6f5f52dfc0df6a56eaaf910012d9bf1cb1a3f"
+"version": "(py3) 2.0.12.dev0",
+"installCommand": "sqlalchemy==2.0.12.dev0 --hash=sha256:08db90c006db5414f1e1a376f6ab2a215b4063317277436c7be13d2b0adda29d"
 }
 },
 {
@@ -2817,7 +2817,7 @@
 {
 "name": "werkzeug",
 "tags": [ "web","utility","programming_tools" ],
-"versions": " 2.3.4",
+"versions": " 2.3.8",
 "info":
 {
 "description": "<p>werkzeug; German noun: “tool”. Etymology: <i>werk</i> (“work”), <i>zeug</i> (“stuff”)</p><p>Werkzeug is a comprehensive <a href='https://wsgi.readthedocs.io/en/latest/'>WSGI</a> web application library. It began as a simple collection of various utilities for WSGI applications and has become one of the most advanced WSGI utility libraries.</p><p>It includes:</p><ul>    <li>An interactive debugger that allows inspecting stack traces and source code in the browser with an interactive interpreter for any frame in the stack.</li>    <li>A full-featured request object with objects to interact with headers, query args, form data, files, and cookies.</li>    <li>A response object that can wrap other WSGI applications and handle streaming data.</li>    <li>A routing system for matching URLs to endpoints and generating URLs for endpoints, with an extensible system for capturing variables from URLs.</li>    <li>HTTP utilities to handle entity tags, cache control, dates, user agents, cookies, files, and more.</li>    <li>A threaded WSGI server for use while developing applications locally.</li>    <li>A test client for simulating HTTP requests during testing without requiring running a server.</li></ul><p>Werkzeug doesn’t enforce any dependencies. It is up to the developer to choose a template engine, database adapter, and even how to handle requests. It can be used to build all sorts of end user applications such as blogs, wikis, or bulletin boards.</p><p>Flask wraps Werkzeug, using it to handle the details of WSGI while providing more structure and patterns for defining powerful applications.</p>",
@@ -2826,8 +2826,8 @@
 "siteName": "palletsprojects.com/p/werkzeug",
 "license": "BSD3",
 "linkToLicense": "https://github.com/pallets/werkzeug/blob/main/LICENSE.rst",
-"version": "(py3) 2.3.4",
-"installCommand": "werkzeug==2.3.4 --hash=sha256:95ad797e15ff94d62517ed83eb826b6215c76aa81339289b0e1ce3b93c43c7a9"
+"version": "(py3) 2.3.8",
+"installCommand": "werkzeug==2.3.8 --hash=sha256:089ebc959ce9d6c0e314ae4b079195871fc2870b3262574df69bb04c229bef9d"
 }
 },
 {
