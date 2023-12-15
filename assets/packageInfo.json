@@ -1169,7 +1169,7 @@
 {
 "name": "jupyterlab-pygments",
 "tags": [ "web","graphics" ],
-"versions": " 0.2.2.post0",
+"versions": " 0.2.2.post1",
 "info":
 {
 "description": "<p>This package contains a syntax coloring theme for <a href='http://pygments.org/'>pygments</a> making use of the JupyterLab CSS variables.</p><p>The goal is to enable the use of JupyterLab's themes with pygments-generated HTML.</p>",
@@ -1178,14 +1178,14 @@
 "siteName": "github",
 "license": "BSD3",
 "linkToLicense": "https://github.com/jupyterlab/jupyterlab_pygments/blob/main/LICENSE",
-"version": "(py3) 0.2.2.post0",
-"installCommand": "jupyterlab-pygments==0.2.2.post0 --hash=sha256:bbf5258049e1932d5198f93ddbe6afc4e32fce7b74558a57e59137869dc340e7"
+"version": "(py3) 0.2.2.post1",
+"installCommand": "jupyterlab-pygments==0.2.2.post1 --hash=sha256:5a63402c63225325e741a7f4b993e23a98b7471882c440c8152bc9e895e874b2"
 }
 },
 {
 "name": "jupyterlab-widgets",
 "tags": [ "web","graphics" ],
-"versions": " 3.0.0",
+"versions": " 3.0.7",
 "info":
 {
 "description": "<p>A JupyterLab 3.0 extension for Jupyter/IPython widgets.</p><p>Notebooks come alive when interactive widgets are used. Users gain control of their data and can visualize changes in the data.</p><p>Learning becomes an immersive, fun experience. Researchers can easily see how changing inputs to a model impact the results. We hope you will add ipywidgets to your notebooks, and we're here to help you get started.</p>",
@@ -1194,8 +1194,8 @@
 "siteName": "github",
 "license": "BSD3",
 "linkToLicense": "https://github.com/jupyter-widgets/ipywidgets/blob/master/LICENSE",
-"version": "(py3) 3.0.0",
-"installCommand": "jupyterlab-widgets==3.0.0 --hash=sha256:9d8abdc33af91a698e97a73d933e962e29c7b34aaf6501678d686c6dccc76671"
+"version": "(py3) 3.0.7",
+"installCommand": "jupyterlab-widgets==3.0.7 --hash=sha256:9801104084d7fe13b231b2daba8636845fa79f36fdec4115964859cce1dd3bac"
 }
 },
 {
@@ -1644,6 +1644,22 @@
 "linkToLicense": "https://github.com/pypa/packaging/blob/main/LICENSE",
 "version": "(py3) 23.0",
 "installCommand": "packaging==23.0 --hash=sha256:714ac14496c3e68c99c29b00845f7a2b85f3bb6f1078fd9f72fd20f0570002b2"
+}
+},
+{
+"name": "pamela",
+"tags": [ "utility" ],
+"versions": " 1.0.0",
+"info":
+{
+"description": "<p>Pamela is a Python wrapper for PAM </p>",
+"usageNotes": "<p>Usage information is available on <a href='https://github.com/minrk/pamela'>github.com</a>.</p>",
+"linkToSite": "https://github.com/minrk/pamela",
+"siteName": "github.com",
+"license": "MIT",
+"linkToLicense": "https://github.com/minrk/pamela/blob/main/COPYING",
+"version": "(py3) 1.0.0",
+"installCommand": "pamela==1.0.0 --hash=sha256:97642dd53d9582831fef44f5d8832e18141d9d4ac10d3d4a7217510f00e3e87c"
 }
 },
 {
