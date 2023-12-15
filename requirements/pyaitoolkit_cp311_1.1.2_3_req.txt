@@ -89,8 +89,8 @@ jupyter-kernel-gateway==2.5.1 --hash=sha256:735e4c5bf9678e4c6ccb2bf34dcca33c1a4f
 jupyter-telemetry==0.1.0 --hash=sha256:21bd4563f9a1f20302dbcad07bfdf36d9de67f9d2cb121dfcc7f9e9426645a90
 jupyter==1.1.0 --hash=sha256:52dc0a9d37ea49189700cea3722afd89d5d781ace2c2954fae16e733b80c55ca
 jupyter_core==5.2.0 --hash=sha256:4bdc2928c37f6917130c667d8b8708f20aee539d8283c6be72aabd2a4b4c83b0
-jupyterlab-pygments==0.2.2.post0 --hash=sha256:bbf5258049e1932d5198f93ddbe6afc4e32fce7b74558a57e59137869dc340e7
-jupyterlab-widgets==3.0.0 --hash=sha256:9d8abdc33af91a698e97a73d933e962e29c7b34aaf6501678d686c6dccc76671
+jupyterlab-pygments==0.2.2.post1 --hash=sha256:5a63402c63225325e741a7f4b993e23a98b7471882c440c8152bc9e895e874b2
+jupyterlab-widgets==3.0.7 --hash=sha256:9801104084d7fe13b231b2daba8636845fa79f36fdec4115964859cce1dd3bac
 kiwisolver==1.4.4.post0 --hash=sha256:6af32904f67da6a614d50cedeb75341d2c2e91f51e380f350f3b19cf384c0e7a
 libcairo==1.17.6 --hash=sha256:62ac5c5670d23236a99837be8dd4741f8bdccacc469acd280492b54a811ebb3c
 libjpeg-turbo==2.1.4.post0 --hash=sha256:7fd15c74e90d9f3d416f7b8e78651dd1db94de66bccab2b96e51548da79abb43
