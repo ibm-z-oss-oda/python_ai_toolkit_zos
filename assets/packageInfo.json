@@ -399,6 +399,22 @@
 }
 },
 {
+"name": "dateutils",
+"tags": [ "utility" ],
+"versions": " 0.6.12",
+"info":
+{
+"description": "<p>The main purpose of this package is to provide more complex arithmetic operations on dates/times. </p>",
+"usageNotes": "<p>For advanced tool documentation, refer to <a href='https://dateutil.readthedocs.io/en/stable/'>readthedocs.io</a>.</p>",
+"linkToSite": "https://github.com/ibm-z-oss-oda/python-dateutils",
+"siteName": "github.com/ibm-z-oss-oda/python-dateutils",
+"license": "BSD",
+"linkToLicense": "https://github.com/jmcantrell/python-dateutils/blob/master/LICENSE",
+"version": "(py3) 0.6.12",
+"installCommand": "dateutils==0.6.12 --hash=sha256:29eae2fb476f45e679250e20c443d17df11c5653b1ce52ae5cb134bcbcfe1960"
+}
+},
+{
 "name": "debugpy",
 "tags": [ "utility","web","programming_tools" ],
 "versions": " 1.6.3.post3",
@@ -572,6 +588,22 @@
 "linkToLicense": "https://github.com/tox-dev/py-filelock/blob/main/LICENSE",
 "version": "(py3) 3.12.0",
 "installCommand": "filelock==3.12.0 --hash=sha256:998eea40018ab75e1d09f28d89d637a948d76ab58f99b24b9d7697181f3c9b83"
+}
+},
+{
+"name": "flask-cors",
+"tags": [ "web" ],
+"versions": " 4.0.0",
+"info":
+{
+"description": "<p>A Flask extension for handling Cross Origin Resource Sharing (CORS), making cross-origin AJAX possible.</p>",
+"usageNotes": "<p>Usage information is available on <a href='https://flask-cors.readthedocs.io/en/latest/'>readthedocs.io</a>.</p>",
+"linkToSite": "https://github.com/ibm-z-oss-oda/flask-cors",
+"siteName": "github.com",
+"license": "MIT",
+"linkToLicense": "https://github.com/ibm-z-oss-oda/flask-cors/blob/main/LICENSE",
+"version": "(py3) 4.0.0",
+"installCommand": "flask-cors==4.0.0 --hash=sha256:b8bf3f354884b3a8df35d3a44cc61d4e16ff7499b76427e3046634a5318aee8c"
 }
 },
 {
@@ -783,6 +815,38 @@
 }
 },
 {
+"name": "ibm-db-sa",
+"tags": [ "utility" ],
+"versions": " 0.4.0",
+"info":
+{
+"description": "<p>The IBM_DB_SA adapter provides the Python/SQLAlchemy interface to IBM Data Servers. </p>",
+"usageNotes": "<p>For advanced tool documentation, refer to <a href='https://github.com/ibmdb/python-ibmdbsa'>github.com</a>.</p>",
+"linkToSite": "https://github.com/ibm-z-oss-oda/python-ibmdbsa",
+"siteName": "github.com/ibm-z-oss-oda/python-ibmdbsa",
+"license": "Apache License 2.0",
+"linkToLicense": "https://github.com/ibm-z-oss-oda/python-ibmdbsa/blob/master/LICENSE",
+"version": "(py3) 0.4.0",
+"installCommand": "ibm-db-sa==0.4.0 --hash=sha256:6c03ede3685ffc1044e7e6bc69f011d3b5a4d297eb96acb0f66495ea3d14a1b3"
+}
+},
+{
+"name": "ibm-db",
+"tags": [ "utility" ],
+"versions": " 3.2.0",
+"info":
+{
+"description": "<p>Provides Python interface for connecting to IBM Db2 for LUW, IBM Informix and IBM Db2 for z/OS. </p>",
+"usageNotes": "<p>For advanced tool documentation, refer to <a href='https://github.com/ibmdb/python-ibmdb'>github.com</a>.</p>",
+"linkToSite": "https://github.com/ibm-z-oss-oda/python-ibmdb",
+"siteName": "github.com/ibm-z-oss-oda/python-ibmdb",
+"license": "Apache License 2.0",
+"linkToLicense": "https://github.com/ibm-z-oss-oda/python-ibmdb/blob/master/LICENSE",
+"version": "(cp311) 3.2.0",
+"installCommand": "ibm-db==3.2.0 --hash=sha256:ab1b7018d6a70e5a936958557d5531200fec1848bddbd9409cf3480f94de78ce"
+}
+},
+{
 "name": "idna",
 "tags": [ "languages","utility" ],
 "versions": " 3.4",
@@ -956,6 +1020,22 @@
 "linkToLicense": "https://github.com/baztian/jaydebeapi/blob/master/COPYING",
 "version": "(py3) 1.2.3",
 "installCommand": "jaydebeapi==1.2.3 --hash=sha256:b5e23093ac951361f3c169cc70c1e56ec72c147109bfde5368ceae625c7a648a"
+}
+},
+{
+"name": "jdcal",
+"tags": [ "utility" ],
+"versions": " 1.4.1",
+"info":
+{
+"description": "<p>This module contains functions for converting between Julian dates and calendar dates.</p>",
+"usageNotes": "<p>For advanced tool documentation, refer to <a href='https://github.com/phn/jdcal'>github.com</a>.</p>",
+"linkToSite": "https://github.com/ibm-z-oss-oda/jdcal",
+"siteName": "github.com/ibm-z-oss-oda/jdcal",
+"license": "BSD",
+"linkToLicense": "https://github.com/ibm-z-oss-oda/jdcal/blob/master/LICENSE.txt",
+"version": "(py3) 1.4.1",
+"installCommand": "jdcal==1.4.1 --hash=sha256:f276d6a919d32485f74f4a14b8056e4c89f2bb6b14b6a301deb042632ccefa3f"
 }
 },
 {
@@ -1647,22 +1727,6 @@
 }
 },
 {
-"name": "pamela",
-"tags": [ "utility" ],
-"versions": " 1.0.0",
-"info":
-{
-"description": "<p>Pamela is a Python wrapper for PAM </p>",
-"usageNotes": "<p>Usage information is available on <a href='https://github.com/minrk/pamela'>github.com</a>.</p>",
-"linkToSite": "https://github.com/minrk/pamela",
-"siteName": "github.com",
-"license": "MIT",
-"linkToLicense": "https://github.com/minrk/pamela/blob/main/COPYING",
-"version": "(py3) 1.0.0",
-"installCommand": "pamela==1.0.0 --hash=sha256:97642dd53d9582831fef44f5d8832e18141d9d4ac10d3d4a7217510f00e3e87c"
-}
-},
-{
 "name": "pandas-datareader",
 "tags": [ "math","utility","machine_learning" ],
 "versions": " 0.10.0",
@@ -1820,6 +1884,22 @@
 "linkToLicense": "https://github.com/ibm-z-oss-oda/platformdirs/blob/main/LICENSE.txt",
 "version": "(py3) 3.5.1",
 "installCommand": "platformdirs==3.5.1 --hash=sha256:119702b2cf904893a9b9f2595125a0182488e69b1cfc1d063598a33180972082"
+}
+},
+{
+"name": "plotly",
+"tags": [ "utility" ],
+"versions": " 5.17.0.post0",
+"info":
+{
+"description": "<p>plotly.py is an interactive, open-source, and browser-based graphing library for Python </p>",
+"usageNotes": "<p>For advanced tool documentation, refer to <a href='https://plotly.com/python/'>plotly.com</a>.</p>",
+"linkToSite": "https://github.com/ibm-z-oss-oda/plotly.py",
+"siteName": "github.com/ibm-z-oss-oda/plotly.py",
+"license": "MIT",
+"linkToLicense": "https://github.com/ibm-z-oss-oda/plotly.py/blob/master/LICENSE.txt",
+"version": "(py3) 5.17.0.post0",
+"installCommand": "plotly==5.17.0.post0 --hash=sha256:879a112452b4d08511309b968f0b481bb41fc207cb036687bb40496fc7d2bfa1"
 }
 },
 {
@@ -2113,7 +2193,7 @@
 {
 "name": "qtconsole",
 "tags": [ "utility" ],
-"versions": " 5.3.2.post1",
+"versions": " 5.3.2.post2",
 "info":
 {
 "description": "<p>A rich Qt-based console for working with Jupyter kernels, supporting rich media output, session export, and more.</p><p>The Qtconsole is a very lightweight application that largely feels like a terminal, but provides a number of enhancements only possible in a GUI, such as inline figures, proper multiline editing with syntax highlighting, graphical calltips, and more.</p>",
@@ -2122,8 +2202,8 @@
 "siteName": "jupyter.org",
 "license": "BSD3",
 "linkToLicense": "https://github.com/jupyter/qtconsole/blob/master/LICENSE",
-"version": "(py3) 5.3.2.post1",
-"installCommand": "qtconsole==5.3.2.post1 --hash=sha256:6df75786135d3cc1a37dc744d392739f64f526b876637933739f7d2a2a7ff47c"
+"version": "(py3) 5.3.2.post2",
+"installCommand": "qtconsole==5.3.2.post2 --hash=sha256:63ab18eb13317ecbe7005d5907e5d5fe16719b04b25d87aee080f4006ba3cbc9"
 }
 },
 {
@@ -2575,6 +2655,22 @@
 }
 },
 {
+"name": "tenacity",
+"tags": [ "utility" ],
+"versions": " 8.2.3",
+"info":
+{
+"description": "<p>Tenacity is an Apache 2.0 licensed general-purpose retrying library, written in Python, to simplify the task of adding retry behavior to just about anything. </p>",
+"usageNotes": "<p>For advanced tool documentation, refer to <a href='https://tenacity.readthedocs.io/en/latest/'>readthedocs.io</a>.</p>",
+"linkToSite": "https://github.com/ibm-z-oss-oda/tenacity",
+"siteName": "github.com/ibm-z-oss-oda/tenacity",
+"license": "Apache License 2.0",
+"linkToLicense": "https://github.com/ibm-z-oss-oda/tenacity/blob/main/LICENSE",
+"version": "(py3) 8.2.3",
+"installCommand": "tenacity==8.2.3 --hash=sha256:6a6c7933448844f8cb50cad5881398395d11eb699e546fc04dedc2a095305211"
+}
+},
+{
 "name": "terminado",
 "tags": [ "web","languages" ],
 "versions": " 0.15.0",
@@ -2892,6 +2988,22 @@
 "linkToLicense": "https://github.com/dmlc/xgboost/blob/master/LICENSE",
 "version": "(cp311) 1.6.2",
 "installCommand": "xgboost==1.6.2 --hash=sha256:49d07f7ac96d902fe3ccda5968e090140ee6a7ef6593767c776ac198734767e2"
+}
+},
+{
+"name": "xlsxwriter",
+"tags": [ "programming_tools" ],
+"versions": " 3.1.2",
+"info":
+{
+"description": "<p>A Python module for creating Excel XLSX files. </p>",
+"usageNotes": "<p>Documentation can be found on <a href='https://xlsxwriter.readthedocs.io/'>readthedocs.io</a>.</p>",
+"linkToSite": "https://github.com/ibm-z-oss-oda/XlsxWriter",
+"siteName": "github",
+"license": "BSD 2",
+"linkToLicense": "https://github.com/ibm-z-oss-oda/XlsxWriter/blob/main/LICENSE.txt",
+"version": "(py3) 3.1.2",
+"installCommand": "xlsxwriter==3.1.2 --hash=sha256:9c41968409e7a1c41d4c1dcf91b62a442dbc1f6b55c56102b7e9d3bb8c243cbf"
 }
 },
 {
