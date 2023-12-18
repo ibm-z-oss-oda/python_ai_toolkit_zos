@@ -96,6 +96,12 @@ The IBM package server is located at ```downloads.pyaitoolkit.ibm.net```.  This 
 be available through the firewall.  Note that this doesn't have to be exposed to your production 
 machine, but rather to any machine inside your corporate firewall.
 
+This is a general-purpose binary package server that satisfies package requests from python package
+managers like pip.  These managers are the only supported interface to this server, along with the 
+[Python AI Toolkit web site](https://ibm-z-oss-oda.github.io/python_ai_toolkit_zos/), which lists all
+of the available packages for download.  Alternative means to use this server, like via curl, or through
+a web browser are _**not**_ supported.
+
 Python packages have a very structured naming format that is used by pip to determine which instance
 of a package to return for a download or install request.  This is outlined in the 
 [Python Packaging User Guide](https://packaging.python.org/en/latest/specifications/binary-distribution-format/#file-format).
