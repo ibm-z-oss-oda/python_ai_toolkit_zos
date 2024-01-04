@@ -10,7 +10,6 @@ Two other key resources are provided to effectively use this toolkit:
 - _**The package repository**_.  Configure your pip environment to use this package repository
 rather than the default community pypi.org.  This can be accomplished in several ways.  See
 the Discussions for information on how to configure your environment appropriately.
-  - [https://downloads.pyaitoolkit.ibm.net](https://downloads.pyaitoolkit.ibm.net)
 
 The _requirements_ directory of this repository contains a collection of 
 ```requirements.txt``` files that represent the full contents of the toolkit at different 
