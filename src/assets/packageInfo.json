@@ -241,7 +241,7 @@
 {
 "name": "cffi",
 "tags": [ "languages" ],
-"versions": " 1.14.6",
+"versions": " 1.14.6 1.14.6",
 "info":
 {
 "description": "<p>C Foreign Function Interface for Python. Interact with almost any C code from Python, based on C-like declarations that you can often copy-paste from header files or documentation.</p>",
@@ -250,8 +250,8 @@
 "siteName": "readthedocs.io",
 "license": "MIT",
 "linkToLicense": "https://foss.heptapod.net/pypy/cffi/-/blob/branch/default/LICENSE",
-"version": "(cp310) 1.14.6",
-"installCommand": "cffi==1.14.6 --hash=sha256:b4a0f3f44181f07e85d5f6720b8fa3347c24cb481d32d34d25185ec2ad27f7e6"
+"version": "(cp311) 1.14.6",
+"installCommand": "cffi==1.14.6 --hash=sha256:667bffd6ab6ef45bf67d8a05ed5d03300ca0e241eb2b4005661e99fb45f2fc8b"
 }
 },
 {
@@ -399,9 +399,25 @@
 }
 },
 {
+"name": "dateutils",
+"tags": [ "utility" ],
+"versions": " 0.6.12",
+"info":
+{
+"description": "<p>The main purpose of this package is to provide more complex arithmetic operations on dates/times. </p>",
+"usageNotes": "<p>For advanced tool documentation, refer to <a href='https://dateutil.readthedocs.io/en/stable/'>readthedocs.io</a>.</p>",
+"linkToSite": "https://github.com/ibm-z-oss-oda/python-dateutils",
+"siteName": "github.com/ibm-z-oss-oda/python-dateutils",
+"license": "BSD",
+"linkToLicense": "https://github.com/jmcantrell/python-dateutils/blob/master/LICENSE",
+"version": "(py3) 0.6.12",
+"installCommand": "dateutils==0.6.12 --hash=sha256:29eae2fb476f45e679250e20c443d17df11c5653b1ce52ae5cb134bcbcfe1960"
+}
+},
+{
 "name": "debugpy",
 "tags": [ "utility","web","programming_tools" ],
-"versions": " 1.6.3.post2",
+"versions": " 1.6.3.post3",
 "info":
 {
 "description": "<p>debugpy is an implementation of the Debug Adapter Protocol for Python.</p>",
@@ -410,8 +426,8 @@
 "siteName": "github",
 "license": "MIT",
 "linkToLicense": "https://github.com/microsoft/debugpy/blob/main/LICENSE",
-"version": "(cp311) 1.6.3.post2",
-"installCommand": "debugpy==1.6.3.post2 --hash=sha256:bfcbd080671c6b23d27a564208122389fe5e34a953e11edb668aae918fd07e81"
+"version": "(cp311) 1.6.3.post3",
+"installCommand": "debugpy==1.6.3.post3 --hash=sha256:0a71da404a507dcc12535e44796fcec7bb17ba301e2ac822b8129f49f1de2a9d"
 }
 },
 {
@@ -465,7 +481,7 @@
 {
 "name": "docutils",
 "tags": [ "utility" ],
-"versions": " 0.19.post1",
+"versions": " 0.19.post2",
 "info":
 {
 "description": "<p>Docutils is a modular system for processing documentation into useful formats, such as HTML, XML, and LaTeX. For input Docutils supports reStructuredText, an easy-to-read, what-you-see-is-what-you-get plaintext markup syntax.</p>",
@@ -474,8 +490,8 @@
 "siteName": "sourceforge.io",
 "license": "HOW TO LINK SOURCEFORGE?",
 "linkToLicense": "HOW TO LINK SOURCEFORGE?",
-"version": "(py3) 0.19.post1",
-"installCommand": "docutils==0.19.post1 --hash=sha256:efbdd432d14ecdf0028e7cf119ec4cc29eb24a37cd9cd6ec0d917f2e94065e54"
+"version": "(py3) 0.19.post2",
+"installCommand": "docutils==0.19.post2 --hash=sha256:38d1401f4ce325646b6da9dfb64d98d1ddf4156ea5e002b02a05a2339f8beb4a"
 }
 },
 {
@@ -572,6 +588,22 @@
 "linkToLicense": "https://github.com/tox-dev/py-filelock/blob/main/LICENSE",
 "version": "(py3) 3.12.0",
 "installCommand": "filelock==3.12.0 --hash=sha256:998eea40018ab75e1d09f28d89d637a948d76ab58f99b24b9d7697181f3c9b83"
+}
+},
+{
+"name": "flask-cors",
+"tags": [ "web" ],
+"versions": " 4.0.0",
+"info":
+{
+"description": "<p>A Flask extension for handling Cross Origin Resource Sharing (CORS), making cross-origin AJAX possible.</p>",
+"usageNotes": "<p>Usage information is available on <a href='https://flask-cors.readthedocs.io/en/latest/'>readthedocs.io</a>.</p>",
+"linkToSite": "https://github.com/ibm-z-oss-oda/flask-cors",
+"siteName": "github.com",
+"license": "MIT",
+"linkToLicense": "https://github.com/ibm-z-oss-oda/flask-cors/blob/main/LICENSE",
+"version": "(py3) 4.0.0",
+"installCommand": "flask-cors==4.0.0 --hash=sha256:b8bf3f354884b3a8df35d3a44cc61d4e16ff7499b76427e3046634a5318aee8c"
 }
 },
 {
@@ -783,6 +815,38 @@
 }
 },
 {
+"name": "ibm-db-sa",
+"tags": [ "utility" ],
+"versions": " 0.4.0",
+"info":
+{
+"description": "<p>The IBM_DB_SA adapter provides the Python/SQLAlchemy interface to IBM Data Servers. </p>",
+"usageNotes": "<p>For advanced tool documentation, refer to <a href='https://github.com/ibmdb/python-ibmdbsa'>github.com</a>.</p>",
+"linkToSite": "https://github.com/ibm-z-oss-oda/python-ibmdbsa",
+"siteName": "github.com/ibm-z-oss-oda/python-ibmdbsa",
+"license": "Apache License 2.0",
+"linkToLicense": "https://github.com/ibm-z-oss-oda/python-ibmdbsa/blob/master/LICENSE",
+"version": "(py3) 0.4.0",
+"installCommand": "ibm-db-sa==0.4.0 --hash=sha256:6c03ede3685ffc1044e7e6bc69f011d3b5a4d297eb96acb0f66495ea3d14a1b3"
+}
+},
+{
+"name": "ibm-db",
+"tags": [ "utility" ],
+"versions": " 3.2.0",
+"info":
+{
+"description": "<p>Provides Python interface for connecting to IBM Db2 for LUW, IBM Informix and IBM Db2 for z/OS. </p>",
+"usageNotes": "<p>For advanced tool documentation, refer to <a href='https://github.com/ibmdb/python-ibmdb'>github.com</a>.</p>",
+"linkToSite": "https://github.com/ibm-z-oss-oda/python-ibmdb",
+"siteName": "github.com/ibm-z-oss-oda/python-ibmdb",
+"license": "Apache License 2.0",
+"linkToLicense": "https://github.com/ibm-z-oss-oda/python-ibmdb/blob/master/LICENSE",
+"version": "(cp311) 3.2.0",
+"installCommand": "ibm-db==3.2.0 --hash=sha256:ab1b7018d6a70e5a936958557d5531200fec1848bddbd9409cf3480f94de78ce"
+}
+},
+{
 "name": "idna",
 "tags": [ "languages","utility" ],
 "versions": " 3.4",
@@ -956,6 +1020,22 @@
 "linkToLicense": "https://github.com/baztian/jaydebeapi/blob/master/COPYING",
 "version": "(py3) 1.2.3",
 "installCommand": "jaydebeapi==1.2.3 --hash=sha256:b5e23093ac951361f3c169cc70c1e56ec72c147109bfde5368ceae625c7a648a"
+}
+},
+{
+"name": "jdcal",
+"tags": [ "utility" ],
+"versions": " 1.4.1",
+"info":
+{
+"description": "<p>This module contains functions for converting between Julian dates and calendar dates.</p>",
+"usageNotes": "<p>For advanced tool documentation, refer to <a href='https://github.com/phn/jdcal'>github.com</a>.</p>",
+"linkToSite": "https://github.com/ibm-z-oss-oda/jdcal",
+"siteName": "github.com/ibm-z-oss-oda/jdcal",
+"license": "BSD",
+"linkToLicense": "https://github.com/ibm-z-oss-oda/jdcal/blob/master/LICENSE.txt",
+"version": "(py3) 1.4.1",
+"installCommand": "jdcal==1.4.1 --hash=sha256:f276d6a919d32485f74f4a14b8056e4c89f2bb6b14b6a301deb042632ccefa3f"
 }
 },
 {
@@ -1169,7 +1249,7 @@
 {
 "name": "jupyterlab-pygments",
 "tags": [ "web","graphics" ],
-"versions": " 0.2.2.post0",
+"versions": " 0.2.2.post1",
 "info":
 {
 "description": "<p>This package contains a syntax coloring theme for <a href='http://pygments.org/'>pygments</a> making use of the JupyterLab CSS variables.</p><p>The goal is to enable the use of JupyterLab's themes with pygments-generated HTML.</p>",
@@ -1178,14 +1258,14 @@
 "siteName": "github",
 "license": "BSD3",
 "linkToLicense": "https://github.com/jupyterlab/jupyterlab_pygments/blob/main/LICENSE",
-"version": "(py3) 0.2.2.post0",
-"installCommand": "jupyterlab-pygments==0.2.2.post0 --hash=sha256:bbf5258049e1932d5198f93ddbe6afc4e32fce7b74558a57e59137869dc340e7"
+"version": "(py3) 0.2.2.post1",
+"installCommand": "jupyterlab-pygments==0.2.2.post1 --hash=sha256:5a63402c63225325e741a7f4b993e23a98b7471882c440c8152bc9e895e874b2"
 }
 },
 {
 "name": "jupyterlab-widgets",
 "tags": [ "web","graphics" ],
-"versions": " 3.0.0",
+"versions": " 3.0.7",
 "info":
 {
 "description": "<p>A JupyterLab 3.0 extension for Jupyter/IPython widgets.</p><p>Notebooks come alive when interactive widgets are used. Users gain control of their data and can visualize changes in the data.</p><p>Learning becomes an immersive, fun experience. Researchers can easily see how changing inputs to a model impact the results. We hope you will add ipywidgets to your notebooks, and we're here to help you get started.</p>",
@@ -1194,8 +1274,8 @@
 "siteName": "github",
 "license": "BSD3",
 "linkToLicense": "https://github.com/jupyter-widgets/ipywidgets/blob/master/LICENSE",
-"version": "(py3) 3.0.0",
-"installCommand": "jupyterlab-widgets==3.0.0 --hash=sha256:9d8abdc33af91a698e97a73d933e962e29c7b34aaf6501678d686c6dccc76671"
+"version": "(py3) 3.0.7",
+"installCommand": "jupyterlab-widgets==3.0.7 --hash=sha256:9801104084d7fe13b231b2daba8636845fa79f36fdec4115964859cce1dd3bac"
 }
 },
 {
@@ -1457,7 +1537,7 @@
 {
 "name": "mistune",
 "tags": [ "utility" ],
-"versions": " 2.0.4",
+"versions": " 0.8.3 2.0.4",
 "info":
 {
 "description": "<p>A fast yet powerful Python Markdown parser with renderers and plugins, compatible with sane CommonMark rules.</p>",
@@ -1601,7 +1681,7 @@
 {
 "name": "numpy",
 "tags": [ "math" ],
-"versions": " 1.23.4+3.gc311554fd 1.23.4.post0",
+"versions": " 1.23.4.post0",
 "info":
 {
 "description": "<p>NumPy is the fundamental package for array computing with Python. It provides:</p><ul>    <li>a powerful N-dimensional array object</li>    <li>sophisticated (broadcasting) functions</li>    <li>tools for integrating C/C++ and Fortran code</li>    <li>useful linear algebra, Fourier transform, and random number capabilities</li>    <li>and much more</li></ul>",
@@ -1644,6 +1724,22 @@
 "linkToLicense": "https://github.com/pypa/packaging/blob/main/LICENSE",
 "version": "(py3) 23.0",
 "installCommand": "packaging==23.0 --hash=sha256:714ac14496c3e68c99c29b00845f7a2b85f3bb6f1078fd9f72fd20f0570002b2"
+}
+},
+{
+"name": "pamela",
+"tags": [ "utility" ],
+"versions": " 1.0.0",
+"info":
+{
+"description": "<p>Pamela is a Python wrapper for PAM </p>",
+"usageNotes": "<p>Usage information is available on <a href='https://github.com/minrk/pamela'>github.com</a>.</p>",
+"linkToSite": "https://github.com/minrk/pamela",
+"siteName": "github.com",
+"license": "MIT",
+"linkToLicense": "https://github.com/minrk/pamela/blob/main/COPYING",
+"version": "(py3) 1.0.0",
+"installCommand": "pamela==1.0.0 --hash=sha256:97642dd53d9582831fef44f5d8832e18141d9d4ac10d3d4a7217510f00e3e87c"
 }
 },
 {
@@ -1777,7 +1873,7 @@
 {
 "name": "pillow",
 "tags": [ "graphics" ],
-"versions": " 9.3.0.post0",
+"versions": " 10.0.1",
 "info":
 {
 "description": "<p>The Python Imaging Library adds image processing capabilities to your Python interpreter.</p><p>This library provides extensive file format support, an efficient internal representation, and fairly powerful image processing capabilities.</p><p>The core image library is designed for fast access to data stored in a few basic pixel formats. It should provide a solid foundation for a general image processing tool.</p>",
@@ -1786,8 +1882,8 @@
 "siteName": "python-pillow.org",
 "license": "OTHER",
 "linkToLicense": "https://github.com/python-pillow/Pillow/blob/main/LICENSE",
-"version": "(cp311) 9.3.0.post0",
-"installCommand": "pillow==9.3.0.post0 --hash=sha256:bec3c25701d284b7b4743a46b4c43b45d36f6cfa98054ffaaca685019200b92f"
+"version": "(cp311) 10.0.1",
+"installCommand": "pillow==10.0.1 --hash=sha256:95aed4891ac6eab66a6297b35675457799b3433b37218beb49dcf08a7afe6e64"
 }
 },
 {
@@ -1804,6 +1900,22 @@
 "linkToLicense": "https://github.com/ibm-z-oss-oda/platformdirs/blob/main/LICENSE.txt",
 "version": "(py3) 3.5.1",
 "installCommand": "platformdirs==3.5.1 --hash=sha256:119702b2cf904893a9b9f2595125a0182488e69b1cfc1d063598a33180972082"
+}
+},
+{
+"name": "plotly",
+"tags": [ "utility" ],
+"versions": " 5.17.0.post0",
+"info":
+{
+"description": "<p>plotly.py is an interactive, open-source, and browser-based graphing library for Python </p>",
+"usageNotes": "<p>For advanced tool documentation, refer to <a href='https://plotly.com/python/'>plotly.com</a>.</p>",
+"linkToSite": "https://github.com/ibm-z-oss-oda/plotly.py",
+"siteName": "github.com/ibm-z-oss-oda/plotly.py",
+"license": "MIT",
+"linkToLicense": "https://github.com/ibm-z-oss-oda/plotly.py/blob/master/LICENSE.txt",
+"version": "(py3) 5.17.0.post0",
+"installCommand": "plotly==5.17.0.post0 --hash=sha256:879a112452b4d08511309b968f0b481bb41fc207cb036687bb40496fc7d2bfa1"
 }
 },
 {
@@ -2097,7 +2209,7 @@
 {
 "name": "qtconsole",
 "tags": [ "utility" ],
-"versions": " 5.3.2.post0",
+"versions": " 5.3.2.post2",
 "info":
 {
 "description": "<p>A rich Qt-based console for working with Jupyter kernels, supporting rich media output, session export, and more.</p><p>The Qtconsole is a very lightweight application that largely feels like a terminal, but provides a number of enhancements only possible in a GUI, such as inline figures, proper multiline editing with syntax highlighting, graphical calltips, and more.</p>",
@@ -2106,8 +2218,8 @@
 "siteName": "jupyter.org",
 "license": "BSD3",
 "linkToLicense": "https://github.com/jupyter/qtconsole/blob/master/LICENSE",
-"version": "(py3) 5.3.2.post0",
-"installCommand": "qtconsole==5.3.2.post0 --hash=sha256:b1b8b079423ab495aca65f64653be3387fc47333cebef22b064a2d628156a093"
+"version": "(py3) 5.3.2.post2",
+"installCommand": "qtconsole==5.3.2.post2 --hash=sha256:63ab18eb13317ecbe7005d5907e5d5fe16719b04b25d87aee080f4006ba3cbc9"
 }
 },
 {
@@ -2257,7 +2369,7 @@
 {
 "name": "ruamel.yaml",
 "tags": [ "utility" ],
-"versions": " 0.17.24.post0",
+"versions": " 0.17.24.post1",
 "info":
 {
 "description": "<p>ruamel.yaml is a YAML 1.2 loader/dumper package for Python.</p>",
@@ -2266,8 +2378,8 @@
 "siteName": "github.com",
 "license": "MIT",
 "linkToLicense": "https://github.com/ibm-z-oss-oda/ruamel.yaml/blob/master/LICENSE",
-"version": "(py3) 0.17.24.post0",
-"installCommand": "ruamel.yaml==0.17.24.post0 --hash=sha256:9cf11618c229bcd6b00b6564118fb325793a79c78a2c3cb1a1062d5bdeccb6d8"
+"version": "(py3) 0.17.24.post1",
+"installCommand": "ruamel.yaml==0.17.24.post1 --hash=sha256:c8e6d2e8c83640ea9b04bdaf05c13f67b119dfdf919f342e1a43ec2fba5ce347"
 }
 },
 {
@@ -2465,7 +2577,7 @@
 {
 "name": "sqlalchemy",
 "tags": [ "utility" ],
-"versions": " 2.0.12",
+"versions": " 2.0.12 2.0.12.dev0",
 "info":
 {
 "description": "<p>SQLAlchemy is the Python SQL toolkit and Object Relational Mapper that gives application developers the full power and flexibility of SQL. SQLAlchemy provides a full suite of well known enterprise-level persistence patterns, designed for efficient and high-performing database access, adapted into a simple and Pythonic domain language.</p>",
@@ -2474,8 +2586,8 @@
 "siteName": "github.com",
 "license": "MIT",
 "linkToLicense": "https://github.com/sqlalchemy/sqlalchemy/blob/main/LICENSE",
-"version": "(cp311) 2.0.12",
-"installCommand": "sqlalchemy==2.0.12 --hash=sha256:96f0586b7a8fef641d1e3b0bf3d6f5f52dfc0df6a56eaaf910012d9bf1cb1a3f"
+"version": "(py3) 2.0.12.dev0",
+"installCommand": "sqlalchemy==2.0.12.dev0 --hash=sha256:08db90c006db5414f1e1a376f6ab2a215b4063317277436c7be13d2b0adda29d"
 }
 },
 {
@@ -2556,6 +2668,22 @@
 "linkToLicense": "https://github.com/tqdm/tqdm/blob/master/LICENCE",
 "version": "(py3) 0.0.1",
 "installCommand": "tdqm==0.0.1 --hash=sha256:7e65765fa403d7379d87c22cdf5af13ae8f7d7113ece441df44e2004976fdd5b"
+}
+},
+{
+"name": "tenacity",
+"tags": [ "utility" ],
+"versions": " 8.2.3",
+"info":
+{
+"description": "<p>Tenacity is an Apache 2.0 licensed general-purpose retrying library, written in Python, to simplify the task of adding retry behavior to just about anything. </p>",
+"usageNotes": "<p>For advanced tool documentation, refer to <a href='https://tenacity.readthedocs.io/en/latest/'>readthedocs.io</a>.</p>",
+"linkToSite": "https://github.com/ibm-z-oss-oda/tenacity",
+"siteName": "github.com/ibm-z-oss-oda/tenacity",
+"license": "Apache License 2.0",
+"linkToLicense": "https://github.com/ibm-z-oss-oda/tenacity/blob/main/LICENSE",
+"version": "(py3) 8.2.3",
+"installCommand": "tenacity==8.2.3 --hash=sha256:6a6c7933448844f8cb50cad5881398395d11eb699e546fc04dedc2a095305211"
 }
 },
 {
@@ -2817,7 +2945,7 @@
 {
 "name": "werkzeug",
 "tags": [ "web","utility","programming_tools" ],
-"versions": " 2.3.4",
+"versions": " 2.3.8",
 "info":
 {
 "description": "<p>werkzeug; German noun: “tool”. Etymology: <i>werk</i> (“work”), <i>zeug</i> (“stuff”)</p><p>Werkzeug is a comprehensive <a href='https://wsgi.readthedocs.io/en/latest/'>WSGI</a> web application library. It began as a simple collection of various utilities for WSGI applications and has become one of the most advanced WSGI utility libraries.</p><p>It includes:</p><ul>    <li>An interactive debugger that allows inspecting stack traces and source code in the browser with an interactive interpreter for any frame in the stack.</li>    <li>A full-featured request object with objects to interact with headers, query args, form data, files, and cookies.</li>    <li>A response object that can wrap other WSGI applications and handle streaming data.</li>    <li>A routing system for matching URLs to endpoints and generating URLs for endpoints, with an extensible system for capturing variables from URLs.</li>    <li>HTTP utilities to handle entity tags, cache control, dates, user agents, cookies, files, and more.</li>    <li>A threaded WSGI server for use while developing applications locally.</li>    <li>A test client for simulating HTTP requests during testing without requiring running a server.</li></ul><p>Werkzeug doesn’t enforce any dependencies. It is up to the developer to choose a template engine, database adapter, and even how to handle requests. It can be used to build all sorts of end user applications such as blogs, wikis, or bulletin boards.</p><p>Flask wraps Werkzeug, using it to handle the details of WSGI while providing more structure and patterns for defining powerful applications.</p>",
@@ -2826,8 +2954,8 @@
 "siteName": "palletsprojects.com/p/werkzeug",
 "license": "BSD3",
 "linkToLicense": "https://github.com/pallets/werkzeug/blob/main/LICENSE.rst",
-"version": "(py3) 2.3.4",
-"installCommand": "werkzeug==2.3.4 --hash=sha256:95ad797e15ff94d62517ed83eb826b6215c76aa81339289b0e1ce3b93c43c7a9"
+"version": "(py3) 2.3.8",
+"installCommand": "werkzeug==2.3.8 --hash=sha256:089ebc959ce9d6c0e314ae4b079195871fc2870b3262574df69bb04c229bef9d"
 }
 },
 {
@@ -2876,6 +3004,22 @@
 "linkToLicense": "https://github.com/dmlc/xgboost/blob/master/LICENSE",
 "version": "(cp311) 1.6.2",
 "installCommand": "xgboost==1.6.2 --hash=sha256:49d07f7ac96d902fe3ccda5968e090140ee6a7ef6593767c776ac198734767e2"
+}
+},
+{
+"name": "xlsxwriter",
+"tags": [ "programming_tools" ],
+"versions": " 3.1.2",
+"info":
+{
+"description": "<p>A Python module for creating Excel XLSX files. </p>",
+"usageNotes": "<p>Documentation can be found on <a href='https://xlsxwriter.readthedocs.io/'>readthedocs.io</a>.</p>",
+"linkToSite": "https://github.com/ibm-z-oss-oda/XlsxWriter",
+"siteName": "github",
+"license": "BSD 2",
+"linkToLicense": "https://github.com/ibm-z-oss-oda/XlsxWriter/blob/main/LICENSE.txt",
+"version": "(py3) 3.1.2",
+"installCommand": "xlsxwriter==3.1.2 --hash=sha256:9c41968409e7a1c41d4c1dcf91b62a442dbc1f6b55c56102b7e9d3bb8c243cbf"
 }
 },
 {
