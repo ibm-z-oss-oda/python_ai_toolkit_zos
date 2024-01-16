@@ -1727,6 +1727,22 @@
 }
 },
 {
+"name": "pamela",
+"tags": [ "utility" ],
+"versions": " 1.0.0",
+"info":
+{
+"description": "<p>Pamela is a Python wrapper for PAM </p>",
+"usageNotes": "<p>Usage information is available on <a href='https://github.com/minrk/pamela'>github.com</a>.</p>",
+"linkToSite": "https://github.com/minrk/pamela",
+"siteName": "github.com",
+"license": "MIT",
+"linkToLicense": "https://github.com/minrk/pamela/blob/main/COPYING",
+"version": "(py3) 1.0.0",
+"installCommand": "pamela==1.0.0 --hash=sha256:97642dd53d9582831fef44f5d8832e18141d9d4ac10d3d4a7217510f00e3e87c"
+}
+},
+{
 "name": "pandas-datareader",
 "tags": [ "math","utility","machine_learning" ],
 "versions": " 0.10.0",
@@ -1857,7 +1873,7 @@
 {
 "name": "pillow",
 "tags": [ "graphics" ],
-"versions": " 9.3.0.post0",
+"versions": " 10.0.1",
 "info":
 {
 "description": "<p>The Python Imaging Library adds image processing capabilities to your Python interpreter.</p><p>This library provides extensive file format support, an efficient internal representation, and fairly powerful image processing capabilities.</p><p>The core image library is designed for fast access to data stored in a few basic pixel formats. It should provide a solid foundation for a general image processing tool.</p>",
@@ -1866,8 +1882,8 @@
 "siteName": "python-pillow.org",
 "license": "OTHER",
 "linkToLicense": "https://github.com/python-pillow/Pillow/blob/main/LICENSE",
-"version": "(cp311) 9.3.0.post0",
-"installCommand": "pillow==9.3.0.post0 --hash=sha256:bec3c25701d284b7b4743a46b4c43b45d36f6cfa98054ffaaca685019200b92f"
+"version": "(cp311) 10.0.1",
+"installCommand": "pillow==10.0.1 --hash=sha256:95aed4891ac6eab66a6297b35675457799b3433b37218beb49dcf08a7afe6e64"
 }
 },
 {
