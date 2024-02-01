@@ -1727,22 +1727,6 @@
 }
 },
 {
-"name": "pamela",
-"tags": [ "utility" ],
-"versions": " 1.0.0",
-"info":
-{
-"description": "<p>Pamela is a Python wrapper for PAM </p>",
-"usageNotes": "<p>Usage information is available on <a href='https://github.com/minrk/pamela'>github.com</a>.</p>",
-"linkToSite": "https://github.com/minrk/pamela",
-"siteName": "github.com",
-"license": "MIT",
-"linkToLicense": "https://github.com/minrk/pamela/blob/main/COPYING",
-"version": "(py3) 1.0.0",
-"installCommand": "pamela==1.0.0 --hash=sha256:97642dd53d9582831fef44f5d8832e18141d9d4ac10d3d4a7217510f00e3e87c"
-}
-},
-{
 "name": "pandas-datareader",
 "tags": [ "math","utility","machine_learning" ],
 "versions": " 0.10.0",
@@ -2945,7 +2929,7 @@
 {
 "name": "werkzeug",
 "tags": [ "web","utility","programming_tools" ],
-"versions": " 2.3.8",
+"versions": " 3.0.1",
 "info":
 {
 "description": "<p>werkzeug; German noun: “tool”. Etymology: <i>werk</i> (“work”), <i>zeug</i> (“stuff”)</p><p>Werkzeug is a comprehensive <a href='https://wsgi.readthedocs.io/en/latest/'>WSGI</a> web application library. It began as a simple collection of various utilities for WSGI applications and has become one of the most advanced WSGI utility libraries.</p><p>It includes:</p><ul>    <li>An interactive debugger that allows inspecting stack traces and source code in the browser with an interactive interpreter for any frame in the stack.</li>    <li>A full-featured request object with objects to interact with headers, query args, form data, files, and cookies.</li>    <li>A response object that can wrap other WSGI applications and handle streaming data.</li>    <li>A routing system for matching URLs to endpoints and generating URLs for endpoints, with an extensible system for capturing variables from URLs.</li>    <li>HTTP utilities to handle entity tags, cache control, dates, user agents, cookies, files, and more.</li>    <li>A threaded WSGI server for use while developing applications locally.</li>    <li>A test client for simulating HTTP requests during testing without requiring running a server.</li></ul><p>Werkzeug doesn’t enforce any dependencies. It is up to the developer to choose a template engine, database adapter, and even how to handle requests. It can be used to build all sorts of end user applications such as blogs, wikis, or bulletin boards.</p><p>Flask wraps Werkzeug, using it to handle the details of WSGI while providing more structure and patterns for defining powerful applications.</p>",
@@ -2954,8 +2938,8 @@
 "siteName": "palletsprojects.com/p/werkzeug",
 "license": "BSD3",
 "linkToLicense": "https://github.com/pallets/werkzeug/blob/main/LICENSE.rst",
-"version": "(py3) 2.3.8",
-"installCommand": "werkzeug==2.3.8 --hash=sha256:089ebc959ce9d6c0e314ae4b079195871fc2870b3262574df69bb04c229bef9d"
+"version": "(py3) 3.0.1",
+"installCommand": "werkzeug==3.0.1 --hash=sha256:5b8086c6d10fb79908447b430960c18cd561f655aba86214e5518ece6cebc7ba"
 }
 },
 {
