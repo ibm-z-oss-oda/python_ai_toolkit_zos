@@ -2561,7 +2561,7 @@
 {
 "name": "sqlalchemy",
 "tags": [ "utility" ],
-"versions": " 2.0.12 2.0.12.dev0",
+"versions": " 2.0.12",
 "info":
 {
 "description": "<p>SQLAlchemy is the Python SQL toolkit and Object Relational Mapper that gives application developers the full power and flexibility of SQL. SQLAlchemy provides a full suite of well known enterprise-level persistence patterns, designed for efficient and high-performing database access, adapted into a simple and Pythonic domain language.</p>",
@@ -2570,8 +2570,8 @@
 "siteName": "github.com",
 "license": "MIT",
 "linkToLicense": "https://github.com/sqlalchemy/sqlalchemy/blob/main/LICENSE",
-"version": "(py3) 2.0.12.dev0",
-"installCommand": "sqlalchemy==2.0.12.dev0 --hash=sha256:08db90c006db5414f1e1a376f6ab2a215b4063317277436c7be13d2b0adda29d"
+"version": "(cp311) 2.0.12",
+"installCommand": "sqlalchemy==2.0.12 --hash=sha256:96f0586b7a8fef641d1e3b0bf3d6f5f52dfc0df6a56eaaf910012d9bf1cb1a3f"
 }
 },
 {
@@ -2849,7 +2849,7 @@
 {
 "name": "urllib3",
 "tags": [ "web","utility","programming_tools" ],
-"versions": " 1.26.14",
+"versions": " 1.26.18",
 "info":
 {
 "description": "<p>urllib3 is a powerful, user-friendly HTTP client for Python. Much of the Python ecosystem already uses urllib3 and you should too. urllib3 brings many critical features that are missing from the Python standard libraries:</p><ul><li>Thread safety. </li><li>Connection pooling. </li><li>Client-side SSL/TLS verification. </li><li>File uploads with multipart encoding. </li><li>Helpers for retrying requests and dealing with HTTP redirects. </li><li>Support for gzip, deflate, and brotli encoding. </li><li>Proxy support for HTTP and SOCKS. </li><li>100% test coverage. </li></ul>",
@@ -2858,8 +2858,8 @@
 "siteName": "readthedocs.io",
 "license": "MIT",
 "linkToLicense": "https://github.com/urllib3/urllib3/blob/main/LICENSE.txt",
-"version": "(py3) 1.26.14",
-"installCommand": "urllib3==1.26.14 --hash=sha256:75edcdc2f7d85b137124a6c3c9fc3933cdeaa12ecb9a6a959f22797a0feca7e1"
+"version": "(py3) 1.26.18",
+"installCommand": "urllib3==1.26.18 --hash=sha256:4015a2a198ec94ce62c26ff552106aa68cafa051d98d412f886b73b3ffd086d9"
 }
 },
 {
@@ -2881,7 +2881,7 @@
 {
 "name": "virtualenv",
 "tags": [ "utility" ],
-"versions": " 20.23.0",
+"versions": " 20.23.0.post0",
 "info":
 {
 "description": "<p>A tool for creating isolated virtual python environments. </p>",
@@ -2890,8 +2890,8 @@
 "siteName": "https://github.com/ibm-z-oss-oda/virtualenv",
 "license": "MIT",
 "linkToLicense": "https://github.com/ibm-z-oss-oda/virtualenv/blob/main/LICENSE",
-"version": "(py3) 20.23.0",
-"installCommand": "virtualenv==20.23.0 --hash=sha256:6779d134249bf3584a4947cb5925da663698b98a5b10db799aa359eff8d4c402"
+"version": "(py3) 20.23.0.post0",
+"installCommand": "virtualenv==20.23.0.post0 --hash=sha256:6eec52a31ebfd98ede27298a0ba54fe5c0a7224f32a86b2b2f2cb714bed6b656"
 }
 },
 {
