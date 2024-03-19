@@ -1857,7 +1857,7 @@
 {
 "name": "pillow",
 "tags": [ "graphics" ],
-"versions": " 10.0.1",
+"versions": " 10.2.0",
 "info":
 {
 "description": "<p>The Python Imaging Library adds image processing capabilities to your Python interpreter.</p><p>This library provides extensive file format support, an efficient internal representation, and fairly powerful image processing capabilities.</p><p>The core image library is designed for fast access to data stored in a few basic pixel formats. It should provide a solid foundation for a general image processing tool.</p>",
@@ -1866,8 +1866,8 @@
 "siteName": "python-pillow.org",
 "license": "OTHER",
 "linkToLicense": "https://github.com/python-pillow/Pillow/blob/main/LICENSE",
-"version": "(cp311) 10.0.1",
-"installCommand": "pillow==10.0.1 --hash=sha256:95aed4891ac6eab66a6297b35675457799b3433b37218beb49dcf08a7afe6e64"
+"version": "(cp311) 10.2.0",
+"installCommand": "pillow==10.2.0 --hash=sha256:8b9bbce560a1aa70ac471f9e2968e364b8d1293b76e3e0df91c9cc814bf26c19"
 }
 },
 {
