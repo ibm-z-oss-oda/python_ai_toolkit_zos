@@ -30,6 +30,7 @@
   <div>
     <div class="heading02">{{_messageService.getBundle('PACKAGES_LICSEN')}}</div>
       <!--package linkToLicense-->
+      <p *ngIf="packageInfoData.name == 'dash'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}</a></p>
       <p *ngIf="packageInfoData.name == 'chardet'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}</a></p>
       <p *ngIf="packageInfoData.name == 'glib'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}</a></p>
       <p *ngIf="packageInfoData.name == 'pyzmq'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}</a></p>
