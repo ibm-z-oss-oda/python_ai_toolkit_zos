@@ -34,7 +34,7 @@
       <p *ngIf="packageInfoData.name == 'glib'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}</a></p>
       <p *ngIf="packageInfoData.name == 'pyzmq'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}</a></p>
       <p *ngIf="packageInfoData.name == 'freetype2'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}</a></p>
-      <div *ngIf="packageInfoData.name != 'freetype2' && packageInfoData.name != 'chardet' && packageInfoData.name != 'glib' && packageInfoData.name != 'pyzmq'"><p><i>{{_messageService.getBundle('PACKAGE_NEW_LICSEN_STRING1')}}</i></p><p><i>{{_messageService.getBundle('PACKAGE_NEW_LICSEN_STRING2')}}</i></p></div>
+      <div *ngIf="packageInfoData.name != 'freetype2' && packageInfoData.name != 'dash' && packageInfoData.name != 'chardet' && packageInfoData.name != 'glib' && packageInfoData.name != 'pyzmq'"><p><i>{{_messageService.getBundle('PACKAGE_NEW_LICSEN_STRING1')}}</i></p><p><i>{{_messageService.getBundle('PACKAGE_NEW_LICSEN_STRING2')}}</i></p></div>
     <div>
       <!--package License description-->
       <p>
