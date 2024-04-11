@@ -83,7 +83,7 @@ iniconfig==2.0.0 --hash=sha256:b6a85871a79d2e3b22d2d1b94ac2824226a63c6b741c88f7a
 ipykernel==6.9.1 --hash=sha256:0ac19e83f030d323d5aad2c76e47010e0a0dce0f49fafd8d9f8dd3124bb82f0a
 ipython-genutils==0.3.0 --hash=sha256:d9411249d0a53101a0482e3a66166b443e68da1b4b1b337aea4acba94a640a74
 ipython==8.13.2.post0 --hash=sha256:1740e53831df2046deb2e59906b879751fcaf01b707e9d22e27c4ccdcfac0494
-ipywidgets==8.0.6.post0 --hash=sha256:d6c476c91d99fc56dc196bbb464ae60014268250d4bf4142c3d50661b73eba94
+ipywidgets==8.0.6.post1 --hash=sha256:505ca9733cf271b36c455ec85525ce27da0bff740aa64a4b565e697486c8e7b5
 itsdangerous==2.1.2 --hash=sha256:51eb7c970c4feead7f18525f75a1aac91c60decd0c1342f313c8c2d8511a8c51
 JayDeBeApi==1.2.3 --hash=sha256:b5e23093ac951361f3c169cc70c1e56ec72c147109bfde5368ceae625c7a648a
 jdcal==1.4.1 --hash=sha256:f276d6a919d32485f74f4a14b8056e4c89f2bb6b14b6a301deb042632ccefa3f
@@ -100,7 +100,7 @@ jupyter-kernel-gateway==2.5.1 --hash=sha256:735e4c5bf9678e4c6ccb2bf34dcca33c1a4f
 jupyter-telemetry==0.1.0 --hash=sha256:21bd4563f9a1f20302dbcad07bfdf36d9de67f9d2cb121dfcc7f9e9426645a90
 jupyter==1.1.0 --hash=sha256:52dc0a9d37ea49189700cea3722afd89d5d781ace2c2954fae16e733b80c55ca
 jupyter_core==5.2.0 --hash=sha256:4bdc2928c37f6917130c667d8b8708f20aee539d8283c6be72aabd2a4b4c83b0
-jupyterlab-pygments==0.2.2.post1 --hash=sha256:5a63402c63225325e741a7f4b993e23a98b7471882c440c8152bc9e895e874b2
+jupyterlab-pygments==0.2.2.post2 --hash=sha256:bd23cd52543729c4a3079d301fec8f3355e5e7187de9ff7af882d66136a0ffd8
 jupyterlab-widgets==3.0.7 --hash=sha256:9801104084d7fe13b231b2daba8636845fa79f36fdec4115964859cce1dd3bac
 kiwisolver==1.4.4.post0 --hash=sha256:6af32904f67da6a614d50cedeb75341d2c2e91f51e380f350f3b19cf384c0e7a
 libcairo==1.17.6 --hash=sha256:62ac5c5670d23236a99837be8dd4741f8bdccacc469acd280492b54a811ebb3c
