@@ -30,12 +30,20 @@
   <div>
     <div class="heading02">{{_messageService.getBundle('PACKAGES_LICSEN')}}</div>
       <!--package linkToLicense-->
+      <p *ngIf="packageInfoData.name == 'h11'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}</a></p>
+      <p *ngIf="packageInfoData.name == 'jupyterlab-lsp'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}</a></p>
+      <p *ngIf="packageInfoData.name == 'jupyter-server'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}</a></p>
+      <p *ngIf="packageInfoData.name == 'jupyterlab'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}</a></p>
+      <p *ngIf="packageInfoData.name == 'jupyterhub'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}</a></p>
+      <p *ngIf="packageInfoData.name == 'jupyter-server-terminals'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}</a></p>
+      <p *ngIf="packageInfoData.name == 'jupyter-events'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}</a></p>
+      <p *ngIf="packageInfoData.name == 'jupyter-client'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}</a></p>
       <p *ngIf="packageInfoData.name == 'dash'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}</a></p>
       <p *ngIf="packageInfoData.name == 'chardet'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}</a></p>
       <p *ngIf="packageInfoData.name == 'glib'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}</a></p>
       <p *ngIf="packageInfoData.name == 'pyzmq'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}</a></p>
       <p *ngIf="packageInfoData.name == 'freetype2'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}</a></p>
-      <div *ngIf="packageInfoData.name != 'freetype2' && packageInfoData.name != 'dash' && packageInfoData.name != 'chardet' && packageInfoData.name != 'glib' && packageInfoData.name != 'pyzmq'"><p><i>{{_messageService.getBundle('PACKAGE_NEW_LICSEN_STRING1')}}</i></p><p><i>{{_messageService.getBundle('PACKAGE_NEW_LICSEN_STRING2')}}</i></p></div>
+      <div *ngIf="packageInfoData.name != 'freetype2' && packageInfoData.name != 'dash' && packageInfoData.name != 'jupyter-client' && packageInfoData.name != 'jupyter-events' && packageInfoData.name != 'jupyter-server-terminals' && packageInfoData.name != 'jupyterhub' && packageInfoData.name != 'jupyterlab' && packageInfoData.name != 'jupyter-server' && packageInfoData.name != 'jupyterlab-lsp' && packageInfoData.name != 'h11' && packageInfoData.name != 'chardet' && packageInfoData.name != 'glib' && packageInfoData.name != 'pyzmq'"><p><i>{{_messageService.getBundle('PACKAGE_NEW_LICSEN_STRING1')}}</i></p><p><i>{{_messageService.getBundle('PACKAGE_NEW_LICSEN_STRING2')}}</i></p></div>
     <div>
       <!--package License description-->
       <p>
