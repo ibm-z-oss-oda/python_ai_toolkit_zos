@@ -47,6 +47,22 @@
 }
 },
 {
+"name": "anyio",
+"tags": [ "utility" ],
+"versions": " 4.3.0",
+"info":
+{
+"description": "<p>AnyIO is an asynchronous networking and concurrency library that works on top of either asyncio or trio.</p>",
+"usageNotes": "<p>More information is available on <a href='https://anyio.readthedocs.io/en/stable/'>readthedocs.io</a>.</p>",
+"linkToSite": "https://github.com/agronholm/anyio",
+"siteName": "github.com",
+"license": "MIT",
+"linkToLicense": "https://github.com/agronholm/anyio/blob/master/LICENSE",
+"version": "(py3) 4.3.0",
+"installCommand": "anyio==4.3.0 --hash=sha256:bf3f1083f505408f015d6e3e5f59d5045565e35b89eb5a8d544cd521d33066f7"
+}
+},
+{
 "name": "argon2-cffi-bindings",
 "tags": [ "utility" ],
 "versions": " 21.2.0.post0 21.2.0.post0 21.2.0.post0",
@@ -76,6 +92,22 @@
 "linkToLicense": "https://github.com/hynek/argon2-cffi/blob/main/LICENSE",
 "version": "(py3) 21.3.0",
 "installCommand": "argon2-cffi==21.3.0 --hash=sha256:ca8776f6acbb0d565b739f1276dea6b6642c3d82d07d5e3456f3a806795eb3ac"
+}
+},
+{
+"name": "arrow",
+"tags": [ "utility" ],
+"versions": " 1.3.0",
+"info":
+{
+"description": "<p>Arrow is a Python library that offers a sensible and human-friendly approach to creating, manipulating, formatting and converting dates, times and timestamps.</p>",
+"usageNotes": "<p>More information is available on <a href='https://arrow.readthedocs.io/en/latest/'>readthedocs.io</a>.</p>",
+"linkToSite": "https://github.com/arrow-py/arrow",
+"siteName": "github.com",
+"license": "Apache-2.0",
+"linkToLicense": "https://github.com/arrow-py/arrow/blob/master/LICENSE",
+"version": "(py3) 1.3.0",
+"installCommand": "arrow==1.3.0 --hash=sha256:8b8a45b95d98c43b0d2468b3e03954428c8f06a9415db7b4c7ee76639fa2b080"
 }
 },
 {
@@ -111,6 +143,22 @@
 }
 },
 {
+"name": "async-lru",
+"tags": [ "utility" ],
+"versions": " 2.0.4",
+"info":
+{
+"description": "<p>This package is a port of Python's built-in functools.lru_cache function for asyncio.</p>",
+"usageNotes": "<p>Usage information is available on <a href='https://github.com/aio-libs/async-lru'>github.com</a>.</p>",
+"linkToSite": "https://github.com/aio-libs/async-lru",
+"siteName": "github",
+"license": "MIT",
+"linkToLicense": "https://github.com/aio-libs/async-lru/blob/master/LICENSE",
+"version": "(py3) 2.0.4",
+"installCommand": "async-lru==2.0.4 --hash=sha256:03b9c4c98c517cc797f1ef5ec6da5540a0b409157a5c6c24c43d84f20d764eae"
+}
+},
+{
 "name": "attrs",
 "tags": [ "programming_tools" ],
 "versions": " 22.2.0",
@@ -127,6 +175,22 @@
 }
 },
 {
+"name": "babel",
+"tags": [ "utility" ],
+"versions": " 2.14.0",
+"info":
+{
+"description": "<p>Babel is a Python library that provides an integrated collection of utilities that assist with internationalizing and localizing Python applications (in particular web-based applications.).</p>",
+"usageNotes": "<p>For advanced tool documentation, refer to <a href='https://babel.pocoo.org/en/latest/api/core.html#basic-interface'>babel.pocoo.org</a>.</p>",
+"linkToSite": "https://github.com/python-babel/babel",
+"siteName": "github.com",
+"license": "BSD-3-Clause",
+"linkToLicense": "https://github.com/python-babel/babel/blob/master/LICENSE",
+"version": "(py3) 2.14.0",
+"installCommand": "babel==2.14.0 --hash=sha256:451442e9bb5bda177d74bbbab22e1c3759a1ea1ba37d279723f326098ded5f6f"
+}
+},
+{
 "name": "backcall",
 "tags": [ "programming_tools" ],
 "versions": " 0.2.0",
@@ -140,6 +204,22 @@
 "linkToLicense": "https://github.com/takluyver/backcall/blob/master/LICENSE",
 "version": "(py3) 0.2.0",
 "installCommand": "backcall==0.2.0 --hash=sha256:e0a55adb4d86fa337ea93cf29c79a27b063945a4f8d5ca16122cd0fa9fbc5222"
+}
+},
+{
+"name": "bcrypt",
+"tags": [ "utility" ],
+"versions": " 3.2.1 3.2.1 3.2.1",
+"info":
+{
+"description": "<p>Modern(-ish) password hashing for your software and your servers.</p>",
+"usageNotes": "<p>More information is available on <a href='https://github.com/pyca/bcrypt'>github.com</a>.</p>",
+"linkToSite": "https://github.com/pyca/bcrypt",
+"siteName": "github.com",
+"license": "Apache-2.0",
+"linkToLicense": "https://github.com/pyca/bcrypt/blob/main/LICENSE",
+"version": "(cp312) 3.2.1",
+"installCommand": "bcrypt==3.2.1 --hash=sha256:8dcf044c30df7bcfd6ea10cc50b0fa33cf5e991b867e7179c7163c7cfe4f2ddc"
 }
 },
 {
@@ -255,6 +335,22 @@
 }
 },
 {
+"name": "certipy",
+"tags": [ "utility" ],
+"versions": " 0.1.3",
+"info":
+{
+"description": "<p>A simple python tool for creating certificate authorities and certificates on the fly.</p>",
+"usageNotes": "<p>Usage information is available on <a href='https://github.com/LLNL/certipy/blob/master/README.md'>github.com</a>.</p>",
+"linkToSite": "https://github.com/LLNL/certipy",
+"siteName": "github.com",
+"license": "BSD-3-Clause",
+"linkToLicense": "https://github.com/LLNL/certipy/blob/master/LICENSE",
+"version": "(py3) 0.1.3",
+"installCommand": "certipy==0.1.3 --hash=sha256:22187da55d5f541a4c1d1559a6a30dd6e4824123e0f21d243e68e8c8a331beb8"
+}
+},
+{
 "name": "cffi",
 "tags": [ "languages" ],
 "versions": " 1.14.6 1.14.6 1.16.0",
@@ -348,6 +444,22 @@
 "linkToLicense": "https://github.com/ipython/comm#BSD-3-Clause-1-ov-file",
 "version": "(py3) 0.2.1",
 "installCommand": "comm==0.2.1 --hash=sha256:13c42ebd84f09cc76b9bc483f2afdfce96ee97d25f27f479c3df1e033b447b61"
+}
+},
+{
+"name": "configurable-http-proxy",
+"tags": [ "utility" ],
+"versions": " 0.3.0",
+"info":
+{
+"description": "<p>This is a pure python implementation of the configurable-http-proxy written in nodejs. It is meant to be a drop in replacement.</p>",
+"usageNotes": "<p>More information is available on <a href='https://github.com/corridor/configurable-http-proxy'>github.com</a>.</p>",
+"linkToSite": "https://github.com/corridor/configurable-http-proxy",
+"siteName": "github.com",
+"license": "Apache-2.0",
+"linkToLicense": "https://github.com/corridor/configurable-http-proxy/blob/main/LICENSE",
+"version": "(py3) 0.3.0",
+"installCommand": "configurable-http-proxy==0.3.0 --hash=sha256:20ed6106f25f76c94693b81cd8a04981e1d963bdac751f8c69d9c600ccba6cdc"
 }
 },
 {
@@ -545,7 +657,7 @@
 {
 "name": "distlib",
 "tags": [ "utility" ],
-"versions": " 0.3.6",
+"versions": " 0.3.8",
 "info":
 {
 "description": "<p>Distlib is a library which implements low-level functions that relate to packaging and distribution of Python software.   </p>",
@@ -554,8 +666,8 @@
 "siteName": "https://github.com/pypa/distlib",
 "license": "Python Software Foundation",
 "linkToLicense": "https://github.com/pypa/distlib/blob/master/LICENSE.txt",
-"version": "(py3) 0.3.6",
-"installCommand": "distlib==0.3.6 --hash=sha256:f35c4b692542ca110de7ef0bea44d73981caeb34ca0b9b6b2e6d7790dda8f80e"
+"version": "(py3) 0.3.8",
+"installCommand": "distlib==0.3.8 --hash=sha256:034db59a0b96f8ca18035f36290806a9a6e6bd9d1ff91e45a7f172eb17e51784"
 }
 },
 {
@@ -639,6 +751,22 @@
 }
 },
 {
+"name": "exceptiongroup",
+"tags": [ "utility" ],
+"versions": " 1.2.1",
+"info":
+{
+"description": "<p>This is a backport of the BaseExceptionGroup and ExceptionGroup classes from Python 3.11.</p>",
+"usageNotes": "<p>Usage information is available on <a href='https://pypi.org/project/exceptiongroup/'>pypi.org</a>.</p>",
+"linkToSite": "https://github.com/agronholm/exceptiongroup",
+"siteName": "github.com",
+"license": "MIT",
+"linkToLicense": "https://github.com/agronholm/exceptiongroup/blob/main/LICENSE",
+"version": "(py3) 1.2.1",
+"installCommand": "exceptiongroup==1.2.1 --hash=sha256:e80f0bbcfc6cdbadabbc3ccb4e8435a6b7251289b075e31b45ca3a22fce64324"
+}
+},
+{
 "name": "executing",
 "tags": [ "utility" ],
 "versions": " 1.2.0",
@@ -673,7 +801,7 @@
 {
 "name": "filelock",
 "tags": [ "utility" ],
-"versions": " 3.12.0",
+"versions": " 3.13.4",
 "info":
 {
 "description": "<p>This package contains a single module, which implements a platform independent file lock in Python, which provides a simple way of inter-process communication. </p>",
@@ -682,8 +810,8 @@
 "siteName": "https://github.com/tox-dev/py-filelock",
 "license": "Unlicense",
 "linkToLicense": "https://github.com/tox-dev/py-filelock/blob/main/LICENSE",
-"version": "(py3) 3.12.0",
-"installCommand": "filelock==3.12.0 --hash=sha256:998eea40018ab75e1d09f28d89d637a948d76ab58f99b24b9d7697181f3c9b83"
+"version": "(py3) 3.13.4",
+"installCommand": "filelock==3.13.4 --hash=sha256:404e5e9253aa60ad457cae1be07c0f0ca90a63931200a47d9b6a6af84fd7b45f"
 }
 },
 {
@@ -767,6 +895,22 @@
 }
 },
 {
+"name": "fqdn",
+"tags": [ "utility" ],
+"versions": " 1.5.1",
+"info":
+{
+"description": "<p>This package validates Fully Qualified Domain Names (FQDNs) conforming to the Internet Engineering Task Force specification.</p>",
+"usageNotes": "<p>More information is available on <a href='https://github.com/ypcrts/fqdn'>github.com</a>.</p>",
+"linkToSite": "https://github.com/ypcrts/fqdn",
+"siteName": "github.com",
+"license": "MPL-2.0",
+"linkToLicense": "https://github.com/ypcrts/fqdn/blob/develop/LICENSE",
+"version": "(py3) 1.5.1",
+"installCommand": "fqdn==1.5.1 --hash=sha256:f60e2ad966475c461bf2a98fe497bfc7b013a94887d8aa392cdedb1efe2dcbde"
+}
+},
+{
 "name": "freetype2",
 "tags": [ "graphics" ],
 "versions": " 2.12.2.post0",
@@ -801,7 +945,7 @@
 {
 "name": "future",
 "tags": [ "programming_tools","utility" ],
-"versions": " 0.18.3.post2",
+"versions": " 0.18.3.post3",
 "info":
 {
 "description": "<p><code>python-future</code> is the missing compatibility layer between Python 2 and Python 3. It allows you to use a single, clean Python 3.x-compatible codebase to support both Python 2 and Python 3 with minimal overhead.</p>",
@@ -810,8 +954,8 @@
 "siteName": "python-future.org",
 "license": "MIT",
 "linkToLicense": "https://github.com/PythonCharmers/python-future/blob/master/LICENSE.txt",
-"version": "(py3) 0.18.3.post2",
-"installCommand": "future==0.18.3.post2 --hash=sha256:7e5418ecd73f95d791439befa691440e5ca1874b867aa70d0577959afec22eed"
+"version": "(py3) 0.18.3.post3",
+"installCommand": "future==0.18.3.post3 --hash=sha256:9db0f8fa25df620e8c6cee1a1d53dc852f4fad80f248fea3940f71024e18eb94"
 }
 },
 {
@@ -863,6 +1007,22 @@
 }
 },
 {
+"name": "h11",
+"tags": [ "utility" ],
+"versions": " 0.14.0",
+"info":
+{
+"description": "<p>This is a little HTTP/1.1 library written from scratch in Python, heavily inspired by hyper-h2.</p>",
+"usageNotes": "<p>More information is available on <a href='https://github.com/python-hyper/h11'>github.com</a>.</p>",
+"linkToSite": "https://github.com/python-hyper/h11",
+"siteName": "github.com",
+"license": "MIT",
+"linkToLicense": "https://github.com/ypcrts/fqdn/blob/develop/LICENSE",
+"version": "(py3) 0.14.0",
+"installCommand": "h11==0.14.0 --hash=sha256:cd51351488b66567ca5f2855aaf594c96f8d326656a616d2d44052bf4fd86e37"
+}
+},
+{
 "name": "harfbuzz",
 "tags": [ "graphics","languages" ],
 "versions": " 7.0.0",
@@ -908,6 +1068,38 @@
 "linkToLicense": "https://github.com/html5lib/html5lib-python/blob/master/LICENSE",
 "version": "(py3) 1.1.post3",
 "installCommand": "html5lib==1.1.post3 --hash=sha256:33a09ab07352d598dcb81531e9ba269b1ed6ce985eca79f59cdd2f2a9093f156"
+}
+},
+{
+"name": "httpcore",
+"tags": [ "utility" ],
+"versions": " 1.0.4",
+"info":
+{
+"description": "<p>The HTTP Core package provides a minimal low-level HTTP client, which does one thing only. Sending HTTP requests.</p>",
+"usageNotes": "<p>More information is available on <a href='https://www.encode.io/httpcore/'>encode.io</a>.</p>",
+"linkToSite": "https://github.com/encode/httpcore",
+"siteName": "github.com",
+"license": "BSD-3-Clause",
+"linkToLicense": "https://github.com/encode/httpcore/blob/master/LICENSE.md",
+"version": "(py3) 1.0.4",
+"installCommand": "httpcore==1.0.4 --hash=sha256:6e6b5b848138c16cd44d62e6a573348426edfb60f9846264f321e980835e04bf"
+}
+},
+{
+"name": "httpx",
+"tags": [ "utility" ],
+"versions": " 0.27.0",
+"info":
+{
+"description": "<p>HTTPX is a fully featured HTTP client library for Python 3.</p>",
+"usageNotes": "<p>More information is available on <a href='https://www.python-httpx.org/'>python-httpx.org</a>.</p>",
+"linkToSite": "https://github.com/encode/httpx",
+"siteName": "github.com",
+"license": "BSD-3-Clause",
+"linkToLicense": "https://github.com/encode/httpx/blob/master/LICENSE.md",
+"version": "(py3) 0.27.0",
+"installCommand": "httpx==0.27.0 --hash=sha256:4c0dceec140574bfca2a0d69c2bb9b534aafa342c895e1991f212a1db81d864e"
 }
 },
 {
@@ -1073,7 +1265,7 @@
 {
 "name": "ipywidgets",
 "tags": [ "web","graphics" ],
-"versions": " 8.0.6.post0",
+"versions": " 8.0.6.post1",
 "info":
 {
 "description": "<p>ipywidgets, also known as jupyter-widgets or simply widgets, are interactive HTML widgets for Jupyter notebooks and the IPython kernel.</p><p>Notebooks come alive when interactive widgets are used. Users gain control of their data and can visualize changes in the data.</p><p>Learning becomes an immersive, fun experience. Researchers can easily see how changing inputs to a model impact the results.</p>",
@@ -1082,8 +1274,24 @@
 "siteName": "ipython.org",
 "license": "BSD3",
 "linkToLicense": "https://github.com/jupyter-widgets/ipywidgets/blob/master/LICENSE",
-"version": "(py3) 8.0.6.post0",
-"installCommand": "ipywidgets==8.0.6.post0 --hash=sha256:d6c476c91d99fc56dc196bbb464ae60014268250d4bf4142c3d50661b73eba94"
+"version": "(py3) 8.0.6.post1",
+"installCommand": "ipywidgets==8.0.6.post1 --hash=sha256:505ca9733cf271b36c455ec85525ce27da0bff740aa64a4b565e697486c8e7b5"
+}
+},
+{
+"name": "isoduration",
+"tags": [ "utility" ],
+"versions": " 20.11.0",
+"info":
+{
+"description": "<p>Operations with ISO 8601 durations.</p>",
+"usageNotes": "<p>More information is available on <a href='https://github.com/bolsote/isoduration'>github.com</a>.</p>",
+"linkToSite": "https://github.com/bolsote/isoduration",
+"siteName": "github.com",
+"license": "ISC",
+"linkToLicense": "https://github.com/bolsote/isoduration/blob/master/LICENSE",
+"version": "(py3) 20.11.0",
+"installCommand": "isoduration==20.11.0 --hash=sha256:d722925176b4aaf1ecc14035b80a8af343c89692298b05fe63ca54a7bd66f71e"
 }
 },
 {
@@ -1199,6 +1407,22 @@
 }
 },
 {
+"name": "json5",
+"tags": [ "utility" ],
+"versions": " 0.9.25",
+"info":
+{
+"description": "<p>A Python implementation of the JSON5 data format.</p>",
+"usageNotes": "<p>More information is available on <a href='https://github.com/dpranke/pyjson5'>github.com</a>.</p>",
+"linkToSite": "https://github.com/dpranke/pyjson5",
+"siteName": "github.com",
+"license": "Apache-2.0",
+"linkToLicense": "https://github.com/dpranke/pyjson5/blob/main/LICENSE",
+"version": "(py3) 0.9.25",
+"installCommand": "json5==0.9.25 --hash=sha256:a0a88420a17700b8002dfbe4090cb762eb73d23e0108a37ac29eea993bf0ae88"
+}
+},
+{
 "name": "jsonpickle",
 "tags": [ "utility" ],
 "versions": " 1.5.1",
@@ -1212,6 +1436,22 @@
 "linkToLicense": "https://github.com/ibm-z-oss-oda/jsonpickle/blob/main/LICENSE",
 "version": "(py3) 1.5.1",
 "installCommand": "jsonpickle==1.5.1 --hash=sha256:6eebc763ab29d2f5f3a47cff1b039d3a9554366b1a2a49a8df093756a3cf102d"
+}
+},
+{
+"name": "jsonpointer",
+"tags": [ "utility" ],
+"versions": " 2.4",
+"info":
+{
+"description": "<p>Resolve JSON Pointers in Python.</p>",
+"usageNotes": "<p>More information is available on <a href='https://python-json-pointer.readthedocs.io/en/latest/'>readthedocs.io</a>.</p>",
+"linkToSite": "https://github.com/stefankoegl/python-json-pointer",
+"siteName": "github.com",
+"license": "BSD-1-Clause",
+"linkToLicense": "https://github.com/stefankoegl/python-json-pointer/blob/master/LICENSE.txt",
+"version": "(py3) 2.4",
+"installCommand": "jsonpointer==2.4 --hash=sha256:ff8b546e4f5346943590c16617209ba47906a0174c0259af4d8bfabc02a88c6b"
 }
 },
 {
@@ -1233,7 +1473,7 @@
 {
 "name": "jupyter-client",
 "tags": [ "languages" ],
-"versions": " 7.3.5.post1",
+"versions": " 7.4.9.post3",
 "info":
 {
 "description": "<p><code>jupyter_client</code> contains the reference implementation of the <a href='https://jupyter-client.readthedocs.io/en/latest/messaging.html'>Jupyter protocol</a>. It also provides client and kernel management APIs for working with kernels.</p><p>It also provides the <code>jupyter kernelspec</code> entrypoint for installing kernelspecs for use with Jupyter frontends.</p>",
@@ -1242,8 +1482,8 @@
 "siteName": "jupyter.org",
 "license": "BSD3",
 "linkToLicense": "https://github.com/jupyter/jupyter_client/blob/main/COPYING.md",
-"version": "(py3) 7.3.5.post1",
-"installCommand": "jupyter-client==7.3.5.post1 --hash=sha256:548c3bef7e42ff946461e2aabbd73dc42f12cfff80b436f59ff7028eb2a38acf"
+"version": "(py3) 7.4.9.post3",
+"installCommand": "jupyter-client==7.4.9.post3 --hash=sha256:e6c3d7ba333af6716a518a3fde94840e3e0105f1c9c135262886aeecb4452215"
 }
 },
 {
@@ -1279,6 +1519,22 @@
 }
 },
 {
+"name": "jupyter-events",
+"tags": [ "utility" ],
+"versions": " 0.6.3",
+"info":
+{
+"description": "<p>An event system for Jupyter Applications and extensions.</p>",
+"usageNotes": "<p>More information is available on <a href='https://jupyter-events.readthedocs.io/en/latest/'>readthedocs.io</a>.</p>",
+"linkToSite": "https://github.com/jupyter/jupyter_events",
+"siteName": "github.com",
+"license": "BSD-3-Clause",
+"linkToLicense": "https://github.com/jupyter/jupyter_events/blob/main/LICENSE",
+"version": "(py3) 0.6.3",
+"installCommand": "jupyter-events==0.6.3 --hash=sha256:29f5de1e45f1617fd3aa7b532cb664e74d17ed04ee0dae9e6d5656343ba2642a"
+}
+},
+{
 "name": "jupyter-kernel-gateway",
 "tags": [ "utility" ],
 "versions": " 2.5.1",
@@ -1292,6 +1548,54 @@
 "linkToLicense": "https://github.com/jupyter-server/kernel_gateway/blob/master/LICENSE.md",
 "version": "(py3) 2.5.1",
 "installCommand": "jupyter-kernel-gateway==2.5.1 --hash=sha256:735e4c5bf9678e4c6ccb2bf34dcca33c1a4f13599f5e2efe6f0cd0854bc8d3f2"
+}
+},
+{
+"name": "jupyterlab-lsp",
+"tags": [ "utility" ],
+"versions": " 2.2.4.post0",
+"info":
+{
+"description": "<p>Language Server Protocol integration for Jupyter(Lab).</p>",
+"usageNotes": "<p>More information is available on <a href='https://github.com/jupyter-lsp/jupyterlab-lsp'>github.com</a>.</p>",
+"linkToSite": "https://github.com/jupyter-lsp/jupyterlab-lsp",
+"siteName": "github.com",
+"license": "BSD-3-Clause",
+"linkToLicense": "https://github.com/jupyter-lsp/jupyterlab-lsp/blob/main/LICENSE",
+"version": "(py3) 2.2.4.post0",
+"installCommand": "jupyterlab-lsp==2.2.4.post0 --hash=sha256:735e4c5bf9678e4c6ccb2bf34dcca33c1a4f13599f5e2efe6f0cd0854bc8d3f2"
+}
+},
+{
+"name": "jupyter-server-terminals",
+"tags": [ "utility" ],
+"versions": " 0.4.4",
+"info":
+{
+"description": "<p>Jupyter Server Terminals is a Jupyter Server Extension providing support for terminals.</p>",
+"usageNotes": "<p>More information is available on <a href='https://github.com/jupyter-server/jupyter_server_terminals'>github.com</a>.</p>",
+"linkToSite": "https://github.com/jupyter-server/jupyter_server_terminals",
+"siteName": "github.com",
+"license": "BSD-3-Clause",
+"linkToLicense": "https://github.com/jupyter-server/jupyter_server_terminals/blob/main/LICENSE",
+"version": "(py3) 0.4.4",
+"installCommand": "jupyter-server-terminals==0.4.4 --hash=sha256:4e272d166c2848e1df373588abfa9c31fc21925c28fec5a780db062fc0aada35"
+}
+},
+{
+"name": "jupyter-server",
+"tags": [ "utility" ],
+"versions": " 2.5.0",
+"info":
+{
+"description": "<p>The Jupyter Server provides the backend (i.e. the core services, APIs, and REST endpoints) for Jupyter web applications like Jupyter notebook, JupyterLab, and Voila.</p>",
+"usageNotes": "<p>More information is available on <a href='https://jupyter-server.readthedocs.io/en/latest/?badge=latest'>readthedocs.io</a>.</p>",
+"linkToSite": "https://github.com/jupyter-server/jupyter_server",
+"siteName": "github.com",
+"license": "BSD-3-Clause",
+"linkToLicense": "https://github.com/jupyter-server/jupyter_server/blob/main/LICENSE",
+"version": "(py3) 2.5.0",
+"installCommand": "jupyter-server==2.5.0 --hash=sha256:586358695858fc3ec4c1a3d33faaab60907dfca65cbbef6b3e0bf8b2c3f1869d"
 }
 },
 {
@@ -1343,9 +1647,57 @@
 }
 },
 {
+"name": "jupyterhub-idle-culler",
+"tags": [ "utility" ],
+"versions": " 1.3.0",
+"info":
+{
+"description": "<p>jupyterhub-idle-culler provides a JupyterHub service to identify and stop idle or long-running Jupyter servers via JupyterHub.</p>",
+"usageNotes": "<p>Usage information is available on <a href='https://github.com/jupyterhub/jupyterhub-idle-culler/blob/main/README.md'>github.com</a>.</p>",
+"linkToSite": "https://github.com/jupyterhub/jupyterhub-idle-culler",
+"siteName": "github.com",
+"license": "BSD-3-Clause",
+"linkToLicense": "https://github.com/jupyterhub/jupyterhub-idle-culler/blob/main/COPYING.md",
+"version": "(py3) 1.3.0",
+"installCommand": "jupyterhub-idle-culler==1.3.0 --hash=sha256:02dc2d76df24c56b9b34303f33f65bf4cf20f32f017fdac20af91c6e58a44921"
+}
+},
+{
+"name": "jupyterhub-nativeauthenticator",
+"tags": [ "utility" ],
+"versions": " 1.2.0",
+"info":
+{
+"description": "<p>This is a relatively simple authenticator for small or medium-sized JupyterHub applications. Signup and authentication are implemented as native to JupyterHub without relying on external services.</p>",
+"usageNotes": "<p>Usage information is available on <a href='https://native-authenticator.readthedocs.io/en/stable/'>readthedocs.io</a>.</p>",
+"linkToSite": "https://github.com/jupyterhub/nativeauthenticator",
+"siteName": "github.com",
+"license": "BSD-3-Clause",
+"linkToLicense": "https://github.com/jupyterhub/nativeauthenticator/blob/main/LICENSE",
+"version": "(py3) 1.2.0",
+"installCommand": "jupyterhub-nativeauthenticator==1.2.0 --hash=sha256:43230ad49c6cf756149321173d9265120e97ef0d8c69e5b72541843f7a64f2b2"
+}
+},
+{
+"name": "jupyterhub",
+"tags": [ "utility","web" ],
+"versions": " 4.1.5.post0",
+"info":
+{
+"description": "<p>Multi-user server for Jupyter notebooks. </p>",
+"usageNotes": "<p>More information is available on <a href='https://jupyterhub.readthedocs.io/'>readthedocs.io</a>.</p>",
+"linkToSite": "https://github.com/jupyterhub/jupyterhub",
+"siteName": "github.com",
+"license": "BSD-3-Clause",
+"linkToLicense": "https://github.com/jupyterhub/jupyterhub/blob/main/COPYING.md",
+"version": "(py3) 4.1.5.post0",
+"installCommand": "jupyterhub==4.1.5.post0 --hash=sha256:c1656ef90ccb88d8d1a58ff0fe157f3d56f98a67be023d6c7dd17cea6bc56cbb"
+}
+},
+{
 "name": "jupyterlab-pygments",
 "tags": [ "web","graphics" ],
-"versions": " 0.2.2.post1",
+"versions": " 0.2.2.post2",
 "info":
 {
 "description": "<p>This package contains a syntax coloring theme for <a href='http://pygments.org/'>pygments</a> making use of the JupyterLab CSS variables.</p><p>The goal is to enable the use of JupyterLab's themes with pygments-generated HTML.</p>",
@@ -1354,8 +1706,24 @@
 "siteName": "github",
 "license": "BSD3",
 "linkToLicense": "https://github.com/jupyterlab/jupyterlab_pygments/blob/main/LICENSE",
-"version": "(py3) 0.2.2.post1",
-"installCommand": "jupyterlab-pygments==0.2.2.post1 --hash=sha256:5a63402c63225325e741a7f4b993e23a98b7471882c440c8152bc9e895e874b2"
+"version": "(py3) 0.2.2.post2",
+"installCommand": "jupyterlab-pygments==0.2.2.post2 --hash=sha256:bd23cd52543729c4a3079d301fec8f3355e5e7187de9ff7af882d66136a0ffd8"
+}
+},
+{
+"name": "jupyterlab-server",
+"tags": [ "utility" ],
+"versions": " 2.19.0",
+"info":
+{
+"description": "<p>JupyterLab Server sits between JupyterLab and Jupyter Server, and provides a set of REST API handlers and utilities that are used by JupyterLab.</p>",
+"usageNotes": "<p>More information is available on <a href='https://jupyterlab-server.readthedocs.io/en/stable/api/index.html'>readthedocs.io</a>.</p>",
+"linkToSite": "https://github.com/jupyterlab/jupyterlab_server",
+"siteName": "github.com",
+"license": "BSD-3-Clause",
+"linkToLicense": "https://github.com/jupyterlab/jupyterlab_server/blob/main/LICENSE",
+"version": "(py3) 2.19.0",
+"installCommand": "jupyterlab-server==2.19.0 --hash=sha256:0c8db5141b2b23dd403e277ee556ec6c9dd8a4da5a3376493c2c488cd5212cd1"
 }
 },
 {
@@ -1372,6 +1740,22 @@
 "linkToLicense": "https://github.com/jupyter-widgets/ipywidgets/blob/master/LICENSE",
 "version": "(py3) 3.0.7",
 "installCommand": "jupyterlab-widgets==3.0.7 --hash=sha256:9801104084d7fe13b231b2daba8636845fa79f36fdec4115964859cce1dd3bac"
+}
+},
+{
+"name": "jupyterlab",
+"tags": [ "utility","web" ],
+"versions": " 4.1.2.post0",
+"info":
+{
+"description": "<p>An extensible environment for interactive and reproducible computing, based on the Jupyter Notebook and Architecture.</p>",
+"usageNotes": "<p>More information is available on <a href='https://jupyterlab.readthedocs.io/en/stable/'>readthedocs.io</a>.</p>",
+"linkToSite": "https://github.com/jupyterlab/jupyterlab",
+"siteName": "github.com",
+"license": "BSD-3-Clause",
+"linkToLicense": "https://github.com/jupyterlab/jupyterlab/blob/main/LICENSE",
+"version": "(py3) 4.1.2.post0",
+"installCommand": "jupyterlab==4.1.2.post0 --hash=sha256:2463c368d7d3cdfc87dcebf0bc38bc0cc904a62c137cbbc78978a09b51f66ef0"
 }
 },
 {
@@ -1759,6 +2143,22 @@
 }
 },
 {
+"name": "notebook-shim",
+"tags": [ "utility","web" ],
+"versions": " 0.2.3",
+"info":
+{
+"description": "<p>This project provides a way for JupyterLab and other frontends to switch to Jupyter Server for their Python Web application backend.</p>",
+"usageNotes": "<p>More information is available on <a href='https://github.com/jupyter/notebook_shim'>github.com</a>.</p>",
+"linkToSite": "https://github.com/jupyter/notebook_shim",
+"siteName": "github.com",
+"license": "BSD-3-Clause",
+"linkToLicense": "https://github.com/jupyter/notebook_shim/blob/main/LICENSE",
+"version": "(py3) 0.2.3",
+"installCommand": "notebook-shim==0.2.3 --hash=sha256:951a6dd620afb5d3829dd7963a8fd73d961d3ca5b45f54c62ce9a3d9265e86e3"
+}
+},
+{
 "name": "notebook",
 "tags": [ "machine_learning","web","graphics" ],
 "versions": " 6.4.12",
@@ -1804,6 +2204,22 @@
 "linkToLicense": "https://github.com/oauthlib/oauthlib/blob/master/LICENSE",
 "version": "(py3) 3.2.2.post0",
 "installCommand": "oauthlib==3.2.2.post0 --hash=sha256:e3d1cacfef9ef237752a2ffba7aafdaa5194259d1833f0420c7b4d6ec10bf605"
+}
+},
+{
+"name": "onetimepass",
+"tags": [ "utility" ],
+"versions": " 1.0.1",
+"info":
+{
+"description": "<p>OneTimePass (actually onetimepass) is a module for generating one-time passwords, namely HOTPs (HMAC-based one-time passwords) and TOTPs (time-based one-time passwords).</p>",
+"usageNotes": "<p>More information is available on <a href='https://github.com/tadeck/onetimepass'>github.com</a>.</p>",
+"linkToSite": "https://github.com/tadeck/onetimepass",
+"siteName": "github.com",
+"license": "MIT",
+"linkToLicense": "https://github.com/tadeck/onetimepass/blob/master/LICENSE.rst",
+"version": "(py3) 1.0.1",
+"installCommand": "onetimepass==1.0.1 --hash=sha256:e20859247888972752f317639aeaae52c784fa25f9ae5774ba6647de7943596e"
 }
 },
 {
@@ -1953,7 +2369,7 @@
 {
 "name": "pillow",
 "tags": [ "graphics" ],
-"versions": " 10.2.0 10.2.0 10.2.0",
+"versions": " 10.2.0 10.2.0 10.3.0",
 "info":
 {
 "description": "<p>The Python Imaging Library adds image processing capabilities to your Python interpreter.</p><p>This library provides extensive file format support, an efficient internal representation, and fairly powerful image processing capabilities.</p><p>The core image library is designed for fast access to data stored in a few basic pixel formats. It should provide a solid foundation for a general image processing tool.</p>",
@@ -1962,8 +2378,8 @@
 "siteName": "python-pillow.org",
 "license": "OTHER",
 "linkToLicense": "https://github.com/python-pillow/Pillow/blob/main/LICENSE",
-"version": "(cp312) 10.2.0",
-"installCommand": "pillow==10.2.0 --hash=sha256:63b362edb8cad2bdd1990e563e7b3d6ce2d44ce81eede36961620d82487e4658"
+"version": "(cp311) 10.3.0",
+"installCommand": "pillow==10.3.0 --hash=sha256:a2eaf8d0941777640ab3114d09620c9649a2ea758adf43965b8a4b7b4fcad9cc"
 }
 },
 {
@@ -2172,6 +2588,22 @@
 "linkToLicense": "https://github.com/mongodb/mongo-python-driver#Apache-2.0-1-ov-file",
 "version": "(cp311) 4.6.0",
 "installCommand": "pymongo==4.6.0 --hash=sha256:1fa27cdfd0a87245df14a7e309b2a5b50912e5dcce54b7cf75fda36d0daa6b65"
+}
+},
+{
+"name": "pyopenssl",
+"tags": [ "utility" ],
+"versions": " 21.0.0",
+"info":
+{
+"description": "<p>A Python wrapper around the OpenSSL library.</p>",
+"usageNotes": "<p>Documentation can be found at <a href='https://www.pyopenssl.org/en/latest/'>pyopenssl.org</a>.</p>",
+"linkToSite": "https://github.com/pyca/pyopenssl",
+"siteName": "github.com",
+"license": "Apache-2.0",
+"linkToLicense": "https://github.com/pyca/pyopenssl/blob/main/LICENSE",
+"version": "(py3) 21.0.0",
+"installCommand": "pyopenssl==21.0.0 --hash=sha256:93525c9d5b92649a9acad6003c4a782bfc9459eb9ca98df3036ac4b3f1863d31"
 }
 },
 {
@@ -2447,6 +2879,38 @@
 }
 },
 {
+"name": "rfc3339-validator",
+"tags": [ "utility" ],
+"versions": " 0.1.4",
+"info":
+{
+"description": "<p>A pure python RFC3339 validator.</p>",
+"usageNotes": "<p>More information is available on <a href='https://github.com/naimetti/rfc3339-validator'>github.com</a>.</p>",
+"linkToSite": "https://github.com/naimetti/rfc3339-validator",
+"siteName": "github.com",
+"license": "MIT",
+"linkToLicense": "https://github.com/naimetti/rfc3339-validator/blob/master/LICENSE",
+"version": "(py3) 0.1.4",
+"installCommand": "rfc3339-validator==0.1.4 --hash=sha256:5b9bae7fb739b5c6335723a3e97a843b25a938f621b58f6b3eff2a7d272e594e"
+}
+},
+{
+"name": "rfc3986-validator",
+"tags": [ "utility" ],
+"versions": " 0.1.1",
+"info":
+{
+"description": "<p>A pure python RFC3986 validator.</p>",
+"usageNotes": "<p>More information is available on <a href='https://github.com/naimetti/rfc3986-validator'>github.com</a>.</p>",
+"linkToSite": "https://github.com/naimetti/rfc3986-validator",
+"siteName": "github.com",
+"license": "MIT",
+"linkToLicense": "https://github.com/naimetti/rfc3986-validator/blob/master/LICENSE",
+"version": "(py3) 0.1.1",
+"installCommand": "rfc3986-validator==0.1.1 --hash=sha256:5f9954cb7d57ed14fdc278102151c7b4b07e89dfa1007eafed50842629b86e0c"
+}
+},
+{
 "name": "ruamel.yaml.clib",
 "tags": [ "utility" ],
 "versions": " 0.2.7.post0 0.2.7.post0 0.2.7.post0",
@@ -2636,6 +3100,22 @@
 "linkToLicense": "https://github.com/scikit-learn-contrib/sklearn-pandas/blob/master/LICENSE",
 "version": "(py3) 2.2.0",
 "installCommand": "sklearn-pandas==2.2.0 --hash=sha256:696cdad0ceb563c20185f409af7bc6f55006801d7e440f10e383fccb59ebcc4f"
+}
+},
+{
+"name": "sniffio",
+"tags": [ "utility" ],
+"versions": " 1.3.1",
+"info":
+{
+"description": "<p>Sniff out which async library your code is running under.</p>",
+"usageNotes": "<p>More information is available on <a href='https://sniffio.readthedocs.io'>readthedocs.io</a>.</p>",
+"linkToSite": "https://github.com/python-trio/sniffio",
+"siteName": "github.com",
+"license": "Apache-2.0",
+"linkToLicense": "https://github.com/python-trio/sniffio/blob/master/LICENSE",
+"version": "(py3) 1.3.1",
+"installCommand": "sniffio==1.3.1 --hash=sha256:65ab0e88941cc78bbc98570186dc5bbe52a62bfd5764b912392fd95be0545547"
 }
 },
 {
@@ -2865,7 +3345,7 @@
 {
 "name": "toree",
 "tags": [ "programming_tools","languages" ],
-"versions": " 0.5.0.post0",
+"versions": " 0.5.0.post2",
 "info":
 {
 "description": "<p>Apache Toree is a kernel for the Jupyter Notebook platform providing interactive access to Apache Spark. It has been developed using the IPython messaging protocol and 0MQ, and despite the protocol’s name, Apache Toree currently exposes the Spark programming model in Scala, Python and R languages.</p>",
@@ -2874,8 +3354,8 @@
 "siteName": "toree.apache.org",
 "license": "APACHE2",
 "linkToLicense": "https://github.com/apache/incubator-toree/blob/master/LICENSE",
-"version": "(py3) 0.5.0.post0",
-"installCommand": "toree==0.5.0.post0 --hash=sha256:e2c9306d5904ed8bd81af90d68e6fce2a3f8a14b97a9473883dcc62faf31a918"
+"version": "(py3) 0.5.0.post2",
+"installCommand": "toree==0.5.0.post2 --hash=sha256:6424276b8ebf4b681e0c15005cd6a50382345bc4bce28d08332c5dc3696cfbb7"
 }
 },
 {
@@ -2943,6 +3423,22 @@
 }
 },
 {
+"name": "types-python-dateutil",
+"tags": [ "utility" ],
+"versions": " 2.9.0.20240316",
+"info":
+{
+"description": "<p>Typeshed contains external type annotations for the Python standard library and Python builtins, as well as third party packages as contributed by people external to those projects.</p>",
+"usageNotes": "<p>More information is available on <a href='https://typing.readthedocs.io/en/latest/'>readthedocs.io</a>.</p>",
+"linkToSite": "https://github.com/python/typeshed",
+"siteName": "github.com",
+"license": "Apache-2.0",
+"linkToLicense": "https://github.com/python/typeshed/blob/main/LICENSE",
+"version": "(py3) 2.9.0.20240316",
+"installCommand": "types-python-dateutil==2.9.0.20240316 --hash=sha256:d2a63974d99735bfe27ecd94b0baccc7d8e5dd10ecb15d7d5dc69805e4b7ba86"
+}
+},
+{
 "name": "typing-extensions",
 "tags": [ "programming_tools" ],
 "versions": " 4.6.0",
@@ -2956,6 +3452,22 @@
 "linkToLicense": "https://github.com/ibm-z-oss-oda/typing_extensions/blob/main/LICENSE",
 "version": "(py3) 4.6.0",
 "installCommand": "typing-extensions==4.6.0 --hash=sha256:d8816f1ad45c05811c5f46ac5887c59800923220fb5995f684058a6ea0d07cc7"
+}
+},
+{
+"name": "uri-template",
+"tags": [ "utility" ],
+"versions": " 1.3.0",
+"info":
+{
+"description": "<p>An implementation of RFC 6570 URI Templates.</p>",
+"usageNotes": "<p>More information is available on <a href='https://gitlab.linss.com/open-source/python/uri-template'>github.com</a>.</p>",
+"linkToSite": "https://gitlab.linss.com/open-source/python/uri-template",
+"siteName": "gitlab.linss.com",
+"license": "MIT",
+"linkToLicense": "https://gitlab.linss.com/open-source/python/uri-template/-/blob/main/LICENSE",
+"version": "(py3) 1.3.0",
+"installCommand": "uri-template==1.3.0 --hash=sha256:23ad977f7555c9de5f375ad2ef43bcc0c7ee83422bfe4ead5a7b041e769e2c07"
 }
 },
 {
@@ -2993,7 +3505,7 @@
 {
 "name": "virtualenv",
 "tags": [ "utility" ],
-"versions": " 20.23.0.post0",
+"versions": " 20.25.3",
 "info":
 {
 "description": "<p>A tool for creating isolated virtual python environments. </p>",
@@ -3002,8 +3514,8 @@
 "siteName": "https://github.com/ibm-z-oss-oda/virtualenv",
 "license": "MIT",
 "linkToLicense": "https://github.com/ibm-z-oss-oda/virtualenv/blob/main/LICENSE",
-"version": "(py3) 20.23.0.post0",
-"installCommand": "virtualenv==20.23.0.post0 --hash=sha256:6eec52a31ebfd98ede27298a0ba54fe5c0a7224f32a86b2b2f2cb714bed6b656"
+"version": "(py3) 20.25.3",
+"installCommand": "virtualenv==20.25.3 --hash=sha256:1362b120646b0bbaef639580c376d0238aeea8dcb69d6223b83bbd833beb2118"
 }
 },
 {
@@ -3023,6 +3535,22 @@
 }
 },
 {
+"name": "webcolors",
+"tags": [ "utility","web" ],
+"versions": " 1.13",
+"info":
+{
+"description": "<p>webcolors is a module for working with HTML/CSS color definitions.</p>",
+"usageNotes": "<p>More information is available on <a href='https://webcolors.readthedocs.io/en/latest/'>readthedocs.io</a>.</p>",
+"linkToSite": "https://github.com/ubernostrum/webcolors",
+"siteName": "github.com",
+"license": "BSD-3-Clause",
+"linkToLicense": "https://github.com/ubernostrum/webcolors/blob/trunk/LICENSE",
+"version": "(py3) 1.13",
+"installCommand": "webcolors==1.13 --hash=sha256:48d15a0aeedc55d66c3addb43de2ef7356bb7ed030945c6e7f4d641bc5c1ca7b"
+}
+},
+{
 "name": "webencodings",
 "tags": [ "web","utility" ],
 "versions": " 0.5.1",
@@ -3036,6 +3564,22 @@
 "linkToLicense": "https://github.com/gsnedders/python-webencodings/blob/master/LICENSE",
 "version": "(py3) 0.5.1",
 "installCommand": "webencodings==0.5.1 --hash=sha256:a0af1213f3c2226497a97e2b3aa01a7e4bee4f403f95be16fc9acd2947514a78"
+}
+},
+{
+"name": "websocket-client",
+"tags": [ "utility" ],
+"versions": " 1.7.0",
+"info":
+{
+"description": "<p>websocket-client is a WebSocket client for Python.</p>",
+"usageNotes": "<p>More information is available on <a href='https://websocket-client.readthedocs.io/en/latest/'>readthedocs.io</a>.</p>",
+"linkToSite": "https://github.com/websocket-client/websocket-client",
+"siteName": "github.com",
+"license": "Apache-2.0",
+"linkToLicense": "https://github.com/websocket-client/websocket-client/blob/master/LICENSE",
+"version": "(py3) 1.7.0",
+"installCommand": "websocket-client==1.7.0 --hash=sha256:1cf1c0d54a1b5b344b341b0a8a4ae174baf699da573f0c173962b5f3f065152d"
 }
 },
 {
