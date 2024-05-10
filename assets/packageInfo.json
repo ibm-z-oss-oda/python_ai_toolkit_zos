@@ -151,7 +151,7 @@
 "description": "<p>This package is a port of Python's built-in functools.lru_cache function for asyncio.</p>",
 "usageNotes": "<p>Usage information is available on <a href='https://github.com/aio-libs/async-lru'>github.com</a>.</p>",
 "linkToSite": "https://github.com/aio-libs/async-lru",
-"siteName": "github",
+"siteName": "github.com",
 "license": "MIT",
 "linkToLicense": "https://github.com/aio-libs/async-lru/blob/master/LICENSE",
 "version": "(py3) 2.0.4",
@@ -663,7 +663,7 @@
 "description": "<p>Distlib is a library which implements low-level functions that relate to packaging and distribution of Python software.   </p>",
 "usageNotes": "<p>For advanced tool documentation, refer to <a href='https://distlib.readthedocs.io/en/latest/'>readthedocs.io</a>.</p>",
 "linkToSite": "https://github.com/pypa/distlib",
-"siteName": "https://github.com/pypa/distlib",
+"siteName": "github.com",
 "license": "Python Software Foundation",
 "linkToLicense": "https://github.com/pypa/distlib/blob/master/LICENSE.txt",
 "version": "(py3) 0.3.8",
@@ -1017,7 +1017,7 @@
 "linkToSite": "https://github.com/python-hyper/h11",
 "siteName": "github.com",
 "license": "MIT",
-"linkToLicense": "https://github.com/ypcrts/fqdn/blob/develop/LICENSE",
+"linkToLicense": "https://github.com/python-hyper/h11/blob/master/LICENSE.txt",
 "version": "(py3) 0.14.0",
 "installCommand": "h11==0.14.0 --hash=sha256:cd51351488b66567ca5f2855aaf594c96f8d326656a616d2d44052bf4fd86e37"
 }
@@ -1481,7 +1481,7 @@
 "linkToSite": "https://jupyter.org/",
 "siteName": "jupyter.org",
 "license": "BSD3",
-"linkToLicense": "https://github.com/jupyter/jupyter_client/blob/main/COPYING.md",
+"linkToLicense": "https://github.com/jupyter/jupyter_client/blob/main/LICENSE",
 "version": "(py3) 7.4.9.post3",
 "installCommand": "jupyter-client==7.4.9.post3 --hash=sha256:e6c3d7ba333af6716a518a3fde94840e3e0105f1c9c135262886aeecb4452215"
 }
@@ -1551,7 +1551,7 @@
 }
 },
 {
-"name": "jupyterlab-lsp",
+"name": "jupyter-lsp",
 "tags": [ "utility" ],
 "versions": " 2.2.4.post0",
 "info":
@@ -1563,7 +1563,7 @@
 "license": "BSD-3-Clause",
 "linkToLicense": "https://github.com/jupyter-lsp/jupyterlab-lsp/blob/main/LICENSE",
 "version": "(py3) 2.2.4.post0",
-"installCommand": "jupyterlab-lsp==2.2.4.post0 --hash=sha256:735e4c5bf9678e4c6ccb2bf34dcca33c1a4f13599f5e2efe6f0cd0854bc8d3f2"
+"installCommand": "jupyter-lsp==2.2.4.post0 --hash=sha256:9d2716525a33f65fe6d2c0f8a75156b1684517680d2e7e411cfd0779ebf42537"
 }
 },
 {
@@ -3461,7 +3461,7 @@
 "info":
 {
 "description": "<p>An implementation of RFC 6570 URI Templates.</p>",
-"usageNotes": "<p>More information is available on <a href='https://gitlab.linss.com/open-source/python/uri-template'>github.com</a>.</p>",
+"usageNotes": "<p>More information is available on <a href='https://gitlab.linss.com/open-source/python/uri-template'>gitlab.linss.com</a>.</p>",
 "linkToSite": "https://gitlab.linss.com/open-source/python/uri-template",
 "siteName": "gitlab.linss.com",
 "license": "MIT",
