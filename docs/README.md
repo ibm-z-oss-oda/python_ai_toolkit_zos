@@ -23,5 +23,6 @@ to interface with z/OS through Python interfaces.  Relevant topics include:
 - [Secure access to the Toolkit](./secure_toolkit_access.md)
 - [Best practices for Toolkit Deployment](./deployment_best_practices.md)
 - [Requirements files, and How to Use Them](./requirements_files.md)
+- [Python Package Currency](./package_currency.md)
 - Why virtual environments are important
 - [Terminology and Reference Links](./terms_reference_links.md)
