@@ -4,7 +4,7 @@
 # Python AI Toolkit for IBM z/OS
 #
 # This is the complete list of packages that make up the Python AI
-# Toolkit for IBM z/OS.
+# Toolkit for IBM z/OS. 
 #
 # Example use:  pip install --no-deps -r <toolkit_requirements.txt>
 #
@@ -38,7 +38,7 @@ bottle==0.12.23 --hash=sha256:fba1a71415c813b3bc676b79d38bcee9cc67db62f6a4532b67
 bz2file==0.98 --hash=sha256:d597ac953f7e0a66604a2d497f6b2091bae1585333830e4d316baeafe61db715
 cachetools==4.2.1 --hash=sha256:2c010ef2d9f9ceacb0b87eb3f91de00dc7fda3337df5e2f0eb2f5f87efe2d1bb
 cairocffi==1.3.0.post1 --hash=sha256:9970bd9c1dfa01d092ce90d239c1ebc0ff584ae19554c62860c1267121305254
-certifi==2022.12.7 --hash=sha256:4ad3232f5e926d6718ec31cfc1fcadfde020920e278684144551c91769c7bc18
+certifi==2024.2.2 --hash=sha256:9332e0c336a2c52fcc7b7ad2984dea39c21c756f98b1a53c3560cd1606dbfb70
 certipy==0.1.3 --hash=sha256:22187da55d5f541a4c1d1559a6a30dd6e4824123e0f21d243e68e8c8a331beb8
 cffi==1.14.6 --hash=sha256:b4a0f3f44181f07e85d5f6720b8fa3347c24cb481d32d34d25185ec2ad27f7e6
 chardet==5.0.0 --hash=sha256:94d1ca5fdadb2b4ae24a1f83b8dd15cfe7a735620cc86d626dc50dc271476750
@@ -226,7 +226,7 @@ terminado==0.15.0 --hash=sha256:14c716493661684489f1f479fc1aa1f0f45b866c5c5363d0
 threadpoolctl==3.1.0 --hash=sha256:c897f6242e3de5cf660e0e07ef19dec86e05312af31e03153401421893f62e4e
 tifffile==2023.4.12 --hash=sha256:d1f3c18e3a7398f14010778903036b29594dca0fbea1108c7922c09631f09be8
 tinycss2==1.1.1 --hash=sha256:510267ac64def0ab08afa5d603158588f7457ae316170f015d1bcb76b57ee003
-toolz==0.12.0 --hash=sha256:2059bd4148deb1884bb0eb770a3cde70e7f954cfbbdc2285f1f2de01fd21eb6f
+toolz==0.12.1 --hash=sha256:50aedb1be0b4d951a29a9d17aa17d649cf37131c72e47c4d0628c2b824218fac
 toree==0.5.0.post2 --hash=sha256:6424276b8ebf4b681e0c15005cd6a50382345bc4bce28d08332c5dc3696cfbb7
 tornado==6.3.3 --hash=sha256:aadb36731f1e05fc2e0d3fa71353c9cdcaee48daab03d13e7ebc309e64732c32
 tqdm==4.64.1 --hash=sha256:538feb6a0a616ec7e16f23ebe40229fdbb547823696eb4d64a255d04fd6dcd31
