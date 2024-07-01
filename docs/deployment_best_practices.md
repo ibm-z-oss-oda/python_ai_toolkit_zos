@@ -11,9 +11,9 @@ practices that have emerged on the z/OS platform over decades of practice.
 
 ## A Word About Air-gapped Systems
 Isolation from the outside world is a common practice and essential security measure for 
-z/OS production environments.  Although the pip package manager has not been used to deploy 
-Python products on z/OS before, it has been central to the Python ecosystem for over 20
-years, and it accommodates air-gapped deployments.
+z/OS production environments.  The Python package manager (pip) accommodates air-gapped 
+deployments in a number of different configurations.  Which one you choose depends on the 
+details of your corporate environment.
 
 A key piece of the isolation architecture is to assemble products into an internal staging 
 area for review before use in a production environment.  The steps outlined below show how 
@@ -22,6 +22,35 @@ common isolation practices familiar to z/OS administrators apply.
 
 ![isolation architecture](./images/isolation_architecture.png)  
 _**figure 1.  Isolation architecture**_.
+
+The internal package repository in figure 1 can take different forms, depending on how your 
+enterprise manages open source software.  Many organizations use a content server, like 
+[Jfrog Artifactory](https://jfrog.com/artifactory/) or 
+[Sonatype Nexus Repository](https://www.sonatype.com/products/sonatype-nexus-repository).
+These content servers can be used at the corporate level inside the firewall to provide a 
+set of approved software across platforms for developers to use.  Corporate 
+vetting policies can be automatically applied to software as it enters the repository, 
+effectively automating the review process.  These repositories can be configured to 
+mirror software sources like the package server for the Python AI Toolkit.  Another 
+advantage to using a content server is that new packages posted to an external source 
+are detected automatically and immediately made available inside the firewall for 
+developers to use, assuming there are no unacceptable vulnerabilities in the new package 
+version.
+
+If your enterprise does not make use of a corporate content server, you can download 
+the contents of the Toolkit to a local staging area, and manually perform the steps 
+necessary to vet the packages before deployment.  There are several configurations 
+that require direct or indirect access to the internet to reach the Toolkit package 
+server from IBM.  These often involve the use of a proxy server, which is beyond the
+scope of this document to describe.
+
+If a proxy server is not available, and no direct access from a z/OS staging machine 
+through the firewall is possible, the contents of the Toolkit can be downloaded manually 
+to a workstation or similar device, then file transferred to a z/OS staging area for 
+further review.  This [manual Toolkit download](./manual_toolkit_download.md) process 
+requires the most effort on the pat of the administrator, and is the most work to 
+maintain.  It is a secure practice though that can be useful until a more automated 
+configuration can be established.
 
 ## The Package Channel
 In addition to the vetting measures described in the 
