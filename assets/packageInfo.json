@@ -1121,7 +1121,7 @@
 {
 "name": "ibm-db",
 "tags": [ "utility" ],
-"versions": " 3.2.0 3.2.0",
+"versions": " 3.2.3 3.2.3 3.2.3",
 "info":
 {
 "description": "<p>Provides Python interface for connecting to IBM Db2 for LUW, IBM Informix and IBM Db2 for z/OS. </p>",
@@ -1130,8 +1130,8 @@
 "siteName": "github.com/ibm-z-oss-oda/python-ibmdb",
 "license": "Apache License 2.0",
 "linkToLicense": "https://github.com/ibm-z-oss-oda/python-ibmdb/blob/master/LICENSE",
-"version": "(cp311) 3.2.0",
-"installCommand": "ibm-db==3.2.0 --hash=sha256:ab1b7018d6a70e5a936958557d5531200fec1848bddbd9409cf3480f94de78ce"
+"version": "(cp312) 3.2.3",
+"installCommand": "ibm-db==3.2.3 --hash=sha256:0f43da0cda98b7eaec6cad50efb63c26ff25e398497f5e89ec43a4c3b466654b"
 }
 },
 {
@@ -1793,7 +1793,7 @@
 {
 "name": "libjpeg-turbo",
 "tags": [ "graphics" ],
-"versions": " 2.1.4.post0",
+"versions": " 3.0.3",
 "info":
 {
 "description": "<p>Libjpeg is a widely used C library for reading and writing JPEG image files. </p>",
@@ -1802,8 +1802,8 @@
 "siteName": "sourceforge.net",
 "license": "OTHER",
 "linkToLicense": "https://jpegclub.org/reference/libjpeg-license/",
-"version": "(py3) 2.1.4.post0",
-"installCommand": "libjpeg-turbo==2.1.4.post0 --hash=sha256:7fd15c74e90d9f3d416f7b8e78651dd1db94de66bccab2b96e51548da79abb43"
+"version": "(py3) 3.0.3",
+"installCommand": "libjpeg-turbo==3.0.3 --hash=sha256:ed0e2f5033d3df865eddd5d311ed43d844801055f32187812a4335261d4172ae"
 }
 },
 {
@@ -2369,7 +2369,7 @@
 {
 "name": "pillow",
 "tags": [ "graphics" ],
-"versions": " 10.2.0 10.2.0 10.3.0",
+"versions": " 10.3.0.post0 10.3.0.post0 10.3.0.post0",
 "info":
 {
 "description": "<p>The Python Imaging Library adds image processing capabilities to your Python interpreter.</p><p>This library provides extensive file format support, an efficient internal representation, and fairly powerful image processing capabilities.</p><p>The core image library is designed for fast access to data stored in a few basic pixel formats. It should provide a solid foundation for a general image processing tool.</p>",
@@ -2378,8 +2378,8 @@
 "siteName": "python-pillow.org",
 "license": "OTHER",
 "linkToLicense": "https://github.com/python-pillow/Pillow/blob/main/LICENSE",
-"version": "(cp311) 10.3.0",
-"installCommand": "pillow==10.3.0 --hash=sha256:a2eaf8d0941777640ab3114d09620c9649a2ea758adf43965b8a4b7b4fcad9cc"
+"version": "(cp312) 10.3.0.post0",
+"installCommand": "pillow==10.3.0.post0 --hash=sha256:c1ae4770fe2726288e8a193121c10f43765007c67a43e1ff982054071584a2d4"
 }
 },
 {
