@@ -1361,7 +1361,7 @@
 {
 "name": "jinja2",
 "tags": [ "programming_tools","utility" ],
-"versions": " 3.1.3",
+"versions": " 3.1.4",
 "info":
 {
 "description": "<p>Jinja is a fast, expressive, extensible templating engine. Special placeholders in the template allow writing code similar to Python syntax. Then the template is passed data to render the final document.</p><p>It includes:</p><ul>    <li>Template inheritance and inclusion.</li>    <li>Define and import macros within templates.</li>    <li>HTML templates can use autoescaping to prevent XSS from untrusted user input.</li>    <li>A sandboxed environment can safely render untrusted templates.</li>    <li>AsyncIO support for generating templates and calling async functions.</li>    <li>I18N support with Babel.</li>    <li>Templates are compiled to optimized Python code just-in-time and cached, or can be compiled ahead-of-time.</li>    <li>Exceptions point to the correct line in templates to make debugging easier.</li>    <li>Extensible filters, tests, functions, and even syntax.</li></ul><p>Jinja’s philosophy is that while application logic belongs in Python if possible, it shouldn’t make the template designer’s job difficult by restricting functionality too much.</p>",
@@ -1370,8 +1370,8 @@
 "siteName": "palletsprojects.com/p/jinja",
 "license": "BSD3",
 "linkToLicense": "https://github.com/pallets/jinja/blob/main/LICENSE.rst",
-"version": "(py3) 3.1.3",
-"installCommand": "jinja2==3.1.3 --hash=sha256:1f19817194b8bd1b83990dffd5d68985d7654a091cfd596fa3ea547e422a5baf"
+"version": "(py3) 3.1.4",
+"installCommand": "jinja2==3.1.4 --hash=sha256:87bb8e1349fb632133bfc4466667b2f5c2aabac3ae264c63122333d431dc7196"
 }
 },
 {
@@ -1841,7 +1841,7 @@
 {
 "name": "libxml2",
 "tags": [ "languages" ],
-"versions": " 2.11.4 2.12.5",
+"versions": " 2.11.4 2.12.7 2.12.7 2.12.7",
 "info":
 {
 "description": "<p>Libxml2 is the XML C parser and toolkit developed for the Gnome project (but usable outside of the Gnome platform), it is free software available under the MIT License. XML itself is a metalanguage to design markup languages, i.e. text language where semantic and structure are added to the content using extra 'markup' information enclosed between angle brackets. HTML is the most well-known markup language. Though the library is written in C a variety of language bindings make it available in other environments.</p>",
@@ -1850,8 +1850,8 @@
 "siteName": "gitlab.gnome.org/GNOME/libxml2",
 "license": "MIT",
 "linkToLicense": "https://gitlab.gnome.org/GNOME/libxml2/-/blob/master/Copyright",
-"version": "(cp311) 2.12.5",
-"installCommand": "libxml2==2.12.5 --hash=sha256:a3dbc2436a625261cdd66bc28a8373277331d080299d96666923f83966234e29"
+"version": "(cp312) 2.12.7",
+"installCommand": "libxml2==2.12.7 --hash=sha256:93b2e7d5c47468968d801b92100e25a7534dfa08621a7e1b037a8e4c293d2776"
 }
 },
 {
@@ -3169,7 +3169,7 @@
 {
 "name": "sqlparse",
 "tags": [ "utility" ],
-"versions": " 0.4.4",
+"versions": " 0.5.0",
 "info":
 {
 "description": "<p>sqlparse is a non-validating SQL parser for Python. It provides support for parsing, splitting and formatting SQL statements.</p>",
@@ -3178,8 +3178,8 @@
 "siteName": "github.com",
 "license": "BSD 3",
 "linkToLicense": "https://github.com/andialbrecht/sqlparse/blob/master/LICENSE",
-"version": "(py3) 0.4.4",
-"installCommand": "sqlparse==0.4.4 --hash=sha256:3bfb1be6b4f81b08c0ff65f3f81daa5202ec3277e3abfd5dac611584e4ca2af5"
+"version": "(py3) 0.5.0",
+"installCommand": "sqlparse==0.5.0 --hash=sha256:363b68a6444c60ba545c142bf552e4bd247db65f3ae68999ce2213ea0e20b369"
 }
 },
 {
