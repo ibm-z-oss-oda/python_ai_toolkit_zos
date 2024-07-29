@@ -2849,7 +2849,7 @@
 {
 "name": "requests",
 "tags": [ "web" ],
-"versions": " 2.28.2",
+"versions": " 2.32.3",
 "info":
 {
 "description": "<p>Requests is a simple, yet elegant, HTTP library.</p><p>Requests allows you to send HTTP/1.1 requests extremely easily. There’s no need to manually add query strings to your URLs, or to form-encode your PUT & POST data — but nowadays, just use the <code>json</code> method!</p>",
@@ -2858,8 +2858,8 @@
 "siteName": "github",
 "license": "APACHE2",
 "linkToLicense": "https://github.com/psf/requests/blob/main/LICENSE",
-"version": "(py3) 2.28.2",
-"installCommand": "requests==2.28.2 --hash=sha256:64299f4909223da747622c030b781c0d7811e359c37124b4bd368fb8c6518baa"
+"version": "(py3) 2.32.3",
+"installCommand": "requests==2.32.3 --hash=sha256:51ab5b81489cdabe87d4bed57e342535431d9aee89e962ad2bb314d51d3b2e2a"
 }
 },
 {
