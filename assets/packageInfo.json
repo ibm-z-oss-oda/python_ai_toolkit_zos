@@ -961,7 +961,7 @@
 {
 "name": "glib",
 "tags": [ "graphics" ],
-"versions": " 2.56.4.post0",
+"versions": " 2.80.2",
 "info":
 {
 "description": "<p>GLib is the low-level core library that forms the basis for projects such as GTK and GNOME. It provides data structure handling for C, portability wrappers, and interfaces for such runtime functionality as an event loop, threads, dynamic loading, and an object system.</p>",
@@ -970,8 +970,8 @@
 "siteName": "https://www.gtk.org/",
 "license": "LGPL",
 "linkToLicense": "https://github.ibm.com/ibm-z-oss-oda/glib/blob/main/LICENSES/LGPL-2.1-or-later.txt",
-"version": "(py3) 2.56.4.post0",
-"installCommand": "glib==2.56.4.post0 --hash=sha256:c955507970e1b7540c8b3ecbfb50d95769d553be751ff49f01133e7abbd562dc"
+"version": "(py3) 2.80.2",
+"installCommand": "glib==2.80.2 --hash=sha256:8fa28d71a0d91c86b0f40d5a28dd62d35afea3db97909cf63f8de934c4c9c82a"
 }
 },
 {
