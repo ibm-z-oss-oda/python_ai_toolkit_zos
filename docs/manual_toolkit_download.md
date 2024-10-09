@@ -207,7 +207,7 @@ zos/toolkit> source virt_env/bin/activate
 Package Version
 ------- -------
 pip     23.3.2
-(virt_env) zos/toolkit> pip install -r pyaitoolkit_cp312_1.1.5_req.txt --no-index --no-deps -f file:////zos/toolkit/wheels
+(virt_env) zos/toolkit> pip install -r pyaitoolkit_cp312_1.1.5_req.txt --no-index --no-deps -f file:///zos/toolkit/wheels
 adding trusted host: 'downloads.pyaitoolkit.ibm.net' (from line 13 of pyaitoolkit_cp312_1.1.5_req.txt)
 Looking in links: file://zos/wheels
 Processing ./wheels/alembic-1.10.4-py3-none-any.whl (from -r pyaitoolkit_cp312_1.1.5_req.txt (line 21))
