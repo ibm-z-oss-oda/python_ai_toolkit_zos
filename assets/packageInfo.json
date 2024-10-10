@@ -1265,7 +1265,7 @@
 {
 "name": "ipywidgets",
 "tags": [ "web","graphics" ],
-"versions": " 8.0.6.post1",
+"versions": " 8.0.6.post2",
 "info":
 {
 "description": "<p>ipywidgets, also known as jupyter-widgets or simply widgets, are interactive HTML widgets for Jupyter notebooks and the IPython kernel.</p><p>Notebooks come alive when interactive widgets are used. Users gain control of their data and can visualize changes in the data.</p><p>Learning becomes an immersive, fun experience. Researchers can easily see how changing inputs to a model impact the results.</p>",
@@ -1274,8 +1274,8 @@
 "siteName": "ipython.org",
 "license": "BSD3",
 "linkToLicense": "https://github.com/jupyter-widgets/ipywidgets/blob/master/LICENSE",
-"version": "(py3) 8.0.6.post1",
-"installCommand": "ipywidgets==8.0.6.post1 --hash=sha256:505ca9733cf271b36c455ec85525ce27da0bff740aa64a4b565e697486c8e7b5"
+"version": "(py3) 8.0.6.post2",
+"installCommand": "ipywidgets==8.0.6.post2 --hash=sha256:484101dfaba3665461cca9ff942e15cb636c5e33cd8067defbc8fa083300f285"
 }
 },
 {
@@ -1697,7 +1697,7 @@
 {
 "name": "jupyterlab-pygments",
 "tags": [ "web","graphics" ],
-"versions": " 0.2.2.post2",
+"versions": " 0.2.2.post3",
 "info":
 {
 "description": "<p>This package contains a syntax coloring theme for <a href='http://pygments.org/'>pygments</a> making use of the JupyterLab CSS variables.</p><p>The goal is to enable the use of JupyterLab's themes with pygments-generated HTML.</p>",
@@ -1706,8 +1706,8 @@
 "siteName": "github",
 "license": "BSD3",
 "linkToLicense": "https://github.com/jupyterlab/jupyterlab_pygments/blob/main/LICENSE",
-"version": "(py3) 0.2.2.post2",
-"installCommand": "jupyterlab-pygments==0.2.2.post2 --hash=sha256:bd23cd52543729c4a3079d301fec8f3355e5e7187de9ff7af882d66136a0ffd8"
+"version": "(py3) 0.2.2.post3",
+"installCommand": "jupyterlab-pygments==0.2.2.post3 --hash=sha256:3f5fde450143ed12219d8fe9130a21ffafb3ba1a9db1baf9b11f15d1a678cb69"
 }
 },
 {
@@ -1761,7 +1761,7 @@
 {
 "name": "kiwisolver",
 "tags": [ "math" ],
-"versions": " 1.4.4.post0 1.4.4.post0 1.4.4.post0",
+"versions": " 1.4.5 1.4.5 1.4.5",
 "info":
 {
 "description": "<p>Kiwi is an efficient C++ implementation of the Cassowary constraint solving algorithm. Kiwi is an implementation of the algorithm based on the <a href='https://constraints.cs.washington.edu/solvers/cassowary-tochi.pdf'>seminal Cassowary paper</a>. It is not a refactoring of the original C++ solver. Kiwi has been designed from the ground up to be lightweight and fast. Kiwi ranges from 10x to 500x faster than the original Cassowary solver with typical usecases gaining a 40x improvement. Memory savings are consistently > 5x.</p><p>In addition to the C++ solver, Kiwi ships with hand-rolled Python bindings for Python 3.7+.</p>",
@@ -1770,8 +1770,8 @@
 "siteName": "github",
 "license": "BSD3",
 "linkToLicense": "https://github.com/nucleic/kiwi/blob/main/LICENSE",
-"version": "(cp312) 1.4.4.post0",
-"installCommand": "kiwisolver==1.4.4.post0 --hash=sha256:7d9a2babedb558003c620b08e409c78d22a9522d3a70198fa9a29fa2c9a3ce71"
+"version": "(cp312) 1.4.5",
+"installCommand": "kiwisolver==1.4.5 --hash=sha256:5fca12edf5b64120e8ebf08929bd047025e78a7522fb4ca2fbf51cf8e38a845c"
 }
 },
 {
