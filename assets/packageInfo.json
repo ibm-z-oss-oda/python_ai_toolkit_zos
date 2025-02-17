@@ -1137,7 +1137,7 @@
 {
 "name": "idna",
 "tags": [ "languages","utility" ],
-"versions": " 3.4",
+"versions": " 3.10",
 "info":
 {
 "description": "<p>Support for the Internationalised Domain Names in Applications (IDNA) protocol as specified in <a href='https://tools.ietf.org/html/rfc5891'>RFC 5891</a>. This is the latest version of the protocol and is sometimes referred to as “IDNA 2008”.</p><p>This library also provides support for Unicode Technical Standard 46, <a href='https://unicode.org/reports/tr46/'>Unicode IDNA Compatibility Processing</a>.</p><p>This acts as a suitable replacement for the “encodings.idna” module that comes with the Python standard library, but which only supports the older superseded IDNA specification <a href='https://tools.ietf.org/html/rfc3490'>(RFC 3490)</a>.</p>",
@@ -1146,8 +1146,8 @@
 "siteName": "github",
 "license": "BSD3",
 "linkToLicense": "https://github.com/kjd/idna/blob/master/LICENSE.md",
-"version": "(py3) 3.4",
-"installCommand": "idna==3.4 --hash=sha256:90b77e79eaa3eba6de819a0c442c0b4ceefc341a7a2ab77d7562bf49f425c5c2"
+"version": "(py3) 3.10",
+"installCommand": "idna==3.10 --hash=sha256:c9a3b84bb6e542ce5204362c744260257ce02b04d4ce388ff7f22019a50e74d3"
 }
 },
 {
@@ -1265,7 +1265,7 @@
 {
 "name": "ipywidgets",
 "tags": [ "web","graphics" ],
-"versions": " 8.0.6.post2",
+"versions": " 8.1.5",
 "info":
 {
 "description": "<p>ipywidgets, also known as jupyter-widgets or simply widgets, are interactive HTML widgets for Jupyter notebooks and the IPython kernel.</p><p>Notebooks come alive when interactive widgets are used. Users gain control of their data and can visualize changes in the data.</p><p>Learning becomes an immersive, fun experience. Researchers can easily see how changing inputs to a model impact the results.</p>",
@@ -1274,8 +1274,8 @@
 "siteName": "ipython.org",
 "license": "BSD3",
 "linkToLicense": "https://github.com/jupyter-widgets/ipywidgets/blob/master/LICENSE",
-"version": "(py3) 8.0.6.post2",
-"installCommand": "ipywidgets==8.0.6.post2 --hash=sha256:484101dfaba3665461cca9ff942e15cb636c5e33cd8067defbc8fa083300f285"
+"version": "(py3) 8.1.5",
+"installCommand": "ipywidgets==8.1.5 --hash=sha256:41de6bb40ad46d2af6a1ee20fadb7932639f95dc90355c8a13ef8f566d6eef87"
 }
 },
 {
@@ -1825,7 +1825,7 @@
 {
 "name": "libtiff",
 "tags": [ "graphics","utility" ],
-"versions": " 4.5.1",
+"versions": " 4.7.0",
 "info":
 {
 "description": "<p>PyLibTiff is a package that provides:</p>    <p>1- a wrapper to the <a href='http://www.simplesystems.org/libtiff/'>libtiff</a> library to Python using <a href='http://docs.python.org/library/ctypes.html'>ctypes</a>.</p>    <p>2 - a pure Python module for reading and writing TIFF and LSM files. The images are read as <code>numpy.memmap</code> objects so that it is possible to open images that otherwise would not fit to computers RAM. Both TIFF strips and tiles are supported for low-level data storage.</p><p>There exists many Python packages that support reading and writing TIFF files. The PyLibTiff project was started to have an efficient and direct way to read and write TIFF files using the libtiff library without the need to install any unnecessary packages or libraries. The pure Python module was created for reading 'broken' TIFF files such as LSM files that in some places use different interpretation of TIFF tags than what specified in the TIFF specification document. The libtiff library would just fail reading such files. In addition, the pure Python module is more memory efficient as the arrays are returned as memory maps. Support for compressed files is not implemented yet.</p>",
@@ -1834,8 +1834,8 @@
 "siteName": "github",
 "license": "BSD3",
 "linkToLicense": "https://github.com/pearu/pylibtiff/blob/master/LICENSE",
-"version": "(py3) 4.5.1",
-"installCommand": "libtiff==4.5.1 --hash=sha256:82d6e805947ccf636f64346ed0797fa24951389793bd652fbbc1d6873305b520"
+"version": "(py3) 4.7.0",
+"installCommand": "libtiff==4.7.0 --hash=sha256:5d3b1ed29e97a23220133325b8df2018d6f604453761c299532ba66867c05fe3"
 }
 },
 {
@@ -3057,7 +3057,7 @@
 {
 "name": "setuptools",
 "tags": [ "utility","programming_tools" ],
-"versions": " 67.1.0",
+"versions": " 71.1.0.post20240929",
 "info":
 {
 "description": "<p><code>setuptools</code> comprises a useful component for <a href='https://packaging.python.org/en/latest/tutorials/installing-packages/#ensure-pip-setuptools-and-wheel-are-up-to-date'>Python Packaging / Package Management</a> along with <code>pip</code> and <code>wheel</code>.</p><p>Setuptools is a fully-featured, actively-maintained, and stable library designed to facilitate packaging Python projects.</p>",
@@ -3066,8 +3066,8 @@
 "siteName": "github",
 "license": "MIT",
 "linkToLicense": "https://github.com/pypa/setuptools/blob/main/LICENSE",
-"version": "(py3) 67.1.0",
-"installCommand": "setuptools==67.1.0 --hash=sha256:a7687c12b444eaac951ea87a9627c4f904ac757e7abdc5aac32833234af90378"
+"version": "(py3) 71.1.0.post20240929",
+"installCommand": "setuptools==71.1.0.post20240929 --hash=sha256:953dd7486c157c3a919b2ea496b72ba5128cb9b3cb90c2fbe19a1381389edcb6"
 }
 },
 {
@@ -3585,7 +3585,7 @@
 {
 "name": "werkzeug",
 "tags": [ "web","utility","programming_tools" ],
-"versions": " 3.0.1",
+"versions": " 3.0.6",
 "info":
 {
 "description": "<p>werkzeug; German noun: “tool”. Etymology: <i>werk</i> (“work”), <i>zeug</i> (“stuff”)</p><p>Werkzeug is a comprehensive <a href='https://wsgi.readthedocs.io/en/latest/'>WSGI</a> web application library. It began as a simple collection of various utilities for WSGI applications and has become one of the most advanced WSGI utility libraries.</p><p>It includes:</p><ul>    <li>An interactive debugger that allows inspecting stack traces and source code in the browser with an interactive interpreter for any frame in the stack.</li>    <li>A full-featured request object with objects to interact with headers, query args, form data, files, and cookies.</li>    <li>A response object that can wrap other WSGI applications and handle streaming data.</li>    <li>A routing system for matching URLs to endpoints and generating URLs for endpoints, with an extensible system for capturing variables from URLs.</li>    <li>HTTP utilities to handle entity tags, cache control, dates, user agents, cookies, files, and more.</li>    <li>A threaded WSGI server for use while developing applications locally.</li>    <li>A test client for simulating HTTP requests during testing without requiring running a server.</li></ul><p>Werkzeug doesn’t enforce any dependencies. It is up to the developer to choose a template engine, database adapter, and even how to handle requests. It can be used to build all sorts of end user applications such as blogs, wikis, or bulletin boards.</p><p>Flask wraps Werkzeug, using it to handle the details of WSGI while providing more structure and patterns for defining powerful applications.</p>",
@@ -3594,8 +3594,8 @@
 "siteName": "palletsprojects.com/p/werkzeug",
 "license": "BSD3",
 "linkToLicense": "https://github.com/pallets/werkzeug/blob/main/LICENSE.rst",
-"version": "(py3) 3.0.1",
-"installCommand": "werkzeug==3.0.1 --hash=sha256:5b8086c6d10fb79908447b430960c18cd561f655aba86214e5518ece6cebc7ba"
+"version": "(py3) 3.0.6",
+"installCommand": "werkzeug==3.0.6 --hash=sha256:a6cbc6d6930138ef51d5c37aeb19c0f8c966b70b9bdfbdef6ad732119faab23f"
 }
 },
 {
@@ -3681,7 +3681,7 @@
 {
 "name": "zipp",
 "tags": [ "programming_tools" ],
-"versions": " 3.11.0",
+"versions": " 3.21.0.post0",
 "info":
 {
 "description": "<p>A pathlib-compatible Zipfile object wrapper. Official backport of the standard library <a href='https://docs.python.org/3.8/library/zipfile.html#path-objects'>Path object</a>.</p>",
@@ -3690,8 +3690,8 @@
 "siteName": "github",
 "license": "MIT",
 "linkToLicense": "https://github.com/jaraco/zipp/blob/main/LICENSE",
-"version": "(py3) 3.11.0",
-"installCommand": "zipp==3.11.0 --hash=sha256:83a28fcb75844b5c0cdaf5aa4003c2d728c77e05f5aeabe8e95e56727005fbaa"
+"version": "(py3) 3.21.0.post0",
+"installCommand": "zipp==3.21.0.post0 --hash=sha256:2782e4acd415888548e3f0971cbf7db912b2dbb6a38397fd56b82025cf40af86"
 }
 },
 {
