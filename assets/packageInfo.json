@@ -1,7 +1,7 @@
 [{
 "name": "alembic",
 "tags": [ "utility" ],
-"versions": " 1.10.4",
+"versions": " 1.13.3",
 "info":
 {
 "description": "<p>Alembic is a database migrations tool written by the author of SQLAlchemy.</p>",
@@ -10,8 +10,8 @@
 "siteName": "github.com",
 "license": "MIT",
 "linkToLicense": "https://github.com/sqlalchemy/alembic/blob/main/LICENSE",
-"version": "(py3) 1.10.4",
-"installCommand": "alembic==1.10.4 --hash=sha256:a9e9324d112fc51ecb3fa13605d70d72147e9e789cd55605562a9c9ff80852ca"
+"version": "(py3) 1.13.3",
+"installCommand": "alembic==1.13.3 --hash=sha256:327d7f45eeb368160a67687a700300cdcf11f3ed90e381f1638ecdcf2c778747"
 }
 },
 {
@@ -33,7 +33,7 @@
 {
 "name": "ansi2html",
 "tags": [ "web" ],
-"versions": " 1.8.0",
+"versions": " 1.9.2",
 "info":
 {
 "description": "<p>Convert text with ANSI color codes to HTML or to LaTeX.</p>",
@@ -42,14 +42,14 @@
 "siteName": "github",
 "license": "LGPL-3.0",
 "linkToLicense": "https://github.com/pycontribs/ansi2html/blob/main/LICENSE",
-"version": "(py3) 1.8.0",
-"installCommand": "ansi2html==1.8.0 --hash=sha256:4c65d136b4638a95f914145eb758b150e953ee37cde2a587588bf53b096b90f0"
+"version": "(py3) 1.9.2",
+"installCommand": "ansi2html==1.9.2 --hash=sha256:322a6eb918793d99c78691d1947cf883d73372284006e83d297bfb5bb4e69c1d"
 }
 },
 {
 "name": "anyio",
 "tags": [ "web" ],
-"versions": " 4.3.0",
+"versions": " 4.6.0",
 "info":
 {
 "description": "<p>AnyIO is an asynchronous networking and concurrency library that works on top of either asyncio or trio.</p>",
@@ -58,14 +58,14 @@
 "siteName": "github.com",
 "license": "MIT",
 "linkToLicense": "https://github.com/agronholm/anyio/blob/master/LICENSE",
-"version": "(py3) 4.3.0",
-"installCommand": "anyio==4.3.0 --hash=sha256:bf3f1083f505408f015d6e3e5f59d5045565e35b89eb5a8d544cd521d33066f7"
+"version": "(py3) 4.6.0",
+"installCommand": "anyio==4.6.0 --hash=sha256:514f049af88774c06ab7059bd0ce3746ef218bceeb42a20b064187628df851b0"
 }
 },
 {
 "name": "argon2-cffi-bindings",
 "tags": [ "security" ],
-"versions": " 21.2.0.post0 21.2.0.post0 21.2.0.post0",
+"versions": " 21.2.0.post0 21.2.0.post0 21.2.0.post0 21.2.0.post0",
 "info":
 {
 "description": "<p>argon2-cffi-bindings provides low-level <a href='https://cffi.readthedocs.io/'>CFFI</a> bindings to the <a href='https://github.com/p-h-c/phc-winner-argon2'>Argon2</a> password hashing algorithm including a vendored version of them.</p><p>If you want to hash passwords in an application, this package is not for you. Have a look at argon2-cffi with its high-level abstractions!</p><p>These bindings have been extracted from <a href='https://argon2-cffi.readthedocs.io/'>argon2-cffi</a> and it remains its main consumer. However, they may be used by other packages that want to use the Argon2 library without dealing with C-related complexities.</p>",
@@ -74,8 +74,8 @@
 "siteName": "github",
 "license": "MIT",
 "linkToLicense": "https://github.com/hynek/argon2-cffi-bindings/blob/main/LICENSE",
-"version": "(cp312) 21.2.0.post0",
-"installCommand": "argon2-cffi-bindings==21.2.0.post0 --hash=sha256:b6003de3b92fd63adc31fb06a22f8bfaca6b088b79085e217a1791d9d89257a8"
+"version": "(cp313) 21.2.0.post0",
+"installCommand": "argon2-cffi-bindings==21.2.0.post0 --hash=sha256:f75efce253965555864156a9c5c33a59ad27bc4c37b248bc198a59e4e03b0bdf"
 }
 },
 {
@@ -113,7 +113,7 @@
 {
 "name": "asttokens",
 "tags": [ "programming_tools" ],
-"versions": " 2.2.1",
+"versions": " 3.0.0",
 "info":
 {
 "description": "<p>The <code>asttokens</code> module annotates Python abstract syntax trees (ASTs) with the positions of tokens and text in the source code that generated them.</p><p>It makes it possible for tools that work with logical AST nodes to find the particular text that resulted in those nodes, for example for automated refactoring or highlighting.</p>",
@@ -122,8 +122,8 @@
 "siteName": "github",
 "license": "APACHE2",
 "linkToLicense": "https://github.com/gristlabs/asttokens/blob/master/LICENSE",
-"version": "(py3) 2.2.1",
-"installCommand": "asttokens==2.2.1 --hash=sha256:6b0ac9e93fb0335014d382b8fa9b3afa7df546984258005da0b9e7095b3deb1c"
+"version": "(py3) 3.0.0",
+"installCommand": "asttokens==3.0.0 --hash=sha256:e755b5a8be7b49aed61fcdb9fcdd659f224549de1c51c2e560eb10cd9fe94021"
 }
 },
 {
@@ -177,7 +177,7 @@
 {
 "name": "babel",
 "tags": [ "languages" ],
-"versions": " 2.14.0",
+"versions": " 2.16.0",
 "info":
 {
 "description": "<p>Babel is a Python library that provides an integrated collection of utilities that assist with internationalizing and localizing Python applications (in particular web-based applications.).</p>",
@@ -186,8 +186,8 @@
 "siteName": "github.com",
 "license": "BSD-3-Clause",
 "linkToLicense": "https://github.com/python-babel/babel/blob/master/LICENSE",
-"version": "(py3) 2.14.0",
-"installCommand": "babel==2.14.0 --hash=sha256:451442e9bb5bda177d74bbbab22e1c3759a1ea1ba37d279723f326098ded5f6f"
+"version": "(py3) 2.16.0",
+"installCommand": "babel==2.16.0 --hash=sha256:4cc7103c241fa2d2d14871911aebd6085b74dd1534e3f73744f7f9a7adadcffb"
 }
 },
 {
@@ -209,7 +209,7 @@
 {
 "name": "bcrypt",
 "tags": [ "security" ],
-"versions": " 3.2.1 3.2.1 3.2.1",
+"versions": " 3.2.1 3.2.1 3.2.1 3.2.1",
 "info":
 {
 "description": "<p>Modern(-ish) password hashing for your software and your servers.</p>",
@@ -218,8 +218,8 @@
 "siteName": "github.com",
 "license": "Apache-2.0",
 "linkToLicense": "https://github.com/pyca/bcrypt/blob/main/LICENSE",
-"version": "(cp312) 3.2.1",
-"installCommand": "bcrypt==3.2.1 --hash=sha256:8dcf044c30df7bcfd6ea10cc50b0fa33cf5e991b867e7179c7163c7cfe4f2ddc"
+"version": "(cp313) 3.2.1",
+"installCommand": "bcrypt==3.2.1 --hash=sha256:8a5e8ef6250d4d0989df04feb2e3f5810f2166563b0dbce7700dc5242d8f6a70"
 }
 },
 {
@@ -241,7 +241,7 @@
 {
 "name": "bleach",
 "tags": [ "security","programming_tools" ],
-"versions": " 6.0.0.post3",
+"versions": " 6.2.0.post0",
 "info":
 {
 "description": "<p>Bleach is an allowed-list-based HTML sanitizing library that escapes or stripsmarkup and attributes.</p><p>Bleach can also linkify text safely, applying filters that Django's <tt class='docutils literal'>urlize</tt>filter cannot, and optionally setting <tt class='docutils literal'>rel</tt> attributes, even on links alreadyin the text.</p><p>Bleach is intended for sanitizing text from <em>untrusted</em> sources. If you findyourself jumping through hoops to allow your site administrators to do lots ofthings, you're probably outside the use cases. Either trust those users, ordon't.</p><p>Because it relies on <a class='reference external' href='https://github.com/html5lib/html5lib-python'>html5lib</a>, Bleach is as good as modern browsers at dealingwith weird, quirky HTML fragments. And <em>any</em> of Bleach's methods will fixunbalanced or mis-nested tags.</p>",
@@ -250,14 +250,14 @@
 "siteName": "github",
 "license": "APACHE2",
 "linkToLicense": "https://github.com/mozilla/bleach/blob/main/LICENSE",
-"version": "(py3) 6.0.0.post3",
-"installCommand": "bleach==6.0.0.post3 --hash=sha256:a6f8611d17d3ca84a2282f984cae5dc06e1d934c0d0df366485993e411910f1a"
+"version": "(py3) 6.2.0.post0",
+"installCommand": "bleach==6.2.0.post0 --hash=sha256:03003e2cf3854acec297c7109c013855cdce310e609f34d149cf330362a3c395"
 }
 },
 {
 "name": "bottle",
 "tags": [ "web","programming_tools" ],
-"versions": " 0.12.23",
+"versions": " 0.13.2",
 "info":
 {
 "description": "<p>Bottle is a fast and simple micro-framework for small web applications. It offers request dispatching (Routes) with url parameter support, templates, a built-in HTTP Server and adapters for many third party WSGI/HTTP-server and template engines - all in a single file and with no dependencies other than the Python Standard Library.</p>",
@@ -266,8 +266,8 @@
 "siteName": "bottlepy.org",
 "license": "MIT",
 "linkToLicense": "https://github.com/bottlepy/bottle/blob/master/LICENSE",
-"version": "(py3) 0.12.23",
-"installCommand": "bottle==0.12.23 --hash=sha256:fba1a71415c813b3bc676b79d38bcee9cc67db62f6a4532b679044cbfad4e45c"
+"version": "(py3) 0.13.2",
+"installCommand": "bottle==0.13.2 --hash=sha256:8b285b59801eb9a503fb24e0e9882f4441d90d4bef16ac5fbd0d2ed9054f6ce3"
 }
 },
 {
@@ -305,7 +305,7 @@
 {
 "name": "cairocffi",
 "tags": [ "graphics" ],
-"versions": " 1.3.0.post1",
+"versions": " 1.3.0.post2",
 "info":
 {
 "description": "<p>cairocffi is a <a href='https://cffi.readthedocs.org/'>CFFI</a>-based drop-in replacement for <a href='https://pycairo.readthedocs.io/'>Pycairo</a>, a set of Python bindings and object-oriented API for <a href='http://cairographics.org/'>cairo</a>. Cairo is a 2D vector graphics library with support for multiple backends including image buffers, PNG, PostScript, PDF, and SVG file output.</p><p>Additionally, the <code>cairocffi.pixbuf</code> module uses <a href='https://gitlab.gnome.org/GNOME/gdk-pixbuf'>GDK-PixBuf</a> to decode various image formats for use in cairo.</p>",
@@ -314,8 +314,8 @@
 "siteName": "github",
 "license": "BSD3",
 "linkToLicense": "https://github.com/Kozea/cairocffi/blob/master/LICENSE",
-"version": "(py3) 1.3.0.post1",
-"installCommand": "cairocffi==1.3.0.post1 --hash=sha256:9970bd9c1dfa01d092ce90d239c1ebc0ff584ae19554c62860c1267121305254"
+"version": "(py3) 1.3.0.post2",
+"installCommand": "cairocffi==1.3.0.post2 --hash=sha256:b0f7a92a21c649d5f586c49babf7c8ad81770205941f1ba25857f497550fda95"
 }
 },
 {
@@ -353,7 +353,7 @@
 {
 "name": "cffi",
 "tags": [ "programming_tools" ],
-"versions": " 1.14.6 1.14.6 1.16.0",
+"versions": " 1.14.6 1.14.6 1.16.0 1.17.1",
 "info":
 {
 "description": "<p>C Foreign Function Interface for Python. Interact with almost any C code from Python, based on C-like declarations that you can often copy-paste from header files or documentation.</p>",
@@ -362,8 +362,8 @@
 "siteName": "readthedocs.io",
 "license": "MIT",
 "linkToLicense": "https://foss.heptapod.net/pypy/cffi/-/blob/branch/default/LICENSE",
-"version": "(cp312) 1.16.0",
-"installCommand": "cffi==1.16.0 --hash=sha256:ce1ac631c4fe96fa860e4b0e7271060c4f480479b2cb853fa2c24646c169e0ed"
+"version": "(cp313) 1.17.1",
+"installCommand": "cffi==1.17.1 --hash=sha256:26f9c6753f36f0b75d971f3f05027f921ee071273c8a56b9fd05a0dc8e10a49c"
 }
 },
 {
@@ -385,7 +385,7 @@
 {
 "name": "charset-normalizer",
 "tags": [ "utility" ],
-"versions": " 3.0.1.post0",
+"versions": " 3.4.0",
 "info":
 {
 "description": "<p>A library that helps you read text from an unknown charset encoding.</p><p> Motivated by <code>chardet</code>, this implements various performance improvements in comparison, especially on files about 1MB in size. All IANA character set names for which the Python core library provides codecs are supported.</p>",
@@ -394,14 +394,14 @@
 "siteName": "github",
 "license": "MIT",
 "linkToLicense": "https://github.com/Ousret/charset_normalizer/blob/master/LICENSE",
-"version": "(py3) 3.0.1.post0",
-"installCommand": "charset-normalizer==3.0.1.post0 --hash=sha256:a3c7abe1e119baa100ee1d2965760a07108bd046fecc16a8e83fdb0942d680f8"
+"version": "(py3) 3.4.0",
+"installCommand": "charset-normalizer==3.4.0 --hash=sha256:2d89758ac5a52822a911f4abf1e04a1f72073c2d0b680802deb38218f37fcf56"
 }
 },
 {
 "name": "click",
 "tags": [ "utility","programming_tools" ],
-"versions": " 8.1.3.post0",
+"versions": " 8.1.8",
 "info":
 {
 "description": "<p>Click is a Python package for creating beautiful command line interfaces in a composable way with as little code as necessary. It’s the “Command Line Interface Creation Kit”. It’s highly configurable but comes with sensible defaults out of the box.</p><p>It aims to make the process of writing command line tools quick and fun while also preventing any frustration caused by the inability to implement an intended CLI API.</p>",
@@ -410,8 +410,8 @@
 "siteName": "palletsprojects.com/p/click/",
 "license": "here",
 "linkToLicense": "https://github.com/pallets/click/blob/main/LICENSE.rst",
-"version": "(py3) 8.1.3.post0",
-"installCommand": "click==8.1.3.post0 --hash=sha256:4e29cc51008eb42e68234adfb0885594cb661f1281b2cfc9687bdaea6ca7d600"
+"version": "(py3) 8.1.8",
+"installCommand": "click==8.1.8 --hash=sha256:53e75763203f257c300dc17b3257be251eb31d9d767dcd9badec4fb57b1bef0f"
 }
 },
 {
@@ -433,7 +433,7 @@
 {
 "name": "comm",
 "tags": [ "utility" ],
-"versions": " 0.2.1",
+"versions": " 0.2.2",
 "info":
 {
 "description": "<p>Comm provides a way to register a Kernel Comm implementation, as per the Jupyter kernel protocol.</p>",
@@ -442,8 +442,8 @@
 "siteName": "github.com",
 "license": "BSD-3",
 "linkToLicense": "https://github.com/ipython/comm#BSD-3-Clause-1-ov-file",
-"version": "(py3) 0.2.1",
-"installCommand": "comm==0.2.1 --hash=sha256:13c42ebd84f09cc76b9bc483f2afdfce96ee97d25f27f479c3df1e033b447b61"
+"version": "(py3) 0.2.2",
+"installCommand": "comm==0.2.2 --hash=sha256:5c6cfa57da70d1d1214033aa2e45912f3bdb4300efcf35b0d8ba4762fdd54abb"
 }
 },
 {
@@ -465,7 +465,7 @@
 {
 "name": "contourpy",
 "tags": [ "graphics","math" ],
-"versions": " 1.0.7.post0 1.0.7.post0 1.2.0",
+"versions": " 1.0.7.post0 1.0.7.post0 1.2.0 1.2.0",
 "info":
 {
 "description": "<p>ContourPy is a Python library for calculating contours of 2D quadrilateral grids.</p>",
@@ -474,8 +474,8 @@
 "siteName": "github.com",
 "license": "BSD-3",
 "linkToLicense": "https://github.com/contourpy/contourpy/blob/main/LICENSE",
-"version": "(cp312) 1.2.0",
-"installCommand": "contourpy==1.2.0 --hash=sha256:e5c556118b1e528d3a3851a5321b360b463efbbc7f5ed789103feb5daeff6b7f"
+"version": "(cp313) 1.2.0",
+"installCommand": "contourpy==1.2.0 --hash=sha256:c61778df556995483134ce39ac2c20fcbdbed4099bb12264f970381c82882641"
 }
 },
 {
@@ -497,7 +497,7 @@
 {
 "name": "cython",
 "tags": [ "programming_tools" ],
-"versions": " 0.29.32.post0 3.0.8 3.0.9",
+"versions": " 0.29.32.post0 3.0.10.post0 3.0.8 3.0.9",
 "info":
 {
 "description": "<p>The Cython language makes writing C extensions for the Python language as easy as Python itself. Cython is a source code translator based on <a href='http://www.cosc.canterbury.ac.nz/greg.ewing/python/Pyrex/'>Pyrex</a>, but supports more cutting edge functionality and optimizations.</p><p>The Cython language is a superset of the Python language (almost all Python code is also valid Cython code), but Cython additionally supports optional static typing to natively call C functions, operate with C++ classes and declare fast C types on variables and class attributes. This allows the compiler to generate very efficient C code from Cython code.</p><p>This makes Cython the ideal language for writing glue code for external C/C++ libraries, and for fast C modules that speed up the execution of Python code.</p>",
@@ -513,7 +513,7 @@
 {
 "name": "cytoolz",
 "tags": [ "utility" ],
-"versions": " 0.12.0 0.12.0 0.12.3",
+"versions": " 0.12.0 0.12.0 0.12.3 0.12.3.post0",
 "info":
 {
 "description": "<p>Cython implementation of the<a class='reference external' href='https://github.com/pytoolz/toolz'><tt class='docutils literal'>toolz</tt></a> <a class='reference external' href='https://pypi.python.org/pypi/toolz/'>package,</a> whichprovides high performance utility functions for iterables, functions,and dictionaries.</p><p><tt class='docutils literal'>toolz</tt> is a pure Python package that borrows heavily from contemporaryfunctional languanges.  It is designed to interoperate seamlessly with otherlibraries including <tt class='docutils literal'>itertools</tt>, <tt class='docutils literal'>functools</tt>, and third party libraries.High performance functional data analysis is possible with builtin typeslike <tt class='docutils literal'>list</tt> and <tt class='docutils literal'>dict</tt>, and user-defined data structures; and low memoryusage is achieved by using the iterator protocol and returning iteratorswhenever possible.</p><p><tt class='docutils literal'>cytoolz</tt> implements the same API as <tt class='docutils literal'>toolz</tt>.  The main differences arethat <tt class='docutils literal'>cytoolz</tt> is faster (typically 2-5x faster with a few spectacularexceptions) and <tt class='docutils literal'>cytoolz</tt> offers a C API that is accessible to otherprojects developed in Cython.  Since <tt class='docutils literal'>toolz</tt> is able to process verylarge (potentially infinite) data sets, the performance increase gained byusing <tt class='docutils literal'>cytoolz</tt> can be significant.</p>",
@@ -522,8 +522,8 @@
 "siteName": "github",
 "license": "BSD3",
 "linkToLicense": "https://github.com/pytoolz/cytoolz/blob/master/LICENSE.txt",
-"version": "(cp312) 0.12.3",
-"installCommand": "cytoolz==0.12.3 --hash=sha256:73f423feb7617a972a9768ab7452199760bad72c33d4a764b0e516d9e16b1a69"
+"version": "(cp313) 0.12.3.post0",
+"installCommand": "cytoolz==0.12.3.post0 --hash=sha256:1df8c88e5f0341e96343bdc76b3f95b72278691192adf3c01660609a367aeb31"
 }
 },
 {
@@ -577,7 +577,7 @@
 {
 "name": "dask",
 "tags": [ "programming_tools","math","machine_learning" ],
-"versions": " 2021.12.0.post0",
+"versions": " 2024.9.1.post0",
 "info":
 {
 "description": "<p>Dask is a flexible library for parallel computing in Python.</p><p>Dask is composed of two parts:</p><ul><li>Dynamic task scheduling optimized for computation. This is similar to Airflow, Luigi, Celery, or Make, but optimized for interactive computational workloads.</li><li>“Big Data” collections like parallel arrays, dataframes, and lists that extend common interfaces like NumPy, Pandas, or Python iterators to larger-than-memory or distributed environments. These parallel collections run on top of dynamic task schedulers.</li></ul>",
@@ -586,8 +586,8 @@
 "siteName": "dask.org",
 "license": "BSD3",
 "linkToLicense": "https://github.com/dask/dask/blob/main/LICENSE.txt",
-"version": "(py3) 2021.12.0.post0",
-"installCommand": "dask==2021.12.0.post0 --hash=sha256:3498902083e3e739b9b621741a67c37e0be8a76e573336955b3b71a184013456"
+"version": "(py3) 2024.9.1.post0",
+"installCommand": "dask==2024.9.1.post0 --hash=sha256:198b6d6a85cffa14b54cf9c9822b4ff81d6a55aca1d92ef19185a0ef48567998"
 }
 },
 {
@@ -609,7 +609,7 @@
 {
 "name": "debugpy",
 "tags": [ "utility","web","programming_tools" ],
-"versions": " 1.6.3.post3 1.6.3.post4 1.8.1",
+"versions": " 1.6.3.post3 1.6.3.post4 1.8.1 1.8.12.post0",
 "info":
 {
 "description": "<p>debugpy is an implementation of the Debug Adapter Protocol for Python.</p>",
@@ -618,8 +618,8 @@
 "siteName": "github",
 "license": "MIT",
 "linkToLicense": "https://github.com/microsoft/debugpy/blob/main/LICENSE",
-"version": "(cp312) 1.8.1",
-"installCommand": "debugpy==1.8.1 --hash=sha256:4c1d78b2f9aa455b4801e59066d4a5d367633625d36ad707fae655956e304f9c"
+"version": "(cp313) 1.8.12.post0",
+"installCommand": "debugpy==1.8.12.post0 --hash=sha256:5c450644e50068ec24a176a793059de7f0f09140202bc1885b06e38dc8968569"
 }
 },
 {
@@ -801,7 +801,7 @@
 {
 "name": "filelock",
 "tags": [ "utility" ],
-"versions": " 3.13.4",
+"versions": " 3.14.0",
 "info":
 {
 "description": "<p>This package contains a single module, which implements a platform independent file lock in Python, which provides a simple way of inter-process communication. </p>",
@@ -810,8 +810,8 @@
 "siteName": "https://github.com/tox-dev/py-filelock",
 "license": "Unlicense",
 "linkToLicense": "https://github.com/tox-dev/py-filelock/blob/main/LICENSE",
-"version": "(py3) 3.13.4",
-"installCommand": "filelock==3.13.4 --hash=sha256:404e5e9253aa60ad457cae1be07c0f0ca90a63931200a47d9b6a6af84fd7b45f"
+"version": "(py3) 3.14.0",
+"installCommand": "filelock==3.14.0 --hash=sha256:5397dd2e3773a337f64a50f49840b7cd54b4078df14697b10e44f30abd37e72c"
 }
 },
 {
@@ -881,7 +881,7 @@
 {
 "name": "fonttools",
 "tags": [ "graphics" ],
-"versions": " 4.50.0",
+"versions": " 4.54.1",
 "info":
 {
 "description": "<p>fontTools is a library for manipulating fonts, written in Python. The project includes the TTX tool, that can convert TrueType and OpenType fonts to and from an XML text format, which is also called TTX. </p>",
@@ -890,8 +890,8 @@
 "siteName": "https://github.com/fonttools/fonttools",
 "license": "MIT",
 "linkToLicense": "https://github.com/fonttools/fonttools/blob/main/LICENSE",
-"version": "(py3) 4.50.0",
-"installCommand": "fonttools==4.50.0 --hash=sha256:4c1dd3c1006f92711807eae37235143e6f1fce39f33bc6843998adced5dca741"
+"version": "(py3) 4.54.1",
+"installCommand": "fonttools==4.54.1 --hash=sha256:28a2e02343558c0749f8358c5e637cb482ac4cf9699d1ad1d0864befb586ba87"
 }
 },
 {
@@ -993,7 +993,7 @@
 {
 "name": "gunicorn",
 "tags": [ "web" ],
-"versions": " 21.2.0.post2",
+"versions": " 23.0.0.post0",
 "info":
 {
 "description": "<p>Gunicorn ‘Green Unicorn’ is a Python WSGI HTTP Server for UNIX. </p>",
@@ -1002,8 +1002,8 @@
 "siteName": "github.com",
 "license": "MIT",
 "linkToLicense": "https://github.com/ibm-z-oss-oda/gunicorn/blob/master/LICENSE",
-"version": "(py3) 21.2.0.post2",
-"installCommand": "gunicorn==21.2.0.post2 --hash=sha256:aac2abd5caf6b7c59c2629e8ed76652f30956f9a7dbccabc03839796029a7fa6"
+"version": "(py3) 23.0.0.post0",
+"installCommand": "gunicorn==23.0.0.post0 --hash=sha256:c90ddff765d7ea7ea8ff1ff517dad22ed6db8cb8fa91574e6c67c690c9680416"
 }
 },
 {
@@ -1025,7 +1025,7 @@
 {
 "name": "harfbuzz",
 "tags": [ "graphics","languages" ],
-"versions": " 7.0.0",
+"versions": " 10.3.0",
 "info":
 {
 "description": "<p> HarfBuzz is a text shaping library. Using the HarfBuzz library allows programs to convert a sequence of Unicode input into properly formatted and positioned glyph output—for any writing system and language. </p>",
@@ -1034,8 +1034,8 @@
 "siteName": "harfbuzz.github.io",
 "license": "OTHER",
 "linkToLicense": "https://github.com/harfbuzz/harfbuzz/blob/main/COPYING",
-"version": "(py3) 7.0.0",
-"installCommand": "harfbuzz==7.0.0 --hash=sha256:2399ea1b10311b78894fc954fad0c89da08edd1ef08bae54fe6f8156d5b46182"
+"version": "(py3) 10.3.0",
+"installCommand": "harfbuzz==10.3.0 --hash=sha256:59f563f2d82e1cb0fdf4e085df738aa801dae494f7b9fbb6ee824acca937767e"
 }
 },
 {
@@ -1121,7 +1121,7 @@
 {
 "name": "ibm-db",
 "tags": [ "utility" ],
-"versions": " 3.2.3 3.2.3 3.2.3",
+"versions": " 3.2.3 3.2.3 3.2.3 3.2.3.post0",
 "info":
 {
 "description": "<p>Provides Python interface for connecting to IBM Db2 for LUW, IBM Informix and IBM Db2 for z/OS. </p>",
@@ -1130,8 +1130,8 @@
 "siteName": "github.com/ibm-z-oss-oda/python-ibmdb",
 "license": "Apache License 2.0",
 "linkToLicense": "https://github.com/ibm-z-oss-oda/python-ibmdb/blob/master/LICENSE",
-"version": "(cp312) 3.2.3",
-"installCommand": "ibm-db==3.2.3 --hash=sha256:0f43da0cda98b7eaec6cad50efb63c26ff25e398497f5e89ec43a4c3b466654b"
+"version": "(cp313) 3.2.3.post0",
+"installCommand": "ibm-db==3.2.3.post0 --hash=sha256:f8b3633c6a2eda386be70c200fa5bcde0b3274da252802393be05b3e1b569b5b"
 }
 },
 {
@@ -1217,7 +1217,7 @@
 {
 "name": "ipykernel",
 "tags": [ "programming_tools" ],
-"versions": " 6.9.1",
+"versions": " 6.9.1.post0",
 "info":
 {
 "description": "<p>This package provides the IPython kernel for Jupyter.</p><p>IPython is a growing project, with increasingly language-agnostic components. IPython 3.x was the last monolithic release of IPython, containing the notebook server, qtconsole, etc. As of IPython 4.0, the language-agnostic parts of the project: the notebook format, message protocol, qtconsole, notebook web application, etc. have moved to new projects under the name Jupyter. IPython itself is focused on interactive Python, part of which is providing a Python kernel for Jupyter.</p>",
@@ -1226,8 +1226,8 @@
 "siteName": "ipython.org",
 "license": "BSD3",
 "linkToLicense": "https://github.com/ipython/ipykernel/blob/main/COPYING.md",
-"version": "(py3) 6.9.1",
-"installCommand": "ipykernel==6.9.1 --hash=sha256:0ac19e83f030d323d5aad2c76e47010e0a0dce0f49fafd8d9f8dd3124bb82f0a"
+"version": "(py3) 6.9.1.post0",
+"installCommand": "ipykernel==6.9.1.post0 --hash=sha256:cb018cb5bfffb23cd42671c1ee5a374f677e96b8cb4709ba5f0c43980f81ef5d"
 }
 },
 {
@@ -1361,7 +1361,7 @@
 {
 "name": "jinja2",
 "tags": [ "languages" ],
-"versions": " 3.1.4",
+"versions": " 3.1.6",
 "info":
 {
 "description": "<p>Jinja is a fast, expressive, extensible templating engine. Special placeholders in the template allow writing code similar to Python syntax. Then the template is passed data to render the final document.</p><p>It includes:</p><ul>    <li>Template inheritance and inclusion.</li>    <li>Define and import macros within templates.</li>    <li>HTML templates can use autoescaping to prevent XSS from untrusted user input.</li>    <li>A sandboxed environment can safely render untrusted templates.</li>    <li>AsyncIO support for generating templates and calling async functions.</li>    <li>I18N support with Babel.</li>    <li>Templates are compiled to optimized Python code just-in-time and cached, or can be compiled ahead-of-time.</li>    <li>Exceptions point to the correct line in templates to make debugging easier.</li>    <li>Extensible filters, tests, functions, and even syntax.</li></ul><p>Jinja’s philosophy is that while application logic belongs in Python if possible, it shouldn’t make the template designer’s job difficult by restricting functionality too much.</p>",
@@ -1370,14 +1370,14 @@
 "siteName": "palletsprojects.com/p/jinja",
 "license": "BSD3",
 "linkToLicense": "https://github.com/pallets/jinja/blob/main/LICENSE.rst",
-"version": "(py3) 3.1.4",
-"installCommand": "jinja2==3.1.4 --hash=sha256:87bb8e1349fb632133bfc4466667b2f5c2aabac3ae264c63122333d431dc7196"
+"version": "(py3) 3.1.6",
+"installCommand": "jinja2==3.1.6 --hash=sha256:e469db8741126801274ea28cc0e205284863b47af7be3410cdcaba0821cabad6"
 }
 },
 {
 "name": "joblib",
 "tags": [ "utility" ],
-"versions": " 1.2.0.post0",
+"versions": " 1.4.2.post0",
 "info":
 {
 "description": "<p>Joblib is a set of tools to provide lightweight pipelining in Python. In particular, it offers:</p>    <p>1 - transparent disk-caching of functions and lazy re-evaluation (memoize pattern)</p>    <p>2 - easy simple parallel computing</p><p>Joblib is optimized to be fast and robust on large data in particular and has specific optimizations for numpy arrays. </p>",
@@ -1386,8 +1386,8 @@
 "siteName": "readthedocs.io",
 "license": "BSD3",
 "linkToLicense": "https://github.com/joblib/joblib/blob/master/LICENSE.txt",
-"version": "(py3) 1.2.0.post0",
-"installCommand": "joblib==1.2.0.post0 --hash=sha256:e857ab17b9f4bb8db591cd6c551646af2aa248f791b1109b2b9f23fba872d99a"
+"version": "(py3) 1.4.2.post0",
+"installCommand": "joblib==1.4.2.post0 --hash=sha256:529822025a2cb3577cbdfda757f7397748c73512fa7d8cf5d10ff95bcdbcf265"
 }
 },
 {
@@ -1761,7 +1761,7 @@
 {
 "name": "kiwisolver",
 "tags": [ "math","graphics" ],
-"versions": " 1.4.5 1.4.5 1.4.5",
+"versions": " 1.4.5 1.4.5 1.4.5 1.4.5",
 "info":
 {
 "description": "<p>Kiwi is an efficient C++ implementation of the Cassowary constraint solving algorithm. Kiwi is an implementation of the algorithm based on the <a href='https://constraints.cs.washington.edu/solvers/cassowary-tochi.pdf'>seminal Cassowary paper</a>. It is not a refactoring of the original C++ solver. Kiwi has been designed from the ground up to be lightweight and fast. Kiwi ranges from 10x to 500x faster than the original Cassowary solver with typical usecases gaining a 40x improvement. Memory savings are consistently > 5x.</p><p>In addition to the C++ solver, Kiwi ships with hand-rolled Python bindings for Python 3.7+.</p>",
@@ -1770,8 +1770,8 @@
 "siteName": "github",
 "license": "BSD3",
 "linkToLicense": "https://github.com/nucleic/kiwi/blob/main/LICENSE",
-"version": "(cp312) 1.4.5",
-"installCommand": "kiwisolver==1.4.5 --hash=sha256:5fca12edf5b64120e8ebf08929bd047025e78a7522fb4ca2fbf51cf8e38a845c"
+"version": "(cp313) 1.4.5",
+"installCommand": "kiwisolver==1.4.5 --hash=sha256:c5cbf61db7b037e96f5bfe3327fa299b00541729d9ca83d35a641f792c1e540b"
 }
 },
 {
@@ -1841,7 +1841,7 @@
 {
 "name": "libxml2",
 "tags": [ "languages" ],
-"versions": " 2.11.4 2.12.7 2.12.7 2.12.7",
+"versions": " 2.10.3.post0 2.12.7 2.12.7 2.12.7",
 "info":
 {
 "description": "<p>Libxml2 is the XML C parser and toolkit developed for the Gnome project (but usable outside of the Gnome platform), it is free software available under the MIT License. XML itself is a metalanguage to design markup languages, i.e. text language where semantic and structure are added to the content using extra 'markup' information enclosed between angle brackets. HTML is the most well-known markup language. Though the library is written in C a variety of language bindings make it available in other environments.</p>",
@@ -1905,7 +1905,7 @@
 {
 "name": "lxml",
 "tags": [ "languages" ],
-"versions": " 4.9.1.post0 4.9.1.post3 5.1.0",
+"versions": " 4.9.1.post0 4.9.1.post3 5.1.0 5.1.0",
 "info":
 {
 "description": "<p>lxml is a Pythonic, mature binding for the libxml2 and libxslt libraries. It provides safe and convenient access to these libraries using the ElementTree API.</p><p>It extends the ElementTree API significantly to offer support for XPath, RelaxNG, XML Schema, XSLT, C14N and much more.</p>",
@@ -1914,8 +1914,8 @@
 "siteName": "lxml.de",
 "license": "BSD3",
 "linkToLicense": "https://github.com/lxml/lxml/blob/master/LICENSE.txt",
-"version": "(cp312) 5.1.0",
-"installCommand": "lxml==5.1.0 --hash=sha256:50eca9c30d25c2d7e71b63bfe63d35fd52272fee79ffa09d242fc5a0b9dc4166"
+"version": "(cp313) 5.1.0",
+"installCommand": "lxml==5.1.0 --hash=sha256:3662846e500b5648d9f9db9b8853c39417c74614daadeefcc67057740f408fe4"
 }
 },
 {
@@ -2017,7 +2017,7 @@
 {
 "name": "mistune",
 "tags": [ "languages" ],
-"versions": " 0.8.3 0.8.3 2.0.4",
+"versions": " 2.0.4",
 "info":
 {
 "description": "<p>A fast yet powerful Python Markdown parser with renderers and plugins, compatible with sane CommonMark rules.</p>",
@@ -2049,7 +2049,7 @@
 {
 "name": "msgpack",
 "tags": [ "languages","utility" ],
-"versions": " 1.0.4.post0 1.0.4.post0 1.0.4.post0",
+"versions": " 1.0.4.post0 1.0.4.post0 1.0.4.post0 1.0.4.post0",
 "info":
 {
 "description": "<p>MessagePack is an efficient binary serialization format. It lets you exchange data among multiple languages like JSON. But it's faster and smaller. This package provides CPython bindings for reading and writing MessagePack data.</p>",
@@ -2058,8 +2058,8 @@
 "siteName": "msgpack.org",
 "license": "APACHE2",
 "linkToLicense": "https://github.com/msgpack/msgpack-python/blob/main/COPYING",
-"version": "(cp312) 1.0.4.post0",
-"installCommand": "msgpack==1.0.4.post0 --hash=sha256:4bd400e3ec2ac7fe8ebe49d0736582897f4f7d5c3eb54c05b12af6d476909816"
+"version": "(cp313) 1.0.4.post0",
+"installCommand": "msgpack==1.0.4.post0 --hash=sha256:106db72f030712f81ded77eac85af1954052699b0cabd93ebf7fff3dc7c8fb05"
 }
 },
 {
@@ -2305,7 +2305,7 @@
 {
 "name": "partd",
 "tags": [ "programming_tools" ],
-"versions": " 1.2.0",
+"versions": " 1.4.2",
 "info":
 {
 "description": "<p>Key-value byte store with appendable values</p><p>Partd stores key-value pairs. Values are raw bytes. We append on old values.</p><p>Partd excels at shuffling operations.</p>",
@@ -2314,8 +2314,8 @@
 "siteName": "partd",
 "license": "BSD3",
 "linkToLicense": "https://github.com/dask/partd/blob/main/LICENSE.txt",
-"version": "(py3) 1.2.0",
-"installCommand": "partd==1.2.0 --hash=sha256:dff21614884b654899b744a16fe57e8e0211588f38809c058e2c3cce28d7735b"
+"version": "(py3) 1.4.2",
+"installCommand": "partd==1.4.2 --hash=sha256:2f13e7ff8879f410131ef7a028a9abeb756a194ce092b8db0fb98a9e7a4fc42d"
 }
 },
 {
@@ -2369,7 +2369,7 @@
 {
 "name": "pillow",
 "tags": [ "graphics" ],
-"versions": " 10.3.0.post0 10.3.0.post0 10.3.0.post0",
+"versions": " 10.3.0.post0 10.3.0.post0 10.3.0.post0 11.0.0.post0",
 "info":
 {
 "description": "<p>The Python Imaging Library adds image processing capabilities to your Python interpreter.</p><p>This library provides extensive file format support, an efficient internal representation, and fairly powerful image processing capabilities.</p><p>The core image library is designed for fast access to data stored in a few basic pixel formats. It should provide a solid foundation for a general image processing tool.</p>",
@@ -2378,8 +2378,8 @@
 "siteName": "python-pillow.org",
 "license": "OTHER",
 "linkToLicense": "https://github.com/python-pillow/Pillow/blob/main/LICENSE",
-"version": "(cp312) 10.3.0.post0",
-"installCommand": "pillow==10.3.0.post0 --hash=sha256:c1ae4770fe2726288e8a193121c10f43765007c67a43e1ff982054071584a2d4"
+"version": "(cp313) 11.0.0.post0",
+"installCommand": "pillow==11.0.0.post0 --hash=sha256:521c6fb2a7f12d171fd9368401ff2e46282adc1455b69fd7990815a5eb03b8bb"
 }
 },
 {
@@ -2449,7 +2449,7 @@
 {
 "name": "prompt-toolkit",
 "tags": [ "programming_tools" ],
-"versions": " 3.0.36.post0",
+"versions": " 3.0.48",
 "info":
 {
 "description": "<p><code>prompt-toolkit</code> is a library for building powerful interactive command line applications in Python.</p>",
@@ -2458,8 +2458,8 @@
 "siteName": "readthedocs.io",
 "license": "BSD3",
 "linkToLicense": "https://github.com/prompt-toolkit/python-prompt-toolkit/blob/master/LICENSE",
-"version": "(py3) 3.0.36.post0",
-"installCommand": "prompt-toolkit==3.0.36.post0 --hash=sha256:3853d48d2505a672bc7504d9ce29022b2726005ea410669360c5326d31dfc42d"
+"version": "(py3) 3.0.48",
+"installCommand": "prompt-toolkit==3.0.48 --hash=sha256:c02f254531d9819fcdaf572602e3a2e50dd126fd4156a60ca19ca288865f7ef1"
 }
 },
 {
@@ -2492,6 +2492,22 @@
 "linkToLicense": "https://github.com/ibm-z-oss-oda/pure_eval/blob/master/LICENSE.txt",
 "version": "(py3) 0.2.2",
 "installCommand": "pure-eval==0.2.2 --hash=sha256:01eaab343580944bc56080ebe0a674b39ec44a945e6d09ba7db3cb8cec289350"
+}
+},
+{
+"name": "py-zcrypto",
+"tags": [ "utility" ],
+"versions": " 1.0.2",
+"info":
+{
+"description": "<p>This Python package provides API's to access Certificate Management Services (CMS).</p>",
+"usageNotes": "<p>Usage information is available on <a href='https://github.com/IBM/py-zcrypto/blob/main/README.md'>github.com</a>.</p>",
+"linkToSite": "https://github.com/IBM/py-zcrypto",
+"siteName": "github.com",
+"license": "Apache 2",
+"linkToLicense": "https://github.com/IBM/py-zcrypto?tab=Apache-2.0-1-ov-file#readme",
+"version": "(cp313) 1.0.2",
+"installCommand": "py-zcrypto==1.0.2 --hash=sha256:ccdc3c2a76330b5375984239df843dd524949e4b1bdfca53c74b2eb8dea46a84"
 }
 },
 {
@@ -2625,7 +2641,7 @@
 {
 "name": "pyrsistent",
 "tags": [ "programming_tools" ],
-"versions": " 0.19.3.post0 0.19.3.post0 0.19.3.post0",
+"versions": " 0.19.3.post0 0.19.3.post0 0.19.3.post0 0.19.3.post0",
 "info":
 {
 "description": "<p>Pyrsistent is a number of persistent collections (by some referred to as functional data structures). Persistent in the sense that they are immutable.</p><p>All methods on a data structure that would normally mutate it instead return a new copy of the structure containing the requested updates. The original structure is left untouched.</p><p>This will simplify the reasoning about what a program does since no hidden side effects ever can take place to these data structures. You can rest assured that the object you hold a reference to will remain the same throughout its lifetime and need not worry that somewhere five stack levels below you in the darkest corner of your application someone has decided to remove that element that you expected to be there.</p><p>Pyrsistent is influenced by persistent data structures such as those found in the standard library of Clojure. The data structures are designed to share common elements through path copying. It aims at taking these concepts and make them as pythonic as possible so that they can be easily integrated into any python program without hassle.</p>",
@@ -2634,8 +2650,8 @@
 "siteName": "github",
 "license": "MIT",
 "linkToLicense": "https://github.com/tobgu/pyrsistent/blob/master/LICENSE.mit",
-"version": "(cp312) 0.19.3.post0",
-"installCommand": "pyrsistent==0.19.3.post0 --hash=sha256:22f790e68a7e48441b70edf70f6e2c28fc1001f38c84ff4c6e5c73ee3fb4e359"
+"version": "(cp313) 0.19.3.post0",
+"installCommand": "pyrsistent==0.19.3.post0 --hash=sha256:fc6705747066a9be78a1f7338b422432d33e30b4395ec1f9e512ad7fceb913be"
 }
 },
 {
@@ -2705,7 +2721,7 @@
 {
 "name": "pyyaml",
 "tags": [ "programming_tools","utility","languages" ],
-"versions": " 6.0.1 6.0.post0 6.0.post0",
+"versions": " 6.0.1 6.0.1.post0 6.0.post0 6.0.post0",
 "info":
 {
 "description": "<p>YAML is a data serialization format designed for human readability and interaction with scripting languages. PyYAML is a YAML parser and emitter for Python.</p><p>PyYAML features a complete YAML 1.1 parser, Unicode support, pickle support, capable extension API, and sensible error messages. PyYAML supports standard YAML tags and provides Python-specific tags that allow to represent an arbitrary Python object.</p><p>PyYAML is applicable for a broad range of tasks from complex configuration files to object serialization and persistence.</p>",
@@ -2721,7 +2737,7 @@
 {
 "name": "pyzmq",
 "tags": [ "programming_tools","web","utility" ],
-"versions": " 24.0.1.post0 24.0.1.post0 24.0.1.post0",
+"versions": " 24.0.1.post0 24.0.1.post0 24.0.1.post0 25.1.2",
 "info":
 {
 "description": "<p>This package contains Python bindings for <a href='https://zeromq.org/'>ØMQ</a>. ØMQ is a lightweight and fast messaging implementation.</p>",
@@ -2730,8 +2746,8 @@
 "siteName": "readthedocs.io",
 "license": "here",
 "linkToLicense": "https://github.com/zeromq/pyzmq/blob/main/COPYING.BSD",
-"version": "(cp312) 24.0.1.post0",
-"installCommand": "pyzmq==24.0.1.post0 --hash=sha256:5730f9247c5945b18de17edc7b5fc7fc6702d0d960b7117fe5d19e2b980daa81"
+"version": "(cp313) 25.1.2",
+"installCommand": "pyzmq==25.1.2 --hash=sha256:ab0ad60d06dbdcd3a88157d91be1728f87928e9a4d38a851c862cb52b9e2f001"
 }
 },
 {
@@ -2753,7 +2769,7 @@
 {
 "name": "qtpy",
 "tags": [ "programming_tools","graphics" ],
-"versions": " 2.1.0.post0",
+"versions": " 2.4.1",
 "info":
 {
 "description": "<p>QtPy is a small abstraction layer that lets you write applications using a single API call to either PyQt or PySide.</p><p>It provides support for <code>PyQt5</code>, <code>PyQt6</code>, <code>PySide6</code>, <code>PySide2</code> using the Qt5 layout (where the QtGui module has been split into QtGui and QtWidgets).</p><p>Basically, you can write your code as if you were using PyQt or PySide directly, but import Qt modules from <code>qtpy</code> instead of <code>PyQt5</code>, <code>PyQt6</code>, <code>PySide2</code>, or <code>PySide6</code>.</p><p>Accordingly, when porting code between different Qt bindings (PyQt vs PySide) or Qt versions (Qt5 vs Qt6), QtPy makes this much more painless, and allows you to easily and incrementally transition between them. QtPy handles incompatibilities and differences between bindings or Qt versions for you while keeping your project running, so you can focus more on your own code and less on keeping track of supporting every Qt version and binding. Furthermore, when you do want to upgrade or support new bindings, it allows you to update your project module by module rather than all at once.</p>",
@@ -2762,8 +2778,8 @@
 "siteName": "github",
 "license": "MIT",
 "linkToLicense": "https://github.com/spyder-ide/qtpy/blob/master/LICENSE.txt",
-"version": "(py3) 2.1.0.post0",
-"installCommand": "qtpy==2.1.0.post0 --hash=sha256:eefb309598436231fbd4d94d368260e13ff068808ee19a6c588fa59ca22130e3"
+"version": "(py3) 2.4.1",
+"installCommand": "qtpy==2.4.1 --hash=sha256:3645be3cfdf12fb8737c86eb7c03d8a335420d17e2ede501014f62fe60a21850"
 }
 },
 {
@@ -3153,7 +3169,7 @@
 {
 "name": "sqlalchemy",
 "tags": [ "programming_tools","database" ],
-"versions": " 2.0.12 2.0.12 2.0.29",
+"versions": " 2.0.12 2.0.12 2.0.29 2.0.37",
 "info":
 {
 "description": "<p>SQLAlchemy is the Python SQL toolkit and Object Relational Mapper that gives application developers the full power and flexibility of SQL. SQLAlchemy provides a full suite of well known enterprise-level persistence patterns, designed for efficient and high-performing database access, adapted into a simple and Pythonic domain language.</p>",
@@ -3162,8 +3178,8 @@
 "siteName": "github.com",
 "license": "MIT",
 "linkToLicense": "https://github.com/sqlalchemy/sqlalchemy/blob/main/LICENSE",
-"version": "(cp312) 2.0.29",
-"installCommand": "sqlalchemy==2.0.29 --hash=sha256:7bbf795b2f931a58c27ee0a4dde3c1e39c55c55591f152b826a98eb3f9103a0e"
+"version": "(cp313) 2.0.37",
+"installCommand": "sqlalchemy==2.0.37 --hash=sha256:9e22192f6a87a4614875975d1095304b73efe196aef31eff1b3d2600cf987b54"
 }
 },
 {
@@ -3361,7 +3377,7 @@
 {
 "name": "tornado",
 "tags": [ "web" ],
-"versions": " 6.3.3 6.3.3 6.3.3",
+"versions": " 6.3.3 6.4.2 6.4.2 6.4.2",
 "info":
 {
 "description": "<p>Tornado is a Python web framework and asynchronous networking library, originally developed at <a href='https://en.wikipedia.org/wiki/FriendFeed'>FriendFeed</a>. By using non-blocking network I/O, Tornado can scale to tens of thousands of open connections, making it ideal for <a href='https://en.wikipedia.org/wiki/Push_technology#Long_polling'>long polling</a>, <a href='https://en.wikipedia.org/wiki/WebSocket'>WebSockets</a>, and other applications that require a long-lived connection to each user.</p>",
@@ -3370,8 +3386,8 @@
 "siteName": "tornadoweb.org",
 "license": "APACHE2",
 "linkToLicense": "https://github.com/tornadoweb/tornado/blob/master/LICENSE",
-"version": "(cp312) 6.3.3",
-"installCommand": "tornado==6.3.3 --hash=sha256:42d304072e43442bbdbe2aa12f3038c71294583b9af5d21734a661f0af236488"
+"version": "(cp313) 6.4.2",
+"installCommand": "tornado==6.4.2 --hash=sha256:1ef23e425dccd67620aa7de2df7fd6127914d9af65c9a59990bea7725aeebbc2"
 }
 },
 {
@@ -3505,7 +3521,7 @@
 {
 "name": "virtualenv",
 "tags": [ "utility","programming_tools" ],
-"versions": " 20.25.3",
+"versions": " 20.29.1",
 "info":
 {
 "description": "<p>A tool for creating isolated virtual python environments. </p>",
@@ -3514,8 +3530,8 @@
 "siteName": "https://github.com/ibm-z-oss-oda/virtualenv",
 "license": "MIT",
 "linkToLicense": "https://github.com/ibm-z-oss-oda/virtualenv/blob/main/LICENSE",
-"version": "(py3) 20.25.3",
-"installCommand": "virtualenv==20.25.3 --hash=sha256:1362b120646b0bbaef639580c376d0238aeea8dcb69d6223b83bbd833beb2118"
+"version": "(py3) 20.29.1",
+"installCommand": "virtualenv==20.29.1 --hash=sha256:0f7f4ed2a6ba42fdd4cb39a887f5d9d4316fcd17b8ca13b5037837358396a364"
 }
 },
 {
@@ -3697,7 +3713,7 @@
 {
 "name": "zos-util",
 "tags": [ "utility" ],
-"versions": " 1.0.1 1.0.1 1.0.1",
+"versions": " 1.0.1 1.0.1 1.0.1 1.0.1.post0",
 "info":
 {
 "description": "<p>This module provides a Python interface into various z/OS utilities</p>",
@@ -3706,8 +3722,8 @@
 "siteName": "github",
 "license": "APACHE2",
 "linkToLicense": "https://github.com/IBM/zos-util/blob/main/LICENSE",
-"version": "(cp312) 1.0.1",
-"installCommand": "zos-util==1.0.1 --hash=sha256:0daaca20600a1d655accbb87221a371a0d74bd272446cbf460d1980dc9da7f71"
+"version": "(cp313) 1.0.1.post0",
+"installCommand": "zos-util==1.0.1.post0 --hash=sha256:5cc45f991e708b42a5ba58bcec9294a979202d1e236aaaa8e577878f1a16bb08"
 }
 }
 ]
