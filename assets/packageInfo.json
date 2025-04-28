@@ -913,7 +913,7 @@
 {
 "name": "freetype2",
 "tags": [ "graphics" ],
-"versions": " 2.12.2.post0",
+"versions": " 2.13.3",
 "info":
 {
 "description": "<p>FreeType is a software font engine that is designed to be small, efficient, highly customizable, and portable while capable of producing high-quality output (glyph images). It can be used in graphics libraries, display servers, font conversion tools, text image generation tools, and many other products as well.</p><p>Note that FreeType is a font service and doesn't provide APIs to perform higher-level features like text layout or graphics processing (e.g., colored text rendering, ‘hollowing’, etc.). However, it greatly simplifies these tasks by providing a simple, easy to use, and uniform interface to access the content of font files.</p><p>Please note that ‘FreeType’ is also called ‘FreeType 2’, to distinguish it from the old, deprecated ‘FreeType 1’ library, a predecessor no longer maintained and supported.</p>",
@@ -922,8 +922,8 @@
 "siteName": "freetype.org",
 "license": "OTHER",
 "linkToLicense": "https://gitlab.freedesktop.org/freetype/freetype/-/blob/master/LICENSE.TXT",
-"version": "(py3) 2.12.2.post0",
-"installCommand": "freetype2==2.12.2.post0 --hash=sha256:78fa51399f34866e862e697803fd60cd90cd29e5a33a02b22d1c6cd44ae8e171"
+"version": "(py3) 2.13.3",
+"installCommand": "freetype2==2.13.3 --hash=sha256:bdcf98b3751c6d454e27be150a4af5b111c1acddeeacd271bb4764974a26a4e2"
 }
 },
 {
@@ -1841,7 +1841,7 @@
 {
 "name": "libxml2",
 "tags": [ "languages" ],
-"versions": " 2.11.4 2.12.7 2.12.7 2.12.7",
+"versions": " 2.11.4 2.12.7 2.14.1 2.14.1 2.14.1",
 "info":
 {
 "description": "<p>Libxml2 is the XML C parser and toolkit developed for the Gnome project (but usable outside of the Gnome platform), it is free software available under the MIT License. XML itself is a metalanguage to design markup languages, i.e. text language where semantic and structure are added to the content using extra 'markup' information enclosed between angle brackets. HTML is the most well-known markup language. Though the library is written in C a variety of language bindings make it available in other environments.</p>",
@@ -1850,8 +1850,8 @@
 "siteName": "gitlab.gnome.org/GNOME/libxml2",
 "license": "MIT",
 "linkToLicense": "https://gitlab.gnome.org/GNOME/libxml2/-/blob/master/Copyright",
-"version": "(cp312) 2.12.7",
-"installCommand": "libxml2==2.12.7 --hash=sha256:93b2e7d5c47468968d801b92100e25a7534dfa08621a7e1b037a8e4c293d2776"
+"version": "(cp313) 2.14.1",
+"installCommand": "libxml2==2.14.1 --hash=sha256:4236096ad4974e27248fbe4769a7e325f8c8f5bea1d154a152ec15333c1925a8"
 }
 },
 {
@@ -3393,7 +3393,7 @@
 {
 "name": "tqdm",
 "tags": [ "utility" ],
-"versions": " 4.64.1",
+"versions": " 4.66.5",
 "info":
 {
 "description": "<p><code>tqdm</code> means 'progress' in Arabic (taqadum) and is an abbreviation for 'I love you so much' in Spanish (te quiero demasiado).</p><p>Instantly make your loops show a smart progress meter - just wrap any iterable with tqdm(iterable), and you're done!</p>",
@@ -3402,8 +3402,8 @@
 "siteName": "tqdm.github.io",
 "license": "OTHER",
 "linkToLicense": "https://github.com/tqdm/tqdm/blob/master/LICENCE",
-"version": "(py3) 4.64.1",
-"installCommand": "tqdm==4.64.1 --hash=sha256:538feb6a0a616ec7e16f23ebe40229fdbb547823696eb4d64a255d04fd6dcd31"
+"version": "(py3) 4.66.5",
+"installCommand": "tqdm==4.66.5 --hash=sha256:493c440a5da9fb22b24296bfbb7abc2bf22fc5cd219f80e348cf660fa73ae570"
 }
 },
 {
