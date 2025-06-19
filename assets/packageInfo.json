@@ -1,7 +1,7 @@
 [{
 "name": "alembic",
 "tags": [ "utility" ],
-"versions": " 1.13.3",
+"versions": " 1.15.2",
 "info":
 {
 "description": "<p>Alembic is a database migrations tool written by the author of SQLAlchemy.</p>",
@@ -10,8 +10,8 @@
 "siteName": "github.com",
 "license": "MIT",
 "linkToLicense": "https://github.com/sqlalchemy/alembic/blob/main/LICENSE",
-"version": "(py3) 1.13.3",
-"installCommand": "alembic==1.13.3 --hash=sha256:327d7f45eeb368160a67687a700300cdcf11f3ed90e381f1638ecdcf2c778747"
+"version": "(py3) 1.15.2",
+"installCommand": "alembic==1.15.2 --hash=sha256:487c2acea1c39d9369c44367f9fbc87fe6d582abeb9ce1ebb76b36a4db1ee295"
 }
 },
 {
@@ -241,7 +241,7 @@
 {
 "name": "bleach",
 "tags": [ "security","programming_tools" ],
-"versions": " 6.2.0.post0",
+"versions": " 6.2.0.post1",
 "info":
 {
 "description": "<p>Bleach is an allowed-list-based HTML sanitizing library that escapes or stripsmarkup and attributes.</p><p>Bleach can also linkify text safely, applying filters that Django's <tt class='docutils literal'>urlize</tt>filter cannot, and optionally setting <tt class='docutils literal'>rel</tt> attributes, even on links alreadyin the text.</p><p>Bleach is intended for sanitizing text from <em>untrusted</em> sources. If you findyourself jumping through hoops to allow your site administrators to do lots ofthings, you're probably outside the use cases. Either trust those users, ordon't.</p><p>Because it relies on <a class='reference external' href='https://github.com/html5lib/html5lib-python'>html5lib</a>, Bleach is as good as modern browsers at dealingwith weird, quirky HTML fragments. And <em>any</em> of Bleach's methods will fixunbalanced or mis-nested tags.</p>",
@@ -250,8 +250,8 @@
 "siteName": "github",
 "license": "APACHE2",
 "linkToLicense": "https://github.com/mozilla/bleach/blob/main/LICENSE",
-"version": "(py3) 6.2.0.post0",
-"installCommand": "bleach==6.2.0.post0 --hash=sha256:03003e2cf3854acec297c7109c013855cdce310e609f34d149cf330362a3c395"
+"version": "(py3) 6.2.0.post1",
+"installCommand": "bleach==6.2.0.post1 --hash=sha256:fc2c098b3a0484005ba9d1478a756c1bd1c2656d09acd439e4bb5ce59347055b"
 }
 },
 {
@@ -561,7 +561,7 @@
 {
 "name": "dash",
 "tags": [ "web" ],
-"versions": " 2.14.2",
+"versions": " 3.0.2",
 "info":
 {
 "description": "<p>Dash ties modern UI elements like dropdowns, sliders, and graphs directly to your analytical Python code.</p>",
@@ -570,8 +570,8 @@
 "siteName": "github.com",
 "license": "MIT",
 "linkToLicense": "https://github.com/plotly/dash#MIT-1-ov-file",
-"version": "(py3) 2.14.2",
-"installCommand": "dash==2.14.2 --hash=sha256:af322fc8d437a4d1b65126498cda25c2dcff09700164e288fdf07d860a87b418"
+"version": "(py3) 3.0.2",
+"installCommand": "dash==3.0.2 --hash=sha256:16a83e31ac47607a4c676bffe07a5c1ceb2cfbcd3bfafc15f25554b9fffe7891"
 }
 },
 {
@@ -1105,7 +1105,7 @@
 {
 "name": "ibm-db-sa",
 "tags": [ "utility" ],
-"versions": " 0.4.0",
+"versions": " 0.4.1",
 "info":
 {
 "description": "<p>The IBM_DB_SA adapter provides the Python/SQLAlchemy interface to IBM Data Servers. </p>",
@@ -1114,14 +1114,14 @@
 "siteName": "github.com/ibm-z-oss-oda/python-ibmdbsa",
 "license": "Apache License 2.0",
 "linkToLicense": "https://github.com/ibm-z-oss-oda/python-ibmdbsa/blob/master/LICENSE",
-"version": "(py3) 0.4.0",
-"installCommand": "ibm-db-sa==0.4.0 --hash=sha256:6c03ede3685ffc1044e7e6bc69f011d3b5a4d297eb96acb0f66495ea3d14a1b3"
+"version": "(py3) 0.4.1",
+"installCommand": "ibm-db-sa==0.4.1 --hash=sha256:a5ee925c9e346c0205f81227cfd96d8681897eaac6e7b45c4be2c82b5d09f355"
 }
 },
 {
 "name": "ibm-db",
 "tags": [ "utility" ],
-"versions": " 3.2.3 3.2.3 3.2.3 3.2.3.post0",
+"versions": " 3.2.3 3.2.6 3.2.6 3.2.6",
 "info":
 {
 "description": "<p>Provides Python interface for connecting to IBM Db2 for LUW, IBM Informix and IBM Db2 for z/OS. </p>",
@@ -1130,14 +1130,14 @@
 "siteName": "github.com/ibm-z-oss-oda/python-ibmdb",
 "license": "Apache License 2.0",
 "linkToLicense": "https://github.com/ibm-z-oss-oda/python-ibmdb/blob/master/LICENSE",
-"version": "(cp313) 3.2.3.post0",
-"installCommand": "ibm-db==3.2.3.post0 --hash=sha256:f8b3633c6a2eda386be70c200fa5bcde0b3274da252802393be05b3e1b569b5b"
+"version": "(cp313) 3.2.6",
+"installCommand": "ibm-db==3.2.6 --hash=sha256:9f8f291e3d771fec17db325af4b4d0c03acd238070d943587162afb737c57ad6"
 }
 },
 {
 "name": "idna",
 "tags": [ "languages","utility" ],
-"versions": " 3.10",
+"versions": " 3.10.post0",
 "info":
 {
 "description": "<p>Support for the Internationalised Domain Names in Applications (IDNA) protocol as specified in <a href='https://tools.ietf.org/html/rfc5891'>RFC 5891</a>. This is the latest version of the protocol and is sometimes referred to as “IDNA 2008”.</p><p>This library also provides support for Unicode Technical Standard 46, <a href='https://unicode.org/reports/tr46/'>Unicode IDNA Compatibility Processing</a>.</p><p>This acts as a suitable replacement for the “encodings.idna” module that comes with the Python standard library, but which only supports the older superseded IDNA specification <a href='https://tools.ietf.org/html/rfc3490'>(RFC 3490)</a>.</p>",
@@ -1146,14 +1146,14 @@
 "siteName": "github",
 "license": "BSD3",
 "linkToLicense": "https://github.com/kjd/idna/blob/master/LICENSE.md",
-"version": "(py3) 3.10",
-"installCommand": "idna==3.10 --hash=sha256:c9a3b84bb6e542ce5204362c744260257ce02b04d4ce388ff7f22019a50e74d3"
+"version": "(py3) 3.10.post0",
+"installCommand": "idna==3.10.post0 --hash=sha256:c00743b86354caf6caadf725ada5f265fd0119fac6435eb44fe586b062076e3f"
 }
 },
 {
 "name": "imageio",
 "tags": [ "graphics" ],
-"versions": " 2.31.1",
+"versions": " 2.37.0",
 "info":
 {
 "description": "<p>Imageio is a Python library that provides an easy interface to read and write a wide range of image data, including animated images, volumetric data, and scientific formats. It is cross-platform, runs on Python 3.5+, and is easy to install.<p>",
@@ -1162,8 +1162,8 @@
 "siteName": "imageio.readthedocs.io",
 "license": "BSD2",
 "linkToLicense": "https://github.com/imageio/imageio/blob/master/LICENSE",
-"version": "(py3) 2.31.1",
-"installCommand": "imageio==2.31.1 --hash=sha256:7e6b0fa6171699ebd626e9f4221e7e53d3be35a0529a00410e32d385a59b3b21"
+"version": "(py3) 2.37.0",
+"installCommand": "imageio==2.37.0 --hash=sha256:e8d516924400f654e466b1b9af7b96483ec23181a56e0b374c72bac6eb570ae7"
 }
 },
 {
@@ -1393,7 +1393,7 @@
 {
 "name": "jpype1",
 "tags": [ "languages","programming_tools" ],
-"versions": " 1.4.1 1.4.1 1.5.0",
+"versions": " 1.4.1 1.5.2 1.5.2 1.5.2",
 "info":
 {
 "description": "<p>JPype is a Python module to provide full access to Java from within Python. It allows Python to make use of Java only libraries, exploring and visualization of Java structures, development and testing of Java libraries, scientific computing, and much more. By gaining the best of both worlds using Python for rapid prototyping and Java for strong typed production code, JPype provides a powerful environment for engineering and code development.</p><p>This is achieved not through re-implementing Python, as Jython has done, but rather through interfacing at the native level in both virtual machines. This shared memory based approach achieves decent computing performance, while providing the access to the entirety of CPython and Java libraries.</p>",
@@ -1402,8 +1402,8 @@
 "siteName": "github",
 "license": "APACHE2",
 "linkToLicense": "https://github.com/jpype-project/jpype/blob/master/LICENSE",
-"version": "(cp312) 1.5.0",
-"installCommand": "jpype1==1.5.0 --hash=sha256:2a2f9b23869b40bc293abbc756df060db403ce7cac31b18cc47a7d06837ae532"
+"version": "(cp313) 1.5.2",
+"installCommand": "jpype1==1.5.2 --hash=sha256:9a6db6d5d3c7aabec5c7dcc58cf69b2c94eaa6ee2bda588789e3792a1c4dd861"
 }
 },
 {
@@ -1809,7 +1809,7 @@
 {
 "name": "libpng",
 "tags": [ "graphics" ],
-"versions": " 1.6.39.post0",
+"versions": " 1.6.47",
 "info":
 {
 "description": "<p>libpng is the official PNG reference library. It supports almost all PNG features, is extensible, and has been extensively tested for over 23 years. </p>",
@@ -1818,8 +1818,8 @@
 "siteName": "libpng.org",
 "license": "OTHER",
 "linkToLicense": "http://www.libpng.org/pub/png/src/libpng-LICENSE.txt",
-"version": "(py3) 1.6.39.post0",
-"installCommand": "libpng==1.6.39.post0 --hash=sha256:3d54fa9a37fdf07b3333de3ce54ff78f2fc4acfb992ba78a174d37afbb4a46d5"
+"version": "(py3) 1.6.47",
+"installCommand": "libpng==1.6.47 --hash=sha256:6147b481f44624d7289c6a593f5e60633de4f6605e54df3ac78c7b2f5db25132"
 }
 },
 {
@@ -1841,7 +1841,7 @@
 {
 "name": "libxml2",
 "tags": [ "languages" ],
-"versions": " 2.11.4 2.12.7 2.14.1 2.14.1 2.14.1",
+"versions": " 2.11.4 2.12.7 2.14.2 2.14.2 2.14.2",
 "info":
 {
 "description": "<p>Libxml2 is the XML C parser and toolkit developed for the Gnome project (but usable outside of the Gnome platform), it is free software available under the MIT License. XML itself is a metalanguage to design markup languages, i.e. text language where semantic and structure are added to the content using extra 'markup' information enclosed between angle brackets. HTML is the most well-known markup language. Though the library is written in C a variety of language bindings make it available in other environments.</p>",
@@ -1850,14 +1850,14 @@
 "siteName": "gitlab.gnome.org/GNOME/libxml2",
 "license": "MIT",
 "linkToLicense": "https://gitlab.gnome.org/GNOME/libxml2/-/blob/master/Copyright",
-"version": "(cp313) 2.14.1",
-"installCommand": "libxml2==2.14.1 --hash=sha256:4236096ad4974e27248fbe4769a7e325f8c8f5bea1d154a152ec15333c1925a8"
+"version": "(cp313) 2.14.2",
+"installCommand": "libxml2==2.14.2 --hash=sha256:fd79e5480be9f52e3a2ddadc756d1934bfdbc023a7bebcdc8d386eac2d0d6d25"
 }
 },
 {
 "name": "libxslt",
 "tags": [ "languages" ],
-"versions": " 1.1.37.post0",
+"versions": " 1.1.43",
 "info":
 {
 "description": "<p>libxslt is the <a href='https://www.w3.org/TR/xslt'>XSLT</a> C library developed for the GNOME project. XSLT itself is a an XML language to define transformation for XML. libxslt is based on libxml2, the XML C library developed for the GNOME project. It also implements most of the <a href='http://www.exslt.org/'>EXSLT</a> set of processor-portable extension functions and some of Saxon's evaluate and expressions extensions.</p><p>People can either embed the library in their application or use xsltproc, the command line processing tool. This library is free software and can be reused in commercial applications.</p>",
@@ -1866,8 +1866,8 @@
 "siteName": "gitlab.gnome.org/GNOME/libxslt/",
 "license": "OTHER",
 "linkToLicense": "https://github.com/GNOME/libxslt/blob/master/Copyright",
-"version": "(py3) 1.1.37.post0",
-"installCommand": "libxslt==1.1.37.post0 --hash=sha256:b60202a9919733a69d51ee176c4ed06dd5d30c0d9213e4351939ded6d2894108"
+"version": "(py3) 1.1.43",
+"installCommand": "libxslt==1.1.43 --hash=sha256:8743a1f4b564956bb9c2f5ce08053a91aa17f30a762cce65cd0e42300103ec39"
 }
 },
 {
@@ -1969,7 +1969,7 @@
 {
 "name": "markupsafe",
 "tags": [ "security","utility" ],
-"versions": " 2.1.1",
+"versions": " 2.1.1 3.0.1 3.0.1 3.0.1",
 "info":
 {
 "description": "<p>MarkupSafe implements a text object that escapes characters so it is safe to use in HTML and XML. Characters that have special meanings are replaced so that they display as the actual characters. This mitigates injection attacks, meaning untrusted user input can safely be displayed on a page.</p>",
@@ -1978,8 +1978,8 @@
 "siteName": "palletsprojects.com/p/markupsafe",
 "license": "BSD3",
 "linkToLicense": "https://github.com/pallets/markupsafe/blob/main/LICENSE.rst",
-"version": "(py3) 2.1.1",
-"installCommand": "markupsafe==2.1.1 --hash=sha256:e3ce34956b3cb61b9ff02216a7f3504447eb1c52e7e24c5053c1f10cb97e31eb"
+"version": "(cp313) 3.0.1",
+"installCommand": "markupsafe==3.0.1 --hash=sha256:886267583e2be24adbec69a2c8ed1429f459f7be42db6400f54b578927c033da"
 }
 },
 {
@@ -2001,7 +2001,7 @@
 {
 "name": "matplotlib",
 "tags": [ "graphics" ],
-"versions": " 3.5.0.post4 3.5.0.post4 3.5.0.post4",
+"versions": " 3.5.0.post4 3.8.4 3.8.4 3.8.4",
 "info":
 {
 "description": "<p>Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python.</p><p>Matplotlib produces publication-quality figures in a variety of hardcopy formats and interactive environments across platforms. Matplotlib can be used in Python scripts, the Python and IPython shell, web application servers, and various graphical user interface toolkits.</p>",
@@ -2010,8 +2010,8 @@
 "siteName": "matplotlib.org",
 "license": "OTHER",
 "linkToLicense": "https://github.com/matplotlib/matplotlib/blob/main/LICENSE/LICENSE",
-"version": "(cp312) 3.5.0.post4",
-"installCommand": "matplotlib==3.5.0.post4 --hash=sha256:96a77082ba078746c25a8dc2f61800fe1c0d22666eafe7885ad9d1fbf050be4b"
+"version": "(cp313) 3.8.4",
+"installCommand": "matplotlib==3.8.4 --hash=sha256:d0e25eda4e395a519efa04b96937d9073f91f2f7586cf36ce66b508d26eaf6e9"
 }
 },
 {
@@ -2177,7 +2177,7 @@
 {
 "name": "numpy",
 "tags": [ "math" ],
-"versions": " 1.23.4.post0 1.26.0 1.26.0",
+"versions": " 1.26.0 2.0.2 2.0.2 2.0.2",
 "info":
 {
 "description": "<p>NumPy is the fundamental package for array computing with Python. It provides:</p><ul>    <li>a powerful N-dimensional array object</li>    <li>sophisticated (broadcasting) functions</li>    <li>tools for integrating C/C++ and Fortran code</li>    <li>useful linear algebra, Fourier transform, and random number capabilities</li>    <li>and much more</li></ul>",
@@ -2186,8 +2186,8 @@
 "siteName": "numpy.org",
 "license": "BSD3",
 "linkToLicense": "https://github.com/numpy/numpy/blob/main/LICENSE.txt",
-"version": "(cp312) 1.26.0",
-"installCommand": "numpy==1.26.0 --hash=sha256:c549358bea31eba0809cea3b0675fc5817f995966d6d23543919cda922db863d"
+"version": "(cp313) 2.0.2",
+"installCommand": "numpy==2.0.2 --hash=sha256:df7dd21dd16653e530684941b0600377fd2b6a08e95709546af53b82b0665cdd"
 }
 },
 {
@@ -2321,7 +2321,7 @@
 {
 "name": "patsy",
 "tags": [ "math","languages" ],
-"versions": " 0.5.3",
+"versions": " 1.0.1",
 "info":
 {
 "description": "<p>Patsy is a Python library for describing statistical models (especially linear models, or models that have a linear component) and building design matrices. Patsy brings the convenience of <a href='http://www.r-project.org/'>R “formulas”</a> to Python.</p>",
@@ -2330,8 +2330,8 @@
 "siteName": "github",
 "license": "OTHER",
 "linkToLicense": "https://github.com/pydata/patsy/blob/master/LICENSE.txt",
-"version": "(py3) 0.5.3",
-"installCommand": "patsy==0.5.3 --hash=sha256:875d605e39f936e735c583974063325acd8e0e1ade18e55d80ddb66defe7dc7b"
+"version": "(py3) 1.0.1",
+"installCommand": "patsy==1.0.1 --hash=sha256:fd2654ab7f8b61b908f5333ff0efab80391f9ce3bbc1703f2a8bed70db2d6d52"
 }
 },
 {
@@ -2593,7 +2593,7 @@
 {
 "name": "pymongo",
 "tags": [ "web" ],
-"versions": " 4.6.0",
+"versions": " 4.12.1 4.12.1 4.12.1",
 "info":
 {
 "description": "<p>The PyMongo distribution contains tools for interacting with MongoDB database from Python. </p>",
@@ -2602,8 +2602,8 @@
 "siteName": "github.com",
 "license": "Apache 2.0",
 "linkToLicense": "https://github.com/mongodb/mongo-python-driver#Apache-2.0-1-ov-file",
-"version": "(cp311) 4.6.0",
-"installCommand": "pymongo==4.6.0 --hash=sha256:1fa27cdfd0a87245df14a7e309b2a5b50912e5dcce54b7cf75fda36d0daa6b65"
+"version": "(cp313) 4.12.1",
+"installCommand": "pymongo==4.12.1 --hash=sha256:4c571c702ee868b21a04c18d6c225239cd7847dc6568d54d56aff1992f7227d9"
 }
 },
 {
@@ -2705,7 +2705,7 @@
 {
 "name": "pywavelets",
 "tags": [ "math" ],
-"versions": " 1.3.0.post0 1.3.0.post0 1.3.0.post0",
+"versions": " 1.3.0.post0 1.6.0 1.6.0 1.6.0",
 "info":
 {
 "description": "<p>PyWavelets is a free Open Source library for wavelet transforms in Python. Wavelets are mathematical basis functions that are localized in both time and frequency. Wavelet transforms are time-frequency transforms employing wavelets. They are similar to Fourier transforms, the difference being that Fourier transforms are localized only in frequency instead of in time and frequency.</p>",
@@ -2714,8 +2714,8 @@
 "siteName": "github",
 "license": "MIT",
 "linkToLicense": "https://github.com/PyWavelets/pywt/blob/master/LICENSE",
-"version": "(cp312) 1.3.0.post0",
-"installCommand": "pywavelets==1.3.0.post0 --hash=sha256:e40475cbe58dce2ba855f65a13a6f3741b7a0af03aa2dac5217774c8e1fc93f5"
+"version": "(cp313) 1.6.0",
+"installCommand": "pywavelets==1.6.0 --hash=sha256:369022037bcfea7591440c9f2de0b03d97c561cfaf2dfebf5a22128ebb896f44"
 }
 },
 {
@@ -2801,7 +2801,7 @@
 {
 "name": "regex",
 "tags": [ "utility","languages" ],
-"versions": " 2023.6.3 2023.6.3 2023.6.3",
+"versions": " 2023.6.3 2024.11.6 2024.11.6 2024.11.6",
 "info":
 {
 "description": "<p>This regex implementation is backwards-compatible with the standard 're' module, but offers additional functionality. </p>",
@@ -2810,8 +2810,8 @@
 "siteName": "github",
 "license": "Apache 2.0",
 "linkToLicense": "https://github.com/ibm-z-oss-oda/mrab-regex/blob/hg/LICENSE.txt",
-"version": "(cp312) 2023.6.3",
-"installCommand": "regex==2023.6.3 --hash=sha256:aa1be806511084a89ea978de763e2b23d739486e8feb6e3dd778fbeea10b58fc"
+"version": "(cp313) 2024.11.6",
+"installCommand": "regex==2024.11.6 --hash=sha256:19af83f3369b4b3fb8f2c52db47b6eb99920829744087c5e80312dde525ce22a"
 }
 },
 {
@@ -2929,7 +2929,7 @@
 {
 "name": "ruamel.yaml.clib",
 "tags": [ "utility","languages" ],
-"versions": " 0.2.7.post0 0.2.7.post0 0.2.7.post0",
+"versions": " 0.2.12 0.2.12 0.2.12 0.2.7.post0",
 "info":
 {
 "description": "<p>ruamel.yaml.clib is the C based reader/scanner and emitter for ruamel.yaml</p>",
@@ -2938,14 +2938,14 @@
 "siteName": "github.com",
 "license": "MIT",
 "linkToLicense": "https://github.com/ibm-z-oss-oda/ruamel.yaml.clib/blob/master/LICENSE",
-"version": "(cp312) 0.2.7.post0",
-"installCommand": "ruamel.yaml.clib==0.2.7.post0 --hash=sha256:a7b8e3adbca4cea1577604b55fafc8a9ebddf2f49876cdf458442523fe12ee0b"
+"version": "(cp310) 0.2.7.post0",
+"installCommand": "ruamel.yaml.clib==0.2.7.post0 --hash=sha256:df1d162a9ca1f28a13108cf74f607ad1d47db88f6c25da0364a205f2cceb335f"
 }
 },
 {
 "name": "ruamel.yaml",
 "tags": [ "utility","languages" ],
-"versions": " 0.17.24.post1",
+"versions": " 0.18.10",
 "info":
 {
 "description": "<p>ruamel.yaml is a YAML 1.2 loader/dumper package for Python.</p>",
@@ -2954,8 +2954,8 @@
 "siteName": "github.com",
 "license": "MIT",
 "linkToLicense": "https://github.com/ibm-z-oss-oda/ruamel.yaml/blob/master/LICENSE",
-"version": "(py3) 0.17.24.post1",
-"installCommand": "ruamel.yaml==0.17.24.post1 --hash=sha256:c8e6d2e8c83640ea9b04bdaf05c13f67b119dfdf919f342e1a43ec2fba5ce347"
+"version": "(py3) 0.18.10",
+"installCommand": "ruamel.yaml==0.18.10 --hash=sha256:aa9e5fe65baeb5dd5746f0789a04c6f8807a8f5c41fdd484f5457cca142c2d30"
 }
 },
 {
@@ -3313,7 +3313,7 @@
 {
 "name": "tifffile",
 "tags": [ "graphics" ],
-"versions": " 2023.4.12",
+"versions": " 2025.3.30",
 "info":
 {
 "description": "<p>Tifffile is a Python library to store NumPy arrays in TIFF (Tagged Image File Format) files, and read image and metadata from TIFF-like files used in bioimaging. </p>",
@@ -3322,8 +3322,8 @@
 "siteName": "github",
 "license": "BSD 3",
 "linkToLicense": "https://github.com/ibm-z-oss-oda/tifffile/blob/master/LICENSE",
-"version": "(py3) 2023.4.12",
-"installCommand": "tifffile==2023.4.12 --hash=sha256:d1f3c18e3a7398f14010778903036b29594dca0fbea1108c7922c09631f09be8"
+"version": "(py3) 2025.3.30",
+"installCommand": "tifffile==2025.3.30 --hash=sha256:06a02acec3c9cb782b329af98b496688c33cb0805b92077c94fe8eee2f342290"
 }
 },
 {
@@ -3457,7 +3457,7 @@
 {
 "name": "typing-extensions",
 "tags": [ "programming_tools" ],
-"versions": " 4.6.0",
+"versions": " 4.13.1",
 "info":
 {
 "description": "<p>Backported and experimental type hints for Python  </p>",
@@ -3466,8 +3466,8 @@
 "siteName": "github",
 "license": "OSI PSFL",
 "linkToLicense": "https://github.com/ibm-z-oss-oda/typing_extensions/blob/main/LICENSE",
-"version": "(py3) 4.6.0",
-"installCommand": "typing-extensions==4.6.0 --hash=sha256:d8816f1ad45c05811c5f46ac5887c59800923220fb5995f684058a6ea0d07cc7"
+"version": "(py3) 4.13.1",
+"installCommand": "typing-extensions==4.13.1 --hash=sha256:c5801e35676e63a32c514ec7deca65628eb0a2b2f6b33cc13f8f0b37fc3645d1"
 }
 },
 {
@@ -3505,7 +3505,7 @@
 {
 "name": "uwsgi",
 "tags": [ "web" ],
-"versions": " 2.0.21 2.0.21 2.0.21",
+"versions": " 2.0.21 2.0.27 2.0.27 2.0.29",
 "info":
 {
 "description": "<p>The uWSGI project aims at developing a full stack for building hosting services.</p><p>Application servers (for various programming languages and protocols), proxies, process managers and monitors are all implemented using a common api and a common configuration style.</p><p>Thanks to its pluggable architecture it can be extended to support more platforms and languages.</p><p>Currently, you can write plugins in C, C++ and Objective-C.</p><p>The “WSGI” part in the name is a tribute to the namesake Python standard, as it has been the first developed plugin for the project.</p><p>Versatility, performance, low-resource usage and reliability are the strengths of the project (and the only rules followed).</p>",
@@ -3514,8 +3514,8 @@
 "siteName": "readthedocs.io",
 "license": "OTHER",
 "linkToLicense": "https://github.com/unbit/uwsgi/blob/master/LICENSE",
-"version": "(cp312) 2.0.21",
-"installCommand": "uwsgi==2.0.21 --hash=sha256:b0ba2a46cc86bb47a42684b350b48bb7a0a476dd28af7f0905298aa29b503f1c"
+"version": "(cp313) 2.0.29",
+"installCommand": "uwsgi==2.0.29 --hash=sha256:3e3090dbcc251a10790d226d71fe736984c70b6a205b79f798a58c9c995667b6"
 }
 },
 {
