@@ -1265,7 +1265,7 @@
 {
 "name": "ipywidgets",
 "tags": [ "web","graphics" ],
-"versions": " 8.1.5",
+"versions": " 8.1.5.post1",
 "info":
 {
 "description": "<p>ipywidgets, also known as jupyter-widgets or simply widgets, are interactive HTML widgets for Jupyter notebooks and the IPython kernel.</p><p>Notebooks come alive when interactive widgets are used. Users gain control of their data and can visualize changes in the data.</p><p>Learning becomes an immersive, fun experience. Researchers can easily see how changing inputs to a model impact the results.</p>",
@@ -1274,8 +1274,8 @@
 "siteName": "ipython.org",
 "license": "BSD3",
 "linkToLicense": "https://github.com/jupyter-widgets/ipywidgets/blob/master/LICENSE",
-"version": "(py3) 8.1.5",
-"installCommand": "ipywidgets==8.1.5 --hash=sha256:41de6bb40ad46d2af6a1ee20fadb7932639f95dc90355c8a13ef8f566d6eef87"
+"version": "(py3) 8.1.5.post1",
+"installCommand": "ipywidgets==8.1.5.post1 --hash=sha256:1bab492d31ba66db0fda1421a02d1ad2cfe880b484c6206cde17105f5bffbc3c"
 }
 },
 {
@@ -1297,7 +1297,7 @@
 {
 "name": "itsdangerous",
 "tags": [ "security" ],
-"versions": " 2.1.2",
+"versions": " 2.2.0",
 "info":
 {
 "description": "<p>'… so better sign this'</p><p>Various helpers to pass data to untrusted environments and to get it back safe and sound. Data is cryptographically signed to ensure that a token has not been tampered with.</p><p>It’s possible to customize how data is serialized. Data is compressed as needed. A timestamp can be added and verified automatically while loading a token.</p>",
@@ -1306,8 +1306,8 @@
 "siteName": "palletsprojects.com/p/itsdangerous",
 "license": "BSD3",
 "linkToLicense": "https://github.com/pallets/itsdangerous/blob/main/LICENSE.rst",
-"version": "(py3) 2.1.2",
-"installCommand": "itsdangerous==2.1.2 --hash=sha256:51eb7c970c4feead7f18525f75a1aac91c60decd0c1342f313c8c2d8511a8c51"
+"version": "(py3) 2.2.0",
+"installCommand": "itsdangerous==2.2.0 --hash=sha256:2beff36d48b5322a97b38764560dc43a3c2c5d8b0910ce02b89cbaca2399f535"
 }
 },
 {
@@ -1521,7 +1521,7 @@
 {
 "name": "jupyter-core",
 "tags": [ "utility" ],
-"versions": " 5.2.0",
+"versions": " 5.7.2",
 "info":
 {
 "description": "<p>Core Jupyter functionality. </p>",
@@ -1530,8 +1530,8 @@
 "siteName": "github.com",
 "license": "BSD-3",
 "linkToLicense": "https://github.com/ibm-z-oss-oda/jupyter_core/blob/main/COPYING.md",
-"version": "(py3) 5.2.0",
-"installCommand": "jupyter-core==5.2.0 --hash=sha256:4bdc2928c37f6917130c667d8b8708f20aee539d8283c6be72aabd2a4b4c83b0"
+"version": "(py3) 5.7.2",
+"installCommand": "jupyter-core==5.7.2 --hash=sha256:61450f74ff679ee9dea1a281b9d351e72b7e9134c7e48d0db55a9d5948fb5425"
 }
 },
 {
@@ -1697,7 +1697,7 @@
 {
 "name": "jupyterlab-pygments",
 "tags": [ "web","programming_tools" ],
-"versions": " 0.2.2.post4",
+"versions": " 0.2.2.post5",
 "info":
 {
 "description": "<p>This package contains a syntax coloring theme for <a href='http://pygments.org/'>pygments</a> making use of the JupyterLab CSS variables.</p><p>The goal is to enable the use of JupyterLab's themes with pygments-generated HTML.</p>",
@@ -1706,8 +1706,8 @@
 "siteName": "github",
 "license": "BSD3",
 "linkToLicense": "https://github.com/jupyterlab/jupyterlab_pygments/blob/main/LICENSE",
-"version": "(py3) 0.2.2.post4",
-"installCommand": "jupyterlab-pygments==0.2.2.post4 --hash=sha256:456481f7a927a0c120c8540a1f3ec349c67f309a7dd87d45f279fd3edae40262"
+"version": "(py3) 0.2.2.post5",
+"installCommand": "jupyterlab-pygments==0.2.2.post5 --hash=sha256:664aaf7257b8d73c899c1c0880655334052fe7c3d36825bd253196a32f8fd86d"
 }
 },
 {
@@ -2385,7 +2385,7 @@
 {
 "name": "platformdirs",
 "tags": [ "utility" ],
-"versions": " 3.5.1",
+"versions": " 4.3.8",
 "info":
 {
 "description": "<p>platformdirs will help you choose an appropriate storage location for different datasets/logging/cache etc..</p>",
@@ -2394,8 +2394,8 @@
 "siteName": "https://github.com/ibm-z-oss-oda/platformdirs",
 "license": "MIT",
 "linkToLicense": "https://github.com/ibm-z-oss-oda/platformdirs/blob/main/LICENSE.txt",
-"version": "(py3) 3.5.1",
-"installCommand": "platformdirs==3.5.1 --hash=sha256:119702b2cf904893a9b9f2595125a0182488e69b1cfc1d063598a33180972082"
+"version": "(py3) 4.3.8",
+"installCommand": "platformdirs==4.3.8 --hash=sha256:5b730cab91b76a7717078a264aa1ec8cea3d5e0086b960e2d2b3aab8229cd132"
 }
 },
 {
@@ -3057,7 +3057,7 @@
 {
 "name": "setuptools-rust",
 "tags": [ "utility","programming_tools" ],
-"versions": " 1.6.0",
+"versions": " 1.11.1",
 "info":
 {
 "description": "<p>setuptools-rust is a plugin for setuptools to build Rust Python extensions implemented with PyO3 or rust-cpython.</p>",
@@ -3066,8 +3066,8 @@
 "siteName": "github.com",
 "license": "MIT",
 "linkToLicense": "https://github.com/PyO3/setuptools-rust/blob/main/LICENSE",
-"version": "(py3) 1.6.0",
-"installCommand": "setuptools-rust==1.6.0 --hash=sha256:db430acbae1aaa3b4ca30a23546e0a3c84ff84edb5afa7374b97b19ee877179b"
+"version": "(py3) 1.11.1",
+"installCommand": "setuptools-rust==1.11.1 --hash=sha256:33e2e7543e8336ed02862918e55088840d3b7d3bd6c757799f9800ce33300e70"
 }
 },
 {
