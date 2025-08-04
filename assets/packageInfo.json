@@ -65,7 +65,7 @@
 {
 "name": "argon2-cffi-bindings",
 "tags": [ "security" ],
-"versions": " 21.2.0.post0 21.2.0.post0 21.2.0.post0 21.2.0.post0",
+"versions": " 21.2.0.post0 21.2.0.post0 21.2.0.post0",
 "info":
 {
 "description": "<p>argon2-cffi-bindings provides low-level <a href='https://cffi.readthedocs.io/'>CFFI</a> bindings to the <a href='https://github.com/p-h-c/phc-winner-argon2'>Argon2</a> password hashing algorithm including a vendored version of them.</p><p>If you want to hash passwords in an application, this package is not for you. Have a look at argon2-cffi with its high-level abstractions!</p><p>These bindings have been extracted from <a href='https://argon2-cffi.readthedocs.io/'>argon2-cffi</a> and it remains its main consumer. However, they may be used by other packages that want to use the Argon2 library without dealing with C-related complexities.</p>",
@@ -209,7 +209,7 @@
 {
 "name": "bcrypt",
 "tags": [ "security" ],
-"versions": " 3.2.1 3.2.1 3.2.1 3.2.1",
+"versions": " 3.2.1 3.2.1 3.2.1",
 "info":
 {
 "description": "<p>Modern(-ish) password hashing for your software and your servers.</p>",
@@ -353,7 +353,7 @@
 {
 "name": "cffi",
 "tags": [ "programming_tools" ],
-"versions": " 1.14.6 1.14.6 1.16.0 1.17.1",
+"versions": " 1.14.6 1.16.0 1.17.1",
 "info":
 {
 "description": "<p>C Foreign Function Interface for Python. Interact with almost any C code from Python, based on C-like declarations that you can often copy-paste from header files or documentation.</p>",
@@ -465,7 +465,7 @@
 {
 "name": "contourpy",
 "tags": [ "graphics","math" ],
-"versions": " 1.0.7.post0 1.0.7.post0 1.2.0 1.2.0",
+"versions": " 1.0.7.post0 1.2.0 1.2.0",
 "info":
 {
 "description": "<p>ContourPy is a Python library for calculating contours of 2D quadrilateral grids.</p>",
@@ -497,7 +497,7 @@
 {
 "name": "cython",
 "tags": [ "programming_tools" ],
-"versions": " 0.29.32.post0 3.0.10.post0 3.0.8 3.0.9",
+"versions": " 0.29.32.post0 3.0.10.post0 3.0.9",
 "info":
 {
 "description": "<p>The Cython language makes writing C extensions for the Python language as easy as Python itself. Cython is a source code translator based on <a href='http://www.cosc.canterbury.ac.nz/greg.ewing/python/Pyrex/'>Pyrex</a>, but supports more cutting edge functionality and optimizations.</p><p>The Cython language is a superset of the Python language (almost all Python code is also valid Cython code), but Cython additionally supports optional static typing to natively call C functions, operate with C++ classes and declare fast C types on variables and class attributes. This allows the compiler to generate very efficient C code from Cython code.</p><p>This makes Cython the ideal language for writing glue code for external C/C++ libraries, and for fast C modules that speed up the execution of Python code.</p>",
@@ -513,7 +513,7 @@
 {
 "name": "cytoolz",
 "tags": [ "utility" ],
-"versions": " 0.12.0 0.12.0 0.12.3 0.12.3.post0",
+"versions": " 0.12.0 0.12.3 0.12.3.post0",
 "info":
 {
 "description": "<p>Cython implementation of the<a class='reference external' href='https://github.com/pytoolz/toolz'><tt class='docutils literal'>toolz</tt></a> <a class='reference external' href='https://pypi.python.org/pypi/toolz/'>package,</a> whichprovides high performance utility functions for iterables, functions,and dictionaries.</p><p><tt class='docutils literal'>toolz</tt> is a pure Python package that borrows heavily from contemporaryfunctional languanges.  It is designed to interoperate seamlessly with otherlibraries including <tt class='docutils literal'>itertools</tt>, <tt class='docutils literal'>functools</tt>, and third party libraries.High performance functional data analysis is possible with builtin typeslike <tt class='docutils literal'>list</tt> and <tt class='docutils literal'>dict</tt>, and user-defined data structures; and low memoryusage is achieved by using the iterator protocol and returning iteratorswhenever possible.</p><p><tt class='docutils literal'>cytoolz</tt> implements the same API as <tt class='docutils literal'>toolz</tt>.  The main differences arethat <tt class='docutils literal'>cytoolz</tt> is faster (typically 2-5x faster with a few spectacularexceptions) and <tt class='docutils literal'>cytoolz</tt> offers a C API that is accessible to otherprojects developed in Cython.  Since <tt class='docutils literal'>toolz</tt> is able to process verylarge (potentially infinite) data sets, the performance increase gained byusing <tt class='docutils literal'>cytoolz</tt> can be significant.</p>",
@@ -609,7 +609,7 @@
 {
 "name": "debugpy",
 "tags": [ "utility","web","programming_tools" ],
-"versions": " 1.6.3.post3 1.6.3.post4 1.8.1 1.8.12.post0",
+"versions": " 1.6.3.post4 1.8.1 1.8.12.post0",
 "info":
 {
 "description": "<p>debugpy is an implementation of the Debug Adapter Protocol for Python.</p>",
@@ -1121,7 +1121,7 @@
 {
 "name": "ibm-db",
 "tags": [ "utility" ],
-"versions": " 3.2.3 3.2.6 3.2.6 3.2.6",
+"versions": " 3.2.6 3.2.6 3.2.6",
 "info":
 {
 "description": "<p>Provides Python interface for connecting to IBM Db2 for LUW, IBM Informix and IBM Db2 for z/OS. </p>",
@@ -1393,7 +1393,7 @@
 {
 "name": "jpype1",
 "tags": [ "languages","programming_tools" ],
-"versions": " 1.4.1 1.5.2 1.5.2 1.5.2",
+"versions": " 1.5.2 1.5.2 1.5.2",
 "info":
 {
 "description": "<p>JPype is a Python module to provide full access to Java from within Python. It allows Python to make use of Java only libraries, exploring and visualization of Java structures, development and testing of Java libraries, scientific computing, and much more. By gaining the best of both worlds using Python for rapid prototyping and Java for strong typed production code, JPype provides a powerful environment for engineering and code development.</p><p>This is achieved not through re-implementing Python, as Jython has done, but rather through interfacing at the native level in both virtual machines. This shared memory based approach achieves decent computing performance, while providing the access to the entirety of CPython and Java libraries.</p>",
@@ -1761,7 +1761,7 @@
 {
 "name": "kiwisolver",
 "tags": [ "math","graphics" ],
-"versions": " 1.4.5 1.4.5 1.4.5 1.4.5",
+"versions": " 1.4.5 1.4.5 1.4.5",
 "info":
 {
 "description": "<p>Kiwi is an efficient C++ implementation of the Cassowary constraint solving algorithm. Kiwi is an implementation of the algorithm based on the <a href='https://constraints.cs.washington.edu/solvers/cassowary-tochi.pdf'>seminal Cassowary paper</a>. It is not a refactoring of the original C++ solver. Kiwi has been designed from the ground up to be lightweight and fast. Kiwi ranges from 10x to 500x faster than the original Cassowary solver with typical usecases gaining a 40x improvement. Memory savings are consistently > 5x.</p><p>In addition to the C++ solver, Kiwi ships with hand-rolled Python bindings for Python 3.7+.</p>",
@@ -1841,7 +1841,7 @@
 {
 "name": "libxml2",
 "tags": [ "languages" ],
-"versions": " 2.11.4 2.12.7 2.14.2 2.14.2 2.14.2",
+"versions": " 2.11.4 2.14.2 2.14.2 2.14.2",
 "info":
 {
 "description": "<p>Libxml2 is the XML C parser and toolkit developed for the Gnome project (but usable outside of the Gnome platform), it is free software available under the MIT License. XML itself is a metalanguage to design markup languages, i.e. text language where semantic and structure are added to the content using extra 'markup' information enclosed between angle brackets. HTML is the most well-known markup language. Though the library is written in C a variety of language bindings make it available in other environments.</p>",
@@ -1905,7 +1905,7 @@
 {
 "name": "lxml",
 "tags": [ "languages" ],
-"versions": " 4.9.1.post0 4.9.1.post3 5.1.0 5.1.0",
+"versions": " 4.9.1.post3 5.1.0 5.1.0",
 "info":
 {
 "description": "<p>lxml is a Pythonic, mature binding for the libxml2 and libxslt libraries. It provides safe and convenient access to these libraries using the ElementTree API.</p><p>It extends the ElementTree API significantly to offer support for XPath, RelaxNG, XML Schema, XSLT, C14N and much more.</p>",
@@ -2001,7 +2001,7 @@
 {
 "name": "matplotlib",
 "tags": [ "graphics" ],
-"versions": " 3.5.0.post4 3.8.4 3.8.4 3.8.4",
+"versions": " 3.8.4 3.8.4 3.8.4",
 "info":
 {
 "description": "<p>Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python.</p><p>Matplotlib produces publication-quality figures in a variety of hardcopy formats and interactive environments across platforms. Matplotlib can be used in Python scripts, the Python and IPython shell, web application servers, and various graphical user interface toolkits.</p>",
@@ -2017,7 +2017,7 @@
 {
 "name": "mistune",
 "tags": [ "languages" ],
-"versions": " 0.8.3 0.8.3 2.0.4",
+"versions": " 0.8.3 2.0.4",
 "info":
 {
 "description": "<p>A fast yet powerful Python Markdown parser with renderers and plugins, compatible with sane CommonMark rules.</p>",
@@ -2049,7 +2049,7 @@
 {
 "name": "msgpack",
 "tags": [ "languages","utility" ],
-"versions": " 1.0.4.post0 1.0.4.post0 1.0.4.post0 1.0.4.post0",
+"versions": " 1.0.4.post0 1.0.4.post0 1.0.4.post0",
 "info":
 {
 "description": "<p>MessagePack is an efficient binary serialization format. It lets you exchange data among multiple languages like JSON. But it's faster and smaller. This package provides CPython bindings for reading and writing MessagePack data.</p>",
@@ -2177,7 +2177,7 @@
 {
 "name": "numpy",
 "tags": [ "math" ],
-"versions": " 1.26.0 2.0.2 2.0.2 2.0.2",
+"versions": " 2.0.2 2.0.2 2.0.2",
 "info":
 {
 "description": "<p>NumPy is the fundamental package for array computing with Python. It provides:</p><ul>    <li>a powerful N-dimensional array object</li>    <li>sophisticated (broadcasting) functions</li>    <li>tools for integrating C/C++ and Fortran code</li>    <li>useful linear algebra, Fourier transform, and random number capabilities</li>    <li>and much more</li></ul>",
@@ -2257,7 +2257,7 @@
 {
 "name": "pandas",
 "tags": [ "programming_tools","math","machine_learning" ],
-"versions": " 1.5.1.post3 1.5.1.post3 1.5.1.post3",
+"versions": " 1.5.1.post3 1.5.1.post3",
 "info":
 {
 "description": "<p>Pandas is a Python package that provides fast, flexible, and expressive data structures designed to make working with 'relational' or 'labeled' data both easy and intuitive. It aims to be the fundamental high-level building block for doing practical, real world data analysis in Python. Additionally, it has the broader goal of becoming the most powerful and flexible open source data analysis / manipulation tool available in any language. It is already well on its way towards this goal.</p>",
@@ -2369,7 +2369,7 @@
 {
 "name": "pillow",
 "tags": [ "graphics" ],
-"versions": " 10.3.0.post0 10.3.0.post0 10.3.0.post0 11.0.0.post0",
+"versions": " 10.3.0.post0 10.3.0.post0 11.0.0.post0",
 "info":
 {
 "description": "<p>The Python Imaging Library adds image processing capabilities to your Python interpreter.</p><p>This library provides extensive file format support, an efficient internal representation, and fairly powerful image processing capabilities.</p><p>The core image library is designed for fast access to data stored in a few basic pixel formats. It should provide a solid foundation for a general image processing tool.</p>",
@@ -2641,7 +2641,7 @@
 {
 "name": "pyrsistent",
 "tags": [ "programming_tools" ],
-"versions": " 0.19.3.post0 0.19.3.post0 0.19.3.post0 0.19.3.post0",
+"versions": " 0.19.3.post0 0.19.3.post0 0.19.3.post0",
 "info":
 {
 "description": "<p>Pyrsistent is a number of persistent collections (by some referred to as functional data structures). Persistent in the sense that they are immutable.</p><p>All methods on a data structure that would normally mutate it instead return a new copy of the structure containing the requested updates. The original structure is left untouched.</p><p>This will simplify the reasoning about what a program does since no hidden side effects ever can take place to these data structures. You can rest assured that the object you hold a reference to will remain the same throughout its lifetime and need not worry that somewhere five stack levels below you in the darkest corner of your application someone has decided to remove that element that you expected to be there.</p><p>Pyrsistent is influenced by persistent data structures such as those found in the standard library of Clojure. The data structures are designed to share common elements through path copying. It aims at taking these concepts and make them as pythonic as possible so that they can be easily integrated into any python program without hassle.</p>",
@@ -2705,7 +2705,7 @@
 {
 "name": "pywavelets",
 "tags": [ "math" ],
-"versions": " 1.3.0.post0 1.6.0 1.6.0 1.6.0",
+"versions": " 1.6.0 1.6.0 1.6.0",
 "info":
 {
 "description": "<p>PyWavelets is a free Open Source library for wavelet transforms in Python. Wavelets are mathematical basis functions that are localized in both time and frequency. Wavelet transforms are time-frequency transforms employing wavelets. They are similar to Fourier transforms, the difference being that Fourier transforms are localized only in frequency instead of in time and frequency.</p>",
@@ -2721,7 +2721,7 @@
 {
 "name": "pyyaml",
 "tags": [ "programming_tools","utility","languages" ],
-"versions": " 6.0.1 6.0.1.post0 6.0.post0 6.0.post0",
+"versions": " 6.0.1 6.0.1.post0 6.0.post0",
 "info":
 {
 "description": "<p>YAML is a data serialization format designed for human readability and interaction with scripting languages. PyYAML is a YAML parser and emitter for Python.</p><p>PyYAML features a complete YAML 1.1 parser, Unicode support, pickle support, capable extension API, and sensible error messages. PyYAML supports standard YAML tags and provides Python-specific tags that allow to represent an arbitrary Python object.</p><p>PyYAML is applicable for a broad range of tasks from complex configuration files to object serialization and persistence.</p>",
@@ -2737,7 +2737,7 @@
 {
 "name": "pyzmq",
 "tags": [ "programming_tools","web","utility" ],
-"versions": " 24.0.1.post0 24.0.1.post0 24.0.1.post0 25.1.2",
+"versions": " 24.0.1.post0 24.0.1.post0 25.1.2",
 "info":
 {
 "description": "<p>This package contains Python bindings for <a href='https://zeromq.org/'>ØMQ</a>. ØMQ is a lightweight and fast messaging implementation.</p>",
@@ -2801,7 +2801,7 @@
 {
 "name": "regex",
 "tags": [ "utility","languages" ],
-"versions": " 2023.6.3 2024.11.6 2024.11.6 2024.11.6",
+"versions": " 2024.11.6 2024.11.6 2024.11.6",
 "info":
 {
 "description": "<p>This regex implementation is backwards-compatible with the standard 're' module, but offers additional functionality. </p>",
@@ -2929,7 +2929,7 @@
 {
 "name": "ruamel.yaml.clib",
 "tags": [ "utility","languages" ],
-"versions": " 0.2.12 0.2.12 0.2.12 0.2.7.post0",
+"versions": " 0.2.12 0.2.12 0.2.12",
 "info":
 {
 "description": "<p>ruamel.yaml.clib is the C based reader/scanner and emitter for ruamel.yaml</p>",
@@ -2938,8 +2938,8 @@
 "siteName": "github.com",
 "license": "MIT",
 "linkToLicense": "https://github.com/ibm-z-oss-oda/ruamel.yaml.clib/blob/master/LICENSE",
-"version": "(cp310) 0.2.7.post0",
-"installCommand": "ruamel.yaml.clib==0.2.7.post0 --hash=sha256:df1d162a9ca1f28a13108cf74f607ad1d47db88f6c25da0364a205f2cceb335f"
+"version": "(cp313) 0.2.12",
+"installCommand": "ruamel.yaml.clib==0.2.12 --hash=sha256:bc6ca39f2b46ddbd52fd8850ba6335f83d8c4b68cb4e02d591d6a15f251dd368"
 }
 },
 {
@@ -2961,7 +2961,7 @@
 {
 "name": "scikit-image",
 "tags": [ "graphics" ],
-"versions": " 0.18.3 0.18.3",
+"versions": " 0.18.3",
 "info":
 {
 "description": "<p>scikit-image is a collection of algorithms for image processing.</p>",
@@ -2977,7 +2977,7 @@
 {
 "name": "scikit-learn",
 "tags": [ "graphics","machine_learning","math" ],
-"versions": " 1.2.1.post2 1.2.1.post2",
+"versions": " 1.2.1.post2",
 "info":
 {
 "description": "<p>scikit-learn is a Python module for machine learning built on top of SciPy and is distributed under the 3-Clause BSD license.</p><p>The project was started in 2007 by David Cournapeau as a Google Summer of Code project, and since then many volunteers have contributed.</p>",
@@ -2993,7 +2993,7 @@
 {
 "name": "scipy",
 "tags": [ "math","machine_learning" ],
-"versions": " 1.3.3 1.3.3.post0",
+"versions": " 1.3.3.post0",
 "info":
 {
 "description": "<p>SciPy (pronounced “Sigh Pie”) is open-source software for mathematics, science, and engineering. The SciPy library depends on NumPy, which provides convenient and fast N-dimensional array manipulation. The SciPy library is built to work with NumPy arrays, and provides many user-friendly and efficient numerical routines such as routines for numerical integration and optimization. Together, they run on all popular operating systems, are quick to install, and are free of charge. NumPy and SciPy are easy to use, but powerful enough to be depended upon by some of the world’s leading scientists and engineers. If you need to manipulate numbers on a computer and display or publish the results, give SciPy a try!</p>",
@@ -3169,7 +3169,7 @@
 {
 "name": "sqlalchemy",
 "tags": [ "programming_tools","database" ],
-"versions": " 2.0.12 2.0.12 2.0.29 2.0.37",
+"versions": " 2.0.12 2.0.29 2.0.37",
 "info":
 {
 "description": "<p>SQLAlchemy is the Python SQL toolkit and Object Relational Mapper that gives application developers the full power and flexibility of SQL. SQLAlchemy provides a full suite of well known enterprise-level persistence patterns, designed for efficient and high-performing database access, adapted into a simple and Pythonic domain language.</p>",
@@ -3217,7 +3217,7 @@
 {
 "name": "statsmodels",
 "tags": [ "math" ],
-"versions": " 0.13.5.post0 0.13.5.post0",
+"versions": " 0.13.5.post0",
 "info":
 {
 "description": "<p>statsmodels is a Python package that provides a complement to scipy for statistical computations including descriptive statistics and estimation and inference for statistical models. An extensive list of result statistics are available for each estimator.</p>",
@@ -3377,7 +3377,7 @@
 {
 "name": "tornado",
 "tags": [ "web" ],
-"versions": " 6.3.3 6.4.2 6.4.2 6.4.2",
+"versions": " 6.4.2 6.4.2 6.4.2",
 "info":
 {
 "description": "<p>Tornado is a Python web framework and asynchronous networking library, originally developed at <a href='https://en.wikipedia.org/wiki/FriendFeed'>FriendFeed</a>. By using non-blocking network I/O, Tornado can scale to tens of thousands of open connections, making it ideal for <a href='https://en.wikipedia.org/wiki/Push_technology#Long_polling'>long polling</a>, <a href='https://en.wikipedia.org/wiki/WebSocket'>WebSockets</a>, and other applications that require a long-lived connection to each user.</p>",
@@ -3505,7 +3505,7 @@
 {
 "name": "uwsgi",
 "tags": [ "web" ],
-"versions": " 2.0.21 2.0.27 2.0.27 2.0.29",
+"versions": " 2.0.27 2.0.27 2.0.29",
 "info":
 {
 "description": "<p>The uWSGI project aims at developing a full stack for building hosting services.</p><p>Application servers (for various programming languages and protocols), proxies, process managers and monitors are all implemented using a common api and a common configuration style.</p><p>Thanks to its pluggable architecture it can be extended to support more platforms and languages.</p><p>Currently, you can write plugins in C, C++ and Objective-C.</p><p>The “WSGI” part in the name is a tribute to the namesake Python standard, as it has been the first developed plugin for the project.</p><p>Versatility, performance, low-resource usage and reliability are the strengths of the project (and the only rules followed).</p>",
@@ -3649,7 +3649,7 @@
 {
 "name": "xgboost",
 "tags": [ "machine_learning" ],
-"versions": " 1.6.2 1.6.2",
+"versions": " 1.6.2",
 "info":
 {
 "description": "<p>XGBoost is an optimized distributed gradient boosting library designed to be highly efficient, flexible and portable. It implements machine learning algorithms under the <a href='https://en.wikipedia.org/wiki/Gradient_boosting'>Gradient Boosting</a> framework. XGBoost provides a parallel tree boosting (also known as GBDT, GBM) that solve many data science problems in a fast and accurate way. The same code runs on major distributed environment (Kubernetes, Hadoop, SGE, MPI, Dask) and can solve problems beyond billions of examples.</p>",
@@ -3713,7 +3713,7 @@
 {
 "name": "zos-util",
 "tags": [ "utility" ],
-"versions": " 1.0.1 1.0.1 1.0.1 1.0.1.post0",
+"versions": " 1.0.1 1.0.1 1.0.1.post0",
 "info":
 {
 "description": "<p>This module provides a Python interface into various z/OS utilities</p>",
