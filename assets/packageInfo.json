@@ -2865,7 +2865,7 @@
 {
 "name": "requests",
 "tags": [ "web" ],
-"versions": " 2.32.3",
+"versions": " 2.32.4",
 "info":
 {
 "description": "<p>Requests is a simple, yet elegant, HTTP library.</p><p>Requests allows you to send HTTP/1.1 requests extremely easily. There’s no need to manually add query strings to your URLs, or to form-encode your PUT & POST data — but nowadays, just use the <code>json</code> method!</p>",
@@ -2874,8 +2874,8 @@
 "siteName": "github",
 "license": "APACHE2",
 "linkToLicense": "https://github.com/psf/requests/blob/main/LICENSE",
-"version": "(py3) 2.32.3",
-"installCommand": "requests==2.32.3 --hash=sha256:51ab5b81489cdabe87d4bed57e342535431d9aee89e962ad2bb314d51d3b2e2a"
+"version": "(py3) 2.32.4",
+"installCommand": "requests==2.32.4 --hash=sha256:9464793afbff5c8982e7721538a3eb9dbae68cc9143519e863b56f592a196046"
 }
 },
 {
@@ -3073,7 +3073,7 @@
 {
 "name": "setuptools",
 "tags": [ "utility","programming_tools" ],
-"versions": " 71.1.0.post20240929",
+"versions": " 80.9.0.post20250718",
 "info":
 {
 "description": "<p><code>setuptools</code> comprises a useful component for <a href='https://packaging.python.org/en/latest/tutorials/installing-packages/#ensure-pip-setuptools-and-wheel-are-up-to-date'>Python Packaging / Package Management</a> along with <code>pip</code> and <code>wheel</code>.</p><p>Setuptools is a fully-featured, actively-maintained, and stable library designed to facilitate packaging Python projects.</p>",
@@ -3082,8 +3082,8 @@
 "siteName": "github",
 "license": "MIT",
 "linkToLicense": "https://github.com/pypa/setuptools/blob/main/LICENSE",
-"version": "(py3) 71.1.0.post20240929",
-"installCommand": "setuptools==71.1.0.post20240929 --hash=sha256:953dd7486c157c3a919b2ea496b72ba5128cb9b3cb90c2fbe19a1381389edcb6"
+"version": "(py3) 80.9.0.post20250718",
+"installCommand": "setuptools==80.9.0.post20250718 --hash=sha256:99ba32cbd30f13494717fefbdb104f2d573a7a85235d9e4ac5fa39ce99d21499"
 }
 },
 {
@@ -3377,7 +3377,7 @@
 {
 "name": "tornado",
 "tags": [ "web" ],
-"versions": " 6.3.3 6.4.2 6.4.2 6.4.2",
+"versions": " 6.3.3 6.5.1 6.5.1 6.5.1",
 "info":
 {
 "description": "<p>Tornado is a Python web framework and asynchronous networking library, originally developed at <a href='https://en.wikipedia.org/wiki/FriendFeed'>FriendFeed</a>. By using non-blocking network I/O, Tornado can scale to tens of thousands of open connections, making it ideal for <a href='https://en.wikipedia.org/wiki/Push_technology#Long_polling'>long polling</a>, <a href='https://en.wikipedia.org/wiki/WebSocket'>WebSockets</a>, and other applications that require a long-lived connection to each user.</p>",
@@ -3386,8 +3386,8 @@
 "siteName": "tornadoweb.org",
 "license": "APACHE2",
 "linkToLicense": "https://github.com/tornadoweb/tornado/blob/master/LICENSE",
-"version": "(cp313) 6.4.2",
-"installCommand": "tornado==6.4.2 --hash=sha256:1ef23e425dccd67620aa7de2df7fd6127914d9af65c9a59990bea7725aeebbc2"
+"version": "(cp313) 6.5.1",
+"installCommand": "tornado==6.5.1 --hash=sha256:765a1f1c964c6be43f204c3c81ecc848352b827d6e75acd82640de0467239aa5"
 }
 },
 {
