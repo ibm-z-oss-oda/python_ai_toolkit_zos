@@ -88,10 +88,11 @@ export class IndexTableComponent implements OnInit {
 
     // Load the data from json file
     this.http.get('assets/packageInfo.json').subscribe(data => {
+      // Store the raw object data and work with it directly
       this.indexData = data;
 
       // construct all table rows data from json data
-      this.allData = this.prepareData(this.indexData);
+      this.allData = this.prepareDataFromObject(this.indexData);
       this.dataToConstrutPages = this.allData; // default to all rows data
 
       this.model.pageLength = 10;
@@ -153,8 +154,90 @@ export class IndexTableComponent implements OnInit {
     });
   }
 
+  // Prepare table data from packageInfo object
+  protected prepareDataFromObject(packageData: any): any[] {
+    let items: TableItem[][] = [];
+    
+    // Get package names and sort them alphabetically
+    const sortedPackageNames = Object.keys(packageData).sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()));
+    
+    // Iterate through the sorted package names
+    sortedPackageNames.forEach(packageName => {
+      const packageInfo = packageData[packageName];
+      
+      // Extract version information from the versions object
+      const versionKeys = Object.keys(packageInfo.versions || {});
+      const latestVersion = versionKeys.length > 0 ? versionKeys[versionKeys.length - 1] : '';
+      
+      // Create expanded data structure
+      const expandedData = {
+        name: packageName,
+        tags: packageInfo.tags ? packageInfo.tags.split(/\s+/).filter(tag => tag.length > 0) : [],
+        versions: versionKeys.join(' '),
+        info: {
+          description: packageInfo.description || '',
+          version: this.formatVersionDisplay(packageName, packageInfo, latestVersion),
+          installCommand: this.generateInstallCommand(packageName, packageInfo),
+          usageNotes: packageInfo.usage_notes || '',
+          linkToSite: packageInfo.link_to_site || '',
+          siteName: packageInfo.site_name || '',
+          license: packageInfo.site_name_license || '',
+          linkToLicense: packageInfo.link_to_license || ''
+        }
+      };
+      
+      items.push([
+        new TableItem({
+          data: packageName,
+          key: this.constantService.INDEX_NAME,
+          expandedData: expandedData,
+          expandedTemplate: this.expandedPaneTemplate
+        }),
+        new TableItem({
+          data: packageInfo.tags ? packageInfo.tags.split(/\s+/).filter(tag => tag.length > 0) : [],
+          key: this.constantService.INDEX_TAGS,
+          template: this.tagsTableItemTemplate
+        }),
+        new TableItem({ 
+          data: latestVersion,
+          key: this.constantService.INDEX_VERSIONS 
+        }),
+      ]);
+    });
+    
+    return items;
+  }
+  
+  // Generate install command with SHA hash
+  private generateInstallCommand(packageName: string, packageInfo: any): string {
+    const versionKeys = Object.keys(packageInfo.versions || {});
+    if (versionKeys.length === 0) return '';
+    
+    const latestVersion = versionKeys[versionKeys.length - 1];
+    const versionData = packageInfo.versions[latestVersion];
+    
+    if (versionData && versionData.dist && versionData.dist.length > 0) {
+      const dist = versionData.dist[0];
+      return `${packageName}==${latestVersion} --hash=sha256:${dist.sha256}`;
+    }
+    
+    return `${packageName}==${latestVersion}`;
+  }
+
+  // Format version display with Python tag
+  private formatVersionDisplay(packageName: string, packageInfo: any, latestVersion: string): string {
+    const versionData = packageInfo.versions[latestVersion];
+    
+    if (versionData && versionData.dist && versionData.dist.length > 0) {
+      const dist = versionData.dist[0];
+      return `(${dist.py_version}) ${latestVersion}`;
+    }
+    
+    return latestVersion;
+  }
+
   protected prepareData(data: Array<PackageInfoObject>) {
-    // create new data from the service data
+    // Legacy method for array-based data format
     let items: TableItem[][] = [];
     let version = ''
     data.forEach(dataRow => {
