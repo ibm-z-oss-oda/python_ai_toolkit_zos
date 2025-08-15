@@ -21,7 +21,7 @@ COPY src src
 COPY tsconfig.app.json .
 COPY tsconfig.json .
 COPY tsconfig.spec.json .
-COPY packageInfo.json src/assets/packageInfo.json
+COPY webasset/packageInfo.json src/assets/packageInfo.json
 
 EXPOSE 4200
 
