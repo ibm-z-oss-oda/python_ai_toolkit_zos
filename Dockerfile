@@ -21,8 +21,7 @@ COPY src src
 COPY tsconfig.app.json .
 COPY tsconfig.json .
 COPY tsconfig.spec.json .
-COPY webassets/packageInfo.json src/assets/packageInfo.json
-COPY webassets/shas.json  src/assets/i18n/shas.json
+COPY packageInfo.json src/assets/packageInfo.json
 
 EXPOSE 4200
 
