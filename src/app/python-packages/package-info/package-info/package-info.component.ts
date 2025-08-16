@@ -30,7 +30,7 @@ export class PackageInfoComponent implements OnInit {
     if (this.packageInfoData.name == "flask") {
       this.packageInfoData.name = "Flask"
     }
-    this.shaValues = data;
+    // SHA values will be loaded directly in construcePullStrRowData()
     if (this.packageInfoData.versions.split(' ').length > 2){
       this.version = (this.packageInfoData.versions as string).split(' ')[2]
     } else {
@@ -43,6 +43,39 @@ export class PackageInfoComponent implements OnInit {
     window.scrollTo(0, 0);
   }
 
+  loadShaValuesFromPackageInfo(): void {
+    this.http.get('assets/packageInfo.json').subscribe((data: any) => {
+      const currentPackageName = this.packageInfoData.name.toLowerCase();
+      const packageData = data[currentPackageName];
+      
+      if (packageData && packageData.versions) {
+        this.shaValues = this.extractShaDataForPackage(currentPackageName, packageData);
+      } else {
+        console.log(`No data found for package: ${currentPackageName}`);
+        this.shaValues = [];
+      }
+    }, error => {
+      console.log("Error loading packageInfo for SHA values:", error);
+      this.shaValues = [];
+    });
+  }
+
+  extractShaDataForPackage(packageName: string, packageData: any): any[] {
+    const packageArray: string[] = [`${packageName}==latest`];
+    
+    Object.keys(packageData.versions).forEach(versionKey => {
+      const versionData = packageData.versions[versionKey];
+      if (versionData.dist && versionData.dist.length > 0) {
+        versionData.dist.forEach(dist => {
+          const versionEntry = `${versionKey} ${dist.py_version} ${dist.sha256}`;
+          packageArray.push(versionEntry);
+        });
+      }
+    });
+    
+    return [packageArray]; // Return array containing this package's data
+  }
+
   goToHome() {
     this.headService.renderHome = true;
     this.headService.renderGetStarted = false;
@@ -51,7 +84,6 @@ export class PackageInfoComponent implements OnInit {
     this.headService.packageInfoData = null;
   }
 
-  // check which tag should be show
   checkTagType(tag: string) {
     if (tag == null || tag == "") {
       return this.constantService.ALL_TAGS_TYPE[8];
@@ -60,31 +92,55 @@ export class PackageInfoComponent implements OnInit {
     return this.constantService.ALL_TAGS_TYPE[index];
   }
 
-  // construct pull string row data
   construcePullStrRowData() {
-    let versions: string = this.version;
-    let name: string = this.packageInfoData.name.toLowerCase();
-    let arr = Array.from(this.shaValues)
-    if (versions.split(' ').length > 1) {
-      let snd_vers = versions.split(' ')[1]
-    }
-    arr.forEach(nm =>{
-      let count = 0
-      if ((nm[0] as string).split('==')[0].replace('-','').replace('_','') == name.replace('-','').replace('_','')) {
-        let removeFirst = nm.shift()
-        let VersionsArr = Array.from(nm)
-        count = count++
-
-        if(versions != null && versions != "" && versions != undefined) {
-          VersionsArr.forEach(nmi => {
-            let pullStr: string = this.packageInfoData.name.trim() + "==" +  (nmi as string).split(' ')[0] + " --hash=sha256:" + (nmi as string).split(' ')[2].trim();
-            let version = (nmi as string).split(' ')[0] + ' (' + (nmi as string).split(' ')[1] + ')'
-            let pullStrbject: PullStrbject  = new PullStrbject(version, pullStr, "https://en.wikipedia.org/wiki/Clown");
-            this.pullStrRowData.push(pullStrbject);
-          });
-        let appendFirst = nm.unshift(removeFirst)
-        }
+    this.pullStrRowData = []; // Clear existing data
+    
+    this.http.get('assets/packageInfo.json').subscribe((data: any) => {
+      const currentPackageName = this.packageInfoData.name.toLowerCase();
+      const packageData = data[currentPackageName];
+      
+      if (packageData && packageData.versions) {
+        const versionEntries: Array<{version: string, pyTag: string, sha: string}> = [];
+        
+        Object.keys(packageData.versions).forEach(versionKey => {
+          const versionData = packageData.versions[versionKey];
+          if (versionData.dist && versionData.dist.length > 0) {
+            versionData.dist.forEach(dist => {
+              versionEntries.push({
+                version: versionKey,
+                pyTag: dist.py_version,
+                sha: dist.sha256
+              });
+            });
+          }
+        });
+        
+        versionEntries.sort((a, b) => {
+          const getPriority = (tag: string) => {
+            if (tag.startsWith('cp')) {
+              const versionStr = tag.substring(2);
+              const versionNum = parseInt(versionStr);
+              return isNaN(versionNum) ? 0 : versionNum;
+            } else if (tag.startsWith('py')) {
+              const versionStr = tag.substring(2);
+              const versionNum = parseInt(versionStr);
+              return isNaN(versionNum) ? -1000 : versionNum - 1000; 
+            }
+            return -2000; 
+          };
+          return getPriority(b.pyTag) - getPriority(a.pyTag);
+        });
+        
+        
+        versionEntries.forEach(entry => {
+          const pullStr = `${this.packageInfoData.name}==${entry.version} --hash=sha256:${entry.sha}`;
+          const versionDisplay = `${entry.version} (${entry.pyTag})`;
+          const pullStrbject = new PullStrbject(versionDisplay, pullStr, "https://fake.site.string");
+          this.pullStrRowData.push(pullStrbject);
+        });
       }
-    })
+    }, error => {
+      console.log("Error loading packageInfo for pull string data:", error);
+    });
   }
 }
