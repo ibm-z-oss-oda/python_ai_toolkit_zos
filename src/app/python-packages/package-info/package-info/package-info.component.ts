@@ -30,7 +30,7 @@ export class PackageInfoComponent implements OnInit {
     if (this.packageInfoData.name == "flask") {
       this.packageInfoData.name = "Flask"
     }
-    // SHA values will be loaded directly in construcePullStrRowData()
+    this.shaValues = data;
     if (this.packageInfoData.versions.split(' ').length > 2){
       this.version = (this.packageInfoData.versions as string).split(' ')[2]
     } else {
@@ -41,43 +41,6 @@ export class PackageInfoComponent implements OnInit {
     }, 1);
     // set the scroll bar to top
     window.scrollTo(0, 0);
-  }
-
-  // Load SHA values from packageInfo structure 
-  loadShaValuesFromPackageInfo(): void {
-    this.http.get('assets/packageInfo.json').subscribe((data: any) => {
-      const currentPackageName = this.packageInfoData.name.toLowerCase();
-      const packageData = data[currentPackageName];
-      
-      if (packageData && packageData.versions) {
-        this.shaValues = this.extractShaDataForPackage(currentPackageName, packageData);
-      } else {
-        console.log(`No data found for package: ${currentPackageName}`);
-        this.shaValues = [];
-      }
-    }, error => {
-      console.log("Error loading packageInfo for SHA values:", error);
-      this.shaValues = [];
-    });
-  }
-
-  // Extract SHA data for the current package  
-  extractShaDataForPackage(packageName: string, packageData: any): any[] {
-    const packageArray: string[] = [`${packageName}==latest`];
-    
-    // Add version entries for each version
-    Object.keys(packageData.versions).forEach(versionKey => {
-      const versionData = packageData.versions[versionKey];
-      if (versionData.dist && versionData.dist.length > 0) {
-        versionData.dist.forEach(dist => {
-          // Format: "version py_version sha256hash"
-          const versionEntry = `${versionKey} ${dist.py_version} ${dist.sha256}`;
-          packageArray.push(versionEntry);
-        });
-      }
-    });
-    
-    return [packageArray]; // Return array containing this package's data
   }
 
   goToHome() {
@@ -99,59 +62,29 @@ export class PackageInfoComponent implements OnInit {
 
   // construct pull string row data
   construcePullStrRowData() {
-    this.pullStrRowData = []; // Clear existing data
-    
-    // Load package data directly from packageInfo
-    this.http.get('assets/packageInfo.json').subscribe((data: any) => {
-      const currentPackageName = this.packageInfoData.name.toLowerCase();
-      const packageData = data[currentPackageName];
-      
-      if (packageData && packageData.versions) {
-        const versionEntries: Array<{version: string, pyTag: string, sha: string}> = [];
-        
-        // Extract all versions and their distribution info
-        Object.keys(packageData.versions).forEach(versionKey => {
-          const versionData = packageData.versions[versionKey];
-          if (versionData.dist && versionData.dist.length > 0) {
-            versionData.dist.forEach(dist => {
-              versionEntries.push({
-                version: versionKey,
-                pyTag: dist.py_version,
-                sha: dist.sha256
-              });
-            });
-          }
-        });
-        
-        // Sort by python tag (most recent first)
-        versionEntries.sort((a, b) => {
-          const getPriority = (tag: string) => {
-            if (tag.startsWith('cp')) {
-              // Extract version number from cpXYZ format (e.g., cp313 -> 313, cp314 -> 314)
-              const versionStr = tag.substring(2);
-              const versionNum = parseInt(versionStr);
-              return isNaN(versionNum) ? 0 : versionNum;
-            } else if (tag.startsWith('py')) {
-              // py3, py2, etc. get lower priority but still sorted by version
-              const versionStr = tag.substring(2);
-              const versionNum = parseInt(versionStr);
-              return isNaN(versionNum) ? -1000 : versionNum - 1000; // Subtract 1000 to keep below cp versions
-            }
-            return -2000; // Any other format gets lowest priority
-          };
-          return getPriority(b.pyTag) - getPriority(a.pyTag);
-        });
-        
-        // Create PullStrbject entries for each version
-        versionEntries.forEach(entry => {
-          const pullStr = `${this.packageInfoData.name}==${entry.version} --hash=sha256:${entry.sha}`;
-          const versionDisplay = `${entry.version} (${entry.pyTag})`;
-          const pullStrbject = new PullStrbject(versionDisplay, pullStr, "https://en.wikipedia.org/wiki/Clown");
-          this.pullStrRowData.push(pullStrbject);
-        });
+    let versions: string = this.version;
+    let name: string = this.packageInfoData.name.toLowerCase();
+    let arr = Array.from(this.shaValues)
+    if (versions.split(' ').length > 1) {
+      let snd_vers = versions.split(' ')[1]
+    }
+    arr.forEach(nm =>{
+      let count = 0
+      if ((nm[0] as string).split('==')[0].replace('-','').replace('_','') == name.replace('-','').replace('_','')) {
+        let removeFirst = nm.shift()
+        let VersionsArr = Array.from(nm)
+        count = count++
+
+        if(versions != null && versions != "" && versions != undefined) {
+          VersionsArr.forEach(nmi => {
+            let pullStr: string = this.packageInfoData.name.trim() + "==" +  (nmi as string).split(' ')[0] + " --hash=sha256:" + (nmi as string).split(' ')[2].trim();
+            let version = (nmi as string).split(' ')[0] + ' (' + (nmi as string).split(' ')[1] + ')'
+            let pullStrbject: PullStrbject  = new PullStrbject(version, pullStr, "https://en.wikipedia.org/wiki/Clown");
+            this.pullStrRowData.push(pullStrbject);
+          });
+        let appendFirst = nm.unshift(removeFirst)
+        }
       }
-    }, error => {
-      console.log("Error loading packageInfo for pull string data:", error);
-    });
+    })
   }
 }
