@@ -10,8 +10,18 @@
             {{_messageService.getBundle('HOME_DESC2')}}  
             <a (click)="goToGetStarted()">{{_messageService.getBundle('HOME_DESC3')}}</a> 
             {{_messageService.getBundle('HOME_DESC4')}}
+        </div>
+        <div style="margin-top: 24px;" class="desc">
+            {{_messageService.getBundle('HOME_DESC4_2')}}
             <a [href]="shopz" target="_blank">{{_messageService.getBundle('HOME_DESC5')}} <svg class="bx--btn__icon" ibmIconLaunch size="16"></svg> </a>
             {{_messageService.getBundle('HOME_DESC6')}}
+        </div>
+        <div style="margin-top: 24px;" class="desc">
+            {{_messageService.getBundle('HOME_DESC_GITHUB_1')}}
+            <a [href]="github" target="_blank" rel="noopener noreferrer">
+                {{_messageService.getBundle('HOME_DESC_GITHUB_2')}}
+            </a>
+            {{_messageService.getBundle('HOME_DESC_GITHUB_3')}}
         </div>
         <div style="margin-top: 64px;" >
             <!--index table-->

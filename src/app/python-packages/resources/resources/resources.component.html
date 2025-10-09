@@ -76,7 +76,11 @@
                     </div>
                 </ibm-clickable-tile>
             </div>
-            <div class="marginTopLeft" ibmCol [columnNumbers]="{'lg': 3, 'md': 2, 'sm': 12}">
+            <!-- 
+                FAQ and Announcement Letter sections are currently hidden because they are no longer valid.
+                To make them visible again, simply remove *ngIf="false" from the outer div.
+            -->
+            <div *ngIf="false" class="marginTopLeft" ibmCol [columnNumbers]="{'lg': 3, 'md': 2, 'sm': 12}">
                 <ibm-clickable-tile href="https://ibm.biz/BdPnfS" target="_blank">
                     <!--title-->
                     <div>
@@ -92,7 +96,7 @@
                     </div>
                 </ibm-clickable-tile>
             </div>
-            <div class="marginTopLeft" ibmCol [columnNumbers]="{'lg': 3, 'md': 2, 'sm': 12}">
+            <div *ngIf="false" class="marginTopLeft" ibmCol [columnNumbers]="{'lg': 3, 'md': 2, 'sm': 12}">
                 <ibm-clickable-tile href="https://ibm.biz/BdPnXX" target="_blank">
                     <!--title-->
                     <div>
@@ -108,11 +112,6 @@
                     </div>
                 </ibm-clickable-tile>
             </div>
-
-        </div>
-
-        <div ibmRow>
-
             <div class="marginTopLeft" ibmCol [columnNumbers]="{'lg': 3, 'md': 2, 'sm': 12}">
                 <ibm-clickable-tile href="https://www.ibm.com/products/open-enterprise-python-zos" target="_blank">
                     <!--title-->

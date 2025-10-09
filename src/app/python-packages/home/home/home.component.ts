@@ -11,6 +11,7 @@ export class HomeComponent implements OnInit {
 
   // make an inquiry and launch shopz
   shopz: string = "https://ibm.biz/zPAIT_shopz";
+  github: string = "https://github.com/ibm-z-oss-oda/python_ai_toolkit_zos";
 
   constructor(public _messageService: MessageService, public headService: HeaderService) { }
 
