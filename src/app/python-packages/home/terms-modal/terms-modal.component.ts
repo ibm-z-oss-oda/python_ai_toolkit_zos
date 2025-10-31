@@ -9,7 +9,7 @@ import { MessageService } from '../../services/message.service';
 })
 export class TermsModalComponent extends BaseModal implements  OnInit {
 
-  openLicenseTerms: string = "https://www.ibm.com/support/customer/csol/terms/?id=L-SYAG-CJGMZ2&lc=en#detail-document";
+  openLicenseTerms: string = "https://www.ibm.com/support/customer/csol/terms/?id=L-MZYZ-TUDP2Q&lc=en";
   size: string = "md";
   theme: string = "light";
   @Input() hasScrollingContent: boolean = true;
