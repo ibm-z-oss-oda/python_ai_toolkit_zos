@@ -855,19 +855,19 @@
     "usage_notes": "<p>PyWavelets is very easy to use and get started with. Just enter the following code to perform an example computation of a wavelet transformation:</p>\n\n<pre><code>\nimport pywt<br>\ncA, cD = pywt.dwt([1, 2, 3, 4], 'db1')<br>\n</code></pre>\n\n<p>Full documentation can be found on <a href=\"https://pywavelets.readthedocs.io/en/latest/\">readthedocs.io</a>/</p>",
     "tags": "math",
     "versions": {
-      "1.6.0": {
+      "1.9.0": {
         "dist": [
           {
             "py_version": "cp311",
-            "sha256": "687e94547622f9c73f27f4a9462eedd8ce6cbf96e82e3de10fe1cb8e6a58026b"
+            "sha256": "267526cafb9d4ef291e98caa4fc208353cd5471953ac309bb80fa8d4b7204319"
           },
           {
             "py_version": "cp312",
-            "sha256": "cd596c9884e480d83a0ff7f9a65488f10c6b93ea6b74a2c171544e32fb91bb6a"
+            "sha256": "4ceb86a179ebd5ecfac33dc029b03dcec1dadcca4a3ef1e82aa60e83fc321702"
           },
           {
             "py_version": "cp313",
-            "sha256": "369022037bcfea7591440c9f2de0b03d97c561cfaf2dfebf5a22128ebb896f44"
+            "sha256": "696072e295f6ec963a12266d3cf4fbc4c030621b03acafd40f78f22a67baaa4c"
           }
         ]
       }
@@ -1438,15 +1438,19 @@
     "usage_notes": "<p>lxml.etree follows the <a href=\"http://effbot.org/zone/element-index.htm\">ElementTree</a> API as much as possible, building it on top of the native libxml2 tree. Therefore, it's useful to start\nby examining <code>lxml.etree</code> first.</p>\n\n<p>A common way to import lxml.etree is as follows:</p>\n\n<pre><code>\n&gt;&gt;&gt; from lxml import etree<br>\n</code></pre>\n\n<p>If your code only uses the ElementTree API and does not rely on any functionality that is specific to <code>lxml.etree</code>, you can also use (any part of) the following import chain as a fall-back to the original ElementTree:</p>\n\n<pre><code>\ntry:<br>\n  from lxml import etree<br>\n  print(\"running with lxml.etree\")<br>\nexcept ImportError:<br>\n  try:<br>\n    # Python 2.5<br>\n    import xml.etree.cElementTree as etree<br>\n    print(\"running with cElementTree on Python 2.5+\")<br>\n  except ImportError:<br>\n    try:<br>\n      # Python 2.5<br>\n      import xml.etree.ElementTree as etree<br>\n      print(\"running with ElementTree on Python 2.5+\")<br>\n    except ImportError:<br>\n      try:<br>\n        # normal cElementTree install<br>\n        import cElementTree as etree<br>\n        print(\"running with cElementTree\")<br>\n      except ImportError:<br>\n        try:<br>\n          # normal ElementTree install<br>\n          import elementtree.ElementTree as etree<br>\n          print(\"running with ElementTree\")<br>\n        except ImportError:<br>\n          print(\"Failed to import ElementTree from any known place\")<br>\n</code></pre>\n\n<p>Please proceed to the tutorial on <a href=\"https://lxml.de/tutorial.html\">lxml.de</a> for further tutorials and documentation.</p>",
     "tags": "languages",
     "versions": {
-      "5.1.0": {
+      "6.0.1": {
         "dist": [
           {
+            "py_version": "cp311",
+            "sha256": "cbc99bd026a345ddebb199b4e3d49f39ae8f338d1fdb9d89c40b1c59198bd5ff"
+          },
+          {
             "py_version": "cp312",
-            "sha256": "50eca9c30d25c2d7e71b63bfe63d35fd52272fee79ffa09d242fc5a0b9dc4166"
+            "sha256": "e7a641551d73c9f9ac4f82acf523d8f8b37ea4481f6515cbdc16011bf61766d7"
           },
           {
             "py_version": "cp313",
-            "sha256": "3662846e500b5648d9f9db9b8853c39417c74614daadeefcc67057740f408fe4"
+            "sha256": "726d24b505539069dd3877381bfc99805b968396e980ddb1718e42dbcefe0b54"
           }
         ]
       }
@@ -1775,6 +1779,27 @@
       }
     }
   },
+  "setuptools-scm": {
+    "image_name": "setuptools-scm",
+    "alt_image_name": "setuptools-scm",
+    "description": "<p>setuptools_scm extracts Python package versions from git or hg metadata instead of declaring them as the version argument or in a SCM managed file. </p>",
+    "site_name": "https://github.com/ibm-z-oss-oda/setuptools_scm",
+    "link_to_site": "https://github.com/ibm-z-oss-oda/setuptools_scm",
+    "site_name_license": "MIT",
+    "link_to_license": "https://github.com/ibm-z-oss-oda/setuptools_scm/blob/main/LICENSE",
+    "usage_notes": "<p>For advanced tool documentation, refer to <a href=\"https://github.com/pypa/setuptools_scm\">github.com</a>.</p>",
+    "tags": "utility programming_tools",
+    "versions": {
+      "9.2.2": {
+        "dist": [
+          {
+            "py_version": "py3",
+            "sha256": "e4607142fd55d26cc270b3fbcca7a39c2fcfb409a1ea13b6f692a1027f3a52d0"
+          }
+        ]
+      }
+    }
+  },
   "glib": {
     "image_name": "glib",
     "alt_image_name": "glib",
@@ -1954,11 +1979,11 @@
     "usage_notes": "<p>This example builds a standard wordcount function from pieces within <code>toolz</code>:</p>\n<pre><code>\n>>> def stem(word):<br>\n...     \"\"\" Stem word to primitive form \"\"\"<br>\n...     return word.lower().rstrip(\",.!:;'-\\\"\").lstrip(\"'\\\"\")<br>\n<br>\n>>> from toolz import compose, frequencies<br>\n>>> from toolz.curried import map<br>\n>>> wordcount = compose(frequencies, map(stem), str.split)<br>\n<br>\n>>> sentence = \"This cat jumped over this other cat!\"<br>\n>>> wordcount(sentence)<br>\n{'this': 2, 'cat': 2, 'jumped': 1, 'over': 1, 'other': 1}<br>\n</code></pre>\n<p>Full documentation is available on <a href=\"https://toolz.readthedocs.io/en/latest/\">readthedocs.io</a></p>",
     "tags": "utility",
     "versions": {
-      "0.12.1": {
+      "1.1.0": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "50aedb1be0b4d951a29a9d17aa17d649cf37131c72e47c4d0628c2b824218fac"
+            "sha256": "f8c8ee8c4685c01255678ea957e83f3625498e7db3b67a1e7b7fecce50604bb4"
           }
         ]
       }
@@ -2227,11 +2252,11 @@
     "usage_notes": "<p>For advanced tool documentation, refer to <a href=\"https://github.com/ibmdb/python-ibmdbsa\">github.com</a>.</p>",
     "tags": "utility",
     "versions": {
-      "0.4.1": {
+      "0.4.3": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "a5ee925c9e346c0205f81227cfd96d8681897eaac6e7b45c4be2c82b5d09f355"
+            "sha256": "2bf9f19a44c00232dcd8be8637609a7c496eee447badff6ba78aaa3e0b9bb252"
           }
         ]
       }
@@ -2726,19 +2751,19 @@
     "usage_notes": "<p>For advanced tool documentation, refer to <a href=\"https://github.com/ibmdb/python-ibmdb\">github.com</a>.</p>",
     "tags": "utility",
     "versions": {
-      "3.2.6": {
+      "3.2.8": {
         "dist": [
           {
             "py_version": "cp311",
-            "sha256": "8e303cdda90253f3ad3d14bd40207b06de54cfff9eb12e31b24ea941fc516e20"
+            "sha256": "c97be42922a08b863ecb586ec02e872c7540c41143bf9113665f4998d20ceedd"
           },
           {
             "py_version": "cp312",
-            "sha256": "240388db4a3a5a1698cf067092698fd32d9fc5e33b56814555404c8f387374d0"
+            "sha256": "a8242390d6f7e03c42bd7f2a4d964e73a07828334ebe7c6ee018977e8d8e21cf"
           },
           {
             "py_version": "cp313",
-            "sha256": "9f8f291e3d771fec17db325af4b4d0c03acd238070d943587162afb737c57ad6"
+            "sha256": "3e89d31f84b48d76566ddce889c867e1f59176426503f701bd8292f69d6d05e3"
           }
         ]
       }
@@ -3311,6 +3336,18 @@
             "sha256": "c64db9d8ff86c9dbf1aefc888531da79b43c935c4e687026f66f671392a69e94"
           }
         ]
+      },
+      "1.16.3": {
+        "dist": [
+          {
+            "py_version": "cp312",
+            "sha256": "d4e036a1c01277efcc6c960ffc1ab136b3463742527ff8006e5d567bc00d9b0d"
+          },
+          {
+            "py_version": "cp313",
+            "sha256": "dd9ad7e10718fdcb266d67f1d3cf80da9bf1d5bab7e32dc95a0d227f64339b6c"
+          }
+        ]
       }
     }
   },
@@ -3795,6 +3832,18 @@
           {
             "py_version": "cp311",
             "sha256": "872db2277c9d67aa12574a7e625d399ccde418dadded041cd52996468d7713c9"
+          }
+        ]
+      },
+      "1.7.2": {
+        "dist": [
+          {
+            "py_version": "cp312",
+            "sha256": "1332fe7fa3af25731548cf8524d5d8557ae1eada79fd83df60676c826495d3a8"
+          },
+          {
+            "py_version": "cp313",
+            "sha256": "881644d128e43c8bdc4f70f1ea4364ad199083f2a3fa0cbc0c7d04288ac12932"
           }
         ]
       }
@@ -5008,11 +5057,11 @@
     "usage_notes": "<p>The libpng manual is available on <a href=\"http://www.libpng.org/pub/png/libpng-manual.txt\">libpng.org</a>.</p>",
     "tags": "graphics",
     "versions": {
-      "1.6.47": {
+      "1.6.53": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "6147b481f44624d7289c6a593f5e60633de4f6605e54df3ac78c7b2f5db25132"
+            "sha256": "50fca27c392a0cad684f582858a5949e1f406401eb6e2c29f7dce04356cdb5c5"
           }
         ]
       }
