@@ -115,6 +115,13 @@ To configure Node.js and npm for JupyterHub:
 
 ## Configuring the RACF Keyring and Certificate
 
+Before modifying keyring(s) and generating certificates, make sure that you have access to read the keyring with the commands below:
+
+```bash
+tsocmd "PERMIT IRR.DIGTCERT.LISTRING CLASS(FACILITY) ID(<your_userid>) ACCESS(READ)"
+tsocmd "SETROPTS RACLIST(FACILITY) REFRESH"
+```
+
 To configure the RACF keyring and certificate for secure JupyterHub access:
 
 1. Create the keyring:
