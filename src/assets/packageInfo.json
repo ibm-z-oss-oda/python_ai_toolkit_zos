@@ -2771,14 +2771,14 @@
     "link_to_site": "https://github.com/jupyterhub/jupyterhub",
     "site_name_license": "BSD-3-Clause",
     "link_to_license": "https://github.com/jupyterhub/jupyterhub/blob/main/COPYING.md",
-    "usage_notes": "<p>To successfully start JupyterHub, you will need cryptography. However, cryptography is delivered by IBM Open Enterprise SDK for Python. In this way, you will need to install cryptography into your python virtual environment just by adding an option \"--system-site-packages\" in the following virtual environment creation command.</p>\n\n<pre><code>\npython3 -m venv --system-site-packages venv-userID <br>\n</code></pre>\n<hr>\n<p>For jupyterhub, the following new parameters are added to support ports range specification to replace the original random ports for new notebook servers.</p>\n<ul>\n <li>c.SimpleLocalProcessSpawner.starting_port</li>\n <li>c.SimpleLocalProcessSpawner.max_users</li>\n</ul>\n<p>For <b>c.SimpleLocalProcessSpawner.starting_port</b>, the default 0 means that a random port will be picked up. An Integer other than 0 means the exact starting port, which will be combined with max_users to provide a range of ports to be automatically selected.</p>\n<p><b>c.SimpleLocalProcessSpawner.max_users</b> is to set the max users allowed for accessing servers in JupyterHub. The default 0 means that there is no limitation. An Integer other than 0 means the exact allowed users, which will be combined with starting_port to provide a range of ports to be automatically selected.</p>\n<hr>\n<p>The following parameters are added to support global notebook configuration directory setting for jupyter_notebook_config.py, and support whether the already existed jupyter_notebook_config.py in the target directory is overwritten.</p>\n<ul>\n <li>c.Spawner.global_notebook_config_dir (to set the Path to the global jupyter_notebook_config.py, the default value is blank)</li>\n <li>c.SimpleLocalProcessSpawner.max_users (to set whether jupyter_notebook_config.py will be overwritten by the global notebook config file, the default value is False)</li>\n</ul>\n<hr>\n<p>The following parameter is added to support _BPX_JOBNAME setting for user to filter related newly spawned processes.</p>\n<ul>\n <li>c.Spawner._BPX_JOBNAME (to set the _BPX_JOBNAME environment variable for spawned processes, the default value is blank.)</li>\n</ul>\n<hr>\n<p>More information is available on <a href=\"https://jupyterhub.readthedocs.io/\">readthedocs.io</a>.</p>",
+    "usage_notes": "<p>Detailed usage notes are available <a href=\"https://github.com/ibm-z-oss-oda/python_ai_toolkit_zos/blob/main/docs/usage_notes/jupyterhub_usage_notes.md\">here</a>.</p>",
     "tags": "utility web",
     "versions": {
-      "4.1.5.post0": {
+      "4.1.6": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "c1656ef90ccb88d8d1a58ff0fe157f3d56f98a67be023d6c7dd17cea6bc56cbb"
+            "sha256": "6fd2a9973425ba735b7f1bca201388a69908a6ae93d91cef1866801a2ebc60e2"
           }
         ]
       }
