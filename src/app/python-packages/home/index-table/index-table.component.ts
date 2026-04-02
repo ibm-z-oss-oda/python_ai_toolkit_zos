@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, TemplateRef, ViewChild } from '@angular/core';
+import { Component, Input, OnInit, AfterViewInit, TemplateRef, ViewChild } from '@angular/core';
 import { TableHeaderItem, TableItem, TableModel } from 'carbon-components-angular';
 import { TranslateService } from '@ngx-translate/core';
 import { ConstantService } from '../../services/constant.service';
@@ -13,7 +13,7 @@ import { GlobalService } from '../../services/global.service';
   templateUrl: './index-table.component.html',
   styleUrls: ['./index-table.component.scss']
 })
-export class IndexTableComponent implements OnInit {
+export class IndexTableComponent implements OnInit, AfterViewInit {
 
   @Input() id = "index-table";
   @Input() model = new TableModel();
@@ -66,6 +66,12 @@ export class IndexTableComponent implements OnInit {
       this.version = res.HOME_TABLE_VERSIONS;
       this.model.header = [
         new TableHeaderItem({
+          data: "Expand",
+          className: "bx--table-expand",
+          style: { 'width': '48px', 'min-width': '48px' },
+          sortable: false,
+        }),
+        new TableHeaderItem({
           data: this.name,
           style: { 'z-Index': '9999px' },
           sortable: true,
@@ -77,6 +83,12 @@ export class IndexTableComponent implements OnInit {
         }),
         new TableHeaderItem({
           data: this.versions,
+          style: { 'z-Index': '9999px' },
+          sortable: false
+        }),
+        new TableHeaderItem({
+          data: "Actions",
+          className: "thead_action",
           style: { 'z-Index': '9999px' },
           sortable: false
         })
@@ -102,6 +114,17 @@ export class IndexTableComponent implements OnInit {
     }, error => {
       console.log("An error happened when load the package info data.", error);
     });
+  }
+
+  ngAfterViewInit(): void {
+    // Fix accessibility issue: Remove tabindex from search container
+    // The search role is a landmark, not a widget, so it shouldn't be tabbable
+    setTimeout(() => {
+      const searchContainer = document.querySelector('.bx--search[role="search"]');
+      if (searchContainer) {
+        searchContainer.removeAttribute('tabindex');
+      }
+    }, 100);
   }
 
   // check which tag should be show

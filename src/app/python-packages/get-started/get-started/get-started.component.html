@@ -1,10 +1,10 @@
 <div>
     <div>
-        <div class="get-started-page__banner">
+        <h1 class="get-started-page__banner">
             {{_messageService.getBundle('GET_STARTED')}}
-        </div>
+        </h1>
         <div>
-			<ibm-tabs>
+			<ibm-tabs ariaLabel="Getting started instructions">
 				<ibm-tab heading="{{_messageService.getBundle('SET_UP_ENV_TAB')}}">
 				    <app-set-up-env></app-set-up-env>
 				</ibm-tab>

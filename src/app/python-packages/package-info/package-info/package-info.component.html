@@ -1,15 +1,15 @@
 <div>
-  <div style="margin-bottom: 48px;">
+  <nav aria-label="Breadcrumb" style="margin-bottom: 48px;">
     <ibm-breadcrumb  [noTrailingSlash]="noTrailingSlash">
       <ibm-breadcrumb-item>
-       <a (click)="goToHome()"> {{_messageService.getBundle('PACKAGES')}} </a>
+       <a (click)="goToHome()" tabindex="0" role="button" (keydown.enter)="goToHome()" (keydown.space)="goToHome()"> {{_messageService.getBundle('PACKAGES')}} </a>
       </ibm-breadcrumb-item>
     </ibm-breadcrumb>
-  </div>
+  </nav>
   <div>
     <div class="imageNameTagLine">
       <!--package name-->
-      <div class="imageName">{{packageInfoData.name}}</div>
+      <h1 class="imageName">{{packageInfoData.name}}</h1>
       <!--package tags-->
       <span *ngFor="let tag of packageInfoData.tags">
         <ibm-tag [type]="checkTagType(tag)">{{tag}}</ibm-tag>
@@ -19,7 +19,7 @@
       <!--package description-->
     </div>
     <p>
-      {{_messageService.getBundle('PACKAGES_DESC1')}} <a href="{{packageInfoData.info.linkToSite}}" target="_blank">{{packageInfoData.info.siteName}}</a> {{_messageService.getBundle('PACKAGES_DESC2')}}
+      {{_messageService.getBundle('PACKAGES_DESC1')}} <a href="{{packageInfoData.info.linkToSite}}" target="_blank" rel="noopener noreferrer">{{packageInfoData.info.siteName}}<span class="sr-only"> (opens in new tab)</span></a> {{_messageService.getBundle('PACKAGES_DESC2')}}
     </p>
     <p>
       {{_messageService.getBundle('PACKAGES_DESC3')}}
@@ -28,21 +28,21 @@
 
   <!--package License-->
   <div>
-    <div class="heading02">{{_messageService.getBundle('PACKAGES_LICSEN')}}</div>
+    <h2 class="heading02">{{_messageService.getBundle('PACKAGES_LICSEN')}}</h2>
       <!--package linkToLicense-->
-      <p *ngIf="packageInfoData.name == 'h11'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}</a></p>
-      <p *ngIf="packageInfoData.name == 'jupyterlab-lsp'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}</a></p>
-      <p *ngIf="packageInfoData.name == 'jupyter-server'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}</a></p>
-      <p *ngIf="packageInfoData.name == 'jupyterlab'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}</a></p>
-      <p *ngIf="packageInfoData.name == 'jupyterhub'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}</a></p>
-      <p *ngIf="packageInfoData.name == 'jupyter-server-terminals'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}</a></p>
-      <p *ngIf="packageInfoData.name == 'jupyter-events'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}</a></p>
-      <p *ngIf="packageInfoData.name == 'jupyter-client'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}</a></p>
-      <p *ngIf="packageInfoData.name == 'dash'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}</a></p>
-      <p *ngIf="packageInfoData.name == 'chardet'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}</a></p>
-      <p *ngIf="packageInfoData.name == 'glib'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}</a></p>
-      <p *ngIf="packageInfoData.name == 'pyzmq'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}</a></p>
-      <p *ngIf="packageInfoData.name == 'freetype2'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}</a></p>
+      <p *ngIf="packageInfoData.name == 'h11'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank" rel="noopener noreferrer">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}<span class="sr-only"> (opens in new tab)</span></a></p>
+      <p *ngIf="packageInfoData.name == 'jupyterlab-lsp'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank" rel="noopener noreferrer">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}<span class="sr-only"> (opens in new tab)</span></a></p>
+      <p *ngIf="packageInfoData.name == 'jupyter-server'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank" rel="noopener noreferrer">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}<span class="sr-only"> (opens in new tab)</span></a></p>
+      <p *ngIf="packageInfoData.name == 'jupyterlab'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank" rel="noopener noreferrer">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}<span class="sr-only"> (opens in new tab)</span></a></p>
+      <p *ngIf="packageInfoData.name == 'jupyterhub'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank" rel="noopener noreferrer">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}<span class="sr-only"> (opens in new tab)</span></a></p>
+      <p *ngIf="packageInfoData.name == 'jupyter-server-terminals'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank" rel="noopener noreferrer">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}<span class="sr-only"> (opens in new tab)</span></a></p>
+      <p *ngIf="packageInfoData.name == 'jupyter-events'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank" rel="noopener noreferrer">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}<span class="sr-only"> (opens in new tab)</span></a></p>
+      <p *ngIf="packageInfoData.name == 'jupyter-client'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank" rel="noopener noreferrer">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}<span class="sr-only"> (opens in new tab)</span></a></p>
+      <p *ngIf="packageInfoData.name == 'dash'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank" rel="noopener noreferrer">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}<span class="sr-only"> (opens in new tab)</span></a></p>
+      <p *ngIf="packageInfoData.name == 'chardet'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank" rel="noopener noreferrer">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}<span class="sr-only"> (opens in new tab)</span></a></p>
+      <p *ngIf="packageInfoData.name == 'glib'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank" rel="noopener noreferrer">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}<span class="sr-only"> (opens in new tab)</span></a></p>
+      <p *ngIf="packageInfoData.name == 'pyzmq'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank" rel="noopener noreferrer">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}<span class="sr-only"> (opens in new tab)</span></a></p>
+      <p *ngIf="packageInfoData.name == 'freetype2'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank" rel="noopener noreferrer">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}<span class="sr-only"> (opens in new tab)</span></a></p>
       <div *ngIf="packageInfoData.name != 'freetype2' && packageInfoData.name != 'dash' && packageInfoData.name != 'jupyter-client' && packageInfoData.name != 'jupyter-events' && packageInfoData.name != 'jupyter-server-terminals' && packageInfoData.name != 'jupyterhub' && packageInfoData.name != 'jupyterlab' && packageInfoData.name != 'jupyter-server' && packageInfoData.name != 'jupyterlab-lsp' && packageInfoData.name != 'h11' && packageInfoData.name != 'chardet' && packageInfoData.name != 'glib' && packageInfoData.name != 'pyzmq'"><p><i>{{_messageService.getBundle('PACKAGE_NEW_LICSEN_STRING1')}}</i></p><p><i>{{_messageService.getBundle('PACKAGE_NEW_LICSEN_STRING2')}}</i></p></div>
     <div>
       <!--package License description-->
@@ -57,18 +57,18 @@
 
   <!--package Versions-->
   <div>
-    <div class="heading02">{{_messageService.getBundle('PACKAGES_VERSIONS')}}</div>
+    <h2 class="heading02">{{_messageService.getBundle('PACKAGES_VERSIONS')}}</h2>
     <p>
       <!--package versions desc-->
        {{_messageService.getBundle('PACKAGES_VERSIONS_DESC')}}
     </p>
     <div>
       <!--package versons structed list-->
-      <ibm-structured-list [border]="border" [condensed]="condensed" [nowrap]="nowrap">
-				<ibm-list-header>
-					<ibm-list-column nowrap="true">{{_messageService.getBundle('PACKAGES_VERSIONS')}}</ibm-list-column>
-					<ibm-list-column nowrap="true">{{_messageService.getBundle('PACKAGES_PULL_STRING')}}</ibm-list-column>
-				</ibm-list-header>
+      <ibm-structured-list [border]="border" [condensed]="condensed" [nowrap]="nowrap" ariaLabel="Package versions and installation commands">
+    <ibm-list-header>
+     <ibm-list-column nowrap="true" role="columnheader">{{_messageService.getBundle('PACKAGES_VERSIONS')}}</ibm-list-column>
+     <ibm-list-column nowrap="true" role="columnheader">{{_messageService.getBundle('PACKAGES_PULL_STRING')}}</ibm-list-column>
+    </ibm-list-header>
 
         <ibm-list-row *ngFor="let pullStrRow of pullStrRowData">
           <ibm-list-column>{{pullStrRow.version}}</ibm-list-column>
@@ -84,7 +84,7 @@
 
   <!--package usage notes-->
   <div>
-    <div class="heading02">{{_messageService.getBundle('PACKAGES_USAGE_NOTES')}}</div>
+    <h2 class="heading02">{{_messageService.getBundle('PACKAGES_USAGE_NOTES')}}</h2>
     <p [innerHtml]="packageInfoData.info.usageNotes">
       <!--package usage notes-->
     </p>
