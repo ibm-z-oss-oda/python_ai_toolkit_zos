@@ -1,22 +1,16 @@
 <ibm-header (click)="onRenderHome()" name="{{ _messageService.getBundle('PROJECT_NAME') }}" role="banner" [attr.aria-label]="_messageService.getBundle('PROJECT_NAME')">
   <ibm-header-navigation ariaLabel="Main navigation">
     <ibm-header-item
-      href="javascript:void(0)"
       (click)="onRenderGetStarted($event)"
       (keydown.enter)="onRenderGetStarted($event)"
-      (keydown.space)="onRenderGetStarted($event)"
-      role="menuitem"
-      [attr.tabindex]="0">
+      (keydown.space)="onRenderGetStarted($event)">
       {{ _messageService.getBundle('GET_STARTED') }}
     </ibm-header-item>
 
     <ibm-header-item
-      href="javascript:void(0)"
       (click)="onRenderResources($event)"
       (keydown.enter)="onRenderResources($event)"
-      (keydown.space)="onRenderResources($event)"
-      role="menuitem"
-      [attr.tabindex]="0">
+      (keydown.space)="onRenderResources($event)">
       {{ _messageService.getBundle('RESOURCES') }}
     </ibm-header-item>
   </ibm-header-navigation>

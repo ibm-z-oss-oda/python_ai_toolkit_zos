@@ -1,3 +1,8 @@
+/* Smooth scrolling for skip links */
+html {
+  scroll-behavior: smooth;
+}
+
 @import '~carbon-components/scss/globals/scss/styles';
 
 /* Skip to main content link - accessible and visible on focus */
@@ -21,6 +26,17 @@
   transform: translateX(-50%);
   outline: 3px solid #ffffff;
   outline-offset: 2px;
+/* Ensure main content can receive focus from skip link */
+#main-content:focus {
+  outline: 2px solid #0f62fe;
+  outline-offset: -2px;
+}
+
+/* Remove outline after focus moves away (for mouse users) */
+#main-content:not(:focus-visible) {
+  outline: none;
+}
+
 }
 
 /* Enhanced focus indicators for better visibility */

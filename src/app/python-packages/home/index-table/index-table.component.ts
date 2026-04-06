@@ -66,30 +66,15 @@ export class IndexTableComponent implements OnInit, AfterViewInit {
       this.version = res.HOME_TABLE_VERSIONS;
       this.model.header = [
         new TableHeaderItem({
-          data: "Expand",
-          className: "bx--table-expand",
-          style: { 'width': '48px', 'min-width': '48px' },
-          sortable: false,
-        }),
-        new TableHeaderItem({
           data: this.name,
-          style: { 'z-Index': '9999px' },
           sortable: true,
         }),
         new TableHeaderItem({
           data: this.tags,
-          style: { 'z-Index': '9999px' },
           sortable: false,
         }),
         new TableHeaderItem({
-          data: this.versions,
-          style: { 'z-Index': '9999px' },
-          sortable: false
-        }),
-        new TableHeaderItem({
-          data: "Actions",
-          className: "thead_action",
-          style: { 'z-Index': '9999px' },
+          data: this.version,
           sortable: false
         })
       ]
@@ -119,10 +104,17 @@ export class IndexTableComponent implements OnInit, AfterViewInit {
   ngAfterViewInit(): void {
     // Fix accessibility issue: Remove tabindex from search container
     // The search role is a landmark, not a widget, so it shouldn't be tabbable
+    // But ensure the input inside remains focusable
     setTimeout(() => {
       const searchContainer = document.querySelector('.bx--search[role="search"]');
       if (searchContainer) {
         searchContainer.removeAttribute('tabindex');
+      }
+      
+      // Ensure search input is focusable
+      const searchInput = document.querySelector('.bx--search-input') as HTMLInputElement;
+      if (searchInput && !searchInput.hasAttribute('tabindex')) {
+        searchInput.setAttribute('tabindex', '0');
       }
     }, 100);
   }
