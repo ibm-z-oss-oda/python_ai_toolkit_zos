@@ -263,16 +263,6 @@ a:focus-visible {
   outline-offset: 2px !important;
 }
 
-/* Fix list structure for menubar */
-.bx--header__menu-bar[role="menubar"] {
-  /* Carbon uses menubar role on ul, which is valid */
-  /* Ensure proper keyboard navigation */
-}
-
-.bx--header__menu-bar[role="menubar"] li {
-  list-style: none;
-}
-
 /* Ensure table footer has proper structure */
 tfoot:empty {
   display: none;
