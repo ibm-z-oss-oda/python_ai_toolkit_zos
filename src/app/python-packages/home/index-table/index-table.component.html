@@ -1,16 +1,28 @@
 <ibm-table-container>
     <ibm-table-toolbar [model]="model">
       <ibm-table-toolbar-content>
-        <ibm-table-toolbar-search [expandable]="true" [toolbar]="toolbar" [theme]="theme" [placeholder]="placeholder"
-          [autocomplete]="autocomplete" [disabled]="disabled" [size]="searchsize" [(value)]="searchDomValue"
-          (valueChange)="searchValueChange($event)" (clear)="clearSearchValue()"></ibm-table-toolbar-search>
+        <label for="search-0" class="bx--label bx--assistive-text">Search packages</label>
+        <ibm-table-toolbar-search
+          [expandable]="true"
+          [toolbar]="toolbar"
+          [theme]="theme"
+          [placeholder]="placeholder"
+          [autocomplete]="autocomplete"
+          [disabled]="disabled"
+          [size]="searchsize"
+          [(value)]="searchDomValue"
+          (valueChange)="searchValueChange($event)"
+          (clear)="clearSearchValue()"
+          ariaLabel="Search packages"></ibm-table-toolbar-search>
           <!--filter button-->
           <button [ibmButton]="ghost" class="toolbar-action" placement="bottom"
-          [ibmOverflowMenu]="filterTemplateRef" [flip]="true" [offset]="{ x: 3, y: 48 }">
-              <svg  ibmIconSettingsAdjust size="16"></svg>
+            [ibmOverflowMenu]="filterTemplateRef" [flip]="true" [offset]="{ x: 3, y: 48 }"
+            aria-label="Filter options">
+              <svg ibmIconSettingsAdjust size="16" aria-hidden="true"></svg>
+              <span class="bx--assistive-text">Filter options</span>
           </button>
       </ibm-table-toolbar-content>
-    </ibm-table-toolbar> 
+    </ibm-table-toolbar>
 
     <!--selected filter tags-->
     <ng-container *ngTemplateOutlet="selectedFilterTagsTemplateRef"></ng-container>
@@ -23,10 +35,17 @@
       [striped]="striped"
       [sortable]="sortable"
       (sort)="customSort($event)"
-      [isDataGrid]="isDataGrid">
+      [isDataGrid]="isDataGrid"
+      [skeleton]="false"
+      ariaLabel="Python packages table"
+      ariaDescribedBy="table-description">
     </ibm-table>
+    <div id="table-description" class="bx--assistive-text">Table showing available Python packages with name, description, tags, and actions</div>
 
-    <ibm-pagination [model]="model" (selectPage)="selectPage($event)"></ibm-pagination>
+    <ibm-pagination
+      [model]="model"
+      (selectPage)="selectPage($event)"
+      ariaLabel="Pagination navigation"></ibm-pagination>
 </ibm-table-container>
 
 <ng-template #expandedPaneTemplate let-data="data">

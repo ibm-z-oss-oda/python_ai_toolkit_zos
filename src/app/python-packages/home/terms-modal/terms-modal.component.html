@@ -1,11 +1,11 @@
-<ibm-modal [open]="open" [hasScrollingContent] = "hasScrollingContent" >
+<ibm-modal [open]="open" [hasScrollingContent] = "hasScrollingContent" ariaLabel="Terms of Use Agreement">
     <ibm-modal-header [showCloseButton]="showCloseButton" >
         <p class="bx--modal-header__label bx--type-delta"> {{_messageService.getBundle('TERMS_OF_USE')}}</p>
-        <p class="bx--modal-header__heading bx--type-beta"> {{_messageService.getBundle('AGREE_MODAL_TITLE')}}</p>
+        <h2 class="bx--modal-header__heading bx--type-beta"> {{_messageService.getBundle('AGREE_MODAL_TITLE')}}</h2>
     </ibm-modal-header>
     <div class="bx--modal-content">
         <p> {{_messageService.getBundle('AGREE_MODAL_CONTENT1')}}</p>
-        <a (click)="launchLicenseTerms()">{{_messageService.getBundle('AGREE_MODAL_CONTENT2')}}</a>
+        <a (click)="launchLicenseTerms()" tabindex="0" role="button" (keydown.enter)="launchLicenseTerms()" (keydown.space)="launchLicenseTerms()">{{_messageService.getBundle('AGREE_MODAL_CONTENT2')}}</a>
         <br><br>
         <p> {{_messageService.getBundle('AGREE_MODAL_CONTENT3')}}</p>
         <br>

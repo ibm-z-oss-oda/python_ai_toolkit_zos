@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, TemplateRef, ViewChild } from '@angular/core';
+import { Component, Input, OnInit, AfterViewInit, TemplateRef, ViewChild } from '@angular/core';
 import { TableHeaderItem, TableItem, TableModel } from 'carbon-components-angular';
 import { TranslateService } from '@ngx-translate/core';
 import { ConstantService } from '../../services/constant.service';
@@ -13,7 +13,7 @@ import { GlobalService } from '../../services/global.service';
   templateUrl: './index-table.component.html',
   styleUrls: ['./index-table.component.scss']
 })
-export class IndexTableComponent implements OnInit {
+export class IndexTableComponent implements OnInit, AfterViewInit {
 
   @Input() id = "index-table";
   @Input() model = new TableModel();
@@ -67,17 +67,14 @@ export class IndexTableComponent implements OnInit {
       this.model.header = [
         new TableHeaderItem({
           data: this.name,
-          style: { 'z-Index': '9999px' },
           sortable: true,
         }),
         new TableHeaderItem({
           data: this.tags,
-          style: { 'z-Index': '9999px' },
           sortable: false,
         }),
         new TableHeaderItem({
-          data: this.versions,
-          style: { 'z-Index': '9999px' },
+          data: this.version,
           sortable: false
         })
       ]
@@ -102,6 +99,24 @@ export class IndexTableComponent implements OnInit {
     }, error => {
       console.log("An error happened when load the package info data.", error);
     });
+  }
+
+  ngAfterViewInit(): void {
+    // Fix accessibility issue: Remove tabindex from search container
+    // The search role is a landmark, not a widget, so it shouldn't be tabbable
+    // But ensure the input inside remains focusable
+    setTimeout(() => {
+      const searchContainer = document.querySelector('.bx--search[role="search"]');
+      if (searchContainer) {
+        searchContainer.removeAttribute('tabindex');
+      }
+      
+      // Ensure search input is focusable
+      const searchInput = document.querySelector('.bx--search-input') as HTMLInputElement;
+      if (searchInput && !searchInput.hasAttribute('tabindex')) {
+        searchInput.setAttribute('tabindex', '0');
+      }
+    }, 100);
   }
 
   // check which tag should be show

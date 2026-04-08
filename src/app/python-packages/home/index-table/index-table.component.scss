@@ -5,6 +5,27 @@ a {
 	cursor: pointer;
 }
 
+// Ensure table headers are visible
+:host ::ng-deep .bx--table-header-label {
+	display: block !important;
+	visibility: visible !important;
+}
+
+:host ::ng-deep thead th {
+	display: table-cell !important;
+	visibility: visible !important;
+}
+
+:host ::ng-deep .bx--table-expand {
+	// Expand column should be visible but without text
+	visibility: visible !important;
+}
+
+:host ::ng-deep .thead_action {
+	// Actions column should be visible but without text
+	visibility: visible !important;
+}
+
 // insert CSS code to innetHtml
 :host ::ng-deep p {
 	font-family: "IBM Plex Sans";

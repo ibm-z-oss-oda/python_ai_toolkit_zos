@@ -1,57 +1,60 @@
 <div>
-    <div class="resource-page__banner">
+    <h1 class="resource-page__banner">
         {{_messageService.getBundle('RESOURCES')}}
-    </div>
+    </h1>
 
-    <div style="padding-left: 1rem;" ibmGrid [condensed]="gridCondensed">
+    <div style="padding-left: 1rem;" ibmGrid [condensed]="gridCondensed" role="region" aria-label="Resource links">
 
         <div ibmRow>
 
             <div class="marginTopLeft" ibmCol [columnNumbers]="{'lg': 3, 'md': 2, 'sm': 12}">
-                <ibm-clickable-tile href="https://ibm.biz/zPAIT_overview" target="_blank">
+                <ibm-clickable-tile href="https://ibm.biz/zPAIT_overview" target="_blank" rel="noopener noreferrer" aria-label="Overview Video (opens in new tab)">
                     <!--title-->
-                    <div>
+                    <h3>
                         Overview Video
-                    </div>
+                    </h3>
                     <!--description-->
-                    <div class="marginTopBottom">
+                    <p class="marginTopBottom">
                         A video that takes you through an overview of Python AI Toolkit for IBM z/OS.
-                    </div>
+                    </p>
                     <!--launch button-->
                     <div>
-                        <svg class="bx--btn__icon" ibmIconLaunch size="16"></svg>
+                        <svg class="bx--btn__icon" ibmIconLaunch size="16" aria-hidden="true"></svg>
+                        <span class="sr-only">(opens in new tab)</span>
                     </div>
                 </ibm-clickable-tile>
             </div>
             <div class="marginTopLeft" ibmCol [columnNumbers]="{'lg': 3, 'md': 2, 'sm': 12}">
-                <ibm-clickable-tile href="https://ibm.biz/zPAIT_demo" target="_blank">
+                <ibm-clickable-tile href="https://ibm.biz/zPAIT_demo" target="_blank" rel="noopener noreferrer" aria-label="Getting Started Video (opens in new tab)">
                     <!--title-->
-                    <div>
+                    <h3>
                         Getting Started Video
-                    </div>
+                    </h3>
                     <!--description-->
-                    <div class="marginTopBottom">
+                    <p class="marginTopBottom">
                         A video that demonstrates how to get started and install Python AI Toolkit for IBM z/OS.
-                    </div>
+                    </p>
                     <!--launch button-->
                     <div>
-                        <svg class="bx--btn__icon" ibmIconLaunch size="16"></svg>
+                        <svg class="bx--btn__icon" ibmIconLaunch size="16" aria-hidden="true"></svg>
+                        <span class="sr-only">(opens in new tab)</span>
                     </div>
                 </ibm-clickable-tile>
             </div>
             <div class="marginTopLeft" ibmCol [columnNumbers]="{'lg': 3, 'md': 2, 'sm': 12}">
-                <ibm-clickable-tile href="https://ibm.biz/zPAIT_redbook" target="_blank">
+                <ibm-clickable-tile href="https://ibm.biz/zPAIT_redbook" target="_blank" rel="noopener noreferrer" aria-label="Redpaper Solution Guide (opens in new tab)">
                     <!--title-->
-                    <div>
+                    <h3>
                         Redpaper Solution Guide
-                    </div>
+                    </h3>
                     <!--description-->
-                    <div class="marginTopBottom">
+                    <p class="marginTopBottom">
                         A published paper with a deeper dive on Python AI Toolkit for IBM z/OS.
-                    </div>
+                    </p>
                     <!--launch button-->
                     <div>
-                        <svg class="bx--btn__icon" ibmIconLaunch size="16"></svg>
+                        <svg class="bx--btn__icon" ibmIconLaunch size="16" aria-hidden="true"></svg>
+                        <span class="sr-only">(opens in new tab)</span>
                     </div>
                 </ibm-clickable-tile>
             </div>
@@ -61,34 +64,36 @@
         <div ibmRow>
 
             <div class="marginTopLeft" ibmCol [columnNumbers]="{'lg': 3, 'md': 2, 'sm': 12}">
-                <ibm-clickable-tile href="https://ibm.biz/BdPnE6" target="_blank">
+                <ibm-clickable-tile href="https://ibm.biz/BdPnE6" target="_blank" rel="noopener noreferrer" aria-label="Journey to Open Data Analytics (opens in new tab)">
                     <!--title-->
-                    <div>
+                    <h3>
                         Journey to Open Data Analytics
-                    </div>
+                    </h3>
                     <!--description-->
-                    <div class="marginTopBottom">
+                    <p class="marginTopBottom">
                         Content solution on how to get started with open data analytics on IBM Z and LinuxONE.
-                    </div>
+                    </p>
                     <!--launch button-->
                     <div>
-                        <svg class="bx--btn__icon" ibmIconLaunch size="16"></svg>
+                        <svg class="bx--btn__icon" ibmIconLaunch size="16" aria-hidden="true"></svg>
+                        <span class="sr-only">(opens in new tab)</span>
                     </div>
                 </ibm-clickable-tile>
             </div>
             <div class="marginTopLeft" ibmCol [columnNumbers]="{'lg': 3, 'md': 2, 'sm': 12}">
-                <ibm-clickable-tile href="https://github.com/ibm-z-oss-oda/python_ai_toolkit_zos/blob/main/docs/FAQ.md" target="_blank">
+                <ibm-clickable-tile href="https://github.com/ibm-z-oss-oda/python_ai_toolkit_zos/blob/main/docs/FAQ.md" target="_blank" rel="noopener noreferrer" aria-label="FAQs (opens in new tab)">
                     <!--title-->
-                    <div>
+                    <h3>
                         FAQs
-                    </div>
+                    </h3>
                     <!--description-->
-                    <div class="marginTopBottom">
+                    <p class="marginTopBottom">
                         Answers to the most popular questions asked in relation to Python AI Toolkit for IBM z/OS.
-                    </div>
+                    </p>
                     <!--launch button-->
                     <div>
-                        <svg class="bx--btn__icon" ibmIconLaunch size="16"></svg>
+                        <svg class="bx--btn__icon" ibmIconLaunch size="16" aria-hidden="true"></svg>
+                        <span class="sr-only">(opens in new tab)</span>
                     </div>
                 </ibm-clickable-tile>
             </div>
@@ -97,34 +102,36 @@
                 To make it visible again, simply remove *ngIf="false" from the outer div.
             -->
             <div *ngIf="false" class="marginTopLeft" ibmCol [columnNumbers]="{'lg': 3, 'md': 2, 'sm': 12}">
-                <ibm-clickable-tile href="https://ibm.biz/BdPnXX" target="_blank">
+                <ibm-clickable-tile href="https://ibm.biz/BdPnXX" target="_blank" rel="noopener noreferrer" aria-label="Announcement Letter (opens in new tab)">
                     <!--title-->
-                    <div>
+                    <h3>
                         Announcement Letter
-                    </div>
+                    </h3>
                     <!--description-->
-                    <div class="marginTopBottom">
+                    <p class="marginTopBottom">
                         Official announcement of Python AI Toolkit for IBM z/OS with more details about the product.
-                    </div>
+                    </p>
                     <!--launch button-->
                     <div>
-                        <svg class="bx--btn__icon" ibmIconLaunch size="16"></svg>
+                        <svg class="bx--btn__icon" ibmIconLaunch size="16" aria-hidden="true"></svg>
+                        <span class="sr-only">(opens in new tab)</span>
                     </div>
                 </ibm-clickable-tile>
             </div>
             <div class="marginTopLeft" ibmCol [columnNumbers]="{'lg': 3, 'md': 2, 'sm': 12}">
-                <ibm-clickable-tile href="https://www.ibm.com/products/open-enterprise-python-zos" target="_blank">
+                <ibm-clickable-tile href="https://www.ibm.com/products/open-enterprise-python-zos" target="_blank" rel="noopener noreferrer" aria-label="IBM Open Enterprise SDK for Python (opens in new tab)">
                     <!--title-->
-                    <div>
+                    <h3>
                         IBM Open Enterprise SDK for Python
-                    </div>
+                    </h3>
                     <!--description-->
-                    <div class="marginTopBottom">
+                    <p class="marginTopBottom">
                         A pre-requiste requirement in order to install Python AI Toolkit for IBM z/OS.
-                    </div>
+                    </p>
                     <!--launch button-->
                     <div>
-                        <svg class="bx--btn__icon" ibmIconLaunch size="16"></svg>
+                        <svg class="bx--btn__icon" ibmIconLaunch size="16" aria-hidden="true"></svg>
+                        <span class="sr-only">(opens in new tab)</span>
                     </div>
                 </ibm-clickable-tile>
             </div>
