@@ -31,11 +31,11 @@
     "usage_notes": "<p>Following installation, all normal <code>ipython</code> commands will use this newly-installed version of the kernel. </p>\n<p>Please refer to <a href=\"https://ipython.readthedocs.io/en/latest/\">readthedocs.io</a> for further information. Notice that ipykernel itself has minimal documentation, as this documentation largely covers ipython itself, of which the kernel is a component.</p>",
     "tags": "programming_tools",
     "versions": {
-      "6.9.1.post0": {
+      "6.9.1.post1": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "cb018cb5bfffb23cd42671c1ee5a374f677e96b8cb4709ba5f0c43980f81ef5d"
+            "sha256": "06681ea41fdcae1f1f5c8289c12beef1a37a7553a493816d05961217e0a44e70"
           }
         ]
       }
@@ -73,11 +73,11 @@
     "usage_notes": "<p>For advanced tool documentation, refer to <a href=\"https://ipython.org/ipython-doc/rel-0.10.2/html/api/generated/IPython.genutils.html\">ipython.org</a>.</p>",
     "tags": "programming_tools",
     "versions": {
-      "0.3.0": {
+      "0.3.0.post0": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "d9411249d0a53101a0482e3a66166b443e68da1b4b1b337aea4acba94a640a74"
+            "sha256": "2d1ad2983e0895cfc2e2e2261d412391ba2a698364a54f137645ada9610fbd88"
           }
         ]
       }
@@ -111,7 +111,7 @@
     "site_name": "github",
     "link_to_site": "https://github.com/chardet/chardet",
     "site_name_license": "LGPL",
-    "link_to_license": "https://github.com/chardet/chardet/blob/master/LICENSE",
+    "link_to_license": "https://github.com/chardet/chardet/blob/main/LICENSE",
     "usage_notes": "<p>The easiest way to use the Universal Encoding Detector library is with the <code>detect</code> function.</p>\n\n<p>The <code>detect</code> function takes one argument, a non-Unicode string. It returns a dictionary containing the auto-detected character encoding and a confidence level from <code>0</code> to <code>1</code>.</p>\n\n<pre><code>\n&gt;&gt;&gt; import urllib.request<br>\n&gt;&gt;&gt; rawdata = urllib.request.urlopen('http://yahoo.co.jp/').read()<br>\n&gt;&gt;&gt; import chardet<br>\n&gt;&gt;&gt; chardet.detect(rawdata)<br>\n{'encoding': 'EUC-JP', 'confidence': 0.99}<br>\n</code></pre>\n\n<p>Additional docs can be found on <a href=\"https://chardet.readthedocs.io/en/latest/usage.html#basic-usage\">readthedocs.io</a>.</p>",
     "tags": "utility",
     "versions": {
@@ -136,11 +136,11 @@
     "usage_notes": "<p>In order to benefit from the protection you just have to import and use the listed functions / classes from the right defusedxml module instead of the original module. Merely defusedxml.xmlrpc is implemented as monkey patch.</p>\n<p>Instead of:</p>\n<pre><code>\nfrom xml.etree.ElementTree import parse<br>\net = parse(xmlfile)<br>\n</code></pre>\n<p>alter code to:</p>\n<pre><code>\nfrom defusedxml.ElementTree import parse<br>\net = parse(xmlfile)<br>\n</code></pre>\n<p>Additionally the package has an untested function to monkey patch all stdlib modules with <code>defusedxml.defuse_stdlib()</code>.</p>\n<p>Please refer to <a href=\"https://github.com/tiran/defusedxml#readme\">github</a> for extensive usage notes and tips.</p>",
     "tags": "security",
     "versions": {
-      "0.7.1.post3": {
+      "0.7.1.post4": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "b9fcbc583c42560d13747fcff66a17e2360708e672618f2bb3a92881f26c1da9"
+            "sha256": "11f5e661bd611751a3449af426193c6d4a646bb21586374073e04aebe25c4f3b"
           }
         ]
       }
@@ -270,11 +270,11 @@
     "usage_notes": "<p>More information is available on <a href=\"https://typing.readthedocs.io/en/latest/\">readthedocs.io</a>.</p>",
     "tags": "utility",
     "versions": {
-      "2.9.0.20240316": {
+      "2.9.0.20251008": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "d2a63974d99735bfe27ecd94b0baccc7d8e5dd10ecb15d7d5dc69805e4b7ba86"
+            "sha256": "d44b6c054edf8c45f6b0170c87c7e1e317ef9d5ee2d3cb3afeab3b259a51b56a"
           }
         ]
       }
@@ -375,11 +375,11 @@
     "usage_notes": "<p>The libpng manual is available on <a href=\"http://www.libpng.org/pub/png/libpng-manual.txt\">libpng.org</a>.</p>",
     "tags": "graphics",
     "versions": {
-      "1.6.53": {
+      "1.6.55": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "50fca27c392a0cad684f582858a5949e1f406401eb6e2c29f7dce04356cdb5c5"
+            "sha256": "83e7ec65a249afe0b6ae552d665922c0cb87e3c89723f32a2ffcd12cb118b857"
           }
         ]
       }
@@ -522,11 +522,15 @@
     "usage_notes": "<p>Example of use:</p>\n\n<pre><code>\nfrom skimage import data, io, filters<br>\n<br>\nimage = data.coins()<br>\n# ... or any other NumPy array!<br>\nedges = filters.sobel(image)<br>\nio.imshow(edges)<br>\nio.show()<br>\n</code></pre>\n\n<p>Please refer to <a href=\"https://scikit-image.org/docs/dev/auto_examples/\">scikit-image.org</a> for more examples.</p>",
     "tags": "graphics",
     "versions": {
-      "0.18.3": {
+      "0.24.0": {
         "dist": [
           {
-            "py_version": "cp311",
-            "sha256": "7379ced75716a3e803c2e5154bc5e21b630acbac353bbd4f3f4429a365c78271"
+            "py_version": "cp313",
+            "sha256": "3e26c20123e210629b1051fd73625d09408b715e0650c30240e4adcf9dd0ee3f"
+          },
+          {
+            "py_version": "cp312",
+            "sha256": "f68d83972a83e2f780cc595bbca2f73d7d5f6d2aea5c406b7b9ed6fe83748510"
           }
         ]
       }
@@ -564,11 +568,11 @@
     "usage_notes": "<p>The cairo manual is available on <a href=\"https://www.cairographics.org/documentation/\">cairographics.org</a>.</p>",
     "tags": "graphics",
     "versions": {
-      "1.18.4": {
+      "1.18.4.post0": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "42322797267682605b1ac58f2ba8e7cfeb1a8ae9bd7e289dfb6d28c045d80175"
+            "sha256": "317b45a2215d4a1d82d1efb7a29ab6bae38ba14c827eda9ddb80d5e715a3d369"
           }
         ]
       }
@@ -585,11 +589,11 @@
     "usage_notes": "<p>Github hosts a <a href=\"https://github.com/jupyter-widgets/ipywidgets/blob/master/docs/source/examples/Index.ipynb\"> demonstration notebook</a> alongside other documentation for this image.</p>",
     "tags": "web graphics programming_tools",
     "versions": {
-      "3.0.7": {
+      "3.0.16": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "9801104084d7fe13b231b2daba8636845fa79f36fdec4115964859cce1dd3bac"
+            "sha256": "2faa731f067318e0681a66b5d8485c9e526e8f1f5d71df734acc5e9326c56819"
           }
         ]
       }
@@ -602,15 +606,15 @@
     "site_name": "freedesktop.org",
     "link_to_site": "https://www.freedesktop.org/wiki/Software/fontconfig/",
     "site_name_license": "OTHER",
-    "link_to_license": "https://github.com/freedesktop/fontconfig/blob/master/COPYING",
+    "link_to_license": "https://github.com/arthenica/fontconfig/blob/main/COPYING",
     "usage_notes": "<p>Please refer to <a href=\"https://www.freedesktop.org/software/fontconfig/fontconfig-user.html\">freedesktop.org</a> for complete documentation.</p>",
     "tags": "graphics",
     "versions": {
-      "2.14.1.post0": {
+      "2.17.1": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "4b9c480fc48f9d3c3736e22db6e5e41ee0bf839a3d21528bbfc99ed2c2eca921"
+            "sha256": "151a2aa4f1febe7ebf4d679cd52dc486dd9c6be37576f61e98c2d67cc704f6f8"
           }
         ]
       }
@@ -669,11 +673,11 @@
     "usage_notes": "<p><a href=\"https://github.com/jupyterlab/jupyterlab_pygments/blob/main/README.md\">Github</a> hosts a screencast showing how to make use of this package along with other notes.</p>",
     "tags": "web programming_tools",
     "versions": {
-      "0.2.2.post5": {
+      "0.3.0": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "664aaf7257b8d73c899c1c0880655334052fe7c3d36825bd253196a32f8fd86d"
+            "sha256": "6b900595317e20c53c8534a208d4c1024f356ea303e07f962b1d3d93a4099117"
           }
         ]
       }
@@ -695,14 +699,18 @@
           {
             "py_version": "cp311",
             "sha256": "84f9159ec80e93af00f220ea11e3407b4a886d71913d4e1e9c1869bdc7a61e74"
-          },
+          }
+        ]
+      },
+      "4.16.0": {
+        "dist": [
           {
             "py_version": "cp312",
-            "sha256": "d5d8071187f5be8f1566e27b1e913135e9ee703bd275f94de07b0d4378cc781d"
+            "sha256": "94558446c5e064e22d80f317c50320718ed97d541b0e460a20122f199dc7c294"
           },
           {
             "py_version": "cp313",
-            "sha256": "d8656887b6be36754f5437a6780d467190328b03fd49e44052c7ec8606b3cbbd"
+            "sha256": "3a45e10438ccbf4bce79af244de1d8f55c22444273a410230fa175bb4a462637"
           }
         ]
       }
@@ -764,16 +772,20 @@
       "3.2.1": {
         "dist": [
           {
-            "py_version": "cp312",
-            "sha256": "8dcf044c30df7bcfd6ea10cc50b0fa33cf5e991b867e7179c7163c7cfe4f2ddc"
-          },
-          {
             "py_version": "cp311",
             "sha256": "a6db818852b0de0a923f8f8961c6e5e62863cd0f2c8709a2718518b2442fb49e"
-          },
+          }
+        ]
+      },
+      "3.2.2": {
+        "dist": [
           {
             "py_version": "cp313",
-            "sha256": "8a5e8ef6250d4d0989df04feb2e3f5810f2166563b0dbce7700dc5242d8f6a70"
+            "sha256": "a6e3fa92900b0d85dfda2c80b1d9150958b5e24590edafc8529eca24d084bde2"
+          },
+          {
+            "py_version": "cp312",
+            "sha256": "7ec09455c7e282f282a8bc41c3c3d85d70ad0a1447c4da555c993f62f068708e"
           }
         ]
       }
@@ -853,11 +865,23 @@
     "usage_notes": "<p>To run a script file with debugging enabled, but without waiting for the client to attach (i.e. code starts executing immediately):</p>\n\n<pre><code>\n-m debugpy --listen localhost:5678 myfile.py<br>\n</code></pre>\n\n<p>To wait until the client attaches before running your code, use the <code>--wait-for-client</code> switch.</p>\n\n<pre><code>\n-m debugpy --listen localhost:5678 --wait-for-client myfile.py<br>\n</code></pre>\n\n<p>The hostname passed to <code>--listen</code> specifies the interface on which the debug adapter will be listening for connections from DAP clients. It can be omitted, with only the port number specified:</p>\n\n<pre><code>\n-m debugpy --listen 5678 ...<br>\n</code></pre>\n\n<p>in which case the default interface is 127.0.0.1.</p>\n\n<p>To be able to attach from another machine, make sure that the adapter is listening on a public interface - using <code>0.0.0.0</code> will make it listen on all available interfaces:</p>\n\n<pre><code>\n-m debugpy --listen 0.0.0.0:5678 myfile.py<br>\n</code></pre>\n\n<p>This should only be done on secure networks, since anyone who can connect to the specified port can then execute arbitrary code within the debugged process.</p>\n\n<p>To pass arguments to the script, just specify them after the filename. This works the same as with Python itself - everything up to the filename is processed by debugpy, but everything after that becomes <code>sys.argv</code> of the running process.</p>\n\n<p>To run a module, use the -m switch instead of filename:</p>\n\n<pre><code>\n-m debugpy --listen localhost:5678 -m mymodule<br>\n</code></pre>\n\n<p>See more documentation on <a href=\"https://github.com/microsoft/debugpy/blob/main/README.md\">github</a>.</p>",
     "tags": "utility web programming_tools",
     "versions": {
-      "1.8.12.post0": {
+      "1.8.19": {
         "dist": [
           {
+            "py_version": "cp311",
+            "sha256": "5890ca8f5e284d457388897a1ee84081a3577a8b5db2b93948f048fca1f9e403"
+          }
+        ]
+      },
+      "1.8.20": {
+        "dist": [
+          {
+            "py_version": "cp312",
+            "sha256": "f32a8544e4411439aa3b2814c8abde30d048cba213b47c654afb62c970bb1029"
+          },
+          {
             "py_version": "cp313",
-            "sha256": "5c450644e50068ec24a176a793059de7f0f09140202bc1885b06e38dc8968569"
+            "sha256": "224bc2745280d9853f64aa2f11a2aedf338c20bb1a083184f188edd82db409d3"
           }
         ]
       }
@@ -895,19 +919,19 @@
     "usage_notes": "<p>The function <code>yaml.load</code> converts a YAML document to a Python object.</p>\n\n<pre><code>\n&gt;&gt;&gt; yaml.load(\"\"\"<br>\n... - Hesperiidae<br>\n... - Papilionidae<br>\n... - Apatelodidae<br>\n... - Epiplemidae<br>\n... \"\"\")<br>\n<br>\n...<br>\n<br>\n['Hesperiidae', 'Papilionidae', 'Apatelodidae', 'Epiplemidae']<br>\n</code></pre>\n\n<p>The counterpart <code>yaml.dump</code> function accepts a Python object and produces a YAML document.</p>\n\n<p>Complete documentation can be found on <a href=\"https://pyyaml.org/wiki/PyYAMLDocumentation\">pyyaml.org</a>.</p>",
     "tags": "programming_tools utility languages",
     "versions": {
-      "6.0.2": {
+      "6.0.3": {
         "dist": [
           {
-            "py_version": "cp311",
-            "sha256": "693b9f16e1d1e2c846ad3001355267e7433bd83d244ac454f88081a35eb58841"
+            "py_version": "cp313",
+            "sha256": "aba193b9cefa87af4891c4475098871c810d4d1c5e27474fa77b1166c84fdc75"
           },
           {
             "py_version": "cp312",
-            "sha256": "7e6b41c1f31e8b2fe367fdbbf7ae9cb3cee4ff3c96ab7b3d825d9d36d97aac7a"
+            "sha256": "61ab3a8406744eb577c0e70f427120570d4c70dcebcfb09b0ac9010f66d824df"
           },
           {
-            "py_version": "cp313",
-            "sha256": "d5ff4e02057ac0c1299657e7425333f76129ee8468e19fd4c5212acda8335d6b"
+            "py_version": "cp311",
+            "sha256": "f6cb206b059239b5705e534476f0ed66ffc87f7a5344bacbceca9fea5091edb9"
           }
         ]
       }
@@ -924,11 +948,11 @@
     "usage_notes": "\n<p>Basic usage example:</p>\n<p>\nFor doing something useful with cairo, you need at least a surface and a context:<p>\n\n<pre><code>\nimport cairocffi as cairo<br>\n<br>\nsurface = cairo.ImageSurface(cairo.FORMAT_ARGB32, 300, 200)<br>\ncontext = cairo.Context(surface)<br>\nwith context:<br>\n    context.set_source_rgb(1, 1, 1)  # White<br>\n    context.paint()<br>\n# Restore the default source which is black.<br>\ncontext.move_to(90, 140)<br>\ncontext.rotate(-0.5)<br>\ncontext.set_font_size(20)<br>\ncontext.show_text('Hi from cairo!')<br>\nsurface.write_to_png('example.png')<br>\n</code></pre>\n\n<p>The <code>Surface</code> represents the target. There are various types of surface for various output backends. The <code>Context</code> holds internal state and is used for drawing. We\u2019re only using solid colors here, but more complex <code>Pattern</code> types are also available.</p>\n\n<p>Further documentation is available on <a href=\"https://cairocffi.readthedocs.io/en/stable/\">readthedocs.io</a></p>",
     "tags": "graphics",
     "versions": {
-      "1.3.0.post2": {
+      "1.7.1": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "b0f7a92a21c649d5f586c49babf7c8ad81770205941f1ba25857f497550fda95"
+            "sha256": "14f7b2935fc396d1466f9b02b75de4285908b08a16a212d9c45dd912cbc4f33d"
           }
         ]
       }
@@ -1050,11 +1074,11 @@
     "usage_notes": "<p>For advanced tool documentation, refer to <a href=\"https://py-filelock.readthedocs.io/en/latest/index.html\">readthedocs.io</a>.</p>",
     "tags": "utility",
     "versions": {
-      "3.14.0": {
+      "3.25.2": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "5397dd2e3773a337f64a50f49840b7cd54b4078df14697b10e44f30abd37e72c"
+            "sha256": "c82cd9e78fd9fbf921b460b0570fd1f154ab08b49a5d51d8be6bc1e358b5afbe"
           }
         ]
       }
@@ -1176,11 +1200,11 @@
     "usage_notes": "<p>Usage example:</p>\n\n<pre><code>\nimport os.path<br>\nimport tornado.web<br>\nimport tornado.ioloop<br>\n# This demo requires tornado_xstatic and XStatic-term.js<br>\nimport tornado_xstatic<br>\n<br>\nimport terminado<br>\nSTATIC_DIR = os.path.join(os.path.dirname(terminado.__file__), \"_static\")<br>\n<br>\nclass TerminalPageHandler(tornado.web.RequestHandler):<br>\n    def get(self):<br>\n        return self.render(\"termpage.html\", static=self.static_url,<br>\n                           xstatic=self.application.settings['xstatic_url'],<br>\n                           ws_url_path=\"/websocket\")<br>\n<br>\nif __name__ == '__main__':<br>\n    term_manager = terminado.SingleTermManager(shell_command=['bash'])<br>\n    handlers = [<br>\n                (r\"/websocket\", terminado.TermSocket,<br>\n                     {'term_manager': term_manager}),<br>\n                (r\"/\", TerminalPageHandler),<br>\n                (r\"/xstatic/(.*)\", tornado_xstatic.XStaticFileHandler,<br>\n                     {'allowed_modules': ['termjs']})<br>\n               ]<br>\n    app = tornado.web.Application(handlers, static_path=STATIC_DIR,<br>\n                      xstatic_url = tornado_xstatic.url_maker('/xstatic/'))<br>\n    # Serve at http://localhost:8765/ N.B. Leaving out 'localhost' here will<br>\n    # work, but it will listen on the public network interface as well.<br>\n    # Given what terminado does, that would be rather a security hole.<br>\n    app.listen(8765, 'localhost')<br>\n    try:<br>\n        tornado.ioloop.IOLoop.instance().start()<br>\n    finally:<br>\n        term_manager.shutdown()<br>\n</code></pre>\n\n<p>See additional demos on <a href=\"https://github.com/jupyter/terminado/tree/main/demos\">github</a>.</p>",
     "tags": "web programming_tools",
     "versions": {
-      "0.15.0": {
+      "0.18.1": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "14c716493661684489f1f479fc1aa1f0f45b866c5c5363d0f57aa4a8fe3352f5"
+            "sha256": "6c0524f5ea12f5065228c7d38142380134f77a8c796b52fe0cc0a1adc40a62f2"
           }
         ]
       }
@@ -1281,11 +1305,11 @@
     "usage_notes": "<p>More information is available on <a href=\"https://github.com/dpranke/pyjson5\">github.com</a>.</p>",
     "tags": "utility",
     "versions": {
-      "0.9.25": {
+      "0.12.1": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "a0a88420a17700b8002dfbe4090cb762eb73d23e0108a37ac29eea993bf0ae88"
+            "sha256": "c551f320467581bc0a943d3fa284829c41e3d9bc8e15177c9b51ca4ad98e8f2b"
           }
         ]
       }
@@ -1323,19 +1347,23 @@
     "usage_notes": "<p>NumPy\u2019s main object is the homogeneous multidimensional array. It is a table of elements (usually numbers), all of the same type, indexed by a tuple of non-negative integers. In NumPy dimensions are called axes.</p>\n\n<p>\nFor example, the array for the coordinates of a point in 3D space, [1, 2, 1], has one axis. That axis has 3 elements in it, so we say it has a length of 3. In the example pictured below, the array has 2 axes. The first axis has a length of 2, the second axis has a length of 3.</p>\n\n<pre><code>\n[[1., 0., 0.],<br>\n [0., 1., 2.]]<br>\n</code></pre>\n\n<p>NumPy\u2019s array class is called <code>ndarray</code>. It is also known by the alias <code>array</code>. Note that <code>numpy.array</code> is not the same as the Standard Python Library class <code>array.array</code>, which only handles one-dimensional arrays and offers less functionality.</p>\n\n<p>Please refer to <a href=\"https://numpy.org/doc/1.22/user/quickstart.html\">numpy.org</a> for a quickstart guide.</p>",
     "tags": "math",
     "versions": {
-      "2.0.2": {
+      "2.0.2.post0": {
         "dist": [
           {
             "py_version": "cp311",
-            "sha256": "4a4d512c829b3d5f258259debb8a46c2d367c881f31bd8babf20bb588ecb24fb"
-          },
+            "sha256": "17738a9a02598479e70efe3d9112c29580be1745e6f06b63248fdc47b5e4f32b"
+          }
+        ]
+      },
+      "2.3.3": {
+        "dist": [
           {
             "py_version": "cp312",
-            "sha256": "d4cf3bde4f4f4873dbc62e11306a71fa033456624afeb636adf5b84af3d9da53"
+            "sha256": "83ed018bc4d0684e25225b1552498c8efa2d82ebb0f2572b009d6ac4e2ca68bb"
           },
           {
             "py_version": "cp313",
-            "sha256": "df7dd21dd16653e530684941b0600377fd2b6a08e95709546af53b82b0665cdd"
+            "sha256": "7fcd498a64b5a7beb4d3d32f597f9db04149641029105935f2505725cbbedf80"
           }
         ]
       }
@@ -1352,11 +1380,11 @@
     "usage_notes": "<p>Most users will only need <code>toJSONFilter</code>. Here is a simple example of its use:</p>\n\n<pre><code>\n#!/usr/bin/env python<br>\n<br>\n\"\"\"<br>\nPandoc filter to convert all regular text to uppercase.<br>\nCode, link URLs, etc. are not affected.<br>\n\"\"\"<br>\n<br>\nfrom pandocfilters import toJSONFilter, Str<br>\n<br>\ndef caps(key, value, format, meta):<br>\n  if key == 'Str':<br>\n    return Str(value.upper())<br>\n<br>\nif __name__ == \"__main__\":<br>\n  toJSONFilter(caps)<br>\n</code></pre>\n\n<p>Additional documentation is available on <a href=\"https://github.com/jgm/pandocfilters/blob/master/README.rst\">github</a>.</p>",
     "tags": "programming_tools utility languages",
     "versions": {
-      "1.5.0": {
+      "1.5.0.post0": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "6cda7636904bb2c19ac02b634bcb8521641a641a4731564753a150bb2ebcab65"
+            "sha256": "005e31a9672fe7d29cc68df35e748374062da87f6e426cb3fd1c052adb428255"
           }
         ]
       }
@@ -1402,11 +1430,11 @@
     "usage_notes": "<p>urllib3 is powerful and easy to use:</p>\n\n<pre><code>\n&gt;&gt;&gt; import urllib3<br>\n&gt;&gt;&gt; http = urllib3.PoolManager()<br>\n&gt;&gt;&gt; r = http.request('GET', 'http://httpbin.org/robots.txt')<br>\n&gt;&gt;&gt; r.status<br>\n200<br>\n&gt;&gt;&gt; r.data<br>\n'User-agent: *\\nDisallow: /deny\\n'<br>\n</code></pre>\n\n<p>Full docs are available on <a href=\"https://urllib3.readthedocs.io/en/stable/\">readthedocs.io</a>.</p>",
     "tags": "web utility",
     "versions": {
-      "2.5.0": {
+      "2.6.3": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "4b9efa816edfea6afb8881597fa896de17863dfee4b936076e762587c401c8dd"
+            "sha256": "78d4f6c68cea1a670e4a3f52eea4c0a0a2d31375cb108f313ace75d5bf055ade"
           }
         ]
       }
@@ -1423,11 +1451,11 @@
     "usage_notes": "<p>Refer to <a href=\"https://jupyter-notebook.readthedocs.io/en/stable/\">readthedocs.io</a> for full documentation on using Jupyter notebooks.</p>",
     "tags": "machine_learning web graphics",
     "versions": {
-      "6.4.12": {
+      "6.4.13": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "99c12a0e16cf91ed37613f856f5f3ba63c24218fb6dd82dc317f0bafb17add15"
+            "sha256": "e49851ec7c9fefd9663ca8696cc6e5fdba8229a3901de803a8c31e22c11a255d"
           }
         ]
       }
@@ -1486,11 +1514,11 @@
     "usage_notes": "<p>Usage information is available on <a href=\"https://github.com/facultyai/dash-bootstrap-components\">github.com</a>.</p>",
     "tags": "web",
     "versions": {
-      "1.5.0": {
+      "2.0.4": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "3335d9f69cda4b4100e2d5b7537a54e60b298546b26c07134aa524aaa9212726"
+            "sha256": "2a3fce45e4fbd8f9dde7a520509dcba6ed258d784fc92e22300b675f903a0558"
           }
         ]
       }
@@ -1507,11 +1535,11 @@
     "usage_notes": "<p>Extensive usage notes are available on <a href=\"https://seaborn.pydata.org/tutorial.html\">seaborn.pydata.org</a>.</p>",
     "tags": "graphics math",
     "versions": {
-      "0.11.0": {
+      "0.13.2": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "8c5fcbead711dd0c39f00701b11a0076de2186d6efce34b11418baf77024552a"
+            "sha256": "100f7833a12d21a78bed9f95e8138063fb9d95827907d28b34092e343809fbd5"
           }
         ]
       }
@@ -1549,11 +1577,11 @@
     "usage_notes": "<p>PartD has two main operations, <code>append</code> and <code>get</code>.</p>\n\n<p>Create a Partd backed by a directory:</p>\n\n<pre><code>\n&gt;&gt;&gt; import partd<br>\n&gt;&gt;&gt; p = partd.File('/path/to/new/dataset/')<br>\n</code></pre>\n\n<p>Append key-byte pairs to dataset:</p>\n\n<pre><code>\n&gt;&gt;&gt; p.append({'x': b'Hello ', 'y': b'123'})<br>\n&gt;&gt;&gt; p.append({'x': b'world!', 'y': b'456'})<br>\n</code></pre>\n\n<p>Get bytes associated to keys:</p>\n\n<pre><code>\n&gt;&gt;&gt; p.get('x')         # One key<br>\nb'Hello world!'<br>\n<br>\n&gt;&gt;&gt; p.get(['y', 'x'])  # List of keys<br>\n[b'123456', b'Hello world!']<br>\n</code></pre>\n\n<p>Destroy partd dataset:</p>\n\n<pre><code>\n&gt;&gt;&gt;p.drop()<br>\n</code></pre>\n\n<p>That\u2019s it!</p>",
     "tags": "programming_tools",
     "versions": {
-      "1.4.2": {
+      "1.4.2.post0": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "2f13e7ff8879f410131ef7a028a9abeb756a194ce092b8db0fb98a9e7a4fc42d"
+            "sha256": "01598a33d60c01707a0657fb16a6113e27a7f9f2c5566e5cfb9e98df700ab2c5"
           }
         ]
       }
@@ -1596,6 +1624,14 @@
           {
             "py_version": "cp313",
             "sha256": "5cc45f991e708b42a5ba58bcec9294a979202d1e236aaaa8e577878f1a16bb08"
+          },
+          {
+            "py_version": "cp311",
+            "sha256": "4bba47d2e8a2ec6607d3b67da2ef0dcb6fca00126145f994af3733b03713a93e"
+          },
+          {
+            "py_version": "cp312",
+            "sha256": "c3c37c4b37196f38720e4cb704a33df12244dbdc84abc182d93c365a1b93e17c"
           }
         ]
       }
@@ -1675,11 +1711,11 @@
     "usage_notes": "<p>Example usage:</p>\n<pre><code>\nfrom pickleshare import *<br>\ndb = PickleShareDB('~/testpickleshare')<br>\ndb.clear()<br>\nprint(\"Should be empty:\",db.items())<br>\ndb['hello'] = 15<br>\ndb['aku ankka'] = [1,2,313]<br>\ndb['paths/are/ok/key'] = [1,(5,46)]<br>\nprint(db.keys())<br>\n</code></pre>",
     "tags": "programming_tools",
     "versions": {
-      "0.7.5": {
+      "0.7.5.post0": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "23c3071dd0f39472a7d427b7ea2d9522be49d08053e8746579c095d570a77d08"
+            "sha256": "f03ae3e75a6e7c3cc6c3628274cfbb2d84439c89ebba4d8a32fc4d51a403051c"
           }
         ]
       }
@@ -1696,11 +1732,11 @@
     "usage_notes": "<a href=\"https://ipywidgets.readthedocs.io/en/stable/\">Click here for further documentation on this package.</a>",
     "tags": "programming_tools web",
     "versions": {
-      "4.0.7": {
+      "4.0.15": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "6a59fb821c41e9bcc5b12d81c56f52161a57f65dbbf05c4e54c36d93793d9c8a"
+            "sha256": "0357996aba7f06ae6355c81594041beecaa7a379d5496594e8b4edf4367fab3a"
           }
         ]
       }
@@ -1801,23 +1837,15 @@
     "usage_notes": "<p>Extensive documentation is available on <a href=\"https://scikit-learn.org/stable/index.html\">scikit-learn.org</a>.</p>",
     "tags": "graphics machine_learning math",
     "versions": {
-      "1.2.1.post2": {
+      "1.7.2.post0": {
         "dist": [
-          {
-            "py_version": "cp311",
-            "sha256": "872db2277c9d67aa12574a7e625d399ccde418dadded041cd52996468d7713c9"
-          }
-        ]
-      },
-      "1.7.2": {
-        "dist": [
-          {
-            "py_version": "cp312",
-            "sha256": "1332fe7fa3af25731548cf8524d5d8557ae1eada79fd83df60676c826495d3a8"
-          },
           {
             "py_version": "cp313",
-            "sha256": "881644d128e43c8bdc4f70f1ea4364ad199083f2a3fa0cbc0c7d04288ac12932"
+            "sha256": "27133291a287a0fce2544670eb0b59ca301cf393807ed39a1397bac8724fb12d"
+          },
+          {
+            "py_version": "cp312",
+            "sha256": "52161c3098158d0da777139bef7e107486ec7dbcdc22d744a68d4f233c10650e"
           }
         ]
       }
@@ -1834,11 +1862,11 @@
     "usage_notes": "<p>For advanced tool documentation, refer to <a href=\"https://github.com/alex/pretend\">github.com</a>.</p>",
     "tags": "programming_tools",
     "versions": {
-      "1.0.9": {
+      "1.0.9.post0": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "0b08dd9b1de7a2fa9c0315f4a1d42b767def127a7f893f9285974a28e1d2219d"
+            "sha256": "c658c278e61830487954d16e8dd1fe199ccfa744e1a6cce1ee8a2e92df4d7344"
           }
         ]
       }
@@ -1855,19 +1883,23 @@
     "usage_notes": "<h4>Example of One-shot pack & unpack:</h4>\n\n<p>Use <code>packb</code> for packing and <code>unpackb</code> for unpacking. msgpack provides <code>dumps</code> and <code>loads</code> as an alias for compatibility with <code>json</code> and <code>pickle</code>.</p>\n\n<p><code>pack</code> and <code>dump</code> packs to a file-like object. <code>unpack</code> and <code>load</code> unpacks from a file-like object.</p>\n\n<pre><code>\n&gt;&gt;&gt; import msgpack<br>\n&gt;&gt;&gt; msgpack.packb([1, 2, 3], use_bin_type=True)<br>\n'\\x93\\x01\\x02\\x03'<br>\n&gt;&gt;&gt; msgpack.unpackb(_, raw=False)<br>\n[1, 2, 3]<br>\n</code></pre>\n\n<p><code>unpack</code> unpacks msgpack's array to Python's list, but can also unpack to tuple:</p>\n\n<pre><code>\n&gt;&gt;&gt; msgpack.unpackb(b'\\x93\\x01\\x02\\x03', use_list=False, raw=False)<br>\n(1, 2, 3)<br>\n</code></pre>\n<p>You should always specify the <code>use_list</code> keyword argument for backward compatibility.</p>\n\n<p>Please refer to <a href=\"https://msgpack-python.readthedocs.io/en/latest/\">readthedocs.io</a> for further usage instructions.</p>",
     "tags": "languages utility",
     "versions": {
-      "1.0.4.post0": {
+      "1.0.4.post1": {
         "dist": [
           {
-            "py_version": "cp312",
-            "sha256": "4bd400e3ec2ac7fe8ebe49d0736582897f4f7d5c3eb54c05b12af6d476909816"
-          },
-          {
             "py_version": "cp311",
-            "sha256": "dee3254cbf0a411e5abfdfc291046aa865bdf3bd57a0b077e63c2be7d3d1aa30"
-          },
+            "sha256": "7f0da7762d4c3ebc2b147355af37fd95801794c1ebd00a2aa8cb8360fcb8aa72"
+          }
+        ]
+      },
+      "1.1.2": {
+        "dist": [
           {
             "py_version": "cp313",
-            "sha256": "106db72f030712f81ded77eac85af1954052699b0cabd93ebf7fff3dc7c8fb05"
+            "sha256": "b4e29d21d5f483534d02ed211b4ccab991c4ad93e11f16ecc4ce6784305450af"
+          },
+          {
+            "py_version": "cp312",
+            "sha256": "ee27c6448281b5087ea2ea69c4dba7fdf2af266d4fb54213d77ac4b787265105"
           }
         ]
       }
@@ -1905,11 +1937,11 @@
     "usage_notes": "<p>More information is available on <a href=\"https://sniffio.readthedocs.io\">readthedocs.io</a>.</p>",
     "tags": "programming_tools",
     "versions": {
-      "1.3.1": {
+      "1.3.1.post0": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "65ab0e88941cc78bbc98570186dc5bbe52a62bfd5764b912392fd95be0545547"
+            "sha256": "ceb39f1012b0e12b6b6a26d0a08a6f42c2cad0c6fab1bcddee4f0f17ba5b0829"
           }
         ]
       }
@@ -2011,11 +2043,11 @@
     "usage_notes": "<p>Paste the following into your Python interpreter:</p>\n\n<pre><code>\nfrom prometheus_client import start_http_server, Summary<br>\nimport random<br>\nimport time<br>\n<br>\n# Create a metric to track time spent and requests made.<br>\nREQUEST_TIME = Summary('request_processing_seconds', 'Time spent processing request')<br>\n<br>\n# Decorate function with metric.<br>\n@REQUEST_TIME.time()<br>\ndef process_request(t):<br>\n    \"\"\"A dummy function that takes some time.\"\"\"<br>\n    time.sleep(t)<br>\n<br>\nif __name__ == '__main__':<br>\n    # Start up the server to expose the metrics.<br>\n    start_http_server(8000)<br>\n    # Generate some requests.<br>\n    while True:<br>\n        process_request(random.random())<br>\n</code></pre>\n\n<p>Visit http://localhost:8000/ to view the metrics.</p>\n\n<p>From one easy to use decorator you get:</p>\n\n<p><code>request_processing_seconds_count</code>: Number of times this function was called.</p>\n<p><code>request_processing_seconds_sum</code>: Total amount of time spent in this function.</p>\n\n<p>Prometheus's <code>rate</code> function allows calculation of both requests per second, and latency over time from this data.</p>\n\n<p>See <a href=\"https://github.com/prometheus/client_python/blob/master/README.md\">github</a> for more documentation.</p>",
     "tags": "web graphics",
     "versions": {
-      "0.14.0": {
+      "0.14.0.post0": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "b3095f0a1dc45b13bc420b14ecaeaccb6cf37cd4f3d60328d3945cd38437cf49"
+            "sha256": "699aeeef9340317b4a3559c8a52cec466cafcd5f07ad7ff7e190cf96aa3a889f"
           }
         ]
       }
@@ -2032,11 +2064,11 @@
     "usage_notes": "<p>Here is an example of how to define a family of decorators tracing slow operations:</p>\n<pre><code>\nfrom decorator import decorator<br>\n<br>\n@decorator<br>\ndef warn_slow(func, timelimit=60, *args, **kw):<br>\n    t0 = time.time()<br>\n    result = func(*args, **kw)<br>\n    dt = time.time() - t0<br>\n    if dt > timelimit:<br>\n        logging.warn('%s took %d seconds', func.__name__, dt)<br>\n    else:<br>\n        logging.info('%s took %d seconds', func.__name__, dt)<br>\n    return result<br>\n<br>\n@warn_slow  # warn if it takes more than 1 minute<br>\ndef preprocess_input_files(inputdir, tempdir):<br>\n    ...<br>\n<br>\n@warn_slow(timelimit=600)  # warn if it takes more than 10 minutes<br>\ndef run_calculation(tempdir, outdir):<br>\n    ...<br>\n</code></pre>\n<p>See further documentation <a href=\"https://github.com/micheles/decorator/blob/master/docs/documentation.md\">here</a>.</p>",
     "tags": "programming_tools",
     "versions": {
-      "5.1.1": {
+      "5.2.1": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "b7b96928da4fe199532fc066c932e3854954249ed01d5596025a0740a07ad4e6"
+            "sha256": "fbd0628c3a7bb0c396bdc315e5b7de4428630086b550fa901df4fd4681dfd8d8"
           }
         ]
       }
@@ -2074,11 +2106,11 @@
     "usage_notes": "<p>All extensions are found under the module namespace of <code>pymdownx</code>. Assuming we wanted to specify the use of the MagicLink extension, we would include it in Python Markdown like so:</p>\n\n<pre><code>\n&gt;&gt;&gt; import markdown<br>\n&gt;&gt;&gt; text = \"A link https://google.com\"<br>\n&gt;&gt;&gt; html = markdown.markdown(text, extensions=['pymdownx.magiclink'])<br>\n'&lt;p&gt;A link &lt;a href=\"https://google.com\"&gt;https://google.com&lt;/a&gt;&lt;/p&gt;'<br>\n</code></pre>\n\n<p>Documentation, including documentation on each extension and how to configure and use each one, is available on <a href=\"https://facelessuser.github.io/pymdown-extensions/\">github.io</a>.</p>",
     "tags": "languages",
     "versions": {
-      "10.0.1.post0": {
+      "10.21": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "fe6530f649734b1b00d3b8a35ce51ad4f3a974f795f7c1941e955f90b3cf21be"
+            "sha256": "7c02ce12636749b8b70171e49aeb4fe00cef76f3eb72f08cd36ffdf56b34d42e"
           }
         ]
       }
@@ -2145,15 +2177,15 @@
           }
         ]
       },
-      "1.16.3": {
+      "1.16.3.post0": {
         "dist": [
           {
-            "py_version": "cp312",
-            "sha256": "d4e036a1c01277efcc6c960ffc1ab136b3463742527ff8006e5d567bc00d9b0d"
+            "py_version": "cp313",
+            "sha256": "109f0837cbd84dff2e96aa59b9de176e594be10882543100bdf39124f5dd58b3"
           },
           {
-            "py_version": "cp313",
-            "sha256": "dd9ad7e10718fdcb266d67f1d3cf80da9bf1d5bab7e32dc95a0d227f64339b6c"
+            "py_version": "cp312",
+            "sha256": "2d8717a63d58738fa778b3b9130aee93678cdc9dfe5b081b7f662531d1671f59"
           }
         ]
       }
@@ -2191,11 +2223,11 @@
     "usage_notes": "<p>Example of usage:</p>\n<pre><code>\nimport locket<br>\n<br>\n# Wait for lock<br>\nwith locket.lock_file(\"path/to/lock/file\"):<br>\n    perform_action()<br>\n<br>\n# Raise error if lock cannot be acquired immediately<br>\nwith locket.lock_file(\"path/to/lock/file\", timeout=0):<br>\n    perform_action()<br>\n<br>\n# Raise error if lock cannot be acquired after thirty seconds<br>\nwith locket.lock_file(\"path/to/lock/file\", timeout=30):<br>\n    perform_action()<br>\n<br>\n# Without context managers:<br>\nlock = locket.lock_file(\"path/to/lock/file\")<br>\ntry:<br>\n    lock.acquire()<br>\n    perform_action()<br>\nfinally:<br>\n    lock.release()<br>\n</code></pre>",
     "tags": "utility",
     "versions": {
-      "1.0.0": {
+      "1.0.0.post0": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "055b7d11586a89b3dcd4172ce03a6257e057b4a62109966a76f64612d85dc74e"
+            "sha256": "0e586dc613eeb42cfd92f8244398373712ebb12c512a36275de0e2c94b8c3618"
           }
         ]
       }
@@ -2212,19 +2244,19 @@
     "usage_notes": "<p>PyWavelets is very easy to use and get started with. Just enter the following code to perform an example computation of a wavelet transformation:</p>\n\n<pre><code>\nimport pywt<br>\ncA, cD = pywt.dwt([1, 2, 3, 4], 'db1')<br>\n</code></pre>\n\n<p>Full documentation can be found on <a href=\"https://pywavelets.readthedocs.io/en/latest/\">readthedocs.io</a>/</p>",
     "tags": "math",
     "versions": {
-      "1.9.0": {
+      "1.9.0.post0": {
         "dist": [
           {
             "py_version": "cp311",
-            "sha256": "267526cafb9d4ef291e98caa4fc208353cd5471953ac309bb80fa8d4b7204319"
-          },
-          {
-            "py_version": "cp312",
-            "sha256": "4ceb86a179ebd5ecfac33dc029b03dcec1dadcca4a3ef1e82aa60e83fc321702"
+            "sha256": "b0c26f6a2426fd0e37adc21c18205ab58ce2bc6b799967837c7cf52df6ebd7bd"
           },
           {
             "py_version": "cp313",
-            "sha256": "696072e295f6ec963a12266d3cf4fbc4c030621b03acafd40f78f22a67baaa4c"
+            "sha256": "00e0b80c8d9530e4ced1fa794ad3e5c4f6a5ea021d1fe80d3964fda394e368c9"
+          },
+          {
+            "py_version": "cp312",
+            "sha256": "09dd9c04f901dfe4bf89c78265f4cdcd714a506dceafe6c95251ead9675937ab"
           }
         ]
       }
@@ -2262,11 +2294,11 @@
     "usage_notes": "<p>A simple example:</p>\n<pre><code>\nfrom werkzeug.wrappers import Request, Response<br>\n<br>\n@Request.application<br>\ndef application(request):<br>\n    return Response('Hello, World!')<br>\n<br>\nif __name__ == '__main__':<br>\n    from werkzeug.serving import run_simple<br>\n    run_simple('localhost', 4000, application)<br></pre></code>\n<p>See <a href=\"https://werkzeug.palletsprojects.com/en/2.0.x/tutorial/\">the official tutorial</a> for further usage notes.</p>",
     "tags": "web utility programming_tools",
     "versions": {
-      "3.1.3": {
+      "3.1.6": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "551b9db9ffc8dd91c48a2f8fbad72907b5c301497baad1323322ea4dc6e8513b"
+            "sha256": "25e01c06bcd964827cbab43233508d6fc32cdfbb0ed57bb86fb56390caa7ff11"
           }
         ]
       }
@@ -2325,11 +2357,11 @@
     "usage_notes": "<p>Usage information is available on <a href=\"https://github.com/sqlalchemy/alembic\">github.com</a>.</p>",
     "tags": "utility",
     "versions": {
-      "1.16.5": {
+      "1.16.5.post0": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "79fd3fd5f5cda58f079ccebb45ce994a43b13c36adc306962408a2b1d6e3a921"
+            "sha256": "e8984c7bfd62e0dc94e3a451b1837e658a2b091614e19d70732bbc4ee7314043"
           }
         ]
       }
@@ -2346,11 +2378,11 @@
     "usage_notes": "<p>Usage information is available on <a href=\"https://native-authenticator.readthedocs.io/en/stable/\">readthedocs.io</a>.</p>",
     "tags": "utility",
     "versions": {
-      "1.2.0": {
+      "1.3.0": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "43230ad49c6cf756149321173d9265120e97ef0d8c69e5b72541843f7a64f2b2"
+            "sha256": "1ef5cda0bacf933b7cd9f9306dc6a19b3d7fdb74c5c001bd504967e6727cd8d6"
           }
         ]
       }
@@ -2501,11 +2533,11 @@
     "usage_notes": "<p>Usage information is available on <a href=\"https://github.com/oauthlib/oauthlib\">github.com</a>.</p>",
     "tags": "security web",
     "versions": {
-      "3.2.2.post0": {
+      "3.3.1": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "e3d1cacfef9ef237752a2ffba7aafdaa5194259d1833f0420c7b4d6ec10bf605"
+            "sha256": "f6816c164a57d1ae638a2ba423182e889151bafca5206b5ed6e0578f01180872"
           }
         ]
       }
@@ -2532,6 +2564,27 @@
       }
     }
   },
+  "lazy-loader": {
+    "image_name": "lazy-loader",
+    "alt_image_name": "lazy-loader",
+    "description": "<p>Lazy-loader makes it easy to load subpackages and functions on demand. </p> ",
+    "site_name": "github.com",
+    "link_to_site": "https://github.com/scientific-python/lazy-loader",
+    "site_name_license": "BSD 3",
+    "link_to_license": "https://github.com/scientific-python/lazy-loader/blob/main/LICENSE.md",
+    "usage_notes": "<p>Usage information is available on <a href=\"https://github.com/scientific-python/lazy-loader\">github.com</a>.</p>",
+    "tags": "programming_tools utility",
+    "versions": {
+      "0.4": {
+        "dist": [
+          {
+            "py_version": "py3",
+            "sha256": "ab6f7198d6df5422e9f338df529a35c36cfef879cd66ce93b59b7c589dc25647"
+          }
+        ]
+      }
+    }
+  },
   "uwsgi": {
     "image_name": "uwsgi",
     "alt_image_name": "uwsgi",
@@ -2543,6 +2596,18 @@
     "usage_notes": "<p>Please refer to documentation <a href=\"https://uwsgi-docs.readthedocs.io/en/latest/WSGIquickstart.html\">here</a>.</p>",
     "tags": "web",
     "versions": {
+      "2.0.27": {
+        "dist": [
+          {
+            "py_version": "cp311",
+            "sha256": "bc05c5d54f2223416f62bcd4299c4f31877fc80e535c64817043e56654972a6f"
+          },
+          {
+            "py_version": "cp312",
+            "sha256": "ab0e835d0fd1d4351299d1ff1adfa829ed0cdcbec27abd8750cf1431fc6627c7"
+          }
+        ]
+      },
       "2.0.29": {
         "dist": [
           {
@@ -2571,6 +2636,18 @@
             "sha256": "e1164462fbae42959734942beeb2d69ebc67be5eefdb22dee7dfb3043c1a7bac"
           }
         ]
+      },
+      "0.14.6": {
+        "dist": [
+          {
+            "py_version": "cp313",
+            "sha256": "0c3fa7c4f82767749addae1c12da71f87443587007d9b7376db97e05ad53672a"
+          },
+          {
+            "py_version": "cp312",
+            "sha256": "d71ba70850019ef51c6e208e576bdd423bf99f24696b38c3921ad112fb52b5a2"
+          }
+        ]
       }
     }
   },
@@ -2585,6 +2662,22 @@
     "usage_notes": "<p>Full documentation is available on <a href=\"https://cffi.readthedocs.io/en/latest/overview.html\">readthedocs.io</a>.</p>",
     "tags": "programming_tools",
     "versions": {
+      "1.14.6": {
+        "dist": [
+          {
+            "py_version": "cp311",
+            "sha256": "667bffd6ab6ef45bf67d8a05ed5d03300ca0e241eb2b4005661e99fb45f2fc8b"
+          }
+        ]
+      },
+      "1.16.0": {
+        "dist": [
+          {
+            "py_version": "cp312",
+            "sha256": "ce1ac631c4fe96fa860e4b0e7271060c4f480479b2cb853fa2c24646c169e0ed"
+          }
+        ]
+      },
       "1.17.1": {
         "dist": [
           {
@@ -2606,11 +2699,11 @@
     "usage_notes": "<p>Usage information is available on <a href=\"https://docs.gunicorn.org/en/stable/\">gunicorn.org</a>.</p>",
     "tags": "web",
     "versions": {
-      "23.0.0.post1": {
+      "23.0.0.post3": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "ae1e6677361d224866267e317878c0b5ed3b99cc6a0dfc60cbd8e7d8cc4e1b69"
+            "sha256": "649f04e4dc2f38cf181ee5119816341db172edc448d279ecfc0d8ede18d06f6e"
           }
         ]
       }
@@ -2749,7 +2842,7 @@
     "site_name": "readthedocs.io",
     "link_to_site": "https://pyzmq.readthedocs.io/en/latest/",
     "site_name_license": "here",
-    "link_to_license": "https://github.com/zeromq/pyzmq/blob/main/COPYING.BSD",
+    "link_to_license": "https://github.com/zeromq/pyzmq/blob/main/LICENSE.md",
     "usage_notes": "<p>For usage instructions, please refer to <a href=\"https://zguide.zeromq.org/\">zguide.zeromq.org</a>, which implements every example in pyzmq.</p>",
     "tags": "programming_tools web utility",
     "versions": {
@@ -2758,6 +2851,14 @@
           {
             "py_version": "cp313",
             "sha256": "ab0ad60d06dbdcd3a88157d91be1728f87928e9a4d38a851c862cb52b9e2f001"
+          },
+          {
+            "py_version": "cp312",
+            "sha256": "b4a82fde890b088ae69aa9cbaf8b2e7346c5fbcee78fce1bd12cfd1e48c18a49"
+          },
+          {
+            "py_version": "cp311",
+            "sha256": "326f48b9a64fcec5e0e0d0cc593ef3710c57e90e3964ec06cf3c953b2a4bb8bd"
           }
         ]
       }
@@ -2770,7 +2871,7 @@
     "site_name": "github.com",
     "link_to_site": "https://github.com/jupyterhub/jupyterhub",
     "site_name_license": "BSD-3-Clause",
-    "link_to_license": "https://github.com/jupyterhub/jupyterhub/blob/main/COPYING.md",
+    "link_to_license": "https://github.com/jupyterhub/jupyterhub/blob/main/LICENSE",
     "usage_notes": "<p>Detailed usage notes are available <a href=\"https://github.com/ibm-z-oss-oda/python_ai_toolkit_zos/blob/main/docs/usage_notes/jupyterhub_usage_notes.md\">here</a>.</p>",
     "tags": "utility web",
     "versions": {
@@ -2816,11 +2917,11 @@
     "usage_notes": "<p>For basic use of setuptools, you will need a <code>pyproject.toml</code> with the exact following info, which declares you want to use <code>setuptools</code> to package your project:</p>\n\n<pre><code>\n[build-system]<br>\nrequires = [\"setuptools\"]<br>\nbuild-backend = \"setuptools.build_meta\"[build-system]<br>\nrequires = [\"setuptools\"]<br>\nbuild-backend = \"setuptools.build_meta\"<br>\n</code></pre>\n\n<p>Then, you will need to specify your package information such as metadata, contents, dependencies, etc.</p>\n\n<p>Setuptools currently supports configurations from either <code>setup.cfg</code>, <code>setup.py</code> or <code>pyproject.toml</code> files, however, configuring new projects via setup.py is discouraged.</p>\n\n<p>The following example demonstrates a minimum configuration: </p>\n\n<h4>setup.cfg</h4>\n\n<pre><code>\n[metadata]<br>\nname = mypackage<br>\nversion = 0.0.1<br>\n<br>\n[options]<br>\npackages = mypackage<br>\ninstall_requires =<br>\n    requests<br>\n    importlib-metadata; python_version &lt; \"3.8\"<br>\n</code></pre>\n\n<h4>setup.py</h4>\n\n<pre><code>\nfrom setuptools import setup<br>\n<br>\nsetup(<br>\n    name='mypackage',<br>\n    version='0.0.1',<br>\n    packages=['mypackage'],<br>\n    install_requires=[<br>\n        'requests',<br>\n        'importlib-metadata; python_version == \"3.8\"',<br>\n    ],<br>\n)<br>\n</code></pre>\n\n<p>This is what your project would look like:</p>\n\n<pre><code>\n~/mypackage/<br>\n    pyproject.toml<br>\n    setup.cfg # or setup.py<br>\n    mypackage/__init__.py<br>\n</code></pre>\n\n<p>Then, you need a builder, such as <a href=\"https://pypa-build.readthedocs.io/en/latest/index.html\">PyPA build</a>. After downloading it, invoke the builder:</p>\n\n<pre><code>\npython -m build<br>\n</code></pre>\n\n<p>You now have your distribution ready!</p>\n\n<p>Full documentation can be found on <a href=\"https://setuptools.pypa.io/en/latest/userguide/quickstart.html\">the official guide</a>.</p>",
     "tags": "utility programming_tools",
     "versions": {
-      "80.9.0.post20250718": {
+      "82.0.0": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "99ba32cbd30f13494717fefbdb104f2d573a7a85235d9e4ac5fa39ce99d21499"
+            "sha256": "a8b98ef5c6486753b203e50bc7b5817694ab6b46f5ac7df30cd44ba5531383e2"
           }
         ]
       }
@@ -2879,11 +2980,11 @@
     "usage_notes": "<p>Full documentation should be referenced at <a href=\"https://pexpect.readthedocs.io/en/stable/index.html\">readthedocs.io</a>.</p>",
     "tags": "programming_tools",
     "versions": {
-      "4.8.0": {
+      "4.9.0": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "949992575485df41d6179996a0e2a3caa447d827db936ea97b8ef27a688c3bea"
+            "sha256": "a5dd1e20d29106e966dc861d1a49103184c641c8288cadf1c3b23ae570cbf4b7"
           }
         ]
       }
@@ -2900,11 +3001,11 @@
     "usage_notes": "<p>The package can be used like this - here's an example of the <code>validate</code> method.</p>\n\n<pre><code>\nfrom jsonschema import validate<br>\n<br>\n# A sample schema, like what we'd get from json.load()<br>\n<br>\nschema = {<br>\n<br>\n    \"type\" : \"object\",<br>\n<br>\n    \"properties\" : {<br>\n<br>\n        \"price\" : {\"type\" : \"number\"},<br>\n<br>\n        \"name\" : {\"type\" : \"string\"},<br>\n<br>\n    },<br>\n<br>\n}<br>\n<br>\n# If no exception is raised by validate(), the instance is valid.<br>\n<br>\nvalidate(instance={\"name\" : \"Eggs\", \"price\" : 34.99}, schema=schema)<br>\n<br>\nvalidate(<br>\n<br>\n    instance={\"name\" : \"Eggs\", \"price\" : \"Invalid\"}, schema=schema,<br>\n<br>\n)            <br>\n</code></pre>\n<br>\n<pre><code>\nTraceback (most recent call last):<br>\n    ...<br>\nValidationError: 'Invalid' is not of type 'number'<br>\n</code></pre>\n\n\n<p>Please access <a href=\"https://python-jsonschema.readthedocs.io/en/latest/\">readthedocs.io</a> for further usage instructions.</p>",
     "tags": "utility",
     "versions": {
-      "4.17.3": {
+      "4.17.3.post0": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "a870ad254da1a8ca84b6a2905cac29d265f805acc57af304784962a2aa6508f6"
+            "sha256": "3600a920c1814ad5cb6b7319335b82e95143cbf5177dc1ff087987b024a96d0a"
           }
         ]
       }
@@ -2963,19 +3064,19 @@
     "usage_notes": "<p>Here is a simple \u201cHello, world\u201d example web app for Tornado:</p>\n<pre><code>\nimport tornado.ioloop<br>\nimport tornado.web<br>\n<br>\nclass MainHandler(tornado.web.RequestHandler):<br>\n    def get(self):<br>\n        self.write(\"Hello, world\")<br>\n<br>\ndef make_app():<br>\n    return tornado.web.Application([<br>\n        (r\"/\", MainHandler),<br>\n    ])<br>\n<br>\nif __name__ == \"__main__\":<br>\n    app = make_app()<br>\n    app.listen(8888)<br>\n    tornado.ioloop.IOLoop.current().start()<br>\n</code></pre>\n<p>This example does not use any of Tornado\u2019s asynchronous features; for that see this <a href=\"https://github.com/tornadoweb/tornado/tree/stable/demos/chat\">simple chat room</a> from Github. Documentation and usage notes for this package can be found on the <a href=\"https://www.tornadoweb.org/en/stable/guide.html\">user's guide</a>.</p>",
     "tags": "web",
     "versions": {
-      "6.5.1": {
+      "6.5.4.post0": {
         "dist": [
           {
             "py_version": "cp311",
-            "sha256": "6013bf2f63217587fe401f06baf446aca537246d64941f28861fc9088568b0fe"
+            "sha256": "228d260603014f6cea9f119b0183a1b3eb559bf46eecb42f9798dac5d568e14a"
           },
           {
             "py_version": "cp312",
-            "sha256": "6eeaa3fa9635bfd9f2c5b246807749db2290e54ca3d212facc3a82cf9aecf59a"
+            "sha256": "e07db8e6fc8ad689bd3144940110c7959499ec5021b13144f7d3cb5f47909e4a"
           },
           {
             "py_version": "cp313",
-            "sha256": "765a1f1c964c6be43f204c3c81ecc848352b827d6e75acd82640de0467239aa5"
+            "sha256": "6be10bf463840870e8b6dfe1140d0406bda1afbe7ba2884215c76fc5a7db3414"
           }
         ]
       }
@@ -3013,11 +3114,11 @@
     "usage_notes": "<p>Usage information is available on <a href=\"https://github.com/aio-libs/async-lru\">github.com</a>.</p>",
     "tags": "programming_tools",
     "versions": {
-      "2.0.5": {
+      "2.0.5.post0": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "4a72af64171ce6ace6c101253a88f37969a56801267e4caf9251696bb9ff10a2"
+            "sha256": "2c0480926f253e3101656f0af4bc41ff75f9d9044e88e46e958ab4ada1db3c09"
           }
         ]
       }
@@ -3055,19 +3156,19 @@
     "usage_notes": "<p>Pyrsistent implements a number of different collection types and key features. Documentation should be referenced at <a href=\"https://pyrsistent.readthedocs.io/en/latest/intro.html\">readthedocs.io</a>.</p>",
     "tags": "programming_tools",
     "versions": {
-      "0.20.0": {
+      "0.20.0.post0": {
         "dist": [
           {
             "py_version": "cp311",
-            "sha256": "b1f2cea6a88a03b2665fed995fb3a6e3aa6ab9cdf39607c022e013a9a6f1d08b"
-          },
-          {
-            "py_version": "cp312",
-            "sha256": "cdd7fcb2bd45748be2d9e022866e65fa9243af476074dde72edf55b9d94d68d9"
+            "sha256": "510c492364de41b5b10b86b618f1438dc97bfd29e5806269dd77b2ef096223e1"
           },
           {
             "py_version": "cp313",
-            "sha256": "5cf0a684747a9c23f4bc5f3de31280c65949729dc519900f782b6caec5d4c51f"
+            "sha256": "d81f74e338ef859065bc3d7cf65677b8d7c486b6a0606dba8052aaf0b7e6a742"
+          },
+          {
+            "py_version": "cp312",
+            "sha256": "62bfbd4876f0e7a4ef7e60bdcbab3de350e4fa86584f9c48eda87a92e347dff9"
           }
         ]
       }
@@ -3226,19 +3327,19 @@
     "usage_notes": "<p>A <a href=\"https://gnome.pages.gitlab.gnome.org/libxml2/devhelp/\">reference manual</a>, <a href=\"https://gnome.pages.gitlab.gnome.org/libxml2/tutorial/\">tutorial</a>, and <a href=\"https://gnome.pages.gitlab.gnome.org/libxml2/examples/\">a set of examples</a> are all available.</p>",
     "tags": "languages",
     "versions": {
-      "2.14.2": {
+      "2.15.1": {
         "dist": [
           {
             "py_version": "cp311",
-            "sha256": "85769f8a40f7868f120c1c3d964a7e6e0ea3764ef96509bb7398e8f09f004982"
+            "sha256": "f4733a2f74f24c2eaf092d96986e1e8710b88ca9b9ce1555ddb94acb6ac277fc"
           },
           {
             "py_version": "cp312",
-            "sha256": "cd8d16ebfa85177b6c33e7ca2269189fafe552b935dce230952c0efafb39e054"
+            "sha256": "8bb8db9a76a2d98fc95e3989e0db9b1e4123af1bd7b5f19e5a8fccb0a401f2a4"
           },
           {
             "py_version": "cp313",
-            "sha256": "fd79e5480be9f52e3a2ddadc756d1934bfdbc023a7bebcdc8d386eac2d0d6d25"
+            "sha256": "d361b18d71e01beb11f05bafed2fe5d80f07f770172182a790b0287d8153837a"
           }
         ]
       }
@@ -3318,11 +3419,11 @@
     "usage_notes": "<p>Mistune is easy to use. Here is how you can convert Markdown formatted text into HTML:</p>\n\n<pre><code>\nimport mistune<br>\n<br>\nmistune.html(YOUR_MARKDOWN_TEXT)<br>\n</code></pre>\n\n<p>The .html() methods has enabled all the features you might want by default:</p>\n\n<ul>\n<li>No escape of HTML tags</li>\n<li>With strikethough plugin</li>\n<li>With table plugin</li>\n<li>With footnote plugin</li>\n</ul>\n\n<p>Please refer to <a href=\"https://mistune.readthedocs.io/en/v2.0.2/guide.html\">readthedocs.io</a> for more information.</p>",
     "tags": "languages",
     "versions": {
-      "2.0.4": {
+      "3.2.0": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "fb1c77fba8078071b42325a4e1d103d450fdcd93cf8fd4d192ba9a31e7dee928"
+            "sha256": "272c060e6db5ba002fa26a455da3b0dccaf2b1c4c7c95d055503695d1bef2f9b"
           }
         ]
       }
@@ -3402,19 +3503,19 @@
     "usage_notes": "<p>Usage information is available on <a href=\"https://contourpy.readthedocs.io/en/v1.1.0/\">readthedocs.io</a>.</p>",
     "tags": "graphics math",
     "versions": {
-      "1.3.3": {
+      "1.3.3.post0": {
         "dist": [
           {
             "py_version": "cp311",
-            "sha256": "6fb0a0db604d22b12faa27b2ae1ef8204ec1bd1a01a85ce7ae24928ab8cc8306"
-          },
-          {
-            "py_version": "cp312",
-            "sha256": "043d3b64fa807023574f19063420b56fe94d77e34f2387e8ff54ac8518072282"
+            "sha256": "9e728d0d39e8d02105cb82e13518e338431d375724a8be7b0264798e251c288e"
           },
           {
             "py_version": "cp313",
-            "sha256": "74a744fde324073122546d4319dcbf2b772f9e69d199159567a15ab5a11c5eb9"
+            "sha256": "ff89d67203bc06ac92d0df00184a5485f57fef1aef41d51cb6999efef4e1af02"
+          },
+          {
+            "py_version": "cp312",
+            "sha256": "98b95e0e0a493cb09423091eaafc75355efe9e7cc5ba247274da45930ea74483"
           }
         ]
       }
@@ -3452,11 +3553,19 @@
     "usage_notes": "<p>Imagine a simple \u201chello world\u201d script in a file <code>hello.pyx</code>:</p>\n\n<pre><code>\ndef say_hello_to(name):<br>\n    print(\"Hello %s!\" % name)<br>\n</code></pre>\n\n<p>The following could be a corresponding <code>setup.py</code> script:</p>\n\n<pre><code>\nfrom setuptools import setup<br>\nfrom Cython.Build import cythonize<br>\n<br>\nsetup(<br>\n    name='Hello world app',<br>\n    ext_modules=cythonize(\"hello.pyx\"),<br>\n    zip_safe=False,<br>\n)<br>\n</code></pre>\n\n<p>To build, run <code>python setup.py build_ext --inplace</code>. Then simply start a Python session and do <code>from hello import say_hello_to</code> and use the imported function as you see fit.</p>\n\n<p>Full documentation can be found on <a href=\"https://cython.readthedocs.io/en/latest/\">readthedocs.io</a>.</p>",
     "tags": "programming_tools",
     "versions": {
-      "3.0.10.post0": {
+      "3.2.4": {
         "dist": [
           {
+            "py_version": "cp311",
+            "sha256": "646aa5bf335dd9ccc840395bab572793f275b39ba0ac87ba2a6031e84c6b674f"
+          },
+          {
             "py_version": "cp313",
-            "sha256": "5832f5e38364ca7baa9e6969169b7a4674bc19b3901dd4c1700b3c08411cfd98"
+            "sha256": "08580c862f85662d0a4355053c8f6ce838b3b2832c8e4d82c207c2f38dfab45e"
+          },
+          {
+            "py_version": "cp312",
+            "sha256": "458364ee3bc752b2f82d950f94f2fb0283b89bccd3ad6c1facb1faed160b9dc6"
           }
         ]
       }
@@ -3515,11 +3624,11 @@
     "usage_notes": "<p>Usage information is available on <a href=\"https://github.com/snehilvj/dash-mantine-components\">github.com</a>.</p>",
     "tags": "web utility",
     "versions": {
-      "0.12.1": {
+      "2.6.0": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "9904e539a98157b6ac67ba8c4013916ad95263edd2969522a181bd3edc697b53"
+            "sha256": "161211a691626326d3ad81fec16ced2b7604eecc460a5eacc005bd91fa59a43f"
           }
         ]
       }
@@ -3662,11 +3771,11 @@
     "usage_notes": "<p>Package may be used as such: (This example reads 5-years of 10-year constant maturity yields on U.S. government bonds.)</p>\n<pre><code>\nimport pandas_datareader as pdr<br>\npdr.get_data_fred('GS10')<br>\n</code></pre>\n\n<p>Documentation is available on <a href=\"https://pydata.github.io/pandas-datareader/\">pydata.github.io/pandas-datareader</a>.</p>",
     "tags": "math utility machine_learning",
     "versions": {
-      "0.10.0": {
+      "0.10.0.post0": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "199000ff3a98924c9366d957bc66d663dc0636bc0277bfa4630214b2a7b9393c"
+            "sha256": "81ca408f910c2503c93403091caa0f336c03e7e6469d0e340112e76c756bc7b3"
           }
         ]
       }
@@ -3683,11 +3792,11 @@
     "usage_notes": "<p>For advanced tool documentation, refer to <a href=\"https://dateutil.readthedocs.io/en/stable/\">readthedocs.io</a>.</p>",
     "tags": "utility",
     "versions": {
-      "0.6.12": {
+      "0.6.12.post0": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "29eae2fb476f45e679250e20c443d17df11c5653b1ce52ae5cb134bcbcfe1960"
+            "sha256": "e1462babab5398ef36d814dd97848ec7d2e5b67ee039d706375a6dc895985e1a"
           }
         ]
       }
@@ -3704,11 +3813,11 @@
     "usage_notes": "<p>The libpng manual is available on <a href=\"http://www.faqs.org/faqs/jpeg-faq/\">faqs.org</a>.</p>",
     "tags": "graphics",
     "versions": {
-      "3.0.3": {
+      "3.1.0": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "ed0e2f5033d3df865eddd5d311ed43d844801055f32187812a4335261d4172ae"
+            "sha256": "0b2ae84ad4d0541e6404ef1b33f7952770a0f9a50c427f9321936922346faab0"
           }
         ]
       }
@@ -3788,11 +3897,11 @@
     "usage_notes": "<p>More information is available on <a href=\"https://www.encode.io/httpcore/\">encode.io</a>.</p>",
     "tags": "web",
     "versions": {
-      "1.0.4": {
+      "1.0.9": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "6e6b5b848138c16cd44d62e6a573348426edfb60f9846264f321e980835e04bf"
+            "sha256": "13a59da0fbf244e98fb2c81c8211e281c2161a603feb53d096a4339776f3317c"
           }
         ]
       }
@@ -3809,11 +3918,11 @@
     "usage_notes": "<p>Widgets are eventful python objects that have a representation in the browser, often as a control like a slider, textbox, etc.</p>\n\n<p>You can use widgets to build interactive GUIs for your notebooks.</p>\n\n<p>To use the widget framework, you need to import <code>ipywidgets</code>.</p>\n<pre><code>\nimport ipywidgets as widgets <br>\n</code></pre>\n\n<p>Widgets have their own display <code>repr</code> which allows them to be displayed using IPython\u2019s display framework. Constructing and returning an <code>IntSlider</code> automatically displays the widget. Widgets are displayed inside the output area below the code cell. Clearing cell output will also remove the widget.</p>\n\n<pre><code>\nwidgets.IntSlider()<br>\n</code></pre>\n\n<p>You can also explicitly display the widget using <code>display(...)</code>.</p>\n\n<pre><code>\nfrom IPython.display import display<br>\nw = widgets.IntSlider()<br>\ndisplay(w)<br>\n</code></pre>\n\n<p>Moving forward, you should refer to the tutorial on <a href=\"https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20Basics.html\">readthedocs.io</a> to see these widgets in action, and for further usage instruction.</p>",
     "tags": "web graphics",
     "versions": {
-      "8.1.5.post2": {
+      "8.1.8": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "c88b3a958eea3055a5c60f8a34771862d24907d5c3bb5d35174e862b40d58147"
+            "sha256": "f63d64c1fdfb16d1a80ae24fe6a2b6d1dfade2d94723297344f1400eed97510f"
           }
         ]
       }
@@ -3830,11 +3939,11 @@
     "usage_notes": "<p>Simple example to find the shortest path between two nodes in an undirected graph:</p>\n\n<pre><code>\n&gt;&gt;&gt; import networkx as nx<br>\n&gt;&gt;&gt; G = nx.Graph()<br>\n&gt;&gt;&gt; G.add_edge('A', 'B', weight=4)<br>\n&gt;&gt;&gt; G.add_edge('B', 'D', weight=2)<br>\n&gt;&gt;&gt; G.add_edge('A', 'C', weight=3)<br>\n&gt;&gt;&gt; G.add_edge('C', 'D', weight=4)<br>\n&gt;&gt;&gt; nx.shortest_path(G, 'A', 'D', weight='weight')<br>\n['A', 'B', 'D']<br>\n</code></pre>\n\n<p>See the <a href=\"https://networkx.org/documentation/latest/tutorial.html\">tutorial</a> for more instructions.</p>",
     "tags": "math machine_learning",
     "versions": {
-      "3.0b1.post0": {
+      "3.6.1": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "fc6f6a7d2def3c5ec9b7e9bf324bbbd3a8636a4db9055476744c4b213b0ba5f0"
+            "sha256": "0dd99d11c83fea68d262f975fa5f6825b1444e4ce9bdafd9520dfcbffc5e3293"
           }
         ]
       }
@@ -3872,19 +3981,19 @@
     "usage_notes": "<p>Matplotlib.org provides a number of excellent <a href=\"https://matplotlib.org/stable/tutorials/index.html\">tutorials</a> and documentation for using this package.</p>",
     "tags": "graphics",
     "versions": {
-      "3.8.4": {
+      "3.10.8": {
         "dist": [
           {
             "py_version": "cp311",
-            "sha256": "0fc8203ff97fa01fc9e787e5a891ba6ea92328300b6e43f0083379e6afcec371"
-          },
-          {
-            "py_version": "cp312",
-            "sha256": "3bfc9431e29b0d0874846e34055da8f116fd0bacef4c6228abf8ebd6079cfc5d"
+            "sha256": "94940ce6e5bd12287c65bbcba293b4b067cd24a389487b818c497164ce4ac957"
           },
           {
             "py_version": "cp313",
-            "sha256": "d0e25eda4e395a519efa04b96937d9073f91f2f7586cf36ce66b508d26eaf6e9"
+            "sha256": "616ae752508c2d17bc435484f13dd5dc1e2f5b13ffab5f8b276de0d59a33e935"
+          },
+          {
+            "py_version": "cp312",
+            "sha256": "584402a197126e7069e743a2420eea7105ddd723726e9db6ef98fa87abe65a83"
           }
         ]
       }
@@ -4006,11 +4115,11 @@
     "usage_notes": "<pre><code>\n&gt;&gt;&gt; from sortedcontainers import SortedList<br>\n&gt;&gt;&gt; sl = SortedList(['e', 'a', 'c', 'd', 'b'])<br>\n&gt;&gt;&gt; sl<br>\nSortedList(['a', 'b', 'c', 'd', 'e'])<br>\n&gt;&gt;&gt; sl *= 10_000_000<br>\n&gt;&gt;&gt; sl.count('c')<br>\n10000000<br>\n&gt;&gt;&gt; sl[-3:]<br>\n['e', 'e', 'e']<br>\n&gt;&gt;&gt; from sortedcontainers import SortedDict<br>\n&gt;&gt;&gt; sd = SortedDict({'c': 3, 'a': 1, 'b': 2})<br>\n&gt;&gt;&gt; sd<br>\nSortedDict({'a': 1, 'b': 2, 'c': 3})<br>\n&gt;&gt;&gt; sd.popitem(index=-1)<br>\n('c', 3)<br>\n&gt;&gt;&gt; from sortedcontainers import SortedSet<br>\n&gt;&gt;&gt; ss = SortedSet('abracadabra')<br>\n&gt;&gt;&gt; ss<br>\nSortedSet(['a', 'b', 'c', 'd', 'r'])<br>\n&gt;&gt;&gt; ss.bisect_left('c')<br>\n2<br>\n</code></pre>\n\n<p>All of the operations shown above run in faster than linear time. The above demo also takes nearly a gigabyte of memory to run. When the sorted list is multiplied by ten million, it stores ten million references to each of \u201ca\u201d through \u201ce\u201d. Each reference requires eight bytes in the sorted container. That\u2019s pretty hard to beat as it\u2019s the cost of a pointer to each object. It\u2019s also 66% less overhead than a typical binary tree implementation (e.g. Red-Black Tree, AVL-Tree, AA-Tree, Splay-Tree, Treap, etc.) for which every node must also store two pointers to children nodes.</p>\n\n<p>Full documentation can be found at <a href=\"https://grantjenks.com/docs/sortedcontainers/\">grantjenks.com/docs/sortedcontainers</a>.</p>",
     "tags": "utility",
     "versions": {
-      "2.4.0": {
+      "2.4.0.post0": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "68b7a37f75182b47c1655391a5f047225ec0665aeaf5a6420da5ee03f070ced2"
+            "sha256": "b3e8b2d51bdfe06d4cafc7603755e70de1868e06854716ee37c04f571081b677"
           }
         ]
       }
@@ -4027,11 +4136,15 @@
     "usage_notes": "<p>Usage information is available on <a href=\"https://github.com/IBM/py-zcrypto/blob/main/README.md\">github.com</a>.</p>",
     "tags": "utility",
     "versions": {
-      "1.0.2": {
+      "1.0.2.post0": {
         "dist": [
           {
             "py_version": "cp313",
-            "sha256": "ccdc3c2a76330b5375984239df843dd524949e4b1bdfca53c74b2eb8dea46a84"
+            "sha256": "e22cff808748494208fc4bdd3a3f46d881f655b46b74f16b0cb5b57213f59589"
+          },
+          {
+            "py_version": "cp312",
+            "sha256": "1080ac9277860d09f09c52119ed80270205b126ff3def40681cfd7d25f9f4805"
           }
         ]
       }
@@ -4111,19 +4224,19 @@
     "usage_notes": "<p>The most important class in the Python Imaging Library is the <code>Image</code> class, defined in the module with the same name. You can create instances of this class in several ways; either by loading images from files, processing other images, or creating images from scratch.</p>\n\n<p>To load an image from a file, use the <code>open()</code> function in the <code>Image</code> module:</p>\n\n<pre><code>\nfrom PIL import Image<br>\nim = Image.open(\"hopper.ppm\")<br>\n</code></pre>\n\n<p>If successful, this function returns an <code>Image</code> object. You can now use instance attributes to examine the file contents:</p>\n\n<pre><code>\nprint(im.format, im.size, im.mode)<br>\n   PPM (512, 512) RGB<br>\n</code></pre>\n\n<p>The <code>format</code> attribute identifies the source of an image. If the image was not read from a file, it is set to None. The size attribute is a 2-tuple containing width and height (in pixels). The <code>mode</code> attribute defines the number and names of the bands in the image, and also the pixel type and depth. Common modes are \u201cL\u201d (luminance) for greyscale images, \u201cRGB\u201d for true color images, and \u201cCMYK\u201d for pre-press images.</p>\n\n<p>If the file cannot be opened, an <code>OSError</code> exception is raised.</p>\n\n<p>Once you have an instance of the Image class, you can use the methods defined by this class to process and manipulate the image. Refer to <a href=\"https://pillow.readthedocs.io/en/stable/handbook/tutorial.html\">readthedocs.io</a> for more information.</p> <p>Note : TIFF (.tiff) file support is not available in Pillow version 11.1.0.</p>",
     "tags": "graphics",
     "versions": {
-      "11.1.0": {
+      "12.1.0": {
         "dist": [
           {
             "py_version": "cp311",
-            "sha256": "9293f12151d205df0ee4e107e656aa60c4d36c57637198dacdf03b52000ef14a"
-          },
-          {
-            "py_version": "cp312",
-            "sha256": "84267dbd3f56185db7a72dde36e0ed348ab4f99ae26a218ad2a3e3c0b69a7dda"
+            "sha256": "5ca861162c45c1ba5f0150b2c599c612bab48a1e8fedc23f9cfb7cfc8ad4ddac"
           },
           {
             "py_version": "cp313",
-            "sha256": "e5a044b6177406a76236c1570ecd3f182396129a9b92344de2e7c1322e6eefa7"
+            "sha256": "a79558e26e956a20a554a28caebfbd92a7170d274b501fa7d0f31379e44a7b11"
+          },
+          {
+            "py_version": "cp312",
+            "sha256": "34f097328dc0deb64a955155da95ab95f56069faa7aac4a3e1bf3da577fe9f19"
           }
         ]
       }
@@ -4140,11 +4253,23 @@
     "usage_notes": "<p>Documentation for this package should be found on <a href=\"https://xgboost.readthedocs.io/en/stable/python/index.html\">readthedocs.io</a>.</p>",
     "tags": "machine_learning",
     "versions": {
-      "1.6.2": {
+      "3.1.2": {
+        "dist": [
+          {
+            "py_version": "cp313",
+            "sha256": "7cf949cbe5698e0e9f1b2972131c6244554050cd10a419e1f0f8f350edc6d2f8"
+          },
+          {
+            "py_version": "cp312",
+            "sha256": "92382957e27b5d2c3cab7e6519567d4727320019fcebd07bf96ccc9866c30edc"
+          }
+        ]
+      },
+      "1.6.2.post0": {
         "dist": [
           {
             "py_version": "cp311",
-            "sha256": "49d07f7ac96d902fe3ccda5968e090140ee6a7ef6593767c776ac198734767e2"
+            "sha256": "ca38cdded609496d4715b050c6c0fcc50484e861bf2091dac32dc12669236f92"
           }
         ]
       }
@@ -4203,11 +4328,11 @@
     "usage_notes": "<p>Usage information is available on <a href=\"https://dash.plotly.com/\">dash.plotly.com</a>.</p>",
     "tags": "web",
     "versions": {
-      "3.2.0": {
+      "4.0.0": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "ce35c96664dc18fdc516f12dc1cc225ffdb49b7399e43a0d6953f2390d76e251"
+            "sha256": "08b5e408ddabc3e1aefaacbd23be2cf8fb21fd213466c81656af6db93e6d02ba"
           }
         ]
       }
@@ -4309,19 +4434,19 @@
     "usage_notes": "\n<p>Syntactical notes on the use of Kiwisolver are available on <a href=\"https://kiwisolver.readthedocs.io/en/latest/basis/index.html\">readthedocs.io</a>. These will cover basic usage such as creating a system of constraints, and solving and updating it. However, using this project generally will require familiarity with Cassowary, or with constraints solvers in general. Readthedocs.io also provides real-world <a href=\"https://kiwisolver.readthedocs.io/en/latest/use_cases/index.html\">use cases</a> to help explain the package's usage in practice.</p>",
     "tags": "math graphics",
     "versions": {
-      "1.4.9": {
+      "1.4.9.post0": {
         "dist": [
           {
             "py_version": "cp311",
-            "sha256": "8e34446db82cf5b384dc909a44ed81e549f618ebfb0790dcaec283df05699dce"
-          },
-          {
-            "py_version": "cp312",
-            "sha256": "596be008823835ad82ec987c3ed3ec1e645db3a11ee805d1887e65cbdf582aaa"
+            "sha256": "3cbc6e4d9ed67d78601d762912b5c7ab6d57e4a5c1a9a2ce464fea74693c550e"
           },
           {
             "py_version": "cp313",
-            "sha256": "5af2a487be038f7227605aff02a7d890bc170dfb1eadd19967de072f29f70b61"
+            "sha256": "b3aeb75ddfc205a874329b986958443e6bc20daad103f327e894efec04bd683d"
+          },
+          {
+            "py_version": "cp312",
+            "sha256": "8b1d2bc7fed4c3e56c2532f44967bcedc6d2c048f7649b906b29f8ac84d2052e"
           }
         ]
       }
@@ -4403,11 +4528,23 @@
     "usage_notes": "<p>Complete documentation is available at <a href=\"https://toolz.readthedocs.io/en/latest/\">github</a> including the <a href=\"https://toolz.readthedocs.io/en/latest/api.html\">API reference</a>.</p>",
     "tags": "utility",
     "versions": {
-      "0.12.3.post0": {
+      "0.12.0": {
         "dist": [
           {
+            "py_version": "cp311",
+            "sha256": "3dbf543303297c5550f8dde3286784061463531d21a5382fd6059bd3ec07f1ec"
+          }
+        ]
+      },
+      "1.1.0": {
+        "dist": [
+          {
+            "py_version": "cp312",
+            "sha256": "4ffb85cb8be0f166bbf2d46099de6918cdf816eff29add3dfdcf9e01ef73071b"
+          },
+          {
             "py_version": "cp313",
-            "sha256": "1df8c88e5f0341e96343bdc76b3f95b72278691192adf3c01660609a367aeb31"
+            "sha256": "ea7a094d8e2347e6f61306242e35d67e1979f273d2b174a76297ac1093bea454"
           }
         ]
       }
@@ -4445,11 +4582,11 @@
     "usage_notes": "<p>First and foremost, Python-Markdown is intended to be a python library module used by various projects to convert Markdown syntax into HTML.</p>\n<p>To use markdown as a module:</p>\n<pre><code>\nimport markdown<br>\nhtml = markdown.markdown(your_text_string)<br>\n</code></pre>\n<p>Additional notes can be found on the official <a href=\"https://python-markdown.github.io/reference/\">reference</a>.</p>",
     "tags": "languages",
     "versions": {
-      "3.4.1.post1": {
+      "3.10.0": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "b1faacc92c940b2947d591197b61d664412f9d6c1a71c60a72494ebc02206a17"
+            "sha256": "f69ef3b4b87f0248289b2da670239a189f731f887bda7f66916a9e66a9c4444b"
           }
         ]
       }
@@ -4550,11 +4687,11 @@
     "usage_notes": "<p>A <a href=\"https://gnome.pages.gitlab.gnome.org/libxslt/devhelp/\"reference manual</a> and <a href=\"https://gnome.pages.gitlab.gnome.org/libxslt/tutorial/libxslttutorial.html\">tutorial</a> and <a href=\"https://gnome.pages.gitlab.gnome.org/libxslt/tutorial2/libxslt_pipes.html\">extended tutorial</a> are available for documentation.</p>",
     "tags": "languages",
     "versions": {
-      "1.1.43": {
+      "1.1.45": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "8743a1f4b564956bb9c2f5ce08053a91aa17f30a762cce65cd0e42300103ec39"
+            "sha256": "7c7b945124eb2701ab448bb2c66ff08e8d53ff33af5d6516acc8f82e7cc53d76"
           }
         ]
       }
@@ -4634,11 +4771,19 @@
     "usage_notes": "<p>Usage information is available on <a href=\"https://github.com/sqlalchemy/sqlalchemy\">github.com</a>.</p>",
     "tags": "programming_tools database",
     "versions": {
-      "2.0.37": {
+      "2.0.44": {
         "dist": [
           {
             "py_version": "cp313",
-            "sha256": "9e22192f6a87a4614875975d1095304b73efe196aef31eff1b3d2600cf987b54"
+            "sha256": "9d569e1dd87e1f8ce060f4b874757c9d41210a504303849c836d5b5dea86a4da"
+          },
+          {
+            "py_version": "cp312",
+            "sha256": "2d6636f51b6d76388fbef76da1dc84701546e08345ec1a53926b2c43c1950f2b"
+          },
+          {
+            "py_version": "cp311",
+            "sha256": "82a64105f95a41c1230bd9a9e227f0d73546ace175e93ab51babc5701e59ac88"
           }
         ]
       }
@@ -4718,11 +4863,11 @@
     "usage_notes": "<p>You don\u2019t need to know anything beyond Python to start using IPython \u2013 just type commands as you would at the standard Python prompt. But IPython can do much more than the standard prompt.</p>\n\n<p>Start IPython by issuing the ipython command from your shell, you should be greeted by the following:</p>\n<pre><code>\nPython 3.6.0<br>\nType 'copyright', 'credits' or 'license' for more information<br>\nIPython 6.0.0.dev -- An enhanced Interactive Python. Type '?' for help.<br>\n<br>\nIn [1]:<br>\n</code></pre>\n\n<p>Unlike the Python REPL, you will see that the input prompt is <code>In [N]:</code> instead of <code>&gt;&gt;&gt;</code>. The number <code>N</code> in the prompt will be used later in this tutorial but should usually not impact the computation.</p>\n\n<p>You should be able to type single line expressions and press enter to evaluate them. If an expression is incomplete, IPython will automatically detect this and add a new line when you press Enter instead of executing right away.</p>\n\n<p>Feel free to explore multi-line text input. Unlike many other REPLs, with IPython you can use the up and down arrow keys when editing multi-line code blocks.</p>\n\n<p>Here is an example of a longer interaction with the IPython REPL, which we often refer to as an IPython session:</p>\n<pre><code>\nIn [1]: print('Hello IPython')<br>\nHello IPython<br>\n<br>\nIn [2]: 21 * 2<br>\nOut[2]: 42<br>\n<br>\nIn [3]: def say_hello(name):<br>\n   ...:     print('Hello {name}'.format(name=name))<br>\n   ...:<br>\n</code></pre>\n\n<p>Moving forward, refer to the tutorial on <a href=\"https://ipython.readthedocs.io/en/stable/interactive/tutorial.html\">readthedocs.io</a> for next steps and further details.</p>",
     "tags": "programming_tools",
     "versions": {
-      "8.13.2.post0": {
+      "8.13.2.post1": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "1740e53831df2046deb2e59906b879751fcaf01b707e9d22e27c4ccdcfac0494"
+            "sha256": "2bd1104a408c4cc8751be5b36763c619fb66bd63be132544d4b9c5e81f3c8a69"
           }
         ]
       }
@@ -4865,19 +5010,19 @@
     "usage_notes": "<p>Documentation can be found on <a href=\"https://github.com/ibm-z-oss-oda/mrab-regex\">github.com</a>.</p>",
     "tags": "utility languages",
     "versions": {
-      "2025.9.1": {
+      "2026.2.28": {
         "dist": [
           {
             "py_version": "cp311",
-            "sha256": "33f6eb91af00d91aad4186486ab9bafc6cf2af63e9013fa95b70a692dc2e3b06"
+            "sha256": "30c7b10f6b4efe5afd85ff96e4c826dbba09aaa58eeaaa5df1c59ccb05dd20e1"
           },
           {
             "py_version": "cp312",
-            "sha256": "b7821f5ed201247168dffa92f99684cba7b6016e64e64691c831b75c83e7b2e2"
+            "sha256": "d462f6d9a3e3e57c6e49d792f55e136a1a4b5320dfa5001ae7775436b198416b"
           },
           {
             "py_version": "cp313",
-            "sha256": "f0b5107b5d3db1baa2f463e1e1dcf101971428584bfc8975de0d21e9a1b01c43"
+            "sha256": "f706254885534510ea5990ee016d8336b5a7ab4db613c1a0b2b1de719cec5a71"
           }
         ]
       }
@@ -4965,11 +5110,11 @@
     "usage_notes": "<p>The simplest way to use Bleach is as such:</p>\n<pre><code>\n>>> import bleach<br>\n<br>\n>>> bleach.clean('an &lt;script&gt;evil()&lt;/script&gt; example')<br>\nu'an &amp;lt;script&amp;gt;evil()&amp;lt;/script&amp;gt; example'<br>\n<br>\n>>> bleach.linkify('an http://example.com url')<br>\nu'an &lt;a href=\"http://example.com\" rel=\"nofollow\"&gt;http://example.com&lt;/a&gt; url'<br>\n</pre></code>\n<p>See <a href=\"https://bleach.readthedocs.io/en/latest/\">readthedocs.io</a> for me information.</p>",
     "tags": "security programming_tools",
     "versions": {
-      "6.2.0.post1": {
+      "6.3.0": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "fc2c098b3a0484005ba9d1478a756c1bd1c2656d09acd439e4bb5ce59347055b"
+            "sha256": "f7c8cb36936228075a2c51b320b18476225b9b4b997c7634d635463c4c4524b7"
           }
         ]
       }
@@ -5028,11 +5173,11 @@
     "usage_notes": "<p>A simple example:</p>\n\n<pre><code>\n&gt;&gt;&gt; import parso<br>\n&gt;&gt;&gt; module = parso.parse('hello + 1', version=\"3.9\")<br>\n&gt;&gt;&gt; expr = module.children[0]<br>\n&gt;&gt;&gt; expr<br>\nPythonNode(arith_expr, [<Name: hello@1,0>, <Operator: +>, <Number: 1>])<br>\n&gt;&gt;&gt; print(expr.get_code())<br>\nhello + 1<br>\n&gt;&gt;&gt; name = expr.children[0]<br>\n&gt;&gt;&gt; name<br>\n&lt;Name: hello@1,0&gt;<br>\n&gt;&gt;&gt; name.end_pos<br>\n(1, 5)<br>\n&gt;&gt;&gt; expr.end_pos<br>\n(1, 9)<br>\n</code></pre>\n\n<p>See documentation on <a href=\"https://parso.readthedocs.io/en/latest/\">readthedocs.io</a>.</p>",
     "tags": "programming_tools",
     "versions": {
-      "0.8.3": {
+      "0.8.5": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "08d95674796cc92ce27d43ce8fe938cb9816e7438bff9f10694d42f07d6adfc1"
+            "sha256": "d939b384e84c94484c95e0e667e4e082959ce9843739ba90568f6cdd881bd43c"
           }
         ]
       }
@@ -5049,19 +5194,19 @@
     "usage_notes": "<p>Please refer to <a href=\"https://pandas.pydata.org/pandas-docs/stable/\">pandas.pydata.org</a> for full package documentation.</p>",
     "tags": "programming_tools math machine_learning",
     "versions": {
-      "2.3.0": {
+      "2.3.3": {
         "dist": [
           {
             "py_version": "cp311",
-            "sha256": "95eee0e45e5b87987d9b2ccd247270d776ccc1760861623078b4699dd9600527"
-          },
-          {
-            "py_version": "cp312",
-            "sha256": "825b9664e8c621e3fb1e8413665767512bd3cfa69b8c4d1ae48ec7311a0e707f"
+            "sha256": "c67bccaef3ddc77c5af6fb5e91772658c591a145bd6958d8f719d3907df7c315"
           },
           {
             "py_version": "cp313",
-            "sha256": "ca9d9a0660ae0bf0f8eb63b8b67390e5e2f398e76b9670d35c2009c63a8a2fa8"
+            "sha256": "605a0d74c863b4b923e4c73c999ef80e41303e33cc4d85aab45e3246fee89894"
+          },
+          {
+            "py_version": "cp312",
+            "sha256": "562b7af11bb3f1a723c25d18d0be9fba64dfe571473314df7ddf333f52e0660b"
           }
         ]
       }
