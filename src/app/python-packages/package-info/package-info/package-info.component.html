@@ -32,12 +32,11 @@
       <!--package linkToLicense-->
       <p *ngIf="packageInfoData.name == 'ansi2html'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}</a></p>
       <p *ngIf="packageInfoData.name == 'chardet'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}</a></p>
-      <p *ngIf="packageInfoData.name == 'fontconfig'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}</a></p>
       <p *ngIf="packageInfoData.name == 'freetype2'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}</a></p>
       <p *ngIf="packageInfoData.name == 'glib'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}</a></p>
       <p *ngIf="packageInfoData.name == 'jaydebeapi'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}</a></p>
       <p *ngIf="packageInfoData.name == 'uwsgi'">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN')}} <a href="{{packageInfoData.info.linkToLicense}}" target="_blank">{{_messageService.getBundle('PACKAGES_VIEW_LICSEN_HERE')}}</a></p>
-      <div *ngIf="packageInfoData.name != 'ansi2html' && packageInfoData.name != 'chardet' && packageInfoData.name != 'fontconfig' && packageInfoData.name != 'freetype2' && packageInfoData.name != 'glib' && packageInfoData.name != 'jaydebeapi' && packageInfoData.name != 'uwsgi'"><p><i>{{_messageService.getBundle('PACKAGE_NEW_LICSEN_STRING1')}}</i></p><p><i>{{_messageService.getBundle('PACKAGE_NEW_LICSEN_STRING2')}}</i></p></div>
+      <div *ngIf="packageInfoData.name != 'ansi2html' && packageInfoData.name != 'chardet' && packageInfoData.name != 'freetype2' && packageInfoData.name != 'glib' && packageInfoData.name != 'jaydebeapi' && packageInfoData.name != 'uwsgi'"><p><i>{{_messageService.getBundle('PACKAGE_NEW_LICSEN_STRING1')}}</i></p><p><i>{{_messageService.getBundle('PACKAGE_NEW_LICSEN_STRING2')}}</i></p></div>
     <div>
       <!--package License description-->
       <p>

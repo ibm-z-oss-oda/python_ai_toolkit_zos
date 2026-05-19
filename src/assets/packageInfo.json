@@ -606,7 +606,7 @@
     "site_name": "freedesktop.org",
     "link_to_site": "https://www.freedesktop.org/wiki/Software/fontconfig/",
     "site_name_license": "OTHER",
-    "link_to_license": "https://github.com/arthenica/fontconfig/blob/main/COPYING",
+    "link_to_license": "https://gitlab.freedesktop.org/fontconfig/fontconfig/-/blob/main/COPYING",
     "usage_notes": "<p>Please refer to <a href=\"https://www.freedesktop.org/software/fontconfig/fontconfig-user.html\">freedesktop.org</a> for complete documentation.</p>",
     "tags": "graphics",
     "versions": {
