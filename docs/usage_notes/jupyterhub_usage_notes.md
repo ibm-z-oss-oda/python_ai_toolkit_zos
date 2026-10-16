@@ -89,7 +89,7 @@ To set up a virtual environment for JupyterHub build and usage:
 5. Install JupyterHub using the following command:
 
    ```bash
-   pip install jupyterhub==4.1.6.post0
+   pip install jupyterhub==5.5.2
    ```
 
 ## Setting up Node.js and npm
@@ -204,6 +204,12 @@ To configure JupyterHub:
 
    # ---- Admin user ----
    c.Authenticator.admin_users = {'<your_userid>'}
+
+   # ---- Allow users (required for JupyterHub 5.x) ----
+   # Starting with JupyterHub 5, no users are allowed to log in by default unless
+   # an allow list is configured. NativeAuthenticator enforces its own signup
+   # approval, so allow every user it authenticates.
+   c.Authenticator.allow_all = True
 
    # ---- SAF keyring for TLS (the three MUST be specified together) ----
    # Each value is base64-encoded. Used by the proxy to terminate TLS via libsaf.
