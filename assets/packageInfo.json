@@ -31,11 +31,11 @@
     "usage_notes": "<p>Following installation, all normal <code>ipython</code> commands will use this newly-installed version of the kernel. </p>\n<p>Please refer to <a href=\"https://ipython.readthedocs.io/en/latest/\">readthedocs.io</a> for further information. Notice that ipykernel itself has minimal documentation, as this documentation largely covers ipython itself, of which the kernel is a component.</p>",
     "tags": "programming_tools",
     "versions": {
-      "6.9.1.post1": {
+      "7.4.0": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "06681ea41fdcae1f1f5c8289c12beef1a37a7553a493816d05961217e0a44e70"
+            "sha256": "cd616be592246566ece412e5a4800430cf6a9a5fc66076a5cb515aae8be41e5a"
           }
         ]
       }
@@ -115,11 +115,11 @@
     "usage_notes": "<p>Localized times and date arithmetic:</p>\n\n<pre><code>\n&gt;&gt;&gt; from datetime import datetime, timedelta<br>\n&gt;&gt;&gt; from pytz import timezone<br>\n&gt;&gt;&gt; import pytz<br>\n&gt;&gt;&gt; utc = pytz.utc<br>\n&gt;&gt;&gt; utc.zone<br>\n'UTC'<br>\n&gt;&gt;&gt; eastern = timezone('US/Eastern')<br>\n&gt;&gt;&gt; eastern.zone<br>\n'US/Eastern'<br>\n&gt;&gt;&gt; amsterdam = timezone('Europe/Amsterdam')<br>\n&gt;&gt;&gt; fmt = '%Y-%m-%d %H:%M:%S %Z%z'<br>\n</code></pre>\n\n<p>Further documentation is available on <a href=\"https://pythonhosted.org/pytz/\"pythonhosted.org</a>.</p>",
     "tags": "utility",
     "versions": {
-      "2025.2": {
+      "2026.3.post1": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "cf7b2d5327f9ea22aaf76fd043a7a05a545f63c44062889acd28003f0113f805"
+            "sha256": "81508285f399c1119d5c425e720b68849aef8ff0b0273cf913280ce50645b878"
           }
         ]
       }
@@ -136,11 +136,11 @@
     "usage_notes": "<p>Widgets are eventful python objects that have a representation in the browser, often as a control like a slider, textbox, etc.</p>\n\n<p>You can use widgets to build interactive GUIs for your notebooks.</p>\n\n<p>To use the widget framework, you need to import <code>ipywidgets</code>.</p>\n<pre><code>\nimport ipywidgets as widgets <br>\n</code></pre>\n\n<p>Widgets have their own display <code>repr</code> which allows them to be displayed using IPython\u2019s display framework. Constructing and returning an <code>IntSlider</code> automatically displays the widget. Widgets are displayed inside the output area below the code cell. Clearing cell output will also remove the widget.</p>\n\n<pre><code>\nwidgets.IntSlider()<br>\n</code></pre>\n\n<p>You can also explicitly display the widget using <code>display(...)</code>.</p>\n\n<pre><code>\nfrom IPython.display import display<br>\nw = widgets.IntSlider()<br>\ndisplay(w)<br>\n</code></pre>\n\n<p>Moving forward, you should refer to the tutorial on <a href=\"https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20Basics.html\">readthedocs.io</a> to see these widgets in action, and for further usage instruction.</p>",
     "tags": "web graphics",
     "versions": {
-      "8.1.8.post2": {
+      "8.1.9": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "e504eb669584ffbeaa123e1bad566922d220fea8c7258a4b29ebdba87d0ad4c7"
+            "sha256": "a2449a3aeca8fd6fb489a16cc4f1a978c824f25580df93de0b7f46ad1d336d32"
           }
         ]
       }
@@ -180,11 +180,11 @@
     "usage_notes": "<p>Usage information is available on <a href=\"https://github.com/sktime/skbase\">github.com</a>.</p>",
     "tags": "base",
     "versions": {
-      "0.13.0": {
+      "1.0.2": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "f3415828f4719f25be4c6629a8878b5245d3980955e827bb2365774069ffb9af"
+            "sha256": "40eb89ea9c7e7e8e85c8f823aa8a4b116c8ab618cabd10b2056a00ad263fad38"
           }
         ]
       }
@@ -206,6 +206,35 @@
           {
             "py_version": "py3",
             "sha256": "a0af1213f3c2226497a97e2b3aa01a7e4bee4f403f95be16fc9acd2947514a78"
+          }
+        ]
+      }
+    }
+  },
+  "propcache": {
+    "image_name": "propcache",
+    "alt_image_name": "propcache",
+    "description": "<p>propcache is a library providing a fast cached property implementation using a shared per-instance dictionary slot, used internally by aiohttp and yarl for performance-critical property caching.</p>",
+    "site_name": "github.com",
+    "link_to_site": "https://github.com/aio-libs/propcache",
+    "site_name_license": "Apache-2.0",
+    "link_to_license": "https://github.com/aio-libs/propcache/blob/master/LICENSE",
+    "usage_notes": "<p>Usage information is available on <a href=\"https://github.com/aio-libs/propcache\">github.com</a>.</p>",
+    "tags": "utility",
+    "versions": {
+      "0.5.4": {
+        "dist": [
+          {
+            "py_version": "cp312",
+            "sha256": "772e70b8907427853c89982b53236c895a44a8afed875cb83e9e9187b0fa7ef8"
+          },
+          {
+            "py_version": "cp313",
+            "sha256": "51cc5cc294af115eadc3db3073204f56076d3f4714c10016f527239e6e660354"
+          },
+          {
+            "py_version": "cp314",
+            "sha256": "72671363aedfa59ae64252550e4b719506fe25aacb282329b7c63d4e94dbd240"
           }
         ]
       }
@@ -316,6 +345,27 @@
       }
     }
   },
+  "pydantic": {
+    "image_name": "pydantic",
+    "alt_image_name": "pydantic",
+    "description": "<p>Pydantic is a data validation library for Python that enforces type hints at runtime and provides user-friendly errors when data is invalid, widely used for settings management and API schema definition.</p>",
+    "site_name": "docs.pydantic.dev",
+    "link_to_site": "https://docs.pydantic.dev/latest/",
+    "site_name_license": "MIT",
+    "link_to_license": "https://github.com/pydantic/pydantic/blob/main/LICENSE",
+    "usage_notes": "<p>Full documentation is available on <a href=\"https://docs.pydantic.dev/latest/\">docs.pydantic.dev</a>.</p>",
+    "tags": "programming_tools",
+    "versions": {
+      "2.13.4": {
+        "dist": [
+          {
+            "py_version": "py3",
+            "sha256": "e93bcbd205b676ba77bc65e9a2c48dee8c2de1f8279da18f4af1e822b79fb015"
+          }
+        ]
+      }
+    }
+  },
   "ruamel.yaml": {
     "image_name": "ruamel.yaml",
     "alt_image_name": "ruamel.yaml",
@@ -348,19 +398,19 @@
     "usage_notes": "<p>Here is a simple \u201cHello, world\u201d example web app for Tornado:</p>\n<pre><code>\nimport tornado.ioloop<br>\nimport tornado.web<br>\n<br>\nclass MainHandler(tornado.web.RequestHandler):<br>\n    def get(self):<br>\n        self.write(\"Hello, world\")<br>\n<br>\ndef make_app():<br>\n    return tornado.web.Application([<br>\n        (r\"/\", MainHandler),<br>\n    ])<br>\n<br>\nif __name__ == \"__main__\":<br>\n    app = make_app()<br>\n    app.listen(8888)<br>\n    tornado.ioloop.IOLoop.current().start()<br>\n</code></pre>\n<p>This example does not use any of Tornado\u2019s asynchronous features; for that see this <a href=\"https://github.com/tornadoweb/tornado/tree/stable/demos/chat\">simple chat room</a> from Github. Documentation and usage notes for this package can be found on the <a href=\"https://www.tornadoweb.org/en/stable/guide.html\">user's guide</a>.</p>",
     "tags": "web",
     "versions": {
-      "6.5.4.post0": {
+      "6.5.10": {
         "dist": [
           {
             "py_version": "cp312",
-            "sha256": "e07db8e6fc8ad689bd3144940110c7959499ec5021b13144f7d3cb5f47909e4a"
+            "sha256": "722b7754599c2a8750cffd14265c8e61a37f81fcb26d06d498b69cb308587f22"
           },
           {
             "py_version": "cp313",
-            "sha256": "6be10bf463840870e8b6dfe1140d0406bda1afbe7ba2884215c76fc5a7db3414"
+            "sha256": "d070294d59835498adaa452136f3642e6cf54941baf5fa2db27914ccf8a66601"
           },
           {
             "py_version": "cp314",
-            "sha256": "a7c6bb5165cb9c2703921f0b11b927e2c5b21ec80481d3b8e0f7dda475e205e6"
+            "sha256": "16edf34d04a37352553cfd51ad6549abbb9c5a76f3720f8d5e43fc7484e14972"
           }
         ]
       }
@@ -377,11 +427,40 @@
     "usage_notes": "<h4>Example of usage:</h4>\n<p>Let\u2019s say you are writing an email parsing library and in your test suite you have a sample email message in a file called <code>message.eml</code>. You would like to access the contents of this file for your tests, so you put this in your project under the <code>email/tests/data/message.eml</code> path. Let\u2019s say your unit tests live in <code>email/tests/test_email.py</code>.</p>\n\n<p>Your test could read the data file by doing something like:</p>\n<pre><code>\ndata_dir = os.path.join(os.path.dirname(__file__), 'tests', 'data')<br>\ndata_path = os.path.join(data_dir, 'message.eml')<br>\nwith open(data_path, encoding='utf-8') as fp:<br>\n    eml = fp.read()<br>\n</code></pre>\n\n<p>But there\u2019s a problem with this! The use of <code>__file__</code> doesn\u2019t work if your package lives inside a zip file, since in that case this code does not live on the file system.</p>\n\n<p><code>importlib_resources</code> provides a performant solution to this scenario by being built entirely on the back of the stdlib <code>importlib</code>. By taking advantage of all the efficiencies in Python\u2019s import system, and the fact that it\u2019s built into Python, using <code>importlib_resources</code> can be extremely performant. Our solution using <code>importlib_resources</code> would look like:</p>\n\n<pre><code>\nfrom importlib_resources import files<br>\n# Reads contents with UTF-8 encoding and returns str.<br>\neml = files('email.tests.data').joinpath('message.eml').read_text()<br>\n</code></pre>\n\n<p>Further usage notes are available on <a href=\"https://importlib-resources.readthedocs.io/en/latest/using.html\">readthedocs.io</a>.</p>",
     "tags": "programming_tools",
     "versions": {
-      "6.5.2": {
+      "7.1.0": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "17508c15588f6738610684af25703f9ba8e4751c60036ebd591cf1a32399da19"
+            "sha256": "01b07169b18469c6319d4cecf92a0401da608c19a0287e0423e6b0dcd1cc46fd"
+          }
+        ]
+      }
+    }
+  },
+  "nh3": {
+    "image_name": "nh3",
+    "alt_image_name": "nh3",
+    "description": "<p>nh3 is a Python binding to the Ammonia HTML sanitizer library, providing fast and secure HTML sanitization to prevent XSS attacks by cleaning untrusted HTML input.</p>",
+    "site_name": "github.com",
+    "link_to_site": "https://github.com/messense/nh3",
+    "site_name_license": "MIT",
+    "link_to_license": "https://github.com/messense/nh3/blob/main/LICENSE",
+    "usage_notes": "<p>Usage information is available on <a href=\"https://github.com/messense/nh3\">github.com</a>.</p>",
+    "tags": "security",
+    "versions": {
+      "0.3.6": {
+        "dist": [
+          {
+            "py_version": "cp312",
+            "sha256": "36310461492a1c4be21fcb676cbe2be4163a7f3710dedc859a327639d4fb2200"
+          },
+          {
+            "py_version": "cp313",
+            "sha256": "31aa5b96e77cd270fecb811dfe70848917fe9e7166fe1ac44ce0a8f31fe8cdef"
+          },
+          {
+            "py_version": "cp314",
+            "sha256": "0a4dec615c84128e6e750f693cbd52359e003f03eb24f1df03c43b3c4d8790be"
           }
         ]
       }
@@ -419,11 +498,32 @@
     "usage_notes": "<p>Usage information is available on <a href=\"https://github.com/aio-libs/async-lru\">github.com</a>.</p>",
     "tags": "programming_tools",
     "versions": {
-      "2.0.5.post0": {
+      "2.1.0": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "2c0480926f253e3101656f0af4bc41ff75f9d9044e88e46e958ab4ada1db3c09"
+            "sha256": "7782c65bc591361316f714e74a566c613f0c500258ba4445cdef5d04d2eff897"
+          }
+        ]
+      }
+    }
+  },
+  "aiodns": {
+    "image_name": "aiodns",
+    "alt_image_name": "aiodns",
+    "description": "<p>aiodns provides a simple way to perform DNS queries using pycares from an asyncio event loop, supporting A, AAAA, MX, NS, PTR, SRV, and TXT record types.</p>",
+    "site_name": "github.com",
+    "link_to_site": "https://github.com/saghul/aiodns",
+    "site_name_license": "MIT",
+    "link_to_license": "https://github.com/saghul/aiodns/blob/master/LICENSE",
+    "usage_notes": "<p>Usage information is available on <a href=\"https://github.com/saghul/aiodns\">github.com</a>.</p>",
+    "tags": "utility",
+    "versions": {
+      "4.0.4": {
+        "dist": [
+          {
+            "py_version": "py3",
+            "sha256": "fc90ec4bbbdef760b12f1648184787ecbb1a72fb36f76813b8d0226f8a15f2f0"
           }
         ]
       }
@@ -503,11 +603,40 @@
     "usage_notes": "<p>More information is available on <a href=\"https://www.python-httpx.org/\">python-httpx.org</a>.</p>",
     "tags": "web",
     "versions": {
-      "0.27.0": {
+      "0.28.1": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "4c0dceec140574bfca2a0d69c2bb9b534aafa342c895e1991f212a1db81d864e"
+            "sha256": "5b61168bc90c31400915a5b3f83eea40af05debc71af20a42c12f6fc3f3825c3"
+          }
+        ]
+      }
+    }
+  },
+  "pycares": {
+    "image_name": "pycares",
+    "alt_image_name": "pycares",
+    "description": "<p>pycares is a Python interface for the c-ares library, providing asynchronous DNS resolution capabilities including A, AAAA, CNAME, MX, NS, PTR, SOA, SRV, and TXT record queries.</p>",
+    "site_name": "github.com",
+    "link_to_site": "https://github.com/saghul/pycares",
+    "site_name_license": "MIT",
+    "link_to_license": "https://github.com/saghul/pycares/blob/master/LICENSE",
+    "usage_notes": "<p>Usage information is available on <a href=\"https://github.com/saghul/pycares\">github.com</a>.</p>",
+    "tags": "utility",
+    "versions": {
+      "5.0.1": {
+        "dist": [
+          {
+            "py_version": "cp312",
+            "sha256": "ee5fada708de9cc568629fde885b3068f10993c837639ec3827dedb69ea32036"
+          },
+          {
+            "py_version": "cp313",
+            "sha256": "317cfe63e4abb70a427731068ed9858cc90272668a85b1e15c43c85cb2341a29"
+          },
+          {
+            "py_version": "cp314",
+            "sha256": "39a029d560a0b8ba7e3619d29d81acb77487a6e399619b184edd259c85c91806"
           }
         ]
       }
@@ -524,11 +653,11 @@
     "usage_notes": "<p>Usage information is available on <a href=\"https://github.com/andialbrecht/sqlparse\">github.com</a>.</p>",
     "tags": "utility database",
     "versions": {
-      "0.5.3": {
+      "0.6.0": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "396ca8435357a7ab813637c816a73e5e9fb5c20c7f1df5ff69426a755d18235c"
+            "sha256": "8ddf3cc33cc74fa8851ca32ac95324350f3a7e11ed13086a9a416b6029e64cbf"
           }
         ]
       }
@@ -587,19 +716,19 @@
     "usage_notes": "<p>A <a href=\"https://gnome.pages.gitlab.gnome.org/libxml2/devhelp/\">reference manual</a>, <a href=\"https://gnome.pages.gitlab.gnome.org/libxml2/tutorial/\">tutorial</a>, and <a href=\"https://gnome.pages.gitlab.gnome.org/libxml2/examples/\">a set of examples</a> are all available.</p>",
     "tags": "languages",
     "versions": {
-      "2.15.3": {
+      "2.15.4": {
         "dist": [
           {
             "py_version": "cp312",
-            "sha256": "87ddb7ab440ec7285809d2fb3f7750be626f333f10fd5a5d98c1b50d22063ed5"
+            "sha256": "9d3a117c04de39121ff03eb1c4147c6826c709f3628ec7b5ed0fcf7fed4183bd"
           },
           {
             "py_version": "cp313",
-            "sha256": "87ed97939d80d706d12b1196d047d7b76dfdfbaebc66a11fc025c95d0aef982f"
+            "sha256": "6fe6ac2f6fd58b6f55607a761091b7404a046cac379a06073f8ec367cae0e0a6"
           },
           {
             "py_version": "cp314",
-            "sha256": "8105c44fc939f2b2129b635448f413f1cbd25120faf6382e155eea7a723447be"
+            "sha256": "e4b5213ee1a4eb44ac8d5e104c3f1a426dfb6459a8ac48a1d66154132273ef10"
           }
         ]
       }
@@ -637,11 +766,11 @@
     "usage_notes": "<p>Usage information is available on <a href=\"https://github.com/sktime/sktime\">github.com</a>.</p>",
     "tags": "machine_learning",
     "versions": {
-      "0.40.1": {
+      "1.1.0": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "843f72c0f89c85e2365e6486ef5135c3e6be0c70332c541d015d0039c27a491e"
+            "sha256": "d5889b9c4779746fa27fa872f8173b32463e553a5a4a55af7475fdcccbe0b28f"
           }
         ]
       }
@@ -894,6 +1023,35 @@
       }
     }
   },
+  "pydantic-core": {
+    "image_name": "pydantic-core",
+    "alt_image_name": "pydantic-core",
+    "description": "<p>pydantic-core is the Rust-based validation and serialization core of Pydantic v2, providing high-performance type checking and data parsing that underpins the pydantic library.</p>",
+    "site_name": "github.com",
+    "link_to_site": "https://github.com/pydantic/pydantic",
+    "site_name_license": "MIT",
+    "link_to_license": "https://github.com/pydantic/pydantic/blob/main/pydantic-core/LICENSE",
+    "usage_notes": "<p>Usage information is available on <a href=\"https://github.com/pydantic/pydantic\">github.com</a>.</p>",
+    "tags": "programming_tools",
+    "versions": {
+      "2.46.4": {
+        "dist": [
+          {
+            "py_version": "cp312",
+            "sha256": "ee61ec49a4855b0e4e72fb01b2158a249e11001b04d807e010f209e822e6a53b"
+          },
+          {
+            "py_version": "cp313",
+            "sha256": "f6d1ba40546cee52b1283234f50f50b231b23ccac718b798fed4b193ccd7461a"
+          },
+          {
+            "py_version": "cp314",
+            "sha256": "5c903b0e240bb957f3926378053b58aa733f9aeb083fbf2c18718e8a5eef6d3f"
+          }
+        ]
+      }
+    }
+  },
   "markdown-editor": {
     "image_name": "markdown-editor",
     "alt_image_name": "markdown-editor",
@@ -1039,11 +1197,11 @@
     "usage_notes": "<p>Usage information is available on <a href=\"https://dash.plotly.com/\">dash.plotly.com</a>.</p>",
     "tags": "web",
     "versions": {
-      "4.1.0.post0": {
+      "4.4.1": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "f3eeb685bd63c70a8d260b8cc9b0867ec6204c14454698ecdd3f0ec35c879383"
+            "sha256": "a67a8ba034d084f2af112accede52597612b1032f1286ad02d1070ec4b7d11c1"
           }
         ]
       }
@@ -1102,11 +1260,11 @@
     "usage_notes": "<p>Documentation can be found on <a href=\"https://typing-extensions.readthedocs.io/en/latest/\">readthedocs.io</a>.</p>",
     "tags": "programming_tools",
     "versions": {
-      "4.15.0": {
+      "4.16.0": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "f8a9b081763b3b71eff9219503cc3e1725de561f97b4af3b12aa6d99b235d33a"
+            "sha256": "e7d4c3cfe56d19e6b21c0343db6be170323fdb30d6b96c903c1b1e885221dd2e"
           }
         ]
       }
@@ -1387,11 +1545,11 @@
     "usage_notes": "<p>More information is available on <a href=\"https://anyio.readthedocs.io/en/stable/\">readthedocs.io</a>.</p>",
     "tags": "web",
     "versions": {
-      "4.6.0": {
+      "4.15.1": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "514f049af88774c06ab7059bd0ce3746ef218bceeb42a20b064187628df851b0"
+            "sha256": "b2db2b5463b23e94aa7945e72978d6d896dead3c7cbc8754a4ada9d08b1f9db6"
           }
         ]
       }
@@ -1408,11 +1566,11 @@
     "usage_notes": "<p>More information is available on <a href=\"https://jupyterlab-server.readthedocs.io/en/stable/api/index.html\">readthedocs.io</a>.</p>",
     "tags": "utility web",
     "versions": {
-      "2.19.0": {
+      "2.28.1": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "0c8db5141b2b23dd403e277ee556ec6c9dd8a4da5a3376493c2c488cd5212cd1"
+            "sha256": "ea92550f6f9bbf4faab4a2fe067360bfe2197bd96a74e76df0cc01d8912595e0"
           }
         ]
       }
@@ -1429,11 +1587,11 @@
     "usage_notes": "<p>Detailed usage notes are available <a href=\"https://github.com/ibm-z-oss-oda/python_ai_toolkit_zos/blob/main/docs/usage_notes/jupyterhub_usage_notes.md\">here</a>.</p>",
     "tags": "utility web",
     "versions": {
-      "4.1.6.post0": {
+      "5.5.2": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "cde6fad227065034ac73414cd1db0ff5c5dbfcc7e1f06b8601f57b50da33392d"
+            "sha256": "df6f2a72e12324f4f5cf80f6c0f04a3162fb1a45741f73e703a67ba3b441dd56"
           }
         ]
       }
@@ -1492,11 +1650,11 @@
     "usage_notes": "<p>The jsonpickle manual is available on <a href=\"https://jsonpickle.github.io/\">github.io</a>.</p>",
     "tags": "utility",
     "versions": {
-      "4.1.1": {
+      "4.1.2": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "9c893754c4c94dd8ee16da5ed9a1a129db354b3d6f3445c262a526436fb0ae9e"
+            "sha256": "d697b1f5814078bc156a2fe0dcbeb124d52680d86f0fb47046665ae9c72f2654"
           }
         ]
       }
@@ -1555,6 +1713,27 @@
           {
             "py_version": "cp314",
             "sha256": "d4bfe1b794dd7dd10921373190c152420dbc806124f23f99d13c240558a477bf"
+          }
+        ]
+      }
+    }
+  },
+  "janus": {
+    "image_name": "janus",
+    "alt_image_name": "janus",
+    "description": "<p>janus provides a mixed sync-async queue for asyncio, allowing thread-safe communication between synchronous (threaded) and asynchronous (asyncio) code via a shared queue with both sync and async interfaces.</p>",
+    "site_name": "github.com",
+    "link_to_site": "https://github.com/aio-libs/janus",
+    "site_name_license": "Apache-2.0",
+    "link_to_license": "https://github.com/aio-libs/janus/blob/master/LICENSE",
+    "usage_notes": "<p>Usage information is available on <a href=\"https://github.com/aio-libs/janus\">github.com</a>.</p>",
+    "tags": "programming_tools",
+    "versions": {
+      "2.0.0": {
+        "dist": [
+          {
+            "py_version": "py3",
+            "sha256": "cfa938b0a519269d340cadba85509f9355cc3d0d82fd70d3463fb0be25a573f1"
           }
         ]
       }
@@ -1710,6 +1889,35 @@
       }
     }
   },
+  "yarl": {
+    "image_name": "yarl",
+    "alt_image_name": "yarl",
+    "description": "<p>yarl is a Python library for URL parsing and manipulation, providing an immutable URL class with properties for each URL component and support for URL building, encoding, and decoding.</p>",
+    "site_name": "github.com",
+    "link_to_site": "https://github.com/aio-libs/yarl",
+    "site_name_license": "Apache-2.0",
+    "link_to_license": "https://github.com/aio-libs/yarl/blob/master/LICENSE",
+    "usage_notes": "<p>Full documentation is available on <a href=\"https://yarl.aio-libs.org/en/latest/\">yarl.aio-libs.org</a>.</p>",
+    "tags": "web",
+    "versions": {
+      "1.25.1": {
+        "dist": [
+          {
+            "py_version": "cp312",
+            "sha256": "b6e7d35eb6012ef52f6ac0b36f884cdcfaf8de778a799c3bf5f1dad663f2f446"
+          },
+          {
+            "py_version": "cp313",
+            "sha256": "4881555fa962297ca2812b4db9fdcc4863c179ba88c202c6974298bea50b2218"
+          },
+          {
+            "py_version": "cp314",
+            "sha256": "5b9f6cc5ee5a8f20d81385aadc85b32815be7899cce4c79c647a158203add0b9"
+          }
+        ]
+      }
+    }
+  },
   "blinker": {
     "image_name": "blinker",
     "alt_image_name": "blinker",
@@ -1747,6 +1955,35 @@
           {
             "py_version": "py3",
             "sha256": "e0a55adb4d86fa337ea93cf29c79a27b063945a4f8d5ca16122cd0fa9fbc5222"
+          }
+        ]
+      }
+    }
+  },
+  "multidict": {
+    "image_name": "multidict",
+    "alt_image_name": "multidict",
+    "description": "<p>multidict is a Python library providing dictionary-like data structures that support multiple values per key, used extensively in aiohttp for handling HTTP headers and query strings.</p>",
+    "site_name": "github.com",
+    "link_to_site": "https://github.com/aio-libs/multidict",
+    "site_name_license": "Apache-2.0",
+    "link_to_license": "https://github.com/aio-libs/multidict/blob/master/LICENSE",
+    "usage_notes": "<p>Full documentation is available on <a href=\"https://multidict.readthedocs.io/en/stable/\">readthedocs.io</a>.</p>",
+    "tags": "utility",
+    "versions": {
+      "6.9.1": {
+        "dist": [
+          {
+            "py_version": "cp312",
+            "sha256": "20034eb5cf416c76754bad490fe16ae084f76f07e2480e90fde220aefdf4612c"
+          },
+          {
+            "py_version": "cp313",
+            "sha256": "cf65971ee5997f59804556616947ac3e188c4e2f8328d935d0e062ffa457c982"
+          },
+          {
+            "py_version": "cp314",
+            "sha256": "b8669daf9ca56a895d75892b933b6d324d7c777f98bba00af535eb9f4025c9d8"
           }
         ]
       }
@@ -1805,11 +2042,32 @@
     "usage_notes": "<p>This package is included in IPython and can be used in a Jupyter Notebook:</p>\n\n<pre><code>\n%matplotlib inline<br>\n<br>\nimport matplotlib.pyplot as plt<br>\nimport numpy as np<br>\n<br>\nx = np.linspace(0, 3*np.pi, 500)<br>\nplt.plot(x, np.sin(x**2))<br>\nplt.title('A simple chirp');<br>\n</code></pre>\n\n<p>Please refer to <a href=\"https://github.com/ipython/matplotlib-inline/blob/master/README.md\">github</a> for more information.</p>",
     "tags": "math graphics utility",
     "versions": {
-      "0.1.6": {
+      "0.1.6.post0": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "f1f41aab5328aa5aaea9b16d083b128102f8712542f819fe7e6a420ff581b311"
+            "sha256": "47d1a21e82d3fdd927f4a308543dd9682beafccaca2d90776f43718ad573d926"
+          }
+        ]
+      }
+    }
+  },
+  "aiosignal": {
+    "image_name": "aiosignal",
+    "alt_image_name": "aiosignal",
+    "description": "<p>aiosignal is a list of registered asynchronous callbacks, providing a signal/event mechanism for asyncio-based applications. It is used internally by aiohttp.</p>",
+    "site_name": "github.com",
+    "link_to_site": "https://github.com/aio-libs/aiosignal",
+    "site_name_license": "Apache-2.0",
+    "link_to_license": "https://github.com/aio-libs/aiosignal/blob/master/LICENSE",
+    "usage_notes": "<p>Usage information is available on <a href=\"https://github.com/aio-libs/aiosignal\">github.com</a>.</p>",
+    "tags": "utility",
+    "versions": {
+      "1.4.0": {
+        "dist": [
+          {
+            "py_version": "py3",
+            "sha256": "1c1885e8ff7d09cf4fc8f9d4817be63de79f5e34749807f39c19e611418c1011"
           }
         ]
       }
@@ -2002,11 +2260,11 @@
     "usage_notes": "<p>Usage information is available on <a href=\"https://docs.gunicorn.org/en/stable/\">gunicorn.org</a>.</p>",
     "tags": "web",
     "versions": {
-      "23.0.0.post3": {
+      "26.2.0": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "649f04e4dc2f38cf181ee5119816341db172edc448d279ecfc0d8ede18d06f6e"
+            "sha256": "c9a3f2f296093c1fa1a491513d39aea1e5856bae1e7c57addeb6a2ea827fc361"
           }
         ]
       }
@@ -2065,11 +2323,11 @@
     "usage_notes": "\n<p>A core requirement of dealing with packages is the ability to work with versions. <a href=\"https://www.python.org/dev/peps/pep-0440/\">PEP 440</a> defines the standard version scheme for Python packages which has been implemented by this module.</p>\n\n<pre><code>\nfrom packaging.version import Version, parse<br>\nv1 = parse(\"1.0a5\")<br>\nv2 = Version(\"1.0\")<br>\nv1<br>\n   &lt;Version('1.0a5')&gt;<br>\nv2<br>\n   &lt;Version('1.0')&gt;<br>\nv1 &lt; v2<br>\n   True<br>\nv1.epoch<br>\n   0<br>\nv1.release<br>\n   (1, 0)<br>\nv1.pre<br>\n   ('a', 5)<br>\nv1.is_prerelease<br>\n   True<br>\nv2.is_prerelease<br>\n   False<br>\nVersion(\"french toast\")<br>\n   Traceback (most recent call last):<br>\n       ...<br>\n   InvalidVersion: Invalid version: 'french toast'<br>\nVersion(\"1.0\").post<br>\nVersion(\"1.0\").is_postrelease<br>\n   False<br>\nVersion(\"1.0.post0\").post<br>\n   0<br>\nVersion(\"1.0.post0\").is_postrelease<br>\n   True<br>\n</code></pre>\n\n<p>Please refer to <a href=\"https://packaging.pypa.io/en/latest/version.html\">packaging.pypa.io</a> for further documentation.</p>",
     "tags": "programming_tools",
     "versions": {
-      "25.0": {
+      "26.3": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "dd07f76949ec3a2adc24e913524852e6993c0f88fe4c49f6dde59317158dd4e5"
+            "sha256": "d48480ee532599e7111b7ec95a840149c2e4a540ec09a59524e310ae048649c7"
           }
         ]
       }
@@ -2154,6 +2412,27 @@
           {
             "py_version": "py3",
             "sha256": "fc3af245f756b8cec94ed1c56feecd3a3744dc150c146fd4c39f95f09d98e21b"
+          }
+        ]
+      }
+    }
+  },
+  "referencing": {
+    "image_name": "referencing",
+    "alt_image_name": "referencing",
+    "description": "<p>referencing is a Python library implementing JSON reference resolution and URI-based schema retrieval, used by jsonschema and jsonschema-specifications for resolving $ref and $schema directives.</p>",
+    "site_name": "github.com",
+    "link_to_site": "https://github.com/python-jsonschema/referencing",
+    "site_name_license": "MIT",
+    "link_to_license": "https://github.com/python-jsonschema/referencing/blob/main/COPYING",
+    "usage_notes": "<p>Full documentation is available on <a href=\"https://referencing.readthedocs.io/en/stable/\">readthedocs.io</a>.</p>",
+    "tags": "utility",
+    "versions": {
+      "0.37.0": {
+        "dist": [
+          {
+            "py_version": "py3",
+            "sha256": "8241685667f4ce87a132238a493f924e9dec7fb5d2fb132c0e5aef9a54abe8a4"
           }
         ]
       }
@@ -2348,6 +2627,27 @@
       }
     }
   },
+  "lark": {
+    "image_name": "lark",
+    "alt_image_name": "lark",
+    "description": "<p>Lark is a modern parsing library for Python, implementing Earley and LALR(1) parsing algorithms, supporting arbitrary context-free grammars and generating parse trees automatically.</p>",
+    "site_name": "github.com",
+    "link_to_site": "https://github.com/lark-parser/lark",
+    "site_name_license": "MIT",
+    "link_to_license": "https://github.com/lark-parser/lark/blob/master/LICENSE",
+    "usage_notes": "<p>Full documentation is available on <a href=\"https://lark-parser.readthedocs.io/en/latest/\">readthedocs.io</a>.</p>",
+    "tags": "programming_tools",
+    "versions": {
+      "1.3.1": {
+        "dist": [
+          {
+            "py_version": "py3",
+            "sha256": "eaa92c03f23de9fa5af537481555c3f2b72d911bfe53cfdb210b3b99c9f1530c"
+          }
+        ]
+      }
+    }
+  },
   "partd": {
     "image_name": "partd",
     "alt_image_name": "partd",
@@ -2480,11 +2780,11 @@
     "usage_notes": "<p>Documentation can be found on <a href=\"https://github.com/ibm-z-oss-oda/tifffile\">github.com</a>.</p>",
     "tags": "graphics",
     "versions": {
-      "2025.3.30": {
+      "2026.8.23": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "06a02acec3c9cb782b329af98b496688c33cb0805b92077c94fe8eee2f342290"
+            "sha256": "4950901032b1734e09715ef18a21266d252f21664c51f40de8d21fce7be495eb"
           }
         ]
       }
@@ -2585,11 +2885,11 @@
     "usage_notes": "<p>More information is available on <a href=\"https://jupyterlab.readthedocs.io/en/stable/\">readthedocs.io</a>.</p>",
     "tags": "utility web",
     "versions": {
-      "4.1.2.post3": {
+      "4.6.4": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "47c3e108b048b8abd33167777af6dc46b1e277c1679787a2c105975f8b28c0bc"
+            "sha256": "313ff9437a11c1874f371d62baf20b2c6c3b7ac43011737f7070476c76eb2c42"
           }
         ]
       }
@@ -2658,6 +2958,27 @@
       }
     }
   },
+  "typing-inspection": {
+    "image_name": "typing-inspection",
+    "alt_image_name": "typing-inspection",
+    "description": "<p>typing-inspection provides utilities for inspecting Python typing constructs at runtime, such as checking whether a type is a generic alias, union, or annotated type, used by Pydantic and similar libraries.</p>",
+    "site_name": "github.com",
+    "link_to_site": "https://github.com/pydantic/typing-inspection",
+    "site_name_license": "MIT",
+    "link_to_license": "https://github.com/pydantic/typing-inspection/blob/main/LICENSE",
+    "usage_notes": "<p>Usage information is available on <a href=\"https://github.com/pydantic/typing-inspection\">github.com</a>.</p>",
+    "tags": "programming_tools",
+    "versions": {
+      "0.4.4": {
+        "dist": [
+          {
+            "py_version": "py3",
+            "sha256": "452ce5978443cbcd0852c5d19a9b3dc0133ac79aee962e5e7e30eb253de5c58e"
+          }
+        ]
+      }
+    }
+  },
   "treelib": {
     "image_name": "treelib",
     "alt_image_name": "treelib",
@@ -2711,11 +3032,11 @@
     "usage_notes": "<p>Usage information is available on <a href=\"https://flask-cors.readthedocs.io/en/latest/\">readthedocs.io</a>.</p>",
     "tags": "web",
     "versions": {
-      "6.0.1": {
+      "6.0.5": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "109c12a48519bc6d0d85e2fca434287798a4bfa38d59507c214eec1baa93da66"
+            "sha256": "0e135f028c0bff135017264794b6e8466f416c77721d17cfce9ec0df58e9edb4"
           }
         ]
       }
@@ -2855,6 +3176,27 @@
       }
     }
   },
+  "jsonschema-specifications": {
+    "image_name": "jsonschema-specifications",
+    "alt_image_name": "jsonschema-specifications",
+    "description": "<p>jsonschema-specifications contains the JSON Schema meta-schemas and vocabularies packaged for use with the jsonschema library, providing the official dialect specifications for JSON Schema drafts.</p>",
+    "site_name": "github.com",
+    "link_to_site": "https://github.com/python-jsonschema/jsonschema-specifications",
+    "site_name_license": "MIT",
+    "link_to_license": "https://github.com/python-jsonschema/jsonschema-specifications/blob/main/COPYING",
+    "usage_notes": "<p>Usage information is available on <a href=\"https://github.com/python-jsonschema/jsonschema-specifications\">github.com</a>.</p>",
+    "tags": "utility",
+    "versions": {
+      "2025.9.1": {
+        "dist": [
+          {
+            "py_version": "py3",
+            "sha256": "9e0d565874d902249244282b71db56fdba5bd00f298852c6af495da6ef6c9ac5"
+          }
+        ]
+      }
+    }
+  },
   "jupyterlab-widgets": {
     "image_name": "jupyterlab-widgets",
     "alt_image_name": "jupyterlab-widgets",
@@ -2866,11 +3208,11 @@
     "usage_notes": "<p>Github hosts a <a href=\"https://github.com/jupyter-widgets/ipywidgets/blob/master/docs/source/examples/Index.ipynb\"> demonstration notebook</a> alongside other documentation for this image.</p>",
     "tags": "web graphics programming_tools",
     "versions": {
-      "3.0.16.post2": {
+      "3.0.17": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "2fef36febc6cc8ba515ef10bc6f68e0676f9c8191ccf6c13f3838167055a1aa4"
+            "sha256": "7c9baf2c3967788697d29aaf706bbf7222d3ab43d9c4ea8669dc097176dc93c3"
           }
         ]
       }
@@ -3004,11 +3346,11 @@
     "usage_notes": "<p>For advanced tool documentation, refer to <a href=\"https://plotly.com/python/\">plotly.com</a>.</p>",
     "tags": "graphics",
     "versions": {
-      "6.6.0": {
+      "7.1.0": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "6f74169ae0ac0de5500653292d54c63a9024fe2085971dbf39f7019c8f320f89"
+            "sha256": "accda9d4347e42ca15cde767ee3bdacf42ec92318f29e8849e0c591268cd6302"
           }
         ]
       }
@@ -3025,19 +3367,19 @@
     "usage_notes": "<p>For advanced tool documentation, refer to <a href=\"https://github.com/ibmdb/python-ibmdb\">github.com</a>.</p>",
     "tags": "utility",
     "versions": {
-      "3.2.8": {
+      "3.2.9": {
         "dist": [
           {
             "py_version": "cp312",
-            "sha256": "a8242390d6f7e03c42bd7f2a4d964e73a07828334ebe7c6ee018977e8d8e21cf"
+            "sha256": "539246dced178cfe0ce0ce988d4901fffd4df47a1575324b6a79a2f5c0940fe2"
           },
           {
             "py_version": "cp313",
-            "sha256": "3e89d31f84b48d76566ddce889c867e1f59176426503f701bd8292f69d6d05e3"
+            "sha256": "03ad79bdd0eddc615154174349d4aa30e5091e51e7779deaf05618b2663dc008"
           },
           {
             "py_version": "cp314",
-            "sha256": "feaf85f5e67dde2d512e7bf72c65436c96a91ed5c7f9350e275b2bb41b6544d0"
+            "sha256": "7600db513b8495da589fa5df513e3aafb737245b02ca471d0cedc8e5db6403db"
           }
         ]
       }
@@ -3322,11 +3664,11 @@
     "usage_notes": "<p>Usage information is available on <a href=\"https://github.com/sqlalchemy/alembic\">github.com</a>.</p>",
     "tags": "utility",
     "versions": {
-      "1.18.1": {
+      "1.19.2": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "6532c5c586ad5fc33625fba65959249c5a9d36b29d5c5c8f859008f99b2fbfea"
+            "sha256": "0a14e0f9cff4f957cf0d46c2eaea64ce712ec06d4663bbe109e2f8000e15c1ec"
           }
         ]
       }
@@ -3414,11 +3756,32 @@
     "usage_notes": "<p><a href=\"https://github.com/jupyterlab/jupyterlab_pygments/blob/main/README.md\">Github</a> hosts a screencast showing how to make use of this package along with other notes.</p>",
     "tags": "web programming_tools",
     "versions": {
-      "0.3.0.post1": {
+      "0.3.0.post2": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "a14dee70c19d04e2fa43be0d7b765851b61928dd284c7b70ffdda65dde222744"
+            "sha256": "2bd171ac49220fe5adc91ec194e3a3332bb65c9a1c0bd5e56c4798d9f659ee2b"
+          }
+        ]
+      }
+    }
+  },
+  "category-encoders": {
+    "image_name": "category-encoders",
+    "alt_image_name": "category-encoders",
+    "description": "<p>category-encoders is a library of scikit-learn-compatible categorical variable encoders, including ordinal, one-hot, binary, target, leave-one-out, and weight-of-evidence encoders.</p>",
+    "site_name": "github.com",
+    "link_to_site": "https://github.com/scikit-learn-contrib/category_encoders",
+    "site_name_license": "BSD-3-Clause",
+    "link_to_license": "https://github.com/scikit-learn-contrib/category_encoders/blob/master/LICENSE.md",
+    "usage_notes": "<p>Full documentation is available on <a href=\"https://contrib.scikit-learn.org/category_encoders/\">contrib.scikit-learn.org</a>.</p>",
+    "tags": "machine_learning",
+    "versions": {
+      "2.11.1": {
+        "dist": [
+          {
+            "py_version": "py3",
+            "sha256": "4f1810e14f470547a5be0c6e46a8ed87cd7222183a24a905892dc432d766d71d"
           }
         ]
       }
@@ -3514,19 +3877,19 @@
     "usage_notes": "<p>Usage information is available on <a href=\"https://github.com/mongodb/mongo-python-driver\">github.com</a>.</p>",
     "tags": "web",
     "versions": {
-      "4.16.0": {
+      "4.18.2": {
         "dist": [
           {
             "py_version": "cp312",
-            "sha256": "94558446c5e064e22d80f317c50320718ed97d541b0e460a20122f199dc7c294"
+            "sha256": "d3a6e9ae62474c2f049e28b58c961e31fc5ef76ccbcb7aee1699360e11417bc2"
           },
           {
             "py_version": "cp313",
-            "sha256": "3a45e10438ccbf4bce79af244de1d8f55c22444273a410230fa175bb4a462637"
+            "sha256": "929f498e231225f0cfa62b9060cc034ff29a77a5cb758bcee74fc465944bad99"
           },
           {
             "py_version": "cp314",
-            "sha256": "b8ba33e77ad27da43d4b89744bded05dc23972140a155dc97e2f42ba78b9b2a5"
+            "sha256": "9fa6d277e20ca74c8417fbe0160e70381ee7789a92455e8d496162b3cc54cf12"
           }
         ]
       }
@@ -3585,11 +3948,11 @@
     "usage_notes": "<p>More information is available on <a href=\"https://jupyter-events.readthedocs.io/en/latest/\">readthedocs.io</a>.</p>",
     "tags": "utility",
     "versions": {
-      "0.6.3": {
+      "0.12.1": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "29f5de1e45f1617fd3aa7b532cb664e74d17ed04ee0dae9e6d5656343ba2642a"
+            "sha256": "7d1ecef273f3bb4dd65722fd88bf777ca10c7e74670886bbf83ed45e8a3e77e8"
           }
         ]
       }
@@ -3606,11 +3969,11 @@
     "usage_notes": "<pre><code>\n&gt;&gt;&gt; from send2trash import send2trash<br>\n&gt;&gt;&gt; send2trash('some_file')<br>\n&gt;&gt;&gt; send2trash(['some_file1', 'some_file2'])<br>\n</code></pre>\n\n<p>On Freedesktop platforms (Linux, BSD, etc.), you may not be able to efficiently trash some files. In these cases, an exception <code>send2trash.TrashPermissionError</code> is raised, so that the application can handle this case. This inherits from <code>PermissionError</code> (<code>OSError</code> on Python 2). Specifically, this affects files on a different device to the user\u2019s home directory, where the root of the device does not have a <code>.Trash</code> directory, and we don\u2019t have permission to create a <code>.Trash-$UID</code> directory.</p>\n\n<p>For any other problem, <code>OSError</code> is raised.</p>",
     "tags": "utility",
     "versions": {
-      "1.8.3": {
+      "2.1.0": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "934d8af15906f3857b23c77c0e6553077c8dbab46e20c06ffa66c1055be0240f"
+            "sha256": "0dc703ed4a5ded5998cb9829d29d3aa93f34071fac9bc3a3a48988484fdb0504"
           }
         ]
       }
@@ -3824,11 +4187,11 @@
     "usage_notes": "<a href=\"https://ipywidgets.readthedocs.io/en/stable/\">Click here for further documentation on this package.</a>",
     "tags": "programming_tools web",
     "versions": {
-      "4.0.15.post2": {
+      "4.0.16": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "463d51999fd9d364a5315bbf00a4f5bcd970cf9ac828e3d95d44eab34600fb27"
+            "sha256": "2c80bb7d37e5f8e18f804beb3e6107be94a0834a61f42e2047b0f3dcbc0d00e2"
           }
         ]
       }
@@ -3845,11 +4208,11 @@
     "usage_notes": "<p>More information is available on <a href=\"https://jupyter-server.readthedocs.io/en/latest/?badge=latest\">readthedocs.io</a>.</p>",
     "tags": "web",
     "versions": {
-      "2.5.0.post1": {
+      "2.21.1": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "9f3e3546bb1e28346c44b3f3189253b71c34df695ac5eb6750eca864095186ca"
+            "sha256": "3ab102f46d35f5b66d7f2b2edf027ec0b49b7d0294beaaff2ce453255e4d3728"
           }
         ]
       }
@@ -4000,6 +4363,27 @@
           {
             "py_version": "cp314",
             "sha256": "4724f024d68ae18580c255d3250d0ff0f418f1fca231e000e0945f94ede885e2"
+          }
+        ]
+      }
+    }
+  },
+  "annotated-types": {
+    "image_name": "annotated-types",
+    "alt_image_name": "annotated-types",
+    "description": "<p>annotated-types provides reusable constraint types for use with Python's typing.Annotated, allowing libraries like Pydantic to attach metadata such as Gt, Lt, Len, and Regex constraints to type annotations.</p>",
+    "site_name": "github.com",
+    "link_to_site": "https://github.com/annotated-types/annotated-types",
+    "site_name_license": "MIT",
+    "link_to_license": "https://github.com/annotated-types/annotated-types/blob/main/LICENSE",
+    "usage_notes": "<p>Usage information is available on <a href=\"https://github.com/annotated-types/annotated-types\">github.com</a>.</p>",
+    "tags": "programming_tools",
+    "versions": {
+      "0.8.0": {
+        "dist": [
+          {
+            "py_version": "py3",
+            "sha256": "f66b7575e80c7bbc0cd3ff56cb3deb036501d62be2a1d7dda4a505c4afa2aeec"
           }
         ]
       }
@@ -4244,6 +4628,27 @@
       }
     }
   },
+  "nest-asyncio2": {
+    "image_name": "nest-asyncio2",
+    "alt_image_name": "nest-asyncio2",
+    "description": "<p>nest-asyncio2 is a fork of nest-asyncio that patches asyncio to allow nested use of asyncio.run and loop.run_until_complete, enabling event loop reuse in environments where the loop is already running such as Jupyter notebooks.</p>",
+    "site_name": "github.com",
+    "link_to_site": "https://github.com/erdewit/nest_asyncio",
+    "site_name_license": "BSD-2-Clause",
+    "link_to_license": "https://github.com/erdewit/nest_asyncio/blob/master/LICENSE",
+    "usage_notes": "<p>Usage information is available on <a href=\"https://github.com/erdewit/nest_asyncio\">github.com</a>.</p>",
+    "tags": "programming_tools",
+    "versions": {
+      "1.7.4": {
+        "dist": [
+          {
+            "py_version": "py3",
+            "sha256": "58fe4d16d0277cb7f7015e2c32b539a45c175833c70359defd13490c2ab67b1f"
+          }
+        ]
+      }
+    }
+  },
   "onetimepass": {
     "image_name": "onetimepass",
     "alt_image_name": "onetimepass",
@@ -4255,11 +4660,11 @@
     "usage_notes": "<p>More information is available on <a href=\"https://github.com/tadeck/onetimepass\">github.com</a>.</p>",
     "tags": "security",
     "versions": {
-      "1.0.1": {
+      "1.0.1.post0": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "e20859247888972752f317639aeaae52c784fa25f9ae5774ba6647de7943596e"
+            "sha256": "fa6da994db2b256b959b85298a6ee823018646c39ea5740459971367221384be"
           }
         ]
       }
@@ -4512,6 +4917,27 @@
       }
     }
   },
+  "aiohappyeyeballs": {
+    "image_name": "aiohappyeyeballs",
+    "alt_image_name": "aiohappyeyeballs",
+    "description": "<p>aiohappyeyeballs provides an implementation of the Happy Eyeballs algorithm (RFC 6555) for asyncio, enabling faster and more reliable dual-stack IPv4/IPv6 connections.</p>",
+    "site_name": "github.com",
+    "link_to_site": "https://github.com/aio-libs/aiohappyeyeballs",
+    "site_name_license": "PSF-2.0",
+    "link_to_license": "https://github.com/aio-libs/aiohappyeyeballs/blob/main/LICENSE",
+    "usage_notes": "<p>Usage information is available on <a href=\"https://github.com/aio-libs/aiohappyeyeballs\">github.com</a>.</p>",
+    "tags": "utility",
+    "versions": {
+      "2.7.1": {
+        "dist": [
+          {
+            "py_version": "py3",
+            "sha256": "0d2d847197873b403c2c9a607e132849d063612bb04dad06661885dd86e104e5"
+          }
+        ]
+      }
+    }
+  },
   "lightgbm": {
     "image_name": "lightgbm",
     "alt_image_name": "lightgbm",
@@ -4544,11 +4970,11 @@
     "usage_notes": "<p>Reference the <a href=\"https://docs.dask.org/en/stable/10-minutes-to-dask.html\">10 minutes to dask</a> tutorial from <a href=\"https://dask.org/\">dask.org</a> for a guide to getting started and further documentation.</p>",
     "tags": "programming_tools math machine_learning",
     "versions": {
-      "2024.9.1.post0": {
+      "2026.7.1": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "198b6d6a85cffa14b54cf9c9822b4ff81d6a55aca1d92ef19185a0ef48567998"
+            "sha256": "2314ea6868d3ab2da39788c1f1a44776c4814d5ee863eb312ab79c24cb88c1c3"
           }
         ]
       }
@@ -4638,6 +5064,27 @@
       }
     }
   },
+  "expandvars": {
+    "image_name": "expandvars",
+    "alt_image_name": "expandvars",
+    "description": "<p>expandvars expands system environment variables in strings with support for default values and cross-platform behaviour, similar to shell variable expansion.</p>",
+    "site_name": "github.com",
+    "link_to_site": "https://github.com/sayanarijit/expandvars",
+    "site_name_license": "MIT",
+    "link_to_license": "https://github.com/sayanarijit/expandvars/blob/master/LICENSE",
+    "usage_notes": "<p>Usage information is available on <a href=\"https://github.com/sayanarijit/expandvars\">github.com</a>.</p>",
+    "tags": "utility",
+    "versions": {
+      "1.1.2": {
+        "dist": [
+          {
+            "py_version": "py3",
+            "sha256": "9f74c3f5ea390579ccbdbb11ebdd6446e1ac97fcde6431dd382c4af9a088a266"
+          }
+        ]
+      }
+    }
+  },
   "uwsgi": {
     "image_name": "uwsgi",
     "alt_image_name": "uwsgi",
@@ -4683,6 +5130,27 @@
           {
             "py_version": "py3",
             "sha256": "df8292453044237422b53478426529234724a052dcaca031234ff34510299b09"
+          }
+        ]
+      }
+    }
+  },
+  "jupyter-builder": {
+    "image_name": "jupyter-builder",
+    "alt_image_name": "jupyter-builder",
+    "description": "<p>jupyter-builder is a build backend helper for Jupyter packages, providing tools to build and package JupyterLab extensions and other Jupyter-related Python distributions.</p>",
+    "site_name": "github.com",
+    "link_to_site": "https://github.com/jupyterlab/jupyter-builder",
+    "site_name_license": "BSD-3-Clause",
+    "link_to_license": "https://github.com/jupyterlab/jupyter-builder/blob/main/LICENSE",
+    "usage_notes": "<p>Usage information is available on <a href=\"https://github.com/jupyterlab/jupyter-builder\">github.com</a>.</p>",
+    "tags": "programming_tools",
+    "versions": {
+      "1.2.2": {
+        "dist": [
+          {
+            "py_version": "py3",
+            "sha256": "9f52eca67e00439a13961117727258fa17c3314e1e28b717c91fa33227d50524"
           }
         ]
       }
@@ -4804,11 +5272,11 @@
     "usage_notes": "\n<p>To locally check whether your long descriptions will render on PyPI, first build your distributions, and then use the <a href=\"https://packaging.python.org/guides/making-a-pypi-friendly-readme#validating-restructuredtext-markup\">twine check</a> command.</p>\n\n<p>You can use <code>readme_renderer</code> on the command line to render an rST file as HTML like this:</p>\n\n<pre><code>\npython -m readme_renderer README.rst -o /tmp/README.html<br>\n</code></pre>\n",
     "tags": "languages utility",
     "versions": {
-      "37.3": {
+      "45.0": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "f67a16caedfa71eef48a31b39708637a6f4664c4394801a7b0d6432d13907343"
+            "sha256": "acdf0454e4468ea55af6e353f8a7199f534d1aed74654fe2db3d04504029a52b"
           }
         ]
       }
@@ -4888,11 +5356,11 @@
     "usage_notes": "<p>The package can be used like this - here's an example of the <code>validate</code> method.</p>\n\n<pre><code>\nfrom jsonschema import validate<br>\n<br>\n# A sample schema, like what we'd get from json.load()<br>\n<br>\nschema = {<br>\n<br>\n    \"type\" : \"object\",<br>\n<br>\n    \"properties\" : {<br>\n<br>\n        \"price\" : {\"type\" : \"number\"},<br>\n<br>\n        \"name\" : {\"type\" : \"string\"},<br>\n<br>\n    },<br>\n<br>\n}<br>\n<br>\n# If no exception is raised by validate(), the instance is valid.<br>\n<br>\nvalidate(instance={\"name\" : \"Eggs\", \"price\" : 34.99}, schema=schema)<br>\n<br>\nvalidate(<br>\n<br>\n    instance={\"name\" : \"Eggs\", \"price\" : \"Invalid\"}, schema=schema,<br>\n<br>\n)            <br>\n</code></pre>\n<br>\n<pre><code>\nTraceback (most recent call last):<br>\n    ...<br>\nValidationError: 'Invalid' is not of type 'number'<br>\n</code></pre>\n\n\n<p>Please access <a href=\"https://python-jsonschema.readthedocs.io/en/latest/\">readthedocs.io</a> for further usage instructions.</p>",
     "tags": "utility",
     "versions": {
-      "4.17.3.post1": {
+      "4.26.0": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "e183234539c83316475cf71ceab5b7b1ff64f57a4859ef0ce8da890eea2e2398"
+            "sha256": "0e6cbd18f9c83c2b79e694645f10d5a701b80d4b52af9db3d122a6c7e2a10375"
           }
         ]
       }
@@ -4909,11 +5377,11 @@
     "usage_notes": "<p>urllib3 is powerful and easy to use:</p>\n\n<pre><code>\n&gt;&gt;&gt; import urllib3<br>\n&gt;&gt;&gt; http = urllib3.PoolManager()<br>\n&gt;&gt;&gt; r = http.request('GET', 'http://httpbin.org/robots.txt')<br>\n&gt;&gt;&gt; r.status<br>\n200<br>\n&gt;&gt;&gt; r.data<br>\n'User-agent: *\\nDisallow: /deny\\n'<br>\n</code></pre>\n\n<p>Full docs are available on <a href=\"https://urllib3.readthedocs.io/en/stable/\">readthedocs.io</a>.</p>",
     "tags": "web utility",
     "versions": {
-      "2.7.0": {
+      "2.8.0": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "213f93e93ae96424781e04ac7f69a9d7eebbca69909608a776c1a9afe6bfe16f"
+            "sha256": "d0db842b7d1ff059e2cae420a0946bc64c29cfaac104d17b57e4cc2fbe58ed20"
           }
         ]
       }
@@ -5043,19 +5511,19 @@
     "usage_notes": "<p>Imagine a simple \u201chello world\u201d script in a file <code>hello.pyx</code>:</p>\n\n<pre><code>\ndef say_hello_to(name):<br>\n    print(\"Hello %s!\" % name)<br>\n</code></pre>\n\n<p>The following could be a corresponding <code>setup.py</code> script:</p>\n\n<pre><code>\nfrom setuptools import setup<br>\nfrom Cython.Build import cythonize<br>\n<br>\nsetup(<br>\n    name='Hello world app',<br>\n    ext_modules=cythonize(\"hello.pyx\"),<br>\n    zip_safe=False,<br>\n)<br>\n</code></pre>\n\n<p>To build, run <code>python setup.py build_ext --inplace</code>. Then simply start a Python session and do <code>from hello import say_hello_to</code> and use the imported function as you see fit.</p>\n\n<p>Full documentation can be found on <a href=\"https://cython.readthedocs.io/en/latest/\">readthedocs.io</a>.</p>",
     "tags": "programming_tools",
     "versions": {
-      "3.2.4": {
+      "3.3.0": {
         "dist": [
           {
-            "py_version": "cp313",
-            "sha256": "08580c862f85662d0a4355053c8f6ce838b3b2832c8e4d82c207c2f38dfab45e"
+            "py_version": "cp312",
+            "sha256": "d537aceb4c6e1aaf6d17336c7c538d1ad378d16adca1094b3a988e610bcb054a"
           },
           {
-            "py_version": "cp312",
-            "sha256": "458364ee3bc752b2f82d950f94f2fb0283b89bccd3ad6c1facb1faed160b9dc6"
+            "py_version": "cp313",
+            "sha256": "10667ff0b11a908e7a187b75ed241490e6260da58d192e646dc30001a136bb4b"
           },
           {
             "py_version": "cp314",
-            "sha256": "e6a07de36092fd738afe1f6b16b29f8dc952323cb11d471f68e8ceaffd8a3e17"
+            "sha256": "51a89be7fd48f1f9b67c69b16a93b40ffb98abf779f918e4c9dcadd01c2b932c"
           }
         ]
       }
@@ -5280,6 +5748,35 @@
       }
     }
   },
+  "aiohttp": {
+    "image_name": "aiohttp",
+    "alt_image_name": "aiohttp",
+    "description": "<p>aiohttp is an asynchronous HTTP client/server framework for asyncio, supporting both client-side and server-side web development with support for WebSockets and HTTP streaming.</p>",
+    "site_name": "docs.aiohttp.org",
+    "link_to_site": "https://docs.aiohttp.org/en/stable/",
+    "site_name_license": "Apache-2.0",
+    "link_to_license": "https://github.com/aio-libs/aiohttp/blob/master/LICENSE.txt",
+    "usage_notes": "<p>Full documentation is available on <a href=\"https://docs.aiohttp.org/en/stable/\">docs.aiohttp.org</a>.</p>",
+    "tags": "web",
+    "versions": {
+      "3.14.3": {
+        "dist": [
+          {
+            "py_version": "cp312",
+            "sha256": "66b5f96a6c62e3d63242fb80be9f6036a893c938a4c8b299cffb380b3c517ec8"
+          },
+          {
+            "py_version": "cp313",
+            "sha256": "b7b41b4aed8ae6ad42caa39e074d8f3e024da404a9e20f628ca5a38f7794b5ed"
+          },
+          {
+            "py_version": "cp314",
+            "sha256": "61160be3aed80e366c072f4806422b473add723bce67a4a02cf267a6ad3a1eee"
+          }
+        ]
+      }
+    }
+  },
   "jupyterhub-idle-culler": {
     "image_name": "jupyterhub-idle-culler",
     "alt_image_name": "jupyterhub-idle-culler",
@@ -5296,6 +5793,56 @@
           {
             "py_version": "py3",
             "sha256": "02dc2d76df24c56b9b34303f33f65bf4cf20f32f017fdac20af91c6e58a44921"
+          }
+        ]
+      }
+    }
+  },
+  "rfc3987-syntax": {
+    "image_name": "rfc3987-syntax",
+    "alt_image_name": "rfc3987-syntax",
+    "description": "<p>rfc3987-syntax provides IRI (Internationalized Resource Identifier) syntax checking conforming to RFC 3987, used for validating URIs and IRIs in JSON Schema and related tooling.</p>",
+    "site_name": "github.com",
+    "link_to_site": "https://github.com/willynilly/rfc3987-syntax",
+    "site_name_license": "MIT",
+    "link_to_license": "https://github.com/willynilly/rfc3987-syntax/blob/main/LICENSE",
+    "usage_notes": "<p>Usage information is available on <a href=\"https://github.com/willynilly/rfc3987-syntax\">github.com</a>.</p>",
+    "tags": "utility",
+    "versions": {
+      "1.1.0": {
+        "dist": [
+          {
+            "py_version": "py3",
+            "sha256": "652be8c617767a3f57091662f3bbe92484ac71b915ae10e3ebb01bd4841590e9"
+          }
+        ]
+      }
+    }
+  },
+  "frozenlist": {
+    "image_name": "frozenlist",
+    "alt_image_name": "frozenlist",
+    "description": "<p>frozenlist is a list-like data structure that can be made immutable by calling freeze(), used internally by aiohttp and aiosignal for safe sharing of callback lists.</p>",
+    "site_name": "github.com",
+    "link_to_site": "https://github.com/aio-libs/frozenlist",
+    "site_name_license": "Apache-2.0",
+    "link_to_license": "https://github.com/aio-libs/frozenlist/blob/master/LICENSE",
+    "usage_notes": "<p>Usage information is available on <a href=\"https://github.com/aio-libs/frozenlist\">github.com</a>.</p>",
+    "tags": "utility",
+    "versions": {
+      "1.8.0": {
+        "dist": [
+          {
+            "py_version": "cp312",
+            "sha256": "e2069ae6da8f487777b7724cb70b46f4c2411ae3208cf41b574fe30789745a5a"
+          },
+          {
+            "py_version": "cp313",
+            "sha256": "dfa9ac80fa1c326f2049fd1b3a98125271f20b140985bb4bf5030c10ee5f14f0"
+          },
+          {
+            "py_version": "cp314",
+            "sha256": "a857bf324db2d7f12ee6e0d2076edcac271e637c591333e4578ec8aa72c43a8d"
           }
         ]
       }
@@ -5534,11 +6081,11 @@
     "usage_notes": "<p>The following new parameters are added to support ports range specification to replace the original random ports for new kernels.</p>\n<ul>\n <li>c.ConnectionFileMixin.max_kernels</li>\n <li>c.ConnectionFileMixin.starting_port</li>\n</ul>\n<p><b>c.ConnectionFileMixin.max_kernels</b> is to set the maximum number of kernels allowed to be used, it should be combined with c.ConnectionFileMixin.starting_port to provide a range of ports to be automatically selected. The default 0 means that there is no limitation.</p>\n<p><b>c.ConnectionFileMixin.starting_port</b> is to set the starting port for beginning of the port range for new kernels. The default value 0 means that the original random port will be picked up. The value greater than 0 means that it should be combined with c.ConnectionFileMixin.max_kernels to provide a range of ports to be automatically selected.</p>\n<hr>\n\n<p>You'll need Python and <code>pip</code> on the search path. Clone the Jupyter Client git repository to your computer, for example in <code>/my/project/jupyter_client</code></p>\n\n<pre><code>\ncd /my/projects/<br>\ngit clone git@github.com:jupyter/jupyter_client.git<br>\n</code></pre>\n\n<p>Now create an <a href=\"https://pip.pypa.io/en/stable/reference/pip_install/#editable-installs\">editable install</a> and download the dependencies of code and test suite by executing:</p>\n\n<pre><code>\ncd /my/projects/jupyter_client/<br>\npip install -e \".[test]\"<br>\npytest<br>\n</code></pre>\n\n<p>The last command runs the test suite to verify the setup. During development, you can pass filenames to pytest, and it will execute only those tests.</p>\n\n<p>See <a href=\"https://jupyter-client.readthedocs.io/en/stable/\">readthedocs.io</a> for more information.</p>",
     "tags": "programming_tools",
     "versions": {
-      "7.4.9.post3": {
+      "8.10.0": {
         "dist": [
           {
             "py_version": "py3",
-            "sha256": "e6c3d7ba333af6716a518a3fde94840e3e0105f1c9c135262886aeecb4452215"
+            "sha256": "a1cd8627dc366b89714d8a4e3405a85858786b453d04a2a097934b2b2230f7b9"
           }
         ]
       }
